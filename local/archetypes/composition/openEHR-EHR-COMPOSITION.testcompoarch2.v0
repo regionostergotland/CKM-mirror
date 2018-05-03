@@ -1,0 +1,78 @@
+archetype (adl_version=1.4; uid=b107e57b-502e-4619-8a54-288e6d4b96c2)
+    openEHR-EHR-COMPOSITION.testcompoarch1.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2018-05-03">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+    >
+
+definition
+    COMPOSITION[at0000] matches {
+        category matches {
+            DV_CODED_TEXT[at0001] matches {
+                defining_code matches {
+                    [openehr::433]
+                }
+            }
+        }
+        context matches {
+            EVENT_CONTEXT[at0002] matches {*}
+        }
+        content cardinality matches {0..*; unordered} matches {
+            SECTION[at0003] occurrences matches {0..1} matches {*}
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["en"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"testcompoarch1">
+                    description = <"testcompoarch1">
+                >
+                ["at0001"] = <
+                    text = <"DvCodedText">
+                    description = <"@ internal @">
+                >
+                ["at0002"] = <
+                    text = <"Event Context">
+                    description = <"*">
+                >
+                ["at0003"] = <
+                    text = <"A nice section">
+                >
+            >
+        >
+    >
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
