@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "797d998ee5aee632aacc5df242c1893d",
+      "MD5-CAM-1.0.1" : "7c706291d04b55015d17127a99ced42f",
       "PARENT:MD5-CAM-1.0.1" : "310F1C477CEDA8D1EB5C14D1C1F6B211"
     },
     "details" : {
@@ -195,7 +195,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Lifestyle Factors",
+          "text" : "Lifestyle Factors (experiment)",
           "description" : "A persistent and evolving summary record of information about lifestyle factors that may influence clinical decision-making and care provision."
         },
         "at0004.1" : {
@@ -260,7 +260,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "FDBE0F177C7137C3B120C970366B293D"
       },
-      "details" : { }
+      "details" : {
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera sammanfattande information om rökvanor gällande tobak och produkter som innehåler tobak.",
+          "keywords" : [ "tobak", "cigarett", "cigarr", "pipa", "rökning", "*kretek(en)", "*beedi(en)", "*bidi(en)", "cigarill", "rökare", "vattenpipa", "*shisha(en)", "*hookah(en)", "*narguileh(en)", "*hubble-bubble(en)", "*roll-up(en)", "*RYO(en)", "*rollie(en)", "*roll-your-own(en)" ],
+          "use" : "*Use to record summary information about the individual's pattern of smoking of tobacco and tobacco-containing products.\r\n\r\nThis archetype is to be used to record information about both current and previous smoking behaviour.\r\n\r\nThe specific scope of this archetype is on documentation about the use of all types of inhaled tobacco smoke because of the associated health risks from direct inhalation of tobacco and associated chemicals. Amount of nicotine and tar, use of filters and additives has been left outside of scope for the core archetype, but could be added into the Episode SLOT if required. Please note that the scope of this archetype does not include unintentional exposure to tobacco smoke (see Misuse). \r\n\r\nThe 'Per type' cluster of data elements allows for recording of specific details and episodes about each type of tobacco smoked and can be repeated once per type. The list of tobacco types listed in the 'Per type' run-time name constraint identifies the type of tobacco. This name constraint can be applied during template modelling or at run-time within a software application.\r\n\r\nIn many situations the individual will only smoke one type of tobacco, such as manufactured cigarettes.  If other types of tobacco are smoked, the details will be recorded in another instance of the 'Per type' cluster.\r\n\r\nThe history of waxing and waning of use for each type of tobacco over time can be captured using the repeatable 'Per episode' cluster. This cluster of data elements allows for a very detailed pattern of smoking behaviour to be recorded for each type of tobacco smoked such as daily 'roll-your-own' cigarette smoking, alongside weekly cigar smoking every Friday night and occasional Bidi smoking while on holiday in Bali. \r\n\r\nTriggers for closing one episode and commencing a new one will largely reflect local data collection preferences, including if the individual: \r\n- quits for a significant period of time (which will likely be locally defined); or\r\n- significantly changes their amount of use or pattern of their smoking.\r\n\r\nIf only one type of tobacco is smoked, the value for 'Pack years' will be identical to the 'Overall pack years' data element. If more than one type of tobacco is smoked, the calculation for the value for 'Overall pack years' will require a more complex algorithm such as http://smokingpackyears.com/.\r\n\r\nUse to incorporate the narrative descriptions of tobacco smoking habits within existing or legacy clinical systems into an archetyped format, using the 'Overall description' data element.(en)",
+          "misuse" : "*Not to be used to record event-or period-based information about tobacco smoking, such as actual daily use or the average use over a specified period of time - use the OBSERVATION.tobacco_smoking archetype.\r\n\r\nNot to be used to record information about smokeless tobacco use - for example: snus; snuff; chewing tobacco; dip; and gutka. Use the archetype EVALUATION.smokeless_tobacco_summary archetype for this purpose.\r\n\r\nNot to be used to record an assessment about cigarette or nicotine dependence. Use the archetype OBSERVATION.fagerstrom for this purpose.\r\n\r\nNot to be used to record details about unintended exposure to tobacco smoke or passive smoking. Use the archetype EVALUATION.exposure for this purpose.\r\n\r\nNot to be used for recording any other administration of nicotine, such as e-cigarettes, nicotine patches or nicotine chewing gum. Use seoparate archetypes for this purpose. \r\n\r\nNot to be used to record evidence of nicotine dependency. Use the OBSERVATION.fagerstrom for this purpose.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et sammendrag om individets mønster for røyking av tobakk og produkter som inneholder tobakk.",
+          "keywords" : [ "tobakk", "sigarett", "sigar", "pipe", "røyking", "kretek", "beedi", "bidi", "sigarillo", "røyker", "vannpipe", "shisha", "hookah", "narguileh", "rulletobakk", "rullings", "røyk" ],
+          "use" : "Brukes for å registrere et sammendrag om individets mønster for røyking av tobakk og produkter som inneholder tobakk.\r\n\r\nDenne arketypen brukes for å registrere både nåværende og tidligere tobakksrøyking.\r\n\r\nArketypen fokuserer spesifikt på dokumentasjon om bruk av alle typer inhalert tobakksrøyk, på grunn av helserisikoen knyttet til inhalering og kjemikaliene tilknyttet dette. Mengden av nikotin og tjære, filterbruk og tilsetningstoffer er ikke dekket av arketypen, men kan legges til i SLOTet \"Episodedetaljer\" ved behov. Arketypen omfatter ikke utilsiktet eksponering for tobakksrøyk (se Feil bruk).\r\n\r\nClusteret \"Per type\" tillater registrering av spesifikke detaljer og episoder om hver enkelt ulik type tobakk som røykes og kan repeteres en gang per type. \r\nTobakkstyper er listet i \"run-time name constraint\" (navnebegrensning) lagt på \"Per type\". Denne navnebegrensningen kan brukes ved templatmodellering eller i applikasjonen.\r\n\r\nI mange tilfeller vil individet bare røyke en type tobakk, for eksempel filtersigaretter. Røykes også andre typer tobakk, legges detaljene om dette i en annen instans av Clusteret \"Per type\".\r\n\r\nHistorikken knyttet til økt eller redusert bruk av hver enkelt tobakkstype over tid kan registreres ved å bruke Clusteret \"Per episode\". Denne samlingen av dataelementer åpner for en veldig detaljert registrering av røykeadferd, for eksempel kan en registrere at man daglig røyker rullings, en sigar hver fredag og Bidi-røyking når man er på ferie på Bali.\r\n\r\nHva som trigger en avslutning av en episode og start av en ny avhenger av behovet, for eksempel:\r\n- Individet slutter å røyke en periode (kan defineres lokalt).\r\n- Betydningsfulle endringer i mengde eller røykemønster.\r\n\r\nRøyker individet kun en type tobakk vil verdien for dataelementet \"Pakkeår\" være identisk med dataelementet \"Overordnet pakkeår\". Røykes mer enn en type tobakk vil kalkulasjonen av verdien for \"Overordnet pakkeår\" kreve en mer kompleks algoritme som http://smokingpackyears.com/.\r\n\r\nDataelementet \"Overordnet beskrivelse\" brukes til å overføre fritekstbeskrivelser fra eksisterende eller tidligere kliniske systemer til arketypeformat",
+          "misuse" : "Brukes ikke for å registrere informasjon som ikke handler om tobakksrøyking eller som handler om tobakk blandet med andre rusmidler, bruk egne arketyper for dette formålet.\r\n\r\nBrukes ikke for å registrere hendelses- eller periodisk informasjon om tobakksrøyking, for eksempel: faktisk daglig bruk eller gjennomsnittlig bruk over en spesifisert tidsperiode. Bruk arketypen OBSERVATION.tobacco_smoking for dette formålet.\r\n\r\nBrukes ikke for å registrere informasjon om bruk av røykfri tobakk, for eksempel snus, luktsnus/snuff, tyggetobakk, dip og gutka. Bruk arketypen EVALUATION.smokeless_tobacco_summary for dette formålet.\r\n\r\nBrukes ikke for å registrere en vurdering av sigarett- eller nikotinavhengighet. Arketypen OBSERVATION.fagerstrom kan brukes for dette formålet.\r\n\r\nBrukes heller ikke for annen tilførsel av nikotin som e-sigarett, nikotinplaster eller niktotintyggegummi. Bruk egne arketyper for dette formålet.\r\n\r\nBrukes ikke for å registrere informasjon om nikotinavhengighet. Bruk arketypen OBSERVATION.fagerstrom til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record summary information about the individual's pattern of smoking of tobacco and tobacco-containing products.",
+          "keywords" : [ "tobacco", "cigarette", "cigar", "pipe", "smoking", "kretek", "beedi", "bidi", "cigarillo", "smoker", "waterpipe", "shisha", "hookah", "narguileh", "hubble-bubble", "roll-up", "RYO", "rollie", "roll-your-own" ],
+          "use" : "Use to record summary information about the individual's pattern of smoking of tobacco and tobacco-containing products.\r\n\r\nThis archetype is to be used to record information about both current and previous smoking behaviour.\r\n\r\nThe specific scope of this archetype is on documentation about the use of all types of inhaled tobacco smoke because of the associated health risks from direct inhalation of tobacco and associated chemicals. Amount of nicotine and tar, use of filters and additives has been left outside of scope for the core archetype, but could be added into the Episode SLOT if required. Please note that the scope of this archetype does not include unintentional exposure to tobacco smoke (see Misuse). \r\n\r\nThe 'Per type' cluster of data elements allows for recording of specific details and episodes about each type of tobacco smoked and can be repeated once per type. The list of tobacco types listed in the 'Per type' run-time name constraint identifies the type of tobacco. This name constraint can be applied during template modelling or at run-time within a software application.\r\n\r\nIn many situations the individual will only smoke one type of tobacco, such as manufactured cigarettes.  If other types of tobacco are smoked, the details will be recorded in another instance of the 'Per type' cluster.\r\n\r\nThe history of waxing and waning of use for each type of tobacco over time can be captured using the repeatable 'Per episode' cluster. This cluster of data elements allows for a very detailed pattern of smoking behaviour to be recorded for each type of tobacco smoked such as daily 'roll-your-own' cigarette smoking, alongside weekly cigar smoking every Friday night and occasional Bidi smoking while on holiday in Bali. \r\n\r\nTriggers for closing one episode and commencing a new one will largely reflect local data collection preferences, including if the individual: \r\n- quits for a significant period of time (which will likely be locally defined); or\r\n- significantly changes their amount of use or pattern of their smoking.\r\n\r\nIf only one type of tobacco is smoked, the value for 'Pack years' will be identical to the 'Overall pack years' data element. If more than one type of tobacco is smoked, the calculation for the value for 'Overall pack years' will require a more complex algorithm such as http://smokingpackyears.com/.\r\n\r\nUse to incorporate the narrative descriptions of tobacco smoking habits within existing or legacy clinical systems into an archetyped format, using the 'Overall description' data element.",
+          "misuse" : "Not to be used to record event-or period-based information about tobacco smoking, such as actual daily use or the average use over a specified period of time - use the OBSERVATION.tobacco_smoking archetype.\r\n\r\nNot to be used to record information about smokeless tobacco use - for example: snus; snuff; chewing tobacco; dip; and gutka. Use the archetype EVALUATION.smokeless_tobacco_summary archetype for this purpose.\r\n\r\nNot to be used to record an assessment about cigarette or nicotine dependence. Use the archetype OBSERVATION.fagerstrom for this purpose.\r\n\r\nNot to be used to record details about unintended exposure to tobacco smoke or passive smoking. Use the archetype EVALUATION.exposure for this purpose.\r\n\r\nNot to be used for recording any other administration of nicotine, such as e-cigarettes, nicotine patches or nicotine chewing gum. Use seoparate archetypes for this purpose. \r\n\r\nNot to be used to record evidence of nicotine dependency. Use the OBSERVATION.fagerstrom for this purpose.",
+          "copyright" : "© openEHR Foundation, Australian Digital Health Agency, Nasjonal IKT (Norway)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.tobacco_smoking_summary.v1",
     "differential" : true,
@@ -302,6 +349,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -488,7 +536,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "FB39370E7621F49AFBA0D96954D29368"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere sammendrag eller detaljer om et individs tidligere og nåværende alkoholvaner.",
+          "keywords" : [ "drikking", "full", "alkoholbegjær", "alkoholiker", "alkoholisme", "fyll", "ethyl" ],
+          "use" : "Brukes for å registrere et sammendrag om individets mønster for bruk av alkohol.\r\n\r\nDenne arketypen er tenkt brukt til å registrere informasjon om både nåværende og tidligere bruk av alkohol.\r\n\r\nRammen for denne arketypen er å dokumentere alle typer inntatt alkohol, fordi konsum av alkohol er forbundet med helserisiko.\r\n\r\nClusteret 'Per type' tillater registrering av episoder og spesifikke detaljer knyttet til ulike typer alkoholholdig drikke, clusteret kan repeteres en gang for hver type alkoholholdig drikke. Typen alkoholholdig drikke identifiseres fra listen under 'Per type'. Restriksjonen på navn (Engelsk: Name constraint) kan modelleres på templatnivå, eller den kan settes i applikasjonen under kjøring (runtime).\r\n\r\nI noen tilfeller vil individet drikke kun én type alkohol, som øl. Inntas også andre typer alkoholholdig drikke, legges detaljene i en ny instans av clusteret 'Per type'.\r\n\r\nHistorikken knyttet til økt eller redusert bruk av hver type alkoholholdig drikk over tid kan registreres ved å bruke clusteret 'Per episode'. Clusteret kan repeteres. Denne samlingen dataelementer tillater detaljert registrering av alkoholrelatert atferd per type alkoholholdig drikk, for eksempel dersom individet drikker øl hver dag, vin hver fredag og sprit av og til på fest.\r\n\r\nAvgjørelsen om når én episode avslutter og en ny episode starter, skal reflektere de lokale preferansene for datainnsamling, for eksempel dersom individet:\r\n- slutter i en periode av signifikant varighet (hva som er 'signifikant varighet' vil mest sannsynlig være definert lokalt), eller\r\n- gjør en signifikant endring i inntaksmengden av, eller mønsteret i sin alkoholbruk.\r\n\r\nDataelementet 'Overordnet beskrivelse' brukes til å gi fritekstbeskrivelser av alkoholbruk, eller til å overføre data fra eksisterende eller tidligere kliniske systemer til arketypeformat.",
+          "misuse" : "Brukes ikke til registrering av hendelses- eller periodebasert informasjon om alkoholbruk, som faktisk daglig bruk eller gjennomsnittlig bruk over en gitt periode - bruk arketypen OBSERVATION.alcohol_use til dette.\r\n\r\nBrukes ikke til registrering av vurdering av alkoholavhengighet. Bruk spesifikke arketyper til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record summary information about the individual's pattern of alcohol use.",
+          "keywords" : [ "drinking", "drunk", "dipsomania", "alcoholic", "alcoholism" ],
+          "use" : "Use to record summary information about the individual's pattern of alcohol consumption.\r\n\r\nThis archetype is to be used to record information about both current and previous alcohol use behaviour.\r\n\r\nThe specific scope of this archetype is on documentation about the use of all types of consumed alcohol because of the associated health risks.\r\n\r\nThe 'Per type' cluster of data elements allows for recording of specific details and episodes about each type of alcoholic beverage used and can be repeated once per type. The list of alcoholic beverages listed in the 'Per type' run-time name constraint identifies the alcoholic beverage. This name constraint can be applied during template modelling or at run-time within a software application.\r\n\r\nIn some situations the individual will only consume one type of alcoholic beverage, such as beer.  If other types of alcoholic beverages are used, the details will be recorded in another instance of the 'Per type' cluster.\r\n\r\nThe history of waxing and waning of use for each type of alcoholic beverage over time can be captured using the repeatable 'Per episode' cluster. This cluster of data elements allows for a very detailed pattern of alcohol use behaviour to be recorded for each type of alcoholic beverage consumed such as daily beer drinking, alongside weekly wine drinking every Friday night and occasional liquor drinking while. \r\n\r\nTriggers for closing one episode and commencing a new one will largely reflect local data collection preferences, including if the individual: \r\n- quits for a significant period of time (which will likely be locally defined); or\r\n- significantly changes their amount of use or pattern of their alcohol consumption.\r\n\r\nUse to incorporate the narrative descriptions of alcohol use habits within existing or legacy clinical systems into an archetyped format, using the 'Overall description' data element.",
+          "misuse" : "Not to be used to record event-or period-based information about alcohol use, such as actual daily use or the average use over a specified period of time - use the OBSERVATION.alcohol_use archetype.\r\n\r\nNot to be used to record an assessment about alcohol dependence. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation, Australian Digital Health Agency, Nasjonal IKT (Norway)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.alcohol_use_summary.v0",
     "differential" : true,
@@ -568,7 +648,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "EA15674265F2264BAED19F5795AF8BFE"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a summary of typical physical activity of an individual.",
+          "keywords" : [ "activity", "exercise", "physical", "fitness" ],
+          "use" : "Use to record a summary of typical, or usual, physical activity of children or adults.\r\n\r\nPlease note: There is some apparent overlap between the 'Physical activity level (PAL) status' data element in this archetype and the 'Physical activity category' data element in OBSERVATION.physical_activity archetype - they both use the same value set. Use this archetype when recording the the typical activity as a summative statement, however if the intent is to record the category at a specified point in time or during a specified period of time then use the equivalent data point in the OBSERVATION.physical_activity.",
+          "misuse" : "Not to be used to record actual physical activity at a specific point in time or during a specified period of time - use OBSERVATION.physical_activity for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.physical_activity_summary.v0",
     "differential" : true,
@@ -626,7 +723,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "608F256B2279433C062DFA7CAA847D41"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To enable recording or exchange of an explicit statement by a clinician that specified health information is not available for inclusion in the health record or record extract at the time of recording.",
+          "keywords" : [ "absence", "information", "adverse", "reaction", "problem", "diagnosis", "medication", "procedure", "vaccination", "adverse reaction" ],
+          "use" : "Use to enable recording or exchange of an explicit statement that specified health information is not available for inclusion in the health record or record extract at the time of recording. \n\nThis statement is the third component of a family of statements - statements of positive presence, statements of positive exclusion and statements of absence:\n- Statements of positive presence indicate that there is relevant health information in the record or extract - for example, EVALUATION.adverse_reaction stating that the patient has an allergy to penicillin or EVALUATION.problem_diagnosis stating that the patient has diabetes. \n- Equivalent statements about exclusion are used to indicate that it is known that there is no relevant health information in the health record or extract - for example, EVALUATION.exclusion_adverse  stating that the patient does not have a known allergy to penicillin or EVALUATION.exclusion_problem_diagnosis stating that the patient is not diabetic; and;\n- In this context, the EVALUATION.absence could be used to record that there is no health information available about penicillin allergy or the diagnosis of diabetes - it is not known if it is present or excluded, but there is no information that can be provided. \n\nThis archetype has been developed specifically for the use case where a clinician is preparing an extract from a health record, so that the receiver has explicit and unambiguous understanding of the information available - that which is present, excluded or just not available. It is primarily intended to be used within SLOTS in persistent COMPOSITIONS such as 'Therapeutic precautions', 'Medication list', 'Problem list', or 'Adverse reaction list'. It is also deliberately intended to be statement made by a clinician in the same way that they would record any allergies or diagnoses, and is intended to be quite different to technical use of null flavours in data.\n\nAbsence statements can only be considered to be current and accurate at the time of recording.\n\nThis archetype has been designed specifically to avoid the need to use of flags to express negation about any entry within the health record.",
+          "misuse" : "Not to be used to record the presence of adverse reactions, medication use, procedures, problems or diagnoses - use specific archetypes for this purpose.\n\nNot to be used to record the exclusion of adverse reactions, medication use, procedures, problems or diagnoses - use specific specialisations of the EVALUATION.exclusion archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.absence.v1",
     "differential" : true,
