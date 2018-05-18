@@ -1,0 +1,43 @@
+archetype (adl_version=1.4; uid=5be25097-3bc9-41cd-8138-227f711d8a93)
+    openEHR-EHR-ITEM.liten_testarketyp.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::sv]>
+
+description
+    original_author = <
+        ["date"] = <"2018-05-18">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["sv"] = <
+            language = <[ISO_639-1::sv]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["MD5-CAM-1.0.1"] = <"fcbefb9bc41ad9e24a83d98114900231">
+        ["build_uid"] = <"78c74b17-efc1-3357-9cc6-169f3d3dfcf9">
+    >
+
+definition
+    ITEM[at0000] matches {*}
+
+ontology
+    term_definitions = <
+        ["sv"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Liten_testarketyp">
+                    description = <"Liten_testarketyp">
+                >
+            >
+        >
+    >
