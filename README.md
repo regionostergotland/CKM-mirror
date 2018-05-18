@@ -2,7 +2,22 @@ Region Östergötland's fork of the international openEHR.org CKM mirror, plus l
 ===========================================================================================================
 The intention of this "fork" is to make it simple to work with archetype and template tools to create local content based on international archetypes. You can download a zip (or maintain a GIT-clone/fork/link) of this repository in order to access the combination of international and local archetypes and templates in your tools. 
 
-If you are using Marands online ADL-designer and nobody in your organization has yet atdded this repo, then this setting should work:
+Directroy names and content
+---------------------------
+Warning: the directory names are a bit confusing due to conventions and tools used "upstream"
+
+* `/local`  currently contains Region Östergötland's locally created archetypes and templates all in the same directory, no matter what openEHR class they are based on. (This seems to be the directory preference of some tools.)
+* `/local/archetypes`, `/local/templates` and `/local/templates` contain directories copied straight from openEHR's international online CKM tool http://ckm.openehr.org via https://github.com/openEHR/CKM-mirror
+* `/remote/` contains subdirectories like `no.nasjonalikt/archetypes` that have been copied from "national/regional" CKMs like http://arketyper.no/ckm/ into openEHR's international online CKM tool http://ckm.openehr.org they are thus "remote" with respect to the international CKM as opposed to the `/local/archetypes` considered local with respect to the international CKM. 
+
+Thus, part of what is under `/local` is truly local to Region östergötland and part of it (e.g. `/local/archetypes`) comes from the international space...
+
+Tool settings
+-------------
+List of available modelling tools: https://www.openehr.org/downloads/modellingtools
+
+If you are using Marands online ADL-designer https://ehrscape.marand.si/designerv2 and nobody in your organization has yet added this repo, then this setting should work:
+
 Repositories (top menu bar) --> New repository (button) --> Repository type: GitHub
 ```
   Repository name: RÖ fork of CKM-mirror (or whatever you want to call it)  
@@ -10,6 +25,10 @@ Repositories (top menu bar) --> New repository (button) --> Repository type: Git
   Repository: openehr_definitions 
   Branch: master
 ```
+If you are using Ocean's Template designer or other local-file-based tools it should be possible to either 
+* download and unpack the zip-file of this repository, found under the green "Clone or download" button on the https://github.com/regionostergotland/CKM-mirror page or
+* set up GIT client to keep in sync (this has a bit of learning curve...)
+
 Update policy
 ------------
 We do occasional manual one-way updates from https://github.com/openEHR/CKM-mirror (that most often update the content of the '/local/archetypes' subdirectory tree). The direction is always _from_ the international CKM tool (automatically) to https://github.com/openEHR/CKM-mirror and from there (manually) to this fork https://github.com/regionostergotland/CKM-mirror/.
@@ -19,16 +38,6 @@ If we find an error or want to contribute new content to the international repos
 Howto-instructions for RÖ-repo admins to update this repository to get the latest content from the international one: 
 * With command-line tools https://help.github.com/articles/syncing-a-fork/ or
 * Using the web: https://www.sitepoint.com/quick-tip-sync-your-fork-with-the-original-without-the-cli/
-
-Directroy names and content
----------------------------
-Warning: the directory names are a bit confusing due to conventions and tools used "upstream"
-
-* `/local`  currently contains Region Östergötland's locally created archetypes and templates all in the same directory, no matter what openEHR class they are based on. (This seems to be the directory preference of some tools.)
-* `/local/archetypes`, `/local/templates` and `/local/templates` contain directories copied straight from openEHR's international online CKM tool http://ckm.openehr.org via https://github.com/openEHR/CKM-mirror
-* `/remote/` contains subdirectories like `no.nasjonalikt/archetypes` that have been copied from "national/regional" CKMs like http://arketyper.no/ckm/ into openEHR's international online CKM tool http://ckm.openehr.org they are thus "remote" with respect to the international CKM as opposed to the `/local/archetypes` considered local with respect to the international CKM. 
-
-Thus, part of what is under `/local` is truly local to Region östergötland and part of it (e.g. `/local/archetypes`) comes from teh international space...
 
 Future setup?
 -------------
