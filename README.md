@@ -3,14 +3,13 @@ Region Östergötland's fork of the international openEHR.org CKM mirror, plus l
 The intention of this "fork" is to make it simple to work with archetype and template tools to create local content based on international archetypes. You can download a zip (or maintain a GIT-clone/fork/link) of this repository in order to access the combination of international and local archetypes and templates in your tools. 
 
 If you are using Marands online ADL-designer and nobody in your organization has yet atdded this repo, then this setting should work:
-Repositories (top menu bar) --> New repository (button) -->
-
-  Repository type: GitHub
+Repositories (top menu bar) --> New repository (button) --> Repository type: GitHub
+```
   Repository name: RÖ fork of CKM-mirror (or whatever you want to call it)  
   Owner: regionostergotland
   Repository: openehr_definitions 
   Branch: master
-
+```
 Update policy
 ------------
 We do occasional manual one-way updates from https://github.com/openEHR/CKM-mirror (that most often update the content of the '/local/archetypes' subdirectory tree). The direction is always _from_ the international CKM tool (automatically) to https://github.com/openEHR/CKM-mirror and from there (manually) to this fork https://github.com/regionostergotland/CKM-mirror/.
