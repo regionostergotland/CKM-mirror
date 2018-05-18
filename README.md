@@ -2,16 +2,17 @@ Region Östergötland's fork of the international openEHR.org CKM mirror, plus l
 ===========================================================================================================
 The intention of this "fork" is to make it simple to work with archetype and template tools to create local content based on international archetypes. You can download a zip (or maintain a GIT-clone/fork/link) of this repository in order to access the combination of international and local archetypes and templates in your tools. 
 
-Directroy names and content
+Directory names and content
 ---------------------------
 Warning: the directory names are a bit confusing due to conventions and tools used "upstream"
 
 * `/local`  currently contains Region Östergötland's locally created archetypes and templates all in the same directory, no matter what openEHR class they are based on. (This seems to be the default directory for saving new files created in ADL-designer)
 * `/local/archetypes`, `/local/templates` and `/local/templates` contain directories copied straight from openEHR's international online CKM tool http://ckm.openehr.org via https://github.com/openEHR/CKM-mirror
+* `/local/regionostergotland/` a manually created subdirectory intended for (regularly) organizing Region Östergötland's files. Note that the tools do not save here by default. Further project/topic-specific subdirectories could be created, e.g. `/local/regionostergotland/surgery` - the subdirectories under `/local` seem to be read by several tools.
 * `/remote/` contains subdirectories like `no.nasjonalikt/archetypes` that have been copied from "national/regional" CKMs like http://arketyper.no/ckm/ into openEHR's international online CKM tool http://ckm.openehr.org they are thus "remote" with respect to the international CKM as opposed to the `/local/archetypes` considered local with respect to the international CKM. 
 * `/` The root directory, containing this readme file end som others cloned from the ckm-mirror. (It also seems to be where ADL-designer stores archetyper that you "import" (rather than create) using the tool.
 
-Thus, part of what is under `/local` is truly local to Region östergötland and part of it (e.g. `/local/archetypes`) comes from the international space...
+Thus, part of what is under `/local` and it's subdirectories is truly local to Region östergötland and other parts of it (e.g. `/local/archetypes`) comes from the international space...
 
 Tools, tool settings and behavoiurs
 -------------
@@ -45,9 +46,13 @@ Howto-instructions for RÖ-repo admins to update this repository to get the late
 * With command-line tools https://help.github.com/articles/syncing-a-fork/ or
 * Using the web: https://www.sitepoint.com/quick-tip-sync-your-fork-with-the-original-without-the-cli/
 
+Howto-instructions for RÖ-repo admins regarding how to move a file uding GitHub's web tools: https://help.github.com/articles/moving-a-file-to-a-new-location/
+
 Future setup?
 -------------
 If this works fine and there is interest, then the chain could be modified to instead become openEHR --> SKL (or EHM?) --> Region Östergötland 
+
+We'd likely want to have separate directories for different templates. 
 
 --------------
 
