@@ -18,7 +18,7 @@ description
         >
     >
     other_details = <
-        ["MD5-CAM-1.0.1"] = <"704a272f7d8df1527e54fc20cebccfb4">
+        ["MD5-CAM-1.0.1"] = <"e95ce8e7e5370a8c1fc9d40c6b4fab3d">
         ["build_uid"] = <"89994322-209d-3440-8acc-5dae0cfe26dd">
     >
 
@@ -80,6 +80,8 @@ definition
                                 }
                             }
                         }
+                    }
+                    allow_archetype CLUSTER[at0030] occurrences matches {0..1} matches {
                     }
                 }
             }
@@ -212,6 +214,10 @@ ontology
                 ["at0029"] = <
                     text = <"ItemTree">
                     description = <"@ internal @">
+                >
+                ["at0030"] = <
+                    text = <"CLUSTER_SLOT">
+                    description = <"Plats för ytterligare informasjon som kan behövas för att registrera lokalt definerat innehåll, eller för att fånga krav från andra modeller.">
                 >
             >
         >
