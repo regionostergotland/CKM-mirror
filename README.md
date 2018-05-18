@@ -2,6 +2,8 @@ Region Östergötland's fork of the international openEHR.org CKM mirror, plus l
 ===========================================================================================================
 The intention of this "fork" is to make it simple to work with archetype and template tools to create local content based on international archetypes. You can download a zip (or maintain a GIT-clone/fork/link) of this repository in order to access the combination of international and local archetypes and templates in your tools. 
 
+Please note that operational templates (.opt-files) and other downstream openEHR-related artifacts used in Region Östergötland's applications should be maintained in the https://github.com/regionostergotland/openehr_definitions/ repository.
+
 Directory names and content
 ---------------------------
 Warning: the directory names are a bit confusing due to conventions and tools used "upstream"
@@ -30,6 +32,8 @@ Repositories (top menu bar) --> New repository (button) --> Repository type: Git
   Repository: openehr_definitions 
   Branch: master
 ```
+
+If you want to save files (and avoid some GitHub rate-limiting-related related "403" errors) you need to be logged in to github with a user account that has write permission to this repository, ideally before opening the ADL designer.
 
 ### Local-file-based tools
 If you are using Ocean's Template designer or other local-file-based tools it should be possible to either 
