@@ -10,9 +10,9 @@ Warning: the directory names are a bit confusing due to conventions and tools us
 * `/local/archetypes`, `/local/templates` and `/local/templates` contain directories copied straight from openEHR's international online CKM tool http://ckm.openehr.org via https://github.com/openEHR/CKM-mirror
 * `/local/regionostergotland/` a manually created subdirectory intended for (regularly) organizing Region Östergötland's files. Note that the tools do not save here by default. Further project/topic-specific subdirectories could be created, e.g. `/local/regionostergotland/surgery` - the subdirectories under `/local` seem to be read by several tools.
 * `/remote/` contains subdirectories like `no.nasjonalikt/archetypes` that have been copied from "national/regional" CKMs like http://arketyper.no/ckm/ into openEHR's international online CKM tool http://ckm.openehr.org they are thus "remote" with respect to the international CKM as opposed to the `/local/archetypes` considered local with respect to the international CKM. 
-* `/` The root directory, containing this readme file end som others cloned from the ckm-mirror. (It also seems to be where ADL-designer stores archetyper that you "import" (rather than create) using the tool.
+* `/` The root directory, containing this readme file and som other files cloned from the ckm-mirror. (It also seems to be where the ADL-designer tool stores archetypes that you "import" (rather than create) using the tool.
 
-Thus, part of what is under `/local` and it's subdirectories is truly local to Region östergötland and other parts of it (e.g. `/local/archetypes`) comes from the international space...
+Thus, part of the content under `/local` and it's subdirectories is truly local to Region Östergötland and other content (e.g. `/local/archetypes`) comes from the international space...
 
 Tools, tool settings and behavoiurs
 -------------
