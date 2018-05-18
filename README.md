@@ -6,17 +6,21 @@ Directroy names and content
 ---------------------------
 Warning: the directory names are a bit confusing due to conventions and tools used "upstream"
 
-* `/local`  currently contains Region Östergötland's locally created archetypes and templates all in the same directory, no matter what openEHR class they are based on. (This seems to be the directory preference of some tools.)
+* `/local`  currently contains Region Östergötland's locally created archetypes and templates all in the same directory, no matter what openEHR class they are based on. (This seems to be the default directory for saving new files created in ADL-designer)
 * `/local/archetypes`, `/local/templates` and `/local/templates` contain directories copied straight from openEHR's international online CKM tool http://ckm.openehr.org via https://github.com/openEHR/CKM-mirror
 * `/remote/` contains subdirectories like `no.nasjonalikt/archetypes` that have been copied from "national/regional" CKMs like http://arketyper.no/ckm/ into openEHR's international online CKM tool http://ckm.openehr.org they are thus "remote" with respect to the international CKM as opposed to the `/local/archetypes` considered local with respect to the international CKM. 
+* `/` The root directory, containing this readme file end som others cloned from the ckm-mirror. (It also seems to be where ADL-designer stores archetyper that you "import" (rather than create) using the tool.
 
 Thus, part of what is under `/local` is truly local to Region östergötland and part of it (e.g. `/local/archetypes`) comes from the international space...
 
-Tool settings
+Tools, tool settings and behavoiurs
 -------------
 List of available modelling tools: https://www.openehr.org/downloads/modellingtools
 
-If you are using Marands online ADL-designer https://ehrscape.marand.si/designerv2 and nobody in your organization has yet added this repo, then this setting should work:
+### Marand's online ADL-designer
+Please note the somewhat odd directory choices used for saving new anbd imported assets described above. Template files created in the tool are by default saved with a ".t.json"-file ending. They can also be exported to several formats.
+
+If you are using Marand's online ADL-designer https://ehrscape.marand.si/designerv2 and nobody in your organization has yet added this repo, then this setting should work:
 
 Repositories (top menu bar) --> New repository (button) --> Repository type: GitHub
 ```
@@ -25,12 +29,14 @@ Repositories (top menu bar) --> New repository (button) --> Repository type: Git
   Repository: openehr_definitions 
   Branch: master
 ```
+
+### Local-file-based tools
 If you are using Ocean's Template designer or other local-file-based tools it should be possible to either 
 * download and unpack the zip-file of this repository, found under the green "Clone or download" button on the https://github.com/regionostergotland/CKM-mirror page or
 * set up GIT client to keep in sync (this has a bit of learning curve...)
 
-Update policy
-------------
+Update policy & instructions
+----------------------------
 We do occasional manual one-way updates from https://github.com/openEHR/CKM-mirror (that most often update the content of the '/local/archetypes' subdirectory tree). The direction is always _from_ the international CKM tool (automatically) to https://github.com/openEHR/CKM-mirror and from there (manually) to this fork https://github.com/regionostergotland/CKM-mirror/.
 
 If we find an error or want to contribute new content to the international repository, then the web-based tools at http://ckm.openehr.org should be used for submitting such content. Files in this fork will _not_ be synced back automatically to the international repository.
