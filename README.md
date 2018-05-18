@@ -5,11 +5,11 @@ The intention of this "fork" is to make it simple to work with archetype and tem
 If you are using Marands online ADL-designer and nobody in your organization has yet atdded this repo, then this setting should work:
 Repositories (top menu bar) --> New repository (button) -->
 
-Repository type: GitHub
-Repository name: RÖ fork of CKM-mirror (or whatever you want to call it)  
-Owner: regionostergotland
-Repository: openehr_definitions 
-Branch: master
+  Repository type: GitHub
+  Repository name: RÖ fork of CKM-mirror (or whatever you want to call it)  
+  Owner: regionostergotland
+  Repository: openehr_definitions 
+  Branch: master
 
 Update policy
 ------------
