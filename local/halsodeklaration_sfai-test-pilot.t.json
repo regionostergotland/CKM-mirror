@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "cc8d7246d2cdf3a31cd86b568c65ce12",
+      "MD5-CAM-1.0.1" : "c13eb25d3ee882cd96b2296f6cc0b177",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -1323,7 +1323,49 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0022.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0026.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -1336,6 +1378,20 @@
             "code" : "at0000.1",
             "text" : "Kjønn",
             "description" : "Detaljert beskrivelse av et individs kjønn."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Juridisk kjønn",
+            "description" : "Et individs kjønn brukt til offentlige eller rettslige formål. I Norge vil det normalt også bli brukt til administrative formål.",
+            "comment" : "For eksempel identifikasjonspapirer som fødselsattest eller pass."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Administrativt kjønn",
+            "description" : "Et individs kjønn til administrativt bruk.",
+            "comment" : "Dette elementet tilsvarer det systemer flest bruker for å beskrive 'Kjønn' per i dag. For eksempel 'Mann', 'Kvinne', 'Annet'. I Norge vil det være \"Juridisk kjønn\" som skal brukes, siden det som regel er samsvar mellom personnummerts kjønn og administrativt kjønn. Begge de to kan bli brukt til praktiske formål, så som rapportering eller tildele sengeplass på en sengepost. \"Administrativt kjønn\" sammenfaller med HL7 FHIRs 'Person.gender'. Det bør om mulig benyttes terminologi for å angi administrativt kjønn."
           }
         },
         "en" : {
@@ -1344,6 +1400,20 @@
             "code" : "at0000.1",
             "text" : "Gender",
             "description" : "Detailed description of the gender of an individual."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Legal gender",
+            "description" : "The gender of an individual used for official or legal purposes.",
+            "comment" : "For example: identification documents such as birth certificate or passport."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Administrative gender",
+            "description" : "The gender of an individual used for administrative purposes.",
+            "comment" : "This element is what most systems today describes as 'Sex' or 'Gender'. For example 'Male', 'Female', 'Other'. This will normally be used for practical purposes such as reporting or assigning a bed in a hospital ward. This aligns with HL7 FHIR 'Person.gender'. Coding with a terminology is recommended, where possible."
           }
         }
       },
@@ -6701,7 +6771,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Hjärtsjukdom",
+            "text" : "Ingen Hjärtsjukdom",
             "description" : "A statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."
           }
         },
