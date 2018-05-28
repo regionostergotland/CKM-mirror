@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "31a20404b32a7e8d7555bad284f8e2f4",
+      "MD5-CAM-1.0.1" : "8833b2999bc6a0ef8fdbb5236deead21",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -1597,6 +1597,51 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0032",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0070.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -1674,9 +1719,21 @@
             "text" : "*Diagnostic certainty(en)",
             "description" : "*The level of confidence in the identification of the diagnosis.(en)"
           },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Última actualización",
+            "description" : "Fecha en la que el problema/diagnóstico fue actualizado"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1756,9 +1813,21 @@
             "text" : "Certeza diagnóstica",
             "description" : "El nivel de certeza de la identificación del diagnóstico."
           },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Última actualización.",
+            "description" : "La fecha de la última actualización de este problema o diagnóstico."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1837,9 +1906,21 @@
             "text" : "*Diagnostic certainty(en)",
             "description" : "*The level of confidence in the identification of the diagnosis.(en)"
           },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "*Last updated(en)",
+            "description" : "*The date this problem or diagnosis was last updated.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1919,9 +2000,21 @@
             "text" : "Grad av säkerhet",
             "description" : "The level of confidence in the identification of the diagnosis."
           },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Last updated",
+            "description" : "The date this problem or diagnosis was last updated."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -2000,9 +2093,21 @@
             "text" : "*Diagnostic certainty(en)",
             "description" : "*The level of confidence in the identification of the diagnosis.(en)"
           },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "*Last updated(en)",
+            "description" : "*The date this problem or diagnosis was last updated.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -2082,9 +2187,21 @@
             "text" : "Certeza do diagnóstico",
             "description" : "O nível de confiança da identificação do diagnóstico."
           },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Ultima atualização",
+            "description" : "A data este problema ou diagnóstico foi atualizado pela última vez."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -2163,9 +2280,21 @@
             "text" : "Diagnostisk sikkerhet",
             "description" : "Grad av sikkerhet i identifikasjonen av diagnosen."
           },
+          "at0070.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0070.1",
+            "text" : "Sist oppdatert",
+            "description" : "Datoen da problemet eller diagnosen sist ble oppdatert."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
