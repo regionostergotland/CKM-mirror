@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "3c4fc4702b559e4582947f82670db35f",
+      "MD5-CAM-1.0.1" : "a289e9a8a9f750c3c6eccca3fc53f126",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -408,7 +408,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..1",
+              "occurrences" : "1..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -710,6 +710,10 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
+                  "defaultValue" : {
+                    "value" : "Patienten har fått information om planerad kirurgisk åtgärd. Patienten har samtyckt till planerad kirurgisk åtgärd. Patienten har i möjligaste mån varit delaktig i beslutet. Patienten har om aktuellt fått möjlighet att välja behandling.",
+                    "@type" : "DV_TEXT"
+                  },
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -763,10 +767,10 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
-                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_STRING",
-                      "constraint" : [ "Patienten har fått information, varit delaktig i beslutet samt samtycker till beslutet.", "Patienten kunde inte tillfrågas om samtycke." ]
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja, patienten samtycker till beslutet.", "Nej, patienten samtycker inte till beslutet.", "Patienten kunde inte tillfrågas om samtycke." ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -982,7 +986,7 @@
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
-            "text" : "Procedure/Trial/Activity",
+            "text" : "Samtycke till beslut om kirurgi",
             "description" : "Identification of the procedure, clinical trial or healthcare-related activity (including correct side/correct site, where appropriate) against which the consent status and details are recorded."
           },
           "at0030.1" : {
@@ -1000,7 +1004,7 @@
           "at0011.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0011.1",
-            "text" : "Beskrivning av samtycke",
+            "text" : "Beskrivning av patientens samtycke",
             "description" : "Narrative description of the informed consent required or recorded prior to performing the proposed procedure, clinical trial or healthcare-related activity."
           },
           "at0007.1" : {
