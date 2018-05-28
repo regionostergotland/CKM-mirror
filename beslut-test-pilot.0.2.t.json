@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "46569ae967b81e0ccd22f0cb49d14c6d",
+      "MD5-CAM-1.0.1" : "7f819736c12af4efbf7fab5daa1cef7e",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -1371,16 +1371,15 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
+                  "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
+                    "rmAttributeName" : "value",
                     "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "constraint" : [ "ac0.10" ],
-                      "selectedTerminologies" : [ ]
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "C64.9 Njurcancer", "C65.9 Njurbäckencancer", "N20.0 Njursten", "N13.0 Obstruktion i PUJ", "N20.1 Uretärsten", "C67.9 Urinblåsecancer", "N21.0 Blåssten", "N32.0 Blåshalsscleros", "N31.9 Blåsfunktionsrubbning", "N99.1 Uretrastriktur postop", "N35.9 Uretrastriktur UNS", "C61.9 Prostatacancer", "N40.9 Prostatahyperplassi" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
