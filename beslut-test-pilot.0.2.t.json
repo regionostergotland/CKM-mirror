@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "b0302db58c2bef2dd4efa58adcd2888f",
+      "MD5-CAM-1.0.1" : "46569ae967b81e0ccd22f0cb49d14c6d",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -2604,15 +2604,15 @@
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
-                        "existence" : "1..1",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "at0136", "at0137", "at0138" ]
+                          "constraint" : [ "ac0.9" ],
+                          "selectedTerminologies" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -2620,7 +2620,15 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_TEXT",
                       "occurrences" : "1..1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "Omedelbart", "Inom 2 timmar", "Inom 6 timmar", "Inom 24 timmar", "Inom 1 vecka", "Inom 2 veckor", "Inom 4 veckor", "Inom 8 veckor", "Enligt SVF" ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -3389,6 +3397,12 @@
             "text" : "Information description",
             "description" : "Description of the supplementary information."
           },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.9",
+            "description" : "*"
+          },
           "at0009" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009",
@@ -3633,6 +3647,12 @@
             "text" : "Informasjonsbeskrivelse",
             "description" : "Beskrivelse av den supplerende informasjonen."
           },
+          "ac0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.9",
+            "description" : "*"
+          },
           "at0009" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009",
@@ -3643,7 +3663,53 @@
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "03f9b2cd-9c9f-471d-b6d5-8740b9638a03",
