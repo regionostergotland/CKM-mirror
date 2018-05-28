@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3285285b2a559ac98d87607030a8b7b2",
+      "MD5-CAM-1.0.1" : "18888c454db23972d17ca31510fd7b90",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -444,7 +444,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Encounter",
+          "text" : "Hälsodeklaration inför anestesi",
           "description" : "Interaction, contact or care event between a subject of care and healthcare provider(s)."
         },
         "at0.2" : {
@@ -1444,7 +1444,76 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0026.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0019.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0025.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0020.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "value",
@@ -1485,6 +1554,34 @@
             "text" : "Administrativt kjønn",
             "description" : "Et individs kjønn til administrativt bruk.",
             "comment" : "Dette elementet tilsvarer det systemer flest bruker for å beskrive 'Kjønn' per i dag. For eksempel 'Mann', 'Kvinne', 'Annet'. I Norge vil det være \"Juridisk kjønn\" som skal brukes, siden det som regel er samsvar mellom personnummerts kjønn og administrativt kjønn. Begge de to kan bli brukt til praktiske formål, så som rapportering eller tildele sengeplass på en sengepost. \"Administrativt kjønn\" sammenfaller med HL7 FHIRs 'Person.gender'. Det bør om mulig benyttes terminologi for å angi administrativt kjønn."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Kjønnsidentitet",
+            "description" : "Individets oppfatning av eget kjønn.",
+            "comment" : "For eksempel 'kvinne', 'mann', 'ikke-binær', 'transmann', 'transkvinne' eller 'flerkjønnet'. Det bør om mulig benyttes terminologi for å angi kjønnsidentitet."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Foretrukket pronomen",
+            "description" : "Pronomenet som individet ønsker å identifiseres med og brukt når andre snakker om individet.",
+            "comment" : "For eksempel: 'Hun', 'Han,' Hen'. Det bør om mulig benyttes terminologi for å angi pronomen."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Kjønnsuttrykk",
+            "description" : "Individets kjønnsmessige fremtoning og kjønnsuttrykk, basert på oppførsel, tale, i klesveien eller andre ytre karakteristika.",
+            "comment" : "For eksempel 'Maskulin', 'Feminin' eller 'Androgyn'. Eller en fritekstbeskrivelse."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Anatomisk kjønn",
+            "description" : "Kjønnet til et individ, bestemt på bakgrunn av anatomiske karakteristika.",
+            "comment" : "For eksempel: 'Mann', 'Kvinne',' Ubestemmelig' eller 'Ikke spesifisert'. Det bør om mulig benyttes terminologi for å angi anatomisk kjønn. Skal man angi anatomisk eller biologisk kjønn ytterligere, for eksempel om 'hormonelt kjønn', kan man benytte elementet \"Kommentar\" eller SLOT'et \"Detaljer\" for dette. Hvordan elementet skal brukes, bør tydeliggjøres i brukergrensesnittet til systemer som tar denne arketypen i bruk."
           }
         },
         "en" : {
@@ -1507,6 +1604,34 @@
             "text" : "Administrative gender",
             "description" : "The gender of an individual used for administrative purposes.",
             "comment" : "This element is what most systems today describes as 'Sex' or 'Gender'. For example 'Male', 'Female', 'Other'. This will normally be used for practical purposes such as reporting or assigning a bed in a hospital ward. This aligns with HL7 FHIR 'Person.gender'. Coding with a terminology is recommended, where possible."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Gender identity",
+            "description" : "The personal perception of the individual’s own gender.",
+            "comment" : "For example: 'woman'; 'man'; 'non-binary'; 'trans man'; 'trans woman' or 'pangender'. Coding with a terminology is recommended, where possible."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Preferred pronoun",
+            "description" : "The pronoun an individual chooses to identify with, and would prefer others to use when talking to or about that individual.",
+            "comment" : "For example: 'she'; 'he'; 'ze'. Coding with a terminology is recommended, where possible."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Gender expression",
+            "description" : "The expression of the gender by the individual as demonstrated by behaviour, speech, clothes or other external characteristics.",
+            "comment" : "For example 'Masculine', 'Feminine' or 'Androgynous'. Or a narrative description."
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Anatomical sex",
+            "description" : "The sex of an individual determined by anatomical characteristics.",
+            "comment" : "For example: 'Male', 'Female', 'Intersex'. Coding with a terminology is recommended, where possible. Use the element 'Comment' or the SLOT 'Details' if needed to register more specific details of the individuals gender."
           }
         }
       },
