@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "5acb312440be6c065e3dc2fbda45e053",
+      "MD5-CAM-1.0.1" : "2e024d004a88ec86894fb4c60b861167",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -207,6 +207,15 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-001.v1",
         "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ACTION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.10",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-decisionprocess-001.v0",
+        "referenceType" : "archetypeOverlay"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -263,6 +272,12 @@
           "code" : "at0.8",
           "text" : "EVALUATION",
           "description" : "*"
+        },
+        "at0.10" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.10",
+          "text" : "ACTION",
+          "description" : "*"
         }
       },
       "ar-sy" : {
@@ -312,6 +327,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.8",
           "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.10" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.10",
+          "text" : "ACTION",
           "description" : "*"
         }
       }
@@ -675,7 +696,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Patientens samtycke",
+            "text" : "Samtycke",
             "description" : "Record of status and details of informed consent from a patient (or patient's agent) for a proposed procedure, trial or other healthcare-related activity (including treatments and investigations), based upon a clear appreciation and understanding of the facts, implications, and possible future consequences by the patient or patient's agent."
           },
           "at0002.1" : {
@@ -2741,6 +2762,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0068.2",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -2752,15 +2774,15 @@
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
-                        "existence" : "1..1",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "at0136", "at0137", "at0138" ]
+                          "constraint" : [ "ac0.10" ],
+                          "selectedTerminologies" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -2776,6 +2798,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0040.2",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -3036,7 +3059,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Åtgärdsbeskrivning",
+            "text" : "Åtgärd",
             "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency."
           },
           "at0148.1" : {
@@ -3288,6 +3311,12 @@
             "text" : "Request status",
             "description" : "The status of the request for service as indicated by the requester.",
             "comment" : "Status is used to denote whether this is the initial request, or a follow-up request to change or provide supplementary information."
+          },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.10",
+            "description" : "*"
           },
           "at0011.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3566,6 +3595,12 @@
             "description" : "Status for forespørselen oppgitt av rekvirenten.",
             "comment" : "Status brukes for å vise om dette er den primære forespørselen, en endring eller supplerende informasjon."
           },
+          "ac0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.10",
+            "description" : "*"
+          },
           "at0011.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0011.1",
@@ -3633,6 +3668,11 @@
         "ac0.9" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.9",
+          "members" : [ "at0136", "at0137", "at0138" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
           "members" : [ "at0136", "at0137", "at0138" ]
         }
       }
@@ -4157,23 +4197,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.1.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0.2.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -4188,7 +4211,7 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "Namn 1", "Namn 2", "Namn 3" ]
+                      "constraint" : [ "Namn 1", "Namn 2", "Namn 3", "Mitt namn" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -4205,6 +4228,23 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.1.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -4294,13 +4334,13 @@
           "at0003.1.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1.1",
-            "text" : "Kommentar till beslutet",
+            "text" : "Kommentar",
             "description" : "Justifications for the decision."
           },
           "at0.2.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.2.1",
-            "text" : "Beslutsfattare, om annan än...",
+            "text" : "Beslutat av",
             "description" : "The identity of the clinician that is responsible for the decision."
           },
           "at0.1.1" : {
@@ -4535,6 +4575,91 @@
         "organisation" : "Hospital Sirio Libanes, Brazil",
         "email" : "vladimir.pizzo@hsl.org.br"
       },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "ba5861cc-17f1-4848-8d2d-f07dcec497ab",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "06871bca82aa847fda02709bd55a113a"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ACTION.decisionprocess.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ACTION.ovl-decisionprocess-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ACTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "description",
+        "existence" : "1..1",
+        "children" : [ ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Decision process",
+            "description" : "Decisionprocess"
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Beslutsunderlag",
+            "description" : "*Decisionprocess (en)"
+          }
+        }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0000.1" : "term:SNOMED-CT::405083000"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a84ee44b-5337-3022-b3f0-eede714c3ded",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : { },
       "otherDetails" : { }
     } ]
   } ],
