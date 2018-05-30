@@ -1,0 +1,106 @@
+archetype (adl_version=1.4; uid=53402d26-00d2-4c00-866f-226333c48324)
+    openEHR-EHR-ACTION.decisionprocess.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2018-05-30">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["MD5-CAM-1.0.1"] = <"730e25277ba3750d24924a6d86065023">
+        ["build_uid"] = <"a84ee44b-5337-3022-b3f0-eede714c3ded">
+    >
+
+definition
+    ACTION[at0000] matches {
+        ism_transition matches {
+            ISM_TRANSITION[at0001] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::524]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0001]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0002] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::526]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0002]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0003] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::524]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0003]
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["en"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Decision process">
+                    description = <"Decisionprocess">
+                >
+                ["at0001"] = <
+                    text = <"Initially created">
+                    description = <"A partially empty initial decision document has been created, but no further edits have been recorded.">
+                >
+                ["at0002"] = <
+                    text = <"Commenced investigations">
+                    description = <"Commenced documentation of pre-decision investigations">
+                >
+                ["at0003"] = <
+                    text = <"Decision recorded">
+                    description = <"*">
+                >
+            >
+        >
+    >
