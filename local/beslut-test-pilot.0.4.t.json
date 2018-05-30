@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "cd729db7eca7039ef3cb9cb4d50144bf",
+      "MD5-CAM-1.0.1" : "7520eb40226168371c77911ecaaddb1a",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -2400,26 +2400,6 @@
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "occurrences" : "1..1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "existence" : "1..1",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "local"
-                          },
-                          "constraint" : [ "ac0.9" ],
-                          "selectedTerminologies" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_TEXT",
                       "occurrences" : "1..1",
                       "attributes" : [ {
@@ -3060,7 +3040,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Åtgärd",
+            "text" : "Åtgärder",
             "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency."
           },
           "at0148.1" : {
@@ -3292,12 +3272,6 @@
             "code" : "at0078.2",
             "text" : "Information description",
             "description" : "Description of the supplementary information."
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.9",
-            "description" : "*"
           },
           "at0010.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3575,12 +3549,6 @@
             "code" : "at0078.2",
             "text" : "Informasjonsbeskrivelse",
             "description" : "Beskrivelse av den supplerende informasjonen."
-          },
-          "ac0.9" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.9",
-            "description" : "*"
           },
           "at0010.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4140,7 +4108,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "9115db17212ab1ad1625f8f8035db406"
+        "PARENT:MD5-CAM-1.0.1" : "194e118affd4dd740f934d568483420f"
       },
       "details" : {
         "nb" : {
@@ -4408,6 +4376,13 @@
             "text" : "Datum för beslut",
             "description" : "The date when the decision was taken.",
             "comment" : "The decision date may differ from the documentation date."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Recommendation",
+            "description" : "Description of the decision.",
+            "comment" : "May be coded, using a terminology, if required."
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
