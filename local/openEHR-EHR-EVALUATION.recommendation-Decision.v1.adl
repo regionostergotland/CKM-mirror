@@ -90,7 +90,7 @@ For example, as a component of the conclusions drawn as part of a clinical consu
         ["original_namespace"] = <"org.openehr">
         ["original_publisher"] = <"openEHR Foundation">
         ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"146e0db15ccfb9d9c94ebdd625a5e926">
+        ["MD5-CAM-1.0.1"] = <"9115db17212ab1ad1625f8f8035db406">
         ["build_uid"] = <"dd2693ed-e1c9-4d58-a990-0aaca1c8f56a">
         ["revision"] = <"1.1.1">
     >
@@ -100,7 +100,7 @@ definition
         data matches {
             ITEM_TREE[at0001] matches {
                 items cardinality matches {0..*; unordered} matches {
-                    ELEMENT[at0002.1] occurrences matches {0..1} matches {
+                    ELEMENT[at0002.1] occurrences matches {0..*} matches {
                         value matches {
                             DV_TEXT matches {*}
                         }
@@ -126,7 +126,7 @@ definition
         protocol matches {
             ITEM_TREE[at0004] matches {
                 items cardinality matches {0..*; unordered} matches {
-                    ELEMENT[at0.3] occurrences matches {0..1} matches {
+                    ELEMENT[at0.3] occurrences matches {0..*} matches {
                         value matches {
                             DV_MULTIMEDIA matches {
                                 media_type matches {
@@ -192,7 +192,7 @@ ontology
                     description = <"The identity of the clinician that is responsible for the decision.">
                 >
                 ["at0.3"] = <
-                    text = <"Previous decisions">
+                    text = <"Previous decision">
                     description = <"Links to previously saved versions of the decision.">
                 >
                 ["at0002.1"] = <
