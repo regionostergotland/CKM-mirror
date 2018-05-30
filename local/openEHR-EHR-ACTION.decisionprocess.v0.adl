@@ -6,6 +6,13 @@ concept
 
 language
     original_language = <[ISO_639-1::en]>
+    translations = <
+        ["sv"] = <
+            language = <[ISO_639-1::sv]>
+            author = <
+            >
+        >
+    >
 
 description
     original_author = <
@@ -13,6 +20,10 @@ description
     >
     lifecycle_state = <"unmanaged">
     details = <
+        ["sv"] = <
+            language = <[ISO_639-1::sv]>
+            copyright = <"© openEHR Foundation">
+        >
         ["en"] = <
             language = <[ISO_639-1::en]>
         >
@@ -23,7 +34,7 @@ description
         ["original_namespace"] = <"org.openehr">
         ["original_publisher"] = <"openEHR Foundation">
         ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"730e25277ba3750d24924a6d86065023">
+        ["MD5-CAM-1.0.1"] = <"06871bca82aa847fda02709bd55a113a">
         ["build_uid"] = <"a84ee44b-5337-3022-b3f0-eede714c3ded">
     >
 
@@ -66,7 +77,7 @@ definition
                 current_state matches {
                     DV_CODED_TEXT matches {
                         defining_code matches {
-                            [openehr::524]
+                            [openehr::245]
                         }
                     }
                 }
@@ -78,10 +89,27 @@ definition
                     }
                 }
             }
+            ISM_TRANSITION[at0004] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::526]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0004]
+                        }
+                    }
+                }
+            }
         }
     }
 
 ontology
+    terminologies_available = <"SNOMED-CT", ...>
     term_definitions = <
         ["en"] = <
             items = <
@@ -99,8 +127,43 @@ ontology
                 >
                 ["at0003"] = <
                     text = <"Decision recorded">
-                    description = <"*">
+                    description = <"A decision has been recorded">
                 >
+                ["at0004"] = <
+                    text = <"Reopened investigations">
+                    description = <"A decision had been recorded, but new circumstances indicate a need for new investigations and/or decisions.">
+                >
+            >
+        >
+        ["sv"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Beslutsunderlag">
+                    description = <"*Decisionprocess (en)">
+                >
+                ["at0001"] = <
+                    text = <"Skapad">
+                    description = <"Ett delvis tomt beslutsunderlag har skapats, men inga ytterligare redigeringar har sparats.">
+                >
+                ["at0002"] = <
+                    text = <"Pågående">
+                    description = <"Beslutsunderlaget har börjat fyllas i">
+                >
+                ["at0003"] = <
+                    text = <"Beslutad">
+                    description = <"Ett beslut har fattats och underlaget sparats.">
+                >
+                ["at0004"] = <
+                    text = <"Återöppnad">
+                    description = <"Ett beslut hade redan registrerats, men nytillkomna omständigheter gör att vidare undersökning och/eller nytt belsut krävs. ">
+                >
+            >
+        >
+    >
+    term_binding = <
+        ["SNOMED-CT"] = <
+            items = <
+                ["at0000"] = <[SNOMED-CT::405083000]>
             >
         >
     >
