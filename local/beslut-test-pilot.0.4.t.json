@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "f9333f53918aceec5c3e417a9fc0f9a7",
+      "MD5-CAM-1.0.1" : "452a9a081de8306cc0067d6f3b7760aa",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -166,10 +166,10 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
         "occurrences" : "0..*",
-        "nodeId" : "at0.1",
+        "nodeId" : "at0.7",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-000.v1",
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-Decision-001.v1",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
@@ -222,12 +222,6 @@
           "text" : "Request for service",
           "description" : "Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care."
         },
-        "at0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.1",
-          "text" : "EVALUATION",
-          "description" : "*"
-        },
         "at0.2" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.2",
@@ -262,6 +256,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0042",
           "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.7",
+          "text" : "EVALUATION",
           "description" : "*"
         }
       },
@@ -272,12 +272,6 @@
           "text" : "*Request for service(en)",
           "description" : "*Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care.(en)"
         },
-        "at0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.1",
-          "text" : "EVALUATION",
-          "description" : "*"
-        },
         "at0.2" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.2",
@@ -312,6 +306,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0042",
           "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.7",
+          "text" : "EVALUATION",
           "description" : "*"
         }
       }
@@ -328,327 +328,6 @@
   "templateId" : "beslut-test-pilot.0.4",
   "otherMetaData" : { },
   "templateOverlays" : [ {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "1acecc29-89c0-4733-833d-162b576f40dc",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "CFB4C8C091ABC7ACFBE46AF0DAFFE54B"
-      },
-      "details" : {
-        "es-ar" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "es-ar"
-          },
-          "purpose" : "Para el registro de una sugerencia, consejo o propuesta para el manejo clínico en un momento determinado.",
-          "keywords" : [ "consejo", "propuesta", "sugerencia" ],
-          "use" : "Utilícese para registrar una sugerencia, consejo o propuesta para el manejo clínico en un momento específico.\r\n\r\nEl caso de uso previsto se vincula a permitir el registro por parte del clínico de una o mas recomendaciones, en un mento específico en el tiempo. Por ejemplo, como un componente de las conclusiones a las que se ha arribado como parte de una consutla clínica.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "Anvendes for å registrere et forslag, et råd eller en anmodning om klinisk oppfølging på et spesifikt tidspunkt.",
-          "keywords" : [ "råd", "forslag", "anmodning", "tilråde", "tilrådning", "instruks" ],
-          "use" : "Anvendes for å registrere et forslag, et råd eller en anmodning om klinisk oppfølging på et spesifikt tidspunkt.\r\n\r\nArketypen er ment å understøtte klinikere som dokumenterer en eller flere anbefalinger på et spesifikt tidspunkt.\r\nAnbefalingen kan for eksempel benyttes som en del av dokumentasjonen av konklusjonene som trekkes i forbindelse med en klinisk konsultasjon.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "pt-br" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "pt-br"
-          },
-          "purpose" : "Registrar uma sugestão, conselho ou proposta de manejo clínico num tempo específico.",
-          "keywords" : [ "conselho", "proposta", "sugestão" ],
-          "use" : "Utilizar para registrar uma sugestão, conselho ou proposta de manejo clínico num tempo específico.\r\n\r\nO caso de uso pretendido é apoiar o registro clínico de uma recomendação, ou recomendações, num ponto específico no tempo.\r\nPor exemplo, como um componente das conclusões tiradas como parte de uma consulta clínica.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record a suggestion, advice or proposal for clinical management at a specific time.",
-          "keywords" : [ "advice", "proposal", "suggestion" ],
-          "use" : "Use to record a suggestion, advice or proposal for clinical management at a specific time.\r\n\r\nThe intended use case is to support a clinician recording a recommendation, or recommendations, at a specific point-in-time. \r\nFor example, as a component of the conclusions drawn as part of a clinical consultation.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.recommendation.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-recommendation-000.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "EVALUATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
-              "nodeId" : "at0002.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Ja, patienten ska genomgå kirurgi", "Nej, patienten ska inte genomgå kirurgi" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Beslut om kirurgi",
-            "description" : "A suggestion, advice or proposal for clinical management."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Beslut",
-            "description" : "Narrative description of the recommendation.",
-            "comment" : "May be coded, using a terminology, if required."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Kommentar",
-            "description" : "Justifications for the recommendation."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "es-ar" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Recomendación",
-            "description" : "Una sugerencia, consejo o propuesta para el manejo clínico."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Recomendación",
-            "description" : "Descripción narrativa de la recomendación",
-            "comment" : "Puede ser codificada mediante una terminología si así se lo requiere."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "*Rationale(en)",
-            "description" : "*Justifications for the recommendation.(en)"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "pt-br" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Recomendação",
-            "description" : "Uma sugestão, conselho ou proposta para manejo clínico."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Recomendação",
-            "description" : "Descrição narrativa da recomendação.",
-            "comment" : "Pode ser codificada, utilizando terminologia, se necessário."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Justificativa",
-            "description" : "Justificativa para a recomendação."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Anbefaling",
-            "description" : "Et forslag, råd eller anmodning om klinisk oppfølging."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Anbefaling",
-            "description" : "Fritekstbeskrivelse av anbefalingen.",
-            "comment" : "Det bør om mulig benyttes terminologi for å angi anbefaling."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Begrunnelse",
-            "description" : "Begrunnelse for anbefalingen."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "dd2693ed-e1c9-4d58-a990-0aaca1c8f56a",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "es-ar"
-      },
-      "author" : {
-        "name" : "Alan March",
-        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina",
-        "alandmarch@gmail.com" : "alandmarch@gmail.com",
-        "email" : "alandmarch@gmail.com"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Bjørn Grøva",
-        "organisation" : "Direktoratet for e-helse",
-        "email" : "bjorn.grova@ehelse.no"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-br"
-      },
-      "author" : {
-        "name" : "Vladimir Pizzo",
-        "organisation" : "Hospital Sirio Libanes, Brazil",
-        "email" : "vladimir.pizzo@hsl.org.br"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
     "@type" : "TEMPLATE_OVERLAY",
     "uid" : "b016cdb3-d685-4f86-a623-dba44ebe1586",
     "description" : {
@@ -4339,6 +4018,356 @@
             "code" : "at0003.1",
             "text" : "Begrunnelse",
             "description" : "Begrunnelse for anbefalingen."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "dd2693ed-e1c9-4d58-a990-0aaca1c8f56a",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina",
+        "alandmarch@gmail.com" : "alandmarch@gmail.com",
+        "email" : "alandmarch@gmail.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Bjørn Grøva",
+        "organisation" : "Direktoratet for e-helse",
+        "email" : "bjorn.grova@ehelse.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sirio Libanes, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "6aa7f858-121d-4163-b1e8-a4a9c6da6e11",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "146e0db15ccfb9d9c94ebdd625a5e926"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.recommendation-Decision.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-recommendation-Decision-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja, patienten ska genomgå kirurgi", "Nej, patienten ska inte genomgå kirurgi" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0003.1.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.2.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Namn 1", "Namn 2", "Namn 3" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.1.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000.1",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1",
+            "text" : "Beslut om kirurgi",
+            "description" : "A decision on clinical management."
+          },
+          "at0002.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1.1",
+            "text" : "Beslut om kirurgi",
+            "description" : "Description of the decision.",
+            "comment" : "May be coded, using a terminology, if required."
+          },
+          "at0003.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1.1",
+            "text" : "Kommentar till beslutet",
+            "description" : "Justifications for the decision."
+          },
+          "at0.2.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2.1",
+            "text" : "Beslutsfattare, om annan än  ...",
+            "description" : "The identity of the clinician that is responsible for the decision."
+          },
+          "at0.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1.1",
+            "text" : "Datum för beslut",
+            "description" : "The date when the decision was taken.",
+            "comment" : "The decision date may differ from the documentation date."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "es-ar" : {
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1",
+            "text" : "Recomendación",
+            "description" : "Una sugerencia, consejo o propuesta para el manejo clínico."
+          },
+          "at0002.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1.1",
+            "text" : "Recomendación",
+            "description" : "Descripción narrativa de la recomendación",
+            "comment" : "Puede ser codificada mediante una terminología si así se lo requiere."
+          },
+          "at0003.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1.1",
+            "text" : "*Rationale(en)",
+            "description" : "*Justifications for the recommendation.(en)"
+          },
+          "at0.2.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2.1",
+            "text" : "*DV_TEXT (en)",
+            "description" : "*"
+          },
+          "at0.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1.1",
+            "text" : "*DV_DATE_TIME (en)",
+            "description" : "*"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "pt-br" : {
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1",
+            "text" : "Recomendação",
+            "description" : "Uma sugestão, conselho ou proposta para manejo clínico."
+          },
+          "at0002.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1.1",
+            "text" : "Recomendação",
+            "description" : "Descrição narrativa da recomendação.",
+            "comment" : "Pode ser codificada, utilizando terminologia, se necessário."
+          },
+          "at0003.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1.1",
+            "text" : "Justificativa",
+            "description" : "Justificativa para a recomendação."
+          },
+          "at0.2.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2.1",
+            "text" : "*DV_TEXT (en)",
+            "description" : "*"
+          },
+          "at0.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1.1",
+            "text" : "*DV_DATE_TIME (en)",
+            "description" : "*"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1.1",
+            "text" : "Anbefaling",
+            "description" : "Et forslag, råd eller anmodning om klinisk oppfølging."
+          },
+          "at0002.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1.1",
+            "text" : "Anbefaling",
+            "description" : "Fritekstbeskrivelse av anbefalingen.",
+            "comment" : "Det bør om mulig benyttes terminologi for å angi anbefaling."
+          },
+          "at0003.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1.1",
+            "text" : "Begrunnelse",
+            "description" : "Begrunnelse for anbefalingen."
+          },
+          "at0.2.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2.1",
+            "text" : "*DV_TEXT (en)",
+            "description" : "*"
+          },
+          "at0.1.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1.1",
+            "text" : "*DV_DATE_TIME (en)",
+            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
