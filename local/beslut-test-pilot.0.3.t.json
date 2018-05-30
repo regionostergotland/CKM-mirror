@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "8833b2999bc6a0ef8fdbb5236deead21",
+      "MD5-CAM-1.0.1" : "2a9c5abb1198d67b9959171126b097e2",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -219,7 +219,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "Beslut om kirurgi",
+          "text" : "Request for service",
           "description" : "Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care."
         },
         "at0.1" : {
@@ -483,7 +483,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Beslut",
+            "text" : "Beslut om kirurgi",
             "description" : "A suggestion, advice or proposal for clinical management."
           },
           "at0002.1" : {
@@ -785,15 +785,7 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Ja, patienten samtycker till beslutet.", "Nej, patienten samtycker inte till beslutet.", "Patienten kunde inte tillfrågas om samtycke." ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -801,6 +793,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0004.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -812,15 +805,15 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
-                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "at0005", "at0006" ]
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1001,7 +994,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Samtycke",
+            "text" : "Patientens samtycke",
             "description" : "Record of status and details of informed consent from a patient (or patient's agent) for a proposed procedure, trial or other healthcare-related activity (including treatments and investigations), based upon a clear appreciation and understanding of the facts, implications, and possible future consequences by the patient or patient's agent."
           },
           "at0002.1" : {
@@ -1025,7 +1018,7 @@
           "at0011.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0011.1",
-            "text" : "Beskrivning av patientens samtycke",
+            "text" : "Beskrivning av samtycke",
             "description" : "Narrative description of the informed consent required or recorded prior to performing the proposed procedure, clinical trial or healthcare-related activity."
           },
           "at0007.1" : {
@@ -1083,6 +1076,12 @@
             "code" : "at0004.1",
             "text" : "Typ av samtycke",
             "description" : "Form of the consent sought or provided."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1184,6 +1183,12 @@
             "text" : "Форма согласия",
             "description" : "Форма согласия"
           },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1200,7 +1205,13 @@
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0005", "at0006" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "faa091cc-551b-43cb-9068-60ff719a25e6",
