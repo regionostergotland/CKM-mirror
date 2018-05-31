@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "74f54b5a209a5a7ff8505dd9d53c0568",
+      "MD5-CAM-1.0.1" : "be2cb799b7b72ffd96d6c5161f705a3f",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -315,21 +315,12 @@
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "OBSERVATION",
+        "rmTypeName" : "SECTION",
         "occurrences" : "0..*",
-        "nodeId" : "at0.13",
+        "nodeId" : "at0.5",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-story-002.v1",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "OBSERVATION",
-        "occurrences" : "0..*",
-        "nodeId" : "at0.15",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-story-003.v1",
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -388,18 +379,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -412,16 +391,22 @@
           "text" : "OBSERVATION",
           "description" : "*"
         },
-        "at0.13" : {
+        "at0001" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.13",
-          "text" : "OBSERVATION",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
           "description" : "*"
         },
-        "at0.15" : {
+        "at0002" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.15",
-          "text" : "OBSERVATION",
+          "code" : "at0002",
+          "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "SECTION",
           "description" : "*"
         }
       },
@@ -474,18 +459,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -498,16 +471,22 @@
           "text" : "OBSERVATION",
           "description" : "*"
         },
-        "at0.13" : {
+        "at0001" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.13",
-          "text" : "OBSERVATION",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
           "description" : "*"
         },
-        "at0.15" : {
+        "at0002" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.15",
-          "text" : "OBSERVATION",
+          "code" : "at0002",
+          "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "SECTION",
           "description" : "*"
         }
       },
@@ -560,18 +539,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -584,16 +551,22 @@
           "text" : "OBSERVATION",
           "description" : "*"
         },
-        "at0.13" : {
+        "at0001" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.13",
-          "text" : "OBSERVATION",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
           "description" : "*"
         },
-        "at0.15" : {
+        "at0002" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.15",
-          "text" : "OBSERVATION",
+          "code" : "at0002",
+          "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "SECTION",
           "description" : "*"
         }
       },
@@ -646,18 +619,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -670,16 +631,22 @@
           "text" : "OBSERVATION",
           "description" : "*"
         },
-        "at0.13" : {
+        "at0001" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.13",
-          "text" : "OBSERVATION",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
           "description" : "*"
         },
-        "at0.15" : {
+        "at0002" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.15",
-          "text" : "OBSERVATION",
+          "code" : "at0002",
+          "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "SECTION",
           "description" : "*"
         }
       },
@@ -732,18 +699,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -756,16 +711,22 @@
           "text" : "OBSERVATION",
           "description" : "*"
         },
-        "at0.13" : {
+        "at0001" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.13",
-          "text" : "OBSERVATION",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
           "description" : "*"
         },
-        "at0.15" : {
+        "at0002" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.15",
-          "text" : "OBSERVATION",
+          "code" : "at0002",
+          "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "SECTION",
           "description" : "*"
         }
       },
@@ -818,18 +779,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -842,16 +791,22 @@
           "text" : "OBSERVATION",
           "description" : "*"
         },
-        "at0.13" : {
+        "at0001" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.13",
-          "text" : "OBSERVATION",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
           "description" : "*"
         },
-        "at0.15" : {
+        "at0002" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.15",
-          "text" : "OBSERVATION",
+          "code" : "at0002",
+          "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "SECTION",
           "description" : "*"
         }
       },
@@ -904,18 +859,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -928,16 +871,22 @@
           "text" : "OBSERVATION",
           "description" : "*"
         },
-        "at0.13" : {
+        "at0001" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.13",
-          "text" : "OBSERVATION",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
           "description" : "*"
         },
-        "at0.15" : {
+        "at0002" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.15",
-          "text" : "OBSERVATION",
+          "code" : "at0002",
+          "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "SECTION",
           "description" : "*"
         }
       },
@@ -990,18 +939,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0002" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0002",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -1014,16 +951,22 @@
           "text" : "OBSERVATION",
           "description" : "*"
         },
-        "at0.13" : {
+        "at0001" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.13",
-          "text" : "OBSERVATION",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
           "description" : "*"
         },
-        "at0.15" : {
+        "at0002" : {
           "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.15",
-          "text" : "OBSERVATION",
+          "code" : "at0002",
+          "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "SECTION",
           "description" : "*"
         }
       }
@@ -2128,6 +2071,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2164,6 +2108,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2200,6 +2145,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2744,6 +2690,133 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0003",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0006.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "local"
+                          },
+                          "constraint" : [ "ac0.1" ],
+                          "selectedTerminologies" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0004.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DURATION",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_DURATION",
+                          "rmTypeName" : "DURATION",
+                          "occurrences" : "1..1",
+                          "patternedConstraint" : "PYMWD",
+                          "constraint" : [ {
+                            "lower" : "PT0S",
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : true,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : false
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0005.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DURATION",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_DURATION",
+                          "rmTypeName" : "DURATION",
+                          "constraint" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0009.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
               "occurrences" : "0..0",
               "nodeId" : "at0007.1",
@@ -2757,6 +2830,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_DURATION",
                       "rmTypeName" : "DURATION",
@@ -2784,6 +2858,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_DURATION",
                       "rmTypeName" : "DURATION",
@@ -2811,6 +2886,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_DURATION",
                       "rmTypeName" : "DURATION",
@@ -2865,17 +2941,60 @@
             "text" : "Description",
             "description" : "Narrative description about the overall feeding history for the infant."
           },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the feeding activity not captured in other fields."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Age Ceased",
+            "description" : "The age of the infant when the selected type of feeding was ceased."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Age Commenced",
+            "description" : "The age of the infant when the selected type of feeding was commenced.",
+            "comment" : "If commenced at birth, which will be recorded as 0 days, weeks or months, then this could be captured or displayed in a system as 'Birth'."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Type",
+            "description" : "The predominant type of feeding for a period of time."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "CLUSTER",
             "description" : "*"
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0011", "at0012", "at0013" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "2c250da0-33b1-47b6-8da8-e57f8430459c",
@@ -3233,6 +3352,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -4973,6 +5093,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -5049,6 +5170,195 @@
                       "@type" : "C_DATE_TIME",
                       "rmTypeName" : "DATE_TIME",
                       "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0010.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0012.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_MULTIMEDIA",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "media_type",
+                    "existence" : "1..1",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "openEHR"
+                      },
+                      "constraint" : [ "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "409", "410", "411", "412", "413", "425", "426", "427", "428", "429", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "401", "402", "404", "405", "406", "407", "414" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0024",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0025.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0026.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0033",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0032.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0035.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0034.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_MULTIMEDIA",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "media_type",
+                        "existence" : "1..1",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "openEHR"
+                          },
+                          "constraint" : [ "387", "388", "389", "390", "391", "392", "393", "394", "395", "396", "397", "398", "399", "400", "409", "410", "411", "412", "413", "425", "426", "427", "428", "429", "415", "416", "417", "418", "419", "420", "421", "422", "423", "424", "401", "402", "404", "405", "406", "407", "414" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -5188,10 +5498,66 @@
             "text" : "Planned",
             "description" : "Need for informed consent is identified."
           },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Caveat",
+            "description" : "Details of any qualifications or exemptions to the informed consent."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Evidence of Consent",
+            "description" : "Evidence of consent status.",
+            "comment" : "For example, audio of consent being requested or image of written consent obtained."
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Consent Document Used",
+            "description" : "Identification of the consent form or document used."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Review Date",
+            "description" : "Date when consent status is due for review."
+          },
+          "at0035.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035.1",
+            "text" : "Description",
+            "description" : "Narrative description of the patient information made available."
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034.1",
+            "text" : "Multimedia Representation",
+            "description" : "Digital representation of the Patient Information made available."
+          },
+          "at0032.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032.1",
+            "text" : "Name",
+            "description" : "Identification of the information made available.",
+            "comment" : "For example, the name of the form."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "CLUSTER",
             "description" : "*"
           }
         },
@@ -5317,10 +5683,65 @@
             "text" : "Запланировано",
             "description" : "Установлена необходимость в информированном согласии"
           },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Особые указания",
+            "description" : "Подробности по любым уточнениям информированного согласия"
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Доказательства согласия",
+            "description" : "Доказательства статуса согласия",
+            "comment" : "Например, фотография рукописного согласия или аудиозапись устного согласия"
+          },
+          "at0025.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.1",
+            "text" : "Используемый документ",
+            "description" : "Идентификатор формы или документа согласия"
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Дата пересмотра",
+            "description" : "Дата, когда статус согласия был изменен"
+          },
+          "at0035.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035.1",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description of the patient information made available.(en)"
+          },
+          "at0034.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034.1",
+            "text" : "*Multimedia Representation(en)",
+            "description" : "*Digital representation of the Patient Information made available.(en)"
+          },
+          "at0032.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032.1",
+            "text" : "*Name(en)",
+            "description" : "*Identification of the information made available.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "CLUSTER",
             "description" : "*"
           }
         }
@@ -5532,10 +5953,28 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
           "occurrences" : "0..*",
+          "nodeId" : "at0.8",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-002.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
           "nodeId" : "at0.3",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-003.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.9",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-003.v1",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -5550,10 +5989,28 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
           "occurrences" : "0..*",
+          "nodeId" : "at0.10",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-004.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
           "nodeId" : "at0.7",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-005.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.11",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-005.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -5611,6 +6068,30 @@
             "code" : "at0.7",
             "text" : "EVALUATION",
             "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.11",
+            "text" : "EVALUATION",
+            "description" : "*"
           }
         },
         "ru" : {
@@ -5659,6 +6140,30 @@
           "at0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.11",
             "text" : "EVALUATION",
             "description" : "*"
           }
@@ -5711,6 +6216,30 @@
             "code" : "at0.7",
             "text" : "EVALUATION",
             "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.11",
+            "text" : "EVALUATION",
+            "description" : "*"
           }
         },
         "sl" : {
@@ -5759,6 +6288,30 @@
           "at0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.11",
             "text" : "EVALUATION",
             "description" : "*"
           }
@@ -5811,6 +6364,30 @@
             "code" : "at0.7",
             "text" : "EVALUATION",
             "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.11",
+            "text" : "EVALUATION",
+            "description" : "*"
           }
         },
         "pt-br" : {
@@ -5859,6 +6436,30 @@
           "at0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.11" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.11",
             "text" : "EVALUATION",
             "description" : "*"
           }
@@ -6089,6 +6690,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -6914,6 +7516,30 @@
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.2" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -6926,29 +7552,6 @@
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
                       "constraint" : [ "Nej" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.2" ],
-                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -7363,7 +7966,37 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5E10897327D9590987FEC03C74491D10"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om et muntlig, skrevet eller tegnbasert system for kommunikasjon.",
+          "keywords" : [ "tegn", "tegnspråk", "tale", "morsmål" ],
+          "use" : "Brukes for å registrere detaljer om et muntlig, skrevet eller tegnbasert system for kommunikasjon.\r\n\r\nBrukes for eksempel for å registrere hvilket språk som er ønsket eller hvilket språk tolking ble gjennomført på i arketypen CLUSTER.interpreter_details.",
+          "copyright" : "© Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "For recording details about a spoken, written or symbolic system of communication.",
+          "keywords" : [ "signing", "sign language", "speake", "tongue" ],
+          "use" : "Use to record details about a spoken, written or symbolic system of communication.\r\n\r\nUse for example to record the requested or actual language for interpretation in the CLUSTER.interpreter_details archetype.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.language.v0",
     "differential" : true,
@@ -7579,7 +8212,56 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "5E5629536630883CC4D249A870E97041"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma visão geral sobre a história obstétrica de uma mulher para fins de: fornecimento de um informações de sua história obstétrica, para reportar a órgãos oficiais ou para apoio à decisão clínica.",
+          "keywords" : [ "Obstétrico", "Gravidez", "Paridade", "Gestante", "Gravida", "Abortamento induzido", "Aborto espontâneo", "Espontâneo", "Vivo", "Nascimentos", "Natimorto", "Cesariana", "Ectópica", "Neonatal", "Morte", "Tubária", "Vivo", "Múltiplo" ],
+          "use" : "Usar para registrar o panorama da história obstétrica de uma mulher, incluindo um resumo de todas as gestações e os resultados ou intervenções associadas.\r\n\r\nUtilizar, se adequado, como a base de relatórios legais sobre nascimentos.\r\n\r\nUsar para registrar a visão geral de uma história obstétrica, se necessário - o número de nascimentos a termo, nascimento prematuro, abortos e nascidos vivos. Algumas variações adicionam o número de gestações e o número de nascimentos múltiplos.\r\n\r\nAlguns dados podem ser calculados ou derivados de registros de gravidez individuais, se disponíveis.\r\n",
+          "misuse" : "Não utilizar para registrar informações de resumo sobre uma única gravidez – neste caso utilize EVALUATION.pregnancy_summary.\r\n\r\nNão utilizar para registrar informações detalhadas sobre episódios individuais de gravidez, abortos ou partos. Estas informação deverão ser registradas através de arquétipos específicos, baseados nos dados do evento.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record an overview about the obstetric history of a woman for purposes of: providing a snapshot of her obstetric history, reporting to statutory bodies or supporting clinical decision support.",
+          "keywords" : [ "obstetric", "pregnancy", "parity", "gravida", "para", "terminations", "miscarriages", "abortions", "spontaneous", "live", "births", "stillbirths", "caesarean", "ectopic", "neonatal", "death", "tubal", "living", "multiple" ],
+          "use" : "Use to record an overview of the obstetric history of a woman, including a summary of all pregnancies and the associated outcomes or interventions. \r\n\r\nUse this summary as the basis of statutory reporting regarding births.\r\n\r\nUse to record the TPAL overview of an obstetric history, if required - the numbers of Term Births (T), Preterm Births (P), Abortions (A) and Living Children (L). Some variations add Gravidity (G) and number of Multiple Births (M).\r\n\r\nSome data may be calculated or derived from individual pregnancy records if these are available.",
+          "misuse" : "Not for recording summary information about a single pregnancy - use EVALUATION. pregnancy_summary for this purpose.\r\n\r\nNot for recording detailed information about each of the individual pregnancies, miscarriages, terminations, or deliveries. This information will be recorded using other specific archetypes as event-based data.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-co" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-co"
+          },
+          "purpose" : "Sirve para registrar una visión general sobre la historia obstétrica de una mujer con fines de: proporcionar un resumen de su historia obstétrica, la presentación de informes a los órganos estatutarios o el apoyo de soporte de decisiones clínicas",
+          "keywords" : [ "Obstétrica", "Eembarazo", "Paridad", "Gesta", "Parto", "terminacion", "abortos involuntarios", "abortos", "Espontánea", "Vivo", "nacimientos", "mortinatos", "Cesárea", "Ectópico", "Neonatal", "muerte", "Múltiple" ],
+          "use" : "Sirve para registrar una visión general sobre la historia obstétrica de una mujer, incluyendo un resumen de todos los embarazos.\r\n\r\nUtilice este resmen como base para informes legales con respecto a los nacimientos .\r\n\r\nSe utiliza para registrar la información general de una historia obstétrica, si es necesario - el número de nacimientos a termino (T) , los nacimientos prematuros (P) , Abortos (A) y niños que viven (L) . Algunas variaciones añaden Gravidez (G) y el número de nacimientos múltiples (M) .\r\n\r\nAlgunos datos pueden ser calculados o derivados de los registros individuales de embarazo, si están disponibles.",
+          "misuse" : "No es para registrar la información del embarazo actual - utilice el arquetipo EVALUACIÓN. pregnancy_summary para este propósito.\r\n\r\nNo es para registrar la información detallada sobre cada uno de los individuales embarazos, abortos involuntarios , Embarazos interrumpidos, o nacimientos. Esta información se registra utilizando otros arquetipos específicos como datos basados ​​en eventos .",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.obstetric_summary.v0",
     "differential" : true,
@@ -7621,6 +8303,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_BOOLEAN",
                       "rmTypeName" : "BOOLEAN",
@@ -7647,6 +8330,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
@@ -7680,6 +8364,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
@@ -7802,6 +8487,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
@@ -7834,6 +8520,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
@@ -7926,6 +8613,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
@@ -7958,6 +8646,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
@@ -8020,6 +8709,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
@@ -8537,7 +9227,183 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "D151870E300424DD16EB635786088BE3"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation des Gewichtes eines Individuums, sowohl exakt als auch ungefähr.",
+          "keywords" : [ "Gewicht", "Zunahme", "Verlust", "Masse", "Schätzung" ],
+          "use" : "Zur Dokumentation des tatsächlichen Körpergewichts, auch wenn das Individuum einen Körperteil (angeboren oder später amputiert) vermisst. Sofern benötigt, kann dies im Datenelement 'Störfaktoren' dokumentiert werden. Dies ist der Archetyp, der gewöhnlicherweise für eine typische Gewichtsmessung benutzt werden sollte, z.B. bei Selbstmessung durch das Individuum zu Hause, durch einen Kliniker im Krankenhaus, oder einen Fitness-Trainer in einem Fitness-Center.\r\n\r\nDer Archetyp kann auch benutzt werden, um eine Schätzung des Körpergewichts zu dokumentieren, wenn es nicht möglich ist, das Gewicht genau zu bestimmen - z.B. bei der Messung des Gewichts eines nicht kooperativen Kindes, oder bei einem ungeborenen Fötus (hier ist das 'Subjekt der Daten' der Fötus und die Dokumentation erfolgt in der Akte der Mutter). Dass es sich um eine Schätzung handelt wird in diesem Archetyp nicht explizit modelliert, da das openEHR Referenzmodell dies direkt für 'Quantity'-Datentypen unterstützt. In einer konkreten klinischen Anwendung könnte die Benutzerschnittstelle es dem Kliniker z.B. über eine Checkbox ermöglichen, zu dokumentieren, dass es sich um eine Schätzung handelt.",
+          "misuse" : "Nicht zur Dokumentation des ersten Gewichts eines Neugeboren (Geburtsgewicht) - benutzen Sie hierzu den spezialisierten Archetyp OBSERVATION.body_weight-birth.\r\nNicht zur Dokumentation des angepassten Körpergewichts, z.B. eine Berechnung des vollständigen Körpergewichts bei einer Person mit amputierter Extremität auf Basis der anderen Körperteile und eines Algorithmus - benutzen Sie OBSERVATION.body_weight-adjusted.\r\nNicht zur Dokumentation eines Objekts oder eines Teils des Körpers.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи массы тела человека: фактической или приблизительной.",
+          "keywords" : [ "вес", "масса тела", "прибавка", "потеря", "увеличение", "уменьшение", "оценка", "актуально" ],
+          "use" : "Использовать для записи фактического измерения массы тела, включая случаи отсутсвия части(-ей) тела, врожденное или после хирургического удаления. Отметка о физической неполноте тела может быть зарегистрирована в элементе данных \"стохастическая погрешность\", если требуется. Это - обычный архетип, используемый для типичного измерения веса, например самоизмеренного человеком дома, измерение клинициста в клинике/больнице, или фитнес-инструктором в гимнастическом зале. \r\n\r\nМожет также использоваться для записи примерного измерения массы тела в клиническом сценарии, где не возможно взвешивание - например, сопротивляющийся ребёнок, или для оценики веса внутриутробного плода (где 'предметом данных' является плод, и регистрация происходит в пределах записи о состоянии здоровья матери). Это не оформлено явно в архетипе, поскольку модель openEHR позволяет атрибут «приблизительно» для любого типа данных «количество». При работе, например, прикладной пользовательский интерфейс позволяет клиницистам выбирать соответствующую отметку, смежную с полем данных «вес», чтобы указать, что зарегистрированный вес - приблизительный, а не фактический. \r\n\r\nИспользовать для записи изменения веса, то есть, потери веса или увеличения веса.\r\nЭто может в настоящее время моделироваться, привязывая 'каждый случай' к интервалу со связанной математической функцией увеличения или уменьшения, соответственно.",
+          "misuse" : "Не использовать для записи первого веса младенца после рождение, которое обозначено как 'вес при рождении' - использовать специализацию этого архетипа OBSERVATION.body_weight-birth. \r\nНе использовать для записи массы тела человека с протезами / приспособлениями для вычисление полной массы тела человека с ампутацией, основанной на других измерениях и алгоритме  - использовать архетип OBSERVATION.body_weight-adjusted.\r\nНе использовать, чтобы сделать запись веса части тела или объекта.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera en individs kroppsvikt, både den faktiska och ungefärliga.",
+          "keywords" : [ "vikt", "uppgång", "förlust", "ökning", "minskning", "massa", "uppskattning", "faktisk" ],
+          "use" : "Används för att registrera den faktiska kroppsvikten, även när individen saknar en kroppsdel pga. en medfödd orsak eller efter kirurgiskt avlägsnande. En redogörelse som identifierar kroppens fysiska ofullständighet kan registreras i fältet \"Påverkande faktorer\" vid behov. Det här är den vanliga arketypen som ska användas för en typisk vägning, exempelvis när individen väger sig själv hemma, en kliniker väger på en klinik eller ett sjukhus eller en instruktör väger på ett gym.\r\nKan också användas för att registrera en approximation av kroppsvikten i ett kliniskt scenario där det inte är möjligt att mäta exakt kroppsvikt, exempelvis vid vägning av ett icke-samarbetsvilligt barn, eller vid uppskattning av ett ofött fosters vikt (där dataobjektet är fostret och registreringen sker i moderns patientjournal). Detta har inte modellerats explicit i arketypen eftersom openEHRs referensmodell tillåter approximationer för alla mängder genom att ange attributet Magnitud_status till värdet \"~\". Vid implementering kan exempelvis ett programs användargränssnitt tillåta kliniker att välja en lämpligt märkt kryssruta bredvid vikt-fältet för att indikera att den registrerade vikten är en approximation, snarare än faktisk vikt.\r\n\r\nAnvänds för att registrera viktförändring, dvs. antingen viktförlust eller viktuppgång. Detta kan modelleras genom att begränsa \"Ospecificerad händelse\" till ett intervall med tillhörande matematisk funktion av uppgång eller förlust som är lämpligt.\r\n",
+          "misuse" : "Ska inte användas för att registrera den justerade kroppsvikten, exempelvis som en beräkning av hela kroppsvikten för en individ med benamputation, baserat på andra kroppsdelsvägningar och användning av en algoritm. Använd då istället OBSERVATION.body_weight-adjusted.\r\n\r\nSka inte användas för att registrera vikten av ett objekt eller en kroppsdel. \r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar o peso corporal de um indivíduo - tanto real como aproximado.",
+          "keywords" : [ "*weight(en)", "*gain(en)", "*loss(en)", "*increase(en)", "*decrease(en)", "*mass(en)", "*estimate(en)", "*actual(en)" ],
+          "use" : "Usado para gravar a medição real de peso corporal, inclusive quando o indivíduo tem faltando uma parte do corpo devido a uma causa congênita ou após a remoção cirúrgica. A indicação da imperfeição física do corpo pode ser registrada no elemento 'fatores de erro', se necessário.\r\nEste é o arquétipo para ser utilizado para uma medição típica de peso, por exemplo, auto-medido pelo indivíduo em casa, uma medida médico em uma clínica / hospital, ou um instrutor de fitness em um ginásio. \r\n\r\nTambém pode ser usado para a gravar uma aproximação da medição do peso corporal em um cenário clínico no qual não é possível medir com precisão o peso do corpo - por exemplo, pesar uma criança inquieta, ou estimar o peso de um feto (quando 'sujeito' é um feto e a gravação ocorre no registro da saúde da mãe). Isso não é modelado explicitamente no arquétipo como o modelo de referência da openEHR permite que o atributo de aproximação para qualquer tipo de dados quantitativos. Na execução, por exemplo, uma interface de usuário do aplicativo pode permitir que os clínicos para selecionar uma caixa de seleção devidamente setados junto ao campo de dados de peso, indicando que o peso verificado é uma aproximação, ao invés de reais. \r\n\r\nUsada para gravar a mudança de peso, ou seja, qualquer perda ou ganho de peso. Pode ser modelado por restringir a 'qualquer evento' a um intervalo associado com funções matemáticas de aumentar ou diminuir, conforme o caso.",
+          "misuse" : "Não deve ser utilizado para gravar o primeiro peso de um bebê logo após o nascimento, que é designado como o seu 'peso' - use a especialização de seu nascimento arquétipo OBSERVATION.body_weight-birth.\r\nNão deve ser usado para registrar o peso do corpo ajustado por exemplo, um cálculo do peso de corpo inteiro de uma pessoa com amputação de membros, com base em medições de outro corpo e um algoritmo -OBSERVATION.body_weight-adjusted.\r\nNão deve ser usado para registrar o peso de um objeto ou parte do corpo.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ja" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ja"
+          },
+          "purpose" : "個人の体重を記録するため。実測値あるいはおおよその値として。",
+          "keywords" : [ "重量", "増量", "減量", "増加", "現象", "質量", "推定値", "実測値" ],
+          "use" : "身体の一部を先天的な理由あるいは外科的に切除していることにより欠損している場合を含めて、実測した体重を記録するために使われる。必要であれば身体の一部を物理的に欠損している状態は、「交絡因子」(confounding factor)データエレメントに指定される。これは一般的な体重測定のために使われるアーキタイプであり、たとえば個人の家庭で自己測定された体重や、クリニックや病院で臨床スタッフにより計測されたものあるいは、ジムでフィットネスインストラクタにより測定されたものである。\r\n\r\nまた、正確な体重測定が不可能であると臨床上想定される場面において、体重を概算して記録するときにも利用される。たとえば、非協力的な子供の体重測定や、未出産の胎児の体重を見積もるような場合である。（胎児体重を見積もる場合、「データの対象」(subject of data)は「胎児」(Fetus)であり、母親の健康を記録するときに同時に記録される。）このアーキタイプでは、openEHRの参照モデルが量(Quantity)を表すデータ型に概算であることを示す属性を明示するようにはモデリングされていない。実装する場合には、たとえばアプリケーションのユーザーインターフェースが臨床スタッフに実測したデータでは無く概算であると言うことを明示的に記録できるようなチェックボックスを用意して、体重データフィールドに記録するようにしておくこともできる。\r\n\r\n体重変化、つまり体重が増加しているか減少しているかを記録するために利用することもできる。これについては、現在では「任意のイベント」(any event)による制約を適切な間隔で制約して、数学的に足したり引いたりすることができるようにモデリングされている。",
+          "misuse" : "新生児が生まれた直後に最初にはかる体重、つまり新生児の「生下時体重」(birth weith)を記録するためには設計されていない。生下時体重の記録にはこのアーキタイプを特殊化したOBSERVATION.body_weight-birthアーキタイプを利用すること。\r\n調整された体重、たとえば四肢を切断した人の全体重を身体の他の部位を計測して、一定のアルゴリズムに基づいて計算するような場合にも用いられない。その場合には、OBSERVATION.body_weight-adjustedを用いること。\r\nそのほかの物体や体の一部の重さを記録するためにも用いられない。",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل وزن الجسم للشخص - بما في ذلك الوزن الحقيقي و المُقَدَّر",
+          "keywords" : [ "الوزن", "الزيادة/الكسب", "الفاقد", "الزيادة", "النقصان", "الكتلة", "التقدير", "الحقيقي" ],
+          "use" : "يستخدم لتسجيل القياس الحقيقي لوزن الجسم, بما في ذلك ما إذا كان الشخص قد فقد جزءا من جسمه لسبب خَلقي وراثي, أو بعد استئصال جراحي.\r\nبيان يقوم بتعريف مدى عدم الاكتمال البدني, و يمكن تسجيله تحت عنصر البيانات (العوامل المربكة), حسب الحاجة.\r\nو هذا هو النموذج المعتاد الذي يستخدم للتسجيل النمطي للوزن, مثلا إذا قاسه الشخص لنفسه في المنزل, أو إذا قام الطبيب السريري بالقياس في العيادة/المستشفى, أو المُدرِّب البدني في القاعة الرياضية.\r\n\r\nيمكن أيضا أن يستخدم لتسجيل تقدير قياس وزن الجسم في سيناريو سريري حيث لا يمكن قياس وزن الجسم بشكل دقيق - مثلا, قياس وزن طفل غير متعاون, أو تقدير وزن جنين قبل الولادة - حيث يكون الهدف هو قياس وزن الجنين في حين يتم تسجيل ذلك في السجل الطبي للأم\r\n\r\nو لا يتم وضع هذا في نموذج صريح حيث يسمح النموذج المرجعي لـ\r\nopenEHR\r\nلصفة التقريب لأي نوع كمي من البيانات. \r\nو عند تشغيل هذا النموذج, مثلا شاشة لبرنامج كمبيوتر فإنها تسمح للطبيب السريري أن يختار زراّ مناسبا ملاصقا لبيانات الوزن تشير إلى أن هذا القياس هو تقدير و ليس حقيقيا.",
+          "misuse" : "لا يستخدم لتسجيل القياس الأول لوزن حديث الولادة بمجرد ولادته و الذي يسمى بالوزن عند الولادة/ الوضع - و استخدم بدلا من ذلك تخصيص النموذج الذي يسمى ملاحظة.وزن الجسم - الولادة/ الوضع.\r\n\r\nلا يستخدم لتسجيل وزن الجسم المُصحَّح مثل قياس الوزن الكلي للجسم لشخص يعاني من بتر في أحد الأطراف, بناءا على قياسات أخرى من الجسم باستخدام خُوارزمية - استخدم بدلا من ذلك نموذج ملاحظة.وزن الجسم المُصحَّح.\r\n\r\nلا يستخدم لتسجيل وزن شيئ أو جزء من أجزاء الجسم.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the body weight of an individual - both actual and approximate.",
+          "keywords" : [ "weight", "gain", "loss", "increase", "decrease", "mass", "estimate", "actual" ],
+          "use" : "To be used for recording the actual measurement of body weight, including when the individual is missing a body part due to a congenital cause or after surgical removal.   A statement identifying the physical incompleteness of the body can be recorded in the 'Confounding factors' data element, if required. This is the usual archetype to be used for a typical measurement of weight, for example self-measured by the individual at home, a clinician measurement in a clinic/hospital, or a fitness instructor in a gymnasium.  \r\n\r\nCan also be used for recording an approximation of body weight measurement in a clinical scenario where it is not possible to measure accurately body weight - for example, weighing an uncooperative child, or estimating the weight of an unborn fetus (where the 'subject of data' is the Fetus and recording occurs within the mother's health record).  This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations  for any Quantity data type by setting the attribute Magnitude_status to the value '~'.  At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Weight data field to indicate that the recorded weight is an approximation, rather than actual.\r\n\r\nTo be used for recording weight change, that is, either weight loss or weight gain.  This can currently be modelled by constraining the 'any event' to an interval with associated mathematical function of increase or decrease, as appropriate.",
+          "misuse" : "Not to be used to record the adjusted body weight eg a calculation of the full body weight of a person with limb amputation, based on other body part measurements and an algorithm - use OBSERVATION.body_weight-adjusted.\r\n\r\nNot to be used to record the weight of an object or body part.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fa" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fa"
+          },
+          "purpose" : "برای ثبت وزن بدن فرد ، بطور واقعی یا تقریبی ، بکار می رود",
+          "keywords" : [ "وزن", "زیاد کردن وزن", "کم کردن وزن", "افزایش", "کاهش", "توده", "تخمین", "واقعی" ],
+          "use" : "برای ثبت اندازه گیری واقعی وزن بکار می رود، و شامل زمانی که فرد مادرزادی عضوی را ندارد یا بعد از جراحی عضوی را ازدست می دهد، نیز می‌‌شود. عبارتی که نواقص فیزیکی بدن را مشخص می کند در بخش داده های \"فاکتورهای جانبی\" درصورت نیاز ثبت می شود.این الگوساز بطور معمولی برای اندازه گیری واقعی وزن استفاده می شود برای مثال اندازه گیری وزن توسط خود فرد در منزل ، اندازه گیری بالینی در مطب یا بیمارستان یا مربی ورزشی در باشگاه\r\nهمچنین از این الگو ساز می توان در اندازه گیری تقریبی وزن بدن در یک سناریوی بالینی، که اندازه گیری واقعی عملی نیست، استفاده نمود برای مثال اندازه گیری وزن کودکی که همکاری نمی کند یا تخمین وزن جنین بدنیا نیامده (که آنجا \"موضوع داده\" جنین است و اطلاعات در پرونده بهداشتی مادر ثبت می‌شوند). این مورد بطور واضح در الگوساز مدل بندی نشده است ولی مدل مرجع \"اوپن ئی اچ ار\" ویژگی تقریب را برای هر نوع داده کمی اجازه می دهد. در پیاده سازی، برای مثال، یک واسط کاربری نرم افزار می تواند به کاربران اجازه دهد تا با انتخاب گزینه ای [چک باکس] درکنار محل مربوط به وزن با نشانه گذاری مناسب نشان دهند که قد ثبت شده اندازه ای است تقریبی و نه  واقعی\r\n     این الگوساز برای تغییرات وزن ، کاهش یا افزایش آن، استفاده می شود. این الگوساز می‌تواند در حال حاضر با مشروط کردن \"هر رویداد\" به دوره زمانی در نظر گرفته شده در الگو، با عملگرهای ریاضی مرتبط با افزایش یا کاهش، بصورت مناسب مدل بندی شود\r\n \r\n",
+          "misuse" : "برای ثبت اولین اندازه گیری وزن نوزاد بلافاصله بعد ازتولد به عنوان \"وزن نوزاد هنگام تولد\" استفاده نمی شود، در این موارد پیاده سازی اختصاصی از این الگوساز استفاده شود. ببینید\r\nOBSERVATION.weight-birth\r\nبرای ثبت  وزن معادل (تطبیق یافته)، مانند محاسبه کل وزن یک فرد قطع عضوی، بر اساس اندازه گیری های بخشهایی از بدن و یا یک الگوریتم دیگر استفاده نشود. در این موارد از \r\nOBSERVATION.weight-adjusted\r\nاستفاده کنید.\r\nبرای ثبت وزن یک شی یا بخشهایی از بدن استفاده نکنید\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "记录个人的身体重量（体重），实际重量和近似重量。",
+          "keywords" : [ "体重", "身体重量", "增加", "减轻", "增大", "减小", "长胖", "消瘦", "质量", "估计", "估计值", "实际值" ],
+          "use" : "用于记录体重的实际测量值，包括当个人因为先天原因或在手术切除之后损失某个身体组成部分的时候。如果需要的话，可以在“干扰因素（Confounding factors）”数据元之中记录用于表明身体残缺情况的说明。这是旨在用于常规体重测量的普通原始型，如个人在家中自行测量，临床医生在门诊/医院里进行的测量，或者健身教练在健身房进行的测量。\r\n\r\n*Can also be used for recording an approximation of body weight measurement in a clinical scenario where it is not possible to measure accurately body weight - for example, weighing an uncooperative child, or estimating the weight of an unborn fetus (where the 'subject of data' is the Fetus and recording occurs within the mother's health record). This is not modelled explicitly in the archetype as the openEHR Reference model allows approximations for any Quantity data type by setting the attribute Magnitude_status to the value '~'. At implementation, for example, an application user interface could allow clinicians to select an appropriately labelled check box adjacent to the Weight data field to indicate that the recorded weight is an approximation, rather than actual.(en)\r\n\r\n用于记录体重变化，即体重增加或减轻。当前，可以通过在合适情况下，采用关联的关于增加或减轻的数学函数，将“任何事件”限制到特定区间。",
+          "misuse" : "并非旨在用于记录经过调整的身体重量，如基于其他身体组成部分测量结果和特定算法，对截肢患者完整体重的计算。此时，请采用调整型身体重量观察的原始型，即OBSERVATION.body_weight-adjusted。\r\n并非旨在用于记录某种对象或身体组成部分的重量。",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Om het lichaamsgewicht van een persoon te registreren - zowel exact als geschat gewicht.",
+          "keywords" : [ "gewicht", "stijging", "verlies", "toename", "daling", "massa", "schatting", "werkelijk", "afname" ],
+          "use" : "Registreren van een actuele meting van het lichaamsgewicht, ook als deze persoon een lichaamsdeel mist, door een geboorteafwijking of na een chirurgische ingreep. Een verklaring over de fysieke inclompleetheid van het lichaam, kan zo nodig opgeslagen worden in het data element 'beïnvloedende factoren'. Dit is het gebruikelijke archetype voor gewichtmetingen, bij voorbeeld thuis gemeten door de persoon zelf, een klinische meting in een kliniek/ziekenhuis, of door een fitness instructeur in een sportschool.\r\n\r\nKan ook gebruikt worden om een geschat lichaamsgewicht te registreren in een klinische setting als het niet mogelijk is om het exacte lichaamsgewicht te meten - bijvoorbeeld, het wegen van een tegenwerkend kind, of een schatting van het gewicht van een ongeboren kind (waar het onderwerp van de gegevens de foetus is en de opslag in het patiënten dossier van de moeder plaatsvindt). Dit is niet expliciet gemodelleerd in het archetype, omdat het openEHR Referentie model een schatting in ieder kwantitatief data type toestaat. Bij de uitvoering, bijvoorbeeld, zou een applicatie gebruikersinterface, clinici een adequaat geëtiketteerd selectievakje kunnen aanbieden, naast de gegevens over het gewicht, waarin door selecteren aangegeven kan worden dat het opgenomen gewicht een schatting is, in plaats van het werkelijke gewicht.\r\n\r\nDient te worden gebruikt om gewichtsverandering op te slaan, zowel gewichtsverlies als gewichtstoename.  Dit kan gemodelleerd worden door 'any event' - elke gebeurtenis - in voorkomende gevallen, te beperken tot een interval met met bijbehorende rekenkundige functie van stijging of daling.",
+          "misuse" : "Dient niet te worden gebruikt voor het registreren van het eerste gewicht van een kind, na geboorte, welke wordt aangewezen als geboortegewicht. Gebruik hiervoor de specialisatie van dit archetype, OBSERVATION.body_weight-birth (OBSERVATION.lichaamsgewicht-geboorte.\r\nDient niet te worden gebruikt voor het registreren van het aangepaste lichaamsgewicht, bijvoorbeeld een berekening van het volledige lichaamsgewicht van een persoon met een amputatie van ledematen, gebaseerd op metingen van lichaamsdelen en een algoritme - gebruik hiervoor OBSERVATION.body_weight-adjusted. (OBSERVATION.lichaamsgewicht-aangepast).\r\nDient niet te worden gebruikt voor het vastleggen van het gewicht van een object of lichaamsdeel.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registro del peso corporal de un individuo ya sea exacto o aproximado.",
+          "keywords" : [ "peso", "ganancia", "pérdida", "incremento", "decremento", "masa", "estimado", "real" ],
+          "use" : "Se usará para el registro de la medición real del peso del cuerpo, incluso cuando falte una parte del cuerpo debido a una anomalía congénita o después de una extirpación quirúrgica. Este hecho se registra de forma complementaria en un campo asignado ex-profeso. También se puede utilizar para el registro del peso aproximado en un escenario clínico en el que no es posible medir con precisión el peso corporal - por ejemplo, el peso de un niño no coopera, o la estimación del peso de un feto (donde el sujeto de los datos es el feto y la grabación se produce dentro de registros de salud de la madre). En la aplicación, por ejemplo, una interfaz de usuario podría permitir a los médicos seleccionar una casilla de verificación debidamente etiquetada junto al campo \"peso\" para indicar que el peso registrado es una aproximación.\r\n\r\nSe usará para reflejar el cambio de registro de peso, es decir, aumento o pérdida de peso. Esto se puede modelar mediante la limitación de \"cualquier evento\" a un intervalo asociado a una función matemática de incremento o decremento, según corresponda.",
+          "misuse" : "No debe ser usado para grabar el primer registro de peso de un recién nacido (\"el peso al nacer\") que cuenta con su propio arquetipo.\r\nNo debe ser usado para registrar el peso corporal ajustado mediante algoritmos.\r\nNo debe ser usado para registrar el peso de un objeto o parte del cuerpo.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.body_weight.v2",
     "differential" : true,
@@ -8707,6 +9573,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -8763,7 +9630,34 @@
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0001.2",
                   "targetPath" : "/data[at0002]/events[at0003]/data[at0001.1]",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "1..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0024.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               }, {
@@ -8774,7 +9668,70 @@
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0008.2",
                   "targetPath" : "/data[at0002]/events[at0003]/state[at0008.1]",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : true,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0009.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "assumedValue" : {
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "codeString" : "at0011"
+                              },
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.2" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0025.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -8848,6 +9805,30 @@
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
+          },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "*State of dress(en)",
+            "description" : "*Description of the state of dress of the person at the time of weighing.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
             "text" : "*Confounding factors(en)",
             "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
           },
@@ -8931,6 +9912,30 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
           },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "*State of dress(en)",
+            "description" : "*Description of the state of dress of the person at the time of weighing.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -9008,6 +10013,30 @@
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
+          },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "*State of dress(en)",
+            "description" : "*Description of the state of dress of the person at the time of weighing.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
             "text" : "*Confounding factors(en)",
             "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
           },
@@ -9091,6 +10120,30 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
           },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "*State of dress(en)",
+            "description" : "*Description of the state of dress of the person at the time of weighing.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -9168,6 +10221,30 @@
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
+            "text" : "干扰因素",
+            "description" : "用于记录任何可能对体重测量造成影响的问题或因素，如月经周期所处时间阶段、最近排便的时间安排情况或者截肢情况说明。"
+          },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "备注",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "衣着状态",
+            "description" : "关于称重时受检人员的衣着状态"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
             "text" : "干扰因素",
             "description" : "用于记录任何可能对体重测量造成影响的问题或因素，如月经周期所处时间阶段、最近排便的时间安排情况或者截肢情况说明。"
           },
@@ -9251,6 +10328,30 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
           },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "*State of dress(en)",
+            "description" : "*Description of the state of dress of the person at the time of weighing.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -9328,6 +10429,30 @@
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
+            "text" : "Confounding factors",
+            "description" : "Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation."
+          },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "Comment",
+            "description" : "Additional narrative about the measurement of Body weight, not captured in other fields."
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "State of dress",
+            "description" : "Description of the state of dress of the person at the time of weighing."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
             "text" : "Confounding factors",
             "description" : "Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation."
           },
@@ -9411,6 +10536,30 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
           },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "*State of dress(en)",
+            "description" : "*Description of the state of dress of the person at the time of weighing.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -9488,6 +10637,30 @@
           "at0025.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0025.1",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
+          },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "*State of dress(en)",
+            "description" : "*Description of the state of dress of the person at the time of weighing.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
             "text" : "*Confounding factors(en)",
             "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
           },
@@ -9571,6 +10744,30 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
           },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement of Body weight, not captured in other fields.(en)"
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "*State of dress(en)",
+            "description" : "*Description of the state of dress of the person at the time of weighing.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -9651,6 +10848,30 @@
             "text" : "Påverkande faktorer",
             "description" : "Redogör frågor eller faktorer som kan påverka vägningen av kroppsvikten, exempelvis tidpunkt i menstruationscykeln, tid från senaste tarmrörelse eller notering av amputation."
           },
+          "at0024.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.2",
+            "text" : "Kommentar",
+            "description" : "Extra kommentar om vägningen av kroppsvikten, som inte tagits med i andra fält."
+          },
+          "at0009.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.2",
+            "text" : "Klädsel",
+            "description" : "Beskrivning av individens klädsel vid tidpunkten för vägning."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0025.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025.2",
+            "text" : "Påverkande faktorer",
+            "description" : "Redogör frågor eller faktorer som kan påverka vägningen av kroppsvikten, exempelvis tidpunkt i menstruationscykeln, tid från senaste tarmrörelse eller notering av amputation."
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
@@ -9677,6 +10898,11 @@
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
+          "members" : [ "at0011", "at0013", "at0010", "at0017" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
           "members" : [ "at0011", "at0013", "at0010", "at0017" ]
         }
       }
@@ -9845,7 +11071,67 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "1A6AFF556A3135480517C4E830985332"
       },
-      "details" : { }
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "*To record a narrative description of the clinical history, as told to a clinician or recorded directly by an individual/patient, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of the clinical history in further detail.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ko" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ko"
+          },
+          "purpose" : "개인/환자가 의사에게 이야기하거나 직접 기록한 임상 병력에 대한 서술을 기록하기 위한 것과 상세한 CLUSTER archetypes를 포함할 수 있는 프레임워크를 제공하는 것으로 각각에 임상 병력의 다양한 측면들을 상세하게 기술될 것이다.",
+          "keywords" : [ "*병력(ko)", "*현재(ko)", "*호소(ko)", "*이야기(ko)" ],
+          "use" : "환자가 의사에게 이야기한 공식적인 '현재 호소하는 병력(History of Presenting Complaint)'을 기록하기 위해서 사용함; 또는 (예를 들어 개인건강기록에 있는) 개인 자신의 증상들의 '이야기(story)를 설명한 것을 기록하기 위해 사용함.\n\n기존 또는 이전의 임상 시스템 내의 임상 병력의 서술을 'Story' data element을 사용하여 archetyped format으로 통합하기위해 사용함.\n\n단순한 서술을 기록하기 위해 사용함 그리고/또는 container archetype으로써 - 추가적이고 특정한 그리고 상세한 CLUSTER archetypes에 의해 확장될 수 있는 공통의 쿼리가능한 ENTRY archetype framework를 제공함. 각각에 임상병력의 다양한 측면을 기술될 것임. 병력과 관련된 CLUSTER archetypes의 예는 CLUSTER.symptom 또는 CLUSTER.health_event를 포함한다.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "*To record a narrative description of the clinical history, as told to a clinician or recorded directly by an individual/patient, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of the clinical history in further detail.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a narrative description of the clinical history of the subject of care and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will support the narrative with additional structured detail for symptoms, health events and related topics.\n\nUse to record detail about the clinical history as reported by an individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, or self-recorded as part of a clinical questionnaire or personal health record.",
+          "keywords" : [ "history", "presenting", "complaint", "story", "symptom", "health", "record", "presenting complaint", "anamnesis" ],
+          "use" : "Use to record a description about subjective health-related observations or impressions from the point of view of the subject of care. \n\nWhen recorded by a clinician within the context of healthcare provision the story can be used for capturing the clinical history, as reported by the subject themselves, a parent, care-giver or other related party. If recorded by the subject, it can be used as an account of their 'story' of symptoms and health experiences, which might be used to share with healthcare providers or to document within their own personal health record.\n\nUse:\n- to record a simple narrative; and/or \n- as a container archetype to enable recording of a detailed structured history by inclusion of relevant CLUSTER archetypes within the 'Detail' SLOT. For example: CLUSTER.symptom, CLUSTER.issue or CLUSTER.health_event archetypes can be appropriately used in this SLOT.\n\nUse to incorporate the narrative descriptions of clinical history captured from existing or legacy clinical systems into an archetyped format, using the 'Story' text data element.",
+          "misuse" : "Not to be used to record formal assessments by clinicians which would usually be recorded using the EVALUATION class of archetypes.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.story.v1",
     "differential" : true,
@@ -10213,7 +11499,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2E20DF7D13523EF6AB3FAC7ABE42D2A4"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar texto livre.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record free text.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نَصّ حُر",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.free_text.v0",
     "differential" : true,
@@ -10358,7 +11687,67 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "1A6AFF556A3135480517C4E830985332"
       },
-      "details" : { }
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "*To record a narrative description of the clinical history, as told to a clinician or recorded directly by an individual/patient, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of the clinical history in further detail.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ko" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ko"
+          },
+          "purpose" : "개인/환자가 의사에게 이야기하거나 직접 기록한 임상 병력에 대한 서술을 기록하기 위한 것과 상세한 CLUSTER archetypes를 포함할 수 있는 프레임워크를 제공하는 것으로 각각에 임상 병력의 다양한 측면들을 상세하게 기술될 것이다.",
+          "keywords" : [ "*병력(ko)", "*현재(ko)", "*호소(ko)", "*이야기(ko)" ],
+          "use" : "환자가 의사에게 이야기한 공식적인 '현재 호소하는 병력(History of Presenting Complaint)'을 기록하기 위해서 사용함; 또는 (예를 들어 개인건강기록에 있는) 개인 자신의 증상들의 '이야기(story)를 설명한 것을 기록하기 위해 사용함.\n\n기존 또는 이전의 임상 시스템 내의 임상 병력의 서술을 'Story' data element을 사용하여 archetyped format으로 통합하기위해 사용함.\n\n단순한 서술을 기록하기 위해 사용함 그리고/또는 container archetype으로써 - 추가적이고 특정한 그리고 상세한 CLUSTER archetypes에 의해 확장될 수 있는 공통의 쿼리가능한 ENTRY archetype framework를 제공함. 각각에 임상병력의 다양한 측면을 기술될 것임. 병력과 관련된 CLUSTER archetypes의 예는 CLUSTER.symptom 또는 CLUSTER.health_event를 포함한다.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "*To record a narrative description of the clinical history, as told to a clinician or recorded directly by an individual/patient, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of the clinical history in further detail.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a narrative description of the clinical history of the subject of care and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will support the narrative with additional structured detail for symptoms, health events and related topics.\n\nUse to record detail about the clinical history as reported by an individual, parent, care-giver or other party. It may be recorded by a clinician as part of a clinical history record as reported to them, or self-recorded as part of a clinical questionnaire or personal health record.",
+          "keywords" : [ "history", "presenting", "complaint", "story", "symptom", "health", "record", "presenting complaint", "anamnesis" ],
+          "use" : "Use to record a description about subjective health-related observations or impressions from the point of view of the subject of care. \n\nWhen recorded by a clinician within the context of healthcare provision the story can be used for capturing the clinical history, as reported by the subject themselves, a parent, care-giver or other related party. If recorded by the subject, it can be used as an account of their 'story' of symptoms and health experiences, which might be used to share with healthcare providers or to document within their own personal health record.\n\nUse:\n- to record a simple narrative; and/or \n- as a container archetype to enable recording of a detailed structured history by inclusion of relevant CLUSTER archetypes within the 'Detail' SLOT. For example: CLUSTER.symptom, CLUSTER.issue or CLUSTER.health_event archetypes can be appropriately used in this SLOT.\n\nUse to incorporate the narrative descriptions of clinical history captured from existing or legacy clinical systems into an archetyped format, using the 'Story' text data element.",
+          "misuse" : "Not to be used to record formal assessments by clinicians which would usually be recorded using the EVALUATION class of archetypes.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.story.v1",
     "differential" : true,
@@ -10763,7 +12152,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2E20DF7D13523EF6AB3FAC7ABE42D2A4"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar texto livre.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record free text.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نَصّ حُر",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.free_text.v0",
     "differential" : true,
@@ -10916,7 +12348,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2E20DF7D13523EF6AB3FAC7ABE42D2A4"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar texto livre.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record free text.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نَصّ حُر",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.free_text.v0",
     "differential" : true,
@@ -11061,7 +12536,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2E20DF7D13523EF6AB3FAC7ABE42D2A4"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar texto livre.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record free text.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نَصّ حُر",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.free_text.v0",
     "differential" : true,
@@ -11206,7 +12724,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2E20DF7D13523EF6AB3FAC7ABE42D2A4"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar texto livre.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record free text.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نَصّ حُر",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.free_text.v0",
     "differential" : true,
@@ -11351,7 +12912,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2E20DF7D13523EF6AB3FAC7ABE42D2A4"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar texto livre.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record free text.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نَصّ حُر",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.free_text.v0",
     "differential" : true,
@@ -11496,7 +13100,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -11563,6 +13229,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -12195,7 +13862,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -12262,6 +13991,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -12338,6 +14068,126 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0022.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0024.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -12392,9 +14242,42 @@
             "description" : "Identification, by name, of a condition or state.",
             "comment" : "Coding of the identified 'Condition' with a terminology is desirable, where possible."
           },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Valid period start",
+            "description" : "Date/time after which the 'Condtion' is regarded as active.",
+            "comment" : "This data element is intended for use when a precaution is identified to start at some time in the future. For example: the commencement date for a pharmaceutical trial."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Valid period end",
+            "description" : "Date/time after which the 'Condtion' is regarded as inactive.",
+            "comment" : "This data element is intended for use when a precaution is known to have a definitive end date/time in the future. For example: the cessation date for a pharmaceutical trial."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Review date",
+            "description" : "Date when next due for review by a clinician.",
+            "comment" : "In circumstances where precautions are not indefinite or life-long, use this data element to record the date/time when this precaution should be reassessed in the context of the clinical circumstances at the time."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Last updated",
+            "description" : "Date when the precaution information was last updated."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -12446,9 +14329,42 @@
             "description" : "Navnet på tilstanden eller statusen.",
             "comment" : "Koding av tilstanden med en terminologi er ønskelig, dersom mulig."
           },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Gyldighetsperiode start",
+            "description" : "Forholdsregelen regnes som aktiv etter denne datoen.",
+            "comment" : "Dette dataelementet er ment for å brukes når en forholdregel er ment å starte på et tidspunkt i fremtiden, for eksempel startdatoen for en farmakologisk studie."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Gyldighetsperiode slutt",
+            "description" : "Forholdsregelen regnes som inaktiv etter denne datoen.",
+            "comment" : "Dette dataelementet er ment for å brukes når en forholdsregel er ment å avsluttes på et tidspunkt i fremtiden, for eksempel sluttdatoen for en farmakologisk studie."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Evalueringsdato",
+            "description" : "Dato for neste kliniske evaluering.",
+            "comment" : "Ved omstendigheter der forholdsregler ikke er på ubestemt tid eller livslange, kan dette dataelementet brukes til å registrere når forholdsregelen bør evalueres."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Sist oppdatert",
+            "description" : "Dato da forholdsregelinformasjonen sist ble oppdatert."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -12500,9 +14416,42 @@
             "description" : "Identificación, por nombre, de la condición o estado.",
             "comment" : "La codificación de la 'condición' identificada mediante una terminología es deseable cuando sea posible."
           },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Comienzo del período de validez",
+            "description" : "Fecha y hora a partir de la cual la 'condición' debe considerarse activa.",
+            "comment" : "Este elemento se utiliza cuando se pretende que una precaución tenga vigencia en algún momento futuro. Por ejemplo: la fecha de comienzo de un ensayo farmacológico."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Final del período de validez",
+            "description" : "Fecha y hora a partir de la cual la 'condición' debe considerarse inactiva.",
+            "comment" : "Este elemento se utiliza cuando una precaución tiene una fecha de finalización futura conocida. Por ejemplo: la fecha de finalización de un ensayo farmacológico."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Fecha de Revisión",
+            "description" : "La fecha en la cual un clínico debe efectuar una revisión.",
+            "comment" : "En circunstancias en las cuales las precauciones no son indefinidas o de por vida, se debe utilizar este elemento para registrar la fecha y hora en la cual esta precaución debe ser reevaluada en el contexto de las circunstancias clínicas imperantes en el momento."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Última actualización",
+            "description" : "Fecha en la cual la información sobre la precaución fue actualizada por última vez."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -12554,9 +14503,42 @@
             "description" : "Identificação da condição ou estado pelo nome.",
             "comment" : "A codificação da \"Condição\" identificada com uma terminologia é desejável, quando possível."
           },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Início do período válido",
+            "description" : "Data/hora na qual a \"Condição\" foi considerada ativa.",
+            "comment" : "Este elemento de dado é indicado para uso quando é identificado o início da precaução em algum momento no futuro. Por exemplo: a data de início para uma pesquisa farmacêutica."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Final do período válido",
+            "description" : "Data/hora na qual a \"Condição\" foi considerada inativa.",
+            "comment" : "Este elemento de dado é indicado para uso quando sabe-se que a precaução tem uma data de finalização no futuro. Por exemplo: a data de término de uma pesquisa clínica."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Data de revisão",
+            "description" : "Data na qual a revisão pelo clínico deverá ser realizada.",
+            "comment" : "Em circunstâncias onde as precauções não são de longo prazo ou vitalícias, use este elemento de dado para gravar a data/hora na qual esta precaução deve ser reavaliada no contexto das circunstâncias clínicas do momento."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Última atualização",
+            "description" : "Data na qual a informação de precaução foi atualizada pela última vez."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -12642,7 +14624,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -12709,6 +14753,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -13340,7 +15385,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -13407,6 +15514,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -14023,6 +16131,587 @@
         "email" : "contato@coreconsulting.com.br"
       },
       "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "ea03effc-4b79-48f7-9b3d-a538c441a517",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "0..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-story-002.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-story-003.v1",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Tidigare anestesi/operation",
+            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          }
+        },
+        "ru" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "заготовка заголовка",
+            "description" : "Образец заголовка раздела"
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          }
+        },
+        "es-ar" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Encabezado ad hoc",
+            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          }
+        },
+        "sl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Naslov sekcije",
+            "description" : "Naslov sekcije"
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ad hoc heading",
+            "description" : "En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Cabeçalho Ad hoc",
+            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "OBSERVATION",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "01827a5a-aed8-4ad8-926c-e99eb5d9a19f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "1138887e-66f0-4b88-89e2-f7443f39fd70",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A3949EA37D876F7A93B6DB742E9D6F38"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_specific.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Exclusion - specific",
+            "description" : "A statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Eksklusjonsutsagn - spesifikt",
+            "description" : "Et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "9ef3f2a6-301c-4497-abe1-9491e1631100",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "a0227d16-dbc0-4f5f-a58e-7bd5cbea9851",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A3949EA37D876F7A93B6DB742E9D6F38"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_specific.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-003.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ingen sjukdom i blodkärl",
+            "description" : "A statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Eksklusjonsutsagn - spesifikt",
+            "description" : "Et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "9ef3f2a6-301c-4497-abe1-9491e1631100",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "0d0e9786-874e-4b4c-8a7e-e6262c030512",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A3949EA37D876F7A93B6DB742E9D6F38"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_specific.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-004.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ingen blodpropp som krävt blodförtunnande läkemedel",
+            "description" : "A statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Eksklusjonsutsagn - spesifikt",
+            "description" : "Et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "9ef3f2a6-301c-4497-abe1-9491e1631100",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "d728f2c5-9a85-4566-9245-1e12f7cdcee2",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A3949EA37D876F7A93B6DB742E9D6F38"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_specific.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-005.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ingen lungsjukdom",
+            "description" : "A statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Eksklusjonsutsagn - spesifikt",
+            "description" : "Et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "9ef3f2a6-301c-4497-abe1-9491e1631100",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF"
+      },
       "otherDetails" : { }
     } ]
   } ],
