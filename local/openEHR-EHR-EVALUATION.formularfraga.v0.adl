@@ -1,0 +1,84 @@
+archetype (adl_version=1.4; uid=a69e8c8d-395f-4632-a5cf-3419ee105175)
+    openEHR-EHR-EVALUATION.formularfraga.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::sv]>
+
+description
+    original_author = <
+        ["date"] = <"2018-05-31">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["sv"] = <
+            language = <[ISO_639-1::sv]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["MD5-CAM-1.0.1"] = <"754a2ca47844b2cd71b52b18b5e52483">
+        ["build_uid"] = <"00bd3d74-b359-37a4-af9d-9e1f0b32cf75">
+    >
+
+definition
+    EVALUATION[at0000] matches {
+        data matches {
+            ITEM_TREE[at0001] matches {
+                items cardinality matches {0..*; unordered} matches {
+                    ELEMENT[at0002] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_CODED_TEXT matches {
+                                defining_code matches {
+                                    [local::
+                                    at0009,
+                                    at0010]
+                                }
+                            }
+                            DV_TEXT matches {*}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["sv"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Formularfraga">
+                    description = <"Formularfraga">
+                >
+                ["at0001"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0002"] = <
+                    text = <"Fråga">
+                    description = <"*">
+                >
+                ["at0009"] = <
+                    text = <"Ja">
+                    description = <"*">
+                >
+                ["at0010"] = <
+                    text = <"Nej">
+                    description = <"*">
+                >
+            >
+        >
+    >
+    constraint_definitions = <
+        ["sv"] = <
+            items = <
+            >
+        >
+    >
