@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "be2cb799b7b72ffd96d6c5161f705a3f",
+      "MD5-CAM-1.0.1" : "c5f8e22acce8410952d15efadb9f78d1",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -1473,6 +1473,7 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
           "nodeId" : "at0022.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2433,6 +2434,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -3241,11 +3243,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "cm",
+                            "@type" : "DV_QUANTITY"
+                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "property",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
                               "terminologyId" : {
                                 "value" : "openehr"
                               },
@@ -3256,44 +3264,48 @@
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
+                              "rmAttributeName" : "units",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
+                              "rmAttributeName" : "magnitude",
                               "children" : [ ]
                             } ],
                             "tuples" : [ {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "cm" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 1000.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "cm" ]
                               } ]
                             }, {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "[in_i]" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 250.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "[in_i]" ]
                               } ]
                             } ]
                           } ]
@@ -9462,11 +9474,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "kg",
+                            "@type" : "DV_QUANTITY"
+                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "property",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
                               "terminologyId" : {
                                 "value" : "openehr"
                               },
@@ -9477,44 +9495,48 @@
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
+                              "rmAttributeName" : "units",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
+                              "rmAttributeName" : "magnitude",
                               "children" : [ ]
                             } ],
                             "tuples" : [ {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "kg" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 1000.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "kg" ]
                               } ]
                             }, {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "[lb_av]" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 2000.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "[lb_av]" ]
                               } ]
                             } ]
                           } ]
