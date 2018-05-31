@@ -1,0 +1,51 @@
+archetype (adl_version=1.4; uid=ca5e2464-6179-48ac-9f44-794144c0f419)
+    openEHR-EHR-CLUSTER.demo_cluster_do_remove_soon.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2018-05-31">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["MD5-CAM-1.0.1"] = <"471d11719b9194c0d9b56515d0da93f2">
+        ["build_uid"] = <"f04439d7-387b-3ec1-8d89-0f24bfdc1740">
+    >
+
+definition
+    CLUSTER[at0000] matches {
+        items cardinality matches {0..*; unordered} matches {
+            ELEMENT[at0001] occurrences matches {0..1} matches {*}
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["en"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"demo_cluster_do_remove_soon">
+                    description = <"demo_cluster_do_remove_soon">
+                >
+                ["at0001"] = <
+                    text = <"demo">
+                    description = <"*">
+                >
+            >
+        >
+    >
