@@ -23,7 +23,7 @@ description
         ["original_namespace"] = <"org.openehr">
         ["original_publisher"] = <"openEHR Foundation">
         ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"50244ca18f95bc2ab0ceb330f4e33e64">
+        ["MD5-CAM-1.0.1"] = <"08c570cfe3d935b5e118cba93689baf1">
         ["build_uid"] = <"b95179a1-0ffc-323c-87bb-e2fc7899a136">
     >
 
@@ -34,19 +34,14 @@ definition
                 items cardinality matches {0..*; unordered} matches {
                     ELEMENT[at0002] occurrences matches {0..1} matches {
                         value matches {
-                            DV_ORDINAL matches {*}
-                            DV_TEXT matches {*}
-                        }
-                        name matches {
                             DV_CODED_TEXT matches {
                                 defining_code matches {
                                     [local::
-                                    at0003,
-                                    at0004,
-                                    at0005,
-                                    at0006]
+                                    at0009,
+                                    at0010]
                                 }
                             }
+                            DV_TEXT matches {*}
                         }
                     }
                 }
@@ -80,28 +75,20 @@ ontology
                     text = <"Question">
                     description = <"*">
                 >
-                ["at0003"] = <
-                    text = <"Yes">
-                    description = <"*">
-                >
-                ["at0004"] = <
-                    text = <"No">
-                    description = <"*">
-                >
-                ["at0005"] = <
-                    text = <"Other answer">
-                    description = <"*">
-                >
-                ["at0006"] = <
-                    text = <"Absence of answer">
-                    description = <"*">
-                >
                 ["at0007"] = <
                     text = <"ItemTree">
                     description = <"@ internal @">
                 >
                 ["at0008"] = <
                     text = <"Extension">
+                    description = <"*">
+                >
+                ["at0009"] = <
+                    text = <"Yes">
+                    description = <"*">
+                >
+                ["at0010"] = <
+                    text = <"No">
                     description = <"*">
                 >
             >
