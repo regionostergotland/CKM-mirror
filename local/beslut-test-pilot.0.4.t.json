@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "7520eb40226168371c77911ecaaddb1a",
+      "MD5-CAM-1.0.1" : "784912734bc1760deba7efddeaf947e9",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -4199,6 +4199,22 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0.1.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "occurrences" : "0..1",
               "nodeId" : "at0002.1.1",
               "attributes" : [ {
@@ -4217,23 +4233,6 @@
                       "constraint" : [ "Ja, patienten ska genomgå kirurgi", "Nej, patienten ska inte genomgå kirurgi" ]
                     } ]
                   } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..1",
-              "nodeId" : "at0003.1.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -4265,13 +4264,38 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0.1.1",
+              "nodeId" : "at0.4.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Urologiska kliniken", "Klinik 2", "Klinik 3" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.1.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -4377,12 +4401,11 @@
             "description" : "The date when the decision was taken.",
             "comment" : "The decision date may differ from the documentation date."
           },
-          "at0002" : {
+          "at0.4.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Recommendation",
-            "description" : "Description of the decision.",
-            "comment" : "May be coded, using a terminology, if required."
+            "code" : "at0.4.1",
+            "text" : "Utredande klinik",
+            "description" : "The unit performing the investigation."
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4433,6 +4456,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1.1",
             "text" : "*DV_DATE_TIME (en)",
+            "description" : "*"
+          },
+          "at0.4.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4.1",
+            "text" : "*DV_TEXT (en)",
             "description" : "*"
           },
           "at0001" : {
@@ -4486,6 +4515,12 @@
             "text" : "*DV_DATE_TIME (en)",
             "description" : "*"
           },
+          "at0.4.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4.1",
+            "text" : "*DV_TEXT (en)",
+            "description" : "*"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -4535,6 +4570,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1.1",
             "text" : "*DV_DATE_TIME (en)",
+            "description" : "*"
+          },
+          "at0.4.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4.1",
+            "text" : "*DV_TEXT (en)",
             "description" : "*"
           },
           "at0001" : {
