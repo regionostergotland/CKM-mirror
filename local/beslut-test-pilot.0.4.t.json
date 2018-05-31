@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "4675e0fc8cc5c8b9e93037696309e69f",
+      "MD5-CAM-1.0.1" : "f12eae68157876821caa567ebe63d3f4",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -431,11 +431,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "defaultValue" : {
-                    "value" : "Patienten har fått information om planerad kirurgisk åtgärd. Patienten har samtyckt till planerad kirurgisk åtgärd. Patienten har i möjligaste mån varit delaktig i beslutet. Patienten har om aktuellt fått möjlighet att välja behandling.",
-                    "@type" : "DV_TEXT"
-                  },
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja, patienten samtycker til lbeslutet" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
