@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "784912734bc1760deba7efddeaf947e9",
+      "MD5-CAM-1.0.1" : "76b402bc2528097c916926802588afaf",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -1190,7 +1190,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_DATE_TIME",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -1663,7 +1671,7 @@
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
-            "text" : "Date/time clinically recognised",
+            "text" : "Tidpunkt för diagnos",
             "description" : "Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.",
             "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of clinical recognition\" should be converted to a date using the subject's date of birth."
           },
@@ -2257,7 +2265,15 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_TEXT",
                       "occurrences" : "1..1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "KAC00 Nefrektomi, öppen", "KAC01 Nefrektomi, laparoskopisk", "KAC01 + ZXC96 Nefrektomi, laparoskopisk, robotassisterad", "KAD00Resektion, öppen", "KAD01 Resektion, laparoskopisk", "KAD01 + ZXC96 Resektion, laparoskopisk, robotassisterad", "KAC20 Nefrouretärektomi", "UKA02 Uretärpyeloskopi", "KAE11 Perkutanlithotripsi", "KAH41 Njurbäckenplastik, laparoskopisk", "KAH41 + ZXC96 Njurbäckenplastik, laparoskopisk, robotassisterad", "KBE12 + ZXC10 Laserlithotripsi, robotassisterad", "UKC05 Cysto+px", "KCD02 TUR-B", "KCE02 Transuretal lithotripsi", "KCE00 Öppen lithectomi", "KCH42 Transuretal blåshalsincision" ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -3147,7 +3163,7 @@
           "at0121.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0121.2",
-            "text" : "Övriga planerade kirurgiska åtgärder",
+            "text" : "Övrig planerad åtgärd",
             "description" : "Identification of the single service or activity requested, by name.",
             "comment" : "Coding of the 'Service name' with a coding system is desirable, if available."
           },
