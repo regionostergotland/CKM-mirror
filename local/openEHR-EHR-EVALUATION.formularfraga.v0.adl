@@ -23,7 +23,7 @@ description
         ["original_namespace"] = <"org.openehr">
         ["original_publisher"] = <"openEHR Foundation">
         ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"754a2ca47844b2cd71b52b18b5e52483">
+        ["MD5-CAM-1.0.1"] = <"2533dda605c351edcb3506789d7416b5">
         ["build_uid"] = <"00bd3d74-b359-37a4-af9d-9e1f0b32cf75">
     >
 
@@ -43,6 +43,16 @@ definition
                             }
                             DV_TEXT matches {*}
                         }
+                    }
+                }
+            }
+        }
+        protocol matches {
+            ITEM_TREE[at0003] matches {
+                items cardinality matches {0..*; unordered} matches {
+                    allow_archetype CLUSTER[at0004] occurrences matches {0..1} matches {
+                        include
+                            archetype_id/value matches {/openEHR-EHR-CLUSTER\.free_text\.v0/}
                     }
                 }
             }
@@ -73,12 +83,14 @@ ontology
                     text = <"Nej">
                     description = <"*">
                 >
-            >
-        >
-    >
-    constraint_definitions = <
-        ["sv"] = <
-            items = <
+                ["at0003"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0004"] = <
+                    text = <"Fråga">
+                    description = <"*">
+                >
             >
         >
     >
