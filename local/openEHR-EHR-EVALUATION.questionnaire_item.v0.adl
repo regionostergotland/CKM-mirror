@@ -1,0 +1,115 @@
+archetype (adl_version=1.4; uid=f621c298-46e9-4f33-9aaa-4a484c19acee)
+    openEHR-EHR-EVALUATION.questionnaire_item.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2018-05-31">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["MD5-CAM-1.0.1"] = <"50244ca18f95bc2ab0ceb330f4e33e64">
+        ["build_uid"] = <"b95179a1-0ffc-323c-87bb-e2fc7899a136">
+    >
+
+definition
+    EVALUATION[at0000] matches {
+        data matches {
+            ITEM_TREE[at0001] matches {
+                items cardinality matches {0..*; unordered} matches {
+                    ELEMENT[at0002] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_ORDINAL matches {*}
+                            DV_TEXT matches {*}
+                        }
+                        name matches {
+                            DV_CODED_TEXT matches {
+                                defining_code matches {
+                                    [local::
+                                    at0003,
+                                    at0004,
+                                    at0005,
+                                    at0006]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        protocol matches {
+            ITEM_TREE[at0007] matches {
+                items cardinality matches {0..*; unordered} matches {
+                    allow_archetype CLUSTER[at0008] occurrences matches {0..1} matches {
+                        include
+                            archetype_id/value matches {/.*/}
+                    }
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["en"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Questionnaire_item">
+                    description = <"Questionnaire component">
+                >
+                ["at0001"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0002"] = <
+                    text = <"Question">
+                    description = <"*">
+                >
+                ["at0003"] = <
+                    text = <"Yes">
+                    description = <"*">
+                >
+                ["at0004"] = <
+                    text = <"No">
+                    description = <"*">
+                >
+                ["at0005"] = <
+                    text = <"Other answer">
+                    description = <"*">
+                >
+                ["at0006"] = <
+                    text = <"Absence of answer">
+                    description = <"*">
+                >
+                ["at0007"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0008"] = <
+                    text = <"Extension">
+                    description = <"*">
+                >
+            >
+        >
+    >
+    constraint_definitions = <
+        ["en"] = <
+            items = <
+            >
+        >
+    >
