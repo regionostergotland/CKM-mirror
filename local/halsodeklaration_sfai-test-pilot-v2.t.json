@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "be8e5cf0f2e116d85d7cb9c4cf5949b4",
+      "MD5-CAM-1.0.1" : "22add53daaa2030c14f09fb0e4139d39",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -5967,93 +5967,12 @@
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
+          "rmTypeName" : "SECTION",
           "occurrences" : "0..*",
-          "nodeId" : "at0.14",
+          "nodeId" : "at0.12",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-questionnaire_item-002.v0",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.15",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-006.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.17",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-007.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.19",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-008.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.21",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-009.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.23",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-010.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.25",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-011.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.27",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-012.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.29",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-013.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..*",
-          "nodeId" : "at0.31",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-014.v1",
+          "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-003.v1",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -6205,70 +6124,16 @@
             "text" : "EVALUATION",
             "description" : "*"
           },
-          "at0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.14",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.15",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.17" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.17",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.19",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.21" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.21",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.23" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.23",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.25",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.27" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.27",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.29" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.29",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.31" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.31",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
           "at0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.8",
             "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "SECTION",
             "description" : "*"
           }
         },
@@ -6333,70 +6198,16 @@
             "text" : "EVALUATION",
             "description" : "*"
           },
-          "at0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.14",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.15",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.17" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.17",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.19",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.21" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.21",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.23" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.23",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.25",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.27" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.27",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.29" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.29",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.31" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.31",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
           "at0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.8",
             "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "SECTION",
             "description" : "*"
           }
         },
@@ -6461,70 +6272,16 @@
             "text" : "EVALUATION",
             "description" : "*"
           },
-          "at0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.14",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.15",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.17" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.17",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.19",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.21" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.21",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.23" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.23",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.25",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.27" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.27",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.29" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.29",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.31" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.31",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
           "at0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.8",
             "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "SECTION",
             "description" : "*"
           }
         },
@@ -6589,70 +6346,16 @@
             "text" : "EVALUATION",
             "description" : "*"
           },
-          "at0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.14",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.15",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.17" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.17",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.19",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.21" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.21",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.23" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.23",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.25",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.27" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.27",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.29" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.29",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.31" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.31",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
           "at0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.8",
             "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "SECTION",
             "description" : "*"
           }
         },
@@ -6717,70 +6420,16 @@
             "text" : "EVALUATION",
             "description" : "*"
           },
-          "at0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.14",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.15",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.17" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.17",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.19",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.21" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.21",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.23" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.23",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.25",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.27" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.27",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.29" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.29",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.31" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.31",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
           "at0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.8",
             "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "SECTION",
             "description" : "*"
           }
         },
@@ -6845,70 +6494,16 @@
             "text" : "EVALUATION",
             "description" : "*"
           },
-          "at0.14" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.14",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.15" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.15",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.17" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.17",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.19" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.19",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.21" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.21",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.23" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.23",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.25" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.25",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.27" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.27",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.29" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.29",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.31" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.31",
-            "text" : "EVALUATION",
-            "description" : "*"
-          },
           "at0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.8",
             "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "SECTION",
             "description" : "*"
           }
         }
@@ -15471,7 +15066,20 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "697f3a4e562562d93ee47f85786275b5"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.questionnaire_item.v0",
     "differential" : true,
@@ -15513,6 +15121,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -15557,7 +15166,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Hjärtsjukdom",
+            "text" : "Hjärtsjukdom ja/nej",
             "description" : "Questionnaire component"
           },
           "at0002.1" : {
@@ -15621,7 +15230,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -15688,6 +15359,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -16270,7 +15942,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -16337,6 +16071,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -16969,7 +16704,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -17036,6 +16833,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -17615,7 +17413,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -17682,6 +17542,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -18261,7 +18122,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -18328,6 +18251,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -18960,7 +18884,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -19027,6 +19013,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -19659,7 +19646,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -19726,6 +19775,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -20358,7 +20408,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -20425,6 +20537,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -21057,7 +21170,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7BEC583AFB22A9B30E28056EB4153CAD"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.",
+          "keywords" : [ "forsiktighetshensyn", "forhindre", "unngå", "uønsket hendelse", "forebygging", "forsiktighet", "advarsel", "varsel" ],
+          "use" : "Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.\r\n\r\nDenne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.\r\n\r\nEksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:\r\n- Immunhemmende/-modulerende behandling - med en referanse til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose\r\n- Nyresvikt - lenket til nyrefunksjonstester eller en formell nyresviktdiagnose.\r\n- Står i transplantasjonskø\r\n- Pågående regelmessig behandling som strålebehandling eller dialyse\r\n- Har fått implantert et organ eller metall i kroppen.\r\n- Pågående utredning/oppfølging av mistenkt eller\r\nverifisert malign lidelse.\r\n- Deltagelse i klinisk farmakologiske studie.\r\n- Viktig blodfortynnende behandling.",
+          "misuse" : "Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.\r\n\r\nSkal ikke brukes for avgrensing av behandling eller for å registrere individets personlige preferanser. Bruk spesifikke arketyper for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.",
+          "keywords" : [ "precaución", "prevenir", "evitar", "evento adverso", "prevención", "precaución", "advertencia" ],
+          "use" : "Utilizado para el registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.\r\n\r\nEste arquetipo debe ser considerado crítico por parte de cualquier sistema de apoyo a la decisión clínica y para cualquier precaución terapéuticamente relevante cuando un médico comienza una nueva intervención clínica para con un individuo.\r\n\r\nLos ejemplos de afecciones que ameritan la creación de una precaución incluyen, pero no se limitan a:\r\n- estado de inmunosupresión o terapia inmunosupresora asociada a una orden de medicamento para quimioterapia o esteroides, o diagnóstico de leucemia;\r\n- fallo renal, asociado a pruebas de función renal y/o el diagnóstico formal de fallo renal;\r\n- en espera de trasplante de órgano;\r\n- bajo tratamiento radiante o diálisis;\r\n- trasplantado de órgano o sujeto de implante metálico;\r\n- bajo estudio o bajo seguimiento de enfermedad maligna presuntiva o confirmada;\r\n- participante de ensayo farmacológico;\r\n- anticoagulado.",
+          "misuse" : "No debe utilizarse para registrar una intervención clínica (incluyendo, pero no limitado a, un tratamiento o realización de una prueba o procedimiento) que no debe ser llevada a cabo debido a la posibilidad de daño al individuo. Utilizar EVALUATION.contraindication para este propósito.\r\n\r\nNo debe utilizarse para registrar directivas anticipadas de cuidado o preferencias personales del individuo. Utilizar EVALUATION.contraindication para este propósito.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.",
+          "keywords" : [ "precaução", "prevenir", "evitar", "evento adverso", "prevenção", "cuidado", "alerta", "atenção" ],
+          "use" : "Usado para gravar uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica.\r\n\r\nEste arquétipo deve ser considerado como crítico para qualquer teste de sistema de suporte à decisão clínica para qualquer precaução terapêutica relevante como o início de uma intervenção clínica a um indivíduo por um clínico.\r\n\r\nExemplos de condições que garantem a criação de uma precaução incluem, mas não são limitadas a:\r\n- imunossuprimido/em terapia imunossupressiva - ligado à solicitação de medicação para quimioterápicos ou esteróides; ou diagnóstico de leucemia;\r\n- falência renal - ligado a testes de função renal e/ou um diagnóstico formal de falência renal;\r\n- na espera por transplante de órgãos;\r\n- em tratamento regular de radioterapia ou diálise;\r\n- transplantado ou com implante metálico in situ;\r\n- em investigação ou acompanhamento de suspeita ou confirmação de doença maligna;\r\n- participação em pesquisa farmacológica; ou\r\n- em tratamento com anticoagulante.\r\n",
+          "misuse" : "Não deve ser usado para gravar uma intervenção clínica (incluindo, mas não limitado ao uso de um tratamento ou desempenho de um teste ou procedimento) que não deve ser carregado devido à probabilidade ou possibilidade de dano causado a um indivíduo. Use EVALUATION.contraindicação para este propósito.\r\n\r\nNão deve ser usado para gravar orientações avanças para o cuidado ou preferências pessoais do indivíduo. Use arquétipos específicos para este propósito.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions.",
+          "keywords" : [ "precaution", "prevent", "avoid", "adverse event", "prevention", "caution", "alert", "warning" ],
+          "use" : "Use to record a condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and which are considered vital information when making treatment decisions.\r\n\r\nThis archetype should be regarded as a critical archetype by any clinical decision support system testing for any relevant therapeutic precautions as a clinician commences a new clinical intervention for an individual. \r\n\r\nExamples of conditions that warrant creation of a precaution include, but are not limited to:\r\n- Immunosuppressed/on immunosuppressive therapy – linked to medication order for chemo or steroids; or diagnosis of leukaemia;\r\n- Renal failure – linked to renal function tests and/or a formal diagnosis of renal failure;\r\n- Waiting for organ transplant;\r\n- Undergoing a regular treatment such as radiation therapy or dialysis;\r\n- Transplanted organ or metal implant in situ;\r\n- Ongoing investigation or follow up of suspected or verified malignant disease;\r\n- Participation in a pharmacological trial; or\r\n- Using anticoagulant treatment.",
+          "misuse" : "Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.\r\n\r\nNot to be used to record advanced directives for care or personal preferences of the individual. Use specific archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.precaution.v1",
     "differential" : true,
@@ -21124,6 +21299,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -21755,7 +21931,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "A3949EA37D876F7A93B6DB742E9D6F38"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid.",
+          "keywords" : [ "eksklusjon, negasjon, utelukke, utelukkelse, fravær" ],
+          "use" : "Brukes til å registrere et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid.\r\n\r\nArketypen er laget spesifikt for kunne uttrykke klart og tydelig en spesifikk utelukkelse av en type klinisk konsept fra journalen. Denne tilnærmingen er valgt i stedet for å basere seg på flagg eller terminologi for å uttrykke negasjon.\r\n\r\nDataelementet \"Ekskludert konsept\" brukes til å registrere et enkelt spesifikt utsagn. De forskjellige typene utsagn som er listet opp i elementets runtime name constraint navngir de forskjellige spesifikke eksklusjonene. En runtime name constraint kan brukes enten under templatmodellering eller i en applikasjon.\r\n\r\nHvert enkelt eksklusjon registreres i en egen instans av denne arketypen. Man registrerer for eksempel \"Ingen tidligere overfølsomhetsreaksjon til penicillin V\", \"Ingen tidligere overfølsomhetsreaksjoner til cefalosporiner\", \"Ingen kjent hjertesykdom i familien\" i tre ulike instanser av denne arketypen.\r\n\r\nMerk at eksklusjonsutsagn kun kan regnes som aktuelle og pålitelige på det tidspunktet de registreres. Et journalnotat kan gjerne uttrykke at et individ ikke har for eksempel diabetes i sin sykehistorie (ved hjelp av et eksklusjonsutsagn) i den samme konsultasjonen der det for første gang registreres en faktisk diabetes (ved hjelp av arketypen EVALUATION.problem_diagnosis). I senere journalnotater kan individet ha diabetes som del av sin kjente historikk.",
+          "misuse" : "Brukes ikke for å registrere et eksklusjonsutsagn for alle problemer eller diagnoser, tilstander i familien, legemidler, prosedyrer, overfølsomhetsreaksjoner eller andre kliniske elementer - bruk arketypen EVALUATION.exclusion_global for dette formålet.\r\n\r\nBrukes ikke for å registrere eksklusjon av noen komponent av en fysisk undersøkelse - bruk arketypen CLUSTER.exclusion_exam i en passende OBSERVATION- eller CLUSTER-arketype.\r\n\r\nBrukes ikke for å registrere eksklusjon av symptomer, bruke arketypen CLUSTER.exclusion_symptom i en passende OBSERVATION eller CLUSTER arketype.\r\n\r\nBrukes ikke denne arketypen for registrering av fravær av infomasjon - bruk arketypen EVALUATION.absence for dette formålet.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a statement of exclusion about a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past.",
+          "keywords" : [ "exclusion, negation, rule out, rule-out, r/o, absence" ],
+          "use" : "Use to record a statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past.\r\n\r\nThis archetype has been specifically designed to make a clear and unambiguous statement of a specific exclusion of a type of clinical item from the health record. This approach is used in preference to relying on flags or terminology to express negation.\r\n\r\nThe data element 'Excluded concept' allows for recording of a single specific statement. The different specific concepts listed in the \"Excluded concept' run-time name constraint identifies the different specific exclusions. This name constraint can be applied during template modelling or at run-time within a software application.\r\n\r\nEach specific exclusion should be recorded in a separate instance of this archetype. For example: record 'no past history of adverse reaction to penicillin V', 'no past history of adverse reaction to cephalosporins' and 'no known family history of heart disease' in 3 separately constrained instances of this archetype.\r\n\r\nPlease note that exclusion statements can only be considered to be current and accurate at the point-in-time of recording. It is possible for a record to be able to state that an individual has NO KNOWN history of a specific problem or diagnosis (using an exclusion statement) at the same consultation as recording the evidence of their first experience of the same problem or diagnosis (using the EVALUATION.problem_diagnosis archetype). In future record statements, the individual may have a KNOWN history of the problem or diagnosis recorded in their problem list.",
+          "misuse" : "Not to be used to record the exclusion of all problems or diagnoses, medications, procedures, family history, adverse reactions or other clinical items - use the EVALUATION.exclusion_global archetype for this purpose.\r\n\r\nNot to be used to record the exclusion of any component of a physical examination - use the CLUSTER.exclusion_exam archetype within an appropriate OBSERVATION or CLUSTER archetype.\r\n\r\nNot to be used to record the exclusion of symptoms use the CLUSTER.exclusion_symptom archetype within an appropriate OBSERVATION or CLUSTER archetype.\r\n\r\nNot to be used to record the absence of information - use the EVALUATION.absense archetype for this purpose.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_specific.v1",
     "differential" : true,
@@ -21873,6 +22082,854 @@
             "code" : "at0012.1",
             "text" : "Kommentar",
             "description" : "Ytterligere fritekst om \"Spesifikk eksklusjon\" som ikke er registrert i andre felt."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "9ef3f2a6-301c-4497-abe1-9491e1631100",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "a75311f1-b97b-480a-963b-536f3f017407",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-adhoc-003.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "0..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-questionnaire_item-002.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-006.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.12",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-006.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.3",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-007.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-008.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.5",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-009.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.6",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-010.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.7",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-011.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.8",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-012.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.9",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-013.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.10",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-precaution-014.v1",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Hjärtsjukdom",
+            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.6",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          }
+        },
+        "ru" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "заготовка заголовка",
+            "description" : "Образец заголовка раздела"
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.6",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          }
+        },
+        "es-ar" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Encabezado ad hoc",
+            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.6",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          }
+        },
+        "sl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Naslov sekcije",
+            "description" : "Naslov sekcije"
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.6",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ad hoc heading",
+            "description" : "En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.6",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Cabeçalho Ad hoc",
+            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.12",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.5",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.6",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.7",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.8",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.9",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.10" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.10",
+            "text" : "EVALUATION",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "01827a5a-aed8-4ad8-926c-e99eb5d9a19f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "361d4961-ea76-4fbd-b1c2-1e5a55214b34",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "A3949EA37D876F7A93B6DB742E9D6F38"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.exclusion_specific.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-exclusion_specific-006.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Nej" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0012.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Hjärtinfarkt (någon gång i livet) /Nej",
+            "description" : "A statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the Specific Exclusion not captured in other fields."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Exclusion statement",
+            "description" : "A qualifying statement about the exclusion of a Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item.",
+            "comment" : "This statement is to be used in conjunction with the 'Excluded concept' data element. For example: this data element can support recording general statements such as \"No known history of ...\" where the 'Excluded concept' identifies the specific problem, diagnosis, substance, procedure or medication. If the 'Excluded concept' data element is used to record a precoordinated term such as 'No family history of diabetes', this element is redundant."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Eksklusjonsutsagn - spesifikt",
+            "description" : "Et utsagn om eksklusjon av en spesifikk problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter som ikke er tilstede hos et individ, enten i nåtid eller fortid."
+          },
+          "at0012.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012.1",
+            "text" : "Kommentar",
+            "description" : "Ytterligere fritekst om \"Spesifikk eksklusjon\" som ikke er registrert i andre felt."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Eksklusjonsutsagn",
+            "description" : "Et kvalifiserende utsagn om eksklusjonen av en problem/diagnose, familiær sykdom, legemiddel, prosedyre, overfølsomhet eller andre kliniske konsepter.",
+            "comment" : "Utsagnet er ment for å brukes sammen med dataelementet \"Ekskludert konsept\". For eksempel: Dataelementet legger til rette for registrering av utsagn som: \"Ingen tidligere...\" hvor \"Ekskludert konsept\" navngir det spesifikke problemet, diagnosen, substansen, prosedyren eller legemiddelet. Dersom elementet \"Ekskludert konsept\" brukes for å registrere et prekoordinert uttrykk som f.eks. \"Ingen kjent diabetes i familien\" er dette elementet overflødig."
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
