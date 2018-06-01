@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3e774fe6cdb5b35bafe7819f5cc2db4a",
+      "MD5-CAM-1.0.1" : "be8e5cf0f2e116d85d7cb9c4cf5949b4",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -15660,7 +15660,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -16301,7 +16309,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -16992,7 +17008,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -17603,7 +17627,233 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "EVALUATION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0014.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0013.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0008.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0022.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -17616,6 +17866,78 @@
             "code" : "at0000.1",
             "text" : "Förmaksflimmer eller annan oregelbunden hjärtrytm",
             "description" : "A condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Förmaksflimmer eller annan oregelbunden hjärtrytm",
+            "description" : "Identification, by name, of a condition or state.",
+            "comment" : "Coding of the identified 'Condition' with a terminology is desirable, where possible."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Status",
+            "description" : "Assertion about the current state of the identified 'Precaution'.",
+            "comment" : "Decision support would typically raise alerts for 'Active' and ignore a 'Resolved' or 'Refuted' precaution. Clinical systems may choose not to display Precaution entries with a 'Refuted' status in the Precaution list. However, 'Refuted' may be useful for reconciliation of the Precaution list or when communicating between systems. Some implementations may choose to make this field mandatory. 'Resolved' may be used variably across systems, depending on clinical use and context. The free text data type will allow for local variation by enabling other value sets to be applied to this data element in a template - in this situation it is recommended that values should be coded using a terminology."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Evidence",
+            "description" : "Description of the evidence identified to support the precaution.",
+            "comment" : "This data element can be optionally linked to a diagnosis, test result, medication order etc via a URI (as per the Reference Model) in order to provide the rationale or evidence for the precaution assertion. Please note: as this URI link may not be accessible from a message or by receiving clinical system it is desirable that a narrative description of the evidence should also be explicitly recorded."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Category",
+            "description" : "Type of the 'Condition' identified.",
+            "comment" : "This data element has been included because it is currently being captured in some clinical systems. This information could be derived when terminology codes are used to represent the condition in clinical systems, and is effectively redundant in that situation."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the precaution, not captured in other fields."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Valid period start",
+            "description" : "Date/time after which the 'Condtion' is regarded as active.",
+            "comment" : "This data element is intended for use when a precaution is identified to start at some time in the future. For example: the commencement date for a pharmaceutical trial."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Review date",
+            "description" : "Date when next due for review by a clinician.",
+            "comment" : "In circumstances where precautions are not indefinite or life-long, use this data element to record the date/time when this precaution should be reassessed in the context of the clinical circumstances at the time."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Last updated",
+            "description" : "Date when the precaution information was last updated."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "nb" : {
@@ -17624,6 +17946,78 @@
             "code" : "at0000.1",
             "text" : "Forholdsregel",
             "description" : "En klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Tilstand",
+            "description" : "Navnet på tilstanden eller statusen.",
+            "comment" : "Koding av tilstanden med en terminologi er ønskelig, dersom mulig."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Status",
+            "description" : "Forholdsregelens nåværende status.",
+            "comment" : "Beslutningsstøtte vil typisk utløse advarsler for \"Aktiv\", og ignorere \"Opphørt\" eller \"Avkreftet\". Kliniske systemer kan velge å ikke vise registreringer med status \"Avkreftet\" i en liste. Likevel kan \"Avkreftet\" være nyttig for sammenstilling av ulike lister eller ved kommunikasjon mellom systemer. Noen systemer kan velge å gjøre dette elementet obligatorisk. \"Opphørt\" kan brukes ulikt i ulike systemer avhengig av klinisk bruk og kontekst. Fritekst-datatypen tillater lokal variasjon ved å gjøre det mulig å bruke andre verdisett for dette dataelementet i en templat. Det er i denne situasjonen anbefalt å kode verdiene med en terminologi."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Underlag",
+            "description" : "Beskrivelse av underlaget som understøtter forholdsregelen.",
+            "comment" : "Dette dataelementet kan dersom ønskelig lenkes til en diagnose, testresultat eller legemiddelordinering ved hjelp av en URI (spesifisert i referansemodellen) for å oppgi rasjonalet eller evidensen for forholdsregelen. NB: Siden URI-lenken kan være utilgjengelige fra en melding eller et mottakende system, er det ønskelig at en fritekstbeskrivelse av underlaget registreres eksplisitt."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Kategori",
+            "description" : "Type \"Tilstand\".",
+            "comment" : "Dette dataelementet er inkludert fordi det registreres i flere eksisterende kliniske systemer. Informasjonen kan avledes fra Tilstand dersom hierarkiske kodesystemer er brukt, og vil i slike tilfeller være redundant."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Kommentar",
+            "description" : "Ytterligere informasjon om forholdsregelen, som ikke kan registreres i andre felter."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Gyldighetsperiode start",
+            "description" : "Forholdsregelen regnes som aktiv etter denne datoen.",
+            "comment" : "Dette dataelementet er ment for å brukes når en forholdregel er ment å starte på et tidspunkt i fremtiden, for eksempel startdatoen for en farmakologisk studie."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Evalueringsdato",
+            "description" : "Dato for neste kliniske evaluering.",
+            "comment" : "Ved omstendigheter der forholdsregler ikke er på ubestemt tid eller livslange, kan dette dataelementet brukes til å registrere når forholdsregelen bør evalueres."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Sist oppdatert",
+            "description" : "Dato da forholdsregelinformasjonen sist ble oppdatert."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "es-ar" : {
@@ -17632,6 +18026,78 @@
             "code" : "at0000.1",
             "text" : "Precaución",
             "description" : "Una afección o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Condición",
+            "description" : "Identificación, por nombre, de la condición o estado.",
+            "comment" : "La codificación de la 'condición' identificada mediante una terminología es deseable cuando sea posible."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Estado",
+            "description" : "Aserción acerca del estado actual de la 'Precaución' identificada.",
+            "comment" : "El apoyo a la decisión típicamente producirá alertas para una precaución 'Activa' e ignorará las del tipo 'Resuelta' o 'Refutada'. Los sistemas clínicos podrían optar por no exhibir asientos con un estado 'Refutada' en la lista de Precauciones. No obstante, 'Refutada' puede resultar útil para la conciliación de la lista de Precauciones o en la comunicación entre sistemas. Algunas implementaciones podrían resolver hacer obligatorio este campo. 'Resuelta' puede ser utilizada en forma diversa dependiendo del uso clínico o del contexto. El tipo de dato de texto libre habilita a la adaptación a usos locales al permitir otros conjuntos de datos para este elemento en una plantilla. En tales casos se recomienda que los valores sean codificados mediante una terminología."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Evidencia",
+            "description" : "Descripción de la evidencia identificada que fundamenta la precaución.",
+            "comment" : "Este elemento puede ser opcionalmente vinculado a un diagnóstico, resultado de prueba, orden de medicamento, etc., a través de una URI (conforme al Modelo de Referencia) a fin de proveer la base o evidencia para la precaución declarada. Se debe tener en cuenta que dado que este vínculo URI puede no ser accesible desde un mensaje o por el sistema clínico receptor, resulta deseable que se registre explícitamente una descripción narrativa de la evidencia."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Categoría",
+            "description" : "Tipo de 'condición' identificada.",
+            "comment" : "Este elemento ha sido incluido dado que esta siendo actualmente registrado en algunos sistemas clínicos. Esta información podrá ser derivada cuando se utilicen códigos terminológicos para representar la condición en sistemas clínicos y es efectivamente redundante en tales situaciones."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Comentario",
+            "description" : "Narrativa adicional acerca de la precaución, no registrada en otros campos."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Comienzo del período de validez",
+            "description" : "Fecha y hora a partir de la cual la 'condición' debe considerarse activa.",
+            "comment" : "Este elemento se utiliza cuando se pretende que una precaución tenga vigencia en algún momento futuro. Por ejemplo: la fecha de comienzo de un ensayo farmacológico."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Fecha de Revisión",
+            "description" : "La fecha en la cual un clínico debe efectuar una revisión.",
+            "comment" : "En circunstancias en las cuales las precauciones no son indefinidas o de por vida, se debe utilizar este elemento para registrar la fecha y hora en la cual esta precaución debe ser reevaluada en el contexto de las circunstancias clínicas imperantes en el momento."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Última actualización",
+            "description" : "Fecha en la cual la información sobre la precaución fue actualizada por última vez."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "pt-br" : {
@@ -17640,12 +18106,90 @@
             "code" : "at0000.1",
             "text" : "Precaução",
             "description" : "Uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Condição",
+            "description" : "Identificação da condição ou estado pelo nome.",
+            "comment" : "A codificação da \"Condição\" identificada com uma terminologia é desejável, quando possível."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Estado",
+            "description" : "Assertiva sobre o estado atual da \"Precaução\" identificada.",
+            "comment" : "A decisão de suporte tipicamente iria levantar alertas para \"Ativa\" e ignorar uma precaução \"Resolvida\" ou \"Refutada\". Sistemas clínicos podem escolher não mostrar entradas com estado de \"refutada\" na lista de precauções. Entretanto, \"Refutada\" pode ser útil para a reconciliação da lista de precaução ou na comunicação entre sistemas. Algumas implementações podem escolher em classificar este campo como obrigatório. \"Resolvida\" pode ser usada de forma variável entre sistemas, dependendo do uso e contexto clínico. O tipo de dado texto livre irá permitir variabilidade local por possibilitar outros conjuntos de valores a serem aplicados a este elemento de dado em um modelo - neste situação é recomendado que estes valores sejam codificados utilizando uma terminologia."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Evidência",
+            "description" : "Descrição da evidência identificada para suportar a precaução.",
+            "comment" : "Este elemento de dado pode ser opcionalmente ligado a um diagnóstico, resultado de exame, solicitação de medicamento etc via URI (como pelo Modelo de Referência) para prover uma razão ou evidência para a assertiva de precaução. Por favor note: como este link URI pode não ser acessível por uma mensagem ou pelo sistema clínico receptor é desejável que a descrição narrativa da evidência seja também explicitamente gravada."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Categoria",
+            "description" : "Tipo de \"Condição\" identificada.",
+            "comment" : "Este elemento de dado foi incluído porque é atualmente capturado em alguns sistemas clínicos. Esta informação pode ser derivada quando códigos terminológicos são utilizados para representar a condição em sistemas clínicos, e é efetivamente redundante nesta situação."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Comentário",
+            "description" : "Narrativa adicional sobre a precaução, não capturada em outros campos."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Início do período válido",
+            "description" : "Data/hora na qual a \"Condição\" foi considerada ativa.",
+            "comment" : "Este elemento de dado é indicado para uso quando é identificado o início da precaução em algum momento no futuro. Por exemplo: a data de início para uma pesquisa farmacêutica."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Data de revisão",
+            "description" : "Data na qual a revisão pelo clínico deverá ser realizada.",
+            "comment" : "Em circunstâncias onde as precauções não são de longo prazo ou vitalícias, use este elemento de dado para gravar a data/hora na qual esta precaução deve ser reavaliada no contexto das circunstâncias clínicas do momento."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Última atualização",
+            "description" : "Data na qual a informação de precaução foi atualizada pela última vez."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0015", "at0018", "at0019" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "ce90b450-fdde-478d-a081-24f8c327a091",
@@ -17756,7 +18300,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -18447,7 +18999,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -19111,7 +19671,258 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "EVALUATION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0014.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0013.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0008.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0022.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0024.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0009.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0004.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -19124,6 +19935,85 @@
             "code" : "at0000.1",
             "text" : "Pacemaker",
             "description" : "A condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Pacemaker",
+            "description" : "Identification, by name, of a condition or state.",
+            "comment" : "Coding of the identified 'Condition' with a terminology is desirable, where possible."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Status",
+            "description" : "Assertion about the current state of the identified 'Precaution'.",
+            "comment" : "Decision support would typically raise alerts for 'Active' and ignore a 'Resolved' or 'Refuted' precaution. Clinical systems may choose not to display Precaution entries with a 'Refuted' status in the Precaution list. However, 'Refuted' may be useful for reconciliation of the Precaution list or when communicating between systems. Some implementations may choose to make this field mandatory. 'Resolved' may be used variably across systems, depending on clinical use and context. The free text data type will allow for local variation by enabling other value sets to be applied to this data element in a template - in this situation it is recommended that values should be coded using a terminology."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Evidence",
+            "description" : "Description of the evidence identified to support the precaution.",
+            "comment" : "This data element can be optionally linked to a diagnosis, test result, medication order etc via a URI (as per the Reference Model) in order to provide the rationale or evidence for the precaution assertion. Please note: as this URI link may not be accessible from a message or by receiving clinical system it is desirable that a narrative description of the evidence should also be explicitly recorded."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Category",
+            "description" : "Type of the 'Condition' identified.",
+            "comment" : "This data element has been included because it is currently being captured in some clinical systems. This information could be derived when terminology codes are used to represent the condition in clinical systems, and is effectively redundant in that situation."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the precaution, not captured in other fields."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Valid period start",
+            "description" : "Date/time after which the 'Condtion' is regarded as active.",
+            "comment" : "This data element is intended for use when a precaution is identified to start at some time in the future. For example: the commencement date for a pharmaceutical trial."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Valid period end",
+            "description" : "Date/time after which the 'Condtion' is regarded as inactive.",
+            "comment" : "This data element is intended for use when a precaution is known to have a definitive end date/time in the future. For example: the cessation date for a pharmaceutical trial."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Review date",
+            "description" : "Date when next due for review by a clinician.",
+            "comment" : "In circumstances where precautions are not indefinite or life-long, use this data element to record the date/time when this precaution should be reassessed in the context of the clinical circumstances at the time."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Last updated",
+            "description" : "Date when the precaution information was last updated."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "nb" : {
@@ -19132,6 +20022,85 @@
             "code" : "at0000.1",
             "text" : "Forholdsregel",
             "description" : "En klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Tilstand",
+            "description" : "Navnet på tilstanden eller statusen.",
+            "comment" : "Koding av tilstanden med en terminologi er ønskelig, dersom mulig."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Status",
+            "description" : "Forholdsregelens nåværende status.",
+            "comment" : "Beslutningsstøtte vil typisk utløse advarsler for \"Aktiv\", og ignorere \"Opphørt\" eller \"Avkreftet\". Kliniske systemer kan velge å ikke vise registreringer med status \"Avkreftet\" i en liste. Likevel kan \"Avkreftet\" være nyttig for sammenstilling av ulike lister eller ved kommunikasjon mellom systemer. Noen systemer kan velge å gjøre dette elementet obligatorisk. \"Opphørt\" kan brukes ulikt i ulike systemer avhengig av klinisk bruk og kontekst. Fritekst-datatypen tillater lokal variasjon ved å gjøre det mulig å bruke andre verdisett for dette dataelementet i en templat. Det er i denne situasjonen anbefalt å kode verdiene med en terminologi."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Underlag",
+            "description" : "Beskrivelse av underlaget som understøtter forholdsregelen.",
+            "comment" : "Dette dataelementet kan dersom ønskelig lenkes til en diagnose, testresultat eller legemiddelordinering ved hjelp av en URI (spesifisert i referansemodellen) for å oppgi rasjonalet eller evidensen for forholdsregelen. NB: Siden URI-lenken kan være utilgjengelige fra en melding eller et mottakende system, er det ønskelig at en fritekstbeskrivelse av underlaget registreres eksplisitt."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Kategori",
+            "description" : "Type \"Tilstand\".",
+            "comment" : "Dette dataelementet er inkludert fordi det registreres i flere eksisterende kliniske systemer. Informasjonen kan avledes fra Tilstand dersom hierarkiske kodesystemer er brukt, og vil i slike tilfeller være redundant."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Kommentar",
+            "description" : "Ytterligere informasjon om forholdsregelen, som ikke kan registreres i andre felter."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Gyldighetsperiode start",
+            "description" : "Forholdsregelen regnes som aktiv etter denne datoen.",
+            "comment" : "Dette dataelementet er ment for å brukes når en forholdregel er ment å starte på et tidspunkt i fremtiden, for eksempel startdatoen for en farmakologisk studie."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Gyldighetsperiode slutt",
+            "description" : "Forholdsregelen regnes som inaktiv etter denne datoen.",
+            "comment" : "Dette dataelementet er ment for å brukes når en forholdsregel er ment å avsluttes på et tidspunkt i fremtiden, for eksempel sluttdatoen for en farmakologisk studie."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Evalueringsdato",
+            "description" : "Dato for neste kliniske evaluering.",
+            "comment" : "Ved omstendigheter der forholdsregler ikke er på ubestemt tid eller livslange, kan dette dataelementet brukes til å registrere når forholdsregelen bør evalueres."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Sist oppdatert",
+            "description" : "Dato da forholdsregelinformasjonen sist ble oppdatert."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "es-ar" : {
@@ -19140,6 +20109,85 @@
             "code" : "at0000.1",
             "text" : "Precaución",
             "description" : "Una afección o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Condición",
+            "description" : "Identificación, por nombre, de la condición o estado.",
+            "comment" : "La codificación de la 'condición' identificada mediante una terminología es deseable cuando sea posible."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Estado",
+            "description" : "Aserción acerca del estado actual de la 'Precaución' identificada.",
+            "comment" : "El apoyo a la decisión típicamente producirá alertas para una precaución 'Activa' e ignorará las del tipo 'Resuelta' o 'Refutada'. Los sistemas clínicos podrían optar por no exhibir asientos con un estado 'Refutada' en la lista de Precauciones. No obstante, 'Refutada' puede resultar útil para la conciliación de la lista de Precauciones o en la comunicación entre sistemas. Algunas implementaciones podrían resolver hacer obligatorio este campo. 'Resuelta' puede ser utilizada en forma diversa dependiendo del uso clínico o del contexto. El tipo de dato de texto libre habilita a la adaptación a usos locales al permitir otros conjuntos de datos para este elemento en una plantilla. En tales casos se recomienda que los valores sean codificados mediante una terminología."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Evidencia",
+            "description" : "Descripción de la evidencia identificada que fundamenta la precaución.",
+            "comment" : "Este elemento puede ser opcionalmente vinculado a un diagnóstico, resultado de prueba, orden de medicamento, etc., a través de una URI (conforme al Modelo de Referencia) a fin de proveer la base o evidencia para la precaución declarada. Se debe tener en cuenta que dado que este vínculo URI puede no ser accesible desde un mensaje o por el sistema clínico receptor, resulta deseable que se registre explícitamente una descripción narrativa de la evidencia."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Categoría",
+            "description" : "Tipo de 'condición' identificada.",
+            "comment" : "Este elemento ha sido incluido dado que esta siendo actualmente registrado en algunos sistemas clínicos. Esta información podrá ser derivada cuando se utilicen códigos terminológicos para representar la condición en sistemas clínicos y es efectivamente redundante en tales situaciones."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Comentario",
+            "description" : "Narrativa adicional acerca de la precaución, no registrada en otros campos."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Comienzo del período de validez",
+            "description" : "Fecha y hora a partir de la cual la 'condición' debe considerarse activa.",
+            "comment" : "Este elemento se utiliza cuando se pretende que una precaución tenga vigencia en algún momento futuro. Por ejemplo: la fecha de comienzo de un ensayo farmacológico."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Final del período de validez",
+            "description" : "Fecha y hora a partir de la cual la 'condición' debe considerarse inactiva.",
+            "comment" : "Este elemento se utiliza cuando una precaución tiene una fecha de finalización futura conocida. Por ejemplo: la fecha de finalización de un ensayo farmacológico."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Fecha de Revisión",
+            "description" : "La fecha en la cual un clínico debe efectuar una revisión.",
+            "comment" : "En circunstancias en las cuales las precauciones no son indefinidas o de por vida, se debe utilizar este elemento para registrar la fecha y hora en la cual esta precaución debe ser reevaluada en el contexto de las circunstancias clínicas imperantes en el momento."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Última actualización",
+            "description" : "Fecha en la cual la información sobre la precaución fue actualizada por última vez."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "pt-br" : {
@@ -19148,12 +20196,97 @@
             "code" : "at0000.1",
             "text" : "Precaução",
             "description" : "Uma condição ou estado do indivíduo que é clinicamente significante e único ou idiossincrásico para este indivíduo, e é considerada informação vital na tomada de decisão clínica."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Condição",
+            "description" : "Identificação da condição ou estado pelo nome.",
+            "comment" : "A codificação da \"Condição\" identificada com uma terminologia é desejável, quando possível."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Estado",
+            "description" : "Assertiva sobre o estado atual da \"Precaução\" identificada.",
+            "comment" : "A decisão de suporte tipicamente iria levantar alertas para \"Ativa\" e ignorar uma precaução \"Resolvida\" ou \"Refutada\". Sistemas clínicos podem escolher não mostrar entradas com estado de \"refutada\" na lista de precauções. Entretanto, \"Refutada\" pode ser útil para a reconciliação da lista de precaução ou na comunicação entre sistemas. Algumas implementações podem escolher em classificar este campo como obrigatório. \"Resolvida\" pode ser usada de forma variável entre sistemas, dependendo do uso e contexto clínico. O tipo de dado texto livre irá permitir variabilidade local por possibilitar outros conjuntos de valores a serem aplicados a este elemento de dado em um modelo - neste situação é recomendado que estes valores sejam codificados utilizando uma terminologia."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Evidência",
+            "description" : "Descrição da evidência identificada para suportar a precaução.",
+            "comment" : "Este elemento de dado pode ser opcionalmente ligado a um diagnóstico, resultado de exame, solicitação de medicamento etc via URI (como pelo Modelo de Referência) para prover uma razão ou evidência para a assertiva de precaução. Por favor note: como este link URI pode não ser acessível por uma mensagem ou pelo sistema clínico receptor é desejável que a descrição narrativa da evidência seja também explicitamente gravada."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Categoria",
+            "description" : "Tipo de \"Condição\" identificada.",
+            "comment" : "Este elemento de dado foi incluído porque é atualmente capturado em alguns sistemas clínicos. Esta informação pode ser derivada quando códigos terminológicos são utilizados para representar a condição em sistemas clínicos, e é efetivamente redundante nesta situação."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Comentário",
+            "description" : "Narrativa adicional sobre a precaução, não capturada em outros campos."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Início do período válido",
+            "description" : "Data/hora na qual a \"Condição\" foi considerada ativa.",
+            "comment" : "Este elemento de dado é indicado para uso quando é identificado o início da precaução em algum momento no futuro. Por exemplo: a data de início para uma pesquisa farmacêutica."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Final do período válido",
+            "description" : "Data/hora na qual a \"Condição\" foi considerada inativa.",
+            "comment" : "Este elemento de dado é indicado para uso quando sabe-se que a precaução tem uma data de finalização no futuro. Por exemplo: a data de término de uma pesquisa clínica."
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Data de revisão",
+            "description" : "Data na qual a revisão pelo clínico deverá ser realizada.",
+            "comment" : "Em circunstâncias onde as precauções não são de longo prazo ou vitalícias, use este elemento de dado para gravar a data/hora na qual esta precaução deve ser reavaliada no contexto das circunstâncias clínicas do momento."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Última atualização",
+            "description" : "Data na qual a informação de precaução foi atualizada pela última vez."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0015", "at0018", "at0019" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "ce90b450-fdde-478d-a081-24f8c327a091",
@@ -19264,7 +20397,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -19955,7 +21096,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
