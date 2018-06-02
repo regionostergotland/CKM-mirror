@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "dfd5788d54febed97869e8f5b4a025df",
+      "MD5-CAM-1.0.1" : "bef38e07909afb5441f60f9424bf04e1",
       "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
     },
     "details" : {
@@ -459,7 +459,7 @@
   "rmName" : "openehr",
   "rmRelease" : "1.0.3",
   "generated" : true,
-  "templateId" : "Risikovurdering pasient før anestesi",
+  "templateId" : "Preoperativ anestesibedomning",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
@@ -474,7 +474,80 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : {
+            "notes" : "Generated automatically by Adl Designer"
+          }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation des Vorhandenseins eines Risikos mit möglichen Auswirkungen jetzt oder in der Zukunft",
+          "keywords" : [ "Einschätzung" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrer kjente risikofaktorer for en kjent sykdom, tislatnd eller andre potensiell negative helseutfall,  og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "keywords" : [ "risiko", "evaluering", "vurdering" ],
+          "use" : "Brukes for å registrere kjent risiko for en identifsert sykdom, tilstand eller potensiell negativ helseutfall og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "copyright" : "*© openEHR Foundation(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل التخاطر/احتمالية الخطر لظرف صحي قد يحدث في المستقبل",
+          "keywords" : [ "تقييم" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "keywords" : [ "assessment", "risk", "evaluation" ],
+          "use" : "Use to record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
     "differential" : true,
@@ -1275,7 +1348,80 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : {
+            "notes" : "Generated automatically by Adl Designer"
+          }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation des Vorhandenseins eines Risikos mit möglichen Auswirkungen jetzt oder in der Zukunft",
+          "keywords" : [ "Einschätzung" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrer kjente risikofaktorer for en kjent sykdom, tislatnd eller andre potensiell negative helseutfall,  og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "keywords" : [ "risiko", "evaluering", "vurdering" ],
+          "use" : "Brukes for å registrere kjent risiko for en identifsert sykdom, tilstand eller potensiell negativ helseutfall og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "copyright" : "*© openEHR Foundation(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل التخاطر/احتمالية الخطر لظرف صحي قد يحدث في المستقبل",
+          "keywords" : [ "تقييم" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "keywords" : [ "assessment", "risk", "evaluation" ],
+          "use" : "Use to record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
     "differential" : true,
@@ -1892,7 +2038,80 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : {
+            "notes" : "Generated automatically by Adl Designer"
+          }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation des Vorhandenseins eines Risikos mit möglichen Auswirkungen jetzt oder in der Zukunft",
+          "keywords" : [ "Einschätzung" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrer kjente risikofaktorer for en kjent sykdom, tislatnd eller andre potensiell negative helseutfall,  og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "keywords" : [ "risiko", "evaluering", "vurdering" ],
+          "use" : "Brukes for å registrere kjent risiko for en identifsert sykdom, tilstand eller potensiell negativ helseutfall og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "copyright" : "*© openEHR Foundation(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل التخاطر/احتمالية الخطر لظرف صحي قد يحدث في المستقبل",
+          "keywords" : [ "تقييم" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "keywords" : [ "assessment", "risk", "evaluation" ],
+          "use" : "Use to record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
     "differential" : true,
@@ -2969,7 +3188,80 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : {
+            "notes" : "Generated automatically by Adl Designer"
+          }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation des Vorhandenseins eines Risikos mit möglichen Auswirkungen jetzt oder in der Zukunft",
+          "keywords" : [ "Einschätzung" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrer kjente risikofaktorer for en kjent sykdom, tislatnd eller andre potensiell negative helseutfall,  og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "keywords" : [ "risiko", "evaluering", "vurdering" ],
+          "use" : "Brukes for å registrere kjent risiko for en identifsert sykdom, tilstand eller potensiell negativ helseutfall og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "copyright" : "*© openEHR Foundation(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل التخاطر/احتمالية الخطر لظرف صحي قد يحدث في المستقبل",
+          "keywords" : [ "تقييم" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "keywords" : [ "assessment", "risk", "evaluation" ],
+          "use" : "Use to record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
     "differential" : true,
@@ -3402,7 +3694,80 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : {
+            "notes" : "Generated automatically by Adl Designer"
+          }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation des Vorhandenseins eines Risikos mit möglichen Auswirkungen jetzt oder in der Zukunft",
+          "keywords" : [ "Einschätzung" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrer kjente risikofaktorer for en kjent sykdom, tislatnd eller andre potensiell negative helseutfall,  og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "keywords" : [ "risiko", "evaluering", "vurdering" ],
+          "use" : "Brukes for å registrere kjent risiko for en identifsert sykdom, tilstand eller potensiell negativ helseutfall og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "copyright" : "*© openEHR Foundation(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل التخاطر/احتمالية الخطر لظرف صحي قد يحدث في المستقبل",
+          "keywords" : [ "تقييم" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "keywords" : [ "assessment", "risk", "evaluation" ],
+          "use" : "Use to record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
     "differential" : true,
@@ -4387,7 +4752,80 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
       },
-      "details" : { }
+      "details" : {
+        "no" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "no"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : {
+            "notes" : "Generated automatically by Adl Designer"
+          }
+        },
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Dokumentation des Vorhandenseins eines Risikos mit möglichen Auswirkungen jetzt oder in der Zukunft",
+          "keywords" : [ "Einschätzung" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrer kjente risikofaktorer for en kjent sykdom, tislatnd eller andre potensiell negative helseutfall,  og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "keywords" : [ "risiko", "evaluering", "vurdering" ],
+          "use" : "Brukes for å registrere kjent risiko for en identifsert sykdom, tilstand eller potensiell negativ helseutfall og eller for evaluering av sannnsynligheten av at subjektet opplever dette i fremtiden. ",
+          "copyright" : "*© openEHR Foundation(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل التخاطر/احتمالية الخطر لظرف صحي قد يحدث في المستقبل",
+          "keywords" : [ "تقييم" ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "keywords" : [ "assessment", "risk", "evaluation" ],
+          "use" : "Use to record known risk factors for an identified disease, condition, or other potentially adverse health issue , and/or an evaluation of the likelihood of the subject experiencing it in the future.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
     "differential" : true,
