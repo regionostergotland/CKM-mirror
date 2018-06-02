@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "7d5058d6a95deed7b160a132e8c27d2c",
+      "MD5-CAM-1.0.1" : "dfd5788d54febed97869e8f5b4a025df",
       "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
     },
     "details" : {
@@ -119,7 +119,66 @@
     "@type" : "C_COMPLEX_OBJECT",
     "rmTypeName" : "SECTION",
     "nodeId" : "at0000.1",
-    "attributes" : [ ],
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "items",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-risk-000.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-risk-001.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.3",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-risk-002.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-risk-003.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.5",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-risk-004.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "EVALUATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.6",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-risk-005.v1",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
     "attributeTuples" : [ ]
   },
   "terminology" : {
@@ -132,6 +191,42 @@
           "code" : "at0000.1",
           "text" : "Pasient status",
           "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+        },
+        "at0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.1",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.2",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.3",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.4",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.6",
+          "text" : "EVALUATION",
+          "description" : "*"
         }
       },
       "ru" : {
@@ -140,6 +235,42 @@
           "code" : "at0000.1",
           "text" : "Pasient status",
           "description" : "Образец заголовка раздела"
+        },
+        "at0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.1",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.2",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.3",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.4",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.6",
+          "text" : "EVALUATION",
+          "description" : "*"
         }
       },
       "es-ar" : {
@@ -148,6 +279,42 @@
           "code" : "at0000.1",
           "text" : "Pasient status",
           "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+        },
+        "at0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.1",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.2",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.3",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.4",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.6",
+          "text" : "EVALUATION",
+          "description" : "*"
         }
       },
       "sl" : {
@@ -156,6 +323,42 @@
           "code" : "at0000.1",
           "text" : "Pasient status",
           "description" : "Naslov sekcije"
+        },
+        "at0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.1",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.2",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.3",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.4",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.6",
+          "text" : "EVALUATION",
+          "description" : "*"
         }
       },
       "nb" : {
@@ -164,6 +367,42 @@
           "code" : "at0000.1",
           "text" : "Pasient status",
           "description" : "En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst."
+        },
+        "at0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.1",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.2",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.3",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.4",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.6",
+          "text" : "EVALUATION",
+          "description" : "*"
         }
       },
       "pt-br" : {
@@ -172,6 +411,42 @@
           "code" : "at0000.1",
           "text" : "Pasient status",
           "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+        },
+        "at0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.1",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.2",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.3",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.4",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.5",
+          "text" : "EVALUATION",
+          "description" : "*"
+        },
+        "at0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.6",
+          "text" : "EVALUATION",
+          "description" : "*"
         }
       }
     },
@@ -186,7 +461,4253 @@
   "generated" : true,
   "templateId" : "Risikovurdering pasient før anestesi",
   "otherMetaData" : { },
-  "templateOverlays" : [ ],
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4b6fea6d-b0de-3346-b253-ae9d69eb4992",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-risk-000.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : true,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Hjertesvikt" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.2",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Koronarsykdom" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.3",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Angina" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.4",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Arrytmi" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.5",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Klaffefeil" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.6",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Hypertensjon" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.4",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.5",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.6",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Hjerte",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Hjertesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Hjertesvikt",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Hjertesvikt",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Koronarsykdom",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Koronarsykdom",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Angina",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Angina",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Arrytmi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Arrytmi",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Klaffefeil",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Klaffefeil",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Hypertensjon",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Hypertensjon",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Hjerte",
+            "description" : "Estimation of the potential and likelihood of future adverse health effects due to identified risk factors."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Hjertesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "Name of the identified potential future disease, condition or health issue."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Hjertesvikt",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Hjertesvikt",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Koronarsykdom",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Koronarsykdom",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Angina",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Angina",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Arrytmi",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Arrytmi",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Klaffefeil",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Klaffefeil",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Hypertensjon",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Hypertensjon",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Hjerte",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Hjertesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Hjertesvikt",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Hjertesvikt",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Koronarsykdom",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Koronarsykdom",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Angina",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Angina",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Arrytmi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Arrytmi",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Klaffefeil",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Klaffefeil",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Hypertensjon",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Hypertensjon",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Hjerte",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Hjertesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Hjertesvikt",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Hjertesvikt",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Koronarsykdom",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Koronarsykdom",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Angina",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Angina",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Arrytmi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Arrytmi",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Klaffefeil",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Klaffefeil",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Hypertensjon",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Hypertensjon",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Hjerte",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Hjertesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Hjertesvikt",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Hjertesvikt",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Koronarsykdom",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Koronarsykdom",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Angina",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Angina",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Arrytmi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Arrytmi",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Klaffefeil",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Klaffefeil",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Hypertensjon",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Hypertensjon",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d388b6f6-f5e9-3c1b-b606-60430da57fa0",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Jasmin Buck, Sebastian Garde",
+        "organisation" : "University of Heidelberg, Cental Queensland University"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "application" : "Adl Designer"
+      },
+      "otherDetails" : {
+        "notes" : "Generated automatically by Adl Designer"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Anca Heyd",
+        "organisation" : "DIPS ASA",
+        "email" : "ahe@dips.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4b6fea6d-b0de-3346-b253-ae9d69eb4992",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-risk-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : true,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "KOLS" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.2",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Astma" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.3",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Infeksjon" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.4",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Annen lungesykdom" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.4",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Lunge",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Lungesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "KOLS",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "KOLS",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Astma",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Astma",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Infeksjon",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Infeksjon",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Annen lungesykdom",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Annen lungesykdom",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Lunge",
+            "description" : "Estimation of the potential and likelihood of future adverse health effects due to identified risk factors."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Lungesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "Name of the identified potential future disease, condition or health issue."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "KOLS",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "KOLS",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Astma",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Astma",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Infeksjon",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Infeksjon",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Annen lungesykdom",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Annen lungesykdom",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Lunge",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Lungesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "KOLS",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "KOLS",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Astma",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Astma",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Infeksjon",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Infeksjon",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Annen lungesykdom",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Annen lungesykdom",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Lunge",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Lungesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "KOLS",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "KOLS",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Astma",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Astma",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Infeksjon",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Infeksjon",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Annen lungesykdom",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Annen lungesykdom",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Lunge",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Lungesykdom i forbindelse med kirurgi og/eller anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "KOLS",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "KOLS",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Astma",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Astma",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Infeksjon",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Infeksjon",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Annen lungesykdom",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Annen lungesykdom",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d388b6f6-f5e9-3c1b-b606-60430da57fa0",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Jasmin Buck, Sebastian Garde",
+        "organisation" : "University of Heidelberg, Cental Queensland University"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "application" : "Adl Designer"
+      },
+      "otherDetails" : {
+        "notes" : "Generated automatically by Adl Designer"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Anca Heyd",
+        "organisation" : "DIPS ASA",
+        "email" : "ahe@dips.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4b6fea6d-b0de-3346-b253-ae9d69eb4992",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-risk-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : true,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "CNS/nevrologi" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.2",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Diabetes" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.3",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "GI-trakt/ lever" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.4",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Nyre" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.5",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Hematologi" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.6",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Ernæringstilstand" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.7",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Annet" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.8",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Psyke" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.9",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Malign sykdom" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.4",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.5",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.6",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.7",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.8",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.9",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Øvrige organer",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "CNS/nevrologi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "CNS/nevrologi",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Diabetes",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Diabetes",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Nyre",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Nyre",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Hematologi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Hematologi",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Ernæringstilstand",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Ernæringstilstand",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "Annet",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "Annet",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Psyke",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Psyke",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.9",
+            "text" : "Malign sykdom",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.9",
+            "text" : "Malign sykdom",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Øvrige organer",
+            "description" : "Estimation of the potential and likelihood of future adverse health effects due to identified risk factors."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "Name of the identified potential future disease, condition or health issue."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "CNS/nevrologi",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "CNS/nevrologi",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Diabetes",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Diabetes",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Nyre",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Nyre",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Hematologi",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Hematologi",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Ernæringstilstand",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Ernæringstilstand",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "Annet",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "Annet",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Psyke",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Psyke",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.9",
+            "text" : "Malign sykdom",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.9",
+            "text" : "Malign sykdom",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Øvrige organer",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "CNS/nevrologi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "CNS/nevrologi",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Diabetes",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Diabetes",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Nyre",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Nyre",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Hematologi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Hematologi",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Ernæringstilstand",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Ernæringstilstand",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "Annet",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "Annet",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Psyke",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Psyke",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.9",
+            "text" : "Malign sykdom",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.9",
+            "text" : "Malign sykdom",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Øvrige organer",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "CNS/nevrologi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "CNS/nevrologi",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Diabetes",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Diabetes",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Nyre",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Nyre",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Hematologi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Hematologi",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Ernæringstilstand",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Ernæringstilstand",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "Annet",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "Annet",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Psyke",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Psyke",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.9",
+            "text" : "Malign sykdom",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.9",
+            "text" : "Malign sykdom",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Øvrige organer",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "CNS/nevrologi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "CNS/nevrologi",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Diabetes",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Diabetes",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "GI-trakt/ lever",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Nyre",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Nyre",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Hematologi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Hematologi",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Ernæringstilstand",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Ernæringstilstand",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "Annet",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "Annet",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Psyke",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Psyke",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.9",
+            "text" : "Malign sykdom",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.9" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.9",
+            "text" : "Malign sykdom",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d388b6f6-f5e9-3c1b-b606-60430da57fa0",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Jasmin Buck, Sebastian Garde",
+        "organisation" : "University of Heidelberg, Cental Queensland University"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "application" : "Adl Designer"
+      },
+      "otherDetails" : {
+        "notes" : "Generated automatically by Adl Designer"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Anca Heyd",
+        "organisation" : "DIPS ASA",
+        "email" : "ahe@dips.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4b6fea6d-b0de-3346-b253-ae9d69eb4992",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-risk-003.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : true,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Stimulantia" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.2",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Ernæringstilstand" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Livsstil",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stimulantia",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stimulantia",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Ernæringstilstand",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Ernæringstilstand",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Livsstil",
+            "description" : "Estimation of the potential and likelihood of future adverse health effects due to identified risk factors."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "Name of the identified potential future disease, condition or health issue."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stimulantia",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stimulantia",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Ernæringstilstand",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Ernæringstilstand",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Livsstil",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stimulantia",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stimulantia",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Ernæringstilstand",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Ernæringstilstand",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Livsstil",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stimulantia",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stimulantia",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Ernæringstilstand",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Ernæringstilstand",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Livsstil",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom i forbindelse med kirurgi og eller anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Stimulantia",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stimulantia",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Ernæringstilstand",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Ernæringstilstand",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d388b6f6-f5e9-3c1b-b606-60430da57fa0",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Jasmin Buck, Sebastian Garde",
+        "organisation" : "University of Heidelberg, Cental Queensland University"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "application" : "Adl Designer"
+      },
+      "otherDetails" : {
+        "notes" : "Generated automatically by Adl Designer"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Anca Heyd",
+        "organisation" : "DIPS ASA",
+        "email" : "ahe@dips.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4b6fea6d-b0de-3346-b253-ae9d69eb4992",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-risk-004.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : true,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Nakkeekstensjon" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.2",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Tannstatus" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.3",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Gapeevne" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.4",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Mallampati" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.5",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Forventet vanskelig intubasjon" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.6",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Aspirasjonsrisiko" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.7",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "PONV/bilsyke" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.8",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_STRING",
+                          "constraint" : [ "Tidligere anestesi" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.2",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.3",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.4",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.5",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.6",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.7",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.8",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Anestesispesifikke faktorer",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom eller skade i forbindelse med anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Tannstatus",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Tannstatus",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Gapeevne",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Gapeevne",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Mallampati",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Mallampati",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "PONV/bilsyke",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "PONV/bilsyke",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Tidligere anestesi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Tidligere anestesi",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Anestesispesifikke faktorer",
+            "description" : "Estimation of the potential and likelihood of future adverse health effects due to identified risk factors."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom eller skade i forbindelse med anestesi",
+            "description" : "Name of the identified potential future disease, condition or health issue."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Tannstatus",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Tannstatus",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Gapeevne",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Gapeevne",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Mallampati",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Mallampati",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "PONV/bilsyke",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "PONV/bilsyke",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Tidligere anestesi",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Tidligere anestesi",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Anestesispesifikke faktorer",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom eller skade i forbindelse med anestesi",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Tannstatus",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Tannstatus",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Gapeevne",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Gapeevne",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Mallampati",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Mallampati",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "PONV/bilsyke",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "PONV/bilsyke",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Tidligere anestesi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Tidligere anestesi",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Anestesispesifikke faktorer",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom eller skade i forbindelse med anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Tannstatus",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Tannstatus",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Gapeevne",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Gapeevne",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Mallampati",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Mallampati",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "PONV/bilsyke",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "PONV/bilsyke",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Tidligere anestesi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Tidligere anestesi",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Anestesispesifikke faktorer",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sykdom eller skade i forbindelse med anestesi",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Nakkeekstensjon",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.2",
+            "text" : "Tannstatus",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.2",
+            "text" : "Tannstatus",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.3",
+            "text" : "Gapeevne",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.3",
+            "text" : "Gapeevne",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.4",
+            "text" : "Mallampati",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.4",
+            "text" : "Mallampati",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.5" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.5",
+            "text" : "Forventet vanskelig intubasjon",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.6",
+            "text" : "Aspirasjonsrisiko",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.7",
+            "text" : "PONV/bilsyke",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.7",
+            "text" : "PONV/bilsyke",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0016.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.8",
+            "text" : "Tidligere anestesi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.8" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.8",
+            "text" : "Tidligere anestesi",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d388b6f6-f5e9-3c1b-b606-60430da57fa0",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Jasmin Buck, Sebastian Garde",
+        "organisation" : "University of Heidelberg, Cental Queensland University"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "application" : "Adl Designer"
+      },
+      "otherDetails" : {
+        "notes" : "Generated automatically by Adl Designer"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Anca Heyd",
+        "organisation" : "DIPS ASA",
+        "email" : "ahe@dips.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4b6fea6d-b0de-3346-b253-ae9d69eb4992",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "93407E474ACC47F58237398D4024C868"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.risk.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-risk-005.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : true,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0013.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Allergier",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Allergisk reaksjon i forbindelse med kirurgi og/eller anestesi ",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Allergi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stoff",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Allergier",
+            "description" : "Estimation of the potential and likelihood of future adverse health effects due to identified risk factors."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Allergisk reaksjon i forbindelse med kirurgi og/eller anestesi ",
+            "description" : "Name of the identified potential future disease, condition or health issue."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Allergi",
+            "description" : "Details of each identified risk factor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stoff",
+            "description" : "Name of the identified risk factor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "de" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Allergier",
+            "description" : "*Estimation of the potential and likelihood of future adverse health effects due to identified risk factors.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Allergisk reaksjon i forbindelse med kirurgi og/eller anestesi ",
+            "description" : "*Name of the identified potential future disease, condition or health issue.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Allergi",
+            "description" : "*Details of each identified risk factor.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stoff",
+            "description" : "*Name of the identified risk factor.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "no" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Allergier",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Allergisk reaksjon i forbindelse med kirurgi og/eller anestesi ",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Allergi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stoff",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Allergier",
+            "description" : "Estimat av risiko og sannsynlighet av en fremtidig negativ helseeffekt som skyldes identifiserte risikofaktorer."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Allergisk reaksjon i forbindelse med kirurgi og/eller anestesi ",
+            "description" : "Navn på identifisert potensiell fremtdig sykdom, tilstand eller helseutfall."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Allergi",
+            "description" : "Detaljer vedrørende hver identifisert risikofaktor."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stoff",
+            "description" : "Navn på identifisert risikofaktor."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d388b6f6-f5e9-3c1b-b606-60430da57fa0",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Jasmin Buck, Sebastian Garde",
+        "organisation" : "University of Heidelberg, Cental Queensland University"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "no"
+      },
+      "author" : {
+        "application" : "Adl Designer"
+      },
+      "otherDetails" : {
+        "notes" : "Generated automatically by Adl Designer"
+      }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Anca Heyd",
+        "organisation" : "DIPS ASA",
+        "email" : "ahe@dips.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
   "originalLanguage" : {
     "terminologyId" : {
       "value" : "ISO_639-1"
