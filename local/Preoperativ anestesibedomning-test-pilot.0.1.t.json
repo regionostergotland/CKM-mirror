@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ced6dbb73d8142430a773e4805c87b0f",
+      "MD5-CAM-1.0.1" : "1f9e3448937d482f5de4f50071a5ef65",
       "PARENT:MD5-CAM-1.0.1" : "39E8BC92B5A362F1CB48E5CD0CB75774"
     },
     "details" : {
@@ -2595,6 +2595,72 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0053",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0054.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0056.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -2777,9 +2843,29 @@
             "text" : "Comentários",
             "description" : "Comentários adicionais sobre a atividade ou etapas não informados em outros campos."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Identificador do pedido do solicitante",
+            "description" : "O ID local atribuído ao pedido realizado pelo profissional de saúde ou organização solicitando o serviço.",
+            "comment" : "Isto é equivalente ao \"Placer Order Number\" nas especificações do HL7 v2."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Identificador do pedido do destinatário",
+            "description" : "O ID atribuído ao pedido pelo provedor de cuidados de saúde ou organização que recebe o pedido de serviço. Isto é também relacionado ao preenchimento da identificação do pedido.",
+            "comment" : "Isto é equivalente ao \"Placer Order Number\" nas especificações do HL7 v2."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -2959,9 +3045,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -3144,9 +3250,29 @@
             "text" : "Comment",
             "description" : "Additional narrative about the activity or care pathway step not captured in other fields."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Requestor order identifier",
+            "description" : "The local ID assigned to the order by the healthcare provider or organisation requesting the service.",
+            "comment" : "This is equivalent to Placer Order Number in HL7 v2 specifications."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Receiver order identifier",
+            "description" : "The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.",
+            "comment" : "This is equivalent to Filler Order Number in HL7 v2 specifications."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -3326,9 +3452,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -3508,9 +3654,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -3693,9 +3859,29 @@
             "text" : "Kommentar",
             "description" : "Ytterligere fritekstbeskrivelse av aktivitet eller prosesstrinn som ikke er registrert i andre felt."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Rekvisisjonsidentifikator",
+            "description" : "Den lokale IDen tilordnet rekvisisjonen av helsepersonellet eller organisasjonen som rekvirerer prosedyren.",
+            "comment" : "Tilsvarer \"Placer Order Number\" i HL7 v2-spesifikasjonene."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Mottakers rekvisisjonsidentifikator",
+            "description" : "IDen tilordnet rekvisisjonen av helsepersonellet eller organisasjonen som mottar rekvisisjonen.",
+            "comment" : "Tilsvarer \"Filler Order Number\" i HL7 v2-spesifikasjonene."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -3875,9 +4061,29 @@
             "text" : "Comentario",
             "description" : "Comentario narrativo adicional acerca de las actividades llevadas a cabo en la ejecución del procedimiento y que no son capturadas por otros campos"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -4029,6 +4235,71 @@
               "nodeId" : "at0016",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0017",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "1..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0001.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0003", "at0004", "at0005", "at0006", "at0007", "at0008", "at0009", "at0010", "at0011", "at0012", "at0013" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0014.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "state",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -4065,8 +4336,20 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "ASA Physical Status Classification",
+            "text" : "ASA-klassifikation",
             "description" : "Classification system adopted by the American Society of Anesthesiologists for assessing preoperative physical status."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "ASA-status",
+            "description" : "Assessed pre-operative status of a patient."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Kommentar",
+            "description" : "Narrative comment about the ASA patient status assessment."
           },
           "at0015" : {
             "@type" : "ARCHETYPE_TERM",
@@ -4078,6 +4361,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0016",
             "text" : "POINT_EVENT",
+            "description" : "*"
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "ITEM_TREE",
             "description" : "*"
           },
           "at0002" : {
@@ -4094,6 +4383,18 @@
             "text" : "Classificação do Estado Físico ASA",
             "description" : "Sistema de classificação adotado pela Sociedade Americana de Anestesiologistas (ASA) para avaliação do estado físico pré-operatório."
           },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Estado do paciente ASA",
+            "description" : "Avaliação do estado pré-operatório do paciente."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Comentário",
+            "description" : "Comentário narrativo sobre a classificação do estado do paciente ASA."
+          },
           "at0015" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0015",
@@ -4104,6 +4405,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0016",
             "text" : "POINT_EVENT",
+            "description" : "*"
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "ITEM_TREE",
             "description" : "*"
           },
           "at0002" : {
@@ -4120,6 +4427,18 @@
             "text" : "ASA-klassifikasjon",
             "description" : "Klassifikasjonssystem definert av American Society of Anesthesiologists for vurdering av preoperativ fysisk status."
           },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "ASA-status",
+            "description" : "Et individs vurderte preoperative status."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Kommentar",
+            "description" : "Fritekstvurdering av individets ASA-status."
+          },
           "at0015" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0015",
@@ -4130,6 +4449,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0016",
             "text" : "POINT_EVENT",
+            "description" : "*"
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "ITEM_TREE",
             "description" : "*"
           },
           "at0002" : {
@@ -4146,6 +4471,18 @@
             "text" : "Clasificación ASA de Estado Físico",
             "description" : "Sistema de clasificación adoptado por la American Society of Anesthesiologists para la evaluación del estado fício preoperatorio."
           },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Estado ASA del paciente",
+            "description" : "Evaluación del estado preoperatorio de un paciente."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Comentario",
+            "description" : "Comentario narrativo sobre la evaluación ASA del paciente."
+          },
           "at0015" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0015",
@@ -4156,6 +4493,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0016",
             "text" : "POINT_EVENT",
+            "description" : "*"
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "ITEM_TREE",
             "description" : "*"
           },
           "at0002" : {
