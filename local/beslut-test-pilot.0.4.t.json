@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "69888062d80877d6ec65d703879cd628",
+      "MD5-CAM-1.0.1" : "1335b26129cf503f10f9c9b8c296803b",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -346,7 +346,7 @@
   "rmName" : "openehr",
   "rmRelease" : "1.0.3",
   "generated" : true,
-  "templateId" : "beslut-test-pilot.0.4.1-coded",
+  "templateId" : "beslut-test-pilot.0.4.2-coded",
   "otherMetaData" : { },
   "templateOverlays" : [ {
     "@type" : "TEMPLATE_OVERLAY",
@@ -434,13 +434,13 @@
                   "defaultValue" : {
                     "defining_code" : {
                       "terminology_id" : {
-                        "value" : "samtyckesalternativ",
+                        "value" : "local",
                         "@type" : "TERMINOLOGY_ID"
                       },
                       "code_string" : "Samtycker",
                       "@type" : "CODE_PHRASE"
                     },
-                    "value" : "",
+                    "value" : "Ja, patienten samtycker till beslutet",
                     "@type" : "DV_CODED_TEXT"
                   },
                   "attributes" : [ {
@@ -453,20 +453,7 @@
                         "value" : "local"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "loca",
-                        "code" : "Samtycker",
-                        "value" : "Ja, patienten samtycker till beslutet"
-                      }, {
-                        "terminologyId" : "loca",
-                        "code" : "Ej_samtycke",
-                        "value" : "Nej, patienten samtycker inte till beslutet"
-                      }, {
-                        "terminologyId" : "loca",
-                        "code" : "Ej_mojligt_tillfraga",
-                        "value" : "Patienten kunde inte tillfrågas om beslutet"
-                      } ]
+                      "selectedTerminologies" : [ "local" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
