@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "18356ef50515f91a23e93361afa1a6c3",
+      "MD5-CAM-1.0.1" : "4f652a7cfede3060fd69794059a34089",
       "PARENT:MD5-CAM-1.0.1" : "39E8BC92B5A362F1CB48E5CD0CB75774"
     },
     "details" : {
@@ -953,7 +953,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "91ac7dc11769a511bf25292b1a052e2c"
+        "PARENT:MD5-CAM-1.0.1" : "3552fe9c32ffa8aa3b0b7582caef1dc6"
       },
       "details" : {
         "de" : {
@@ -1139,23 +1139,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "nodeId" : "at0005.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja", "Nej" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -1220,12 +1212,6 @@
             "description" : "Additional information required to capture local content or to align with other reference models/formalisms.",
             "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents."
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Aspirationsrisk",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1258,12 +1244,6 @@
             "text" : "*Extension(en)",
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1298,12 +1278,6 @@
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1336,12 +1310,6 @@
             "text" : "*Extension(en)",
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1376,12 +1344,6 @@
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1414,12 +1376,6 @@
             "text" : "*Extension(en)",
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1454,12 +1410,6 @@
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1493,12 +1443,6 @@
             "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
             "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1530,12 +1474,6 @@
             "code" : "at0004.1",
             "text" : "*Extension(en)",
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Synopsis",
-            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1688,7 +1626,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "91ac7dc11769a511bf25292b1a052e2c"
+        "PARENT:MD5-CAM-1.0.1" : "3552fe9c32ffa8aa3b0b7582caef1dc6"
       },
       "details" : {
         "de" : {
@@ -1887,23 +1825,6 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0005.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1964,12 +1885,6 @@
             "description" : "Additional information required to capture local content or to align with other reference models/formalisms.",
             "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents."
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "DV_CODED_TEXT",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -2002,12 +1917,6 @@
             "text" : "*Extension(en)",
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2042,12 +1951,6 @@
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -2080,12 +1983,6 @@
             "text" : "*Extension(en)",
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2120,12 +2017,6 @@
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -2158,12 +2049,6 @@
             "text" : "*Extension(en)",
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2198,12 +2083,6 @@
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
             "comment" : "*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.(en)"
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -2237,12 +2116,6 @@
             "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
             "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*DV_CODED_TEXT (en)",
-            "description" : "*"
-          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -2274,12 +2147,6 @@
             "code" : "at0004.1",
             "text" : "*Extension(en)",
             "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Synopsis",
-            "description" : "*"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
