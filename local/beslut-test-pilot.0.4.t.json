@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "25ffd94298791857b17aee6baabf98eb",
+      "MD5-CAM-1.0.1" : "07ac1f2388ad7ab2308fa438ec2a8a34",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -429,15 +429,32 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
+                  "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
+                    "rmAttributeName" : "defining_code",
                     "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Ja, patienten samtycker till beslutet", "Nej, patienten samtycker inte till beslutet", "Patienten kunde inte tillfrågas om beslutet" ]
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "samtyckesalternativ"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "samtyckesalternativ" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "samtyckesalternativ",
+                        "code" : "Samtycker",
+                        "value" : "Ja, patienten samtycker till beslutet"
+                      }, {
+                        "terminologyId" : "samtyckesalternativ",
+                        "code" : "Ej_samtycke",
+                        "value" : "Nej, patienten samtycker inte till beslutet"
+                      }, {
+                        "terminologyId" : "samtyckesalternativ",
+                        "code" : "Ej_mojligt_tillfraga",
+                        "value" : "Patienten kunde inte tillfrågas om beslutet"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
