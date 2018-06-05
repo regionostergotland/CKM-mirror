@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1112b5822695aa363e23f0cfb6ab1307",
+      "MD5-CAM-1.0.1" : "7617265b9b42fcd35ff67e8ca82ebcd3",
       "PARENT:MD5-CAM-1.0.1" : "39E8BC92B5A362F1CB48E5CD0CB75774"
     },
     "details" : {
@@ -1137,17 +1137,9 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
+                  "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_STRING",
-                      "rmTypeName" : "STRING",
-                      "constraint" : [ "Ja", "Nej" ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -5408,7 +5400,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2E20DF7D13523EF6AB3FAC7ABE42D2A4"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar texto livre.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record free text.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نَصّ حُر",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.free_text.v0",
     "differential" : true,
@@ -5553,7 +5588,50 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "2E20DF7D13523EF6AB3FAC7ABE42D2A4"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar texto livre.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record free text.",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نَصّ حُر",
+          "keywords" : [ ],
+          "copyright" : "© copyright (c) 2010 openEHR Foundation, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.free_text.v0",
     "differential" : true,
