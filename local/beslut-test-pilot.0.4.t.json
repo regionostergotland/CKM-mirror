@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "e5c80ebd02e9ff54a815a7c4ababd79e",
+      "MD5-CAM-1.0.1" : "f9e25cfea9039105440833ee6de31ea8",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -434,13 +434,13 @@
                   "defaultValue" : {
                     "defining_code" : {
                       "terminology_id" : {
-                        "value" : "local",
+                        "value" : "SNOMED-CT",
                         "@type" : "TERMINOLOGY_ID"
                       },
-                      "code_string" : "Samtycker",
+                      "code_string" : "182772006",
                       "@type" : "CODE_PHRASE"
                     },
-                    "value" : "Ja, patienten samtycker till beslutet",
+                    "value" : "har gett samtycke till operation",
                     "@type" : "DV_CODED_TEXT"
                   },
                   "attributes" : [ {
@@ -450,10 +450,35 @@
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "SNOMED-CT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local" ]
+                      "selectedTerminologies" : [ "SNOMED-CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "182772006",
+                        "value" : "har gett samtycke till operation"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "737038009",
+                        "value" : "avböjt samtycke till behandling"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "408835000",
+                        "value" : " har gett samtycke till åtgärd"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "182773001",
+                        "value" : "har nekat samtycke till operation"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "442633000",
+                        "value" : "juridiskt ombud samtyckt"
+                      }, {
+                        "terminologyId" : "SNOMED-CT",
+                        "code" : "714830003",
+                        "value" : " kan inte samtycka till vårdplan"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
