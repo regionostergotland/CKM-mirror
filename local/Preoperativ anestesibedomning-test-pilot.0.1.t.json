@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "7617265b9b42fcd35ff67e8ca82ebcd3",
+      "MD5-CAM-1.0.1" : "cc1b5c058cf800354570c519e30a0557",
       "PARENT:MD5-CAM-1.0.1" : "39E8BC92B5A362F1CB48E5CD0CB75774"
     },
     "details" : {
@@ -1137,9 +1137,17 @@
                 "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
+                  "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja", "Nej" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
