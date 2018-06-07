@@ -1,0 +1,143 @@
+archetype (adl_version=1.4; uid=bbdb9e09-46c7-4b43-9533-60a9d1233309)
+    openEHR-EHR-OBSERVATION.nrs_skattningsskala.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::sv]>
+
+description
+    original_author = <
+        ["date"] = <"2018-06-07">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["sv"] = <
+            language = <[ISO_639-1::sv]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["MD5-CAM-1.0.1"] = <"6a4e45d68db3c14aa0f84b2d8b279555">
+        ["build_uid"] = <"63d00112-d1a7-31f9-a67e-67ab246239f1">
+    >
+
+definition
+    OBSERVATION[at0000] occurrences matches {0..1} matches {
+        data matches {
+            HISTORY[at0001] matches {
+                events cardinality matches {0..*; unordered} matches {
+                    EVENT[at0002] matches {
+                        data matches {
+                            ITEM_TREE[at0003] matches {
+                                items cardinality matches {0..*; unordered} matches {
+                                    ELEMENT[at0005] occurrences matches {0..1} matches {
+                                        value matches {
+                                            DV_ORDINAL matches {*}
+                                        }
+                                        name matches {
+                                            DV_CODED_TEXT matches {*}
+                                        }
+                                    }
+                                    ELEMENT[at0009] occurrences matches {0..1} matches {
+                                        value matches {
+                                            DV_CODED_TEXT matches {
+                                                defining_code matches {
+                                                    [local::
+                                                    at0007,
+                                                    at0010,
+                                                    at0011]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[at0008] occurrences matches {0..1} matches {
+                                        value matches {
+                                            DV_CODED_TEXT matches {
+                                                defining_code matches {
+                                                    [local::at0012]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[at0006] occurrences matches {0..1} matches {
+                                        value matches {
+                                            DV_TEXT matches {*}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[at0004] matches {*}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["sv"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"NRS smärtskattning">
+                    description = <"NRS_skattningsskala">
+                >
+                ["at0001"] = <
+                    text = <"History">
+                    description = <"*">
+                >
+                ["at0002"] = <
+                    text = <"Any Event">
+                    description = <"*">
+                >
+                ["at0003"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0004"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0005"] = <
+                    text = <"Patientens skattning av upplevd smärta">
+                    description = <"*">
+                >
+                ["at0006"] = <
+                    text = <"Kommentar">
+                    description = <"*">
+                >
+                ["at0009"] = <
+                    text = <"Duration">
+                    description = <"*">
+                >
+                ["at0008"] = <
+                    text = <"Lokalisation">
+                    description = <"*">
+                >
+                ["at0007"] = <
+                    text = <"Konstant">
+                    description = <"*">
+                >
+                ["at0010"] = <
+                    text = <"Intermittent">
+                    description = <"*">
+                >
+                ["at0011"] = <
+                    text = <"Tillfällig">
+                    description = <"*">
+                >
+                ["at0012"] = <
+                    text = <"Skelett">
+                    description = <"*">
+                >
+            >
+        >
+    >
