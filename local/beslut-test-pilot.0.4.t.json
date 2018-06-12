@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "31e230d33047068cb22fbae05962b408",
+      "MD5-CAM-1.0.1" : "396d4aebf38092e0697d7e055a040e06",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -441,10 +441,18 @@
                       "code_string" : "182772006",
                       "@type" : "CODE_PHRASE"
                     },
-                    "value" : "har gett samtycke till operation",
+                    "value" : "",
                     "@type" : "DV_CODED_TEXT"
                   },
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "jopp", "näpp" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
