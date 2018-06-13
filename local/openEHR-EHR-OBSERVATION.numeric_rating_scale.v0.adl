@@ -1,0 +1,122 @@
+archetype (adl_version=1.4; uid=484251ed-c791-436d-90d7-d440aca8069b)
+    openEHR-EHR-OBSERVATION.numeric_rating_scale.v0
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2018-06-13">
+    >
+    lifecycle_state = <"unmanaged">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+        >
+    >
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["MD5-CAM-1.0.1"] = <"afd0cb446149d3c02b3cfdddab0d97f5">
+        ["build_uid"] = <"ab9f0351-554b-3b70-89f7-04cac5a48afc">
+    >
+
+definition
+    OBSERVATION[at0000] matches {
+        data matches {
+            HISTORY[at0001] matches {
+                events cardinality matches {0..*; unordered} matches {
+                    EVENT[at0002] matches {
+                        data matches {
+                            ITEM_TREE[at0003] matches {
+                                items cardinality matches {0..*; unordered} matches {
+                                    ELEMENT[at0005] occurrences matches {0..1} matches {
+                                        value matches {
+                                            DV_ORDINAL matches {*}
+                                        }
+                                    }
+                                    ELEMENT[at0006] occurrences matches {0..1} matches {
+                                        value matches {
+                                            DV_CODED_TEXT matches {*}
+                                            DV_DURATION matches {*}
+                                        }
+                                    }
+                                    ELEMENT[at0007] occurrences matches {0..1} matches {
+                                        value matches {
+                                            DV_TEXT matches {*}
+                                            DV_CODED_TEXT matches {*}
+                                        }
+                                    }
+                                    ELEMENT[at0009] occurrences matches {0..1} matches {
+                                        value matches {
+                                            DV_TEXT matches {*}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        state matches {
+                            ITEM_TREE[at0004] matches {*}
+                        }
+                    }
+                }
+            }
+        }
+        protocol matches {
+            ITEM_TREE[at0010] matches {*}
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["en"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Numeric Rating Scale (NRS)">
+                    description = <"Numeric_Rating_Scale">
+                >
+                ["at0001"] = <
+                    text = <"History">
+                    description = <"*">
+                >
+                ["at0002"] = <
+                    text = <"Any Event">
+                    description = <"*">
+                >
+                ["at0003"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0004"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0005"] = <
+                    text = <"Perceived pain rate">
+                    description = <"*">
+                >
+                ["at0006"] = <
+                    text = <"Duration">
+                    description = <"*">
+                >
+                ["at0007"] = <
+                    text = <"Localisation">
+                    description = <"*">
+                >
+                ["at0009"] = <
+                    text = <"Comment">
+                    description = <"*">
+                >
+                ["at0010"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+            >
+        >
+    >
