@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "ae0b2e20d829191feca300fe2194b404",
+      "MD5-CAM-1.0.1" : "2644f6986673fd6c24d78cd03c8e777b",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -1054,6 +1054,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2457,6 +2458,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -4009,6 +4011,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -6369,7 +6372,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -6431,7 +6444,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -6533,6 +6556,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -6586,6 +6610,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -6724,6 +6749,56 @@
               "nodeId" : "at1042.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "math_function",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "146" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "width",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "existence" : "1..1",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT24H",
+                        "upper" : "PT24H",
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
@@ -6751,7 +6826,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -6813,7 +6898,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -6875,7 +6970,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -6937,7 +7042,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -7040,6 +7155,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -7093,6 +7209,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -7222,53 +7339,6 @@
                   } ],
                   "attributeTuples" : [ ]
                 } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "math_function",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "terminologyId" : {
-                        "value" : "openehr"
-                      },
-                      "constraint" : [ "146" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "width",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DURATION",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_DURATION",
-                      "rmTypeName" : "DURATION",
-                      "occurrences" : "1..1",
-                      "constraint" : [ {
-                        "lower" : "PT24H",
-                        "upper" : "PT24H",
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false,
-                        "lowerIncluded" : true,
-                        "upperIncluded" : true
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
               } ],
               "attributeTuples" : [ ]
             } ]
@@ -7306,6 +7376,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -7349,6 +7420,7 @@
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
+                        "existence" : "1..1",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
                           "rmTypeName" : "TERMINOLOGY_CODE",
@@ -7405,6 +7477,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -7486,6 +7559,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -11646,7 +11720,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0003",
+              "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -11654,7 +11728,107 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0001.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "name",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at1026", "at1027" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "382" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : true,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_STRING",
+                                "constraint" : [ "/min" ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               }, {
@@ -11762,16 +11936,23 @@
             "text" : "*List(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "*Rate(en)",
+            "description" : "*The rate, measured in beats per minute.(en)",
+            "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
             "text" : "HISTORY",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "EVENT",
             "description" : "*"
           },
           "at1036" : {
@@ -11812,16 +11993,22 @@
             "text" : "*List(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "*Rate(en)",
+            "description" : "*The rate, measured in beats per minute.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
             "text" : "HISTORY",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "EVENT",
             "description" : "*"
           },
           "at1036" : {
@@ -11862,16 +12049,23 @@
             "text" : "List",
             "description" : "@ internal @"
           },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Puls",
+            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Hjärtfrekvens",
+            "description" : "The rate, measured in beats per minute.",
+            "comment" : "Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required."
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
             "text" : "HISTORY",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "EVENT",
             "description" : "*"
           },
           "at1036" : {
@@ -11912,16 +12106,23 @@
             "text" : "List",
             "description" : "@ internal @"
           },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "*Rate(en)",
+            "description" : "*The rate, measured in beats per minute.(en)",
+            "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
             "text" : "HISTORY",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "EVENT",
             "description" : "*"
           },
           "at1036" : {
@@ -11962,16 +12163,23 @@
             "text" : "Дерево",
             "description" : "@ внутреннийl @"
           },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "*Rate(en)",
+            "description" : "*The rate, measured in beats per minute.(en)",
+            "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
+          },
           "at0002" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
             "text" : "HISTORY",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "EVENT",
             "description" : "*"
           },
           "at1036" : {
@@ -12153,6 +12361,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
@@ -12249,6 +12458,30 @@
               "nodeId" : "at0029.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "existence" : "1..1",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.3" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
                 "cardinality" : {
                   "@type" : "CARDINALITY",
@@ -12262,29 +12495,6 @@
                   "occurrences" : "0..0",
                   "nodeId" : "at0064.1",
                   "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.3" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -12329,6 +12539,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
@@ -12490,6 +12701,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "magnitude",
+                    "existence" : "0..1",
                     "children" : [ {
                       "@type" : "C_INTEGER",
                       "rmTypeName" : "INTEGER",
