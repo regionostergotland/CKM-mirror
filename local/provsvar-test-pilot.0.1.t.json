@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f3d6fb5daa5680d497c23d3a58925300",
+      "MD5-CAM-1.0.1" : "f3c4fe81f889d9835ffe2aa554b6a0f1",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -1685,22 +1685,6 @@
       "@type" : "RESOURCE_ANNOTATIONS",
       "documentation" : {
         "ar-sy" : {
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0100]" : {
-            "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0077]" : {
-            "fhir_valueset" : "*diagnostic-service-sections(en)",
-            "fhir_mapping" : "*DiagnosticReport.serviceCategory(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0057]" : {
-            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0098]" : {
-            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0097]" : {
-            "fhir_mapping" : "*DiagnosticReport.result(en)"
-          },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0118]" : {
             "fhir_mapping" : "*DiagnosticReport.presentedForm(en)"
           },
@@ -1713,27 +1697,27 @@
           },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0065]" : {
             "fhir_Mapping" : "*DiagnosticReport.specimen(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0057.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0098.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0097]" : {
+            "fhir_mapping" : "*DiagnosticReport.result(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0077.1]" : {
+            "fhir_valueset" : "*diagnostic-service-sections(en)",
+            "fhir_mapping" : "*DiagnosticReport.serviceCategory(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0100.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
           }
         },
         "en" : { },
         "nb" : { },
         "zh-cn" : {
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0100]" : {
-            "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0077]" : {
-            "fhir_valueset" : "*diagnostic-service-sections(en)",
-            "fhir_mapping" : "*DiagnosticReport.serviceCategory(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0057]" : {
-            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0098]" : {
-            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0097]" : {
-            "fhir_mapping" : "*DiagnosticReport.result(en)"
-          },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0118]" : {
             "fhir_mapping" : "*DiagnosticReport.presentedForm(en)"
           },
@@ -1746,6 +1730,22 @@
           },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0065]" : {
             "fhir_Mapping" : "*DiagnosticReport.specimen(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0057.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0098.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0097]" : {
+            "fhir_mapping" : "*DiagnosticReport.result(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0077.1]" : {
+            "fhir_valueset" : "*diagnostic-service-sections(en)",
+            "fhir_mapping" : "*DiagnosticReport.serviceCategory(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0100.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
           }
         }
       }
@@ -1807,10 +1807,6 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_TEXT",
                           "occurrences" : "1..1",
-                          "defaultValue" : {
-                            "value" : "PSA",
-                            "@type" : "DV_TEXT"
-                          },
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
@@ -1868,14 +1864,88 @@
                       } ],
                       "attributeTuples" : [ ]
                     }, {
-                      "@type" : "C_ARCHETYPE_ROOT",
-                      "rmTypeName" : "CLUSTER",
-                      "occurrences" : "0..*",
-                      "nodeId" : "at0097.1",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ],
-                      "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-laboratory_test_panel-001.v0",
-                      "referenceType" : "archetypeOverlay"
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0077.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0100.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0057.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0098.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0101.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -1923,13 +1993,43 @@
             "description" : "*The date and/or time that the entire result was issued for the recorded ‘Test status’.(en)",
             "fhir_mapping" : "*DiagnosticReport.issued(en)"
           },
-          "at0097.1" : {
+          "at0057.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0097.1",
-            "text" : "*Test findings(en)",
-            "description" : "*Details about the reported results.(en)",
-            "comment" : "*This slot may carry an individual analyte, a group, panel or battery of multiple results, or a more complex and specific structure.(en)",
-            "fhir_mapping" : "*DiagnosticReport.result(en)"
+            "code" : "at0057.1",
+            "text" : "*Conclusion(en)",
+            "description" : "*Narrative description of the key findings.(en)",
+            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
+          },
+          "at0098.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0098.1",
+            "text" : "*Test diagnosis(en)",
+            "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test results.(en)",
+            "comment" : "*Coding of the diagnosis with a terminology is preferred, where possible.This diagnosis should be aligned with the narrative in the 'Conclusion'.(en)",
+            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
+          },
+          "at0101.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0101.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the test result not captured in other fields.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "*Diagnostic service category(en)",
+            "description" : "*The diagnostic service that performs the examination.(en)",
+            "comment" : "*For example, biochemistry, haematology. This data elements assists filtering of broad categories of results according to local laboratory arrangements. Coding with a terminology is desirable, where possible.\r\n(en)",
+            "fhir_valueset" : "*diagnostic-service-sections(en)",
+            "fhir_mapping" : "*DiagnosticReport.serviceCategory(en)"
+          },
+          "at0100.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0100.1",
+            "text" : "*Clinical information provided(en)",
+            "description" : "*Description of clinical information available at the time of interpretation of results.(en)",
+            "comment" : "*This data element may include a link to the original clinical information provided in the test request.(en)",
+            "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1960,7 +2060,7 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Typ av test",
+            "text" : "PSA-värde (mikrogram/liter)",
             "description" : "Identification of the laboratory investigation performed by name.",
             "comment" : "A test result may be for a single analyte, or a group of items, including panel tests. May be coded terminologies for example, LOINC or SNOMED CT. Examples include 'Glucose', 'Urea and Electrolytes', 'Swab', “Cortisol (am)” or \"Liver Biopsy\". The name may sometimes include specimen type and patient state, for example \"Fasting blood glucose\""
           },
@@ -1976,12 +2076,39 @@
             "text" : "Tidpunkt för status på provsvar",
             "description" : "The date and/or time that the entire result was issued for the recorded ‘Test status’."
           },
-          "at0097.1" : {
+          "at0057.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0097.1",
-            "text" : "Test findings",
-            "description" : "Details about the reported results.",
-            "comment" : "This slot may carry an individual analyte, a group, panel or battery of multiple results, or a more complex and specific structure."
+            "code" : "at0057.1",
+            "text" : "PSA-värde (mikrogram/liter)",
+            "description" : "Narrative description of the key findings.",
+            "comment" : "For example: 'Pattern suggests significant renal impairment'."
+          },
+          "at0098.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0098.1",
+            "text" : "Test diagnosis",
+            "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test results.",
+            "comment" : "For example: 'Severe hepatic impairment'. Coding of the diagnosis with a terminology is preferred, where possible.This diagnosis should be aligned with the narrative in the 'Conclusion'."
+          },
+          "at0101.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0101.1",
+            "text" : "Kommentar",
+            "description" : "Additional narrative about the test result not captured in other fields."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Diagnostic service category",
+            "description" : "The diagnostic service that performs the examination.",
+            "comment" : "For example, biochemistry, haematology. This data elements assists filtering of broad categories of results according to local laboratory arrangements. Coding with a terminology is desirable, where possible.\r\n"
+          },
+          "at0100.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0100.1",
+            "text" : "Clinical information provided",
+            "description" : "Description of clinical information available at the time of interpretation of results.",
+            "comment" : "This data element may include a link to the original clinical information provided in the test request."
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2029,12 +2156,39 @@
             "text" : "Tidsangivelse analysestatus",
             "description" : "Dato og/eller tidspunkt hele svaret var utstedt for den registrerte analysestatusen."
           },
-          "at0097.1" : {
+          "at0057.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0097.1",
-            "text" : "Analysesvar",
-            "description" : "Detaljer om analysesvarene.",
-            "comment" : "Dette SLOTet kan inneholde en individuell analyse, en gruppe pakke eller samling av mange svar, eller en mer kompleks og spesifikk struktur."
+            "code" : "at0057.1",
+            "text" : "Konklusjon",
+            "description" : "Tekstbeskrivelse av de viktigste funnene.",
+            "comment" : "For eksempel \"Mønsteret indikerer betydelig nedsatt nyrefunksjon\"."
+          },
+          "at0098.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0098.1",
+            "text" : "Diagnose",
+            "description" : "Enkeltord, frase eller kort beskrivelse som representerer den kliniske betydningen og signifikansen av analysesvarene.",
+            "comment" : "For eksempel \"Betydelig nedsatt leverfunksjon\". Koding med en terminologi foretrekkes, der det er mulig. Diagnosen bør være i tråd med teksten i \"Konklusjon\"."
+          },
+          "at0101.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0101.1",
+            "text" : "Kommentar",
+            "description" : "Tekstlig tilleggsinformasjon om analysesvaret, som ikke er registrert i andre felt."
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "Kategori laboratoriefag",
+            "description" : "Laboratoriefaglig enhet som utfører analysen",
+            "comment" : "For eksempel klinisk biokjemi, mikrobiologi, hematologi, patologi. Dette hjelper klinikere med å filtrere mellom svarkategorier i henhold til lokal organisering av laboratorier. Koding med en terminologi er ønskelig, der det er mulig."
+          },
+          "at0100.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0100.1",
+            "text" : "Tilgjengelig klinisk informasjon",
+            "description" : "Beskrivelse av klinisk informasjon som er tilgjengelig på tolkningstidspunktet.",
+            "comment" : "Dette dataelementet kan inkludere en lenke til den opprinnelige kliniske informasjonen som ble angitt i rekvisisjonen."
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2085,13 +2239,43 @@
             "description" : "*The date and/or time that the entire result was issued for the recorded ‘Test status’.(en)",
             "fhir_mapping" : "*DiagnosticReport.issued(en)"
           },
-          "at0097.1" : {
+          "at0057.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0097.1",
-            "text" : "*Test findings(en)",
-            "description" : "*Details about the reported results.(en)",
-            "comment" : "*This slot may carry an individual analyte, a group, panel or battery of multiple results, or a more complex and specific structure.(en)",
-            "fhir_mapping" : "*DiagnosticReport.result(en)"
+            "code" : "at0057.1",
+            "text" : "*Conclusion(en)",
+            "description" : "*Narrative description of the key findings.(en)",
+            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
+          },
+          "at0098.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0098.1",
+            "text" : "*Test diagnosis(en)",
+            "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test results.(en)",
+            "comment" : "*Coding of the diagnosis with a terminology is preferred, where possible.This diagnosis should be aligned with the narrative in the 'Conclusion'.(en)",
+            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
+          },
+          "at0101.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0101.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the test result not captured in other fields.(en)"
+          },
+          "at0077.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0077.1",
+            "text" : "*Diagnostic service category(en)",
+            "description" : "*The diagnostic service that performs the examination.(en)",
+            "comment" : "*For example, biochemistry, haematology. This data elements assists filtering of broad categories of results according to local laboratory arrangements. Coding with a terminology is desirable, where possible.\r\n(en)",
+            "fhir_valueset" : "*diagnostic-service-sections(en)",
+            "fhir_mapping" : "*DiagnosticReport.serviceCategory(en)"
+          },
+          "at0100.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0100.1",
+            "text" : "*Clinical information provided(en)",
+            "description" : "*Description of clinical information available at the time of interpretation of results.(en)",
+            "comment" : "*This data element may include a link to the original clinical information provided in the test request.(en)",
+            "fhir_mapping" : "*DiagnosticReport.requestDetail.clinicalNotes(en)"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3144,85 +3328,6 @@
         "email" : "linforest@163.com"
       },
       "accreditation" : "N/A",
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "1f70cf0c-7ac4-4bc6-a690-ddf43ee65419",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "482A9A46BAB3629A4242D4BD8D5B915B"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.laboratory_test_panel.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-laboratory_test_panel-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Laboratory test panel",
-            "description" : "Laboratory test result as a panel/battery/profile structure common to clinical pathology testing."
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "*Laboratory test panel(en)",
-            "description" : "*Laboratory test result as a panel/battery format common to clinical pathology testing.(en)"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "98ef618c-2d72-4f5f-9189-458b9985fbf4",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Silje Ljosland Bakke",
-        "organisation" : "Nasjonal IKT HF"
-      },
       "otherDetails" : { }
     } ]
   } ],
