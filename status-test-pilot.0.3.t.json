@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "09ac3856d318c4e8fa1dc9d4af81081a",
+      "MD5-CAM-1.0.1" : "4fd0af5f5d88ca7088f59908ab3f0702",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -8945,7 +8945,15 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_TEXT",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "Asymtomatisk", "Symtomatisk men fullt rörlig", "Symtomatisk, <50% sängliggande dagligen", "Symtomatisk, >50% sängliggande dagligen men inte sängbunden", "Sängbunden", "Död" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
