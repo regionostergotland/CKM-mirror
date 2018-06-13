@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "e06ce84fc579949422c5846120655bd3",
+      "MD5-CAM-1.0.1" : "a1847aa986346d93898d867587bd9e78",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -4635,6 +4635,89 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0008",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0010.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0011.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0127.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -4764,6 +4847,27 @@
             "text" : "Comment",
             "description" : "Additional narrative about the service request not captured in other fields."
           },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Requester order identifier",
+            "description" : "The local identifier assigned by the requesting clinical system.",
+            "comment" : "Usually equivalent to the HL7 Placer Order Identifier."
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "Receiver order identifier",
+            "description" : "The local identifier assigned to the request by the clinician or organisation receiving the request for service.",
+            "comment" : "Usually equivalent to the HL7 Filler Order Identifier."
+          },
+          "at0127.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0127.1",
+            "text" : "Request status",
+            "description" : "The status of the request for service as indicated by the requester.",
+            "comment" : "Status is used to denote whether this is the initial request, or a follow-up request to change or provide supplementary information."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -4773,6 +4877,12 @@
           "at0009" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -4899,6 +5009,27 @@
             "text" : "Kommentar",
             "description" : "Ytterligere fritekst om tjenesteforespørselen, som ikke er dekket av andre elementer."
           },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Rekvisisjonsidentifikator",
+            "description" : "Den lokale identifikatoren tilordnet av systemet til den som forespør tjenesten.",
+            "comment" : "Som regel tilsvarende HL7 Placer Order Identifier."
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "Mottakers rekvisisjonsidentifikator",
+            "description" : "Rekvisisjonens identifikator, tilordnet av den som mottar forespørselen.",
+            "comment" : "Som regel tilsvarende HL7 Filler Order Identifier."
+          },
+          "at0127.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0127.1",
+            "text" : "Rekvisisjonsstatus",
+            "description" : "Status for forespørselen oppgitt av rekvirenten.",
+            "comment" : "Status brukes for å vise om dette er den primære forespørselen, en endring eller supplerende informasjon."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -4908,6 +5039,12 @@
           "at0009" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
