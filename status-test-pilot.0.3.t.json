@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "5910f9cecffdb30df7c29a44f610844b",
+      "MD5-CAM-1.0.1" : "3cd3bd81b51425d504566b5dbef1cf45",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -943,11 +943,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "cm",
+                            "@type" : "DV_QUANTITY"
+                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "property",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
                               "terminologyId" : {
                                 "value" : "openehr"
                               },
@@ -958,44 +964,48 @@
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
+                              "rmAttributeName" : "units",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
+                              "rmAttributeName" : "magnitude",
                               "children" : [ ]
                             } ],
                             "tuples" : [ {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "cm" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 1000.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "cm" ]
                               } ]
                             }, {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "[in_i]" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 250.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "[in_i]" ]
                               } ]
                             } ]
                           } ]
@@ -2347,11 +2357,17 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "units" : "kg",
+                            "@type" : "DV_QUANTITY"
+                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "property",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
                               "terminologyId" : {
                                 "value" : "openehr"
                               },
@@ -2362,44 +2378,48 @@
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
+                              "rmAttributeName" : "units",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
+                              "rmAttributeName" : "magnitude",
                               "children" : [ ]
                             } ],
                             "tuples" : [ {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "kg" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 1000.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "kg" ]
                               } ]
                             }, {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "[lb_av]" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 2000.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
                                 } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "[lb_av]" ]
                               } ]
                             } ]
                           } ]
