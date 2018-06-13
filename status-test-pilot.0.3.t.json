@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "f5b8c75a17915f5c36ed00501ad77877",
+      "MD5-CAM-1.0.1" : "4813cc764d91f27237af79def7789dec",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -5753,10 +5753,10 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
           "occurrences" : "0..*",
-          "nodeId" : "at0.2",
+          "nodeId" : "at0.3",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-ecog-001.v0",
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-ecog-002.v0",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -5773,9 +5773,9 @@
             "text" : "Performance-status enligt ECOG/WHO",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           },
-          "at0.2" : {
+          "at0.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2",
+            "code" : "at0.3",
             "text" : "OBSERVATION",
             "description" : "*"
           }
@@ -5787,9 +5787,9 @@
             "text" : "заготовка заголовка",
             "description" : "Образец заголовка раздела"
           },
-          "at0.2" : {
+          "at0.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2",
+            "code" : "at0.3",
             "text" : "OBSERVATION",
             "description" : "*"
           }
@@ -5801,9 +5801,9 @@
             "text" : "Encabezado ad hoc",
             "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
           },
-          "at0.2" : {
+          "at0.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2",
+            "code" : "at0.3",
             "text" : "OBSERVATION",
             "description" : "*"
           }
@@ -5815,9 +5815,9 @@
             "text" : "Naslov sekcije",
             "description" : "Naslov sekcije"
           },
-          "at0.2" : {
+          "at0.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2",
+            "code" : "at0.3",
             "text" : "OBSERVATION",
             "description" : "*"
           }
@@ -5829,9 +5829,9 @@
             "text" : "Ad hoc heading",
             "description" : "En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst."
           },
-          "at0.2" : {
+          "at0.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2",
+            "code" : "at0.3",
             "text" : "OBSERVATION",
             "description" : "*"
           }
@@ -5843,9 +5843,9 @@
             "text" : "Cabeçalho Ad hoc",
             "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
           },
-          "at0.2" : {
+          "at0.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2",
+            "code" : "at0.3",
             "text" : "OBSERVATION",
             "description" : "*"
           }
@@ -12651,381 +12651,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "1aef9dda-533a-4a79-a95b-d9e9242c96ec",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8D768C69BCE97DBA38DB092D96B4F1B6"
-      },
-      "details" : {
-        "nb" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "nb"
-          },
-          "purpose" : "For å registrere funksjonsstatus hos en pasient med kreft.",
-          "keywords" : [ "prestasjon", "prestasjonsevne", "status", "onkologi", "zubrod" ],
-          "use" : "Brukes for å registrere funksjonsstatus hos en pasient med kreft for å:\r\n- vurdere hvordan pasientens sykdom utvikler seg.\r\n- vurdere hvordan sykdommen påvirker pasientens evne til å fungere i dagliglivet.\r\n- vurdere passende behandling og prognose.\r\n\r\nErklæring om opphavsrett: ECOG Performance Status er ikke beheftet med opphavsrett og derfor tilgjengelig for offentlig bruk. \r\nFor mer informasjon kontakt: The Eastern Cooperative Oncology Group, Robert Comis M.D., Group Chair - http://www.ecog.org/general/perf_stat.html.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record the measurement of the functional performance status of a patient with cancer.",
-          "keywords" : [ "performance", "status", "oncology", "who", "zubrod" ],
-          "use" : "Used to record the measurement of the functional performance status of a patient with cancer, to:\r\n- assess how a patient's disease is progressing;\r\n- assess how the disease affects the daily living abilities of the patient; and \r\n- determine appropriate treatment and prognosis. \r\n\r\nThe ECOG Performance Status is in the public domain therefore available for public use. For more information, contact the Eastern Cooperative Oncology Group, Robert Comis M.D., Group Chair - http://www.ecog.org/general/perf_stat.html.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.ecog.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-ecog-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "OBSERVATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "HISTORY",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "events",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "1..*",
-              "ordered" : false,
-              "unique" : false
-            },
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "data",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "ITEM_TREE",
-                  "nodeId" : "at0003",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "items",
-                    "cardinality" : {
-                      "@type" : "CARDINALITY",
-                      "interval" : "1..*",
-                      "ordered" : false,
-                      "unique" : false
-                    },
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at0004.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_ORDINAL",
-                          "occurrences" : "1..1",
-                          "attributes" : [ ],
-                          "attributeTuples" : [ {
-                            "@type" : "C_ATTRIBUTE_TUPLE",
-                            "members" : [ {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "value",
-                              "children" : [ ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "symbol",
-                              "children" : [ ]
-                            } ],
-                            "tuples" : [ {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_INTEGER",
-                                "rmTypeName" : "INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 0,
-                                  "upper" : 0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              }, {
-                                "@type" : "C_TERMINOLOGY_CODE",
-                                "rmTypeName" : "TERMINOLOGY_CODE",
-                                "constraint" : [ "at0005" ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_INTEGER",
-                                "rmTypeName" : "INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 1,
-                                  "upper" : 1,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              }, {
-                                "@type" : "C_TERMINOLOGY_CODE",
-                                "rmTypeName" : "TERMINOLOGY_CODE",
-                                "constraint" : [ "at0006" ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_INTEGER",
-                                "rmTypeName" : "INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 2,
-                                  "upper" : 2,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              }, {
-                                "@type" : "C_TERMINOLOGY_CODE",
-                                "rmTypeName" : "TERMINOLOGY_CODE",
-                                "constraint" : [ "at0007" ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_INTEGER",
-                                "rmTypeName" : "INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 3,
-                                  "upper" : 3,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              }, {
-                                "@type" : "C_TERMINOLOGY_CODE",
-                                "rmTypeName" : "TERMINOLOGY_CODE",
-                                "constraint" : [ "at0008" ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_INTEGER",
-                                "rmTypeName" : "INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 4,
-                                  "upper" : 4,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              }, {
-                                "@type" : "C_TERMINOLOGY_CODE",
-                                "rmTypeName" : "TERMINOLOGY_CODE",
-                                "constraint" : [ "at0009" ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_INTEGER",
-                                "rmTypeName" : "INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 5,
-                                  "upper" : 5,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              }, {
-                                "@type" : "C_TERMINOLOGY_CODE",
-                                "rmTypeName" : "TERMINOLOGY_CODE",
-                                "constraint" : [ "at0010" ]
-                              } ]
-                            } ]
-                          } ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at0013.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "value",
-                            "children" : [ {
-                              "@type" : "C_STRING",
-                              "rmTypeName" : "STRING",
-                              "constraint" : [ "Asymtomatisk", "Symtomatisk men fullt rörlig", "Symtomatisk, <50% sängliggande dagligen", "Symtomatisk, >50% sängliggande dagligen men inte sängbunden", "Sängbunden", "Död" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "ECOG Performance Status",
-            "description" : "A scale used by clinicians to assess the functional performance status of a patient with cancer. Also known as the WHO Performance Status or Zubrod Performance Status."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Performance Status",
-            "description" : "The functional performance status of a patient with cancer."
-          },
-          "at0013.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0013.1",
-            "text" : "Performance-status",
-            "description" : "Additional narrative about the overall ECOG performance status not captured in other fields."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "HISTORY",
-            "description" : "*"
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "EVENT",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "ECOG funksjonsstatus",
-            "description" : "En skala benyttet av klinikere for å vurdere funksjonsstatus hos en pasient med kreft. Også kjent som WHO Performance Status eller Zubrod Perfomance Status."
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Funksjonsstatus",
-            "description" : "Funksjonsstatus hos en pasient med kreft."
-          },
-          "at0013.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0013.1",
-            "text" : "Kommentar",
-            "description" : "Ytterligere kommentar til ECOG funksjonsstatus som ikke er fanget opp i andre felt."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "HISTORY",
-            "description" : "*"
-          },
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "EVENT",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "12dc29e7-0541-4c62-bc70-75681b651f51",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "John Tore Valand",
-        "organisation" : "Helse Bergen HF"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "f7a7b2ed-4ff5-4bc7-a49d-2d67f98c2fe1",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -15462,6 +15087,332 @@
         "name" : "Jose Florez-Arango"
       },
       "accreditation" : "MD MS PhD",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "aa4b37a1-9c58-41b9-a726-04107e46cdc9",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "8D768C69BCE97DBA38DB092D96B4F1B6"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.ecog.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-ecog-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "1..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0005" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0006" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0007" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 3,
+                                  "upper" : 3,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0008" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 4,
+                                  "upper" : 4,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0009" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 5,
+                                  "upper" : 5,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0010" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0013.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "ECOG Performance Status",
+            "description" : "A scale used by clinicians to assess the functional performance status of a patient with cancer. Also known as the WHO Performance Status or Zubrod Performance Status."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the overall ECOG performance status not captured in other fields."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Performance-status",
+            "description" : "The functional performance status of a patient with cancer."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "ECOG funksjonsstatus",
+            "description" : "En skala benyttet av klinikere for å vurdere funksjonsstatus hos en pasient med kreft. Også kjent som WHO Performance Status eller Zubrod Perfomance Status."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Kommentar",
+            "description" : "Ytterligere kommentar til ECOG funksjonsstatus som ikke er fanget opp i andre felt."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Funksjonsstatus",
+            "description" : "Funksjonsstatus hos en pasient med kreft."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "12dc29e7-0541-4c62-bc70-75681b651f51",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "John Tore Valand",
+        "organisation" : "Helse Bergen HF"
+      },
       "otherDetails" : { }
     } ]
   } ],
