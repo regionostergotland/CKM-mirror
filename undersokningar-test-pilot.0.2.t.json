@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "b81544c0555fc5a15a2291b6d8751b2d",
+      "MD5-CAM-1.0.1" : "52f5e536ff67185796c6275b39a5c6c0",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -417,6 +417,22 @@
             },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
               "occurrences" : "0..0",
               "nodeId" : "at0028.1",
@@ -436,6 +452,124 @@
                   "unique" : false
                 },
                 "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0004.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0020.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0060.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0016.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0005.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_DATE_TIME",
+                          "rmTypeName" : "DATE_TIME",
+                          "constraint" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0023.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_BOOLEAN",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "1..1",
+                        "children" : [ {
+                          "@type" : "C_BOOLEAN",
+                          "rmTypeName" : "Boolean",
+                          "occurrences" : "1..1",
+                          "constraint" : [ true ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "CLUSTER",
                   "nodeId" : "at0008",
@@ -515,6 +649,84 @@
                     } ]
                   } ],
                   "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "CLUSTER",
+                  "nodeId" : "at0024",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "1..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0022.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0025",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0026.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -562,6 +774,66 @@
             "text" : "Dödsorsak",
             "description" : "Relationship of the problem/diagnosis to the death of this family member."
           },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Summering",
+            "description" : "Narrative overview about problems, diagnoses, psychosocial, environmental and genetic markers that have been identified in family members.",
+            "comment" : "This field can be used to record a summary or the conclusion of all the findings, for unstructured family history information recorded in clinical records, or to import textual data from existing/legacy clinical systems."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Family member name",
+            "description" : "Name of family member.",
+            "comment" : "For example: 'Aunt Susan' or 'Susan Smith'. However, for privacy reasons this may not be appropriate for recording, sharing or public display and in this situation the 'Alias' should be used."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Alias",
+            "description" : "An alternative name or label to uniquely identify a family member, without using a personal name which might publicly identify the individual.",
+            "comment" : "To be used to assist in distinguishing one individual from multiple family members with identical relationships. For example, the label to distinguish one specific sister from three known sisters might be 'eldest sister' 'sister with the red hair' or 'sister #1'."
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "Biological sex",
+            "description" : "The family member's biological sex.",
+            "comment" : "Coding of the sex with a terminology is preferred, where possible."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Familjemedlems relation till patienten",
+            "description" : "The relationship of the family member to the subject of care.",
+            "comment" : "For example: mother, step-father, maternal grandmother, or paternal uncle. Coding of the relationship with a terminology is preferred, where possible and including specification of maternal and paternal as required."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Avliden?",
+            "description" : "Is the family member deceased?",
+            "comment" : "Record as 'True' if family member is deceased."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Biomarker description",
+            "description" : "Description of risk-related biological markers identified in this family member."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Last Updated",
+            "description" : "The date this family history summary was last updated."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Date of birth",
+            "description" : "Full or partial date of birth of the family member."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -578,6 +850,18 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0008",
             "text" : "CLUSTER",
+            "description" : "*"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "CLUSTER",
+            "description" : "*"
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "ITEM_TREE",
             "description" : "*"
           }
         },
@@ -614,6 +898,66 @@
             "text" : "*Cause of death?(en)",
             "description" : "*Relationship of the problem/diagnosis to the death of this family member.(en)"
           },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Resumo",
+            "description" : "Relato dos problemas, diagnósticos, marcadores biológicos, ambientais e psicossociais que tenham sido identificados em membros da família",
+            "comment" : "Use este campo para capturar informações não-estruturadas de história familiar registrada em relatos clínicos ou para importar dados textuais de sistema clínicos existentes ou legados."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Nome do membro da família",
+            "description" : "Nome do membro da família.",
+            "comment" : "Por exemplo: 'Tia Susan' ou 'Susan Smith'. Entretanto, por questões de privacidade pode não ser apropriado para registro, por exposição pública; nesta situação o 'Alias' deve ser utilizado."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Alias",
+            "description" : "Um nome ou rótulo alternativo que identifica unicamente um membro da família sem utilizar uma denominação pessoal que possa identificar publicamente o indivíduo.",
+            "comment" : "Para seu usado para auxiliar na distinção de um indivíduo de múltiplos membros da família com relacionamentos idênticos. Por exemplo, um rótulo para distinguir uma irmã específica das outras três irmãs pode ser: 'irmã mai velha', 'irmã ruiva' ou 'irmã # 1'."
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "*Sex(en)",
+            "description" : "*The family member's biological sex. (en)",
+            "comment" : "*Coding of the sex with a terminology is preferred, where possible.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "*Relationship(en)",
+            "description" : "*The relationship of the family member to the subject of care.(en)",
+            "comment" : "*For example: mother, step-father, maternal grandmother, or paternal uncle. Coding of the relationship with a terminology is preferred, where possible and including specification of maternal and paternal as required.(en)"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "*Deceased?(en)",
+            "description" : "*Is the family member deceased?(en)",
+            "comment" : "*Record as 'True' if family member is deceased.(en)"
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Descrição do marcador biológico",
+            "description" : "Descrição de marcadores biológicos relacionados a riscos identificados neste membro da família."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Última atualização",
+            "description" : "Data da última atualização deste Sumário de história familiar."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Data de nascimento",
+            "description" : "Data de nascimento (completa ou parcial) do membro da família."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -630,6 +974,18 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0008",
             "text" : "CLUSTER",
+            "description" : "*"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "CLUSTER",
+            "description" : "*"
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "ITEM_TREE",
             "description" : "*"
           }
         },
@@ -666,6 +1022,66 @@
             "text" : "Dødsårsak?",
             "description" : "Forholdet mellom problemet/diagnosen og familiemedlemmets død."
           },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Sammendrag",
+            "description" : "Fritekstoversikt over problemer, diagnoser og psykososiale, miljømessige eller genetiske markører som er funnet hos familiemedlemmer.",
+            "comment" : "Bruk dette feltet for å registrere et sammmendrag eller konklusjon, eller for å importere tekstlige data fra eksisterende/tidligere kliniske system."
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Navn på familiemedlem",
+            "description" : "Navnet på familiemedlemmet.",
+            "comment" : "For eksempel: \"Tante Susan\" eller \"Susan Smith\". Av personvernsårsaker bør feltet \"Alias\" benyttes i tilfeller der registrering eller deling av informasjon er nødvendig."
+          },
+          "at0020.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020.1",
+            "text" : "Alias",
+            "description" : "Et alternativt navn eller merkelapp slik at man uten å bruke navn entydig kan identifisere familiemedlemmet.",
+            "comment" : "For å kunne finne et spesifikt individ blant flere familiemedlemmer med likt slektsforhold. For eksempel kan et alias skille ut en søster blant tre søstre ved å skrive \"eldste søster\", \"søster med rødt hår\" eller \"søster nr. 1\"."
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "Biologisk kjønn",
+            "description" : "Familiemedlemmets biologiske kjønn.",
+            "comment" : "Koding av kjønnet med en terminologi er ønskelig om mulig."
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Slektsforhold",
+            "description" : "Slektsforholdet mellom familiemedlemmet og helsetjenestemottakeren.",
+            "comment" : "For eksempel: Mor, stefar, farmor, onkel på farsside. Koding av slektsforholdet med en terminologi er foretrukket der dette er mulig og kan inkludere en spesifisering av om slektsforholdet er på mors eller fars side."
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Død?",
+            "description" : "Er familiemedlemmet død?",
+            "comment" : "Registrer som \"Sann\" dersom familiemedlemmet er død."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Beskrivelse av biomarkør",
+            "description" : "Beskrivelse av risikorelaterte biologiske markører som er identifisert hos dette familiemedlemmet."
+          },
+          "at0026.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026.1",
+            "text" : "Sist oppdatert",
+            "description" : "Datoen familieanamnesen sist ble oppdatert."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Fødselsdato",
+            "description" : "Familiemedlemmets hele eller delvise fødselsdato."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -682,6 +1098,18 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0008",
             "text" : "CLUSTER",
+            "description" : "*"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "CLUSTER",
+            "description" : "*"
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "ITEM_TREE",
             "description" : "*"
           }
         }
