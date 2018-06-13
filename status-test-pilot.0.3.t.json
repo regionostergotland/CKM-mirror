@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "2622fa903e9b3f6d1d6ffc47390accce",
+      "MD5-CAM-1.0.1" : "09ac3856d318c4e8fa1dc9d4af81081a",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -7839,6 +7839,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0089.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -7850,15 +7851,15 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
-                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
                         "value" : "local"
                       },
-                      "constraint" : [ "at0006", "at0003", "at0005" ]
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -7891,32 +7892,60 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0029",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0015.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "name",
+                "rmAttributeName" : "value",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
+                  "rmTypeName" : "DV_DATE",
                   "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "existence" : "1..1",
+                    "rmAttributeName" : "value",
                     "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "at0054", "at0055", "at0056", "at0066", "at0057", "at0062", "at0078", "at0088" ]
+                      "@type" : "C_DATE",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
                 } ]
-              }, {
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0080.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0029.1",
+              "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
                 "cardinality" : {
@@ -7931,6 +7960,305 @@
                   "occurrences" : "0..0",
                   "nodeId" : "at0064.1",
                   "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "name",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "ac0.3" ],
+                      "selectedTerminologies" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0019.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Ja", "Nej" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0021",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0071.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0085.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0075.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0076.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0079.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0072.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 0,
+                        "lowerUnbounded" : true,
+                        "upperUnbounded" : false,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_QUANTITY",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "124" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ {
+                    "@type" : "C_ATTRIBUTE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "units",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "precision",
+                      "children" : [ ]
+                    } ],
+                    "tuples" : [ {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "g" ]
+                      }, {
+                        "@type" : "C_REAL",
+                        "rmTypeName" : "REAL",
+                        "constraint" : [ {
+                          "lower" : 0.0,
+                          "lowerUnbounded" : true,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "INTEGER",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "upper" : 0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true
+                        } ]
+                      } ]
+                    }, {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "[oz_av]" ]
+                      }, {
+                        "@type" : "C_REAL",
+                        "rmTypeName" : "REAL",
+                        "constraint" : [ {
+                          "lower" : 0.0,
+                          "lowerUnbounded" : true,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "INTEGER",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "upper" : 0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0022.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE_TIME",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -7972,16 +8300,103 @@
             "description" : "Narrative summary about the individual's overall tobacco smoking pattern and history.",
             "comment" : "Use this data element to record a narrative description only where the structured data does not adequately reflect the tobacco smoking habits for this individual or to incorporate unstructured tobacco smoking information from existing or legacy clinical systems into an archetyped format."
           },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Regular smoking commenced",
+            "description" : "The date or partial date when the individual first started frequent or regular, but usually non-daily, smoking of tobacco of any type.",
+            "comment" : "Can be a partial date, for example, only a year. For example, this date could represent when the individual commenced smoking every Friday night or at parties. "
+          },
+          "at0080.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080.1",
+            "text" : "Daily smoking commenced",
+            "description" : "The date or partial date when the individual first started daily smoking of tobacco of any type.",
+            "comment" : "Can be a partial date, for example, only a year."
+          },
+          "at0071.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071.1",
+            "text" : "Quit date definition",
+            "description" : "The applied definition for the 'Quit date' data elements used in this archetype."
+          },
+          "at0085.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085.1",
+            "text" : "Quit attempt definition",
+            "description" : "The applied definition for a Quit attempt used to determine value for the 'Number of quit attempts' data element used in this archetype.",
+            "comment" : "For example: 'stopped smoking for one day or longer with the intention of quitting'."
+          },
+          "at0075.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075.1",
+            "text" : "Current smoker definition",
+            "description" : "The applied definition for the 'Current smoker' value in each of the 'Status' data elements used in this archetype.",
+            "comment" : "Definition may need to be specified per type. Current smoker definitions vary in different jurisdictions. For example: USA Centre for Disease Control refers to smoking during the past one month and New Zealand Ministry of Health uses 28 days.\r\n"
+          },
+          "at0076.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076.1",
+            "text" : "Former smoker definition",
+            "description" : "The applied definition for the 'Former smoker' value in each of the 'Status' data elements used in this archetype.",
+            "comment" : "Definition may need to be specified per type. Former smoker definitions vary in different jurisdictions. For example: New Zealand Ministry of Health refers to smoking during the past 28 days."
+          },
+          "at0079.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079.1",
+            "text" : "Never smoked definition",
+            "description" : "The applied definition for the 'Never smoked' value in each of the 'Status' data elements used in this archetype.",
+            "comment" : "Definition may need to be specified per type. For example, the definition may not be zero, but less than a specified amount (as units or mass) smoked during a specified time interval."
+          },
+          "at0072.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072.1",
+            "text" : "Pack definition",
+            "description" : "The definition of the size of pack used as part of the algorithm for calculating 'Pack years' data elements used in this archetype.",
+            "comment" : "Definition may need to be specified per type. For example, the number of units in a pack used for cigarettes may be different to cigars; the mass of loose tobacco in a pack used for hand-rolled cigarettes or pipes."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Last updated",
+            "description" : "The date this tobacco smoking summary was last updated."
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Per type",
+            "description" : "Details about smoking activity for a specified type of inhaled tobacco.",
+            "comment" : "The run-time name constraint on this Cluster enables simple templates for each required type to be designed in templates, or the types to be managed exclusively at run-time. The list of names can be extended at run-time if additional types of tobacco smoking are identified locally."
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Rökstopp inför operation",
+            "description" : "Additional narrative about all tobacco smoking that has not been captured in other fields.",
+            "comment" : "For example: stopped smoking or reduced amount on becoming pregnant."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
             "description" : "*"
           },
-          "at0029" : {
+          "at0021" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0029",
-            "text" : "CLUSTER",
+            "code" : "at0021",
+            "text" : "ITEM_TREE",
             "description" : "*"
           }
         },
@@ -8011,16 +8426,103 @@
             "description" : "Fritekstsammendrag om individets overordnede røykemønster og historikk.",
             "comment" : "Bruk dette datalementet til å registrere en fritekstbeskrivelse kun der strukturerte data ikke representerer individets tobakksrøykevaner, eller for å overføre ustrukturert informasjon fra eksisterende eller tidligere kliniske systemer til arketypeformat."
           },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Startet regelmessig røyking",
+            "description" : "Dato eller deldato da individet for første gang begynte å røyke hyppig eller regelmessig, men ikke daglig.",
+            "comment" : "Kan være en deldato, for eksempel kun årstall. For eksempel kan denne datoen representere tidspunktet da individet begynte å røyke hver fredagskveld eller på fest."
+          },
+          "at0080.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080.1",
+            "text" : "Start daglig røyking",
+            "description" : "Dato eller deldato individet begynte å røyke daglig.",
+            "comment" : "Kan være en deldato, for eksempel kun årstall."
+          },
+          "at0071.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071.1",
+            "text" : "Definisjon på Sluttdato",
+            "description" : "Den anvendte definisjonen på dataelementet \"Sluttdato\" benyttet i denne arketypen."
+          },
+          "at0085.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085.1",
+            "text" : "Definisjon på Forsøk på å slutte",
+            "description" : "Den anvendte definisjonen på dataelementet \"Antall forsøk på å slutte\" benyttet i denne arketypen.",
+            "comment" : "For eksempel \"sluttet å røyke i en dag eller lenger, med den hensikt å slutte\"."
+          },
+          "at0075.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075.1",
+            "text" : "Definisjon på Nåværende røyker",
+            "description" : "Den anvendte definisjonen på verdien \"Nåværende røyker\" i datalementet \"Status\" benyttet i denne arketypen.",
+            "comment" : "Definisjonen kan spesifiseres per tobakkstype. Definisjon av nåværende røyker kan variere fra land til land. For eksempel refererer USAs Center for Disease Control til røyking den siste måneden, og New Zealand Ministry of Health til røyking i løpet av de siste 28 dagene."
+          },
+          "at0076.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076.1",
+            "text" : "Definisjon på Tidligere røyker",
+            "description" : "Den anvendte definisjonen på verdien \"Tidligere røyker\" i dataelementet \"Status\" benyttet i denne arketypen.",
+            "comment" : "Definisjonen kan måtte spesifiseres per tobakkstype. Definisjon av tidligere røyker kan variere fra land til land. For eksempel refererer New Zealand Ministry of Health til røyking i løpet av de siste 28 dagene."
+          },
+          "at0079.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079.1",
+            "text" : "Definisjon på Aldri røykt",
+            "description" : "Den anvendte definisjonen på verdien \"Tidligere røyker\" i dataelementet \"Status\" benyttet i denne arketypen.",
+            "comment" : "Definisjonen kan spesifiseres per tobakkstype. For eksempel kan definisjon være ikke null, men mindre enn en spesifisert mengde (som antall enheter eller vekt) røykt over et spesifisert tidsintervall."
+          },
+          "at0072.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072.1",
+            "text" : "Pakkedefinisjon",
+            "description" : "Definisjon for pakkestørrelse som brukes som en del av algoritmen for å kalkulere datelementene for \"Pakkeår\" benyttet i denne arketypen.",
+            "comment" : "Definisjonen kan spesifiseres per tobakkstype. For eksempel, antall enheter i en pakke sigaretter kan være annerledes for sigarer; mengden løstobakk i en pakke som benyttes for håndrullede sigaretter eller piper."
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Sist oppdatert",
+            "description" : "Datoen da sammendraget av tobakksbruk sist ble oppdatert."
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Per type",
+            "description" : "Detaljer om røyking for en spesifikk type røyketobakk.",
+            "comment" : "Navnebegrensningen på dette clusteret gjør det mulig å enkelt spesifisere hver type røykt tobakk i templater, eller i en applikasjon. Listen over navn kan utvides i en applikasjon dersom flere typer tobakk finnes lokalt."
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "Samlet kommentar",
+            "description" : "Ytterligere fritekst om tobakksrøyking som ikke er omfattet av andre felt.",
+            "comment" : "For eksempel: Sluttet å røyke eller reduserte mengde ved graviditet."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
             "description" : "*"
           },
-          "at0029" : {
+          "at0021" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0029",
-            "text" : "CLUSTER",
+            "code" : "at0021",
+            "text" : "ITEM_TREE",
             "description" : "*"
           }
         },
@@ -8050,23 +8552,120 @@
             "description" : "Sammanfattning av en individs rökvanor och rökhistorik.",
             "comment" : "Använd endast det här fältet för att ge en narrativ beskrivning [beskrivning i fritext?] om de strukturerade ... inte ger en rättrvisande bild av individens rökvanor, eller för att [importera] ostrukturerad information om rökvanor från befintilga eller gamla [icke-standardiserade?] system till arketyp-baserade system."
           },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Började röka regelbundet",
+            "description" : "Datumet, eller [del av/ungefärliga/partiella] datumet när individen först började röka någon sorts tobak regelbundet, men (vanligen) inte dagligen",
+            "comment" : "Det kan vara ett partiellt datum, t.ex. bara ett årtal. Datumet kan t.ex. representera när individen började röka varje fredagskväll eller på fester."
+          },
+          "at0080.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0080.1",
+            "text" : "Började röka dagligen",
+            "description" : "Datumet, eller [del av/ungefärliga/partiella] datumet när individen först började dagligen röka någon sorts tobak.",
+            "comment" : "Det kan vara ett partiellt datum, t.ex. bara ett årtal."
+          },
+          "at0071.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0071.1",
+            "text" : "*Quit date definition(en)",
+            "description" : "*The applied definition for the 'Quit date' data elements used in this archetype.(en)"
+          },
+          "at0085.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0085.1",
+            "text" : "*Quit attempt definition(en)",
+            "description" : "*The applied definition for a Quit attempt used to determine value for the 'Number of quit attempts' data element used in this archetype.(en)"
+          },
+          "at0075.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0075.1",
+            "text" : "*Current smoker definition(en)",
+            "description" : "*The applied definition for the 'Current smoker' value in each of the 'Status' data elements used in this archetype.(en)"
+          },
+          "at0076.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0076.1",
+            "text" : "*Former smoker definition(en)",
+            "description" : "*The applied definition for the 'Former smoker' value in each of the 'Status' data elements used in this archetype.(en)"
+          },
+          "at0079.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0079.1",
+            "text" : "*Never smoked definition(en)",
+            "description" : "*The applied definition for the 'Never smoked' value in each of the 'Status' data elements used in this archetype.(en)"
+          },
+          "at0072.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0072.1",
+            "text" : "*Pack definition(en)",
+            "description" : "*The definition of the size of pack used as part of the algorithm for calculating 'Pack years' data elements used in this archetype.(en)"
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "*Last updated(en)",
+            "description" : "*The date this tobacco smoking summary was last updated.(en)"
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Per typ",
+            "description" : "Detaljerad beskrivning av rökvanor för en specifik typ av tobaksprodukt.",
+            "comment" : "Detta \"run-time name constraint\" för detta \"Cluster\" (delträd) gör det enkelt att skapa röktyp-specifika delar i \"templates\" (mallar), eller att låta ett IT-system dynamiskt generera specifika delar vid användning. Det är tillåtet att lägga till ytterligare typer av tobaksrökning, om det har identifierats som ett lokalt behov."
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
+          },
+          "at0019.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019.1",
+            "text" : "*Overall comment(en)",
+            "description" : "*Additional narrative about all tobacco smoking that has not been captured in other fields.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
             "description" : "*"
           },
-          "at0029" : {
+          "at0021" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0029",
-            "text" : "CLUSTER",
+            "code" : "at0021",
+            "text" : "ITEM_TREE",
             "description" : "*"
           }
         }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0006", "at0003", "at0005" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0054", "at0055", "at0056", "at0066", "at0057", "at0062", "at0078", "at0088" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0054", "at0055", "at0056", "at0066", "at0057", "at0062", "at0078", "at0088" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "7f57e04f-d8dc-4f3c-a024-6bf7e92e1fc2",
