@@ -23,7 +23,7 @@ description
         ["original_namespace"] = <"org.openehr">
         ["original_publisher"] = <"openEHR Foundation">
         ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"afd0cb446149d3c02b3cfdddab0d97f5">
+        ["MD5-CAM-1.0.1"] = <"638572a31cd48837adadb0c7748ab7f1">
         ["build_uid"] = <"ab9f0351-554b-3b70-89f7-04cac5a48afc">
     >
 
@@ -43,8 +43,15 @@ definition
                                     }
                                     ELEMENT[at0006] occurrences matches {0..1} matches {
                                         value matches {
-                                            DV_CODED_TEXT matches {*}
-                                            DV_DURATION matches {*}
+                                            DV_CODED_TEXT matches {
+                                                defining_code matches {
+                                                    [local::
+                                                    at0011,
+                                                    at0012,
+                                                    at0013]
+                                                }
+                                            }
+                                            DV_TEXT matches {*}
                                         }
                                     }
                                     ELEMENT[at0007] occurrences matches {0..1} matches {
@@ -116,6 +123,18 @@ ontology
                 ["at0010"] = <
                     text = <"ItemTree">
                     description = <"@ internal @">
+                >
+                ["at0011"] = <
+                    text = <"Constant">
+                    description = <"Constant">
+                >
+                ["at0012"] = <
+                    text = <"Intermittent">
+                    description = <"Intermittent">
+                >
+                ["at0013"] = <
+                    text = <"Temporary">
+                    description = <"Temporary">
                 >
             >
         >
