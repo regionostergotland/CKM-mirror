@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "7357ad81269c6b4d5968114a803307e8",
+      "MD5-CAM-1.0.1" : "7b77927ddf5d27452eb354b0af818619",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -6212,7 +6212,294 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0003.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0004.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0005.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "125" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1006.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1007.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : 0.0,
+                                  "upper" : 1000.0,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0033.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               }, {
@@ -6222,7 +6509,210 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0007.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "assumedValue" : {
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "codeString" : "at1001"
+                              },
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.1" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1052.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1043.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "assumedValue" : {
+                                "terminologyId" : {
+                                  "value" : "local"
+                                },
+                                "codeString" : "at1044"
+                              },
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "ac0.2" ],
+                              "selectedTerminologies" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at1005.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_QUANTITY",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "497" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "units",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "magnitude",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "°" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "assumedValue" : 0.0,
+                                "constraint" : [ {
+                                  "lower" : -90.0,
+                                  "upper" : 90.0,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "deg" ]
+                              }, {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lower" : -90.0,
+                                  "upper" : 90.0,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              }, {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -6230,58 +6720,9 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "INTERVAL_EVENT",
-              "nodeId" : "at1042",
+              "occurrences" : "0..0",
+              "nodeId" : "at1042.1",
               "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "math_function",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "existence" : "1..1",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "openehr"
-                      },
-                      "constraint" : [ "146" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "width",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DURATION",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "existence" : "1..1",
-                    "children" : [ {
-                      "@type" : "C_DURATION",
-                      "rmTypeName" : "DURATION",
-                      "occurrences" : "1..1",
-                      "constraint" : [ {
-                        "lower" : "PT24H",
-                        "upper" : "PT24H",
-                        "lowerUnbounded" : false,
-                        "upperUnbounded" : false,
-                        "lowerIncluded" : true,
-                        "upperIncluded" : true
-                      } ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
                 "children" : [ {
@@ -6301,6 +6742,53 @@
                   "nodeId" : "at0007.2",
                   "targetPath" : "/data[at0001]/events[at0006]/state[at0007.1]",
                   "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "math_function",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "146" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "width",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT24H",
+                        "upper" : "PT24H",
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : false,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : true
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -6347,6 +6835,79 @@
             "text" : "state structure",
             "description" : "@ internal @"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Systoliskt",
+            "description" : "Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Diastoliskt",
+            "description" : "Minimum systemic arterial blood pressure - measured in the diastolic or relaxation phase of the heart cycle."
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Mean arterial pressure",
+            "description" : "The average arterial pressure that occurs over the entire course of the heart contraction and relaxation cycle."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Pulse pressure",
+            "description" : "The difference between the systolic and diastolic pressure."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the measurement, not captured in other fields."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Position",
+            "description" : "The position of the subject at the time of measurement."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Confounding factors",
+            "description" : "Comment on and record other incidental factors that may be contributing to the blood pressure measurement.  For example, level of anxiety or 'white coat syndrome'; pain or fever; changes in atmospheric pressure etc."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Sleep status",
+            "description" : "Sleep status - supports interpretation of 24 hour ambulatory blood pressure records."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "Tilt",
+            "description" : "The craniocaudal tilt of the surface on which the person is lying at the time of measurement.",
+            "comment" : "PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit."
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "24 hour average",
+            "description" : "Estimate of the average blood pressure over a 24 hour period."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6357,12 +6918,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6397,6 +6952,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "収縮期",
+            "description" : "全身の動脈血圧での最高値 - 心機図の収縮期で測定される"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "拡張期",
+            "description" : "全身の動脈血圧での最低値 - 心機図の拡張期で測定される"
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "平均同脈圧",
+            "description" : "心臓の収縮拡張サイクルのすべての過程を通した動脈血圧の平均値."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "脈圧",
+            "description" : "1回の収縮サイクルでの血圧の変動"
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "コメント",
+            "description" : "他に項目のない、即的に関する叙述的な追加的記録"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "体位",
+            "description" : "計測のときの対象者の体位"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "交絡因子",
+            "description" : "血圧測定に寄与しうるその他の偶発的な要素についてのコメント。たとえば、不安の程度や「白衣性高血圧」、痛みや発熱、大気圧の変化など。"
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "睡眠状況",
+            "description" : "睡眠状況 24時間外来血圧記録の解釈を助けるため"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "ティルト",
+            "description" : "測定時に対象者が臥床している台の頭尾方向の傾き",
+            "comment" : "注意： '°' は適切なUCUM単位である。正しい単位として'deg'(度）を使うこと。"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "24時間平均",
+            "description" : "24時間での推定平均血圧"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6407,12 +7035,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6447,6 +7069,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Systolisch",
+            "description" : "Der höchste arterielle Blutdruck eines Zyklus - gemessen in der systolischen oder Kontraktionsphase des Herzens."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Diastolisch",
+            "description" : "Der minimale systemische arterielle Blutdruck eines Zyklus - gemessen in der diastolischen oder Entspannungsphase des Herzens."
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Mittlerer arterieller Druck",
+            "description" : "Der mittlerer arterielle Druck über den gesamten Verlauf der Konktraktions- und Entspannungsphase des Herzens."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Pulsdruck",
+            "description" : "Der Abstand zwischen dem systolischen und dem diastolischen Blutdruckwert."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Position",
+            "description" : "Die Position der untersuchten Person während der Messung."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Einflussfaktoren",
+            "description" : "Kommentar und Aufzeichung anderer Faktoren die ggf. zu dem Ergebnis der Blutdruckmessung beitragen können. Die kann z.B. bei belastenden Situationen der Fall sein (z.B. sog. Weißkittelhypertonie, Schmerzen, Fieber, Änderungen im atmosphärischen Druck)."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Schlafzustand",
+            "description" : "Schlafzustand  - unterstützt die Auswertung von 24-stündigen ambulanten Aufzeichnungen des Blutdrucks."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "24 Stunden Durchschnitt",
+            "description" : "Schätzung des durchschnittlichen Blutdrucks über eine 24-stündigen Zeitraum."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6457,12 +7152,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6497,6 +7186,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "收缩压",
+            "description" : "在心动周期的收缩期所测量到的体循环动脉血压峰值。"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "舒张压",
+            "description" : "在心动周期的舒张期所测量到的体循环动脉血压最低值（谷值，最小值）。"
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "平均动脉压",
+            "description" : "又称为“平均动脉血压”，指的是在整个心脏收缩与舒张周期过程中出现的动脉压均值（平均动脉压）。"
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "脉压",
+            "description" : "收缩压与舒张压之间的差值，又称为“脉压差”或“脉搏压”。"
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "注释",
+            "description" : "其他字段并未予以记录的，关于当前检测过程的附加文字叙述。"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "体位",
+            "description" : "测量时受检对象的体位或者说身体姿势。"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "干扰因素",
+            "description" : "旨在记录和说明可能影响血压测量结果的偶然因素。例如，焦虑/进展程度或“白大褂综合征（white coat syndrome）”、疼痛、发热、大气压变化等等。"
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "睡眠状态",
+            "description" : "睡眠状态 - 旨在支持对于24小时流动式/门诊血压记录的解释。"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "倾角",
+            "description" : "测量时该人员所卧于的表面的颅尾（头尾）倾角（倾斜角度）。",
+            "comment" : "请注意：“°”属于无效的UCUM单位。请采用正确的单位“deg”（度）。"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "24小时均值",
+            "description" : "24小时期间血压均值的估计"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6507,12 +7269,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6547,6 +7303,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Systole",
+            "description" : "De maximale (piek) systemische arteriele bloeddruk - gemeten in de systolische of samentrekkingsfase van de hartslag"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Diastole",
+            "description" : "Laagste systemische arteriele bloeddruk -  gemeten in de diastolische of ontspanningsfase van de hartslag"
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Gemiddelde arteriële druk",
+            "description" : "De gemiddelde bloeddruk gedurende 1 cyclus van samentrekken en ontspannen van het hart."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Polsdruk",
+            "description" : "Het verschil tussen de systolische en diastolische bloeddruk"
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Houding",
+            "description" : "De houding van het individu op het moment van de meting"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Beïnvloedende factoren",
+            "description" : "Opmerking over en vastleggen van andere incidentele factoren die de bloeddrukmeting zouden kunnen beïnvloeden. Bijvoorbeeld, mate van angst, of 'witte jas syndroom'; pijn of koorts; veranderingen in atmosferische druk etc."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Slaap/waak toestand",
+            "description" : "Slaap/waak toestand, ondersteunt de interpretatie van de 24-uurs bloeddrukmeting."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "24 uur gemiddelde",
+            "description" : "Inschatting van de gemiddelde bloeddruk over een periode van 24 uur"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6557,12 +7386,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6597,6 +7420,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Систолическое",
+            "description" : "Пик системного артериального давления - измеряется в систолиу или в фазу сокращения сердца"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Диастолическое",
+            "description" : "Минимальное системное артериальное давление - измеряется в диастолу или в фазу релаксации сердца."
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Среднего артериального давления крови",
+            "description" : "Среднее артериальное давление на всём протяжении цикла сокращения и релаксации сердца."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Пульсовое давление",
+            "description" : "Разница между систолическим и диастолическим давлением."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Поза",
+            "description" : "Поза пациента во время измерения давления."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Стохастические факторы(ru)",
+            "description" : "Комментарий и записи других случайных факторов, которые могут способствовать измерению артериального давления. Например,\"боязнь белого халата\" или боль и жар, изменения атмосферного давления т.д."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Стадия сна(ru)",
+            "description" : "Стадия сна - для интерпретации записи амбулаторного измерения АД в течение 42 часов."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "Среднее за 24 часа",
+            "description" : "Оценка среднего АД за период в 24 часа."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6607,12 +7503,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6647,6 +7537,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "سیستولیک",
+            "description" : "اوج فشار خون وریدی کلی که در سیستولیک یا فاز انقباضی چرخه گردش خون اندازه گیری می شود "
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "دیاستولیک",
+            "description" : "حداقل فشار خون وریدی کلی که در دیاستولیک یا فاز انبساطی چرخه گردش خون اندازه گیری می شود"
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "میانگین فشار وریدی",
+            "description" : "متوسط فشار خون وریدی که در کل دوره انقباظ و انبساط قلبی رخ می دهد"
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "فشار نبضی",
+            "description" : "تفاوت بین فشار سیستولیک و دیاستولیک"
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "موقعیت",
+            "description" : "موقعیت فرد در زمان اندازه گیری "
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "عوامل مبهم",
+            "description" : "نظردهی و ثبت سایر عوامل ضمنی که ممکن است به اندازه گیری فشار خون کمک کنند . به عنوان مثال سطح اضطراب یا \"سندرم روپوش سفید\"، درد یا تب ، تغییرات فشار جوی و غیره "
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "وضعیت خواب",
+            "description" : "وضعیت خواب- به تفسیر ثبتهای صورت گرفته از فشار خون در خانه در طول 24 ساعت کمک می کند "
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "میانگین 24 ساعته",
+            "description" : "برآورد میانگین فشار خون در دوره زمانی 24 ساعته"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6657,12 +7620,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6697,6 +7654,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "الانقباضي",
+            "description" : "ذروة ضغط الدم الشرياني الجهازي - يتم قياسه في طور الانقباض من دورة القلب"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "الانبساطي",
+            "description" : "الحد الأدني لضغط الدم الشرياني الجهازي - يتم قياسها في طور الانبساط - الارتخاء من دورة القلب"
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "متوسط الضغط الشرياني",
+            "description" : "متوسط الضغط الشرياني الذي يحدث خلال جميع أطوار دورة القلب الواحدة من انقباض و انبساط/ ارتخاء"
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "الضغط عند النبض",
+            "description" : "الفرق بين ضغط الدم الانقباضي و الانبساطي"
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "الموضع",
+            "description" : "موضع الشخص في وقت القياس"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "العوامل المربكة",
+            "description" : "تعليق حول و تسجيل للعوامل الطارئة التي قد تسهم في قياس ضغط الدم. مثلا, مستوى القلق أو متلازمة البالطو الأبيض أو الألم أو الحمى أو التغييرات في الضغط الجوي,, إلى آخره"
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "حالة النوم",
+            "description" : "حالة النوم - تدعم تفسير قياسات ضغط الدم المِسيارية خلال 24 ساعة"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "المتوسط خلال 24 ساعة",
+            "description" : "تقدير متوسط ضغط الدم خلال فترة من 24 ساعة"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6707,12 +7737,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6747,6 +7771,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Sistólica",
+            "description" : "Presión arterial sistólica pico - medido en sístole o la fase de contracción del ciclo cardíaco"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Diástole",
+            "description" : "Presión arterial sistémica mínima - medido durante la diástole o fase de relajación del ciclo cardíaco."
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Presión Arterial Media",
+            "description" : "La presión arterial promedio que ocurre durante el ciclo entero de la contracción y relajación del corazon"
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Presión de Pulso",
+            "description" : "La diferencia entre la presión sistólica y la presión diastólica"
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Posición",
+            "description" : "La posición del individuo en el momento del registro."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Factores confluentes",
+            "description" : "Comentario y registro sobre otros factores que pueden incidir sobre la medición de la presión arterial. Por ejemplo: nivel de ansiedad o \"síndrome del guardapolvo blanco\"; dolor o fiebre; cambios en la presión atmosférica etc."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Estado del sueño",
+            "description" : "Estado del sueño - soporta la interpretación de los registros de presión arterial ambulatorios de 24 horas"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "Promedio de 24 horas",
+            "description" : "Estimativo de la media de la presión arterial sobre un período de 24 horas"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6757,12 +7854,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6797,6 +7888,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Sistólica",
+            "description" : "Pressão arterial sistêmica máxima - medida na fase sistólica ou de contração do ciclo cardíaco."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Diastólica",
+            "description" : "Pressão arterial sistêmica mínima - medida na fase diastólica ou de  dilatação do ciclo cardíaco."
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Pressão arterial Média",
+            "description" : "A pressão arterial média que ocorrre ao longo de todo o  ciclo de contração e dilatação do coração."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Pressão de Pulso",
+            "description" : "A diferença entre a pressão sistólica e diastólica."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Posição",
+            "description" : "A posição do sujeito na hora da medida."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Fatores confundidores",
+            "description" : "Comentários sobre e registros de outros fatores incidentais que possam estar contribuindo na medida da pressão sanguínea. Por exemplo, nível de ansiedade ou \"síndrome do jaleco branco\"; dor ou febre; mudanças na pressão atmosférica, etc."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Status do sono",
+            "description" : "Status do sono - apóia a interpretação do registro do mapa de pressão arterial (ambulatorial de 24 horas)."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "Media de 24 horas",
+            "description" : "Estimativa da pressão arterial média em um período de 24 horas."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6807,12 +7971,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6847,6 +8005,79 @@
             "text" : "*state structure(en)",
             "description" : "*@ internal @(en)"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "수축기",
+            "description" : "최대 체동맥 혈압 - 심장 싸이클의 수축기에서 측정."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "이완기",
+            "description" : "최소 체동맥 혈압 - 심장 싸이클의 이완기에서 측정됨."
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "평균 동맥압",
+            "description" : "심장의 수축과 이완 싸이클 전체과정 동안에 발생하는 평균 동맥압."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "맥압",
+            "description" : "수축기와 이완기 혈압 간의 차이."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "자세",
+            "description" : "측정 시에 대상의 자세"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "혼란변수",
+            "description" : "혈압측정에 영향을 줄 수 있는 기타 우연한 변수들에 대한 코멘트와 기록. 예를 들어, 불안 또는 '백의신드롬'의 레벨; 통증 또는 발열; 대기압의 변화 등."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "수면 상태",
+            "description" : "수면 상태 - 24시간 활동 혈압기록에 대한 해석 지원."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "24시간 평균",
+            "description" : "24시간 동안의 평균 혈압의 추정."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6857,12 +8088,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6897,6 +8122,79 @@
             "text" : "state structure",
             "description" : "@ internal @"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Sistólica",
+            "description" : "Presión arterial sistólica"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Diastólica",
+            "description" : "Presión arterial diastólica"
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Presión arterial media",
+            "description" : "Promedio del a presión arterial que ocurre en el ciclo completo de contracción y relajación del corazón."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Presión del pulso",
+            "description" : "Diferencia entre la presión sistólica y la diastólica."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Posición",
+            "description" : "Posición del paciente en el momento de la medida"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Factores de confusión",
+            "description" : "Registro de factores que pueden afectar la medida"
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Estado de sueño",
+            "description" : "Soporta la interpretación de los registros de presión arterial ambulatoria de 24 horas"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "*Tilt(en)",
+            "description" : "*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)",
+            "comment" : "*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)"
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "promedio en 24 horas",
+            "description" : "Estimación de la presión arterial promedio dentro de las 24 horas"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6907,12 +8205,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6947,6 +8239,78 @@
             "text" : "state structure",
             "description" : "@ internal @"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Systolisk",
+            "description" : "Maksimalt systemisk arterielt blodtrykk - målt i systolen, det vil si i hjertets kontraksjonsfase."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Diastolisk",
+            "description" : "Laveste systemiske arterielle blodtrykk - målt i diastolen, det vil si under hjertets relaksasjonsfase."
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Middelarterietrykk",
+            "description" : "Det gjennomsnittlige trykket mot arterieveggen gjennom en enkelt hjertesyklus. Middeltrykk/MAP måles direkte eller beregnes ut fra systolisk og diastolisk trykk ved hjelp av en matematisk formel."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Pulstrykk",
+            "description" : "Differansen mellom det systoliske og diastoliske arterielle blodtrykket."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the measurement, not captured in other fields.(en)"
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Stilling",
+            "description" : "Individets posisjon ved tidspunktet for målingen."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Konfunderende faktorer",
+            "description" : "Kommentar til og registrering av andre faktorer som kan påvirke blodtrykksmålingen. For eksempel angst eller \"hvit frakk syndrom\", smerter eller feber, endringer i atmosfærisk trykk osv."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Søvnstatus",
+            "description" : "Søvnstatus - understøtter tolkning av 24 timers ambulant blodtrykksmåling."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "Tilt",
+            "description" : "Kranio-caudal tilt på tidspunkt for blodtrykksmåling."
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "24-timers gjennomsnitt",
+            "description" : "Estimert gjennomsnittsblodtrykk over en 24-timers periode."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -6957,12 +8321,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006",
             "text" : "EVENT",
-            "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
             "description" : "*"
           }
         },
@@ -6997,6 +8355,79 @@
             "text" : "Tree",
             "description" : "@ internal @"
           },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Systoliskt",
+            "description" : "Det högsta systemiskt arteriella blodtrycket uppmätt systoliskt eller under sammandragningsfasen av hjärtcykeln."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Diastoliskt",
+            "description" : "Det minsta systemiskt arteriella blodtrycket uppmätt diastoliskt eller i hjärtcykelns avslappningsfas."
+          },
+          "at1006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1006.1",
+            "text" : "Medelartärtryck",
+            "description" : "Det genomsnittliga artärtrycket som inträffar under hela hjärtsammandragningen och under avslappningscykeln."
+          },
+          "at1007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1007.1",
+            "text" : "Pulstryck",
+            "description" : "Skillnaden mellan systoliskt och diastoliskt blodtryck."
+          },
+          "at0033.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033.1",
+            "text" : "Kommentar",
+            "description" : "Ytterligare beskrivning av mätningen som inte beskrivits i andra fält."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Ställning",
+            "description" : "Individens kroppställning under mätningen."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at1052.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1052.1",
+            "text" : "Påverkande faktorer",
+            "description" : "Andra faktorer som kan påverka blodtrycksmätningen, exempelvis ångestnivå, \"vitrockseffekt\", smärta, feber eller förändringar i lufttryck mm."
+          },
+          "at1043.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1043.1",
+            "text" : "Vakenhet",
+            "description" : "Vakenhet som stöder tolkningen av 24-timmars ambulatoriska blodtrycksmätningar."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at1005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1005.1",
+            "text" : "Lutning",
+            "description" : "Lutning på ytan av huvuddelen som personen ligger på vid tidpunkten för mätningen.",
+            "comment" : "OBS: '°' är en giltig UCUM-enhet. Använd \"deg\" som den rätta enheten."
+          },
+          "at1042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at1042.1",
+            "text" : "24 timmars blodtrycksmätning",
+            "description" : "Beräkning av det genomsnittliga blodtrycket under en 24-timmarsperiod."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -7008,22 +8439,29 @@
             "code" : "at0006",
             "text" : "EVENT",
             "description" : "*"
-          },
-          "at1042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1042",
-            "text" : "INTERVAL_EVENT",
-            "description" : "*"
           }
         }
       },
       "termBindings" : {
         "SNOMED-CT" : {
-          "at0000.1" : "term:SNOMED-CT(2003)::163020007"
+          "at0000.1" : "term:SNOMED-CT(2003)::163020007",
+          "at0004.1" : "term:SNOMED-CT(2003)::163030003",
+          "at0005.1" : "term:SNOMED-CT(2003)::163031004"
         }
       },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at1000", "at1001", "at1002", "at1003", "at1014" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at1044", "at1045" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "e2658603-a9d2-4178-82c5-04d487beb837",
