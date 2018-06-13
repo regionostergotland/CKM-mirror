@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "d1c5935d60cbff5c33a1ff459c9111a3",
+      "MD5-CAM-1.0.1" : "152596efa68102ef6ba1d0eda82aa53a",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -701,6 +701,23 @@
                   "attributeTuples" : [ ]
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0046.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "CLUSTER",
                   "nodeId" : "at0024",
                   "attributes" : [ {
@@ -905,6 +922,12 @@
             "description" : "Details about a specific family member.",
             "comment" : "The data elements in this cluster will relate to the individual identified either by name or by alias. Repeat the use of the cluster for other family members."
           },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the family member not captured in other fields."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1044,6 +1067,12 @@
             "description" : "Detalhes sobre um membro específico da família.",
             "comment" : "Os elementos deste cluster se relacionam com o indivíduo identificado quer pelo seu nome ou alias. Repita o uso do cluster para outros membros da família."
           },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Comentários",
+            "description" : "Narrativa adicional sobre membro da família não contemplado em outro campo."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1182,6 +1211,12 @@
             "text" : "Per familiemedlem",
             "description" : "Detaljer om ett spesifikt familiemedlem.",
             "comment" : "Dataelementene i dette CLUSTERet vil forholde seg til individet identifisert ved navn eller ved et alias. Gjenta CLUSTERet for registrering av flere familiemedlemmer."
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Kommentar",
+            "description" : "Ytterligere fritekstbeskrivelse om familiemedlemmet som ikke er registrert i andre felt."
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
