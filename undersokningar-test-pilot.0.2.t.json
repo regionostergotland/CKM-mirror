@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "c365288b68901d14b92f7514d4c0b4c4",
+      "MD5-CAM-1.0.1" : "d67073223cc42746fe523a46a369c76a",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -546,6 +546,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0023.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -557,10 +558,9 @@
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
-                        "existence" : "1..1",
                         "children" : [ {
                           "@type" : "C_BOOLEAN",
-                          "rmTypeName" : "Boolean",
+                          "rmTypeName" : "BOOLEAN",
                           "occurrences" : "1..1",
                           "constraint" : [ true ]
                         } ]
@@ -821,7 +821,7 @@
           "at0014.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0014.1",
-            "text" : "Dödsorsak",
+            "text" : "Dödsorsak, om avliden",
             "description" : "Relationship of the problem/diagnosis to the death of this family member."
           },
           "at0002.1" : {
