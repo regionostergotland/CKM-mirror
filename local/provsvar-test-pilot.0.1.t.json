@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "18aa1bd8b83cbdf999283141151d1105",
+      "MD5-CAM-1.0.1" : "f20dd04e3876c6fe0b2124cfeff39107",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -2385,28 +2385,17 @@
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
+                          "rmTypeName" : "DV_TEXT",
                           "occurrences" : "1..1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "existence" : "1..1",
+                            "rmAttributeName" : "value",
                             "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "at0107", "at0037", "at0120", "at0038", "at0115", "at0040", "at0119", "at0116", "at0074" ]
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "Registrerat", "Partiellt", "Preliminärt", "Slutgiltigt", "Ändrat", "Utökat", "Felaktig registrering", "Avbruten" ]
                             } ]
                           } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
