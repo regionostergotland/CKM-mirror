@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "27b6cd6f00358375878c6db370e1ae50",
+      "MD5-CAM-1.0.1" : "54b4b4a485cd771be65307cf88517832",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -2594,9 +2594,17 @@
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
+                          "rmTypeName" : "DV_TEXT",
                           "occurrences" : "1..1",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "Magnetresonanstomografi (MR)", "Datortomografi (DT)" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -4109,6 +4117,22 @@
                         } ]
                       } ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0009.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -4191,6 +4215,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.1",
             "text" : "Lokalisation",
+            "description" : "*"
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.1",
+            "text" : "Kommentar",
             "description" : "*"
           },
           "at0001" : {
