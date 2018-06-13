@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "52f5e536ff67185796c6275b39a5c6c0",
+      "MD5-CAM-1.0.1" : "e088fea6d706c5982ef6bac89ce0ff7e",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -441,7 +441,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0003",
+              "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
@@ -563,6 +563,56 @@
                           "rmTypeName" : "Boolean",
                           "occurrences" : "1..1",
                           "constraint" : [ true ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0011.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DURATION",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_DURATION",
+                          "rmTypeName" : "DURATION",
+                          "constraint" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0058.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_DATE_TIME",
+                      "occurrences" : "1..1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_DATE_TIME",
+                          "rmTypeName" : "DATE_TIME",
+                          "constraint" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -834,16 +884,31 @@
             "text" : "Date of birth",
             "description" : "Full or partial date of birth of the family member."
           },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "Age at death",
+            "description" : "Exact or estimated age of the family member at death.",
+            "comment" : "Age of death can be useful if the problem/diagnosis which caused their death is being considered as a risk factor for the subject of the health record. For example: death of mother from breast cancer at young age significally increases the risk of breast cancer in a daughter."
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "Date of death",
+            "description" : "Full or partial date of death of the family member.",
+            "comment" : "Date of death may be useful in some situations in which the month of death may trigger decision support or identify groupings of disease. For example: environmental allergens triggering respiratory exaccerbations; or events such as Christmas."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Per familjemedlem",
+            "description" : "Details about a specific family member.",
+            "comment" : "The data elements in this cluster will relate to the individual identified either by name or by alias. Repeat the use of the cluster for other family members."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "CLUSTER",
             "description" : "*"
           },
           "at0008" : {
@@ -958,16 +1023,31 @@
             "text" : "Data de nascimento",
             "description" : "Data de nascimento (completa ou parcial) do membro da família."
           },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "*Age at death(en)",
+            "description" : "*Exact or estimated age of the family member at death.(en)",
+            "comment" : "*Age of death can be useful if the problem/diagnosis which caused their death is being considered as a risk factor for the subject of the health record. For example: death of mother from breast cancer at young age significally increases the risk of breast cancer in a daughter. (en)"
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "Data de falecimento",
+            "description" : "Data completa ou parcial do falecimento do membro da família.",
+            "comment" : "Data do falecimento pode ser útil em algumas situações em que o mês da morte pode disparar necessidade de decisões ou identificar grupos de doenças. Por exemplo:alérgenos ambientais disparando exacerbações respiratórias; ou eventos como o Natal."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Por membro da família",
+            "description" : "Detalhes sobre um membro específico da família.",
+            "comment" : "Os elementos deste cluster se relacionam com o indivíduo identificado quer pelo seu nome ou alias. Repita o uso do cluster para outros membros da família."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "CLUSTER",
             "description" : "*"
           },
           "at0008" : {
@@ -1082,16 +1162,31 @@
             "text" : "Fødselsdato",
             "description" : "Familiemedlemmets hele eller delvise fødselsdato."
           },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "Alder ved død",
+            "description" : "Familiemedlemmets nøyaktige eller anslåtte alder ved død.",
+            "comment" : "Alder ved død kan være nyttig om problemet eller diagnosen som forårsaket død anses som en risikofaktor for helsetjenestemottakeren. For eksempel kan mors død av brystkreft i ung alder signifikant øke risikoen for brystkreft hos en datter."
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "Dødsdato",
+            "description" : "Familiemedlemmets nøyaktige eller anslåtte dødsdato.",
+            "comment" : "Dødsdato kan være nyttig i situasjoner hvor måneden dødsfallet skjedde kan utløse beslutningsstøtte eller for å identifisere sykdomsgrupperinger. For eksempel: Allergener i miljøet som utløser respiratoriske forverringer, eller hendelser som julefeiring."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Per familiemedlem",
+            "description" : "Detaljer om ett spesifikt familiemedlem.",
+            "comment" : "Dataelementene i dette CLUSTERet vil forholde seg til individet identifisert ved navn eller ved et alias. Gjenta CLUSTERet for registrering av flere familiemedlemmer."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
             "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0003" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003",
-            "text" : "CLUSTER",
             "description" : "*"
           },
           "at0008" : {
