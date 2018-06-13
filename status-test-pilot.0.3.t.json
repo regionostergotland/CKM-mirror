@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "09b4cba81749d872cbd02acee4cb00f6",
+      "MD5-CAM-1.0.1" : "bb5b1d9820f17d0e0709cdb0d35eb557",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -983,24 +983,6 @@
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 1000.0,
-                                  "lowerUnbounded" : true,
-                                  "upperUnbounded" : true,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_STRING",
-                                "rmTypeName" : "STRING",
-                                "constraint" : [ "[in_i]" ]
-                              }, {
-                                "@type" : "C_REAL",
-                                "rmTypeName" : "REAL",
-                                "constraint" : [ {
-                                  "lower" : 0.0,
-                                  "upper" : 250.0,
                                   "lowerUnbounded" : true,
                                   "upperUnbounded" : true,
                                   "lowerIncluded" : true,
@@ -2397,24 +2379,6 @@
                                 "constraint" : [ {
                                   "lower" : 0.0,
                                   "upper" : 1000.0,
-                                  "lowerUnbounded" : true,
-                                  "upperUnbounded" : true,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              } ]
-                            }, {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_STRING",
-                                "rmTypeName" : "STRING",
-                                "constraint" : [ "[lb_av]" ]
-                              }, {
-                                "@type" : "C_REAL",
-                                "rmTypeName" : "REAL",
-                                "constraint" : [ {
-                                  "lower" : 0.0,
-                                  "upper" : 2000.0,
                                   "lowerUnbounded" : true,
                                   "upperUnbounded" : true,
                                   "lowerIncluded" : true,
