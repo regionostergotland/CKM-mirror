@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "bb5b1d9820f17d0e0709cdb0d35eb557",
+      "MD5-CAM-1.0.1" : "f5b8c75a17915f5c36ed00501ad77877",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -3804,7 +3804,17 @@
                             "units" : "kg/m2",
                             "@type" : "DV_QUANTITY"
                           },
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "property",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "terminologyId" : {
+                                "value" : "openehr"
+                              },
+                              "constraint" : [ "349" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
@@ -13016,7 +13026,7 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "ed302d06-313d-4134-b957-d2d5a811fbf0",
+    "uid" : "f7a7b2ed-4ff5-4bc7-a49d-2d67f98c2fe1",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -13058,7 +13068,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0003.1",
+              "nodeId" : "at0003",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -13097,7 +13107,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.8" ],
+                              "constraint" : [ "ac0.3" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -13120,101 +13130,11 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.7" ],
+                              "constraint" : [ "ac0.2" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at0004.1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "name",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_CODED_TEXT",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "existence" : "1..1",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "at1026", "at1027" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ ]
-                        } ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_QUANTITY",
-                          "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "property",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "terminologyId" : {
-                                "value" : "openehr"
-                              },
-                              "constraint" : [ "382" ]
-                            } ]
-                          } ],
-                          "attributeTuples" : [ {
-                            "@type" : "C_ATTRIBUTE_TUPLE",
-                            "members" : [ {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
-                              "children" : [ ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
-                              "children" : [ ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "precision",
-                              "children" : [ ]
-                            } ],
-                            "tuples" : [ {
-                              "@type" : "C_PRIMITIVE_TUPLE",
-                              "members" : [ {
-                                "@type" : "C_REAL",
-                                "constraint" : [ {
-                                  "lower" : 0.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : true,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : false
-                                } ]
-                              }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "/min" ]
-                              }, {
-                                "@type" : "C_INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 0,
-                                  "upper" : 0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              } ]
-                            } ]
-                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -13240,7 +13160,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.1" ],
+                              "constraint" : [ "ac0.4" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -13270,7 +13190,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.2" ],
+                              "constraint" : [ "ac0.5" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -13344,7 +13264,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.4" ],
+                              "constraint" : [ "ac0.7" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -13417,7 +13337,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.5" ],
+                              "constraint" : [ "ac0.8" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -13549,7 +13469,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
-                      "nodeId" : "at0004.2",
+                      "nodeId" : "at0004.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
@@ -13988,18 +13908,24 @@
             "text" : "*List(en)",
             "description" : "*@ internal @(en)"
           },
-          "at0003.1" : {
+          "at1005.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "*Any event(en)",
-            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+            "code" : "at1005.1",
+            "text" : "*Presence(en)",
+            "description" : "*Presence of a pulse or heart beat.(en)",
+            "comment" : "*It can be implied that the pulse is present if Rate >0 beats/min.(en)"
           },
-          "at0004.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "*Rate(en)",
-            "description" : "*The rate, measured in beats per minute.(en)",
-            "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -14007,10 +13933,10 @@
             "text" : "*Regular?(en)",
             "description" : "*Is the pulse or heart beat regular?(en)"
           },
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : "*"
           },
           "at1055.1" : {
@@ -14020,10 +13946,10 @@
             "description" : "*More specific pattern of an irregular pulse or heart beat.(en)",
             "comment" : "*Selection of a value from this value set is only valid if 'Irregular' is selected from the 'Regularity' data element.(en)"
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : "*"
           },
           "at1030.1" : {
@@ -14046,10 +13972,10 @@
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm.(en)",
             "comment" : "*Coding with a terminology is preferred, where possible. For example: Bradycardia, Extrasystoles or Sinus rhythm. Multiple statements are allowed. (en)"
           },
-          "ac0.4" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.7",
             "description" : "*"
           },
           "at1059.1" : {
@@ -14064,10 +13990,10 @@
             "text" : "*Position(en)",
             "description" : "*The body position of the subject during the observation.(en)"
           },
-          "ac0.5" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.8",
             "description" : "*"
           },
           "at1018.1" : {
@@ -14076,25 +14002,6 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Narrative description about any incidental factors that may affect interpretation of the physical findings.(en)",
             "comment" : "*For example, presence of a pacemaker, level of anxiety; pain or fever etc.(en)"
-          },
-          "at1005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1005.1",
-            "text" : "*Presence(en)",
-            "description" : "*Presence of a pulse or heart beat.(en)",
-            "comment" : "*It can be implied that the pulse is present if Rate >0 beats/min.(en)"
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : "*"
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : "*"
           },
           "at1005.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -14115,9 +14022,9 @@
             "code" : "ac0.11",
             "description" : "*"
           },
-          "at0004.2" : {
+          "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.2",
+            "code" : "at0004.1",
             "text" : "*Rate(en)",
             "description" : "*The rate, measured in beats per minute.(en)",
             "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
@@ -14233,6 +14140,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
             "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "EVENT",
             "description" : "*"
           },
           "at1036" : {
@@ -14279,17 +14192,24 @@
             "text" : "*List(en)",
             "description" : "*@ internal @(en)"
           },
-          "at0003.1" : {
+          "at1005.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "*Any event(en)",
-            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+            "code" : "at1005.1",
+            "text" : "*Presence(en)",
+            "description" : "*Presence of a pulse or heart beat.(en)",
+            "comment" : "*It can be implied that the pulse is present if Rate >0 beats/min.(en)"
           },
-          "at0004.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "*Rate(en)",
-            "description" : "*The rate, measured in beats per minute.(en)"
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -14297,10 +14217,10 @@
             "text" : "*Regular?(en)",
             "description" : "*Is the pulse or heart beat regular?(en)"
           },
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : "*"
           },
           "at1055.1" : {
@@ -14310,10 +14230,10 @@
             "description" : "*More specific pattern of an irregular pulse or heart beat.(en)",
             "comment" : "*Selection of a value from this value set is only valid if 'Irregular' is selected from the 'Regularity' data element.(en)"
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : "*"
           },
           "at1030.1" : {
@@ -14335,10 +14255,10 @@
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm.(en)",
             "comment" : "*Coding with a terminology is preferred, where possible. For example: Bradycardia, Extrasystoles or Sinus rhythm. Multiple statements are allowed. (en)"
           },
-          "ac0.4" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.7",
             "description" : "*"
           },
           "at1059.1" : {
@@ -14353,10 +14273,10 @@
             "text" : "*Position(en)",
             "description" : "*The body position of the subject during the observation.(en)"
           },
-          "ac0.5" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.8",
             "description" : "*"
           },
           "at1018.1" : {
@@ -14365,25 +14285,6 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Narrative description about any incidental factors that may affect interpretation of the physical findings.(en)",
             "comment" : "*For example, presence of a pacemaker, level of anxiety; pain or fever etc.(en)"
-          },
-          "at1005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1005.1",
-            "text" : "*Presence(en)",
-            "description" : "*Presence of a pulse or heart beat.(en)",
-            "comment" : "*It can be implied that the pulse is present if Rate >0 beats/min.(en)"
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : "*"
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : "*"
           },
           "at1005.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -14404,9 +14305,9 @@
             "code" : "ac0.11",
             "description" : "*"
           },
-          "at0004.2" : {
+          "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.2",
+            "code" : "at0004.1",
             "text" : "*Rate(en)",
             "description" : "*The rate, measured in beats per minute.(en)"
           },
@@ -14522,6 +14423,12 @@
             "text" : "HISTORY",
             "description" : "*"
           },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "EVENT",
+            "description" : "*"
+          },
           "at1036" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1036",
@@ -14566,18 +14473,24 @@
             "text" : "List",
             "description" : "@ internal @"
           },
-          "at0003.1" : {
+          "at1005.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Puls",
-            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+            "code" : "at1005.1",
+            "text" : "Presence",
+            "description" : "Presence of a pulse or heart beat.",
+            "comment" : "It can be implied that the pulse is present if Rate >0 beats/min."
           },
-          "at0004.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Hjärtfrekvens",
-            "description" : "The rate, measured in beats per minute.",
-            "comment" : "Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required."
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.3",
+            "description" : "*"
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -14585,10 +14498,10 @@
             "text" : "Regular?",
             "description" : "Is the pulse or heart beat regular?"
           },
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : "*"
           },
           "at1055.1" : {
@@ -14598,10 +14511,10 @@
             "description" : "More specific pattern of an irregular pulse or heart beat.",
             "comment" : "Selection of a value from this value set is only valid if 'Irregular' is selected from the 'Regularity' data element."
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : "*"
           },
           "at1030.1" : {
@@ -14624,10 +14537,10 @@
             "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm.",
             "comment" : "Coding with a terminology is preferred, where possible. For example: Bradycardia, Extrasystoles or Sinus rhythm. Multiple statements are allowed. "
           },
-          "ac0.4" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.4",
+            "code" : "ac0.7",
             "description" : "*"
           },
           "at1059.1" : {
@@ -14642,10 +14555,10 @@
             "text" : "Position",
             "description" : "The body position of the subject during the observation."
           },
-          "ac0.5" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.5",
+            "code" : "ac0.8",
             "description" : "*"
           },
           "at1018.1" : {
@@ -14654,25 +14567,6 @@
             "text" : "Confounding factors",
             "description" : "Narrative description about any incidental factors that may affect interpretation of the physical findings.",
             "comment" : "For example, presence of a pacemaker, level of anxiety; pain or fever etc."
-          },
-          "at1005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1005.1",
-            "text" : "Presence",
-            "description" : "Presence of a pulse or heart beat.",
-            "comment" : "It can be implied that the pulse is present if Rate >0 beats/min."
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.7",
-            "description" : "*"
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.8",
-            "description" : "*"
           },
           "at1005.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -14693,9 +14587,9 @@
             "code" : "ac0.11",
             "description" : "*"
           },
-          "at0004.2" : {
+          "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.2",
+            "code" : "at0004.1",
             "text" : "Rate",
             "description" : "The rate, measured in beats per minute.",
             "comment" : "Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required."
@@ -14813,6 +14707,12 @@
             "text" : "HISTORY",
             "description" : "*"
           },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "EVENT",
+            "description" : "*"
+          },
           "at1036" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1036",
@@ -14857,18 +14757,24 @@
             "text" : "List",
             "description" : "@ internal @"
           },
-          "at0003.1" : {
+          "at1005.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "*Any event(en)",
-            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+            "code" : "at1005.1",
+            "text" : "*Presence(en)",
+            "description" : "*Presence of a pulse or heart beat.(en)",
+            "comment" : "*It can be implied that the pulse is present if Rate >0 beats/min.(en)"
           },
-          "at0004.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "*Rate(en)",
-            "description" : "*The rate, measured in beats per minute.(en)",
-            "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -14876,10 +14782,10 @@
             "text" : "*Regular?(en)",
             "description" : "*Is the pulse or heart beat regular?(en)"
           },
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : "*"
           },
           "at1055.1" : {
@@ -14889,10 +14795,10 @@
             "description" : "*More specific pattern of an irregular pulse or heart beat.(en)",
             "comment" : "*Selection of a value from this value set is only valid if 'Irregular' is selected from the 'Regularity' data element.(en)"
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : "*"
           },
           "at1030.1" : {
@@ -14915,10 +14821,10 @@
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm.(en)",
             "comment" : "*Coding with a terminology is preferred, where possible. For example: Bradycardia, Extrasystoles or Sinus rhythm. Multiple statements are allowed. (en)"
           },
-          "ac0.4" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.7",
             "description" : "*"
           },
           "at1059.1" : {
@@ -14933,10 +14839,10 @@
             "text" : "*Position(en)",
             "description" : "*The body position of the subject during the observation.(en)"
           },
-          "ac0.5" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.8",
             "description" : "*"
           },
           "at1018.1" : {
@@ -14945,25 +14851,6 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Narrative description about any incidental factors that may affect interpretation of the physical findings.(en)",
             "comment" : "*For example, presence of a pacemaker, level of anxiety; pain or fever etc.(en)"
-          },
-          "at1005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1005.1",
-            "text" : "*Presence(en)",
-            "description" : "*Presence of a pulse or heart beat.(en)",
-            "comment" : "*It can be implied that the pulse is present if Rate >0 beats/min.(en)"
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : "*"
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : "*"
           },
           "at1005.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -14984,9 +14871,9 @@
             "code" : "ac0.11",
             "description" : "*"
           },
-          "at0004.2" : {
+          "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.2",
+            "code" : "at0004.1",
             "text" : "*Rate(en)",
             "description" : "*The rate, measured in beats per minute.(en)",
             "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
@@ -15102,6 +14989,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002",
             "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "EVENT",
             "description" : "*"
           },
           "at1036" : {
@@ -15148,18 +15041,24 @@
             "text" : "Дерево",
             "description" : "@ внутреннийl @"
           },
-          "at0003.1" : {
+          "at1005.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "*Any event(en)",
-            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+            "code" : "at1005.1",
+            "text" : "*Presence(en)",
+            "description" : "*Presence of a pulse or heart beat.(en)",
+            "comment" : "*It can be implied that the pulse is present if Rate >0 beats/min.(en)"
           },
-          "at0004.1" : {
+          "ac0.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "*Rate(en)",
-            "description" : "*The rate, measured in beats per minute.(en)",
-            "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "ac0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.3",
+            "description" : "*"
           },
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -15167,10 +15066,10 @@
             "text" : "*Regular?(en)",
             "description" : "*Is the pulse or heart beat regular?(en)"
           },
-          "ac0.1" : {
+          "ac0.4" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
+            "code" : "ac0.4",
             "description" : "*"
           },
           "at1055.1" : {
@@ -15180,10 +15079,10 @@
             "description" : "*More specific pattern of an irregular pulse or heart beat.(en)",
             "comment" : "*Selection of a value from this value set is only valid if 'Irregular' is selected from the 'Regularity' data element.(en)"
           },
-          "ac0.2" : {
+          "ac0.5" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.2",
+            "code" : "ac0.5",
             "description" : "*"
           },
           "at1030.1" : {
@@ -15206,10 +15105,10 @@
             "description" : "*Single word, phrase or brief description that represents the clinical meaning and significance of the pulse or heart beat findings, including the rhythm.(en)",
             "comment" : "*Coding with a terminology is preferred, where possible. For example: Bradycardia, Extrasystoles or Sinus rhythm. Multiple statements are allowed. (en)"
           },
-          "ac0.4" : {
+          "ac0.7" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
+            "code" : "ac0.7",
             "description" : "*"
           },
           "at1059.1" : {
@@ -15224,10 +15123,10 @@
             "text" : "*Position(en)",
             "description" : "*The body position of the subject during the observation.(en)"
           },
-          "ac0.5" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.5",
+            "code" : "ac0.8",
             "description" : "*"
           },
           "at1018.1" : {
@@ -15236,25 +15135,6 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Narrative description about any incidental factors that may affect interpretation of the physical findings.(en)",
             "comment" : "*For example, presence of a pacemaker, level of anxiety; pain or fever etc.(en)"
-          },
-          "at1005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at1005.1",
-            "text" : "*Presence(en)",
-            "description" : "*Presence of a pulse or heart beat.(en)",
-            "comment" : "*It can be implied that the pulse is present if Rate >0 beats/min.(en)"
-          },
-          "ac0.7" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.7",
-            "description" : "*"
-          },
-          "ac0.8" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
-            "description" : "*"
           },
           "at1005.2" : {
             "@type" : "ARCHETYPE_TERM",
@@ -15275,9 +15155,9 @@
             "code" : "ac0.11",
             "description" : "*"
           },
-          "at0004.2" : {
+          "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.2",
+            "code" : "at0004.1",
             "text" : "*Rate(en)",
             "description" : "*The rate, measured in beats per minute.(en)",
             "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
@@ -15395,6 +15275,12 @@
             "text" : "HISTORY",
             "description" : "*"
           },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "EVENT",
+            "description" : "*"
+          },
           "at1036" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at1036",
@@ -15415,42 +15301,42 @@
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
-          "members" : [ "at0006", "at1028" ]
+          "members" : [ "at1045", "at1046" ]
         },
         "ac0.2" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
-          "members" : [ "at0007", "at0008" ]
+          "members" : [ "at1045", "at1046" ]
         },
         "ac0.3" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.3",
-          "members" : [ "at1057", "at1058" ]
+          "members" : [ "at1024", "at1025" ]
         },
         "ac0.4" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
-          "members" : [ "at1057", "at1058" ]
+          "members" : [ "at0006", "at1028" ]
         },
         "ac0.5" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.5",
-          "members" : [ "at1003", "at1001", "at1002", "at1000" ]
+          "members" : [ "at0007", "at0008" ]
         },
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
-          "members" : [ "at1045", "at1046" ]
+          "members" : [ "at1057", "at1058" ]
         },
         "ac0.7" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.7",
-          "members" : [ "at1045", "at1046" ]
+          "members" : [ "at1057", "at1058" ]
         },
         "ac0.8" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
-          "members" : [ "at1024", "at1025" ]
+          "members" : [ "at1003", "at1001", "at1002", "at1000" ]
         },
         "ac0.9" : {
           "@type" : "VALUE_SET",
