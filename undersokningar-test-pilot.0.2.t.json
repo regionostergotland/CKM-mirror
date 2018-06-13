@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "2672dd011a2a163e407197cdf9a45852",
+      "MD5-CAM-1.0.1" : "bc4a30386213c8ee564e011d600ed43c",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -3326,7 +3326,7 @@
           "at0023.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0023.1",
-            "text" : "Comment",
+            "text" : "Kommentar",
             "description" : "Additional narrative about the examination not captured in other fields.",
             "comment" : "For example, recommendations for future examinations; a comment on appropriateness of the examination or on quality of images, if separate to findings; or a note that the film was given to the patient."
           },
@@ -3796,7 +3796,77 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "OBSERVATION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "nodeId" : "at0002",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0003",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0006.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "Malignitetsmisstänkt fynd", "Inget fynd" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -3809,6 +3879,31 @@
             "code" : "at0000.1",
             "text" : "*Physical Examination Findings(en)",
             "description" : "*Findings observed during the physical examination of a subject.(en)"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "*Interpretation(en)",
+            "description" : "*Single word, phrase or brief description represents the clinical meaning and significance of the physical examination findings.(en)",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, normal examination or chronic otitis media.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "sl" : {
@@ -3817,6 +3912,31 @@
             "code" : "at0000.1",
             "text" : "Ugotovitve pregleda",
             "description" : "Za dokumentiranje ugotovitev/znakov fizikalnega pregleda subjekta"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "*Interpretation(en)",
+            "description" : "*Single word, phrase or brief description represents the clinical meaning and significance of the physical examination findings.(en)",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, normal examination or chronic otitis media.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "es-ar" : {
@@ -3825,6 +3945,31 @@
             "code" : "at0000.1",
             "text" : "Hallazgos del Examen Fisico",
             "description" : "Hallazgos observados durante el examen fisico de una persona"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Interpretacion",
+            "description" : "Palabra, frase o descripcion breve que represente el significado clinico e importancia de los hallazgos del examen fisico",
+            "comment" : "Se prefiere la dodificacion con una terminologia. Por ejemplo, examen normal u otitis media cronica"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "en" : {
@@ -3833,6 +3978,31 @@
             "code" : "at0000.1",
             "text" : "Physical examination findings",
             "description" : "Findings observed during the physical examination of a subject of care."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Interpretation",
+            "description" : "Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings.",
+            "comment" : "Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "nb" : {
@@ -3841,6 +4011,31 @@
             "code" : "at0000.1",
             "text" : "Funn ved fysisk undersøkelse",
             "description" : "Funn ved fysisk undersøkelse av en helsetjenestemottaker."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Fortolkning",
+            "description" : "Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den kliniske undersøkelsen.",
+            "comment" : "Koding med terminologi foretrekkes når mulig. For eksempel \"normal undersøkelse\" eller \"tympanisk membran perforasjon\"."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "es" : {
@@ -3849,6 +4044,31 @@
             "code" : "at0000.1",
             "text" : "Hallazgos de la examinación física",
             "description" : "Hallazgos observados durante la examinación física del paciente"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Interpretación",
+            "description" : "Descripción corta que representa el significado clínico de los hallazgos",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "pt-br" : {
@@ -3857,6 +4077,31 @@
             "code" : "at0000.1",
             "text" : "Achados de exame físico",
             "description" : "Resultados observados durante o exame físico de um sujeito de atenção."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Interpretação",
+            "description" : "Palavra única, frase ou breve descrição que representa o significado clínico e dos achados do exame físico.",
+            "comment" : "A codificação com uma terminologia é preferida, se possível. Por exemplo, \"exame normal\" ou \"perfuração da membrana timpânica\"."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "zh-cn" : {
@@ -3865,6 +4110,31 @@
             "code" : "at0000.1",
             "text" : "体格检查发现",
             "description" : "对于特定主体对象进行体格检查过程中所获得的发现。"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "解释",
+            "description" : "用于表示体格检查发现的临床含义和意义的单个词语、短语或简要描述。",
+            "comment" : "在可能的情况下，首选采用特定的术语集进行编码。例如，“检查正常”或“鼓膜穿孔”。"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "HISTORY",
+            "description" : "*"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "EVENT",
+            "description" : "*"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         }
       },
