@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "6b3842670d67efcaa07046b28b88e15c",
+      "MD5-CAM-1.0.1" : "7357ad81269c6b4d5968114a803307e8",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -7990,6 +7990,63 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0016.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DATE",
+                      "rmTypeName" : "DATE_TIME",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0074.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_COUNT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "magnitude",
+                    "children" : [ {
+                      "@type" : "C_INTEGER",
+                      "rmTypeName" : "INTEGER",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : 0,
+                        "lowerUnbounded" : true,
+                        "upperUnbounded" : false,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0019.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -8387,6 +8444,20 @@
             "description" : "Additional narrative about all tobacco smoking that has not been captured in other fields.",
             "comment" : "For example: stopped smoking or reduced amount on becoming pregnant."
           },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Overall quit date",
+            "description" : "The date when the individual last ceased using tobacco of any type.",
+            "comment" : "Can be a partial date, for example, only a year. This date could be used by decision support guidance to determine if the  individual is at risk of relapse, for example in the first 12 months since quitting."
+          },
+          "at0074.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074.1",
+            "text" : "Overall pack years",
+            "description" : "Estimate of the cumulative amount for all types of tobacco smoked.",
+            "comment" : "The definition of a pack can be recorded in the protocol of this archetype using the 'Pack definition' data element."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -8513,6 +8584,20 @@
             "description" : "Ytterligere fritekst om tobakksrøyking som ikke er omfattet av andre felt.",
             "comment" : "For eksempel: Sluttet å røyke eller reduserte mengde ved graviditet."
           },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "Samlet sluttdato",
+            "description" : "Datoen da individet sist røykte en hvilken som helst type tobakk.",
+            "comment" : "Kan være en deldato, for eksempel årstall. Denne datoen kan brukes av beslutningsstøttesystemer for å beregne om individet er i faresonen for tilbakefall, for eksempel i løpet av de først 12 månedene etter å ha sluttet."
+          },
+          "at0074.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074.1",
+            "text" : "Samlet pakkeår",
+            "description" : "Anslått kumulativ mengde av alle tobakkstyper som er røykt.",
+            "comment" : "Definisjonen på en pakke kan registreres i protokollen av denne arketypen, ved å bruke dataelementet \"Pakkedefinisjon\"."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -8632,6 +8717,18 @@
             "code" : "at0019.1",
             "text" : "*Overall comment(en)",
             "description" : "*Additional narrative about all tobacco smoking that has not been captured in other fields.(en)"
+          },
+          "at0016.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016.1",
+            "text" : "*Overall quit date(en)",
+            "description" : "*The date when the individual last ceased using tobacco of any type.(en)"
+          },
+          "at0074.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0074.1",
+            "text" : "*Overall pack years(en)",
+            "description" : "*Estimate of the cumulative amount for all types of tobacco smoked.(en)"
           },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
