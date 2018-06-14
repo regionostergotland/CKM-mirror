@@ -18,7 +18,7 @@ description
     original_author = <
         ["date"] = <"2018-05-30">
     >
-    lifecycle_state = <"unmanaged">
+    lifecycle_state = <"in_development">
     details = <
         ["sv"] = <
             language = <[ISO_639-1::sv]>
@@ -34,8 +34,9 @@ description
         ["original_namespace"] = <"org.openehr">
         ["original_publisher"] = <"openEHR Foundation">
         ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"06871bca82aa847fda02709bd55a113a">
+        ["MD5-CAM-1.0.1"] = <"9a0b9b88a2f93aa62dc69a62aed9c8e6">
         ["build_uid"] = <"a84ee44b-5337-3022-b3f0-eede714c3ded">
+        ["revision"] = <"2">
     >
 
 definition
@@ -106,6 +107,20 @@ definition
                 }
             }
         }
+        description matches {
+            ITEM_TREE[at0005] matches {
+                items cardinality matches {0..*; unordered} matches {
+                    ELEMENT[at0006] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                }
+            }
+        }
+        protocol matches {
+            ITEM_TREE[at0007] matches {*}
+        }
     }
 
 ontology
@@ -115,7 +130,7 @@ ontology
             items = <
                 ["at0000"] = <
                     text = <"Decision process">
-                    description = <"Decisionprocess">
+                    description = <"Decision process">
                 >
                 ["at0001"] = <
                     text = <"Initially created">
@@ -132,6 +147,18 @@ ontology
                 ["at0004"] = <
                     text = <"Reopened investigations">
                     description = <"A decision had been recorded, but new circumstances indicate a need for new investigations and/or decisions.">
+                >
+                ["at0005"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0006"] = <
+                    text = <"DV_TEXT">
+                    description = <"Description of why state changed">
+                >
+                ["at0007"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
                 >
             >
         >
@@ -156,6 +183,18 @@ ontology
                 ["at0004"] = <
                     text = <"Återöppnad">
                     description = <"Ett beslut hade redan registrerats, men nytillkomna omständigheter gör att vidare undersökning och/eller nytt belsut krävs. ">
+                >
+                ["at0005"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
+                >
+                ["at0006"] = <
+                    text = <"*DV_TEXT (en)">
+                    description = <"Beskriver varför  statusen ändrades, (kan lämnas tomt)">
+                >
+                ["at0007"] = <
+                    text = <"ItemTree">
+                    description = <"@ internal @">
                 >
             >
         >
