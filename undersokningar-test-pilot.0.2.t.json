@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "bf1fc8d2ef122328ae672c8aca6239a8",
+      "MD5-CAM-1.0.1" : "7e48d56bafb2371adeffef5457bfcad3",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -558,6 +558,7 @@
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
+                        "existence" : "1..1",
                         "children" : [ {
                           "@type" : "C_BOOLEAN",
                           "rmTypeName" : "BOOLEAN",
@@ -6296,9 +6297,22 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "638572a31cd48837adadb0c7748ab7f1"
+        "PARENT:MD5-CAM-1.0.1" : "0462e95399aad89f9c11b3fd1c34aace"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.numeric_rating_scale.v0",
     "differential" : true,
@@ -6349,13 +6363,13 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "nodeId" : "at0005.1",
+                      "nodeId" : "at0024.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "value",
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_ORDINAL",
+                          "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
                           "attributes" : [ ],
                           "attributeTuples" : [ ]
@@ -6488,12 +6502,6 @@
             "text" : "Numeric Rating Scale (NRS)",
             "description" : "Numeric_Rating_Scale"
           },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Patientens skattning av upplevd smärta",
-            "description" : "*"
-          },
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
@@ -6510,6 +6518,12 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
             "text" : "Kommentar",
+            "description" : "*"
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "Patientens skattning av upplevd smärta",
             "description" : "*"
           },
           "at0001" : {
