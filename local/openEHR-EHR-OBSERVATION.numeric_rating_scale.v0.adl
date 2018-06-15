@@ -23,7 +23,7 @@ description
         ["original_namespace"] = <"org.openehr">
         ["original_publisher"] = <"openEHR Foundation">
         ["custodian_namespace"] = <"org.openehr">
-        ["MD5-CAM-1.0.1"] = <"638572a31cd48837adadb0c7748ab7f1">
+        ["MD5-CAM-1.0.1"] = <"fe204a77dcd3ef1aca65915054244398">
         ["build_uid"] = <"ab9f0351-554b-3b70-89f7-04cac5a48afc">
     >
 
@@ -36,9 +36,10 @@ definition
                         data matches {
                             ITEM_TREE[at0003] matches {
                                 items cardinality matches {0..*; unordered} matches {
-                                    ELEMENT[at0005] occurrences matches {0..1} matches {
+                                    ELEMENT[at0008] occurrences matches {0..1} matches {
                                         value matches {
-                                            DV_ORDINAL matches {*}
+                                            C_DV_QUANTITY <
+                                                                                            >
                                         }
                                     }
                                     ELEMENT[at0006] occurrences matches {0..1} matches {
@@ -104,10 +105,6 @@ ontology
                     text = <"ItemTree">
                     description = <"@ internal @">
                 >
-                ["at0005"] = <
-                    text = <"Perceived pain rate">
-                    description = <"*">
-                >
                 ["at0006"] = <
                     text = <"Duration">
                     description = <"*">
@@ -135,6 +132,10 @@ ontology
                 ["at0013"] = <
                     text = <"Temporary">
                     description = <"Temporary">
+                >
+                ["at0008"] = <
+                    text = <"Perceived pain rate">
+                    description = <"*">
                 >
             >
         >
