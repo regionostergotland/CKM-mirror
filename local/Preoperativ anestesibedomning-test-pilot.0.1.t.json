@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "f7c5b077189aabab6afd3a7e7819616a",
+      "MD5-CAM-1.0.1" : "400c4d5f6b6549fdb1a10e95f21a149e",
       "PARENT:MD5-CAM-1.0.1" : "39E8BC92B5A362F1CB48E5CD0CB75774"
     },
     "details" : {
@@ -3090,7 +3090,15 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Generell anestesi", "Sedering", "Ingen anestesi, endast övervakning" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -3128,7 +3136,7 @@
                     "children" : [ {
                       "@type" : "C_STRING",
                       "rmTypeName" : "STRING",
-                      "constraint" : [ "Generell anestesi", "TCI", "TIVA", "Spinal", "Plexus", "Lokalbedövning" ]
+                      "constraint" : [ "TCI", "TIVA", "Spinal", "Plexus", "Lokalbedövning", "Gasanestesi" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -3918,7 +3926,7 @@
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
-            "text" : "Procedure name",
+            "text" : "Typ av anestesi",
             "description" : "Identification of the procedure by name.",
             "comment" : "Coding of the specific procedure with a terminology is preferred, where possible."
           },
