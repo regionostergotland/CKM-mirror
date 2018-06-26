@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "eadf35a5c164b8fd8965f1b177cf2bae",
+      "MD5-CAM-1.0.1" : "7ee068627497937d39049b0797bc41ff",
       "PARENT:MD5-CAM-1.0.1" : "A81FEA7D5C9EB332BCCE90A35238178D"
     },
     "details" : {
@@ -211,7 +211,7 @@
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "ACTION",
-        "occurrences" : "0..*",
+        "occurrences" : "0..1",
         "nodeId" : "at0.0.2",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -232,6 +232,12 @@
           "text" : "Operationsrapport",
           "description" : "Document to communicate information to others about any stand-alone procedure or operation performed."
         },
+        "at0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.0.2",
+          "text" : "ACTION",
+          "description" : "*"
+        },
         "at0001" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0001",
@@ -254,12 +260,6 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
           "text" : "CLUSTER",
-          "description" : "*"
-        },
-        "at0.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.0.2",
-          "text" : "ACTION",
           "description" : "*"
         }
       },
@@ -270,6 +270,12 @@
           "text" : "Prosedyrerapport",
           "description" : "Dokument for å kommunisere informasjon om enkeltstående prosedyrer eller operasjoner som er utført."
         },
+        "at0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.0.2",
+          "text" : "ACTION",
+          "description" : "*"
+        },
         "at0001" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0001",
@@ -292,12 +298,6 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
           "text" : "CLUSTER",
-          "description" : "*"
-        },
-        "at0.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.0.2",
-          "text" : "ACTION",
           "description" : "*"
         }
       },
@@ -308,6 +308,12 @@
           "text" : "Relatório do procedimento",
           "description" : "Documento para comunicar informações aos outros sobre qualquer procedimento isolado ou operação executada."
         },
+        "at0.0.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.0.2",
+          "text" : "ACTION",
+          "description" : "*"
+        },
         "at0001" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0001",
@@ -330,12 +336,6 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
           "text" : "CLUSTER",
-          "description" : "*"
-        },
-        "at0.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.0.2",
-          "text" : "ACTION",
           "description" : "*"
         }
       }
@@ -364,7 +364,117 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7A65632D1A59E073C1B6D7CE0E68E7B8"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи сведений об проведенной процедуре",
+          "keywords" : [ "процедура, выполнение" ],
+          "use" : "Используется для записи подробной информации о процедуре, выполненной пациенту.\r\nИнформация о действиях, связанных с выполнением процедуры, таких как анестезия или применение лекарств, долдно быть записано в отдельных архетипах типа ДЕЙСТВИЕ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere informasjon om aktiviteter som må gjennomføres for å utføre en klinisk prosedyre, inkludert planlegging, fastsetting av tidspunkt, utførelse, utsettelse, kansellering, dokumentering og fullføring.",
+          "keywords" : [ "prosedyre", "intervensjon", "kirurgisk", "medisinsk", "klinisk", "terapeutisk", "diagnostisk", "behandling", "kur", "evaluering", "undersøkelse", "screening", "palliativ", "terapi", "prognostisk" ],
+          "use" : "Brukes til å registrere nødvendig informasjon om aktiviteter i gjennomføringen av en klinisk prosedyre. Dette inkluderer planlegging, fastsetting av tidspunkt, utførelse, utsettelse, avlysning, dokumentering og fullføring. Dette gjøres ved å registrere data knyttet til spesifikke aktiviteter som definert i arketypens prosesstrinn (Engelsk: \"Pathway careflow steps\").\r\n\r\nArketypen dekker aktiviteter for et bredt spekter av kliniske prosedyrer utført i evaluerende, undersøkende, diagnostisk, kurativ, terapeutisk eller palliativ hensikt. Eksempler strekker seg fra relativt enkle aktiviteter som innlegging av et intravenøst kateter, til komplekse kirurgiske operasjoner.\r\n\r\nStrukturert og detaljert tilleggsinformasjon om prosedyren kan registreres ved bruk av spesifikke CLUSTER-arketyper satt inn i \"Prosedyredetaljer\"-SLOTet der dette kreves.\r\n\r\nTidsberegning relatert til en prosedyre kan håndteres på en av to måter:\r\n-Ved å benytte referansemodellen: Tiden for gjennomføring av et prosesstrinn vil benytte \"time\"-attributtet som ligger implisitt i en ACTION-arketype, for hvert enkelt prosesstrinn.\r\n-Dataelementer i arketypen:\r\n---Dataelementet \"Planlagt dato/tid\" skal brukes for å registrere nøyaktig tidspunkt prosedyren er planlagt. Merk: Det korresponderende \"time\"-attributtet for prosesstrinnet \"Fastsatt tidspunkt for prosedyre\" registrerer tidspunktet da prosedyren ble planlagt, ikke dato/tid for når prosedyren er planlagt gjennomført. \r\n--- \"Endelig dato/tid\" skal registrere nøyaktig tidspunkt for da prosedyren ble avsluttet. Den kan brukes for å dokumentere komplekse prosedyrer med mange komponenter. Merk: Det korresponderende \"time\"-attributtet for prosesstrinnet \"Prosedyre iverksatt\" dokumenterer tidspunkt for hver gang en komponent er gjennomført eller påbegynt. Dataelementet \"Endelig dato/tid\" registrerer dato/tid for det siste aktive komponenten av prosedyren. Dette åpner for mulighet for utregning av den totale varigheten av den aktive prosedyren.\r\n\r\nVed bruk i en operasjonsrapport skal arketypen bare benyttes for å registrere hva som ble utført under prosedyren. Egne arketyper vil bli benyttet for å registrere andre komponenter av operasjonsrapporten, dette inkluderer biopsitakning, bildediagnostisk veiledning, funn under operasjonen, postoperative instruksjoner og videre planer for oppfølging.\r\n\r\nI en problemliste eller i et problemsammendrag kan denne arketypen benyttes for å gi en oversikt over hvilke prosedyrer som er utført. Arketypen EVALUATION.problem_diagnosis vil benyttes for å gi en oversikt over pasientens problemer og diagnoser.\r\n\r\nI praksis vil mange prosedyrer (f.eks. i primærhelsetjenesten) utføres én gang, og ikke bestilles i forkant. Detaljene om prosedyren vil da registreres for det aktuelle prosesstrinnet. I noen tilfeller vil en gjentagende prosedyre bli rekvirert, og i en slik situasjon registreres prosesstrinnet \"Prosedyre utført\" i hvert enkelt tilfelle, og instruksjonen forblir i en aktiv tilstand. Når den siste prosedyren i serien er registrert settes prosesstrinnet \"Prosedyre avsluttet\" for å avslutte forordningen.\r\n\r\nI andre situasjoner, for eksempel i spesialisthelsetjenesten, kan det foreligge en formell rekvisisjon for en prosedyre hvor en motsvarende INSTRUCTION-arketype er benyttet. Denne ACTION-arketypen benyttes da for å registrere arbeidsflyt og når og hvordan prosedyren ble utført.\r\n\r\nRegistrering av informasjon i denne ACTION-arketypen indikerer at en eller annen type aktivitet faktisk er utført; dette vil vanligvis være prosedyren i seg selv, men kan også være et mislykket forsøk eller en annen aktivitet som f.eks. en utsettelse av prosedyren. Finnes det en formell henvisning til en prosedyre, er henvisningens status representert i det prosesstrinnet hvor data er registrert. For eksempel vil gjennomføringen av en gastroskopi lagret i denne arketypen kunne registreres som flere påfølgende oppføringer innen et fremdriftsnotat, en oppføring for hvert prosesstrinn:\r\n\r\n- registrert planlagt Start dato/tid for gastroskopien (\"Prosedyre planlagt\")\r\n- registrert at gastroskopiprosedyren er fullført, inkludert informasjon om prosedyredetaljene (\"Prosedyre avsluttet\").\r\n\r\nLegg merke til at det i openEHR referansemodellen er et attributt \"time\" som er tenkt brukt til å registrere dato og tid for når hvert enkelt prosesstrinn i ACTION-arketypen ble utført. Denne attributten skal brukes til å registre da prosedyren startet (ved prosesstrinnet \"Prosedyre iverksatt\"), eller tidspunktet da prosedyren ble avbrutt (ved prosesstrinnet \"Prosedyre avbrutt\").",
+          "misuse" : "Benyttes ikke til å registrere detaljer om administrasjon av legemidler - bruk ACTION.medication til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om bildediagnostiske undersøkelser - bruk ACTION.imaging_exam til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om laboratorieundersøkelser - bruk ACTION.laboratory_test til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om pasientopplæring - bruk ACTION.health_education til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om administrative aktiviteter - bruk spesifikke ADMIN-arketyper til dette formålet.\r\n\r\nBenyttes ikke til registrering om relaterte aktiviteter som bruk av frysesnitt tatt under en operasjon, legemidler gitt som del av prosedyren, eller når bildeveiledning er brukt under prosedyren. Bruk separate og spesifikke ACTION-arketyper innen samme templat til dette formålet.\r\n\r\nBenyttes ikke for å registrere en hel operasjon eller prosedyrerapport - bruk en templat der denne arketypen er kun en komponent av den fullstendige rapporten.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar os detalhes sobre um procedimento realizado, incluindo o planejamento, programação , execução, suspensão , cancelamento , documentação e conclusão.",
+          "keywords" : [ "procedimento", "intervenção", "cirúrgico", "médico", "clínico", "terapêutico", "diagnóstico", "cura", "tratamento", "evolução", "investigação", "paliativo", "terapia" ],
+          "use" : "Use para registrar informações sobre as atividades necessárias para realizar um procedimento , incluindo o planejamento, programação , execução, suspensão , cancelamento , documentação e conclusão. Isto é feito através do registro de dados de atividades específicas , conforme definido neste arquétipo .\r\n\r\nO escopo deste arquétipo abrange as atividades para uma ampla gama de procedimentos clínicos realizados para avaliação, investigação , triagem , diagnóstico , curativo, terapêutico ou fins paliativos. Os exemplos vão desde as atividades relativamente simples, tais como a inserção de uma cânula intravenosa , através de operações cirúrgicas complexas .\r\n\r\nInformações adicionais estruturadas e detalhadas sobre o procedimento podem ser capturadas utilizando arquétipos específicos de uso inserido no slot 'Detalhe do Procedimento', onde for necessário.\r\n\r\nTempos relacionados a um procedimento podem ser gerenciados de uma de duas maneiras:\r\n- Usando o modelo de referência - o prazo para realização de qualquer passo/caminho usará o atributo tempo de ação para cada etapa.\r\n- Elementos de dados arquetipados:\r\n--- Elemento de dados \"data / hora agendada\" destina-se a registrar o tempo exato em que o procedimento é planejado. Nota: o atributo de tempo de ação correspondente para o passo via Programado irá registrar o tempo que o procedimento foi programado em um sistema, não a data / hora pretendida em que o procedimento se destina a ser realizado; e\r\n--- O 'data final / hora' destina-se a registrar o tempo exato em que o processo foi encerrado. Ele pode ser usado para documentar os procedimentos complexos com componentes múltiplos. Nota: o atributo de tempo de ação correspondente para o \"procedimento realizado\" irá documentar o tempo de cada componente realizada foi iniciada. Este elemento de dados 'Data / hora Final' registrará a data / hora do último componente ativo do procedimento. Isto irá permitir uma duração total do processo ativo a ser calculado.\r\n\r\nDentro do contexto de um Relatório de Cirurgia, esse arquétipo será usado para gravar apenas o que foi feito durante o procedimento. Arquétipos separados serão utilizados para gravar os outros componentes necessários, incluindo a coleta de amostras de tecidos, utilização de imagens intraoperatórias, achados cirúrgicos, instruções pós-operatória e planos de acompanhamento.\r\n\r\nDentro do contexto de uma lista de problemas ou resumo, este arquétipo pode ser usado ​​para representar os procedimentos que têm sido realizados. O EVALUATION.problem_diagnosis será usado para representar os problemas do paciente e diagnósticos.\r\n\r\nNa prática, muitos procedimentos (por exemplo, um atendimento ambulatorial) ocorrerá uma vez e não será planejado com antecedência. Os detalhes sobre o procedimento serão adicionados ao passo/caminho, «Processo concluído\". Em alguns casos um procedimento recorrente será ordenado, e nesta situação os dados do \"procedimento realizado\" será gravado em cada ocasião, deixando a instrução no estado ativo. Quando a última ocorrência é registrada do \"Procedimento concluído\" a ação é registrada mostrando que essa ordem está agora no estado concluído.\r\n\r\nEm outras situações, tais como atenção secundária, pode haver uma ordem formal de um procedimento usando um arquétipo instrução correspondente. Este arquétipo ação pode então ser usado para registrar o fluxo de trabalho de quando e como a ordem foi executada.\r\n\r\nGravando informações utilizando esse arquétipo AÇÃO indica que algum tipo de atividade realmente ocorreu; este será geralmente o procedimento em si, mas pode ser uma tentativa fracassada ou outra atividade, como o adiamento do procedimento. Se existe uma ordem formal para o procedimento, o estado desta ordem é representado pelo passo Pathway contra a qual os dados são gravados. Por exemplo, usando esse arquétipo do estado progredindo de uma ordem Gastroscopia podem ser registrados através de entradas separadas no progresso EHR observado um passo a cada 'Caminho':\r\n- Registrar o início de data / hora programada para a gastroscopia (Procedimento programado); e\r\n- Gravar que o procedimento foi concluído gastroscopia, incluindo informações sobre os detalhes de procedimento (processo encerrado).\r\n\r\nPor favor, note que no Modelo de Referência openEHR há um atributo 'Time', que se destina a registrar a data e hora em que foi realizada a cada passo via da ação. Este é o atributo a ser usado para registar o início do procedimento (usando o \"procedimento realizado 'passo via), ou o tempo que o procedimento foi abortada (usando o\" procedimento abortado' passo via)",
+          "misuse" : "Não deve ser usado para gravar detalhes sobre o anestésico - usar um arquétipo ação separada para esse fim.\r\n\r\nNão deve ser usado para registrar detalhes sobre as investigações de imagem - use ACTION.imaging_exam para esta finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre investigações laboratoriais - ACTION.laboratory_test usar para essa finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre educação entregues - ACTION.health_education usar para essa finalidade.\r\n\r\nNão deve ser usado para registrar detalhes sobre as atividades administrativas - usar arquétipos ADMIN específicos para esta finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre as atividades relacionadas, tais como medicação administrada como parte do processo ou quando utilização de imagens para visualização é utilizado durante o procedimento - usar arquétipos ação separados e específicos dentro do mesmo modelo para este fim.\r\n\r\nNão deve ser usado para gravar uma operação ou procedimento relatório conjunto - usar um modelo em que esse arquétipo é apenas um componente do relatório completo.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion.",
+          "keywords" : [ "procedure", "intervention", "surgical", "medical", "clinical", "therapeutic", "diagnostic", "cure", "treatment", "evaluation", "investigation", "screening", "palliative", "therapy" ],
+          "use" : "Use to record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion. This is done by the recording of data against specific activities, as defined by the 'Pathway' careflow steps in this archetype.\r\n\r\nThe scope of this archetype encompasses activities for a broad range of clinical procedures performed for evaluative, investigative, screening, diagnostic, curative, therapeutic or palliative purposes. Examples range from the relatively simple activities, such as insertion of an intravenous cannula, through to complex surgical operations.\r\n\r\nAdditional structured and detailed information about the procedure can be captured using purpose-specific archetypes inserted into the 'Procedure detail' slot, where required.\r\n\r\nTimings related to a procedure can be managed in one of two ways:\r\n- Using the reference model - the time for performance of any pathway step will use the ACTION time attribute for each step.\r\n- Archetyped data elements:\r\n--- the 'Scheduled date/time' data element is intended to record the precise time when the procedure is planned. Note: the corresponding ACTION time attribute for the Scheduled pathway step will record the time that the procedure was scheduled into a system, not the intended date/time on which the procedure is intended to be carried out; and\r\n--- the 'Final end date/time' is intended to record the precise time when the procedure was ended. It can be used to document the complex procedures with multiple components. Note: the corresponding ACTION time attribute for the 'Procedure performed' will document the time each component performed was commenced. This 'Final end date/time' data element will record the date/time of the final active component of the procedure. This will enable a full duration of the active procedure to be calculated.\r\n\r\nWithin the context of an Operation Report, this archetype will be used to record only what was done during the procedure. Separate archetypes will be used to record the other required components of the Operation Report, including the taking of tissue specimen samples, use of imaging guidance, operation findings, post-operative instructions and plans for follow up.\r\n\r\nWithin the context of a Problem list or summary, this archetype may be used to represent procedures that have been performed. The EVALUATION.problem_diagnosis will be used to represent the patient's problems and diagnoses.\r\n\r\nIn practice, many procedures (for example, in ambulatory care) will occur once and not be ordered in advance. The details about the procedure will be added against the pathway step, 'Procedure completed'. In some cases a recurring procedure will be ordered, and in this situation data against the 'Procedure performed' step will be recorded on each occasion, leaving the instruction in the active state. When the last occurrence is recorded the 'Procedure completed' action is recorded showing that this order is now in the completed state.\r\n\r\nIn other situations, such as secondary care, there may be a formal order for a procedure using a corresponding INSTRUCTION archetype. This ACTION archetype can then be used to record the workflow of when and how the order has been carried out.\r\n\r\nRecording information using this ACTION archetype indicates that some sort of activity has actually occurred; this will usually be the procedure itself but may be a failed attempt or another activity such as postponing the procedure. If there is a formal order for the procedure, the state of this order is represented by the Pathway step against which the data is recorded. For example, using this archetype the progressing state of a Gastroscopy order may be recorded through separate entries in the EHR progress notes at each 'Pathway' step:\r\n- record the scheduled Start date/time for the gastroscopy (Procedure scheduled); and\r\n- record that the gastroscopy procedure has been completed, including information about the procedure details (Procedure completed).\r\n\r\nPlease note that in the openEHR Reference Model there is a 'Time' attribute, which is intended to record the date and time at which each pathway step of the Action was performed. This is the attribute to use to record the start of the procedure (using the 'Procedure performed' pathway step) or the time that the procedure was aborted (using the 'Procedure aborted' pathway step).",
+          "misuse" : "Not to be used to record details about the anaesthetic - use a separate ACTION archetype for this purpose.\r\n\r\nNot to be used to record details about imaging investigations - use ACTION.imaging_exam for this purpose.\r\n\r\nNot to be used to record details about laboratory investigations - use ACTION.laboratory_test for this purpose.\r\n\r\nNot to be used to record details about education delivered - use ACTION.health_education for this purpose.\r\n\r\nNot to be used to record details about administrative activities - use specific ADMIN archetypes for this purpose.\r\n\r\nNot to be used to record details about related activities such as the use of frozen sections taken during an operation, medication administered as part of the procedure or when imaging guidance is used during the procedure - use separate and specific ACTION archetypes within the same template for this purpose .\r\n\r\nNot to be used to record a whole operation or procedure report - use a template in which this archetype is only one component of the full report.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه",
+          "keywords" : [ "الإجراء الطبي" ],
+          "use" : "لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za beleženje podrobnosti o izvedeni aktivnosti",
+          "keywords" : [ "aktivnosti", "postopek" ],
+          "use" : "Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt",
+          "misuse" : "Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para registrar información sobre las actividades requeridas para ejecutar un procedimiento, incluyendo planificación, coordinación, ejecución, suspensión, cancelación, documentación y finalización.",
+          "keywords" : [ "procedimiento", "intervención", "terapia", "cirugía", "diagnóstico", "evaluación", "curación", "tratamiento" ],
+          "use" : "Se utiliza para registrar información sobre las actividades requeridas para llevar a cabo un procedimiento, incluyendo planificación, coordinación, ejecución, suspensión, cancelación, documentación y finalización. Esto se hace mediante el registro de los datos sobre actividades específicas, según la definición de los pasos de la vía clínica definida en el arquetipo.\r\n\r\nEl alcance de este arquetipo abarca actividades para una amplia gama de procedimientos clínicos realizados para la evaluación, investigación, detección, diagnóstico,\r\ncurativos, terapéuticos o fines paliativos. Los ejemplos van desde las actividades relativamente simples, como la inserción de una cánula intravenosa, hasta operaciones quirúrgicas complejas.",
+          "misuse" : "No utilizar para registrar detalles acerca de la anestesia, para eso utilizar un arquetipo de ACTION separado.\r\nNo utilizar para registrar detalles acerca de estudios por imágenes, para eso utilizar el arquetipo ACTION.imaging_exam.\r\nNo utilizar para registrar detalles acerca de estudios de laboratorio, para eso utilizar el arquetipo ACTION.laboratory_test.\r\nNo utilizar para registrar detalles acerca de educación brindada, para eso utilizar el arquetipo ACTION.health_education.\r\nNo utilizar para registrar detalles acerca de actividades administrativas, para eso utilizar un arquetipo ADMIN separado.\r\nNo utilizar para registrar detalles acerca de actividades relacionadas, como medicación administrada durante el procedimiento, o sobre imágenes que se utilizaron como guía durante el procedimiento, para esto utilizar arquetipos de ACTION separados, dentro de la misma plantilla.\r\nNo utilizar para registrar detalles acerca del informe de la operación, para eso se debe utilizar una plantilla donde este arquetipo sea parte de la misma.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.procedure.v1",
     "differential" : true,
@@ -376,7 +486,282 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "ACTION",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "description",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0002.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0049.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0065.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0058.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0063.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0048.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0069.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0006.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0066.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0060.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DATE_TIME",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0061.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_DURATION",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_DURATION",
+                      "rmTypeName" : "DURATION",
+                      "occurrences" : "1..1",
+                      "constraint" : [ {
+                        "lower" : "PT0S",
+                        "lowerUnbounded" : false,
+                        "upperUnbounded" : true,
+                        "lowerIncluded" : true,
+                        "upperIncluded" : false
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0067.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0014.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0005.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..*",
+              "nodeId" : "at0003.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
@@ -389,6 +774,115 @@
             "code" : "at0000.1",
             "text" : "Procedimento",
             "description" : "A atividade clínica realizada para rastreamento , investigação , diagnóstico , cura , terapêutica, avaliação ou finalidade paliativos."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Detalhes do Procedimento",
+            "description" : "São as informações estruturadas sobre o procedimento.",
+            "comment" : "Use para capturar informações detalhadas , estruturadas sobre a localização anatômica , método e técnica , os equipamentos utilizados , dispositivos implantados , os resultados , as conclusões, etc."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Nome do procedimento",
+            "description" : "Identificação do procedimento pelo nome.",
+            "comment" : "Código do procedimento específico com uma terminologia é preferível , quando possível."
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049.1",
+            "text" : "Descrição",
+            "description" : "Descrição narrativa sobre o procedimento, conforme apropriado para a etapa.",
+            "comment" : "Por exemplo : Descrição sobre o desempenho e os resultados do procedimento, a tentativa abortada ou a anulação do procedimento."
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Método",
+            "description" : "Identificação do método específico ou técnica do procedimento.",
+            "comment" : "Utilize este elemento de dados para registrar termos simples ou uma descrição narrativa . Se as condições de registro do método requer uma modelagem mais complexa , então isso pode ser representado por arquétipos adicionais dentro do campo \"Detalhes do procedimento\" deste arquétipo. Se o método está incluído no \"Nome do procedimento\" através de códigos padrão , este elemento de dados torna-se redundante."
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "Urgência",
+            "description" : "Urgência do procedimento.",
+            "comment" : "Codificação do procedimento é preferível, quando possível."
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063.1",
+            "text" : "Localização no corpo",
+            "description" : "Identificação do local no corpo onde será realizado o procedimento.",
+            "comment" : "Ocorrências para este elemento de dados são ilimitadas para permitir cenários clínicos, tais como a remoção de lesões da pele em múltiplos locais diferentes , mas em que todos os outros atributos são idênticos . Utilize este elemento de dados para gravar termos simples ou localizações anatômicas padrão. Se as condições de gravação da localização anatômica são determinados em tempo de execução pelo aplicativo ou exigir modelagem mais complexa, como localizações relativas , em seguida, usar o CLUSTER.anatomical_location ou CLUSTER.relative_location dentro do campo \"detalhes do procedimento\" neste arquétipo. Se a localização anatômica estiver incluída no \"Nome do procedimento\" através de códigos padronizados, este elemento de dados torna-se redundante."
+          },
+          "at0048.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048.1",
+            "text" : "Resultado",
+            "description" : "Resultado do procedimento realizado.",
+            "comment" : "Utilização de terminologia para a codificação é desejável, quando possível."
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "*Procedural difficulty(en)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Complicações",
+            "description" : "Detalhes sobre alguma complicação decorrente do procedimento",
+            "comment" : "Utilize este elemento de dados para gravar termos simples ou complicações . Se as condições de gravação de complicação são mais complexas, é aconselhado usar de um arquétipo CLUSTER específico dentro do campo \"Detalhes do Procedimento\" neste arquétipo e este elemento de dados torna-se redundante."
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066.1",
+            "text" : "Agendamento data/hora",
+            "description" : "A data e /ou hora em que o processo está previsto para ocorrer.",
+            "comment" : "Apenas para utilização em associação com o \" Procedimento Programado ' para a etapa em curso."
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "Data final / hora",
+            "description" : "A data e/ou hora , quando todo o processo , ou o último componente de um procedimento de múltiplas etapas , foi finalizada.",
+            "comment" : "Apenas para utilização em associação com o \"Procedimento realizado\" da etapa, e em situações em que o procedimento é repetido em várias ocasiões antes de ser concluído ou houver vários componentes para todo o processo. Este pode ser o mesmo que o atributo para o tempo de RM \"Processo concluído\"."
+          },
+          "at0061.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061.1",
+            "text" : "Duração Total",
+            "description" : "A quantidade total de tempo necessária para concluir o procedimento, o que pode incluir o tempo gasto durante a fase ativa do procedimento mais o tempo durante o qual o procedimento foi suspenso.",
+            "comment" : "Apenas para utilização em associação com o \"Procedimento concluído\"."
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067.1",
+            "text" : "Tipo do procedimento",
+            "description" : "O tipo do procedimento.",
+            "comment" : "Esse elemento de dados pragmático pode ser usado para apoiar a organização dentro da interface do usuário."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Justificativa",
+            "description" : "Razão pela qual a atividade ou cuidado foi identificada para que o procedimento fosse realizado.",
+            "comment" : "Por exemplo: o motivo do cancelamento ou suspensão de um procedimento."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Comentários",
+            "description" : "Comentários adicionais sobre a atividade ou etapas não informados em outros campos."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "sl" : {
@@ -397,14 +891,232 @@
             "code" : "at0000.1",
             "text" : "*Procedure(en)",
             "description" : "*A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "*Procedure detail(en)",
+            "description" : "*Structured information about the procedure. Use to capture detailed, structured information about anatomical location, method & technique, equipment used, devices implanted, results, findings etc.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "*Procedure name(en)",
+            "description" : "*Identification of the procedure by name.(en)",
+            "comment" : "*Coding of the specific procedure with a terminology is preferred, where possible.(en)"
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049.1",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description about the procedure, as appropriate for the pathway step.(en)",
+            "comment" : "*For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure.(en)"
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "*Method(en)",
+            "description" : "*Identification of specific method or technique for the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "*Urgency(en)",
+            "description" : "*Urgency of the procedure.(en)",
+            "comment" : "*Coding with a terminology is preferred, where possible.(en)"
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063.1",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of the body site for the procedure.(en)",
+            "comment" : "*Occurrences for this data element are unbounded to allow for clinical scenarios such as removing multiple skin lesions in different places, but where all of the other attributes are identical. Use this data element to record simple terms or precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Procedure detail' SLOT in this archetype. If the anatomical location is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0048.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048.1",
+            "text" : "*Outcome(en)",
+            "description" : "*Outcome of procedure performed.(en)",
+            "comment" : "*Coding with a terminology is preferred, where possible.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "*Procedural difficulty(en)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "*Complication(en)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066.1",
+            "text" : "*Scheduled date/time(en)",
+            "description" : "*The date and/or time on which the procedure is intended to be performed.(en)",
+            "comment" : "*Only for use in association with the 'Procedure scheduled' pathway step.(en)"
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "*Final end date/time(en)",
+            "description" : "*The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.(en)",
+            "comment" : "*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)"
+          },
+          "at0061.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061.1",
+            "text" : "*Total duration(en)",
+            "description" : "*The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended.(en)",
+            "comment" : "*Only for use in association with the 'Procedure completed' pathway steps.(en)"
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067.1",
+            "text" : "*Procedure type(en)",
+            "description" : "*The type of procedure.(en)",
+            "comment" : "*This pragmatic data element may be used to support organisation within the user interface.(en)"
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "en" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Procedure",
+            "text" : "Operationsrapport",
             "description" : "A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Procedure detail",
+            "description" : "Structured information about the procedure.",
+            "comment" : "Use to capture detailed, structured information about anatomical location, method & technique, equipment used, devices implanted, results, findings etc."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Operation",
+            "description" : "Identification of the procedure by name.",
+            "comment" : "Coding of the specific procedure with a terminology is preferred, where possible."
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049.1",
+            "text" : "Beskrivning",
+            "description" : "Narrative description about the procedure, as appropriate for the pathway step.",
+            "comment" : "For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure."
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Metod",
+            "description" : "Identification of specific method or technique for the procedure.",
+            "comment" : "Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant."
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "Urgency",
+            "description" : "Urgency of the procedure.",
+            "comment" : "Coding with a terminology is preferred, where possible."
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063.1",
+            "text" : "Body site",
+            "description" : "Identification of the body site for the procedure.",
+            "comment" : "Occurrences for this data element are unbounded to allow for clinical scenarios such as removing multiple skin lesions in different places, but where all of the other attributes are identical. Use this data element to record simple terms or precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Procedure detail' SLOT in this archetype. If the anatomical location is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant."
+          },
+          "at0048.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048.1",
+            "text" : "Outcome",
+            "description" : "Outcome of procedure performed.",
+            "comment" : "Coding with a terminology is preferred, where possible."
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Svårigheter under operation",
+            "description" : "Difficulties or issues encountered during performance of the procedure.",
+            "comment" : "Examples: The patient was agitated, insufficient emptying of the stomach before gastroscopy, a tumour in the bile ducts made it impossible to pass the scope through."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Komplikationer",
+            "description" : "Details about any complication arising from the procedure.",
+            "comment" : "Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. Examples: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter."
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066.1",
+            "text" : "Start - operation",
+            "description" : "The date and/or time on which the procedure is intended to be performed.",
+            "comment" : "Only for use in association with the 'Procedure scheduled' pathway step."
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "Slut - operation",
+            "description" : "The date and/or time when the entire procedure, or the last component of a multicomponent procedure, was finished.",
+            "comment" : "Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step."
+          },
+          "at0061.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061.1",
+            "text" : "Total duration",
+            "description" : "The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended.",
+            "comment" : "Only for use in association with the 'Procedure completed' pathway steps."
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067.1",
+            "text" : "Procedure type",
+            "description" : "The type of procedure.",
+            "comment" : "This pragmatic data element may be used to support organisation within the user interface."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Reason",
+            "description" : "Reason that the activity or care pathway step for the identified procedure was carried out.",
+            "comment" : "For example: the reason for the cancellation or suspension of the procedure."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Comment",
+            "description" : "Additional narrative about the activity or care pathway step not captured in other fields."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "ar-sy" : {
@@ -413,6 +1125,114 @@
             "code" : "at0000.1",
             "text" : "*Procedure(en)",
             "description" : "*A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "*Procedure detail(en)",
+            "description" : "*Structured information about the procedure. Use to capture detailed, structured information about anatomical location, method & technique, equipment used, devices implanted, results, findings etc.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "*Procedure name(en)",
+            "description" : "*Identification of the procedure by name.(en)",
+            "comment" : "*Coding of the specific procedure with a terminology is preferred, where possible.(en)"
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049.1",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description about the procedure, as appropriate for the pathway step.(en)",
+            "comment" : "*For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure.(en)"
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "*Method(en)",
+            "description" : "*Identification of specific method or technique for the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "*Urgency(en)",
+            "description" : "*Urgency of the procedure.(en)",
+            "comment" : "*Coding with a terminology is preferred, where possible.(en)"
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063.1",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of the body site for the procedure.(en)",
+            "comment" : "*Occurrences for this data element are unbounded to allow for clinical scenarios such as removing multiple skin lesions in different places, but where all of the other attributes are identical. Use this data element to record simple terms or precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Procedure detail' SLOT in this archetype. If the anatomical location is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0048.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048.1",
+            "text" : "*Outcome(en)",
+            "description" : "*Outcome of procedure performed.(en)",
+            "comment" : "*Coding with a terminology is preferred, where possible.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "*Procedural difficulty(en)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "*Complication(en)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066.1",
+            "text" : "*Scheduled date/time(en)",
+            "description" : "*The date and/or time on which the procedure is intended to be performed.(en)",
+            "comment" : "*Only for use in association with the 'Procedure scheduled' pathway step.(en)"
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "*Final end date/time(en)",
+            "description" : "*The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.(en)",
+            "comment" : "*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)"
+          },
+          "at0061.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061.1",
+            "text" : "*Total duration(en)",
+            "description" : "*The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended.(en)",
+            "comment" : "*Only for use in association with the 'Procedure completed' pathway steps.(en)"
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067.1",
+            "text" : "*Procedure type(en)",
+            "description" : "*The type of procedure.(en)",
+            "comment" : "*This pragmatic data element may be used to support organisation within the user interface.(en)"
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "ru" : {
@@ -421,6 +1241,114 @@
             "code" : "at0000.1",
             "text" : "*Procedure(en)",
             "description" : "*A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "*Procedure detail(en)",
+            "description" : "*Structured information about the procedure. Use to capture detailed, structured information about anatomical location, method & technique, equipment used, devices implanted, results, findings etc.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "*Procedure name(en)",
+            "description" : "*Identification of the procedure by name.(en)",
+            "comment" : "*Coding of the specific procedure with a terminology is preferred, where possible.(en)"
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049.1",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description about the procedure, as appropriate for the pathway step.(en)",
+            "comment" : "*For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure.(en)"
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "*Method(en)",
+            "description" : "*Identification of specific method or technique for the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "*Urgency(en)",
+            "description" : "*Urgency of the procedure.(en)",
+            "comment" : "*Coding with a terminology is preferred, where possible.(en)"
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063.1",
+            "text" : "*Body site(en)",
+            "description" : "*Identification of the body site for the procedure.(en)",
+            "comment" : "*Occurrences for this data element are unbounded to allow for clinical scenarios such as removing multiple skin lesions in different places, but where all of the other attributes are identical. Use this data element to record simple terms or precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Procedure detail' SLOT in this archetype. If the anatomical location is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0048.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048.1",
+            "text" : "*Outcome(en)",
+            "description" : "*Outcome of procedure performed.(en)",
+            "comment" : "*Coding with a terminology is preferred, where possible.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "*Procedural difficulty(en)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "*Complication(en)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066.1",
+            "text" : "*Scheduled date/time(en)",
+            "description" : "*The date and/or time on which the procedure is intended to be performed.(en)",
+            "comment" : "*Only for use in association with the 'Procedure scheduled' pathway step.(en)"
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "*Final end date/time(en)",
+            "description" : "*The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.(en)",
+            "comment" : "*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)"
+          },
+          "at0061.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061.1",
+            "text" : "*Total duration(en)",
+            "description" : "*The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended.(en)",
+            "comment" : "*Only for use in association with the 'Procedure completed' pathway steps.(en)"
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067.1",
+            "text" : "*Procedure type(en)",
+            "description" : "*The type of procedure.(en)",
+            "comment" : "*This pragmatic data element may be used to support organisation within the user interface.(en)"
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "*Reason(en)",
+            "description" : "*Reason that the activity or care pathway step for the identified procedure was carried out.(en)",
+            "comment" : "*For example: the reason for the cancellation or suspension of the procedure.(en)"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "nb" : {
@@ -429,6 +1357,116 @@
             "code" : "at0000.1",
             "text" : "Prosedyre",
             "description" : "En klinisk aktivitet som er utført i undersøkende, diagnostisk, kurativ, terapeutisk, evaluerende, prognostisk eller palliativ hensikt."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Prosedyredetaljer",
+            "description" : "Strukturert informasjon om prosedyren.",
+            "comment" : "Bruk for å registrere detaljert, strukturert informasjon om anatomisk lokalisering, metode og teknikker, utstyr som ble benyttet, medisinsk utstyr som ble implantert, funn, etc."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Prosedyrenavn",
+            "description" : "Navnet på prosedyren.",
+            "comment" : "Det bør om mulig benyttes terminologi for å angi prosedyrenavnet."
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049.1",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstbeskrivelse av prosedyren, tilpasset det aktuelle prosesstrinnet.",
+            "comment" : "For eksempel en beskrivelse av utførelsen og funnene fra prosedyren, det avbrutte forsøket, eller avlysningen av prosedyren."
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Metode",
+            "description" : "Den spesifikke metoden eller teknikken for prosedyren.",
+            "comment" : "Bruk dette dataelementet til å registrere enkle termer eller en fritekstlig beskrivelse. Dersom behovene for beskrivelse av metoden krever mer kompleks modellering, kan dette representeres ved hjelp av tilleggsarketyper i SLOTet \"Prosedyredetaljer\" i denne arketypen. Dersom metoden inkluderes som en del av \"Prosedyrenavn\"-elementet ved hjelp av prekoordinerte koder blir dette dataelementet overflødig."
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "Hastegrad",
+            "description" : "Prosedyrens hastegrad.",
+            "comment" : "Koding med en terminologi er ønskelig, om mulig."
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063.1",
+            "text" : "Kroppssted",
+            "description" : "Stedet på kroppen der prosedyren er utført.",
+            "comment" : "Forekomster for dette dataelementet er satt ubegrenset for å tillate kliniske scenarier som f.eks. å fjerne flere hudlesjoner på forskjellige steder, men der alle de andre attributtene er identiske. Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte anatomiske lokaliseringer. Dersom behovene for registrering av anatomisk lokalisering bestemmes først av applikasjonen eller krever mer kompleks modellering som f.eks. relative lokaliseringer, kan arketypene CLUSTER.anatomical_location eller CLUSTER.relative_location brukes i SLOTet \"Prosedyredetaljer\" i denne arketypen. Dersom den anatomiske lokaliseringen inkluderes som en del av \"Prosedyrenavn\"-elementet ved hjelp av prekoordinerte koder blir dette dataelementet overflødig."
+          },
+          "at0048.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048.1",
+            "text" : "Resultat",
+            "description" : "Resultatet av den utførte prosedyren.",
+            "comment" : "Koding med en terminologi er ønskelig, om mulig."
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "Problem ved prosedyre",
+            "description" : "Vanskeligheter eller problemer som det ble støtt på under prosedyren.",
+            "comment" : "Eksempler: Pasienten var urolig, magen var ikke skikkelig tømt før gastroskopi, en svulst i gallegangene gjorde det umulig å få skopet gjennom."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Komplikasjon",
+            "description" : "Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.",
+            "comment" : "Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. Dersom registreringskravene for komplikasjoner er mer komplekse er det anbefalt å bruke en spesifikk CLUSTER-arketype i SLOTet \"Prosedyredetaljer\" i denne arketypen, og i disse tilfellene blir dette dataelementet overflødig. Eksempler: Hematuri etter nyrebiopsi, vevsirritasjon etter innleggelse av venekateter."
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066.1",
+            "text" : "Planlagt dato/tid",
+            "description" : "Dato/tid når prosedyren er planlagt utført.",
+            "comment" : "Kun til bruk i forbindelse med prosesstrinnet \"Prosedyre planlagt\"."
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "Dato/tid for avslutning av prosedyren",
+            "description" : "Datoen og/eller tiden da hele eller den siste av komponentene i en kompleks prosedyre ble avsluttet.",
+            "comment" : "Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre utført\" og i situasjoner der prosedyren gjentas flere ganger før den fullføres, eller det finnes flere komponenter i prosedyren. Dette kan være det samme som referansemodellens \"time\"-atributt for prosesssteget \"Prosedyre utført\"."
+          },
+          "at0061.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061.1",
+            "text" : "Total varighet",
+            "description" : "Den totale tiden som ble brukt til å fullføre prosedyren. Dette kan omfatte tidsbruk under den aktive fasen av prosedyren, og i tillegg tid da prosedyren var midlertidig stanset.",
+            "comment" : "Kun for bruk i forbindelse med prosesstrinnet \"Prosedyre fullført\"."
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067.1",
+            "text" : "Prosedyretype",
+            "description" : "Typen prosedyre.",
+            "comment" : "Dette dataelementet kan brukes til å støtte organisering innenfor brukergrensesnittet."
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Begrunnelse",
+            "description" : "Begrunnelse for at aktiviteten eller prosesstrinnet for den aktuelle prosedyren ble utført.",
+            "comment" : "For eksempel grunnen til at prosedyren ble avlyst eller midlertidig stanset."
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Kommentar",
+            "description" : "Ytterligere fritekstbeskrivelse av aktivitet eller prosesstrinn som ikke er registrert i andre felt."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         },
         "es" : {
@@ -437,6 +1475,115 @@
             "code" : "at0000.1",
             "text" : "Procedimiento",
             "description" : "Una actividad clínica llevada a cabo para la detección, investigación, diagnóstico, curativos, terapéuticos, de evaluación o con fines paliativos."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Detalles",
+            "description" : "Información estructurada de los detalles del procedimiento",
+            "comment" : "*Use to capture detailed, structured information about anatomical location, method & technique, equipment used, devices implanted, results, findings etc.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Nombre del procedimiento",
+            "description" : "Nombre del procedimiento",
+            "comment" : "*Coding of the specific procedure with a terminology is preferred, where possible.(en)"
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049.1",
+            "text" : "Descripción",
+            "description" : "Descripción narrativa del procedimiento",
+            "comment" : "*For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure.(en)"
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Método",
+            "description" : "Identificación del método o técnica específica para el procedimiento",
+            "comment" : "*Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0058.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0058.1",
+            "text" : "Urgencia",
+            "description" : "Urgencia del procedimiento",
+            "comment" : "*Coding with a terminology is preferred, where possible.(en)"
+          },
+          "at0063.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0063.1",
+            "text" : "Zona corporal",
+            "description" : "Identificación de la zona del cuerpo para el procedimiento.",
+            "comment" : "*Occurrences for this data element are unbounded to allow for clinical scenarios such as removing multiple skin lesions in different places, but where all of the other attributes are identical. Use this data element to record simple terms or precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Procedure detail' SLOT in this archetype. If the anatomical location is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.(en)"
+          },
+          "at0048.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048.1",
+            "text" : "Resultado",
+            "description" : "Resultado del procedimiento realizado",
+            "comment" : "*Coding with a terminology is preferred, where possible.(en)"
+          },
+          "at0069.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0069.1",
+            "text" : "*Procedural difficulty(en)",
+            "description" : "*Difficulties or issues encountered during the procedure.(en)"
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Complicación",
+            "description" : "Detalles de cualquier complicación surgida durante la ejecución del procedimiento",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
+          "at0066.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0066.1",
+            "text" : "Fecha coordinada",
+            "description" : "Fecha y hora en el cual se coordinó la realización del procedimiento",
+            "comment" : "Utilizar solamente para el paso de Procedimiento coordinado de la vía clínica del arquetipo"
+          },
+          "at0060.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0060.1",
+            "text" : "Fecha de finalización",
+            "description" : "Fecha y hora cuando el procedimiento fue finalizado en su totalidad",
+            "comment" : "*Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.(en)"
+          },
+          "at0061.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0061.1",
+            "text" : "Duración",
+            "description" : "Cantidad total de tiempo que tomó la ejecución del procedimiento.",
+            "comment" : "*Only for use in association with the 'Procedure completed' pathway steps.(en)"
+          },
+          "at0067.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0067.1",
+            "text" : "*Procedure type(en)",
+            "description" : "*The type of procedure.(en)",
+            "comment" : "*This pragmatic data element may be used to support organisation within the user interface.(en)"
+          },
+          "at0014.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.1",
+            "text" : "Motivo",
+            "description" : "Motivo por el cual una actividad o paso de la vía clínica del arquetipo fue ejecutado como parte del procedimiento",
+            "comment" : "Por ejemplo: motivo de cancelación o suspensión del procedimiento"
+          },
+          "at0005.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005.1",
+            "text" : "Comentario",
+            "description" : "Comentario narrativo adicional acerca de las actividades llevadas a cabo en la ejecución del procedimiento y que no son capturadas por otros campos"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
           }
         }
       },
@@ -537,6 +1684,602 @@
         "email" : "pablo.pazos@cabolabs.com"
       },
       "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "6735e990-29a1-4b46-b607-706ceab11be3",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "12CEE2FA9FD1CD14585E03BD0418C2BA"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-anatomical_location-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0065.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0003", "at0004" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0064.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0055.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "1..1",
+          "nodeId" : "at0023.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "KAC00 Nefrektomi, öppen", "KAC01 Nefrektomi, laparoskopisk", "KAC01 + ZXC96 Nefrektomi, laparoskopisk, robotassisterad", "KAD00 Resektion, öppen", "KAD01 Resektion, laparoskopisk", "KAD01 + ZXC96 Resektion, laparoskopisk, robotassisterad", "KAC20 Nefrouretärektomi", "UKA02 Uretärpyeloskopi", "KAE11 Perkutanlithotripsi", "KAH41 Njurbäckenplastik, laparoskopisk", "KAH41 + ZXC96 Njurbäckenplastik, laparoskopisk, robotassisterad", "KBE12 + ZXC10 Laserlithotripsi, robotassisterad", "UKC05 Cysto+px", "KCD02 TUR-B", "KCE02 Transuretal lithotripsi", "KCE00 Öppen lithectomi", "KCH42 Transuretal blåshalsincision", "KCW + DT011 + M03AX01 Botox" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "*Anatomical location(en)",
+            "description" : "*A physical site on or within the human body.(en)"
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "*Specific site(en)",
+            "description" : "*Additional detail using a specific region or a point on, or within, the identified body site.(en)",
+            "comment" : "*Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant.(en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "*Body site name(en)",
+            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
+            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "*Laterality(en)",
+            "description" : "*The side of the body on which the identified  body site is located.(en)",
+            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
+          },
+          "at0064.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064.1",
+            "text" : "*Aspect(en)",
+            "description" : "*Qualifying detail about the specific aspect of the identified body site.(en)",
+            "comment" : "*Use to increase precision of identification of the body site, if required. Common aspects have been included as a value set, which can be extended over time, plus a free text option. Assumes that the body is being described while in the anatomical position. For example: proximal urethra; plantar aspect of the left thumb. Multiple aspects can also be described, if required, by allowing for 0..2 occurrences. For example: a lesion may be on the left anterior/lateral (ie anterolateral) chest wall. If the 'Body site name' data element uses pre-coordinated terms that include the aspect, then this data element is redundant.(en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0055.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055.1",
+            "text" : "*Anatomical Line(en)",
+            "description" : "*Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body.(en)",
+            "comment" : "*Common anatomical lines have been included as a value set, which can be extended over time, plus a free text option. The additional use of this data element allows for recording of the typical position of the heart's apex beat at 5th intercostal space, left side, and mid-clavicular line. If the 'Body site name' data element uses pre-coordinated terms that include anatomical line, then this data element is redundant.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description that can be used to further refine and support the 'Body site name'.(en)",
+            "comment" : "*For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area.(en)"
+          }
+        },
+        "sl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "*Anatomical location(en)",
+            "description" : "*A physical site on or within the human body.(en)"
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "*Specific site(en)",
+            "description" : "*Additional detail using a specific region or a point on, or within, the identified body site.(en)",
+            "comment" : "*Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant.(en)"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "*Body site name(en)",
+            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
+            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "*Laterality(en)",
+            "description" : "*The side of the body on which the identified  body site is located.(en)",
+            "comment" : "*If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant.(en)"
+          },
+          "at0064.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064.1",
+            "text" : "*Aspect(en)",
+            "description" : "*Qualifying detail about the specific aspect of the identified body site.(en)",
+            "comment" : "*Use to increase precision of identification of the body site, if required. Common aspects have been included as a value set, which can be extended over time, plus a free text option. Assumes that the body is being described while in the anatomical position. For example: proximal urethra; plantar aspect of the left thumb. Multiple aspects can also be described, if required, by allowing for 0..2 occurrences. For example: a lesion may be on the left anterior/lateral (ie anterolateral) chest wall. If the 'Body site name' data element uses pre-coordinated terms that include the aspect, then this data element is redundant.(en)"
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0055.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055.1",
+            "text" : "*Anatomical Line(en)",
+            "description" : "*Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body.(en)",
+            "comment" : "*Common anatomical lines have been included as a value set, which can be extended over time, plus a free text option. The additional use of this data element allows for recording of the typical position of the heart's apex beat at 5th intercostal space, left side, and mid-clavicular line. If the 'Body site name' data element uses pre-coordinated terms that include anatomical line, then this data element is redundant.(en)"
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "*Description(en)",
+            "description" : "*Narrative description that can be used to further refine and support the 'Body site name'.(en)",
+            "comment" : "*For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area.(en)"
+          }
+        },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Anatomisk lokalisation",
+            "description" : "A physical site on or within the human body."
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Specific site",
+            "description" : "Additional detail using a specific region or a point on, or within, the identified body site.",
+            "comment" : "Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Kroppsdel",
+            "description" : "Identification of a single physical site either on, or within, the human body.",
+            "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Lateralitet",
+            "description" : "The side of the body on which the identified  body site is located.",
+            "comment" : "If the identified body site has no laterality, this data element should not have a value. \r\nIf the 'Body site name' data element uses pre-coordinated terms that include laterality, then this data element is redundant."
+          },
+          "at0064.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064.1",
+            "text" : "Aspect",
+            "description" : "Qualifying detail about the specific aspect of the identified body site.",
+            "comment" : "Use to increase precision of identification of the body site, if required. Common aspects have been included as a value set, which can be extended over time, plus a free text option. Assumes that the body is being described while in the anatomical position. For example: proximal urethra; plantar aspect of the left thumb. Multiple aspects can also be described, if required, by allowing for 0..2 occurrences. For example: a lesion may be on the left anterior/lateral (ie anterolateral) chest wall. If the 'Body site name' data element uses pre-coordinated terms that include the aspect, then this data element is redundant."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0055.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055.1",
+            "text" : "Anatomical Line",
+            "description" : "Additional detail using theoretical lines drawn through anatomical structures used to provide a consistent reference point on the human body.",
+            "comment" : "Common anatomical lines have been included as a value set, which can be extended over time, plus a free text option. The additional use of this data element allows for recording of the typical position of the heart's apex beat at 5th intercostal space, left side, and mid-clavicular line. If the 'Body site name' data element uses pre-coordinated terms that include anatomical line, then this data element is redundant."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Operationskod",
+            "description" : "Narrative description that can be used to further refine and support the 'Body site name'.",
+            "comment" : "For example: adjacent to the vermilion border; a tattoo covers the bottom half of this area."
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Anatomisk lokalisering",
+            "description" : "Et fysisk sted på eller inne i menneskekroppen."
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Spesifikt sted",
+            "description" : "Ytterligere detaljer gitt ved hjelp av en spesifikk region eller et punkt på eller i det spesifiserte kroppsstedet.",
+            "comment" : "Brukes til å øke presisjonen ved spesifisering av kroppsstedet, dersom påkrevd. For eksempel den øvre høyre kvadranten eller McBurneys punkt på bukveggen, eller interfalangealleddet på stortåen. Dersom dataelementet \"Navn på kroppssted\" er registrert ved hjelp av prekoordinerte termer som omfatter det spesifikke stedet er dette dataelementet overflødig."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Navn på kroppssted",
+            "description" : "Navngiving av et enkelt fysisk sted enten på eller i menneskekroppen.",
+            "comment" : "Dette dataelementet er det eneste obligatoriske dataelementet i arketypen og bør brukes som det primære dataelementet for registrering av en anatomisk lokalisering. Det er sterkt anbefalt at \"Navn på kroppssted\" registreres så anatomisk spesifikt som mulig. For eksempel; registrer \"øvre øyelokk\" heller enn \"øyelokk\" med \"øvre\" som kvalifikator; \"femte ribben\" heller enn \"ribben\" med en numerisk kvalifikator. Bruk de andre dataelementene for lateralitet, aspekt, region og anatomisk linje for å gi mer detaljer.\r\n\r\nDette dataelementet bør kodes med en terminologi som kan assistere beslutningsstøtte når mulig - en passende terminologi for bruk her kunne omfatte individuelle konsepter eller lister av prekoordinerte termer. Fritekst bør kun brukes hvis det ikke finnes en passende terminologi.\r\n\r\nDersom navn på kroppssted er oppgitt i foreldrearketypen kan dette dataelementet være redundant. Imidlertid er det identifisert bruksområder der dataverdien kan kopieres inn i dette elementet for å understøtte semantiske spørringer basert på denne arketypen heller enn på foreldrearketypen."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Kroppsside",
+            "description" : "Den identifiserte kroppssiden.",
+            "comment" : "Hvis den identifiserte kroppssiden ikke har noen lateralitet, bør dette datalementet stå tomt. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
+          },
+          "at0064.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064.1",
+            "text" : "Aspekt",
+            "description" : "Spesifiserende detaljer om mer spesifikke aspekter ved det aktuelle kroppsstedet.",
+            "comment" : "Brukes til å øke presisjonen ved spesifisering av kroppsstedet, ved behov. Vanlige aspekter er blitt inkludert som et verdisett som kan utvides over tid, i tillegg til mulighet for å bruke fritekst. Elementet har som antagelse at kroppen blir beskrevet i den anatomiske posisjon. F.eks. proksimal uretra, plantart aspekt av venstre tommel. Flere aspekter kan også beskrives om det er nødvendig ved å åpne for opptil 2 forekomster. F.eks. venstre anterior/laterale (anteriolaterale) brystvegg. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0055.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055.1",
+            "text" : "Anatomisk linje",
+            "description" : "Detaljer om det anatomiske stedet beskrevet med teoretiske linjer tegnet gjennom anatomiske strukturer til bruk som et konsistent referansepunkt.",
+            "comment" : "Vanlige anatomiske linjer er inkludert som verdisett som kan utvides over tid, i tillegg gis mulighet for å bruke fritekst. Ytterligere bruk av dette dataelementet tillater registrering av typiske steder for hjertetspisstøt ved 5. intercostalrom på venstre side i midtclaviculærlinjen. Hvis dataelementet \"Navn på kroppsted\" bruker prekoordinerte termer som inkluderer lateralitet, er dette dataelementet overflødig."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Beskrivelse",
+            "description" : "Fritekstbeskrivelse som kan brukes for å ytterligere presisere og støtte \"Navn på kroppsted\".",
+            "comment" : "For eksempel: Tilgrensende til leppens overgang fra slimhinne til hud; en tatovering dekker nedre halvdel av dette området."
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Localização anatômica",
+            "description" : "Identificação de um local físico dentro ou no corpo humano."
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Local específico",
+            "description" : "Detalhes adicionais utilizando uma região específica ou um ponto, ou dentro, o local do corpo identificado.",
+            "comment" : "Use para aumentar a precisão da identificação do local do corpo, se necessário. Por exemplo, o quadrante superior direito ou ponto de McBurney na parede abdominal ou região inter falângica dos dedos do pé. Se o elemento de dados do nome do local do corpo usa termos predefinidos que incluem o local específico, então este elemento de dados é redundante."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "*Body site name(en)",
+            "description" : "*Identification of a single physical site either on, or within, the human body.(en)",
+            "comment" : "*This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent.(en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Lateralidade",
+            "description" : "O lado do corpo em que se encontra o local do corpo identificado.",
+            "comment" : "Se o local identificado do corpo não tem relação com a lateralidade, este elemento de dados não deve ter um valor.\r\nSe o elemento de dados de nome de local do corpo usa termos predefinidos que incluem lateralidade, então este elemento de dados é redundante."
+          },
+          "at0064.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064.1",
+            "text" : "Aspecto",
+            "description" : "Detalhes sobre o aspecto específico do local identificado no corpo.",
+            "comment" : "Use para aumentar a precisão da identificação do site do corpo, se necessário. Aspectos comuns foram incluídos como um conjunto de valor, que pode ser estendido ao longo do tempo, além de uma opção de texto livre. Pressupõe que o corpo está sendo descrito enquanto na posição anatômica. Por exemplo: uretra proximal; face plantar do polegar esquerdo. Múltiplos aspectos também podem ser descritos, se necessário, permitindo para as ocorrências de 0..2. Por exemplo: uma lesão pode ser na parede torácica esquerda anterior-lateral (ou seja, ântero-lateral). Se o elemento de dados de nome de local do corpo usa termos predefinidos que incluem o aspecto, então este elemento de dados é redundante."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.1",
+            "description" : "*"
+          },
+          "at0055.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0055.1",
+            "text" : "Linha anatômica",
+            "description" : "Detalhes adicionais utilizando-se linhas teóricas desenhadas através de estruturas anatômicas, utilizadas para fornecer um ponto de referência consistente no corpo humano.",
+            "comment" : "Linhas anatômicas comuns foram incluídas como um conjunto de valor, que pode ser estendido ao longo do tempo, além de uma opção de texto livre. O uso adicional deste elemento de dados permite a gravação da posição típica da batida do ápice cardíaco no 5º espaço intercostal, lado esquerdo e linha médio-clavicular. Se o elemento de dados de nome de local do corpo usa termos predefinidos que incluem linha anatômica, então este elemento de dados é redundante."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          },
+          "at0023.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023.1",
+            "text" : "Descrição",
+            "description" : "Descrição narrativa que pode ser usada para refinar e apoiar o 'nome do local do corpo'.",
+            "comment" : "Por exemplo: adjacentes à borda do vermelhão; uma tatuagem cobre a metade inferior desta área."
+          }
+        }
+      },
+      "termBindings" : {
+        "SNOMED-CT" : {
+          "at0002.1" : "term:SNOMED-CT::272741003"
+        }
+      },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0067", "at0068", "at0069", "at0070", "at0071", "at0072", "at0073", "at0074", "at0080", "at0081", "at0075", "at0076", "at0082", "at0077", "at0078", "at0079" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0062", "at0056", "at0057", "at0058", "at0059", "at0060", "at0063" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "5bc8a336-ce22-49a4-8300-861dbf68be5d",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês - SP",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "Biljana Princic"
+      },
       "otherDetails" : { }
     } ]
   } ],
