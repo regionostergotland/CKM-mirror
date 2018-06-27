@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "6aef393dc9a8f8eb2df3d9cced56dc7e",
+      "MD5-CAM-1.0.1" : "60f05fffcffada95246051a2088dcff6",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -3213,7 +3213,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
+              "occurrences" : "0..1",
               "nodeId" : "at0003.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -3269,7 +3269,7 @@
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
-            "text" : "Rationale",
+            "text" : "Beskrivning av operation",
             "description" : "Justifications for the recommendation."
           },
           "at0001" : {
@@ -4096,6 +4096,10 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
+                  "defaultValue" : {
+                    "value" : "Startad process",
+                    "@type" : "DV_TEXT"
+                  },
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -4143,7 +4147,7 @@
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
-            "text" : "Beskrivning av planerad operation",
+            "text" : "Beskrivning",
             "description" : "Description of why state changed"
           },
           "at0005" : {
