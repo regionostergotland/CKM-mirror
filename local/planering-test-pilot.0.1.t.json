@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "688ecfbd4ca870debc2da403a47e0d8b",
+      "MD5-CAM-1.0.1" : "c4b15f40dd4d79da2d77feb1ca2c113d",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -215,18 +215,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0042" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0042",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.5" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.5",
@@ -237,6 +225,18 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.3",
           "text" : "SECTION",
+          "description" : "*"
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
+          "description" : "*"
+        },
+        "at0042" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "CLUSTER",
           "description" : "*"
         }
       },
@@ -253,18 +253,6 @@
           "text" : "SECTION",
           "description" : "*"
         },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0042" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0042",
-          "text" : "CLUSTER",
-          "description" : "*"
-        },
         "at0.5" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.5",
@@ -275,6 +263,18 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.3",
           "text" : "SECTION",
+          "description" : "*"
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "ITEM_TREE",
+          "description" : "*"
+        },
+        "at0042" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0042",
+          "text" : "CLUSTER",
           "description" : "*"
         }
       }
@@ -906,6 +906,41 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0073.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_CODED_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0107", "at0037", "at0120", "at0038", "at0115", "at0040", "at0119", "at0116", "at0074" ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0075.1",
                       "attributes" : [ {
@@ -1059,6 +1094,82 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0004",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0068.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0094.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0111.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_BOOLEAN",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_BOOLEAN",
+                      "rmTypeName" : "BOOLEAN",
+                      "occurrences" : "1..1",
+                      "constraint" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -1134,6 +1245,31 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Aspects of the condition or cicumstances of the patient that may alter interpretation of the laboratory test.(en)"
           },
+          "at0094.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0094.1",
+            "text" : "*Test Request Details(en)",
+            "description" : "*Details concerning a single laboratory test requested.(en)",
+            "comment" : "*Usually there is one test request (or \"order\") for each result, however in some circumstances multiple test requests may be represented using a single Pathology test result archetype.(en)"
+          },
+          "at0111.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0111.1",
+            "text" : "*Point of Care Device(en)",
+            "description" : "*True if a point of care device supplies the test result rather than a formal laboratory service.(en)"
+          },
+          "at0068.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068.1",
+            "text" : "*Laboratory Test Report Identifier(en)",
+            "description" : "*The local identifier given to the laboratory test result  by the Laboratory Information System.(en)"
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "*Test Report Status(en)",
+            "description" : "*The status of the laboratory test result as a whole.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1155,6 +1291,12 @@
           "at0112" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0112",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1220,6 +1362,31 @@
             "description" : "Issues or circumstances that impact on the accurate interpretation of the measurement or test result.",
             "comment" : "For example: 'fasting'."
           },
+          "at0094.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0094.1",
+            "text" : "Test request details",
+            "description" : "Details about the test request.",
+            "comment" : "In most situations there is one test request and a single corresponding test result, however this repeating cluster allows for the situation where there may be multiple test requests reported using a single test result."
+          },
+          "at0111.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0111.1",
+            "text" : "Point-of-care device",
+            "description" : "True if a point-of-care device supplies the test result rather than a formal laboratory service."
+          },
+          "at0068.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068.1",
+            "text" : "Laboratory test identifier",
+            "description" : "The local identifier assigned by the receiving Laboratory Information System."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Teststatus",
+            "description" : "The status of the laboratory test result as a whole."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1241,6 +1408,12 @@
           "at0112" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0112",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1307,6 +1480,31 @@
             "description" : "Forhold i tilstand eller omstendigheter som kan påvirke tolkningen av laboratoriesvaret.",
             "comment" : "For eksempel \"Fastende\"."
           },
+          "at0094.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0094.1",
+            "text" : "Rekvisisjonsdetaljer",
+            "description" : "Detaljer knyttet til en rekvirert enkeltanalyse.",
+            "comment" : "Det finnes som regel en rekvisisjon for hvert svar, men i noen omstendigheter kan flere rekvisisjoner representeres ved hjelp av en enkelt laboratoriesvar-arketype."
+          },
+          "at0111.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0111.1",
+            "text" : "Pasientnært analyseutstyr",
+            "description" : "Sann hvis resultatet er basert på analyse med pasientnært utstyr i stedet for en mer formell laboratorietjeneste."
+          },
+          "at0068.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068.1",
+            "text" : "Laboratoriets svarID",
+            "description" : "Analysesvarets lokale ID tildelt av laboratoriesystemet."
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "Analysestatus",
+            "description" : "Overordnet status på analyseresultatet."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1328,6 +1526,12 @@
           "at0112" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0112",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1400,6 +1604,31 @@
             "text" : "混杂因素",
             "description" : "可能会改变对于当前实验室检验项目的解释的，当前患者的疾病/健康状况或环境条件的特征。"
           },
+          "at0094.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0094.1",
+            "text" : "检验项目申请详情",
+            "description" : "关于所申请的单独一项检验项目的详情。",
+            "comment" : "通常，对于每项结果，会分别有一项检验项目申请（或者说医嘱）；不过，在某些情况下，可能会采用单独一个病理学检验结果原始型，来表达多项检验项目申请。"
+          },
+          "at0111.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0111.1",
+            "text" : "床旁设备",
+            "description" : "当提供当前检验结果的是床旁/床边设备而不是正式的实验室服务部门时，取值为True。"
+          },
+          "at0068.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0068.1",
+            "text" : "实验室检验项目标识符",
+            "description" : "当前实验室信息系统赋予当前的实验室检验项目的本地标识符。"
+          },
+          "at0073.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0073.1",
+            "text" : "检验项目状态",
+            "description" : "实验室检验结果的整体状态。"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1421,6 +1650,12 @@
           "at0112" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0112",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1724,6 +1959,60 @@
                   } ],
                   "attributeTuples" : [ ]
                 } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "nodeId" : "at0009",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0008.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0013.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
               } ],
               "attributeTuples" : [ ]
             } ]
@@ -1764,6 +2053,18 @@
             "text" : "*Comment(en)",
             "description" : "*Any additional narrative comment not covered by other elements.(en)"
           },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "*Confounding Factors(en)",
+            "description" : "*Description of any incidental factors that may have contributed to the physical examination findings.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "*Position(en)",
+            "description" : "*The position of the subject at the time of examination.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1779,6 +2080,12 @@
           "at0003" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1810,6 +2117,18 @@
             "text" : "*Comment(en)",
             "description" : "*Any additional narrative comment not covered by other elements.(en)"
           },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "*Confounding Factors(en)",
+            "description" : "*Description of any incidental factors that may have contributed to the physical examination findings.(en)"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "*Position(en)",
+            "description" : "*The position of the subject at the time of examination.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1825,6 +2144,12 @@
           "at0003" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1856,6 +2181,18 @@
             "text" : "Comentario",
             "description" : "Cualquier comentario narrativo adicional no incluido por otros elementos"
           },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Factores de Confusion",
+            "description" : "Descripcion de cualquier factor incidental que pueda haber contribuido a los hallazgos del examen físico"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "*Position(en)",
+            "description" : "*The position of the subject at the time of examination.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1871,6 +2208,12 @@
           "at0003" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1902,6 +2245,18 @@
             "text" : "Comment",
             "description" : "Additional narrative about the overall physical examination findings not captured in other fields."
           },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Confounding factors",
+            "description" : "Description of any incidental factors that may have contributed to the physical examination findings."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Position",
+            "description" : "The body position of the subject during the examination."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1917,6 +2272,12 @@
           "at0003" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1948,6 +2309,18 @@
             "text" : "Kommentar",
             "description" : "Tekstlig beskrivelse av de fysiske funn som ikke dekkes av andre felt."
           },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Konfunderende faktorer",
+            "description" : "Kommentar til og registrering av faktorer som kan ha betydning for funn ved den kliniske undersøkelsen."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "Stilling",
+            "description" : "Individets kroppsstilling under undersøkelsen."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -1963,6 +2336,12 @@
           "at0003" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -1994,6 +2373,18 @@
             "text" : "Comentario",
             "description" : "Información narrativa adicional sobre los hallazgos durante la examinación física"
           },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Factores de confusión",
+            "description" : "Descripción de los factores que pueden haber obstruido o dificultado la examinación física y los hallazgos"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "*Position(en)",
+            "description" : "*The body position of the subject during the examination.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -2009,6 +2400,12 @@
           "at0003" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -2040,6 +2437,18 @@
             "text" : "Comentários",
             "description" : "Narrativa adicional sobre os achados gerais do exame físico não capturados em outros campos."
           },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Fatores de confusão",
+            "description" : "Descrição de fatores incidentais que podem ter contribuído para os achados do exame físico."
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "*Position(en)",
+            "description" : "*The body position of the subject during the examination.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -2055,6 +2464,12 @@
           "at0003" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -2086,6 +2501,18 @@
             "text" : "注释",
             "description" : "其他字段之中并未采集的关于全部体格检查发现的叙述型注释。"
           },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "干扰因素",
+            "description" : "关于可能对体格检查发现做出了贡献的任何偶然因素的描述。"
+          },
+          "at0013.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013.1",
+            "text" : "*Position(en)",
+            "description" : "*The body position of the subject during the examination.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -2101,6 +2528,12 @@
           "at0003" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -2378,6 +2811,7 @@
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
+                            "existence" : "1..1",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2558,7 +2992,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0027",
+              "occurrences" : "0..0",
+              "nodeId" : "at0027.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
@@ -2731,7 +3166,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0042",
+              "occurrences" : "0..0",
+              "nodeId" : "at0042.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
@@ -3084,6 +3520,18 @@
             "text" : "Confounding factors",
             "description" : "Narrative description of factors, not recorded elsewhere, that may influence the test result."
           },
+          "at0027.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.1",
+            "text" : "Examination request details",
+            "description" : "Details concerning a single examination requested. Note: Usually there is one examination request for each result, however in some circumstances multiple examination requests may be represented using a single Imaging examination result archetype."
+          },
+          "at0042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042.1",
+            "text" : "Compared image details",
+            "description" : "Details of previous images used for comparison."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -3114,21 +3562,9 @@
             "text" : "ITEM_TREE",
             "description" : "*"
           },
-          "at0027" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0027",
-            "text" : "CLUSTER",
-            "description" : "*"
-          },
           "at0034" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0034",
-            "text" : "CLUSTER",
-            "description" : "*"
-          },
-          "at0042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0042",
             "text" : "CLUSTER",
             "description" : "*"
           }
@@ -3313,6 +3749,18 @@
             "text" : "*Confounding factors(en)",
             "description" : "*Narrative description of factors, not recorded elsewhere, that may influence the test result.(en)"
           },
+          "at0027.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027.1",
+            "text" : "Bildediagnostisk rekvisisjon",
+            "description" : "Detaljer om en enkel bildediagnostisk rekvisisjon. Normalt er der en rekvisisjon for hvert undersøkelsesresultat. Det kan skje at flere rekvisisjoner kan presenteres ut fra en enkelt undersøkelsesresultat-arketype."
+          },
+          "at0042.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042.1",
+            "text" : "Detaljer om sammenligningsbilder",
+            "description" : "Detaljer om tidligere bilder brukt for sammenligning."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
@@ -3343,21 +3791,9 @@
             "text" : "ITEM_TREE",
             "description" : "*"
           },
-          "at0027" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0027",
-            "text" : "CLUSTER",
-            "description" : "*"
-          },
           "at0034" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0034",
-            "text" : "CLUSTER",
-            "description" : "*"
-          },
-          "at0042" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0042",
             "text" : "CLUSTER",
             "description" : "*"
           }
@@ -3412,7 +3848,102 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsheading som kan gis nytt navn i en template for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsheading i en template, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Ad hoc heading\" endret til \"Funn ved undersøkelse\"",
+          "misuse" : "Skal ikke stå med uendret navn i en template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -3677,7 +4208,102 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsheading som kan gis nytt navn i en template for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsheading i en template, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Ad hoc heading\" endret til \"Funn ved undersøkelse\"",
+          "misuse" : "Skal ikke stå med uendret navn i en template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -3897,7 +4523,117 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7A65632D1A59E073C1B6D7CE0E68E7B8"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи сведений об проведенной процедуре",
+          "keywords" : [ "процедура, выполнение" ],
+          "use" : "Используется для записи подробной информации о процедуре, выполненной пациенту.\r\nИнформация о действиях, связанных с выполнением процедуры, таких как анестезия или применение лекарств, долдно быть записано в отдельных архетипах типа ДЕЙСТВИЕ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere informasjon om aktiviteter som må gjennomføres for å utføre en klinisk prosedyre, inkludert planlegging, fastsetting av tidspunkt, utførelse, utsettelse, kansellering, dokumentering og fullføring.",
+          "keywords" : [ "prosedyre", "intervensjon", "kirurgisk", "medisinsk", "klinisk", "terapeutisk", "diagnostisk", "behandling", "kur", "evaluering", "undersøkelse", "screening", "palliativ", "terapi", "prognostisk" ],
+          "use" : "Brukes til å registrere nødvendig informasjon om aktiviteter i gjennomføringen av en klinisk prosedyre. Dette inkluderer planlegging, fastsetting av tidspunkt, utførelse, utsettelse, avlysning, dokumentering og fullføring. Dette gjøres ved å registrere data knyttet til spesifikke aktiviteter som definert i arketypens prosesstrinn (Engelsk: \"Pathway careflow steps\").\r\n\r\nArketypen dekker aktiviteter for et bredt spekter av kliniske prosedyrer utført i evaluerende, undersøkende, diagnostisk, kurativ, terapeutisk eller palliativ hensikt. Eksempler strekker seg fra relativt enkle aktiviteter som innlegging av et intravenøst kateter, til komplekse kirurgiske operasjoner.\r\n\r\nStrukturert og detaljert tilleggsinformasjon om prosedyren kan registreres ved bruk av spesifikke CLUSTER-arketyper satt inn i \"Prosedyredetaljer\"-SLOTet der dette kreves.\r\n\r\nTidsberegning relatert til en prosedyre kan håndteres på en av to måter:\r\n-Ved å benytte referansemodellen: Tiden for gjennomføring av et prosesstrinn vil benytte \"time\"-attributtet som ligger implisitt i en ACTION-arketype, for hvert enkelt prosesstrinn.\r\n-Dataelementer i arketypen:\r\n---Dataelementet \"Planlagt dato/tid\" skal brukes for å registrere nøyaktig tidspunkt prosedyren er planlagt. Merk: Det korresponderende \"time\"-attributtet for prosesstrinnet \"Fastsatt tidspunkt for prosedyre\" registrerer tidspunktet da prosedyren ble planlagt, ikke dato/tid for når prosedyren er planlagt gjennomført. \r\n--- \"Endelig dato/tid\" skal registrere nøyaktig tidspunkt for da prosedyren ble avsluttet. Den kan brukes for å dokumentere komplekse prosedyrer med mange komponenter. Merk: Det korresponderende \"time\"-attributtet for prosesstrinnet \"Prosedyre iverksatt\" dokumenterer tidspunkt for hver gang en komponent er gjennomført eller påbegynt. Dataelementet \"Endelig dato/tid\" registrerer dato/tid for det siste aktive komponenten av prosedyren. Dette åpner for mulighet for utregning av den totale varigheten av den aktive prosedyren.\r\n\r\nVed bruk i en operasjonsrapport skal arketypen bare benyttes for å registrere hva som ble utført under prosedyren. Egne arketyper vil bli benyttet for å registrere andre komponenter av operasjonsrapporten, dette inkluderer biopsitakning, bildediagnostisk veiledning, funn under operasjonen, postoperative instruksjoner og videre planer for oppfølging.\r\n\r\nI en problemliste eller i et problemsammendrag kan denne arketypen benyttes for å gi en oversikt over hvilke prosedyrer som er utført. Arketypen EVALUATION.problem_diagnosis vil benyttes for å gi en oversikt over pasientens problemer og diagnoser.\r\n\r\nI praksis vil mange prosedyrer (f.eks. i primærhelsetjenesten) utføres én gang, og ikke bestilles i forkant. Detaljene om prosedyren vil da registreres for det aktuelle prosesstrinnet. I noen tilfeller vil en gjentagende prosedyre bli rekvirert, og i en slik situasjon registreres prosesstrinnet \"Prosedyre utført\" i hvert enkelt tilfelle, og instruksjonen forblir i en aktiv tilstand. Når den siste prosedyren i serien er registrert settes prosesstrinnet \"Prosedyre avsluttet\" for å avslutte forordningen.\r\n\r\nI andre situasjoner, for eksempel i spesialisthelsetjenesten, kan det foreligge en formell rekvisisjon for en prosedyre hvor en motsvarende INSTRUCTION-arketype er benyttet. Denne ACTION-arketypen benyttes da for å registrere arbeidsflyt og når og hvordan prosedyren ble utført.\r\n\r\nRegistrering av informasjon i denne ACTION-arketypen indikerer at en eller annen type aktivitet faktisk er utført; dette vil vanligvis være prosedyren i seg selv, men kan også være et mislykket forsøk eller en annen aktivitet som f.eks. en utsettelse av prosedyren. Finnes det en formell henvisning til en prosedyre, er henvisningens status representert i det prosesstrinnet hvor data er registrert. For eksempel vil gjennomføringen av en gastroskopi lagret i denne arketypen kunne registreres som flere påfølgende oppføringer innen et fremdriftsnotat, en oppføring for hvert prosesstrinn:\r\n\r\n- registrert planlagt Start dato/tid for gastroskopien (\"Prosedyre planlagt\")\r\n- registrert at gastroskopiprosedyren er fullført, inkludert informasjon om prosedyredetaljene (\"Prosedyre avsluttet\").\r\n\r\nLegg merke til at det i openEHR referansemodellen er et attributt \"time\" som er tenkt brukt til å registrere dato og tid for når hvert enkelt prosesstrinn i ACTION-arketypen ble utført. Denne attributten skal brukes til å registre da prosedyren startet (ved prosesstrinnet \"Prosedyre iverksatt\"), eller tidspunktet da prosedyren ble avbrutt (ved prosesstrinnet \"Prosedyre avbrutt\").",
+          "misuse" : "Benyttes ikke til å registrere detaljer om administrasjon av legemidler - bruk ACTION.medication til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om bildediagnostiske undersøkelser - bruk ACTION.imaging_exam til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om laboratorieundersøkelser - bruk ACTION.laboratory_test til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om pasientopplæring - bruk ACTION.health_education til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om administrative aktiviteter - bruk spesifikke ADMIN-arketyper til dette formålet.\r\n\r\nBenyttes ikke til registrering om relaterte aktiviteter som bruk av frysesnitt tatt under en operasjon, legemidler gitt som del av prosedyren, eller når bildeveiledning er brukt under prosedyren. Bruk separate og spesifikke ACTION-arketyper innen samme templat til dette formålet.\r\n\r\nBenyttes ikke for å registrere en hel operasjon eller prosedyrerapport - bruk en templat der denne arketypen er kun en komponent av den fullstendige rapporten.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar os detalhes sobre um procedimento realizado, incluindo o planejamento, programação , execução, suspensão , cancelamento , documentação e conclusão.",
+          "keywords" : [ "procedimento", "intervenção", "cirúrgico", "médico", "clínico", "terapêutico", "diagnóstico", "cura", "tratamento", "evolução", "investigação", "paliativo", "terapia" ],
+          "use" : "Use para registrar informações sobre as atividades necessárias para realizar um procedimento , incluindo o planejamento, programação , execução, suspensão , cancelamento , documentação e conclusão. Isto é feito através do registro de dados de atividades específicas , conforme definido neste arquétipo .\r\n\r\nO escopo deste arquétipo abrange as atividades para uma ampla gama de procedimentos clínicos realizados para avaliação, investigação , triagem , diagnóstico , curativo, terapêutico ou fins paliativos. Os exemplos vão desde as atividades relativamente simples, tais como a inserção de uma cânula intravenosa , através de operações cirúrgicas complexas .\r\n\r\nInformações adicionais estruturadas e detalhadas sobre o procedimento podem ser capturadas utilizando arquétipos específicos de uso inserido no slot 'Detalhe do Procedimento', onde for necessário.\r\n\r\nTempos relacionados a um procedimento podem ser gerenciados de uma de duas maneiras:\r\n- Usando o modelo de referência - o prazo para realização de qualquer passo/caminho usará o atributo tempo de ação para cada etapa.\r\n- Elementos de dados arquetipados:\r\n--- Elemento de dados \"data / hora agendada\" destina-se a registrar o tempo exato em que o procedimento é planejado. Nota: o atributo de tempo de ação correspondente para o passo via Programado irá registrar o tempo que o procedimento foi programado em um sistema, não a data / hora pretendida em que o procedimento se destina a ser realizado; e\r\n--- O 'data final / hora' destina-se a registrar o tempo exato em que o processo foi encerrado. Ele pode ser usado para documentar os procedimentos complexos com componentes múltiplos. Nota: o atributo de tempo de ação correspondente para o \"procedimento realizado\" irá documentar o tempo de cada componente realizada foi iniciada. Este elemento de dados 'Data / hora Final' registrará a data / hora do último componente ativo do procedimento. Isto irá permitir uma duração total do processo ativo a ser calculado.\r\n\r\nDentro do contexto de um Relatório de Cirurgia, esse arquétipo será usado para gravar apenas o que foi feito durante o procedimento. Arquétipos separados serão utilizados para gravar os outros componentes necessários, incluindo a coleta de amostras de tecidos, utilização de imagens intraoperatórias, achados cirúrgicos, instruções pós-operatória e planos de acompanhamento.\r\n\r\nDentro do contexto de uma lista de problemas ou resumo, este arquétipo pode ser usado ​​para representar os procedimentos que têm sido realizados. O EVALUATION.problem_diagnosis será usado para representar os problemas do paciente e diagnósticos.\r\n\r\nNa prática, muitos procedimentos (por exemplo, um atendimento ambulatorial) ocorrerá uma vez e não será planejado com antecedência. Os detalhes sobre o procedimento serão adicionados ao passo/caminho, «Processo concluído\". Em alguns casos um procedimento recorrente será ordenado, e nesta situação os dados do \"procedimento realizado\" será gravado em cada ocasião, deixando a instrução no estado ativo. Quando a última ocorrência é registrada do \"Procedimento concluído\" a ação é registrada mostrando que essa ordem está agora no estado concluído.\r\n\r\nEm outras situações, tais como atenção secundária, pode haver uma ordem formal de um procedimento usando um arquétipo instrução correspondente. Este arquétipo ação pode então ser usado para registrar o fluxo de trabalho de quando e como a ordem foi executada.\r\n\r\nGravando informações utilizando esse arquétipo AÇÃO indica que algum tipo de atividade realmente ocorreu; este será geralmente o procedimento em si, mas pode ser uma tentativa fracassada ou outra atividade, como o adiamento do procedimento. Se existe uma ordem formal para o procedimento, o estado desta ordem é representado pelo passo Pathway contra a qual os dados são gravados. Por exemplo, usando esse arquétipo do estado progredindo de uma ordem Gastroscopia podem ser registrados através de entradas separadas no progresso EHR observado um passo a cada 'Caminho':\r\n- Registrar o início de data / hora programada para a gastroscopia (Procedimento programado); e\r\n- Gravar que o procedimento foi concluído gastroscopia, incluindo informações sobre os detalhes de procedimento (processo encerrado).\r\n\r\nPor favor, note que no Modelo de Referência openEHR há um atributo 'Time', que se destina a registrar a data e hora em que foi realizada a cada passo via da ação. Este é o atributo a ser usado para registar o início do procedimento (usando o \"procedimento realizado 'passo via), ou o tempo que o procedimento foi abortada (usando o\" procedimento abortado' passo via)",
+          "misuse" : "Não deve ser usado para gravar detalhes sobre o anestésico - usar um arquétipo ação separada para esse fim.\r\n\r\nNão deve ser usado para registrar detalhes sobre as investigações de imagem - use ACTION.imaging_exam para esta finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre investigações laboratoriais - ACTION.laboratory_test usar para essa finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre educação entregues - ACTION.health_education usar para essa finalidade.\r\n\r\nNão deve ser usado para registrar detalhes sobre as atividades administrativas - usar arquétipos ADMIN específicos para esta finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre as atividades relacionadas, tais como medicação administrada como parte do processo ou quando utilização de imagens para visualização é utilizado durante o procedimento - usar arquétipos ação separados e específicos dentro do mesmo modelo para este fim.\r\n\r\nNão deve ser usado para gravar uma operação ou procedimento relatório conjunto - usar um modelo em que esse arquétipo é apenas um componente do relatório completo.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion.",
+          "keywords" : [ "procedure", "intervention", "surgical", "medical", "clinical", "therapeutic", "diagnostic", "cure", "treatment", "evaluation", "investigation", "screening", "palliative", "therapy" ],
+          "use" : "Use to record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion. This is done by the recording of data against specific activities, as defined by the 'Pathway' careflow steps in this archetype.\r\n\r\nThe scope of this archetype encompasses activities for a broad range of clinical procedures performed for evaluative, investigative, screening, diagnostic, curative, therapeutic or palliative purposes. Examples range from the relatively simple activities, such as insertion of an intravenous cannula, through to complex surgical operations.\r\n\r\nAdditional structured and detailed information about the procedure can be captured using purpose-specific archetypes inserted into the 'Procedure detail' slot, where required.\r\n\r\nTimings related to a procedure can be managed in one of two ways:\r\n- Using the reference model - the time for performance of any pathway step will use the ACTION time attribute for each step.\r\n- Archetyped data elements:\r\n--- the 'Scheduled date/time' data element is intended to record the precise time when the procedure is planned. Note: the corresponding ACTION time attribute for the Scheduled pathway step will record the time that the procedure was scheduled into a system, not the intended date/time on which the procedure is intended to be carried out; and\r\n--- the 'Final end date/time' is intended to record the precise time when the procedure was ended. It can be used to document the complex procedures with multiple components. Note: the corresponding ACTION time attribute for the 'Procedure performed' will document the time each component performed was commenced. This 'Final end date/time' data element will record the date/time of the final active component of the procedure. This will enable a full duration of the active procedure to be calculated.\r\n\r\nWithin the context of an Operation Report, this archetype will be used to record only what was done during the procedure. Separate archetypes will be used to record the other required components of the Operation Report, including the taking of tissue specimen samples, use of imaging guidance, operation findings, post-operative instructions and plans for follow up.\r\n\r\nWithin the context of a Problem list or summary, this archetype may be used to represent procedures that have been performed. The EVALUATION.problem_diagnosis will be used to represent the patient's problems and diagnoses.\r\n\r\nIn practice, many procedures (for example, in ambulatory care) will occur once and not be ordered in advance. The details about the procedure will be added against the pathway step, 'Procedure completed'. In some cases a recurring procedure will be ordered, and in this situation data against the 'Procedure performed' step will be recorded on each occasion, leaving the instruction in the active state. When the last occurrence is recorded the 'Procedure completed' action is recorded showing that this order is now in the completed state.\r\n\r\nIn other situations, such as secondary care, there may be a formal order for a procedure using a corresponding INSTRUCTION archetype. This ACTION archetype can then be used to record the workflow of when and how the order has been carried out.\r\n\r\nRecording information using this ACTION archetype indicates that some sort of activity has actually occurred; this will usually be the procedure itself but may be a failed attempt or another activity such as postponing the procedure. If there is a formal order for the procedure, the state of this order is represented by the Pathway step against which the data is recorded. For example, using this archetype the progressing state of a Gastroscopy order may be recorded through separate entries in the EHR progress notes at each 'Pathway' step:\r\n- record the scheduled Start date/time for the gastroscopy (Procedure scheduled); and\r\n- record that the gastroscopy procedure has been completed, including information about the procedure details (Procedure completed).\r\n\r\nPlease note that in the openEHR Reference Model there is a 'Time' attribute, which is intended to record the date and time at which each pathway step of the Action was performed. This is the attribute to use to record the start of the procedure (using the 'Procedure performed' pathway step) or the time that the procedure was aborted (using the 'Procedure aborted' pathway step).",
+          "misuse" : "Not to be used to record details about the anaesthetic - use a separate ACTION archetype for this purpose.\r\n\r\nNot to be used to record details about imaging investigations - use ACTION.imaging_exam for this purpose.\r\n\r\nNot to be used to record details about laboratory investigations - use ACTION.laboratory_test for this purpose.\r\n\r\nNot to be used to record details about education delivered - use ACTION.health_education for this purpose.\r\n\r\nNot to be used to record details about administrative activities - use specific ADMIN archetypes for this purpose.\r\n\r\nNot to be used to record details about related activities such as the use of frozen sections taken during an operation, medication administered as part of the procedure or when imaging guidance is used during the procedure - use separate and specific ACTION archetypes within the same template for this purpose .\r\n\r\nNot to be used to record a whole operation or procedure report - use a template in which this archetype is only one component of the full report.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه",
+          "keywords" : [ "الإجراء الطبي" ],
+          "use" : "لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za beleženje podrobnosti o izvedeni aktivnosti",
+          "keywords" : [ "aktivnosti", "postopek" ],
+          "use" : "Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt",
+          "misuse" : "Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para registrar información sobre las actividades requeridas para ejecutar un procedimiento, incluyendo planificación, coordinación, ejecución, suspensión, cancelación, documentación y finalización.",
+          "keywords" : [ "procedimiento", "intervención", "terapia", "cirugía", "diagnóstico", "evaluación", "curación", "tratamiento" ],
+          "use" : "Se utiliza para registrar información sobre las actividades requeridas para llevar a cabo un procedimiento, incluyendo planificación, coordinación, ejecución, suspensión, cancelación, documentación y finalización. Esto se hace mediante el registro de los datos sobre actividades específicas, según la definición de los pasos de la vía clínica definida en el arquetipo.\r\n\r\nEl alcance de este arquetipo abarca actividades para una amplia gama de procedimientos clínicos realizados para la evaluación, investigación, detección, diagnóstico,\r\ncurativos, terapéuticos o fines paliativos. Los ejemplos van desde las actividades relativamente simples, como la inserción de una cánula intravenosa, hasta operaciones quirúrgicas complejas.",
+          "misuse" : "No utilizar para registrar detalles acerca de la anestesia, para eso utilizar un arquetipo de ACTION separado.\r\nNo utilizar para registrar detalles acerca de estudios por imágenes, para eso utilizar el arquetipo ACTION.imaging_exam.\r\nNo utilizar para registrar detalles acerca de estudios de laboratorio, para eso utilizar el arquetipo ACTION.laboratory_test.\r\nNo utilizar para registrar detalles acerca de educación brindada, para eso utilizar el arquetipo ACTION.health_education.\r\nNo utilizar para registrar detalles acerca de actividades administrativas, para eso utilizar un arquetipo ADMIN separado.\r\nNo utilizar para registrar detalles acerca de actividades relacionadas, como medicación administrada durante el procedimiento, o sobre imágenes que se utilizaron como guía durante el procedimiento, para esto utilizar arquetipos de ACTION separados, dentro de la misma plantilla.\r\nNo utilizar para registrar detalles acerca del informe de la operación, para eso se debe utilizar una plantilla donde este arquetipo sea parte de la misma.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.procedure.v1",
     "differential" : true,
@@ -4132,6 +4868,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_DURATION",
                       "rmTypeName" : "DURATION",
@@ -4194,6 +4931,72 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0053",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0054.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0056.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
                   "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -4314,9 +5117,29 @@
             "text" : "Comentários",
             "description" : "Comentários adicionais sobre a atividade ou etapas não informados em outros campos."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Identificador do pedido do solicitante",
+            "description" : "O ID local atribuído ao pedido realizado pelo profissional de saúde ou organização solicitando o serviço.",
+            "comment" : "Isto é equivalente ao \"Placer Order Number\" nas especificações do HL7 v2."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Identificador do pedido do destinatário",
+            "description" : "O ID atribuído ao pedido pelo provedor de cuidados de saúde ou organização que recebe o pedido de serviço. Isto é também relacionado ao preenchimento da identificação do pedido.",
+            "comment" : "Isto é equivalente ao \"Placer Order Number\" nas especificações do HL7 v2."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -4424,9 +5247,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -4535,9 +5378,29 @@
             "text" : "Comment",
             "description" : "Additional narrative about the activity or care pathway step not captured in other fields."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Requestor order identifier",
+            "description" : "The local ID assigned to the order by the healthcare provider or organisation requesting the service.",
+            "comment" : "This is equivalent to Placer Order Number in HL7 v2 specifications."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Receiver order identifier",
+            "description" : "The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.",
+            "comment" : "This is equivalent to Filler Order Number in HL7 v2 specifications."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -4645,9 +5508,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -4755,9 +5638,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -4866,9 +5769,29 @@
             "text" : "Kommentar",
             "description" : "Ytterligere fritekstbeskrivelse av aktivitet eller prosesstrinn som ikke er registrert i andre felt."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Rekvisisjonsidentifikator",
+            "description" : "Den lokale IDen tilordnet rekvisisjonen av helsepersonellet eller organisasjonen som rekvirerer prosedyren.",
+            "comment" : "Tilsvarer \"Placer Order Number\" i HL7 v2-spesifikasjonene."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Mottakers rekvisisjonsidentifikator",
+            "description" : "IDen tilordnet rekvisisjonen av helsepersonellet eller organisasjonen som mottar rekvisisjonen.",
+            "comment" : "Tilsvarer \"Filler Order Number\" i HL7 v2-spesifikasjonene."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -4976,9 +5899,29 @@
             "text" : "Comentario",
             "description" : "Comentario narrativo adicional acerca de las actividades llevadas a cabo en la ejecución del procedimiento y que no son capturadas por otros campos"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -5096,7 +6039,152 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3552fe9c32ffa8aa3b0b7582caef1dc6"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Die manuelle Herstellung und Aufnahme einer Zusammenfassung einer Patientengeschichte, aus der Sicht eines Gesundheitsdienstleisters.",
+          "keywords" : [ "Zusammenfassung", "Schlussfolgerung", "Kurzdarstellung", "Abriss", "Abstract", "Beurteilung", "Synopsis", "Epikrise", "Anmerkung", "Bemerkung" ],
+          "use" : "Benutzung für die Aufnahme einer geschichtlichen, zusammenfassenden Ansicht des Gesundheitszustandes des Patienten. Diese unstrukturierte Zusammenfassung kann identifizierte Gesundheitsprobleme, erbrachte Gesundheitsdienstleistungen, dazugehörige Interpretationen und Verständnis des Patienten enthalten sowie die Mitteilung mancher der subjektiverern, weicheren Aspekte über die Erfahrung und Geschichte aus Sicht des Patienten ermöglichen. Typischerweise hängt diese Zusammenfassung mit einem bestimmten Gesundheitsereignis zusammen, z. B. einem bestimmten Arztbesuch oder einer spezifischen Krankenhausaufnahme, kann jedoch auch benutzt werden um das Erlebnis des Patienten über verschiedene Zeitperioden zusammenzufassen.\r\nIn Wirklichkeit ist Clinical Synopsis eine Meta-Beobachtung, die die bestehende strukturierte klinische Akte ergänzt, um subtile, subjektive oder interpretative Informationen über den Patienten ausdrücken zu können, die sonst alleine durch strukturierte Daten möglicherweise nicht deutlich werden; dies soll eine balancierte, kontextspezifische elektronische Patientenakte unterstützen.\r\nBeispielsweise kann eine Clinical Synopsis eine kurze Zusammenfassung der Aufnahme eines Patienten als eine Komponente eines umfassenden und strukturierten Epikrise-Dokuments übermitteln.",
+          "misuse" : "Nicht zu benutzen um genaue und strukturierte Informationen aufzunehmen. Beispielsweise sollten detaillierte Informationen über Probleme, Diagnosen und Testergebnisse durch die entsprechend relevanten Archetypen EVALUATION.problem, EVALUATION.problem-diagnosis und OBSERVATION-Archetypen für Labpr- oder radiologische Ergebnisse aufgenommen werden. Die Clinical Synopsis darf manche kritische bzw. ausgewählte numerische Ergebnisse aus diesen strukturierten Details überbringen, wenn diese als wichtig für die Vollständigkeit der Synopsis beurteilt werden; sie ist jedoch NICHT die primäre Stelle zur Aufnahme solcher Informationen.\r\nDer Begriff \"Klinische Synopsis\" kann sich manchmal auf komplexe und umfangreiche Dokumente beziehen, z. B. eine Epikrise (Discharge Summary) oder ein Bericht (Report). In openEHR sollten diese Dokumente als Aggregationen eingeschränkter Archetypen dargestellt werden (sprich openEHR \"templates\"), d. h. eine Epikrise- oder Bericht-Vorlage, die aus mehreren einzelnen Archetypen besteht, wovon der Clinical Synopsis-Archetyp einer sein könnte.\r\n",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att registrera en beskrivande sammanfattning om en patient, ur vårdgivarens perspektiv.",
+          "keywords" : [ "sammanfattning", "slutsats", "sammandrag", "exakt", "abstrakt", "bedömning", "synopsis", "epikris", "kommentar", "anteckning" ],
+          "use" : "Används för att sammanfatta patientens hälsotillstånd. Denna ostrukturerade sammanfattning kan innehålla identifierade hälsoproblem, vilken hälsovård som tillhandahållits, tolkning av sammanhanget, för patientens förståelse. Här kan några av de mjukare, mer subjektiva aspekterna av patientens upplevelse och resa kan beskrivas. Vanligtvis är den här sammanfattningen relaterad till en specifik hälsohändelse, exempelvis en specifik konsultation eller sjukhusvistelse, men den kan också användas för att sammanfatta patientens hälsohistorik under olika tidsperioder.\r\n\r\nI praktiken är klinisk synopsis en metaobservation som kompletterar det befintliga strukturerade kliniska registret. Den tillåter uttryck för subtil, subjektiv eller tolkande information om patienten som kanske inte annars är uppenbar genom enbart strukturerade data, vilket ger en balans och kontext till EHR-dokumentet. Exempelvis kan en klinisk sammanfattning återge en kortfattad sammanfattning av patientens sjukhusvistelse som en del i ett omfattande och strukturerat utskrivningsdokument.",
+          "misuse" : "Ska inte användas för att beskriva specifika och strukturerade hälsouppgifter. Exempelvis vid detaljerad information om problem, diagnoser och testresultat ska den specifika relevanta arketypen EVALUATION.problem, EVALUATION.problem-diagnos samt laboratorie- eller radiologiresultat i OBSERVATIONER användas. \r\n\r\nDen kliniska synopsisen kan återge några kritiska och numeriska resultat när de bedömts viktiga för synopsisens helhet, men det är INTE den primära registreringsplatsen för dem.\r\nUttrycket \"klinisk synopsis\" kan ibland referera till komplexa och omfattande dokument, exempelvis som översikter över utskrivningar eller rapporter. I openEHR ska dessa dokument presenteras som samlingar av begränsade arketyper, dvs. som en mall för sammanfattning av utskrivning eller en rapportmall som innehåller ett antal separata arketyper, av vilka denna kliniska sammanfattnings-arketyp kan vara en.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para sintetizar manualmente y registrar en forma narrativa un sumario acerca de un paciente, desde la perspectiva de un profesional del cuidado de la salud.",
+          "keywords" : [ "sumario", "conclusión", "visión global", "resumen", "extracto", "evaluación", "sinopsis", "epicrisis", "comentario", "nota" ],
+          "use" : "Usado para registrar en forma narrativa, una vista resumida del estado de salud del paciente. Este sumario no estructurado, puede incluir problemas/condiciones de salud identificados, cuidados de la salud provistos, interpretaciones clínicas asociadas y el entendimiento del paciente acerca de su condición clínica. Esta síntesis puede permitir la comunicación acerca de aspectos más sutiles y subjetivos en relación con la experiencia del paciente. Mas comúnmente este sumario estará probablemente relacionado con eventos de salud específicos tales como consultas médicas concretas o internaciones, pero puede también ser usado para sumarizar la experiencia del paciente en relación con su salud, en diferentes periodos de tiempo. \r\nEn la práctica, la Sinopsis Clínica es una meta-observación que complementará el registro clínico estructurado existente, permitiendo la expresión de información sutil, subjetiva o interpretativa acerca del paciente, que podría no ser obvia a través de solamente analizar los datos estructurados, proveyendo de esta forma balance y contexto al registro clínico.\r\nPor ejemplo, una Sinopsis Clínica puede comunicar un sumario sucinto de una internación del paciente, como un componente dentro de un documento de Epicrisis completo y estructurado.",
+          "misuse" : "No debe usarse para registrar información de salud estructurada y específica. Por ejemplo, información detallada relacionada con Problemas, Diagnósticos y Resultados de Estudios debería ser registrada usando los arquetipos específicos y relevantes EVALUATION.problem, EVALUATION.problem-diagnosis y resultados de laboratorio o imágenes en OBSERVATIONs. La Sinopsis Clínica puede expresar algunos resultados numéricos seleccionados críticos (presentes en secciones estructuradas específicas), cuando sean juzgados importantes para la completitud de la Sinopsis pero NO es el sitio primario de registro para esta información.\r\nEl término “Sinopsis Clínica” puede referirse a veces a documentos complejos y detallados tales como Epicrisis o Reportes. En openEHR, estos documentos deberían ser representados como agregaciones de arquetipos restringidos. Por ejemplo, una plantilla de Epicrisis o de Reporte deberían estar compuestos por un grupo de arquetipos (entre los que se encontraría la Sinopsis Clínica).",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å sammenfatte og dokumentere et fritekstsammendrag om en pasient fra helsepersonellets perspektiv.",
+          "keywords" : [ "sammendrag", "konklusjon", "disposisjon", "abstrakt", "vurdering", "beskrivelse", "epikrise", "notat" ],
+          "use" : "Anvendes for å registrere en fritekstoppsummering av pasientens helse. Denne ustrukturerte oppsummeringen kan omfatte identifiserte helseproblemer; helsetjenester som er ytt, klinisk fortolkning, pasientens forståelse samt at den muliggjør kommunikasjon vedrørende mer subtile og subjektive aspekter rundt pasientens helseerfaringer. Vanligvis vil denne oppsummeringen bli brukt ved spesifikke hendelser, for eksempel ved en konsultasjon eller sykehusinnleggelse, men oppsummeringen kan også brukes til å sammenfatte pasientens egne erfaringer over varierende tidsperioder. \r\n\r\nI praksis er Klinisk sammendrag en overordnet (meta) observasjon som vil fungere som et tillegg til eksisterende strukturert journal. Dette for å kunne fange og dokumentere pasientenes subtile, subjektive og/eller fortolkede informasjon som ellers alene ikke vil bli tydeliggjort godt nok ved hjelp av strukturerte data alene. Klinisk sammendrag vil således bidra til å gi kontekst og balanse i den elektroniske pasientjournalen. For eksempel kan Klinisk sammendrag gi en konkret oppsummering av pasientens sykehusinnleggelse som en del av en strukturert epikrise.",
+          "misuse" : "Anvendes ikke for å registrere spesifikk strukturert helseinformasjon. For eksempel vil detaljer om problemer, diagnoser og prøveresultat registreres ved hjelp av arketyper som for eksempel EVALUATION.problem_diagnosis, og laboratorie- eller radiologi svar i passende OBSERVATION-arketyper. \"Klinisk sammendrag\" kan for helhetens skyld inkludere og referere enkelte viktige numeriske resultat fra de strukturerte data, men er ikke det primære stedet for registrering av dem.\r\n\r\nBegrepet \"Klinisk sammendrag\" kan i enkelte tilfeller henvise til sammensatte og omfattende dokumenter, som epikriser og ut-notater. I openEHR vil en epikrise eller ut-notat representeres med aggregert informasjon fra underliggende arketyper ved hjelp av templater. Klinisk Sammendrag vil da være kun én av flere arketyper som blir inkludert.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para sintetizar manualmente e gravar um sumário narrativo sobre um paciente, a partir da perspectiva de um profissional de saúde.",
+          "keywords" : [ "sumário", "conclusão", "esboço", "resumo", "abstrato", "avaliação", "sinopse", "epícrise", "comentário", "anotações" ],
+          "use" : "Usado para registrar uma narrativa, visão sumarizada da saúde do paciente. Esse sumário não estruturado pode incluir questões médicas identificadas; plano de saúde fornecido; interpretação associada; compreensão do paciente; e permite comunicação sobre alguns dos mais sutis, mais subjetivos aspectos da experiência do paciente e jornada. Mais comumente esse sumário aparenta estar relacionado para um evento médico específico como uma consulta específica ou admissão hospitalar, mas também pode ser usado para sumarizar a experiência médica do paciente em diferentes períodos de tempo. \r\nNa prática, Sinopse Clínica é uma meta-observação que complementará o registro clínico estruturado existente, permitindo a expressão da sutil, subjetiva ou interpretativa informação sobre o paciente que de outra forma, através de um documento estruturado sozinho pode não ser óbvia , provendo balanceamento e contexto ao registro Eletrônico de Saúde. \r\nPor exemplo, uma Sinopse Clínica pode comunicar um sumário sucinto da admissão hospitalar do paciente como um componente de um estruturado e compreensivo Documento de Sumário de Alta.",
+          "misuse" : "*Not to be used to record specific and structured health information. For example, detailed information about Problems, Diagnoses, and Test Results should be recorded using the specific relevant archetypes EVALUATION.problem, EVALUATION.problem-diagnosis, and laboratory or radiology results in OBSERVATIONs. The Clinical Synopsis may convey some critical and selected numerical results from these structured details when judged important for completeness of the Synopsis but is NOT the primary recording site for them.\r\nThe term “Clinical Synopsis” can sometimes refer to complex and comprehensive documents, such as a Discharge Summary or a Report. In openEHR these documents should be represented as aggregations of constrained archetypes, that is, a Discharge Summary template or a Report template, comprising a number of separate archetypes, of which this Clinical Synopsis archetype may be one.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل ملخص برواية تم توليفها يدويا عن مريض من وجهة نظر مقدم الرعاية الصحية ",
+          "keywords" : [ "ملخص", "استنتاج", "إطار", "دقيق", "مستخلص", "تقييم", "مختصر", "نوبة إضافية", "تعليق", "ملحوظة" ],
+          "use" : "لتسجيل رؤية ملخصة بتوليف رواية عن صحة المريض. هذا الملخص غير المركب قد يتضمن قضايا صحية مُعَرَّفة, تم تقديمها بواسطة مقدم الخدمة الصحية, مع إرفاق تفسير, و تفَهُّم المريض, و يُمَكِّن من توصيل بعض من الجوانب البسيطة غير موضوعية من خبرة و رحلة المريض.\r\nو غالبا ما يكون هذا الملخص ذي احتمال عالي أن يكون متعلقا بواقعة صحية, مثل استشارة معينة أو إدخال إلى المستشفى, و لكن قد يستخدم في تلخيص الخبرة الصحية للمريض خلال فترات زمنية متعددة.\r\nفي الممارسة المعتادة, يعتبر المختصر السريري هو ملاحظة عامة تُكَمِّل السجل السريري المركب, و تسمح بالتعبير عن المعلومات الرقيقة غير الموضوعية التفسيرية عن المريض, و التي قد لا تكون واضحة إذا استخدم البيانات المركبة وحدها, بما يزوِّد اتزانا و سياقا للسجل الطبي الإلكتروني. \r\nمثل, قد يقوم المختصر السريري بتوصيل ملخص موجز عن إدخال المريض إلى المستشفى كجزء من وثيقة شاملة و مركبة حول ملخص الخروج.",
+          "misuse" : "لا يستخدم لتسجيل المعلومات الصحية المحددة و المركبة. مثلا, ينبغي تسجيل المعلومات التفصيلية حول المشكلات, التشخيصات, و نتائج الاختبارات باستخدام النماذج المخصصة ذات الصلة مثل (تقييم. مشكلة) و (تقييم. مشكلة - تشخيص) و نتائج اختبارات المعمل و التصوير الإشعاعي في نماذج الملاحظات.\r\nقد يوصل المختصر السريري بعض النتائج الرقمية من هذه التفاصيل إذا كان ذلك هاما لاكتمال المختصر, و لكن لا يعتبر الموضع الأولي لتسجيل هذه النتائج.\r\n\r\nقد يشير اللفظ (المختصر السريري) أحيانا إلى وثائق مركبة و شاملة, مثل ملخص الخروج أو تقرير ما.\r\nو ينبغي التعبير عن هذه الوثائق في نماذج مقيدة, و التي هي قالب ملخص الخروج و قالب التقرير, وسط مجموعة من النماذج يعتبر المختصر السريري واحدا منها.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To manually synthesise and record a narrative summary about a patient, from the perspective of a healthcare provider.",
+          "keywords" : [ "summary", "conclusion", "outline", "precis", "abstract", "assessment", "synopsis", "epicrisis", "comment", "note" ],
+          "use" : "Use to record a narrative, summary view of the patient's health.  This unstructured summary may include identified health issues; health care provided; associated interpretation; patient understanding; and enable communication about some of the softer, more subjective aspects of the patient’s experience and journey. Most commonly this summary is likely to be related to a specific health event such as a specific consultation or hospital admission, but may also be used to summarise the patient's health experience over varying time periods. \r\nIn practice, Clinical Synopsis is a meta observation that will complement the existing structured clinical record, allowing for expression of subtle, subjective or interpretive information about the patient that might not otherwise be obvious through structured data alone, providing balance and context to the EHR record.  \r\nFor example, a Clinical Synopsis can communicate a succinct summary of the patient's hospital admission as one component of a comprehensive and structured Discharge Summary document.",
+          "misuse" : "Not to be used to record specific and structured health information. For example, detailed information about Problems, Diagnoses, and Test Results should be recorded using the specific relevant archetypes EVALUATION.problem, EVALUATION.problem-diagnosis, and laboratory or radiology results in OBSERVATIONs. The Clinical Synopsis may convey some critical and selected numerical results from these structured details when judged important for completeness of the Synopsis but is NOT the primary recording site for them.\r\nThe term “Clinical Synopsis” can sometimes refer to complex and comprehensive documents, such as a Discharge Summary or a Report. In openEHR these documents should be represented as aggregations of constrained archetypes, that is, a Discharge Summary template or a Report template, comprising a number of separate archetypes, of which this Clinical Synopsis archetype may be one.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fa" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fa"
+          },
+          "purpose" : "به صورت دستی ترکیب و ثبت توضیحی خلاصه در مورد یک بیمار ، از نظر ارائه دهنده خدمات درمانی",
+          "keywords" : [ "خلاصه", "نتیجه", "رئوس مطالب", "خلاصه رئوس مطالب", "چکیده", "ارزیابی", "خلاصه", "خلاصه انتقادی یا تحلیلی", "توضیحات", "یادداشت" ],
+          "use" : "برای ثبت توضیح ، نظری خلاصه در مورد سلامت بیمار استفاده می شود.این خلاصه ساختار بندی نشده ممکن است شامل شناسایی مسایل بهداشتی ، مراقبت های بهداشتی ارایه شده همراه با تفسیر ، درک بیمار ، توانایی ارتباط با بیمار در مورد برخی جنبه های ذهنی و... در مورد تجربیات وسفرهای بیمار .معمولا این خلاصه به رویدادهای خاص سلامت نظیر مشاوره های خاص یا پذیرش بیمارستانی مربوط می شود اما ممکن است همچنین برای خلاصه نمودن تجربیات بیمار در طی دوره های زمانی مختلف استفاده شود\r\nدر عمل،خلاصه بالینی مشاهده .... است که متمم مدارک ساختارمند بالینی کنونی خواهد بود که بیان اطلاعات دقیق ، ذهنی یا تفسیر را امکان پذیر می کند در غیر اینصورت از طریق داده های ساختار یافته به تنهایی امکان پذیر نیست و تعادل و چهارجوچوبی برای ثبت پرونده الکترونیک سلامت ارایه می کنند\r\nبرای مثال خلاصه  بالینی می تواند بین خلاصه کوتاه پذیرش بیمارستانی بیمار به عنوان یکی از اجزا جامع و برگه ساختار مند خلاصه ترخیص ارتباط برقرار کند            ",
+          "misuse" : "برای ثبت اطلاعات سلامت خاص و ساختار مند استفاده نمی شود. برای مثال اطلاعات جزیی درباره مشکلات ، تشخیصها و نتایج تست باید با استفاده از الگو ساز خاص ومربوطه .....و نتایج آزمایشگاهی یا رادیولوژی در ....ثبت شود. خلاصه بالینی ممکن است شامل برخی نتایج عددی حیاتی و انتخاب شده  از  جزییات ساختار مند باشد زمانی که برای تکمیل خلاصه مهم باشدامااین الگو ساز محل اولیه ثبت این موارد نیست\r\nواژه \"خلاصه بالینی \"کاهی به اسناد پیچیده و جامع اشاره می کند نظیر خلاصه ترخیص یا گزارش. در ... اسناد باید به عنوان توده ای از الگوسازهای محدود شده ارایه شود ، الگوی خلاصه ترخیص یا  الگوی گزارش شامل تعدادی از الگوسازهای جداگانه می باشد که الگوساز خلاصه بالینی یکی از این الگوسازها می باشد    \r\n  ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "从医疗保健服务提供着的角度，手工综合并记录关于患者的叙述型摘要。",
+          "keywords" : [ "摘要", "小结", "概要", "概况", "概略", "结论", "总结", "梗概", "大纲", "提要", "要点", "评估", "评价", "总览", "评论", "病案讨论", "病情分析", "备注", "注释", "记录", "笔记" ],
+          "use" : "用于记录关于患者健康状况的叙述型摘要。这种非结构化摘要可以包括所确定的健康事项、所提供的医疗保健服务、相关联的解释和患者的理解，并且便于表达关于患者体验和经历的某些较为委婉和较为主观的方面。最为常见的情况就是，这种摘要很可能与特定的健康事件相关，如某次特定的会诊咨询或收治入院（住院），但也可以用于总结概括患者在不同时间段内的健康历程。临床提要是一种元观察（meta observation，超级观察），将对已有的结构化临床记录起到补充作用，允许表达关于患者的微妙的、主观的或解释性的信息，而仅仅借助于结构化数据，此类信息可能并非显而易见，从而为EHR记录提供了平衡和背景。例如，临床提要可以作为综合性的结构化出院摘要（出院小结、出院记录）文档的一个组成部分，传达对于患者住院情况的简要概括。",
+          "misuse" : "并非旨在用于记录具体的结构化健康信息。例如，对于有关问题、诊断和检验项目结果的详细信息，应当分别采用具体相关的原始型来加以记录，比如，分别采用评价类之中的问题（EVALUATION.problem）, 评价类之中的诊断（EVALUATION.problem-diagnosis）和观察类（OBSERVATION）之中实验室或放射医学结果。当判断认为此类结构化细节信息之中的某些至关重要的和精选的数值型结果对于当前提要的完整性具有重要作用的时候，临床提要可以传达此类结果，但这里并不是此类信息的原始记录位置。有时，“临床提要（Clinical Synopsis）”可能指的是复杂的综合性文档，如出院摘要（出院小结、出院记录）或报告。在openEHR之中，应当将此类文档表达为若干经过约束的原始型的聚合体，也就是说，出院摘要模板或报告模板是由许多不同的原始型构成，而临床提要原始型则可能只是后面所说的这些原始型之一。",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.clinical_synopsis.v1",
     "differential" : true,
@@ -5471,7 +6559,117 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7A65632D1A59E073C1B6D7CE0E68E7B8"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи сведений об проведенной процедуре",
+          "keywords" : [ "процедура, выполнение" ],
+          "use" : "Используется для записи подробной информации о процедуре, выполненной пациенту.\r\nИнформация о действиях, связанных с выполнением процедуры, таких как анестезия или применение лекарств, долдно быть записано в отдельных архетипах типа ДЕЙСТВИЕ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere informasjon om aktiviteter som må gjennomføres for å utføre en klinisk prosedyre, inkludert planlegging, fastsetting av tidspunkt, utførelse, utsettelse, kansellering, dokumentering og fullføring.",
+          "keywords" : [ "prosedyre", "intervensjon", "kirurgisk", "medisinsk", "klinisk", "terapeutisk", "diagnostisk", "behandling", "kur", "evaluering", "undersøkelse", "screening", "palliativ", "terapi", "prognostisk" ],
+          "use" : "Brukes til å registrere nødvendig informasjon om aktiviteter i gjennomføringen av en klinisk prosedyre. Dette inkluderer planlegging, fastsetting av tidspunkt, utførelse, utsettelse, avlysning, dokumentering og fullføring. Dette gjøres ved å registrere data knyttet til spesifikke aktiviteter som definert i arketypens prosesstrinn (Engelsk: \"Pathway careflow steps\").\r\n\r\nArketypen dekker aktiviteter for et bredt spekter av kliniske prosedyrer utført i evaluerende, undersøkende, diagnostisk, kurativ, terapeutisk eller palliativ hensikt. Eksempler strekker seg fra relativt enkle aktiviteter som innlegging av et intravenøst kateter, til komplekse kirurgiske operasjoner.\r\n\r\nStrukturert og detaljert tilleggsinformasjon om prosedyren kan registreres ved bruk av spesifikke CLUSTER-arketyper satt inn i \"Prosedyredetaljer\"-SLOTet der dette kreves.\r\n\r\nTidsberegning relatert til en prosedyre kan håndteres på en av to måter:\r\n-Ved å benytte referansemodellen: Tiden for gjennomføring av et prosesstrinn vil benytte \"time\"-attributtet som ligger implisitt i en ACTION-arketype, for hvert enkelt prosesstrinn.\r\n-Dataelementer i arketypen:\r\n---Dataelementet \"Planlagt dato/tid\" skal brukes for å registrere nøyaktig tidspunkt prosedyren er planlagt. Merk: Det korresponderende \"time\"-attributtet for prosesstrinnet \"Fastsatt tidspunkt for prosedyre\" registrerer tidspunktet da prosedyren ble planlagt, ikke dato/tid for når prosedyren er planlagt gjennomført. \r\n--- \"Endelig dato/tid\" skal registrere nøyaktig tidspunkt for da prosedyren ble avsluttet. Den kan brukes for å dokumentere komplekse prosedyrer med mange komponenter. Merk: Det korresponderende \"time\"-attributtet for prosesstrinnet \"Prosedyre iverksatt\" dokumenterer tidspunkt for hver gang en komponent er gjennomført eller påbegynt. Dataelementet \"Endelig dato/tid\" registrerer dato/tid for det siste aktive komponenten av prosedyren. Dette åpner for mulighet for utregning av den totale varigheten av den aktive prosedyren.\r\n\r\nVed bruk i en operasjonsrapport skal arketypen bare benyttes for å registrere hva som ble utført under prosedyren. Egne arketyper vil bli benyttet for å registrere andre komponenter av operasjonsrapporten, dette inkluderer biopsitakning, bildediagnostisk veiledning, funn under operasjonen, postoperative instruksjoner og videre planer for oppfølging.\r\n\r\nI en problemliste eller i et problemsammendrag kan denne arketypen benyttes for å gi en oversikt over hvilke prosedyrer som er utført. Arketypen EVALUATION.problem_diagnosis vil benyttes for å gi en oversikt over pasientens problemer og diagnoser.\r\n\r\nI praksis vil mange prosedyrer (f.eks. i primærhelsetjenesten) utføres én gang, og ikke bestilles i forkant. Detaljene om prosedyren vil da registreres for det aktuelle prosesstrinnet. I noen tilfeller vil en gjentagende prosedyre bli rekvirert, og i en slik situasjon registreres prosesstrinnet \"Prosedyre utført\" i hvert enkelt tilfelle, og instruksjonen forblir i en aktiv tilstand. Når den siste prosedyren i serien er registrert settes prosesstrinnet \"Prosedyre avsluttet\" for å avslutte forordningen.\r\n\r\nI andre situasjoner, for eksempel i spesialisthelsetjenesten, kan det foreligge en formell rekvisisjon for en prosedyre hvor en motsvarende INSTRUCTION-arketype er benyttet. Denne ACTION-arketypen benyttes da for å registrere arbeidsflyt og når og hvordan prosedyren ble utført.\r\n\r\nRegistrering av informasjon i denne ACTION-arketypen indikerer at en eller annen type aktivitet faktisk er utført; dette vil vanligvis være prosedyren i seg selv, men kan også være et mislykket forsøk eller en annen aktivitet som f.eks. en utsettelse av prosedyren. Finnes det en formell henvisning til en prosedyre, er henvisningens status representert i det prosesstrinnet hvor data er registrert. For eksempel vil gjennomføringen av en gastroskopi lagret i denne arketypen kunne registreres som flere påfølgende oppføringer innen et fremdriftsnotat, en oppføring for hvert prosesstrinn:\r\n\r\n- registrert planlagt Start dato/tid for gastroskopien (\"Prosedyre planlagt\")\r\n- registrert at gastroskopiprosedyren er fullført, inkludert informasjon om prosedyredetaljene (\"Prosedyre avsluttet\").\r\n\r\nLegg merke til at det i openEHR referansemodellen er et attributt \"time\" som er tenkt brukt til å registrere dato og tid for når hvert enkelt prosesstrinn i ACTION-arketypen ble utført. Denne attributten skal brukes til å registre da prosedyren startet (ved prosesstrinnet \"Prosedyre iverksatt\"), eller tidspunktet da prosedyren ble avbrutt (ved prosesstrinnet \"Prosedyre avbrutt\").",
+          "misuse" : "Benyttes ikke til å registrere detaljer om administrasjon av legemidler - bruk ACTION.medication til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om bildediagnostiske undersøkelser - bruk ACTION.imaging_exam til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om laboratorieundersøkelser - bruk ACTION.laboratory_test til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om pasientopplæring - bruk ACTION.health_education til dette formålet.\r\n\r\nBenyttes ikke til å registrere detaljer om administrative aktiviteter - bruk spesifikke ADMIN-arketyper til dette formålet.\r\n\r\nBenyttes ikke til registrering om relaterte aktiviteter som bruk av frysesnitt tatt under en operasjon, legemidler gitt som del av prosedyren, eller når bildeveiledning er brukt under prosedyren. Bruk separate og spesifikke ACTION-arketyper innen samme templat til dette formålet.\r\n\r\nBenyttes ikke for å registrere en hel operasjon eller prosedyrerapport - bruk en templat der denne arketypen er kun en komponent av den fullstendige rapporten.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar os detalhes sobre um procedimento realizado, incluindo o planejamento, programação , execução, suspensão , cancelamento , documentação e conclusão.",
+          "keywords" : [ "procedimento", "intervenção", "cirúrgico", "médico", "clínico", "terapêutico", "diagnóstico", "cura", "tratamento", "evolução", "investigação", "paliativo", "terapia" ],
+          "use" : "Use para registrar informações sobre as atividades necessárias para realizar um procedimento , incluindo o planejamento, programação , execução, suspensão , cancelamento , documentação e conclusão. Isto é feito através do registro de dados de atividades específicas , conforme definido neste arquétipo .\r\n\r\nO escopo deste arquétipo abrange as atividades para uma ampla gama de procedimentos clínicos realizados para avaliação, investigação , triagem , diagnóstico , curativo, terapêutico ou fins paliativos. Os exemplos vão desde as atividades relativamente simples, tais como a inserção de uma cânula intravenosa , através de operações cirúrgicas complexas .\r\n\r\nInformações adicionais estruturadas e detalhadas sobre o procedimento podem ser capturadas utilizando arquétipos específicos de uso inserido no slot 'Detalhe do Procedimento', onde for necessário.\r\n\r\nTempos relacionados a um procedimento podem ser gerenciados de uma de duas maneiras:\r\n- Usando o modelo de referência - o prazo para realização de qualquer passo/caminho usará o atributo tempo de ação para cada etapa.\r\n- Elementos de dados arquetipados:\r\n--- Elemento de dados \"data / hora agendada\" destina-se a registrar o tempo exato em que o procedimento é planejado. Nota: o atributo de tempo de ação correspondente para o passo via Programado irá registrar o tempo que o procedimento foi programado em um sistema, não a data / hora pretendida em que o procedimento se destina a ser realizado; e\r\n--- O 'data final / hora' destina-se a registrar o tempo exato em que o processo foi encerrado. Ele pode ser usado para documentar os procedimentos complexos com componentes múltiplos. Nota: o atributo de tempo de ação correspondente para o \"procedimento realizado\" irá documentar o tempo de cada componente realizada foi iniciada. Este elemento de dados 'Data / hora Final' registrará a data / hora do último componente ativo do procedimento. Isto irá permitir uma duração total do processo ativo a ser calculado.\r\n\r\nDentro do contexto de um Relatório de Cirurgia, esse arquétipo será usado para gravar apenas o que foi feito durante o procedimento. Arquétipos separados serão utilizados para gravar os outros componentes necessários, incluindo a coleta de amostras de tecidos, utilização de imagens intraoperatórias, achados cirúrgicos, instruções pós-operatória e planos de acompanhamento.\r\n\r\nDentro do contexto de uma lista de problemas ou resumo, este arquétipo pode ser usado ​​para representar os procedimentos que têm sido realizados. O EVALUATION.problem_diagnosis será usado para representar os problemas do paciente e diagnósticos.\r\n\r\nNa prática, muitos procedimentos (por exemplo, um atendimento ambulatorial) ocorrerá uma vez e não será planejado com antecedência. Os detalhes sobre o procedimento serão adicionados ao passo/caminho, «Processo concluído\". Em alguns casos um procedimento recorrente será ordenado, e nesta situação os dados do \"procedimento realizado\" será gravado em cada ocasião, deixando a instrução no estado ativo. Quando a última ocorrência é registrada do \"Procedimento concluído\" a ação é registrada mostrando que essa ordem está agora no estado concluído.\r\n\r\nEm outras situações, tais como atenção secundária, pode haver uma ordem formal de um procedimento usando um arquétipo instrução correspondente. Este arquétipo ação pode então ser usado para registrar o fluxo de trabalho de quando e como a ordem foi executada.\r\n\r\nGravando informações utilizando esse arquétipo AÇÃO indica que algum tipo de atividade realmente ocorreu; este será geralmente o procedimento em si, mas pode ser uma tentativa fracassada ou outra atividade, como o adiamento do procedimento. Se existe uma ordem formal para o procedimento, o estado desta ordem é representado pelo passo Pathway contra a qual os dados são gravados. Por exemplo, usando esse arquétipo do estado progredindo de uma ordem Gastroscopia podem ser registrados através de entradas separadas no progresso EHR observado um passo a cada 'Caminho':\r\n- Registrar o início de data / hora programada para a gastroscopia (Procedimento programado); e\r\n- Gravar que o procedimento foi concluído gastroscopia, incluindo informações sobre os detalhes de procedimento (processo encerrado).\r\n\r\nPor favor, note que no Modelo de Referência openEHR há um atributo 'Time', que se destina a registrar a data e hora em que foi realizada a cada passo via da ação. Este é o atributo a ser usado para registar o início do procedimento (usando o \"procedimento realizado 'passo via), ou o tempo que o procedimento foi abortada (usando o\" procedimento abortado' passo via)",
+          "misuse" : "Não deve ser usado para gravar detalhes sobre o anestésico - usar um arquétipo ação separada para esse fim.\r\n\r\nNão deve ser usado para registrar detalhes sobre as investigações de imagem - use ACTION.imaging_exam para esta finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre investigações laboratoriais - ACTION.laboratory_test usar para essa finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre educação entregues - ACTION.health_education usar para essa finalidade.\r\n\r\nNão deve ser usado para registrar detalhes sobre as atividades administrativas - usar arquétipos ADMIN específicos para esta finalidade.\r\n\r\nNão deve ser usado para gravar detalhes sobre as atividades relacionadas, tais como medicação administrada como parte do processo ou quando utilização de imagens para visualização é utilizado durante o procedimento - usar arquétipos ação separados e específicos dentro do mesmo modelo para este fim.\r\n\r\nNão deve ser usado para gravar uma operação ou procedimento relatório conjunto - usar um modelo em que esse arquétipo é apenas um componente do relatório completo.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion.",
+          "keywords" : [ "procedure", "intervention", "surgical", "medical", "clinical", "therapeutic", "diagnostic", "cure", "treatment", "evaluation", "investigation", "screening", "palliative", "therapy" ],
+          "use" : "Use to record information about the activities required to carry out a procedure, including the planning, scheduling, performance, suspension, cancellation, documentation and completion. This is done by the recording of data against specific activities, as defined by the 'Pathway' careflow steps in this archetype.\r\n\r\nThe scope of this archetype encompasses activities for a broad range of clinical procedures performed for evaluative, investigative, screening, diagnostic, curative, therapeutic or palliative purposes. Examples range from the relatively simple activities, such as insertion of an intravenous cannula, through to complex surgical operations.\r\n\r\nAdditional structured and detailed information about the procedure can be captured using purpose-specific archetypes inserted into the 'Procedure detail' slot, where required.\r\n\r\nTimings related to a procedure can be managed in one of two ways:\r\n- Using the reference model - the time for performance of any pathway step will use the ACTION time attribute for each step.\r\n- Archetyped data elements:\r\n--- the 'Scheduled date/time' data element is intended to record the precise time when the procedure is planned. Note: the corresponding ACTION time attribute for the Scheduled pathway step will record the time that the procedure was scheduled into a system, not the intended date/time on which the procedure is intended to be carried out; and\r\n--- the 'Final end date/time' is intended to record the precise time when the procedure was ended. It can be used to document the complex procedures with multiple components. Note: the corresponding ACTION time attribute for the 'Procedure performed' will document the time each component performed was commenced. This 'Final end date/time' data element will record the date/time of the final active component of the procedure. This will enable a full duration of the active procedure to be calculated.\r\n\r\nWithin the context of an Operation Report, this archetype will be used to record only what was done during the procedure. Separate archetypes will be used to record the other required components of the Operation Report, including the taking of tissue specimen samples, use of imaging guidance, operation findings, post-operative instructions and plans for follow up.\r\n\r\nWithin the context of a Problem list or summary, this archetype may be used to represent procedures that have been performed. The EVALUATION.problem_diagnosis will be used to represent the patient's problems and diagnoses.\r\n\r\nIn practice, many procedures (for example, in ambulatory care) will occur once and not be ordered in advance. The details about the procedure will be added against the pathway step, 'Procedure completed'. In some cases a recurring procedure will be ordered, and in this situation data against the 'Procedure performed' step will be recorded on each occasion, leaving the instruction in the active state. When the last occurrence is recorded the 'Procedure completed' action is recorded showing that this order is now in the completed state.\r\n\r\nIn other situations, such as secondary care, there may be a formal order for a procedure using a corresponding INSTRUCTION archetype. This ACTION archetype can then be used to record the workflow of when and how the order has been carried out.\r\n\r\nRecording information using this ACTION archetype indicates that some sort of activity has actually occurred; this will usually be the procedure itself but may be a failed attempt or another activity such as postponing the procedure. If there is a formal order for the procedure, the state of this order is represented by the Pathway step against which the data is recorded. For example, using this archetype the progressing state of a Gastroscopy order may be recorded through separate entries in the EHR progress notes at each 'Pathway' step:\r\n- record the scheduled Start date/time for the gastroscopy (Procedure scheduled); and\r\n- record that the gastroscopy procedure has been completed, including information about the procedure details (Procedure completed).\r\n\r\nPlease note that in the openEHR Reference Model there is a 'Time' attribute, which is intended to record the date and time at which each pathway step of the Action was performed. This is the attribute to use to record the start of the procedure (using the 'Procedure performed' pathway step) or the time that the procedure was aborted (using the 'Procedure aborted' pathway step).",
+          "misuse" : "Not to be used to record details about the anaesthetic - use a separate ACTION archetype for this purpose.\r\n\r\nNot to be used to record details about imaging investigations - use ACTION.imaging_exam for this purpose.\r\n\r\nNot to be used to record details about laboratory investigations - use ACTION.laboratory_test for this purpose.\r\n\r\nNot to be used to record details about education delivered - use ACTION.health_education for this purpose.\r\n\r\nNot to be used to record details about administrative activities - use specific ADMIN archetypes for this purpose.\r\n\r\nNot to be used to record details about related activities such as the use of frozen sections taken during an operation, medication administered as part of the procedure or when imaging guidance is used during the procedure - use separate and specific ACTION archetypes within the same template for this purpose .\r\n\r\nNot to be used to record a whole operation or procedure report - use a template in which this archetype is only one component of the full report.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل تفاصيل حول إجراء طبي تم بالفعل إجراؤه",
+          "keywords" : [ "الإجراء الطبي" ],
+          "use" : "لتسجيل معلومات تفصيلية حول إجراء طبي تم تنفيذه على شخص ما. و ينبغي تسجيل المعلومات حول النشاطات المتعلقة بالنشاطات المتعلقة بالإجراء الطبي, مثل التخدير أو إعطاء الأدوية في نماذج (فعل) منفردة.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "Za beleženje podrobnosti o izvedeni aktivnosti",
+          "keywords" : [ "aktivnosti", "postopek" ],
+          "use" : "Za beleženje podrobnosto o izvedeni aktivnosti, ki zadeva posameznega pacienta/subjekt",
+          "misuse" : "Podrobnosti o aktivnostih povezani z opisano kativnostjo, kot npr. dajanje zdravil, se zabeleži v arhetipih tipa ACTION",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Para registrar información sobre las actividades requeridas para ejecutar un procedimiento, incluyendo planificación, coordinación, ejecución, suspensión, cancelación, documentación y finalización.",
+          "keywords" : [ "procedimiento", "intervención", "terapia", "cirugía", "diagnóstico", "evaluación", "curación", "tratamiento" ],
+          "use" : "Se utiliza para registrar información sobre las actividades requeridas para llevar a cabo un procedimiento, incluyendo planificación, coordinación, ejecución, suspensión, cancelación, documentación y finalización. Esto se hace mediante el registro de los datos sobre actividades específicas, según la definición de los pasos de la vía clínica definida en el arquetipo.\r\n\r\nEl alcance de este arquetipo abarca actividades para una amplia gama de procedimientos clínicos realizados para la evaluación, investigación, detección, diagnóstico,\r\ncurativos, terapéuticos o fines paliativos. Los ejemplos van desde las actividades relativamente simples, como la inserción de una cánula intravenosa, hasta operaciones quirúrgicas complejas.",
+          "misuse" : "No utilizar para registrar detalles acerca de la anestesia, para eso utilizar un arquetipo de ACTION separado.\r\nNo utilizar para registrar detalles acerca de estudios por imágenes, para eso utilizar el arquetipo ACTION.imaging_exam.\r\nNo utilizar para registrar detalles acerca de estudios de laboratorio, para eso utilizar el arquetipo ACTION.laboratory_test.\r\nNo utilizar para registrar detalles acerca de educación brindada, para eso utilizar el arquetipo ACTION.health_education.\r\nNo utilizar para registrar detalles acerca de actividades administrativas, para eso utilizar un arquetipo ADMIN separado.\r\nNo utilizar para registrar detalles acerca de actividades relacionadas, como medicación administrada durante el procedimiento, o sobre imágenes que se utilizaron como guía durante el procedimiento, para esto utilizar arquetipos de ACTION separados, dentro de la misma plantilla.\r\nNo utilizar para registrar detalles acerca del informe de la operación, para eso se debe utilizar una plantilla donde este arquetipo sea parte de la misma.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.procedure.v1",
     "differential" : true,
@@ -5697,6 +6895,7 @@
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
+                    "existence" : "1..1",
                     "children" : [ {
                       "@type" : "C_DURATION",
                       "rmTypeName" : "DURATION",
@@ -5759,6 +6958,72 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0053",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0054.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0056.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_IDENTIFIER",
                   "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -5879,9 +7144,29 @@
             "text" : "Comentários",
             "description" : "Comentários adicionais sobre a atividade ou etapas não informados em outros campos."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Identificador do pedido do solicitante",
+            "description" : "O ID local atribuído ao pedido realizado pelo profissional de saúde ou organização solicitando o serviço.",
+            "comment" : "Isto é equivalente ao \"Placer Order Number\" nas especificações do HL7 v2."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Identificador do pedido do destinatário",
+            "description" : "O ID atribuído ao pedido pelo provedor de cuidados de saúde ou organização que recebe o pedido de serviço. Isto é também relacionado ao preenchimento da identificação do pedido.",
+            "comment" : "Isto é equivalente ao \"Placer Order Number\" nas especificações do HL7 v2."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -5989,9 +7274,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -6100,9 +7405,29 @@
             "text" : "Comment",
             "description" : "Additional narrative about the activity or care pathway step not captured in other fields."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Requestor order identifier",
+            "description" : "The local ID assigned to the order by the healthcare provider or organisation requesting the service.",
+            "comment" : "This is equivalent to Placer Order Number in HL7 v2 specifications."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Receiver order identifier",
+            "description" : "The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.",
+            "comment" : "This is equivalent to Filler Order Number in HL7 v2 specifications."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -6210,9 +7535,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -6320,9 +7665,29 @@
             "text" : "*Comment(en)",
             "description" : "*Additional narrative about the activity or care pathway step not captured in other fields.(en)"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -6431,9 +7796,29 @@
             "text" : "Kommentar",
             "description" : "Ytterligere fritekstbeskrivelse av aktivitet eller prosesstrinn som ikke er registrert i andre felt."
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "Rekvisisjonsidentifikator",
+            "description" : "Den lokale IDen tilordnet rekvisisjonen av helsepersonellet eller organisasjonen som rekvirerer prosedyren.",
+            "comment" : "Tilsvarer \"Placer Order Number\" i HL7 v2-spesifikasjonene."
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "Mottakers rekvisisjonsidentifikator",
+            "description" : "IDen tilordnet rekvisisjonen av helsepersonellet eller organisasjonen som mottar rekvisisjonen.",
+            "comment" : "Tilsvarer \"Filler Order Number\" i HL7 v2-spesifikasjonene."
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
@@ -6541,9 +7926,29 @@
             "text" : "Comentario",
             "description" : "Comentario narrativo adicional acerca de las actividades llevadas a cabo en la ejecución del procedimiento y que no son capturadas por otros campos"
           },
+          "at0054.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0054.1",
+            "text" : "*Requestor order identifier(en)",
+            "description" : "*The local ID assigned to the order by the healthcare provider or organisation requesting the service.(en)",
+            "comment" : "*This is equivalent to Placer Order Number in HL7 v2 specifications.(en)"
+          },
+          "at0056.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0056.1",
+            "text" : "*Receiver order identifier(en)",
+            "description" : "*The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.(en)",
+            "comment" : "*This is equivalent to Filler Order Number in HL7 v2 specifications.(en)"
+          },
           "at0001" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001",
+            "text" : "ITEM_TREE",
+            "description" : "*"
+          },
+          "at0053" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0053",
             "text" : "ITEM_TREE",
             "description" : "*"
           }
