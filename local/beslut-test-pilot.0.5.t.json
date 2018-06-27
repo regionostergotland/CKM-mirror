@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "60f05fffcffada95246051a2088dcff6",
+      "MD5-CAM-1.0.1" : "e76fd06f17f635dc533f2750e294a000",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -164,6 +164,15 @@
       "existence" : "0..1",
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "ACTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.4",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-ACTION.ovl-decisionprocess-001.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
         "occurrences" : "0..*",
         "nodeId" : "at0.3",
@@ -222,6 +231,12 @@
           "text" : "CLUSTER",
           "description" : "*"
         },
+        "at0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.4",
+          "text" : "ACTION",
+          "description" : "*"
+        },
         "at0.7" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.7",
@@ -258,6 +273,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0042",
           "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.4",
+          "text" : "ACTION",
           "description" : "*"
         },
         "at0.7" : {
@@ -5481,15 +5502,6 @@
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-001.v1",
           "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "ACTION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.4",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-ACTION.ovl-decisionprocess-001.v0",
-          "referenceType" : "archetypeOverlay"
         } ]
       } ],
       "attributeTuples" : [ ]
@@ -5522,12 +5534,6 @@
             "code" : "at0.3",
             "text" : "EVALUATION",
             "description" : "*"
-          },
-          "at0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4",
-            "text" : "ACTION",
-            "description" : "*"
           }
         },
         "ru" : {
@@ -5553,12 +5559,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.3",
             "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4",
-            "text" : "ACTION",
             "description" : "*"
           }
         },
@@ -5586,12 +5586,6 @@
             "code" : "at0.3",
             "text" : "EVALUATION",
             "description" : "*"
-          },
-          "at0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4",
-            "text" : "ACTION",
-            "description" : "*"
           }
         },
         "sl" : {
@@ -5617,12 +5611,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.3",
             "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4",
-            "text" : "ACTION",
             "description" : "*"
           }
         },
@@ -5650,12 +5638,6 @@
             "code" : "at0.3",
             "text" : "EVALUATION",
             "description" : "*"
-          },
-          "at0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4",
-            "text" : "ACTION",
-            "description" : "*"
           }
         },
         "pt-br" : {
@@ -5681,12 +5663,6 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.3",
             "text" : "EVALUATION",
-            "description" : "*"
-          },
-          "at0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4",
-            "text" : "ACTION",
             "description" : "*"
           }
         }
