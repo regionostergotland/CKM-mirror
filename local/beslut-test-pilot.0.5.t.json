@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "c1d1f896938018a49d8c1cf628c86ad6",
+      "MD5-CAM-1.0.1" : "6aef393dc9a8f8eb2df3d9cced56dc7e",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -165,24 +165,6 @@
       "children" : [ {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.8",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-Decision-002.v1",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "ACTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.2",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ACTION.ovl-informed_consent-001.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "EVALUATION",
         "occurrences" : "0..*",
         "nodeId" : "at0.3",
         "attributes" : [ ],
@@ -191,39 +173,21 @@
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "INSTRUCTION",
+        "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.4",
+        "nodeId" : "at0.7",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-request-003.v0",
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-001.v1",
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "INSTRUCTION",
-        "occurrences" : "0..*",
-        "nodeId" : "at0.5",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-request-001.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "EVALUATION",
+        "rmTypeName" : "SECTION",
         "occurrences" : "0..1",
-        "nodeId" : "at0.6",
+        "nodeId" : "at0.8",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-001.v1",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "ACTION",
-        "occurrences" : "0..1",
-        "nodeId" : "at0.10",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-ACTION.ovl-decisionprocess-001.v0",
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -240,46 +204,10 @@
           "text" : "Request for service",
           "description" : "Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care."
         },
-        "at0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.2",
-          "text" : "ACTION",
-          "description" : "*"
-        },
         "at0.3" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.3",
           "text" : "EVALUATION",
-          "description" : "*"
-        },
-        "at0.4" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.4",
-          "text" : "INSTRUCTION",
-          "description" : "*"
-        },
-        "at0.6" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.6",
-          "text" : "EVALUATION",
-          "description" : "*"
-        },
-        "at0.8" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.8",
-          "text" : "EVALUATION",
-          "description" : "*"
-        },
-        "at0.10" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.10",
-          "text" : "ACTION",
-          "description" : "*"
-        },
-        "at0.5" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.5",
-          "text" : "INSTRUCTION",
           "description" : "*"
         },
         "at0001" : {
@@ -292,6 +220,18 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0042",
           "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.7",
+          "text" : "SECTION",
+          "description" : "*"
+        },
+        "at0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.8",
+          "text" : "SECTION",
           "description" : "*"
         }
       },
@@ -302,46 +242,10 @@
           "text" : "*Request for service(en)",
           "description" : "*Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care.(en)"
         },
-        "at0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.2",
-          "text" : "ACTION",
-          "description" : "*"
-        },
         "at0.3" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.3",
           "text" : "EVALUATION",
-          "description" : "*"
-        },
-        "at0.4" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.4",
-          "text" : "INSTRUCTION",
-          "description" : "*"
-        },
-        "at0.6" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.6",
-          "text" : "EVALUATION",
-          "description" : "*"
-        },
-        "at0.8" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.8",
-          "text" : "EVALUATION",
-          "description" : "*"
-        },
-        "at0.10" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.10",
-          "text" : "ACTION",
-          "description" : "*"
-        },
-        "at0.5" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.5",
-          "text" : "INSTRUCTION",
           "description" : "*"
         },
         "at0001" : {
@@ -354,6 +258,18 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0042",
           "text" : "CLUSTER",
+          "description" : "*"
+        },
+        "at0.7" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.7",
+          "text" : "SECTION",
+          "description" : "*"
+        },
+        "at0.8" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.8",
+          "text" : "SECTION",
           "description" : "*"
         }
       }
@@ -3738,7 +3654,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..1",
+              "occurrences" : "0..0",
               "nodeId" : "at0003.1.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -4180,10 +4096,6 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
                   "occurrences" : "1..1",
-                  "defaultValue" : {
-                    "value" : "Processteg klart",
-                    "@type" : "DV_TEXT"
-                  },
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -4231,7 +4143,7 @@
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
-            "text" : "Beskrivning",
+            "text" : "Beskrivning av planerad operation",
             "description" : "Description of why state changed"
           },
           "at0005" : {
@@ -5236,6 +5148,626 @@
         "organisation" : "Haukeland University Hospital of Bergen, Norway"
       },
       "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "1e1597c6-78cc-48a9-b112-a1d8af3c71f6",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-adhoc-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "0..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-Decision-002.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-informed_consent-001.v0",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Beslut",
+            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "ru" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "заготовка заголовка",
+            "description" : "Образец заголовка раздела"
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "es-ar" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Encabezado ad hoc",
+            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "sl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Naslov sekcije",
+            "description" : "Naslov sekcije"
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ad hoc heading",
+            "description" : "En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Cabeçalho Ad hoc",
+            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "01827a5a-aed8-4ad8-926c-e99eb5d9a19f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "7795f326-8629-4905-a3fc-6430916acc70",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "0..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "INSTRUCTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-request-003.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "INSTRUCTION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-request-001.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.3",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-recommendation-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-decisionprocess-001.v0",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Beslutad operation",
+            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "ru" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "заготовка заголовка",
+            "description" : "Образец заголовка раздела"
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "es-ar" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Encabezado ad hoc",
+            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "sl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Naslov sekcije",
+            "description" : "Naslov sekcije"
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ad hoc heading",
+            "description" : "En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Cabeçalho Ad hoc",
+            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+          },
+          "at0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.1",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.2",
+            "text" : "INSTRUCTION",
+            "description" : "*"
+          },
+          "at0.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.3",
+            "text" : "EVALUATION",
+            "description" : "*"
+          },
+          "at0.4" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0.4",
+            "text" : "ACTION",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "01827a5a-aed8-4ad8-926c-e99eb5d9a19f",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
       "otherDetails" : { }
     } ]
   } ],
