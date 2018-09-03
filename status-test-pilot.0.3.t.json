@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "8d71ba4eb1a938953d397b84b13ee493",
+      "MD5-CAM-1.0.1" : "0afe720b35316cb169a7327c0ce31a5d",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -12888,7 +12888,7 @@
                                 "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
-                                  "upper" : 1.0,
+                                  "upper" : 250.0,
                                   "lowerUnbounded" : true,
                                   "upperUnbounded" : true,
                                   "lowerIncluded" : true,
@@ -12926,7 +12926,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.32" ],
+                              "constraint" : [ "ac0.52" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -13962,10 +13962,10 @@
             "description" : "*The rate, measured in beats per minute.(en)",
             "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
           },
-          "ac0.32" : {
+          "ac0.52" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
+            "code" : "ac0.52",
             "description" : "*"
           },
           "at0002" : {
@@ -14255,10 +14255,10 @@
             "text" : "*Rate(en)",
             "description" : "*The rate, measured in beats per minute.(en)"
           },
-          "ac0.32" : {
+          "ac0.52" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
+            "code" : "ac0.52",
             "description" : "*"
           },
           "at0002" : {
@@ -14552,10 +14552,10 @@
             "description" : "The rate, measured in beats per minute.",
             "comment" : "Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required."
           },
-          "ac0.32" : {
+          "ac0.52" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.32",
+            "code" : "ac0.52",
             "description" : "*"
           },
           "at0002" : {
@@ -14849,10 +14849,10 @@
             "description" : "*The rate, measured in beats per minute.(en)",
             "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
           },
-          "ac0.32" : {
+          "ac0.52" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
+            "code" : "ac0.52",
             "description" : "*"
           },
           "at0002" : {
@@ -15146,10 +15146,10 @@
             "description" : "*The rate, measured in beats per minute.(en)",
             "comment" : "*Run-time name constraints have been specified, in order to simplify the renaming of this data element to Pulse Rate or Heart Rate, as required.(en)"
           },
-          "ac0.32" : {
+          "ac0.52" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.32",
+            "code" : "ac0.52",
             "description" : "*"
           },
           "at0002" : {
@@ -15339,6 +15339,106 @@
         "ac0.32" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.32",
+          "members" : [ "at1027" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ "at1027" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at1027" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at1027" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at1027" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ "at1027" ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ "at1027" ]
+        },
+        "ac0.39" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.39",
+          "members" : [ "at1027" ]
+        },
+        "ac0.40" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.40",
+          "members" : [ "at1027" ]
+        },
+        "ac0.41" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.41",
+          "members" : [ "at1027" ]
+        },
+        "ac0.42" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.42",
+          "members" : [ "at1027" ]
+        },
+        "ac0.43" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.43",
+          "members" : [ "at1027" ]
+        },
+        "ac0.44" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.44",
+          "members" : [ "at1027" ]
+        },
+        "ac0.45" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.45",
+          "members" : [ "at1027" ]
+        },
+        "ac0.46" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.46",
+          "members" : [ "at1027" ]
+        },
+        "ac0.47" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.47",
+          "members" : [ "at1027" ]
+        },
+        "ac0.48" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.48",
+          "members" : [ "at1027" ]
+        },
+        "ac0.49" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.49",
+          "members" : [ "at1027" ]
+        },
+        "ac0.50" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.50",
+          "members" : [ "at1027" ]
+        },
+        "ac0.51" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.51",
+          "members" : [ "at1027" ]
+        },
+        "ac0.52" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.52",
           "members" : [ "at1027" ]
         }
       }
