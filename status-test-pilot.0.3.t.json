@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "0afe720b35316cb169a7327c0ce31a5d",
+      "MD5-CAM-1.0.1" : "42830344837f4fb287886616d09c39ed",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -6229,26 +6229,16 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "property",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "terminologyId" : {
-                                "value" : "openehr"
-                              },
-                              "constraint" : [ "125" ]
-                            } ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
+                              "rmAttributeName" : "units",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
+                              "rmAttributeName" : "magnitude",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
@@ -6258,20 +6248,23 @@
                             "tuples" : [ {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
-                                  "upper" : 1000.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "upper" : 300.0,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false
                                 } ]
                               }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "mm[Hg]" ]
-                              }, {
                                 "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
                                 "constraint" : [ {
                                   "lower" : 0,
                                   "upper" : 0,
@@ -6297,26 +6290,16 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_QUANTITY",
                           "occurrences" : "1..1",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "property",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "terminologyId" : {
-                                "value" : "openehr"
-                              },
-                              "constraint" : [ "125" ]
-                            } ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ {
                             "@type" : "C_ATTRIBUTE_TUPLE",
                             "members" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "magnitude",
+                              "rmAttributeName" : "units",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "units",
+                              "rmAttributeName" : "magnitude",
                               "children" : [ ]
                             }, {
                               "@type" : "C_ATTRIBUTE",
@@ -6326,20 +6309,23 @@
                             "tuples" : [ {
                               "@type" : "C_PRIMITIVE_TUPLE",
                               "members" : [ {
+                                "@type" : "C_STRING",
+                                "rmTypeName" : "STRING",
+                                "constraint" : [ "mm[Hg]" ]
+                              }, {
                                 "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
                                 "constraint" : [ {
                                   "lower" : 0.0,
-                                  "upper" : 1000.0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
+                                  "upper" : 200.0,
+                                  "lowerUnbounded" : true,
+                                  "upperUnbounded" : true,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : false
                                 } ]
                               }, {
-                                "@type" : "C_STRING",
-                                "constraint" : [ "mm[Hg]" ]
-                              }, {
                                 "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
                                 "constraint" : [ {
                                   "lower" : 0,
                                   "upper" : 0,
