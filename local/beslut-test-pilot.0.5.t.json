@@ -24,7 +24,7 @@
       "Sign off" : "",
       "Speciality" : "",
       "User roles" : "",
-      "MD5-CAM-1.0.1" : "345ae39f23732e5d96505910539d8835",
+      "MD5-CAM-1.0.1" : "448b978cfaf8082aa9d5b2926ebc38dc",
       "PARENT:MD5-CAM-1.0.1" : "359240E886E60B5DF8FF06904482F72E"
     },
     "details" : {
@@ -207,28 +207,10 @@
     "conceptCode" : "at0000",
     "termDefinitions" : {
       "en" : {
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
-          "text" : "Request for service",
-          "description" : "Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care."
-        },
         "at0.3" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.3",
           "text" : "EVALUATION",
-          "description" : "*"
-        },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0042" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0042",
-          "text" : "CLUSTER",
           "description" : "*"
         },
         "at0.7" : {
@@ -251,28 +233,10 @@
         }
       },
       "ar-sy" : {
-        "at0000.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0000.1",
-          "text" : "*Request for service(en)",
-          "description" : "*Document sent from one treating healthcare provider or organisation to another, for the purpose of requesting advice, a service or transfer of care.(en)"
-        },
         "at0.3" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.3",
           "text" : "EVALUATION",
-          "description" : "*"
-        },
-        "at0001" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0001",
-          "text" : "ITEM_TREE",
-          "description" : "*"
-        },
-        "at0042" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0042",
-          "text" : "CLUSTER",
           "description" : "*"
         },
         "at0.7" : {
@@ -680,68 +644,6 @@
             "text" : "Samtycke till beslut om kirurgi",
             "description" : "Identification of the procedure, clinical trial or healthcare-related activity (including correct side/correct site, where appropriate) against which the consent status and details are recorded."
           },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "Procedure/Trial/Activity Description",
-            "description" : "Narrative description of the procedure, clinical trial or healthcare-related activity."
-          },
-          "at0031.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0031.1",
-            "text" : "Intent",
-            "description" : "Description of the intent of the procedure, clinical trial or healthcare-related activity."
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007.1",
-            "text" : "Reason",
-            "description" : "Reason that the care pathway step for the identified procedure, clinical trial or healthcare-related activity was carried out.",
-            "comment" : "For example, the reason for 'consent refused' or 'consent withdrawn'."
-          },
-          "at0008.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.1",
-            "text" : "Start Date",
-            "description" : "Date, and optional time, when validity of the informed consent becomes active."
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "End Date",
-            "description" : "Date, and optional time, when validity of the informed consent ceased."
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Caveat",
-            "description" : "Details of any qualifications or exemptions to the informed consent."
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "Evidence of Consent",
-            "description" : "Evidence of consent status.",
-            "comment" : "For example, audio of consent being requested or image of written consent obtained."
-          },
-          "at0025.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025.1",
-            "text" : "Consent Document Used",
-            "description" : "Identification of the consent form or document used."
-          },
-          "at0026.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.1",
-            "text" : "Review Date",
-            "description" : "Date when consent status is due for review."
-          },
-          "at0033.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0033.1",
-            "text" : "Patient Information",
-            "description" : "Details about Patient Information made available to the subject or subject's agent."
-          },
           "at0004.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0004.1",
@@ -753,129 +655,13 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : "*"
-          },
-          "at0011.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011.1",
-            "text" : "Consent Description",
-            "description" : "Narrative description of the informed consent required or recorded prior to performing the proposed procedure, clinical trial or healthcare-related activity."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
         "ru" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Информированное согласие",
-            "description" : "Запись о состоянии и  деталях информированного согласия пациента (доверенного лица) на предлагаемую процедуру, исследование или другую активность (включая лечение или обследование), основанного на полном понимании и принятии фактов, осложнений и возможных последствий. "
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Процедура/дейстиве",
-            "description" : "Название процедуры/действия (включая область), на которую записан статус согласия"
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "Описание действия",
-            "description" : "Текстовое описание процедуры, действия или клинического исследования"
-          },
-          "at0031.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0031.1",
-            "text" : "Цель",
-            "description" : "Описание цели процедуры/исследования или другой деятельности, связанной со здоровьем."
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007.1",
-            "text" : "Причина",
-            "description" : "Причина задержки получения согласия",
-            "comment" : "например, почему согласие не подписано или изъято"
-          },
-          "at0008.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008.1",
-            "text" : "Дата начала",
-            "description" : "Дата, при необходимости, время, когда полученное согласие стало активным "
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Конец",
-            "description" : "Дата (время), когда согласие утратило свою силу. "
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Особые указания",
-            "description" : "Подробности по любым уточнениям информированного согласия"
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "Доказательства согласия",
-            "description" : "Доказательства статуса согласия",
-            "comment" : "Например, фотография рукописного согласия или аудиозапись устного согласия"
-          },
-          "at0025.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0025.1",
-            "text" : "Используемый документ",
-            "description" : "Идентификатор формы или документа согласия"
-          },
-          "at0026.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0026.1",
-            "text" : "Дата пересмотра",
-            "description" : "Дата, когда статус согласия был изменен"
-          },
-          "at0033.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0033.1",
-            "text" : "*Patient Information(en)",
-            "description" : "*Details about Patient Information made available to the subject or subject's agent.(en)"
-          },
-          "at0004.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004.1",
-            "text" : "Форма согласия",
-            "description" : "Форма согласия"
-          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
-            "description" : "*"
-          },
-          "at0011.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011.1",
-            "text" : "Описание согласия",
-            "description" : "текстовое описание информированного согласия, требующегося для проведения процедуры или других действий"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0024" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0024",
-            "text" : "ITEM_TREE",
             "description" : "*"
           }
         }
@@ -1345,282 +1131,9 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "es" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "*Problem/Diagnosis(en)",
-            "description" : "*Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.(en)",
-            "comment" : "*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.(en)"
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Descripción clínica",
-            "description" : "Descripción narrativa del problema/diagnóstico"
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077.1",
-            "text" : "*Date of onset(en)",
-            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\r\n(en)"
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Momento de reconocimiento del problema",
-            "description" : "Fecha y hora, estimado o real, cuándo el problema/diagnóstico es detectado por un profesional de la salud"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Severidad",
-            "description" : "Valoración de la severidad del problema/diagnóstico"
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072.1",
-            "text" : "Progreso",
-            "description" : "Descripción narrativa del progreso del problema/diagnóstico desde su comienzo"
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "Momento de resolución",
-            "description" : "Día y hora, estimado o real, en que el problema/diagnóstico fue resuelto o entró en remisión"
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069.1",
-            "text" : "Comentario",
-            "description" : "Comentario narrativo adicional sobre el problema/diagnóstico no capturado en otros campos"
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "*Problem/Diagnosis name(en)",
-            "description" : "*Identification of the problem or diagnosis, by name.(en)",
-            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "*Body site(en)",
-            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
-            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \r\n\r\n(en)"
-          },
-          "at0073.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073.1",
-            "text" : "*Diagnostic certainty(en)",
-            "description" : "*The level of confidence in the identification of the diagnosis.(en)"
-          },
-          "at0070.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070.1",
-            "text" : "Última actualización",
-            "description" : "Fecha en la que el problema/diagnóstico fue actualizado"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0032" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0032",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "es-ar" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Problema/Diagnóstico",
-            "description" : "Detalles acerca de una condición de salud, lesión, incapacidad o cualquier otra cuerstión, univocamente identificadas, que impacta sobre el bienestar físico, mental y/o social de un individuo",
-            "comment" : "La delineación entre el alcance de un problema versus el diagnóstico puede no ser fácil de lograr en la práctica. A los fines de la documentación clínica mediante este arquetipo, problema y diagnóstico son considerados un continuo, donde niveles incrementales de detalles y evidencia de apoyo otorgan mas peso a la etiqueta de \"diagnóstico\"."
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Descripción clínica",
-            "description" : "Descripción narrativa del problema o diagnóstico.",
-            "comment" : "Utilizar para proveer trasfondo y contexto, incluyendo evolución, episodios o exacerbaciones, progreso y cualquier otro detalles relevante acerca del problema o diagnóstico."
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077.1",
-            "text" : "Fecha/hora de aparición",
-            "description" : "Fecha y hora estimadas o confirmadas en las cuales los signos o síntomas del problema fueron observados por primera vez.",
-            "comment" : "Los datos registrados o importados como \"Edad a la aparición\" deberán ser convertidos a una fecha utilizando la fecha de nacimiento del sujeto."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Fecha y hora del reconocimiento clínico",
-            "description" : "Fecha y hora estimadas o confirmadas en las cuales el diagnóstico o problema fue reconocido por el profesional de la salud.",
-            "comment" : "El uso de fechas parciales es aceptable. Si el sujeto de cuidados tiene menos de un año de edad, se requiere la fecha completa o al menos el año y mes para permitir cálculos adecuados (si por ejemplo se utiliza para guiar un apoyo a la toma de decisiones). Los datos registrados o importados como \"Edad a la aparición\" deberán ser convertidos a una fecha utilizando la fecha de nacimiento del sujeto."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Severidad",
-            "description" : "Una evaluación de la severidad general del problema o diagnóstico.",
-            "comment" : "Si la severidad del problema o diagnóstico esta incluida en su nombre mediante códigos precoordinados, este dato se torna redundante. Nota: una gradación ,as específica de severidad puede ser registrada utilizando el slot de Detalles específicos."
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072.1",
-            "text" : "Descripción del curso",
-            "description" : "Descripción narrativa del curso del problema o diagnóstico desde su aparición."
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "Fecha/hora de resolución",
-            "description" : "Fecha y hora estimadas o confirmadas en las cuales este problema o diagnóstico remitió o se resolvió, determinadas de un profesional de la salud.",
-            "comment" : "El uso de fechas parciales es aceptable. Si el sujeto de cuidados tiene menos de un año de edad, se requiere la fecha completa o al menos el año y mes para permitir cálculos adecuados (si por ejemplo se utiliza para guiar un apoyo a la toma de decisiones)."
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069.1",
-            "text" : "Comentario",
-            "description" : "Narrativa adicional acerca del problema o diagnóstico que no ha sido consignada en otros campos."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Nombre del problema/diagnóstico",
-            "description" : "Identificación del problema o diagnóstico, por nombre.",
-            "comment" : "Se prefiere la codificación del nombre del problema o diagnóstico mediante una terminología cuando esto sea posible."
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "Sitio corporal",
-            "description" : "Identificación de un sitio corporal simple para la localización o el problema.",
-            "comment" : "Se prefiere la codificación de la localización anatómica mediante una terminología cuando esto sea posible.\r\nUtilícese este dato para registrar localizaciones anatómicas precoordinadas. Si los requerimientos para el registro de una localización anatómica son determinadas en tiempo de ejecución por parte de la aplicación, o se requiere un modelado más complejo tal como una localización relativa, utilícese CLUSTER.anatomical_location or CLUSTER.relative_location dentro del slot \"localización anatómica estructurada\" en este arquetipo. Las ocurrencias de este dato son ilimitadas para así permitir escenarios clínicos tales como la descripción de un rash en múltiples localizaciones pero donde todos los demás atributos son idénticos. Si la localización anatómica esta incluida en el nombre del problema o diagnóstico mediante códigos precoordinados, este dato se torna redundante."
-          },
-          "at0073.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073.1",
-            "text" : "Certeza diagnóstica",
-            "description" : "El nivel de certeza de la identificación del diagnóstico."
-          },
-          "at0070.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070.1",
-            "text" : "Última actualización.",
-            "description" : "La fecha de la última actualización de este problema o diagnóstico."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0032" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0032",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "de" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "*Problem/Diagnosis(en)",
-            "description" : "*Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.(en)",
-            "comment" : "*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.(en)"
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "*Clinical description(en)",
-            "description" : "*Narrative description about the problem or diagnosis.(en)",
-            "comment" : "*Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis.(en)"
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077.1",
-            "text" : "*Date of onset(en)",
-            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\r\n(en)"
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "*Date/time clinically recognised(en)",
-            "description" : "*Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.(en)",
-            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*Severity(en)",
-            "description" : "*An assessment of the overall severity of the problem or diagnosis.(en)",
-            "comment" : "*If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.(en)"
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072.1",
-            "text" : "*Course description(en)",
-            "description" : "*Narrative description about the course of the problem or diagnosis since onset.(en)"
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "*Date/time of resolution(en)",
-            "description" : "*Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.(en)",
-            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.(en)"
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069.1",
-            "text" : "*Comment(en)",
-            "description" : "*Additional narrative about the problem or diagnosis not captured in other fields.(en)"
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "*Problem/Diagnosis name(en)",
-            "description" : "*Identification of the problem or diagnosis, by name.(en)",
-            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "*Body site(en)",
-            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
-            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \r\n\r\n(en)"
-          },
-          "at0073.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073.1",
-            "text" : "*Diagnostic certainty(en)",
-            "description" : "*The level of confidence in the identification of the diagnosis.(en)"
-          },
-          "at0070.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070.1",
-            "text" : "*Last updated(en)",
-            "description" : "*The date this problem or diagnosis was last updated.(en)"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0032" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0032",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
+        "es" : { },
+        "es-ar" : { },
+        "de" : { },
         "en" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1629,52 +1142,12 @@
             "description" : "Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.",
             "comment" : "Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'."
           },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Clinical description",
-            "description" : "Narrative description about the problem or diagnosis.",
-            "comment" : "Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis."
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077.1",
-            "text" : "Date/time of onset",
-            "description" : "Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.",
-            "comment" : "Data captured/imported as \"Age at onset\" should be converted to a date using the subject's date of birth."
-          },
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
             "text" : "Tidpunkt för diagnos",
             "description" : "Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.",
             "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of clinical recognition\" should be converted to a date using the subject's date of birth."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Severity",
-            "description" : "An assessment of the overall severity of the problem or diagnosis.",
-            "comment" : "If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT."
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072.1",
-            "text" : "Course description",
-            "description" : "Narrative description about the course of the problem or diagnosis since onset."
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "Date/time of resolution",
-            "description" : "Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.",
-            "comment" : "Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as \"Age at time of resolution\" should be converted to a date using the subject's date of birth.\r\n"
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069.1",
-            "text" : "Comment",
-            "description" : "Additional narrative about the problem or diagnosis not captured in other fields."
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -1695,306 +1168,11 @@
             "code" : "at0073.1",
             "text" : "Grad av säkerhet",
             "description" : "The level of confidence in the identification of the diagnosis."
-          },
-          "at0070.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070.1",
-            "text" : "Last updated",
-            "description" : "The date this problem or diagnosis was last updated."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0032" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0032",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
-        "ar-sy" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "*Problem/Diagnosis(en)",
-            "description" : "*Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.(en)",
-            "comment" : "*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.(en)"
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "*Clinical description(en)",
-            "description" : "*Narrative description about the problem or diagnosis.(en)",
-            "comment" : "*Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis.(en)"
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077.1",
-            "text" : "*Date of onset(en)",
-            "description" : "*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.\r\n(en)"
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "*Date/time clinically recognised(en)",
-            "description" : "*Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.(en)",
-            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.(en)"
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "*Severity(en)",
-            "description" : "*An assessment of the overall severity of the problem or diagnosis.(en)",
-            "comment" : "*If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.(en)"
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072.1",
-            "text" : "*Course description(en)",
-            "description" : "*Narrative description about the course of the problem or diagnosis since onset.(en)"
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "*Date/time of resolution(en)",
-            "description" : "*Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.(en)",
-            "comment" : "*Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.(en)"
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069.1",
-            "text" : "*Comment(en)",
-            "description" : "*Additional narrative about the problem or diagnosis not captured in other fields.(en)"
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "*Problem/Diagnosis name(en)",
-            "description" : "*Identification of the problem or diagnosis, by name.(en)",
-            "comment" : "*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)"
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "*Body site(en)",
-            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
-            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \r\n\r\n(en)"
-          },
-          "at0073.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073.1",
-            "text" : "*Diagnostic certainty(en)",
-            "description" : "*The level of confidence in the identification of the diagnosis.(en)"
-          },
-          "at0070.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070.1",
-            "text" : "*Last updated(en)",
-            "description" : "*The date this problem or diagnosis was last updated.(en)"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0032" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0032",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "pt-br" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Problema /Diagnóstico",
-            "description" : "Detalhes sobre uma única condição de saúde identificada, lesões, deficiência ou qualquer outra questão que tenha impacto sobre o bem-estar físico, mental e / ou social de um indivíduo.",
-            "comment" : "Delimitação clara entre o âmbito de um problema em comparação a um diagnóstico, não é fácil de se conseguir na prática. Para fins de documentação clínica com este arquétipo, problema e diagnóstico são considerados como uma continuidade, com níveis crescentes de detalhes e evidência de apoio, geralmente fornecendo peso para o rótulo de \"diagnóstico\"."
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Descrição clínica",
-            "description" : "Descrição narrativa sobre o problema ou diagnóstico.",
-            "comment" : "Usar para fornecer conhecimento e contexto, incluindo evolução, episódios ou exacerbações, progresso e quaisquer outros detalhes relevantes, sobre o problema ou diagnóstico."
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077.1",
-            "text" : "Data / tempo de início",
-            "description" : "Data / tempo, estimada ou real, que os sinais ou sintomas do problema / diagnóstico foram observados pela primeira vez.",
-            "comment" : "Os dados capturados / importados como \"A idade de início\" devem ser convertidos para uma data, usando o sujeito data de nascimento."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Data / hora da reconhecimento clínico",
-            "description" : "Data / hora, estimada ou real, que o diagnóstico ou o problema foi reconhecido por um profissional de saúde.",
-            "comment" : "Datas parciais são aceitáveis. \r\nSe o tema do cuidado está com idade inferior a um ano, então a data completa ou no mínimo o mês e o ano são necessários para permitir cálculos de idade precisos, por exemplo, se usado para conduzir apoio à decisão. Os dados capturados / importados como \"Idade no momento do reconhecimento clínico\" deve ser convertida para uma data usando o sujeito data de nascimento."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Severidade",
-            "description" : "Uma avaliação global da severidade do problema ou diagnóstico.",
-            "comment" : "Se a severidade está incluída no nome do Problema / diagnóstico através de códigos pré-coordenados, este elemento de dados torna-se redundante. \r\nNota: a classificação mais específica da gravidade pode ser gravada utilizando os detalhes específicos SLOT."
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072.1",
-            "text" : "Descrição do curso",
-            "description" : "Descrição narrativa sobre o curso do problema ou diagnóstico, desde o início."
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "Data /tempo de resolução",
-            "description" : "Data / tempo, estimado ou atual, de resolução ou de dispensa desse problema ou diagnóstico, como determinado por um profissional de saúde.",
-            "comment" : "Datas parciais são aceitáveis. \r\nSe o tema do cuidado está com idade inferior a um ano, então a data completa ou no mínimo o mês e o ano são necessários para permitir cálculos de idade precisos, por exemplo, se usado para conduzir apoio à decisão. Os dados capturados / importados como \"Idade na ocasião da resolução\" deve ser convertida para uma data usando o sujeito data de nascimento."
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069.1",
-            "text" : "Comentário",
-            "description" : "Narrativa adicional sobre o problema ou diagnóstico, não capturados em outros campos."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Nome do Problema / Diagnóstico",
-            "description" : "Identificação do problema ou diagnóstico, por nome.",
-            "comment" : "Quando possível, é preferível usar a codificação do nome do problema ou diagnóstico com uma terminologia."
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "Local do corpo",
-            "description" : "Simples identificação de um local do corpo para a localização do problema ou diagnóstico.",
-            "comment" : "A codificação do nome da localização anatômica com uma terminologia é preferível, quando possível.\r\nUtilize este elemento de dados para gravar localizações anatômicas precoordenadas. Se os requisitos para gravar a localização anatômica são determinados em tempo real através da aplicação ou requerem uma modelagem mais complexa, como localizações relativas, em seguida, use o CLUSTER.anatomical_location ou CLUSTER.relative_location dentro do SLOT 'localização anatômica estruturada\" neste arquétipo.\r\nOcorrências para este elemento de dados são ilimitadas para permitir cenários clínicos tais como a descrição de uma erupção cutânea em vários locais, mas em que todos os outros atributos são idênticos. Se a localização anatômica é incluída ao nome do Problema / diagnóstico, através de códigos pré-coordenados, este elemento de dados torna-se redundante."
-          },
-          "at0073.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073.1",
-            "text" : "Certeza do diagnóstico",
-            "description" : "O nível de confiança da identificação do diagnóstico."
-          },
-          "at0070.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070.1",
-            "text" : "Ultima atualização",
-            "description" : "A data este problema ou diagnóstico foi atualizado pela última vez."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0032" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0032",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "*Problem/Diagnosis(en)",
-            "description" : "*Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.(en)",
-            "comment" : "*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.(en)"
-          },
-          "at0009.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009.1",
-            "text" : "Klinisk beskrivelse",
-            "description" : "Fritekstbeskrivelse av problemet eller diagnosen.\r\n\r\n\r\n\r\n",
-            "comment" : "Brukes til å gi bakgrunn og kontekst, inkludert utvikling, episoder eller forverringer, fremgang og alle andre relevante detaljer, om problemet eller diagnosen."
-          },
-          "at0077.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0077.1",
-            "text" : "Dato for debut",
-            "description" : "Antatt eller faktisk dato/tid da tegn eller symptomer på problemet eller diagnosen først ble observert."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Dato/tid for klinisk stadfestelse",
-            "description" : "Antatt eller faktisk dato/tid da diagnosen eller problemet ble bekreftet av helsepersonell.",
-            "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer."
-          },
-          "at0005.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005.1",
-            "text" : "Alvorlighetsgrad",
-            "description" : "En vurdering av problemet eller diagnosens overordnede alvorlighetsgrad.",
-            "comment" : "Dersom alvorlighetsgrad inkluderes i feltet \"Problem/diagnosenavn\" via prekoordinerte koder blir dette dataelementet overflødig. Merk: Mer spesifikk gradering av alvorlighetsgrad kan registreres ved å bruke SLOTet \"Spesifikke detaljer\""
-          },
-          "at0072.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0072.1",
-            "text" : "Forløpsbeskrivelse",
-            "description" : "Fritekstbeskrivelse av forløpet av problemet eller diagnosen siden debut."
-          },
-          "at0030.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030.1",
-            "text" : "Dato/tid for bedring",
-            "description" : "Estimert eller faktisk dato/tid for bedring eller remisjon av det aktuelle problemet eller diagnosen, fastslått av helsepersonell.\r\n\r\n\r\n\r\n",
-            "comment" : "Delvise datoer er tillatt. Dersom individet er under ett år gammel, må komplett dato eller som et minimum måned og år oppgis for å muliggjøre presise beregninger av alder, f.eks. ved bruk i beslutningsstøttesystemer."
-          },
-          "at0069.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0069.1",
-            "text" : "Kommentar",
-            "description" : "Utdypende fritekst om problemet eller diagnosen, som ikke passer i andre felt."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Problem/Diagnosenavn",
-            "description" : "Identifisering av problemet eller diagnosen ved hjelp av navn.\r\n\r\n",
-            "comment" : "Koding av navnet på problemet eller diagnosen med en terminologi er foretrukket, der det er mulig."
-          },
-          "at0012.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0012.1",
-            "text" : "*Body site(en)",
-            "description" : "*Identification of a simple body site for the location of the problem or diagnosis.(en)",
-            "comment" : "*Coding of the name of the anatomical location with a terminology is preferred, where possible.\r\nUse this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. \r\n\r\n(en)"
-          },
-          "at0073.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0073.1",
-            "text" : "Diagnostisk sikkerhet",
-            "description" : "Grad av sikkerhet i identifikasjonen av diagnosen."
-          },
-          "at0070.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0070.1",
-            "text" : "Sist oppdatert",
-            "description" : "Datoen da problemet eller diagnosen sist ble oppdatert."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0032" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0032",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        }
+        "ar-sy" : { },
+        "pt-br" : { },
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -2672,74 +1850,12 @@
             "text" : "Kirurgisk huvudåtgärd",
             "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency."
           },
-          "at0148.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0148.1",
-            "text" : "Service type",
-            "description" : "Category of service requested.",
-            "comment" : "For example: hospital or home care delivery. Coding of the 'Service type' with a coding system is desirable, if available. If the 'Service name' was coded, it is possible for this data point to be derived from the code."
-          },
-          "at0062.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062.1",
-            "text" : "Reason for request",
-            "description" : "A short phrase describing the reason for the request.",
-            "comment" : "Coding of the 'Reason for request' with a coding system is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required."
-          },
-          "at0064.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064.1",
-            "text" : "Reason description",
-            "description" : "Narrative description about the reason for request."
-          },
-          "at0065.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065.1",
-            "text" : "Intent",
-            "description" : "Description of the intent for the request.",
-            "comment" : "For example: a referral to a specialist may have the intent of the specialist taking over responsibility for care of the patient, or it may be to provide a second opinion on treatment options. Coding of the 'Intent' with a coding system is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required."
-          },
-          "at0147.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0147.1",
-            "text" : "Indefinite?",
-            "description" : "The valid period for this request is open ended and has no date of expiry.",
-            "comment" : "Record as TRUE to record explicity that the request has no expiry date."
-          },
-          "at0076.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0076.1",
-            "text" : "Supplementary information",
-            "description" : "Supplementary information will be following request.",
-            "comment" : "Record as TRUE if additional information has been identified and will be forwarded when available. For example: pending test results."
-          },
           "at0121.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0121.1",
             "text" : "Planerad kirurgisk huvudåtgärd",
             "description" : "Identification of the single service or activity requested, by name.",
             "comment" : "Coding of the 'Service name' with a coding system is desirable, if available."
-          },
-          "at0135.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0135.1",
-            "text" : "Description",
-            "description" : "Narrative description about the service requested.",
-            "comment" : "This data point should be used to describe the named service in more detail, including how it should be delivered, patient concerns and issues that might be encountered in delivering the service."
-          },
-          "at0152.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152.1",
-            "text" : "Clinical indication",
-            "description" : "The clinical reason for the ordered service.",
-            "comment" : "For example: 'Angina' or 'Type 1 Diabetes mellitus'. Coding of the clinical indication with a terminology is preferred, where possible. This data element allows multiple occurrences."
-          },
-          "at0153.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0153.1",
-            "text" : "Initial request",
-            "description" : "First ever request for the specified service.",
-            "comment" : "Record as TRUE if this is the first ever request for this service. This data element may be used by some systems to support automatic scheduling of appointments."
           },
           "at0068.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -2761,222 +1877,15 @@
             "text" : "Kommentar",
             "description" : "Additional narrative about the service request not captured in other fields."
           },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Current Activity",
-            "description" : "Current Activity."
-          },
-          "at0145.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0145.1",
-            "text" : "Service period start",
-            "description" : "The date/time that marks the beginning of the valid period of time for delivery of this service.",
-            "comment" : "This date/time is the equivalent to the earliest possible date for service delivery. For example: sometimes a certain amount of time must pass before a service can be performed, for example some procedures can only be performed once the patient has stopped taking medications for a specific amount of time."
-          },
-          "at0144.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0144.1",
-            "text" : "Service period expiry",
-            "description" : "The date/time that marks the conclusion of the clinically valid period of time for delivery of this service.",
-            "comment" : "This date/time is the equivalent to the latest possible date for service delivery or to the date of expiry for this request. For example: a service may be required to be completed before another event, such as scheduled surgery."
-          },
-          "at0078.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078.1",
-            "text" : "Information description",
-            "description" : "Description of the supplementary information."
-          },
           "at0010.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0010.1",
             "text" : "Beslutsfattare",
             "description" : "The local identifier assigned by the requesting clinical system.",
             "comment" : "Usually equivalent to the HL7 Placer Order Identifier."
-          },
-          "at0127.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0127.1",
-            "text" : "Request status",
-            "description" : "The status of the request for service as indicated by the requester.",
-            "comment" : "Status is used to denote whether this is the initial request, or a follow-up request to change or provide supplementary information."
-          },
-          "at0011.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011.1",
-            "text" : "Receiver order identifier",
-            "description" : "The local identifier assigned to the request by the clinician or organisation receiving the request for service.",
-            "comment" : "Usually equivalent to the HL7 Filler Order Identifier."
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
-        "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Helsetjenesteforespørsel",
-            "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
-          },
-          "at0148.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0148.1",
-            "text" : "Tjenestetype",
-            "description" : "Kategorisering av den forespurte tjenesten.",
-            "comment" : "For eksempel: utføres i sykehus eller av hjemmetjenesten. Koding av tjenestetypen med et kodeverk er ønskelig, dersom tilgjengelig. Dersom \"Tjenestenavn\" er kodet kan dette elementet i noen tilfeller utledes fra koden."
-          },
-          "at0062.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062.1",
-            "text" : "Årsak for forespørsel",
-            "description" : "En kort beskrivelse av årsaken for forespørselen.",
-            "comment" : "Koding av forespørselsårsaken med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster, for å gjøre det mulig for brukeren å om nødvendig registrere flere svar."
-          },
-          "at0064.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064.1",
-            "text" : "Årsaksbeskrivelse",
-            "description" : "Fritekstbeskrivelse av årsaken til forespørselen."
-          },
-          "at0065.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065.1",
-            "text" : "Hensikt",
-            "description" : "Beskrivelse av hensikten med forespørselen.",
-            "comment" : "For eksempel kan en henvisning til en spesialist ha som hensikt at spesialisten tar over oppfølgingsansvaret for pasienten, eller det kan være å få en second opinion for behandlingsmuligheteter. Koding av hensikten med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster, for å gjøre det mulig for brukeren å om nødvendig registrere flere svar."
-          },
-          "at0147.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0147.1",
-            "text" : "Uavgrenset?",
-            "description" : "Tidsintervallet tjenesten kan utføres i er uavgrenset.",
-            "comment" : "Registreres som SANN for å eksplisitt registrere at forespørselen ikke har noen utløpstid."
-          },
-          "at0076.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0076.1",
-            "text" : "Supplerende informasjon",
-            "description" : "Supplerende informasjon vil ettersendes forespørselen.",
-            "comment" : "Registrer som SANN dersom ytterligere informasjon er identifisert, og vil bli ettersendt når den er tilgjengelig. For eksempel: ufullstendige prøvesvar."
-          },
-          "at0121.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0121.1",
-            "text" : "Tjenestenavn",
-            "description" : "Navn på forespurt tjeneste.",
-            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig."
-          },
-          "at0135.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0135.1",
-            "text" : "Beskrivelse",
-            "description" : "Fritekstbeskrivelse av tjenesten som forespørres.",
-            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
-          },
-          "at0152.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152.1",
-            "text" : "Klinisk indikasjon",
-            "description" : "Den kliniske årsaken for den forespurte tjenesten.",
-            "comment" : "For eksempel \"angina\" eller \"diabetes mellitus type 1\". Koding av indikasjonen med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster."
-          },
-          "at0153.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0153.1",
-            "text" : "Første forespørsel",
-            "description" : "Første forespørsel om den aktuelle tjenesten.",
-            "comment" : "Registreres som SANN dersom dette er den første forespørselen om den aktuelle tjenesten. Dette dataelementet brukes av noen systemer for å understøtte automatisk timeplanlegging."
-          },
-          "at0068.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068.1",
-            "text" : "Hastegrad",
-            "description" : "Hastegrad for utførelse av tjenesten.",
-            "comment" : "Spesifikke definisjoner av \"akutt\" og \"haster\" vil variere mellom kliniske settinger, kliniske systemer, og forespørselens natur, og de er derfor ikke definert i arketypen. Dersom det er nødvendig å bruke eksplisitt timing, bør \"Tjenesteintervall\" oppgis."
-          },
-          "at0040.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0040.1",
-            "text" : "Dato/tid forfall",
-            "description" : "Dato/tid, eller akseptabelt intervall av dato/tid, da tjenesten skal utføres.",
-            "comment" : "Dette dataelementet tillater registrering av timing for én tjeneste, enten som dato/tid, intervall av dato/tid, eller som en tekstbeskrivelsen som kan understøtte \"neste tilgjengelige\". I praksis vil klinikere ofte tenke i omtrentlig timing, for eksempel \"revurdering om 3 måneder, 6 måneder eller 12 måneder. Siden kliniske systemer trenger mer eksakte tidsangivelser, vil \"3 måneder\" som regel konverteres til en eksakt dato 3 måneder fra registreringsdatoen, og lagres i dette dataelementet. Dersom det er behov for kompleks timing eller sekvenser av timing, bruk arketypen CLUSTER.service_direction i SLOTet \"Kompleks timing\". I disse tilfellene blir dette dataelementet redundant."
-          },
-          "at0150.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0150.1",
-            "text" : "Kommentar",
-            "description" : "Ytterligere fritekst om tjenesteforespørselen, som ikke er dekket av andre elementer."
-          },
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Forespørsel",
-            "description" : "Beskrivelse av tjenesten som forespørres."
-          },
-          "at0145.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0145.1",
-            "text" : "Tjenesteintervall start",
-            "description" : "Dato/tiden som markerer starten på tidsintervallet tjenesten kan utføres i.",
-            "comment" : "Denne dato/tiden representerer den tidligste datoen/tiden tjenesten kan utføres på. For eksempel må noen ganger en viss tid løpe før en tjeneste kan utføres, f.eks. ved noen prosedyrer er en avhengig av at pasienten har seponert legemidler i en periode før prosedyren."
-          },
-          "at0144.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0144.1",
-            "text" : "Tjenesteintervall slutt",
-            "description" : "Dato/tiden som markerer slutten på tidsintervallet tjenesten kan utføres i.",
-            "comment" : "Denne dato/tiden representerer den seneste datoen/tiden tjenesten kan utføres på. For eksempel i noen tilfeller må en tjeneste være utført før en annen hendelse, f.eks. planlagt kirurgi."
-          },
-          "at0078.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078.1",
-            "text" : "Informasjonsbeskrivelse",
-            "description" : "Beskrivelse av den supplerende informasjonen."
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Rekvisisjonsidentifikator",
-            "description" : "Den lokale identifikatoren tilordnet av systemet til den som forespør tjenesten.",
-            "comment" : "Som regel tilsvarende HL7 Placer Order Identifier."
-          },
-          "at0127.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0127.1",
-            "text" : "Rekvisisjonsstatus",
-            "description" : "Status for forespørselen oppgitt av rekvirenten.",
-            "comment" : "Status brukes for å vise om dette er den primære forespørselen, en endring eller supplerende informasjon."
-          },
-          "at0011.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011.1",
-            "text" : "Mottakers rekvisisjonsidentifikator",
-            "description" : "Rekvisisjonens identifikator, tilordnet av den som mottar forespørselen.",
-            "comment" : "Som regel tilsvarende HL7 Filler Order Identifier."
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        }
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -3292,28 +2201,9 @@
             "code" : "at0003.1",
             "text" : "Beskrivning av operation",
             "description" : "Justifications for the recommendation."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
         "es-ar" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Recomendación",
-            "description" : "Una sugerencia, consejo o propuesta para el manejo clínico."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Recomendación",
-            "description" : "Descripción narrativa de la recomendación",
-            "comment" : "Puede ser codificada mediante una terminología si así se lo requiere."
-          },
           "at0002.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.2",
@@ -3327,34 +2217,9 @@
             "text" : "Recomendación #2",
             "description" : "Descripción narrativa de la recomendación",
             "comment" : "Puede ser codificada mediante una terminología si así se lo requiere."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "*Rationale(en)",
-            "description" : "*Justifications for the recommendation.(en)"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
         "pt-br" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Recomendação",
-            "description" : "Uma sugestão, conselho ou proposta para manejo clínico."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Recomendação",
-            "description" : "Descrição narrativa da recomendação.",
-            "comment" : "Pode ser codificada, utilizando terminologia, se necessário."
-          },
           "at0002.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.2",
@@ -3368,34 +2233,9 @@
             "text" : "Recomendação #2",
             "description" : "Descrição narrativa da recomendação.",
             "comment" : "Pode ser codificada, utilizando terminologia, se necessário."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Justificativa",
-            "description" : "Justificativa para a recomendação."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
         "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Anbefaling",
-            "description" : "Et forslag, råd eller anmodning om klinisk oppfølging."
-          },
-          "at0002.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1",
-            "text" : "Anbefaling",
-            "description" : "Fritekstbeskrivelse av anbefalingen.",
-            "comment" : "Det bør om mulig benyttes terminologi for å angi anbefaling."
-          },
           "at0002.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.2",
@@ -3409,18 +2249,6 @@
             "text" : "Anbefaling #2",
             "description" : "Fritekstbeskrivelse av anbefalingen.",
             "comment" : "Det bør om mulig benyttes terminologi for å angi anbefaling."
-          },
-          "at0003.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
-            "text" : "Begrunnelse",
-            "description" : "Begrunnelse for anbefalingen."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         }
       },
@@ -3793,191 +2621,11 @@
             "code" : "at0.4.1",
             "text" : "Utredande klinik",
             "description" : "The unit performing the investigation."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
-        "es-ar" : {
-          "at0000.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1.1",
-            "text" : "Recomendación",
-            "description" : "Una sugerencia, consejo o propuesta para el manejo clínico."
-          },
-          "at0.3.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.3.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0002.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1.1",
-            "text" : "Recomendación",
-            "description" : "Descripción narrativa de la recomendación",
-            "comment" : "Puede ser codificada mediante una terminología si así se lo requiere."
-          },
-          "at0003.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1.1",
-            "text" : "*Rationale(en)",
-            "description" : "*Justifications for the recommendation.(en)"
-          },
-          "at0.2.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.1.1",
-            "text" : "*DV_DATE_TIME (en)",
-            "description" : "*"
-          },
-          "at0.4.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "pt-br" : {
-          "at0000.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1.1",
-            "text" : "Recomendação",
-            "description" : "Uma sugestão, conselho ou proposta para manejo clínico."
-          },
-          "at0.3.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.3.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0002.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1.1",
-            "text" : "Recomendação",
-            "description" : "Descrição narrativa da recomendação.",
-            "comment" : "Pode ser codificada, utilizando terminologia, se necessário."
-          },
-          "at0003.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1.1",
-            "text" : "Justificativa",
-            "description" : "Justificativa para a recomendação."
-          },
-          "at0.2.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.1.1",
-            "text" : "*DV_DATE_TIME (en)",
-            "description" : "*"
-          },
-          "at0.4.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        },
-        "nb" : {
-          "at0000.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1.1",
-            "text" : "Anbefaling",
-            "description" : "Et forslag, råd eller anmodning om klinisk oppfølging."
-          },
-          "at0.3.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.3.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0002.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002.1.1",
-            "text" : "Anbefaling",
-            "description" : "Fritekstbeskrivelse av anbefalingen.",
-            "comment" : "Det bør om mulig benyttes terminologi for å angi anbefaling."
-          },
-          "at0003.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1.1",
-            "text" : "Begrunnelse",
-            "description" : "Begrunnelse for anbefalingen."
-          },
-          "at0.2.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.2.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0.1.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.1.1",
-            "text" : "*DV_DATE_TIME (en)",
-            "description" : "*"
-          },
-          "at0.4.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0.4.1",
-            "text" : "*DV_TEXT (en)",
-            "description" : "*"
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0004" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0004",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        }
+        "es-ar" : { },
+        "pt-br" : { },
+        "nb" : { }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -4170,46 +2818,9 @@
             "code" : "at0006.1",
             "text" : "Beskrivning",
             "description" : "Description of why state changed"
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
-        "sv" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Beslutsunderlag",
-            "description" : "*Decisionprocess (en)"
-          },
-          "at0006.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0006.1",
-            "text" : "Beskrivning av ändring",
-            "description" : "Beskriver varför  statusen ändrades, (kan lämnas tomt)"
-          },
-          "at0005" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0005",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0007" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          }
-        }
+        "sv" : { }
       },
       "termBindings" : {
         "SNOMED-CT" : {
@@ -4827,313 +3438,18 @@
             "description" : "Identification of the single service or activity requested, by name.",
             "comment" : "Coding of the 'Service name' with a coding system is desirable, if available."
           },
-          "at0148.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0148.1",
-            "text" : "Service type",
-            "description" : "Category of service requested.",
-            "comment" : "For example: hospital or home care delivery. Coding of the 'Service type' with a coding system is desirable, if available. If the 'Service name' was coded, it is possible for this data point to be derived from the code."
-          },
-          "at0153.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0153.1",
-            "text" : "Initial request",
-            "description" : "First ever request for the specified service.",
-            "comment" : "Record as TRUE if this is the first ever request for this service. This data element may be used by some systems to support automatic scheduling of appointments."
-          },
-          "at0135.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0135.1",
-            "text" : "Description",
-            "description" : "Narrative description about the service requested.",
-            "comment" : "This data point should be used to describe the named service in more detail, including how it should be delivered, patient concerns and issues that might be encountered in delivering the service."
-          },
-          "at0062.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062.1",
-            "text" : "Reason for request",
-            "description" : "A short phrase describing the reason for the request.",
-            "comment" : "Coding of the 'Reason for request' with a coding system is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required."
-          },
-          "at0064.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064.1",
-            "text" : "Reason description",
-            "description" : "Narrative description about the reason for request."
-          },
-          "at0152.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152.1",
-            "text" : "Clinical indication",
-            "description" : "The clinical reason for the ordered service.",
-            "comment" : "For example: 'Angina' or 'Type 1 Diabetes mellitus'. Coding of the clinical indication with a terminology is preferred, where possible. This data element allows multiple occurrences."
-          },
-          "at0065.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065.1",
-            "text" : "Intent",
-            "description" : "Description of the intent for the request.",
-            "comment" : "For example: a referral to a specialist may have the intent of the specialist taking over responsibility for care of the patient, or it may be to provide a second opinion on treatment options. Coding of the 'Intent' with a coding system is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required."
-          },
-          "at0068.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068.1",
-            "text" : "Urgency",
-            "description" : "Urgency of the request for service.",
-            "comment" : "Specific definitions of emergency and urgent will vary between clinical contexts, clinical systems and the nature of the request itself, so have not been defined in this archetype. If explicit timing is required then the Service period should be clearly stated."
-          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : "*"
-          },
-          "at0040.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0040.1",
-            "text" : "Service due",
-            "description" : "The date/time, or acceptable interval of date/time, for provision of the service.",
-            "comment" : "This data element allows for recording of the timing for a single service, either as a date and time, a date ranges or a text descriptor which can allow for 'next available. In practice, clinicians will often think in terms of ordering services as approximate timing, for example: review in 3 months, 6 months or 12 months. As clinical systems need more exact parameters to operate on, this '3 months' will usually be converted to an exact date 3 months from the date of recording and stored using this data element. If complex timing or sequences of timings are required, use the CLUSTER.service_direction archetype within the 'Complex timing' SLOT and this data element becomes redundant."
-          },
-          "at0145.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0145.1",
-            "text" : "Service period start",
-            "description" : "The date/time that marks the beginning of the valid period of time for delivery of this service.",
-            "comment" : "This date/time is the equivalent to the earliest possible date for service delivery. For example: sometimes a certain amount of time must pass before a service can be performed, for example some procedures can only be performed once the patient has stopped taking medications for a specific amount of time."
-          },
-          "at0144.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0144.1",
-            "text" : "Service period expiry",
-            "description" : "The date/time that marks the conclusion of the clinically valid period of time for delivery of this service.",
-            "comment" : "This date/time is the equivalent to the latest possible date for service delivery or to the date of expiry for this request. For example: a service may be required to be completed before another event, such as scheduled surgery."
-          },
-          "at0147.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0147.1",
-            "text" : "Indefinite?",
-            "description" : "The valid period for this request is open ended and has no date of expiry.",
-            "comment" : "Record as TRUE to record explicity that the request has no expiry date."
-          },
-          "at0076.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0076.1",
-            "text" : "Supplementary information",
-            "description" : "Supplementary information will be following request.",
-            "comment" : "Record as TRUE if additional information has been identified and will be forwarded when available. For example: pending test results."
-          },
-          "at0078.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078.1",
-            "text" : "Information description",
-            "description" : "Description of the supplementary information."
-          },
-          "at0150.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0150.1",
-            "text" : "Comment",
-            "description" : "Additional narrative about the service request not captured in other fields."
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Requester order identifier",
-            "description" : "The local identifier assigned by the requesting clinical system.",
-            "comment" : "Usually equivalent to the HL7 Placer Order Identifier."
-          },
-          "at0011.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011.1",
-            "text" : "Receiver order identifier",
-            "description" : "The local identifier assigned to the request by the clinician or organisation receiving the request for service.",
-            "comment" : "Usually equivalent to the HL7 Filler Order Identifier."
-          },
-          "at0127.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0127.1",
-            "text" : "Request status",
-            "description" : "The status of the request for service as indicated by the requester.",
-            "comment" : "Status is used to denote whether this is the initial request, or a follow-up request to change or provide supplementary information."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ACTIVITY",
-            "description" : "*"
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "ITEM_TREE",
-            "description" : "*"
           }
         },
         "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Helsetjenesteforespørsel",
-            "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
-          },
-          "at0121.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0121.1",
-            "text" : "Tjenestenavn",
-            "description" : "Navn på forespurt tjeneste.",
-            "comment" : "Koding av tjenestenavnet med et kodeverk er ønskelig, dersom tilgjengelig."
-          },
-          "at0148.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0148.1",
-            "text" : "Tjenestetype",
-            "description" : "Kategorisering av den forespurte tjenesten.",
-            "comment" : "For eksempel: utføres i sykehus eller av hjemmetjenesten. Koding av tjenestetypen med et kodeverk er ønskelig, dersom tilgjengelig. Dersom \"Tjenestenavn\" er kodet kan dette elementet i noen tilfeller utledes fra koden."
-          },
-          "at0153.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0153.1",
-            "text" : "Første forespørsel",
-            "description" : "Første forespørsel om den aktuelle tjenesten.",
-            "comment" : "Registreres som SANN dersom dette er den første forespørselen om den aktuelle tjenesten. Dette dataelementet brukes av noen systemer for å understøtte automatisk timeplanlegging."
-          },
-          "at0135.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0135.1",
-            "text" : "Beskrivelse",
-            "description" : "Fritekstbeskrivelse av tjenesten som forespørres.",
-            "comment" : "Dette dataelementet kan brukes til å beskrive den aktuelle tjenesten i mer detalj, for eksempel hvordan den skal utføres, pasientens egne ønsker, eller problemer man kan støte på under utførelsen."
-          },
-          "at0062.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0062.1",
-            "text" : "Årsak for forespørsel",
-            "description" : "En kort beskrivelse av årsaken for forespørselen.",
-            "comment" : "Koding av forespørselsårsaken med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster, for å gjøre det mulig for brukeren å om nødvendig registrere flere svar."
-          },
-          "at0064.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0064.1",
-            "text" : "Årsaksbeskrivelse",
-            "description" : "Fritekstbeskrivelse av årsaken til forespørselen."
-          },
-          "at0152.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0152.1",
-            "text" : "Klinisk indikasjon",
-            "description" : "Den kliniske årsaken for den forespurte tjenesten.",
-            "comment" : "For eksempel \"angina\" eller \"diabetes mellitus type 1\". Koding av indikasjonen med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster."
-          },
-          "at0065.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0065.1",
-            "text" : "Hensikt",
-            "description" : "Beskrivelse av hensikten med forespørselen.",
-            "comment" : "For eksempel kan en henvisning til en spesialist ha som hensikt at spesialisten tar over oppfølgingsansvaret for pasienten, eller det kan være å få en second opinion for behandlingsmuligheteter. Koding av hensikten med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster, for å gjøre det mulig for brukeren å om nødvendig registrere flere svar."
-          },
-          "at0068.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0068.1",
-            "text" : "Hastegrad",
-            "description" : "Hastegrad for utførelse av tjenesten.",
-            "comment" : "Spesifikke definisjoner av \"akutt\" og \"haster\" vil variere mellom kliniske settinger, kliniske systemer, og forespørselens natur, og de er derfor ikke definert i arketypen. Dersom det er nødvendig å bruke eksplisitt timing, bør \"Tjenesteintervall\" oppgis."
-          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.1",
-            "description" : "*"
-          },
-          "at0040.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0040.1",
-            "text" : "Dato/tid forfall",
-            "description" : "Dato/tid, eller akseptabelt intervall av dato/tid, da tjenesten skal utføres.",
-            "comment" : "Dette dataelementet tillater registrering av timing for én tjeneste, enten som dato/tid, intervall av dato/tid, eller som en tekstbeskrivelsen som kan understøtte \"neste tilgjengelige\". I praksis vil klinikere ofte tenke i omtrentlig timing, for eksempel \"revurdering om 3 måneder, 6 måneder eller 12 måneder. Siden kliniske systemer trenger mer eksakte tidsangivelser, vil \"3 måneder\" som regel konverteres til en eksakt dato 3 måneder fra registreringsdatoen, og lagres i dette dataelementet. Dersom det er behov for kompleks timing eller sekvenser av timing, bruk arketypen CLUSTER.service_direction i SLOTet \"Kompleks timing\". I disse tilfellene blir dette dataelementet redundant."
-          },
-          "at0145.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0145.1",
-            "text" : "Tjenesteintervall start",
-            "description" : "Dato/tiden som markerer starten på tidsintervallet tjenesten kan utføres i.",
-            "comment" : "Denne dato/tiden representerer den tidligste datoen/tiden tjenesten kan utføres på. For eksempel må noen ganger en viss tid løpe før en tjeneste kan utføres, f.eks. ved noen prosedyrer er en avhengig av at pasienten har seponert legemidler i en periode før prosedyren."
-          },
-          "at0144.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0144.1",
-            "text" : "Tjenesteintervall slutt",
-            "description" : "Dato/tiden som markerer slutten på tidsintervallet tjenesten kan utføres i.",
-            "comment" : "Denne dato/tiden representerer den seneste datoen/tiden tjenesten kan utføres på. For eksempel i noen tilfeller må en tjeneste være utført før en annen hendelse, f.eks. planlagt kirurgi."
-          },
-          "at0147.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0147.1",
-            "text" : "Uavgrenset?",
-            "description" : "Tidsintervallet tjenesten kan utføres i er uavgrenset.",
-            "comment" : "Registreres som SANN for å eksplisitt registrere at forespørselen ikke har noen utløpstid."
-          },
-          "at0076.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0076.1",
-            "text" : "Supplerende informasjon",
-            "description" : "Supplerende informasjon vil ettersendes forespørselen.",
-            "comment" : "Registrer som SANN dersom ytterligere informasjon er identifisert, og vil bli ettersendt når den er tilgjengelig. For eksempel: ufullstendige prøvesvar."
-          },
-          "at0078.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0078.1",
-            "text" : "Informasjonsbeskrivelse",
-            "description" : "Beskrivelse av den supplerende informasjonen."
-          },
-          "at0150.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0150.1",
-            "text" : "Kommentar",
-            "description" : "Ytterligere fritekst om tjenesteforespørselen, som ikke er dekket av andre elementer."
-          },
-          "at0010.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0010.1",
-            "text" : "Rekvisisjonsidentifikator",
-            "description" : "Den lokale identifikatoren tilordnet av systemet til den som forespør tjenesten.",
-            "comment" : "Som regel tilsvarende HL7 Placer Order Identifier."
-          },
-          "at0011.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0011.1",
-            "text" : "Mottakers rekvisisjonsidentifikator",
-            "description" : "Rekvisisjonens identifikator, tilordnet av den som mottar forespørselen.",
-            "comment" : "Som regel tilsvarende HL7 Filler Order Identifier."
-          },
-          "at0127.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0127.1",
-            "text" : "Rekvisisjonsstatus",
-            "description" : "Status for forespørselen oppgitt av rekvirenten.",
-            "comment" : "Status brukes for å vise om dette er den primære forespørselen, en endring eller supplerende informasjon."
-          },
-          "at0001" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001",
-            "text" : "ACTIVITY",
-            "description" : "*"
-          },
-          "at0009" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0009",
-            "text" : "ITEM_TREE",
-            "description" : "*"
-          },
-          "at0008" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0008",
-            "text" : "ITEM_TREE",
             "description" : "*"
           }
         }
@@ -5188,7 +3504,102 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsheading som kan gis nytt navn i en template for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsheading i en template, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Ad hoc heading\" endret til \"Funn ved undersøkelse\"",
+          "misuse" : "Skal ikke stå med uendret navn i en template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -5257,12 +3668,6 @@
           }
         },
         "ru" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "заготовка заголовка",
-            "description" : "Образец заголовка раздела"
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5277,12 +3682,6 @@
           }
         },
         "es-ar" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Encabezado ad hoc",
-            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5297,12 +3696,6 @@
           }
         },
         "sl" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Naslov sekcije",
-            "description" : "Naslov sekcije"
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5317,12 +3710,6 @@
           }
         },
         "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Ad hoc heading",
-            "description" : "En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst."
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5337,12 +3724,6 @@
           }
         },
         "pt-br" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Cabeçalho Ad hoc",
-            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5453,7 +3834,102 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3237F5891EC3C7D52CA1D2043D1DF62F"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsheading som kan gis nytt navn i en template for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsheading i en template, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Ad hoc heading\" endret til \"Funn ved undersøkelse\"",
+          "misuse" : "Skal ikke stå med uendret navn i en template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -5537,12 +4013,6 @@
           }
         },
         "ru" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "заготовка заголовка",
-            "description" : "Образец заголовка раздела"
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5563,12 +4033,6 @@
           }
         },
         "es-ar" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Encabezado ad hoc",
-            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5589,12 +4053,6 @@
           }
         },
         "sl" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Naslov sekcije",
-            "description" : "Naslov sekcije"
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5615,12 +4073,6 @@
           }
         },
         "nb" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Ad hoc heading",
-            "description" : "En generisk seksjonsheading som bør gis nytt navn i en template for å passe i en gitt klinisk kontekst."
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
@@ -5641,12 +4093,6 @@
           }
         },
         "pt-br" : {
-          "at0000.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0000.1",
-            "text" : "Cabeçalho Ad hoc",
-            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
-          },
           "at0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0.1",
