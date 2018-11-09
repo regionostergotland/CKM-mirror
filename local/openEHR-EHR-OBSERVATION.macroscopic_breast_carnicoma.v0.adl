@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4a89890c625bd0bad2acf89b9ecf8709">
+		["MD5-CAM-1.0.1"] = <"75f9234a1058811b0402e4da62ddf60e">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -148,6 +148,51 @@ definition
 															>
 														}
 													}
+													ELEMENT[at0039] occurrences matches {0..1} matches {    -- Skin-dressed surface
+														value matches {
+															DV_CODED_TEXT matches {
+																defining_code matches {
+																	[local::
+																	at0040,    -- Yes
+																	at0041]    -- No
+																}
+															}
+															C_DV_QUANTITY <
+																property = <[openehr::122]>
+																list = <
+																	["1"] = <
+																		units = <"mm">
+																	>
+																>
+															>
+														}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0042] occurrences matches {0..1} matches {    -- Tumour details
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0043] occurrences matches {0..1} matches {    -- Tumour apperance
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0044,    -- Välavgränsad
+															at0045,    -- Diffus
+															at0046,    -- Solid
+															at0047,    -- Mucinös
+															at0048,    -- Stråkig
+															at0049,    -- Cystisk
+															at0050]    -- Mikrokalkområde/DCIS
+														}
+													}
+												}
+											}
+											ELEMENT[at0053] occurrences matches {0..1} matches {    -- DV_QUANTITY
+												value matches {
+													C_DV_QUANTITY <
+																											>
 												}
 											}
 										}
@@ -290,6 +335,58 @@ ontology
 				>
 				["at0035"] = <
 					text = <"Anteroposterior">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"Skin-dressed surface">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"Yes">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"No">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"Tumour details">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"Tumour apperance">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"Välavgränsad">
+					description = <"*">
+				>
+				["at0045"] = <
+					text = <"Diffus">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"Solid">
+					description = <"*">
+				>
+				["at0047"] = <
+					text = <"Mucinös">
+					description = <"*">
+				>
+				["at0048"] = <
+					text = <"Stråkig">
+					description = <"*">
+				>
+				["at0049"] = <
+					text = <"Cystisk">
+					description = <"*">
+				>
+				["at0050"] = <
+					text = <"Mikrokalkområde/DCIS">
+					description = <"*">
+				>
+				["at0053"] = <
+					text = <"DV_QUANTITY">
 					description = <"*">
 				>
 			>
