@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3948a52c5f0f82460a633b263dcd76f3">
+		["MD5-CAM-1.0.1"] = <"806fa41c5ad9e7ac3878e4fa31312962">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -147,6 +147,34 @@ definition
 															>
 														}
 													}
+												}
+											}
+											ELEMENT[at0079] occurrences matches {0..1} matches {    -- Appearance
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0081,    -- Välavgränsad
+															at0082,    -- Diffus
+															at0083,    -- Solid
+															at0084,    -- Mucinös
+															at0085,    -- Stråkig
+															at0086,    -- Cystisk
+															at0087]    -- Mikrokalkområde/DCIS
+														}
+													}
+												}
+											}
+											ELEMENT[at0080] occurrences matches {0..1} matches {    -- Distance from tumour centre to mamill
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::122]>
+														list = <
+															["1"] = <
+																units = <"mm">
+															>
+														>
+													>
 												}
 											}
 										}
@@ -277,6 +305,42 @@ ontology
 				>
 				["at0078"] = <
 					text = <"Mediolateral">
+					description = <"*">
+				>
+				["at0079"] = <
+					text = <"Appearance">
+					description = <"*">
+				>
+				["at0080"] = <
+					text = <"Distance from tumour centre to mamill">
+					description = <"*">
+				>
+				["at0081"] = <
+					text = <"Välavgränsad">
+					description = <"*">
+				>
+				["at0082"] = <
+					text = <"Diffus">
+					description = <"*">
+				>
+				["at0083"] = <
+					text = <"Solid">
+					description = <"*">
+				>
+				["at0084"] = <
+					text = <"Mucinös">
+					description = <"*">
+				>
+				["at0085"] = <
+					text = <"Stråkig">
+					description = <"*">
+				>
+				["at0086"] = <
+					text = <"Cystisk">
+					description = <"*">
+				>
+				["at0087"] = <
+					text = <"Mikrokalkområde/DCIS">
 					description = <"*">
 				>
 			>
