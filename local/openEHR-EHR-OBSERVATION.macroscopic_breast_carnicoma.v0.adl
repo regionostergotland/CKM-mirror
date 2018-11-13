@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c255944dbdc84f379e7a22d2af4c40d9">
+		["MD5-CAM-1.0.1"] = <"09c11795e8ad6530e34e9da61a5d42af">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -36,23 +36,7 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- ItemTree
 								items cardinality matches {0..*; unordered} matches {
-									ELEMENT[at0054] occurrences matches {0..1} matches {    -- Specimen type
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0066] occurrences matches {0..1} matches {    -- Specimen laterality
-										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0067,    -- Left
-													at0068]    -- Right
-												}
-											}
-										}
-									}
-									CLUSTER[at0056] occurrences matches {0..1} matches {    -- Specimen information
+									CLUSTER[at0056] occurrences matches {0..1} matches {    -- Specimen documentation
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0057] occurrences matches {0..1} matches {    -- Specimen x-ray avaliable
 												value matches {
@@ -85,6 +69,36 @@ definition
 															at0065]    -- No
 														}
 													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0069] occurrences matches {0..1} matches {    -- Specimen properties
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0054] occurrences matches {0..1} matches {    -- Specimen type
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0066] occurrences matches {0..1} matches {    -- Specimen laterality
+												value matches {
+													DV_CODED_TEXT matches {
+														defining_code matches {
+															[local::
+															at0067,    -- Left
+															at0068]    -- Right
+														}
+													}
+												}
+											}
+											ELEMENT[at0070] occurrences matches {0..1} matches {    -- Mamill
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0071] occurrences matches {0..1} matches {    -- Axill
+												value matches {
+													DV_TEXT matches {*}
 												}
 											}
 										}
@@ -130,7 +144,7 @@ ontology
 					description = <"*">
 				>
 				["at0056"] = <
-					text = <"Specimen information">
+					text = <"Specimen documentation">
 					description = <"*">
 				>
 				["at0057"] = <
@@ -179,6 +193,18 @@ ontology
 				>
 				["at0068"] = <
 					text = <"Right">
+					description = <"*">
+				>
+				["at0069"] = <
+					text = <"Specimen properties">
+					description = <"*">
+				>
+				["at0070"] = <
+					text = <"Mamill">
+					description = <"*">
+				>
+				["at0071"] = <
+					text = <"Axill">
 					description = <"*">
 				>
 			>
