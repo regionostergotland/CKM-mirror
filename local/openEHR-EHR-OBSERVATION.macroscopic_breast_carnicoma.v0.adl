@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d4301722de126cb4e19a9354b37183dd">
+		["MD5-CAM-1.0.1"] = <"a83d3f37a504abf729176b7a489fc1ec">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -145,7 +145,7 @@ definition
 													}
 													CLUSTER[at0093] occurrences matches {0..1} matches {    -- Skin dressed surface
 														items cardinality matches {1..*; unordered} matches {
-															ELEMENT[at0094] occurrences matches {0..1} matches {    -- Mediolateral
+															ELEMENT[at0094] occurrences matches {0..1} matches {    -- x-direction
 																value matches {
 																	C_DV_QUANTITY <
 																		property = <[openehr::122]>
@@ -157,7 +157,7 @@ definition
 																	>
 																}
 															}
-															ELEMENT[at0095] occurrences matches {0..1} matches {    -- Craniocaudal
+															ELEMENT[at0095] occurrences matches {0..1} matches {    -- y-direction
 																value matches {
 																	C_DV_QUANTITY <
 																		property = <[openehr::122]>
@@ -334,7 +334,6 @@ definition
 	}
 
 ontology
-	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -499,11 +498,11 @@ ontology
 					description = <"*">
 				>
 				["at0094"] = <
-					text = <"Mediolateral">
+					text = <"x-direction">
 					description = <"*">
 				>
 				["at0095"] = <
-					text = <"Craniocaudal">
+					text = <"y-direction">
 					description = <"*">
 				>
 				["at0096"] = <
