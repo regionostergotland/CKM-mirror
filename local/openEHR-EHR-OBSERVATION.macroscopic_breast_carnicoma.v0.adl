@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8ecd2b22af370b1005c84c1b0d6607f4">
+		["MD5-CAM-1.0.1"] = <"72d7c0e79efc8a496157aab24cc71963">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -252,11 +252,66 @@ definition
 											}
 											CLUSTER[at0097] occurrences matches {0..1} matches {    -- Distance from tumour periphery to resection surface
 												items cardinality matches {1..*; unordered} matches {
-													ELEMENT[at0098] occurrences matches {0..1} matches {*}    -- Cranial direction
-													ELEMENT[at0099] occurrences matches {0..1} matches {*}    -- Caudal direction
-													ELEMENT[at0100] occurrences matches {0..1} matches {*}    -- Medial direction
-													ELEMENT[at0101] occurrences matches {0..1} matches {*}    -- Lateral direction
-													ELEMENT[at0102] occurrences matches {0..1} matches {*}    -- Posterior direction
+													ELEMENT[at0098] occurrences matches {0..1} matches {    -- Cranial direction
+														value matches {
+															C_DV_QUANTITY <
+																property = <[openehr::122]>
+																list = <
+																	["1"] = <
+																		units = <"mm">
+																	>
+																>
+															>
+														}
+													}
+													ELEMENT[at0099] occurrences matches {0..1} matches {    -- Caudal direction
+														value matches {
+															C_DV_QUANTITY <
+																property = <[openehr::122]>
+																list = <
+																	["1"] = <
+																		units = <"mm">
+																	>
+																>
+															>
+														}
+													}
+													ELEMENT[at0100] occurrences matches {0..1} matches {    -- Medial direction
+														value matches {
+															C_DV_QUANTITY <
+																property = <[openehr::122]>
+																list = <
+																	["1"] = <
+																		units = <"mm">
+																	>
+																>
+															>
+														}
+													}
+													ELEMENT[at0101] occurrences matches {0..1} matches {    -- Lateral direction
+														value matches {
+															C_DV_QUANTITY <
+																property = <[openehr::122]>
+																list = <
+																	["1"] = <
+																		units = <"mm">
+																	>
+																>
+															>
+														}
+													}
+													ELEMENT[at0102] occurrences matches {0..1} matches {    -- Posterior direction
+														value matches {
+															C_DV_QUANTITY <
+																property = <[openehr::122]>
+																list = <
+																	["1"] = <
+																		units = <"mm">
+																	>
+																>
+															>
+														}
+													}
 												}
 											}
 										}
