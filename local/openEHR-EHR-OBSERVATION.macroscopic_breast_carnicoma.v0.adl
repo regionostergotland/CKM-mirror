@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"72d7c0e79efc8a496157aab24cc71963">
+		["MD5-CAM-1.0.1"] = <"af1305ecb60ff3602074fdc07f28e21d">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -85,8 +85,8 @@ definition
 													DV_CODED_TEXT matches {
 														defining_code matches {
 															[local::
-															at0067,    -- Left
-															at0068]    -- Right
+															at0103,    -- Right
+															at0104]    -- Left
 														}
 													}
 												}
@@ -329,6 +329,7 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
@@ -398,14 +399,6 @@ ontology
 				>
 				["at0066"] = <
 					text = <"Specimen laterality">
-					description = <"*">
-				>
-				["at0067"] = <
-					text = <"Left">
-					description = <"*">
-				>
-				["at0068"] = <
-					text = <"Right">
 					description = <"*">
 				>
 				["at0069"] = <
@@ -534,6 +527,14 @@ ontology
 				>
 				["at0102"] = <
 					text = <"Posterior direction">
+					description = <"*">
+				>
+				["at0103"] = <
+					text = <"Right">
+					description = <"*">
+				>
+				["at0104"] = <
+					text = <"Left">
 					description = <"*">
 				>
 			>
