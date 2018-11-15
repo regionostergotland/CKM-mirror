@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"af1305ecb60ff3602074fdc07f28e21d">
+		["MD5-CAM-1.0.1"] = <"d4301722de126cb4e19a9354b37183dd">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -316,6 +316,11 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0105] occurrences matches {0..1} matches {    -- Övrigt
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
 								}
 							}
 						}
@@ -535,6 +540,10 @@ ontology
 				>
 				["at0104"] = <
 					text = <"Left">
+					description = <"*">
+				>
+				["at0105"] = <
+					text = <"Övrigt">
 					description = <"*">
 				>
 			>
