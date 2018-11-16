@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e77dd02103a65fbaead6871c8493d2ad">
+		["MD5-CAM-1.0.1"] = <"1379adc79216706d2729f91b18eb18f1">
 		["build_uid"] = <"128a0b55-8b3c-3f96-a546-d6c16f4131bc">
 	>
 
@@ -61,7 +61,7 @@ definition
 											}
 										}
 									}
-									CLUSTER[at0010] occurrences matches {0..1} matches {    -- Histologic grading
+									CLUSTER[at0010] occurrences matches {0..1} matches {    -- Histologic grading (NHG)
 										items cardinality matches {1..*; unordered} matches {
 											CLUSTER[at0011] occurrences matches {0..1} matches {    -- Bloom and Richardson Grade
 												items cardinality matches {1..*; unordered} matches {
@@ -101,6 +101,41 @@ definition
 															1|[local::at0028],
 															2|[local::at0029],
 															3|[local::at0030]
+														}
+													}
+												}
+											}
+										}
+									}
+									CLUSTER[at0031] occurrences matches {0..1} matches {    -- Hormone receptor assays
+										items cardinality matches {1..*; unordered} matches {
+											CLUSTER[at0032] occurrences matches {0..1} matches {    -- Oestrogen Receptor assay (ER)
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0033] occurrences matches {0..1} matches {*}    -- ER result
+													ELEMENT[at0034] occurrences matches {0..1} matches {*}    -- Proportion of nuclei stained
+													ELEMENT[at0035] occurrences matches {0..1} matches {*}    -- Predominant staining intensity
+												}
+											}
+											CLUSTER[at0036] occurrences matches {0..1} matches {    -- Progesterone receptor assay (PR)
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0037] occurrences matches {0..1} matches {*}    -- PR result
+													ELEMENT[at0038] occurrences matches {0..1} matches {*}    -- Proportion of nuclei stained
+													ELEMENT[at0039] occurrences matches {0..1} matches {*}    -- Predominant staining intensity
+												}
+											}
+											CLUSTER[at0040] occurrences matches {0..1} matches {    -- Human Oestrogen receptor 2 assay (HER2)
+												items cardinality matches {1..*; unordered} matches {
+													CLUSTER[at0041] occurrences matches {0..1} matches {    -- Immunohistochemistry
+														items cardinality matches {1..*; unordered} matches {
+															ELEMENT[at0042] occurrences matches {0..1} matches {    -- Immunohistochemistry score
+																value matches {
+																	1|[local::at0044],
+																	2|[local::at0045],
+																	3|[local::at0046],
+																	4|[local::at0047]
+																}
+															}
+															ELEMENT[at0043] occurrences matches {0..1} matches {*}    -- Immunohistochemistry result
 														}
 													}
 												}
@@ -164,8 +199,9 @@ ontology
 					description = <"*">
 				>
 				["at0010"] = <
-					text = <"Histologic grading">
-					description = <"Histologic grading of breast cancer.">
+					text = <"Histologic grading (NHG)">
+					description = <"Histologic grading of breast cancer.
+Total score = NHG">
 				>
 				["at0011"] = <
 					text = <"Bloom and Richardson Grade">
@@ -246,6 +282,74 @@ ontology
 				["at0030"] = <
 					text = <"Grade 3">
 					description = <"[Total score of 8 or 9.]">
+				>
+				["at0031"] = <
+					text = <"Hormone receptor assays">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Oestrogen Receptor assay (ER)">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"ER result">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"Proportion of nuclei stained">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Predominant staining intensity">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"Progesterone receptor assay (PR)">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"PR result">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"Proportion of nuclei stained">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"Predominant staining intensity">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"Human Oestrogen receptor 2 assay (HER2)">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"Immunohistochemistry">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"Immunohistochemistry score">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"Immunohistochemistry result">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"0">
+					description = <"*">
+				>
+				["at0045"] = <
+					text = <"1+">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"2+">
+					description = <"*">
+				>
+				["at0047"] = <
+					text = <"3+">
+					description = <"*">
 				>
 			>
 		>
