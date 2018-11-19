@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ae6a61d290129a50bdff3c7cc03c0c3f">
+		["MD5-CAM-1.0.1"] = <"ecdc911af253f6c7ba6d3ad8fab40b2f">
 		["build_uid"] = <"128a0b55-8b3c-3f96-a546-d6c16f4131bc">
 	>
 
@@ -154,6 +154,7 @@ definition
 																	}
 																}
 															}
+															CLUSTER[at0069] occurrences matches {0..1} matches {*}    -- CLUSTER
 															ELEMENT[at0043] occurrences matches {0..1} matches {    -- Immunohistochemistry result
 																value matches {
 																	DV_CODED_TEXT matches {
@@ -201,6 +202,13 @@ definition
 											}
 										}
 									}
+									CLUSTER[at0070] occurrences matches {0..1} matches {    -- Tumour size and extent
+										items cardinality matches {1..*; unordered} matches {
+											CLUSTER[at0071] occurrences matches {0..1} matches {*}    -- Invasive tumor (refers to largest invasive focus)
+											CLUSTER[at0072] occurrences matches {0..1} matches {*}    -- Extent (Total size of all invasive foci and entire in situ cancer area.)
+										}
+									}
+									CLUSTER[at0073] occurrences matches {0..1} matches {*}    -- In situ component
 								}
 							}
 						}
@@ -464,6 +472,26 @@ Total score = NHG">
 				>
 				["at0068"] = <
 					text = <"KI-67 index">
+					description = <"*">
+				>
+				["at0069"] = <
+					text = <"CLUSTER">
+					description = <"*">
+				>
+				["at0070"] = <
+					text = <"Tumour size and extent">
+					description = <"*">
+				>
+				["at0071"] = <
+					text = <"Invasive tumor (refers to largest invasive focus)">
+					description = <"*">
+				>
+				["at0072"] = <
+					text = <"Extent (Total size of all invasive foci and entire in situ cancer area.)">
+					description = <"*">
+				>
+				["at0073"] = <
+					text = <"In situ component">
 					description = <"*">
 				>
 			>
