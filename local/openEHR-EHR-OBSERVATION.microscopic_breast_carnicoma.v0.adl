@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2cb8a550504aae70ecd5c1a8ebaa867c">
+		["MD5-CAM-1.0.1"] = <"54ad0167c6d7873afd1d5d41a6494dec">
 		["build_uid"] = <"128a0b55-8b3c-3f96-a546-d6c16f4131bc">
 	>
 
@@ -112,14 +112,26 @@ definition
 											CLUSTER[at0032] occurrences matches {0..1} matches {    -- Oestrogen Receptor assay (ER)
 												items cardinality matches {1..*; unordered} matches {
 													ELEMENT[at0033] occurrences matches {0..1} matches {*}    -- ER result
-													ELEMENT[at0034] occurrences matches {0..1} matches {*}    -- Proportion of nuclei stained
+													ELEMENT[at0034] occurrences matches {0..1} matches {    -- Proportion of nuclei stained
+														value matches {
+															DV_PROPORTION matches {
+																type matches {2}
+															}
+														}
+													}
 													ELEMENT[at0035] occurrences matches {0..1} matches {*}    -- Predominant staining intensity
 												}
 											}
 											CLUSTER[at0036] occurrences matches {0..1} matches {    -- Progesterone receptor assay (PR)
 												items cardinality matches {1..*; unordered} matches {
 													ELEMENT[at0037] occurrences matches {0..1} matches {*}    -- PR result
-													ELEMENT[at0038] occurrences matches {0..1} matches {*}    -- Proportion of nuclei stained
+													ELEMENT[at0038] occurrences matches {0..1} matches {    -- Proportion of nuclei stained
+														value matches {
+															DV_PROPORTION matches {
+																type matches {2}
+															}
+														}
+													}
 													ELEMENT[at0039] occurrences matches {0..1} matches {*}    -- Predominant staining intensity
 												}
 											}
@@ -160,7 +172,19 @@ definition
 											}
 											CLUSTER[at0048] occurrences matches {0..1} matches {    -- ISH HER2
 												items cardinality matches {1..*; unordered} matches {
-													ELEMENT[at0049] occurrences matches {0..1} matches {*}    -- ISH result
+													ELEMENT[at0049] occurrences matches {0..1} matches {    -- ISH result
+														value matches {
+															DV_CODED_TEXT matches {
+																defining_code matches {
+																	[local::
+																	at0064,    -- Normal
+																	at0065,    -- Amplified
+																	at0066,    -- Equivocal
+																	at0067]    -- Not performed
+																}
+															}
+														}
+													}
 													ELEMENT[at0050] occurrences matches {0..1} matches {*}    -- Comment
 												}
 											}
@@ -410,6 +434,22 @@ Total score = NHG">
 				>
 				["at0063"] = <
 					text = <"KI-67">
+					description = <"*">
+				>
+				["at0064"] = <
+					text = <"Normal">
+					description = <"*">
+				>
+				["at0065"] = <
+					text = <"Amplified">
+					description = <"*">
+				>
+				["at0066"] = <
+					text = <"Equivocal">
+					description = <"*">
+				>
+				["at0067"] = <
+					text = <"Not performed">
 					description = <"*">
 				>
 			>
