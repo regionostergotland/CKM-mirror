@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9049957621b87eef80efc34205877cb3">
+		["MD5-CAM-1.0.1"] = <"9986958364cf8917bf7e5fb1f943d648">
 		["build_uid"] = <"128a0b55-8b3c-3f96-a546-d6c16f4131bc">
 	>
 
@@ -234,7 +234,13 @@ definition
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0080] occurrences matches {0..1} matches {*}    -- Presence
 											ELEMENT[at0081] occurrences matches {0..1} matches {*}    -- Histologic type
-											ELEMENT[at0082] occurrences matches {0..1} matches {*}    -- Nuclear score
+											ELEMENT[at0082] occurrences matches {0..1} matches {    -- Nuclear score
+												value matches {
+													1|[local::at0090],
+													2|[local::at0091],
+													3|[local::at0092]
+												}
+											}
 											ELEMENT[at0083] occurrences matches {0..1} matches {*}    -- Necrosis
 										}
 									}
@@ -242,6 +248,16 @@ definition
 										items cardinality matches {1..*; unordered} matches {
 											ELEMENT[at0085] occurrences matches {0..1} matches {*}    -- Invasive cancer: %% mm uppmäts i %% riktning
 											ELEMENT[at0086] occurrences matches {0..1} matches {*}    -- Cancer in situ: %% mm uppmäts till %% yta avseende %%
+										}
+									}
+									CLUSTER[at0087] occurrences matches {0..1} matches {    -- Lymph nodes in specimen
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0088] occurrences matches {0..1} matches {    -- Number of lymph nodes
+												value matches {
+													DV_COUNT matches {*}
+												}
+											}
+											ELEMENT[at0089] occurrences matches {0..1} matches {*}    -- Metastases
 										}
 									}
 								}
@@ -555,6 +571,30 @@ Total score = NHG">
 				>
 				["at0086"] = <
 					text = <"Cancer in situ: %% mm uppmäts till %% yta avseende %%">
+					description = <"*">
+				>
+				["at0087"] = <
+					text = <"Lymph nodes in specimen">
+					description = <"*">
+				>
+				["at0088"] = <
+					text = <"Number of lymph nodes">
+					description = <"*">
+				>
+				["at0089"] = <
+					text = <"Metastases">
+					description = <"*">
+				>
+				["at0090"] = <
+					text = <"Score 1">
+					description = <"*">
+				>
+				["at0091"] = <
+					text = <"Score 2">
+					description = <"*">
+				>
+				["at0092"] = <
+					text = <"Score 3">
 					description = <"*">
 				>
 			>
