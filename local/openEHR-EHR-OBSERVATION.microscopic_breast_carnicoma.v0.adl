@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"54ad0167c6d7873afd1d5d41a6494dec">
+		["MD5-CAM-1.0.1"] = <"ae6a61d290129a50bdff3c7cc03c0c3f">
 		["build_uid"] = <"128a0b55-8b3c-3f96-a546-d6c16f4131bc">
 	>
 
@@ -188,7 +188,17 @@ definition
 													ELEMENT[at0050] occurrences matches {0..1} matches {*}    -- Comment
 												}
 											}
-											CLUSTER[at0063] occurrences matches {0..1} matches {*}    -- KI-67
+											CLUSTER[at0063] occurrences matches {0..1} matches {    -- KI-67
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0068] occurrences matches {0..1} matches {    -- KI-67 index
+														value matches {
+															DV_PROPORTION matches {
+																type matches {2}
+															}
+														}
+													}
+												}
+											}
 										}
 									}
 								}
@@ -450,6 +460,10 @@ Total score = NHG">
 				>
 				["at0067"] = <
 					text = <"Not performed">
+					description = <"*">
+				>
+				["at0068"] = <
+					text = <"KI-67 index">
 					description = <"*">
 				>
 			>
