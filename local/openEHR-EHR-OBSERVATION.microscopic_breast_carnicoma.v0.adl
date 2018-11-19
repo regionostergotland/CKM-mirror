@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ecdc911af253f6c7ba6d3ad8fab40b2f">
+		["MD5-CAM-1.0.1"] = <"61dc81c8064c89f4cda02809345cc94b">
 		["build_uid"] = <"128a0b55-8b3c-3f96-a546-d6c16f4131bc">
 	>
 
@@ -204,11 +204,40 @@ definition
 									}
 									CLUSTER[at0070] occurrences matches {0..1} matches {    -- Tumour size and extent
 										items cardinality matches {1..*; unordered} matches {
-											CLUSTER[at0071] occurrences matches {0..1} matches {*}    -- Invasive tumor (refers to largest invasive focus)
-											CLUSTER[at0072] occurrences matches {0..1} matches {*}    -- Extent (Total size of all invasive foci and entire in situ cancer area.)
+											ELEMENT[at0078] occurrences matches {0..1} matches {    -- Invasive tumor (refers to largest invasive focus)
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::122]>
+														list = <
+															["1"] = <
+																units = <"mm">
+															>
+														>
+													>
+												}
+											}
+											ELEMENT[at0079] occurrences matches {0..1} matches {    -- Extent (Total size of all invasive foci and entire in situ cancer area.)
+												value matches {
+													C_DV_QUANTITY <
+														property = <[openehr::122]>
+														list = <
+															["1"] = <
+																units = <"mm">
+															>
+														>
+													>
+												}
+											}
 										}
 									}
-									CLUSTER[at0073] occurrences matches {0..1} matches {*}    -- In situ component
+									CLUSTER[at0073] occurrences matches {0..1} matches {    -- In situ component
+										items cardinality matches {1..*; unordered} matches {
+											ELEMENT[at0080] occurrences matches {0..1} matches {*}    -- Presence
+											ELEMENT[at0081] occurrences matches {0..1} matches {*}    -- Histologic type
+											ELEMENT[at0082] occurrences matches {0..1} matches {*}    -- Nuclear score
+											ELEMENT[at0083] occurrences matches {0..1} matches {*}    -- Necrosis
+										}
+									}
 								}
 							}
 						}
@@ -482,16 +511,32 @@ Total score = NHG">
 					text = <"Tumour size and extent">
 					description = <"*">
 				>
-				["at0071"] = <
+				["at0073"] = <
+					text = <"In situ component">
+					description = <"*">
+				>
+				["at0078"] = <
 					text = <"Invasive tumor (refers to largest invasive focus)">
 					description = <"*">
 				>
-				["at0072"] = <
+				["at0079"] = <
 					text = <"Extent (Total size of all invasive foci and entire in situ cancer area.)">
 					description = <"*">
 				>
-				["at0073"] = <
-					text = <"In situ component">
+				["at0080"] = <
+					text = <"Presence">
+					description = <"*">
+				>
+				["at0081"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0082"] = <
+					text = <"Nuclear score">
+					description = <"*">
+				>
+				["at0083"] = <
+					text = <"Necrosis">
 					description = <"*">
 				>
 			>
