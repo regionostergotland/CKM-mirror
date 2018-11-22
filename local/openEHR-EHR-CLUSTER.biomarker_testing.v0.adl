@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"db344f293060c7672fe09f079995b66c">
+		["MD5-CAM-1.0.1"] = <"4f23686a14c9cfd4c822ae1b7345e723">
 		["build_uid"] = <"aff6bdf1-8c92-33be-8768-9b8fc931ebf5">
 	>
 
@@ -110,7 +110,8 @@ definition
 									[local::
 									at0023,    -- Postive
 									at0024,    -- Negative
-									at0025]    -- Not performed
+									at0025,    -- Not performed
+									at0031]    -- Can not be determined
 								}
 							}
 							DV_TEXT matches {*}
@@ -257,6 +258,10 @@ ontology
 					description = <"*">
 				>
 				["at0030"] = <
+					text = <"Can not be determined">
+					description = <"*">
+				>
+				["at0031"] = <
 					text = <"Can not be determined">
 					description = <"*">
 				>
