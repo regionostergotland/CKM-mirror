@@ -1,0 +1,71 @@
+archetype (adl_version=1.4; uid=0b125ff0-6921-4efe-8068-121eb52771bf)
+	openEHR-EHR-CLUSTER.biomarker_testing.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2018-11-22">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"9d5fc52e4825cc15b361d702c2f98dc3">
+		["build_uid"] = <"aff6bdf1-8c92-33be-8768-9b8fc931ebf5">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- biomarker_testing
+		items cardinality matches {1..*; unordered} matches {
+			CLUSTER[at0001] occurrences matches {0..1} matches {*}    -- Oestrogen Receptor assay (ER)
+			CLUSTER[at0002] occurrences matches {0..1} matches {*}    -- Progesterone Receptor assay (PgR)
+			CLUSTER[at0003] occurrences matches {0..1} matches {*}    -- Human Oestrogen Receptor 2 assay by immunohistochemistry (HER2 IH)
+			CLUSTER[at0004] occurrences matches {0..1} matches {*}    -- In Situ Hybridisation HER2
+			CLUSTER[at0005] occurrences matches {0..1} matches {*}    -- Ki67
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"biomarker_testing">
+					description = <"biomarker_testing">
+				>
+				["at0001"] = <
+					text = <"Oestrogen Receptor assay (ER)">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Progesterone Receptor assay (PgR)">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Human Oestrogen Receptor 2 assay by immunohistochemistry (HER2 IH)">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"In Situ Hybridisation HER2">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Ki67">
+					description = <"*">
+				>
+			>
+		>
+	>
