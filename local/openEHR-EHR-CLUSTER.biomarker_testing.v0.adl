@@ -23,18 +23,112 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9d5fc52e4825cc15b361d702c2f98dc3">
+		["MD5-CAM-1.0.1"] = <"db344f293060c7672fe09f079995b66c">
 		["build_uid"] = <"aff6bdf1-8c92-33be-8768-9b8fc931ebf5">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- biomarker_testing
 		items cardinality matches {1..*; unordered} matches {
-			CLUSTER[at0001] occurrences matches {0..1} matches {*}    -- Oestrogen Receptor assay (ER)
-			CLUSTER[at0002] occurrences matches {0..1} matches {*}    -- Progesterone Receptor assay (PgR)
-			CLUSTER[at0003] occurrences matches {0..1} matches {*}    -- Human Oestrogen Receptor 2 assay by immunohistochemistry (HER2 IH)
-			CLUSTER[at0004] occurrences matches {0..1} matches {*}    -- In Situ Hybridisation HER2
-			CLUSTER[at0005] occurrences matches {0..1} matches {*}    -- Ki67
+			CLUSTER[at0001] occurrences matches {0..1} matches {    -- Oestrogen Receptor assay (ER)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0006] occurrences matches {0..1} matches {    -- ER result
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0014,    -- Postitive
+									at0015,    -- Negative
+									at0016]    -- Equivocal
+								}
+							}
+						}
+					}
+					ELEMENT[at0007] occurrences matches {0..1} matches {    -- Percentage of nuclei stained
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0002] occurrences matches {0..1} matches {    -- Progesterone Receptor assay (PgR)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- PgR result
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0017,    -- Positive
+									at0018,    -- Negative
+									at0019]    -- Equivocal
+								}
+							}
+						}
+					}
+					ELEMENT[at0009] occurrences matches {0..1} matches {    -- Percentage of nuclei stained
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0003] occurrences matches {0..1} matches {    -- Human Oestrogen Receptor 2 assay by immunohistochemistry (HER2 IH)
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0010] occurrences matches {0..1} matches {    -- HER2 IH score
+						value matches {
+							1|[local::at0026],
+							2|[local::at0027],
+							3|[local::at0028],
+							4|[local::at0029],
+							5|[local::at0030]
+						}
+					}
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- HER2 IH result
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0020,    -- Positive
+									at0021,    -- Negative
+									at0022]    -- Equivocal
+								}
+							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0004] occurrences matches {0..1} matches {    -- In Situ Hybridisation HER2
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- ISH HER2 result
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0023,    -- Postive
+									at0024,    -- Negative
+									at0025]    -- Not performed
+								}
+							}
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+			CLUSTER[at0005] occurrences matches {0..1} matches {    -- Ki67
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Percentage of nuclei stained (in hotspot)
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -64,6 +158,106 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Ki67">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"ER result">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Percentage of nuclei stained">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"PgR result">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Percentage of nuclei stained">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"HER2 IH score">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"HER2 IH result">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"ISH HER2 result">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Percentage of nuclei stained (in hotspot)">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Postitive">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Negative">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Equivocal">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Positive">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Negative">
+					description = <"*">
+				>
+				["at0019"] = <
+					text = <"Equivocal">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Positive">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Negative">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Equivocal">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Postive">
+					description = <"Amplified">
+				>
+				["at0024"] = <
+					text = <"Negative">
+					description = <"Not amplified">
+				>
+				["at0025"] = <
+					text = <"Not performed">
+					description = <"*">
+				>
+				["at0026"] = <
+					text = <"Score 0">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"Score 1+">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Score 2+">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Score 3+">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Can not be determined">
 					description = <"*">
 				>
 			>
