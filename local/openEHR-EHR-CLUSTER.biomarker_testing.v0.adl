@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"efc53b0122c35a117ea9108332a5ce8c">
+		["MD5-CAM-1.0.1"] = <"91e800da5a1cb9a6f8d743249202eff7">
 		["build_uid"] = <"aff6bdf1-8c92-33be-8768-9b8fc931ebf5">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Biomarker_testing
+	CLUSTER[at0000] matches {    -- Biomarker testing
 		items cardinality matches {1..*; unordered} matches {
 			CLUSTER[at0001] occurrences matches {0..1} matches {    -- Oestrogen Receptor assay (ER)
 				items cardinality matches {1..*; unordered} matches {
@@ -138,7 +138,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Biomarker_testing">
+					text = <"Biomarker testing">
 					description = <"biomarker_testing">
 				>
 				["at0001"] = <
