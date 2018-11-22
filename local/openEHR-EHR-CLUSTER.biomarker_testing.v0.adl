@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"315f383f75d464909b104e0c4e2b7756">
+		["MD5-CAM-1.0.1"] = <"14fd82779ab8eab8505d7d001a4fd93b">
 		["build_uid"] = <"aff6bdf1-8c92-33be-8768-9b8fc931ebf5">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Biomarker testing
+	CLUSTER[at0000] matches {    -- Biomarker testing for breast carnicoma
 		items cardinality matches {1..*; unordered} matches {
 			CLUSTER[at0001] occurrences matches {0..1} matches {    -- Oestrogen Receptor assay (ER)
 				items cardinality matches {1..*; unordered} matches {
@@ -51,7 +51,18 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0032] occurrences matches {0..1} matches {*}    -- Predominant staining intensity
+					ELEMENT[at0032] occurrences matches {0..1} matches {    -- Predominant staining intensity
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0034,    -- Low
+									at0035,    -- Intermediate
+									at0036]    -- High
+								}
+							}
+						}
+					}
 				}
 			}
 			CLUSTER[at0002] occurrences matches {0..1} matches {    -- Progesterone Receptor assay (PgR)
@@ -75,7 +86,18 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0033] occurrences matches {0..1} matches {*}    -- Predominant staining intensity
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Predominant staining intensity
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0037,    -- Low
+									at0038,    -- Intermediate
+									at0039]    -- High
+								}
+							}
+						}
+					}
 				}
 			}
 			CLUSTER[at0003] occurrences matches {0..1} matches {    -- Human Oestrogen Receptor 2 assay by immunohistochemistry (HER2 IH)
@@ -140,7 +162,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Biomarker testing">
+					text = <"Biomarker testing for breast carnicoma">
 					description = <"Biomarker testing of:
 - Immunohistochemical assays of oestrogen 
    receptor (ER), progesterone receptor (PR) and 
@@ -251,19 +273,19 @@ ontology
 				>
 				["at0026"] = <
 					text = <"Score 0">
-					description = <"*">
+					description = <"No staining observed OR Membrane stating that is incomplete and is faint/barely perceptible and within ≤10% of tumor cells">
 				>
 				["at0027"] = <
 					text = <"Score 1+">
-					description = <"*">
+					description = <"Incomplete membrane staining that is faint/barely perceptible and within >10% of tumor cells">
 				>
 				["at0028"] = <
 					text = <"Score 2+">
-					description = <"*">
+					description = <"Weak to moderate complete membrane staining in >10% of tumor cells OR Circumferential membrane staining that is intense but within ≤10% of tumor cells">
 				>
 				["at0029"] = <
 					text = <"Score 3+">
-					description = <"*">
+					description = <"Circumferential membrane staining that is complete and >10% of tumor cells">
 				>
 				["at0030"] = <
 					text = <"Can not be determined">
@@ -280,6 +302,30 @@ ontology
 				["at0033"] = <
 					text = <"Predominant staining intensity">
 					description = <"*">
+				>
+				["at0034"] = <
+					text = <"Low">
+					description = <"Predominant intensity of staining is low.">
+				>
+				["at0035"] = <
+					text = <"Intermediate">
+					description = <"Predominant intensity of staining is intermediate.">
+				>
+				["at0036"] = <
+					text = <"High">
+					description = <"Predominant intensity of staining is high.">
+				>
+				["at0037"] = <
+					text = <"Low">
+					description = <"Predominant intensity of staining is intermediate.">
+				>
+				["at0038"] = <
+					text = <"Intermediate">
+					description = <"Predominant intensity of staining is intermediate.">
+				>
+				["at0039"] = <
+					text = <"High">
+					description = <"Predominant intensity of staining is intermediate.">
 				>
 			>
 		>
