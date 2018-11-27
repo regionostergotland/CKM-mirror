@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a83d3f37a504abf729176b7a489fc1ec">
+		["MD5-CAM-1.0.1"] = <"9c835cefac26ab6840e28427ff1c1aee">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -75,21 +75,9 @@ definition
 									}
 									CLUSTER[at0069] occurrences matches {0..1} matches {    -- Specimen properties
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0054] occurrences matches {0..1} matches {    -- Specimen type
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0066] occurrences matches {0..1} matches {    -- Specimen laterality
-												value matches {
-													DV_CODED_TEXT matches {
-														defining_code matches {
-															[local::
-															at0103,    -- Right
-															at0104]    -- Left
-														}
-													}
-												}
+											allow_archetype CLUSTER[at0106] occurrences matches {0..*} matches {    -- Specimen laterality
+												include
+													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.anatomical_location\.v1/}
 											}
 											ELEMENT[at0070] occurrences matches {0..1} matches {    -- Mamill
 												value matches {
@@ -101,77 +89,13 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
-											CLUSTER[at0088] occurrences matches {0..1} matches {    -- Specimen dimensions
-												items cardinality matches {1..*; unordered} matches {
-													CLUSTER[at0089] occurrences matches {0..1} matches {    -- Specimen size
-														items cardinality matches {1..*; unordered} matches {
-															ELEMENT[at0090] occurrences matches {0..1} matches {    -- Mediolateral
-																value matches {
-																	C_DV_QUANTITY <
-																		property = <[openehr::122]>
-																		list = <
-																			["1"] = <
-																				units = <"mm">
-																			>
-																		>
-																	>
-																}
-															}
-															ELEMENT[at0091] occurrences matches {0..1} matches {    -- Craniocaudal
-																value matches {
-																	C_DV_QUANTITY <
-																		property = <[openehr::122]>
-																		list = <
-																			["1"] = <
-																				units = <"mm">
-																			>
-																		>
-																	>
-																}
-															}
-															ELEMENT[at0092] occurrences matches {0..1} matches {    -- Anteroposterior
-																value matches {
-																	C_DV_QUANTITY <
-																		property = <[openehr::122]>
-																		list = <
-																			["1"] = <
-																				units = <"mm">
-																			>
-																		>
-																	>
-																}
-															}
-														}
-													}
-													CLUSTER[at0093] occurrences matches {0..1} matches {    -- Skin dressed surface
-														items cardinality matches {1..*; unordered} matches {
-															ELEMENT[at0094] occurrences matches {0..1} matches {    -- x-direction
-																value matches {
-																	C_DV_QUANTITY <
-																		property = <[openehr::122]>
-																		list = <
-																			["1"] = <
-																				units = <"mm">
-																			>
-																		>
-																	>
-																}
-															}
-															ELEMENT[at0095] occurrences matches {0..1} matches {    -- y-direction
-																value matches {
-																	C_DV_QUANTITY <
-																		property = <[openehr::122]>
-																		list = <
-																			["1"] = <
-																				units = <"mm">
-																			>
-																		>
-																	>
-																}
-															}
-														}
-													}
-												}
+											allow_archetype CLUSTER[at0107] occurrences matches {0..*} matches {    -- Specimen type
+												include
+													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.specimen\.v0/}
+											}
+											allow_archetype CLUSTER[at0109] occurrences matches {0..*} matches {    -- Specimen dimensions
+												include
+													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 											}
 										}
 									}
@@ -198,45 +122,9 @@ definition
 													}
 												}
 											}
-											CLUSTER[at0074] occurrences matches {0..1} matches {    -- Tumour size
-												items cardinality matches {1..*; unordered} matches {
-													ELEMENT[at0078] occurrences matches {0..1} matches {    -- Mediolateral
-														value matches {
-															C_DV_QUANTITY <
-																property = <[openehr::122]>
-																list = <
-																	["1"] = <
-																		units = <"mm">
-																	>
-																>
-															>
-														}
-													}
-													ELEMENT[at0077] occurrences matches {0..1} matches {    -- Craniocaudal
-														value matches {
-															C_DV_QUANTITY <
-																property = <[openehr::122]>
-																list = <
-																	["1"] = <
-																		units = <"mm">
-																	>
-																>
-															>
-														}
-													}
-													ELEMENT[at0075] occurrences matches {0..1} matches {    -- Anteroposterior
-														value matches {
-															C_DV_QUANTITY <
-																property = <[openehr::122]>
-																list = <
-																	["1"] = <
-																		units = <"mm">
-																	>
-																>
-															>
-														}
-													}
-												}
+											allow_archetype CLUSTER[at0110] occurrences matches {0..*} matches {    -- Tumour size
+												include
+													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 											}
 											ELEMENT[at0080] occurrences matches {0..1} matches {    -- Distance from tumour centre to mamill
 												value matches {
@@ -357,10 +245,6 @@ ontology
 					text = <"ItemTree">
 					description = <"@ internal @">
 				>
-				["at0054"] = <
-					text = <"Specimen type">
-					description = <"*">
-				>
 				["at0056"] = <
 					text = <"ett bra samlingsnamn">
 					description = <"*">
@@ -401,10 +285,6 @@ ontology
 					text = <"No">
 					description = <"*">
 				>
-				["at0066"] = <
-					text = <"Specimen laterality">
-					description = <"*">
-				>
 				["at0069"] = <
 					text = <"Specimen properties">
 					description = <"*">
@@ -419,22 +299,6 @@ ontology
 				>
 				["at0073"] = <
 					text = <"Tumour properties">
-					description = <"*">
-				>
-				["at0074"] = <
-					text = <"Tumour size">
-					description = <"*">
-				>
-				["at0075"] = <
-					text = <"Anteroposterior">
-					description = <"*">
-				>
-				["at0077"] = <
-					text = <"Craniocaudal">
-					description = <"*">
-				>
-				["at0078"] = <
-					text = <"Mediolateral">
 					description = <"*">
 				>
 				["at0079"] = <
@@ -473,38 +337,6 @@ ontology
 					text = <"Mikrokalkområde/DCIS">
 					description = <"*">
 				>
-				["at0088"] = <
-					text = <"Specimen dimensions">
-					description = <"*">
-				>
-				["at0089"] = <
-					text = <"Specimen size">
-					description = <"*">
-				>
-				["at0090"] = <
-					text = <"Mediolateral">
-					description = <"*">
-				>
-				["at0091"] = <
-					text = <"Craniocaudal">
-					description = <"*">
-				>
-				["at0092"] = <
-					text = <"Anteroposterior">
-					description = <"*">
-				>
-				["at0093"] = <
-					text = <"Skin dressed surface">
-					description = <"*">
-				>
-				["at0094"] = <
-					text = <"x-direction">
-					description = <"*">
-				>
-				["at0095"] = <
-					text = <"y-direction">
-					description = <"*">
-				>
 				["at0096"] = <
 					text = <"Number of tumours">
 					description = <"*">
@@ -533,16 +365,24 @@ ontology
 					text = <"Posterior direction">
 					description = <"*">
 				>
-				["at0103"] = <
-					text = <"Right">
-					description = <"*">
-				>
-				["at0104"] = <
-					text = <"Left">
-					description = <"*">
-				>
 				["at0105"] = <
 					text = <"Övrigt">
+					description = <"*">
+				>
+				["at0106"] = <
+					text = <"Specimen laterality">
+					description = <"*">
+				>
+				["at0107"] = <
+					text = <"Specimen type">
+					description = <"What kind of specimen, mastectomy, partial mastectomy etc">
+				>
+				["at0109"] = <
+					text = <"Specimen dimensions">
+					description = <"*">
+				>
+				["at0110"] = <
+					text = <"Tumour size">
 					description = <"*">
 				>
 			>
