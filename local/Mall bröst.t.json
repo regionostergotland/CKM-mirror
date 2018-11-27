@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "24bdf49ddcef0e4b63859137171f988f",
+      "MD5-CAM-1.0.1" : "49f6c71aade43690c329ade637345b28",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -264,9 +264,57 @@
       "ar-sy" : { },
       "sl" : { },
       "en" : { },
-      "es-ar" : { },
-      "nb" : { },
-      "pt-br" : { }
+      "es-ar" : {
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        }
+      },
+      "nb" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+        }
+      },
+      "pt-br" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Relatório",
+          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identificador do relatório",
+          "description" : "Informação de identificação sobre o relatório."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -292,7 +340,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "EE922E416EC2C85EE6DF568D33B963CB"
       },
-      "details" : { }
+      "details" : {
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Дизайн представления списка обоснования диагнозов",
+          "keywords" : [ "диагностический", "список", "обоснование", "уточненный", "лаборатория", "визуализация", "радиология", "патоморфология", "диагноз", "окончательный", "предварительный", "рабочий" ],
+          "use" : "Используется для поддержки представления списка обоснований диагноза",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To demonstrate a design pattern for representation of a List of Diagnostic Reports.",
+          "keywords" : [ "diagnostic", "report", "laboratory", "imaging", "radiology", "pathology", "list" ],
+          "use" : "Use to support the representation of diagnostic reports that have been recorded.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.diagnostic_reports.v1",
     "differential" : true,
@@ -376,7 +455,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "1BB8DC23A187DFCB9D9639E283647B75"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere funn og tolkning av laboratorieanalyser utført på prøvemateriale fra et individ.",
+          "keywords" : [ "lab", "patologi", "biokjemi", "hematologi", "mikrobiologi", "immunologi", "laboratorie", "anatomisk", "kjemisk", "klinisk", "immunopatologi", "cytologi", "histopatologi", "prøve", "biopsi", "preparat", "rettsmedisinsk", "genetisk", "histologi", "kjemi", "farmakologi" ],
+          "use" : "Brukes for å registrere funn og tolkning av laboratorieanalyser utført på prøvemateriale fra et individ. Dette utføres typisk i et laboratorium, men kan også gjøres i andre miljøer, som for eksempel ved pasientnære analyser.\r\n\r\nDenne arketypen er laget for å være et rammeverk som vanligvis utvides med CLUSTER-arketyper for å muliggjøre hensiktsmessig registrering av forskjellige typer labsvar. Dette kan omfatte både analysepanel for biokjemi og hematologi, samt spesifikke mønstre for de unike behovene innen mikrobiologi og patologi.\r\n\r\nDersom de rekvirerte analysene eller undersøkelsene ikke vanligvis hører sammen i en gruppe eller et panel, vil hvert resultat normalt representeres ved en separat instans av denne arketypen.\r\n\r\nDenne arketypen støtter flere tilnærminger til å registrere informasjon om prøvematerialet, noe som reflekterer de store variasjonene innenfor dagens praksis. Laboratoriesvar-arketypen har i høy grad samsvar med HL7 FHIR-ressursen \"Diagnostic Report\".\r\n\r\nForventningen er en eller flere instanser av denne arketypen eller arketypefamilien vil sendes tilbake til en rekvirent som del av en svarrapport, f.eks. i COMPOSITION.report_result eller tilsvarende, og sammen med andre relevante ENTRY-arketyper.\r\n\r\nDer laboratoriet endrer analyser eller legger til analyser som oppfølging, kan disse håndteres etter veilledning fra HL7 FHIR (https://www.hl7.org/fhir/2015may/uslabreport-guide.html), eller etter lokale prosedyrer. For eksempel en av følgende:\r\n1. Registrer de endrede analysene/tilleggsanalysene innenfor samme instans av denne arketypen.\r\n2. Registrer de endrede analysene/tilleggsanalysene i en ny instans av denne arketypen, men referer til den opprinnelige rekvisisjonen ved hjelp av \"Rekvisisjonsdetaljer\".\r\n3. Registrer de endrede analysene/tilleggsanalysene i en ny instans av denne arketypen, men referer til en ny rekvisisjon i tillegg til den opprinnelige rekvisisjonen, ved hjelp av \"Rekvisisjonsdetaljer\".",
+          "misuse" : "Skal ikke brukes for å lagre en obduksjonsrapport, selv om prøver av noen prøvematerialer som blir tatt i en obduksjon kan bli representert i denne arketypen.\r\n\r\nDenne arketypen er passende for å representere generelle analyseresultat, men er ikke ment å dekke fullstendige oversiktsrapporter. For disse er det nødvendig å bruke spesialiserte arketyper i tillegg.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.\r\nو يمثل هذا النموذج كوالد (أب) للتخصيصات الأخرى لاختبارات معملية أكثر تحديدا مثل الميكروبيولوجيا و الهيستوباثولوجيا.",
+          "keywords" : [ "المعمل - المختبر", "الباثولوجيا - المرضية", "الكيمياء الحيوية", "الدمويات", "الميكروبيولوجيا", "المناعيات - علم المناعة" ],
+          "use" : "قد يستخدم لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.\r\n\r\nيتم بعد ذلك تقديم التقرير للطبيب السريري الذي قام بطلب الاختبار في سياق تقرير معملي متكامل.",
+          "misuse" : "قد تكون التخصيصات أكثر مناسبة للتقارير المركبة مثل حالات الميكروبيولوجيا أو الهيستوباثولوجيا.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the result, including findings and interpretation of a laboratory investigation performed on patient-related specimens.",
+          "keywords" : [ "lab", "pathology", "biochemistry", "haematology", "microbiology", "immunology", "laboratory", "anatomical", "chemical", "clinical", "immunopathology", "cytology", "histopathology", "test", "biopsy", "specimen", "forensic", "genetic", "laboratory medicine", "results", "analysis" ],
+          "use" : "Use for recording the result, including findings and interpretation, of a laboratory investigation performed on specimens collected from an individual. This is typically done in a laboratory but may be done in other environments such as at the point of care.\r\n\r\nThis archetype has been designed to be a framework that will usually be extended with CLUSTER archetypes to enable appropriate recording of specific laboratory test result patterns, including but not limited to: test panels for biochemistry and haematology plus specific patterns for the unique requirements for microbiology and histopathology.\r\n\r\nIf the ordered tests or investigations do not commonly belong together in a group or panel, each test result would normally be represented using separate instances of this archetype.\r\n\r\nThis archetype supports multiple approaches to recording of specimen, reflecting current practice which varies enormously. A Laboratory test result has a high degree of alignment to an HL7 FHIR Diagnostic Report resource.\r\n\r\nIt is anticipated that one or more instances of this archetype, or archetype family, will be sent back to a requesting clinician within a laboratory report document comprising COMPOSITION.report_result archetype, or similar, and other relevant ENTRY archetypes.\r\n\r\nWhere 'reflex tests'are performed by the laboratory, these may be handled as per US/FHIR guidance (see https://www.hl7.org/fhir/2015may/uslabreport-guide.html) or other local policy.\r\n\r\nFor example, one of the following ...\r\n\r\n1. Record the reflex test results additional 'Test findings' within the same 'openEHR-EHR-OBSERVATION.laboratory_test_result'\r\n\r\n2. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but refer to the original lab test request via 'Test request details'.\r\n\r\n3. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but reference a new lab test request as well as the original lab test request via 'Test request details'.",
+          "misuse" : "Not to be used to record an Autopsy report, although tests on some specimens that are taken at autopsy may be represented using this archetype.\r\n\r\nThis archetype is suitable for representation of general laboratory test results, but not intended to cover full synoptic reports. For these, additional specialising archetypes are required to represent the data.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录针对组织和体液等标本所进行的病理学实验室检验项目的发现/所见和解释。这通常是由实验室来完成，但也可能会是在其他环境下完成的，如床旁。",
+          "keywords" : [ "实验室", "医学实验室", "临床实验室", "中心实验室", "检验科", "化验室", "化验科", "病理学", "检验医学", "检验", "医学检验", "临床检验医学", "临床检验", "生物化学", "生化", "血液学", "微生物学", "免疫学", "解剖学", "化学", "临床", "免疫病理学", "细胞学", "组织病理学", "试验", "试验项目", "检验项目", "化验项目", "报告项目", "活组织检查", "活检", "标本", "样本", "样品", "试样", "法医学", "遗传学" ],
+          "use" : "用于记录任何病理学实验室检验结果，包括作为某个组合型操作项目或手术的组成部分而进行的针对某种标本的某一检验项目所获得的结果。\r\n\r\n可以采用模板或专用原始型来表达多种分析物的组套。\r\n\r\n对于那些需要额外报告内容的，诸如组织病理学或微生物学之类较为复杂的检验项目，则应当采用专用的原始型来表达。\r\n\r\n实验室检验报告与HL7 FHIR 诊断报告资源DiagnosticReport之间具有高度的一致性。\r\n\r\n在完整的基于组合式文档的报告的背景下，通常会作为一个构成要素，回报给申请医生。",
+          "misuse" : "并非旨在用于报告非病理学检验结果，如影像学诊断、心电图或呼吸功能试验。\r\n\r\n并非旨在用于表达完整的累积型报告。当前这一实验室检验结果原始型表达的仅仅是，累积型检验项目报告之中通常被视为纵列的结果集合之一。累积型报告是一种视图，是利用由多个观测指标OBSERVATION原始型所表示的结果构建而成。\r\n\r\n并非旨在用于记录活组织检查报告，尽管可以采用此原始型来表示，针对活组织检查时所采集标本进行的检验项目。\r\n\r\n此原始型适合于表达一般性的病理学检验结果，但并未打算涵盖完整的提要式报告。对于此类报告，则需要采用额外的特化性原始型来表达相应的数据。\r\n\r\n此原始型在设计上已经支持临床病理学，但可能并不适合于其他种类的病理学用途。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -595,7 +736,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F5408FC3E4BD84ED2B04A074072F5EA1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere funn og tolkninger ved patologiske undersøkelser utført på vev og kroppsvæsker.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere alle patologifunn, inkludert intraoperative, mikroskopiske eller makroskopiske undersøkelser av vev.\r\n\r\nArketypen er laget spesifikt for å brukes i SLOTet \"Analysesvar\" i arketypen OBSERVATION.laboratory_test, men kan også brukes innen andre arketyper der det er passende.\r\n\r\nDetaljerte strukturerte funn kan registreres i spesifikke CLUSTER-arketyper som nøstes under denne.",
+          "misuse" : "Brukes ikke til å registrere funn som ikke kommer fra patologiundersøkelser, f.eks. klinisk biokjemi eller mikrobiologi.\r\n\r\nBrukes ikke for å registrere en obduksjon, selv om funn ved undersøkelser av spesifikke prøver som tas under en obduksjon kan representeres ved hjelp av denne arketypen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the findings and interpretation of histopathology (anatomic pathology) tests performed on tissues and body fluids.",
+          "keywords" : [ ],
+          "use" : "Use to record any histopathology test result, including intra-operative, microscopic, macroscopic examinations of tissue.\r\n\r\nThis archetype is designed specifically to be used in the \"Test findings\" SLOT within the OBSERVATION.laboratory_test archetype, but may also be used withing other ENTRY class archetypes where appropriate.\r\n\r\nDetailed structured findings are captured within child cluster archetypes.",
+          "misuse" : "Not to be used for reporting on non-histopathology test results e.g. biochemistry or haematology tests.\r\n\r\nNot to be used to record an autopsy report, although tests on some specimens that are taken at autopsy may be represented using this archetype.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.histopathology_findings.v0",
     "differential" : true,
