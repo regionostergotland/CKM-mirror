@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9c835cefac26ab6840e28427ff1c1aee">
+		["MD5-CAM-1.0.1"] = <"a179d6d0e0a08cd7188ab3f3629d60fc">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -133,74 +133,15 @@ definition
 														list = <
 															["1"] = <
 																units = <"mm">
+																magnitude = <|>=0.0|>
 															>
 														>
 													>
 												}
 											}
-											CLUSTER[at0097] occurrences matches {0..1} matches {    -- Distance from tumour periphery to resection surface
-												items cardinality matches {1..*; unordered} matches {
-													ELEMENT[at0098] occurrences matches {0..1} matches {    -- Cranial direction
-														value matches {
-															C_DV_QUANTITY <
-																property = <[openehr::122]>
-																list = <
-																	["1"] = <
-																		units = <"mm">
-																	>
-																>
-															>
-														}
-													}
-													ELEMENT[at0099] occurrences matches {0..1} matches {    -- Caudal direction
-														value matches {
-															C_DV_QUANTITY <
-																property = <[openehr::122]>
-																list = <
-																	["1"] = <
-																		units = <"mm">
-																	>
-																>
-															>
-														}
-													}
-													ELEMENT[at0100] occurrences matches {0..1} matches {    -- Medial direction
-														value matches {
-															C_DV_QUANTITY <
-																property = <[openehr::122]>
-																list = <
-																	["1"] = <
-																		units = <"mm">
-																	>
-																>
-															>
-														}
-													}
-													ELEMENT[at0101] occurrences matches {0..1} matches {    -- Lateral direction
-														value matches {
-															C_DV_QUANTITY <
-																property = <[openehr::122]>
-																list = <
-																	["1"] = <
-																		units = <"mm">
-																	>
-																>
-															>
-														}
-													}
-													ELEMENT[at0102] occurrences matches {0..1} matches {    -- Posterior direction
-														value matches {
-															C_DV_QUANTITY <
-																property = <[openehr::122]>
-																list = <
-																	["1"] = <
-																		units = <"mm">
-																	>
-																>
-															>
-														}
-													}
-												}
+											allow_archetype CLUSTER[at0111] occurrences matches {0..*} matches {    -- Distance from tumour periphery to resection surface
+												include
+													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.tumour_resection_margins-Test2018\.v0/}
 											}
 										}
 									}
@@ -341,30 +282,6 @@ ontology
 					text = <"Number of tumours">
 					description = <"*">
 				>
-				["at0097"] = <
-					text = <"Distance from tumour periphery to resection surface">
-					description = <"*">
-				>
-				["at0098"] = <
-					text = <"Cranial direction">
-					description = <"*">
-				>
-				["at0099"] = <
-					text = <"Caudal direction">
-					description = <"*">
-				>
-				["at0100"] = <
-					text = <"Medial direction">
-					description = <"*">
-				>
-				["at0101"] = <
-					text = <"Lateral direction">
-					description = <"*">
-				>
-				["at0102"] = <
-					text = <"Posterior direction">
-					description = <"*">
-				>
 				["at0105"] = <
 					text = <"Övrigt">
 					description = <"*">
@@ -379,10 +296,15 @@ ontology
 				>
 				["at0109"] = <
 					text = <"Specimen dimensions">
-					description = <"*">
+					description = <"The size of the whole specimen in three dimensions.
+">
 				>
 				["at0110"] = <
 					text = <"Tumour size">
+					description = <"*">
+				>
+				["at0111"] = <
+					text = <"Distance from tumour periphery to resection surface">
 					description = <"*">
 				>
 			>
