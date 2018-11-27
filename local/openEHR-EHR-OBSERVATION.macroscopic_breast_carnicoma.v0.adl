@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1663c536b04bd8309760272b74fd6c6d">
+		["MD5-CAM-1.0.1"] = <"79322d9871002ff0c9fde95612ad0c16">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -75,6 +75,10 @@ definition
 									}
 									CLUSTER[at0069] occurrences matches {0..1} matches {    -- Specimen properties
 										items cardinality matches {1..*; unordered} matches {
+											allow_archetype CLUSTER[at0107] occurrences matches {0..*} matches {    -- Specimen type
+												include
+													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.specimen\.v0/}
+											}
 											allow_archetype CLUSTER[at0106] occurrences matches {0..*} matches {    -- Specimen laterality
 												include
 													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.anatomical_location\.v1/}
@@ -88,10 +92,6 @@ definition
 												value matches {
 													DV_TEXT matches {*}
 												}
-											}
-											allow_archetype CLUSTER[at0107] occurrences matches {0..*} matches {    -- Specimen type
-												include
-													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.specimen\.v0/}
 											}
 											allow_archetype CLUSTER[at0109] occurrences matches {0..*} matches {    -- Specimen dimensions
 												include
@@ -233,7 +233,7 @@ ontology
 				>
 				["at0069"] = <
 					text = <"Specimen properties">
-					description = <"*">
+					description = <"*Information about the specimens laterality, if the mamill and axill is present in the specimen or not. What kind of specimen it is and the size of the specimen.">
 				>
 				["at0070"] = <
 					text = <"Mamill">
