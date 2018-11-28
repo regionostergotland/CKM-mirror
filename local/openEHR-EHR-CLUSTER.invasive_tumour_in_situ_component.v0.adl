@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9b70553731299aa32aa9cb332113bbde">
+		["MD5-CAM-1.0.1"] = <"f5931f29fbeeae5e1257db1585ff1c60">
 		["build_uid"] = <"b7a485a2-6fea-329e-9db8-1bc00380606e">
 	>
 
@@ -57,6 +57,11 @@ definition
 			allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {    -- Dimension of in situ component
 				include
 					archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Additional information
+				value matches {
+					DV_TEXT matches {*}
+				}
 			}
 		}
 	}
@@ -104,6 +109,10 @@ ontology
 				["at0011"] = <
 					text = <"Dimension of in situ component">
 					description = <"The size of the in situ component in two dimensions. ">
+				>
+				["at0012"] = <
+					text = <"Additional information">
+					description = <"*">
 				>
 			>
 		>
