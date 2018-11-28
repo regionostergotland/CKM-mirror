@@ -1,0 +1,110 @@
+archetype (adl_version=1.4; uid=6e4b9b43-d14c-4302-bbe5-ec5250f56e57)
+	openEHR-EHR-CLUSTER.tumour_in_situ_component.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2018-11-28">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"d26c51344aa01687a89e678373447fce">
+		["build_uid"] = <"c5039674-9d14-37cb-b404-444dec46f457">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Tumour_In_situ_component
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Presence of in situ component
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Histologic type
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Nuclear score
+				value matches {
+					1|[local::at0005],
+					2|[local::at0006],
+					3|[local::at0007]
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Necrosis
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0008,    -- Exist
+							at0009]    -- Do not exist
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Tumour_In_situ_component">
+					description = <"Tumour_In_situ_component">
+				>
+				["at0001"] = <
+					text = <"Presence of in situ component">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Nuclear score">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Necrosis">
+					description = <"*">
+				>
+				["at0005"] = <
+					description = <"Size equivalent to 1.5–2 red blood cell diameters or normal duct epithelial nuclei; Diffuse chromatin; Inconspicuous nucleoli.">
+					text = <"Score 1">
+				>
+				["at0006"] = <
+					description = <"Size equivalent to 2–2.5 red blood cell diameters; Coarse chromatin; Infrequent nucleoli and mitoses.">
+					text = <"Score 2">
+				>
+				["at0007"] = <
+					description = <"Size > 2.5 red blood cell diameters; Pleomorphic vesicular nuclei; One or more prominent nucleoli; Frequent mitotic figures commonly present.">
+					text = <"Score 3">
+				>
+				["at0008"] = <
+					text = <"Exist">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Do not exist">
+					description = <"*">
+				>
+			>
+		>
+	>
