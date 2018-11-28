@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"147c4679b6194c964ee975875db1d97b">
+		["MD5-CAM-1.0.1"] = <"9b70553731299aa32aa9cb332113bbde">
 		["build_uid"] = <"b7a485a2-6fea-329e-9db8-1bc00380606e">
 	>
 
@@ -47,12 +47,16 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0009,    -- Ductal
-							at0010]    -- Lobular
+							at0009,    -- DCIS
+							at0010]    -- LCIS
 						}
 					}
 					DV_TEXT matches {*}
 				}
+			}
+			allow_archetype CLUSTER[at0011] occurrences matches {0..*} matches {    -- Dimension of in situ component
+				include
+					archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 			}
 		}
 	}
@@ -90,12 +94,16 @@ ontology
 					text = <"Score 3">
 				>
 				["at0009"] = <
-					text = <"Ductal">
+					text = <"DCIS">
 					description = <"*">
 				>
 				["at0010"] = <
-					text = <"Lobular">
+					text = <"LCIS">
 					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Dimension of in situ component">
+					description = <"The size of the in situ component in two dimensions. ">
 				>
 			>
 		>
