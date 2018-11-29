@@ -1,0 +1,132 @@
+archetype (adl_version=1.4; uid=0cb98dc4-90f9-42d8-be8f-812c2a2dc440)
+	openEHR-EHR-CLUSTER.in_situ_component.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2018-11-29">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"4f8c3c5ea7c9d6bcf84331f79aaad577">
+		["build_uid"] = <"2c814136-814d-3531-ad34-5074c8387301">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- In_situ_component
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Presence
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Histologic type
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0010,    -- DCIS
+							at0011,    -- LCIS
+							at0012]    -- Other
+						}
+					}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Nuclear score
+				value matches {
+					1|[local::at0007],
+					2|[local::at0008],
+					3|[local::at0009]
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Necrosis
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0004] occurrences matches {0..*} matches {    -- Dimension of in situ component
+				include
+					archetype_id/value matches {/.*/}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Additional information
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"In_situ_component">
+					description = <"In_situ_component">
+				>
+				["at0001"] = <
+					text = <"Presence">
+					description = <"Presence of in situ cancer in the specimen">
+				>
+				["at0002"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Nuclear score">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Dimension of in situ component">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Necrosis">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Additional information">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Score 1">
+					description = <"Size equivalent to 1.5–2 red blood cell diameters or normal duct epithelial nuclei; Diffuse chromatin; Inconspicuous nucleoli.">
+				>
+				["at0008"] = <
+					text = <"Score 2">
+					description = <"Size equivalent to 2–2.5 red blood cell diameters; Coarse chromatin; Infrequent nucleoli and mitoses.">
+				>
+				["at0009"] = <
+					text = <"Score 3">
+					description = <"Size > 2.5 red blood cell diameters; Pleomorphic vesicular nuclei; One or more prominent nucleoli; Frequent mitotic figures commonly present.">
+				>
+				["at0010"] = <
+					text = <"DCIS">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"LCIS">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Other">
+					description = <"*">
+				>
+			>
+		>
+	>
