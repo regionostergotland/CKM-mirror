@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5c108cfe55277362d0903a77100c1c7e">
+		["MD5-CAM-1.0.1"] = <"c2198d65e9c5203cf6c139014bb37eee">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -98,6 +98,11 @@ definition
 												}
 											}
 											ELEMENT[at0113] occurrences matches {0..1} matches {    -- Fascia
+												value matches {
+													DV_TEXT matches {*}
+												}
+											}
+											ELEMENT[at0114] occurrences matches {0..1} matches {    -- Additional information
 												value matches {
 													DV_TEXT matches {*}
 												}
@@ -324,6 +329,10 @@ If the specimen has a skin surface, this is documented in two dimensions.
 				>
 				["at0113"] = <
 					text = <"Fascia">
+					description = <"*">
+				>
+				["at0114"] = <
+					text = <"Additional information">
 					description = <"*">
 				>
 			>
