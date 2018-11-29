@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4f8c3c5ea7c9d6bcf84331f79aaad577">
+		["MD5-CAM-1.0.1"] = <"76aff64e4a960a219513bc779cf21d93">
 		["build_uid"] = <"2c814136-814d-3531-ad34-5074c8387301">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- In_situ_component
+	CLUSTER[at0000] matches {    -- In situ component
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Presence
 				value matches {
@@ -76,7 +76,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"In_situ_component">
+					text = <"In situ component">
 					description = <"In_situ_component">
 				>
 				["at0001"] = <
