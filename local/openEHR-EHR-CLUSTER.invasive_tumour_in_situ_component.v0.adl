@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f5931f29fbeeae5e1257db1585ff1c60">
+		["MD5-CAM-1.0.1"] = <"a50c19077c3f9a784ee93b88f293cdb8">
 		["build_uid"] = <"b7a485a2-6fea-329e-9db8-1bc00380606e">
 	>
 
@@ -35,13 +35,6 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Nulear score
-				value matches {
-					1|[local::at0006],
-					2|[local::at0007],
-					3|[local::at0008]
-				}
-			}
 			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Histologic type
 				value matches {
 					DV_CODED_TEXT matches {
@@ -51,6 +44,18 @@ definition
 							at0010]    -- LCIS
 						}
 					}
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Nulear score
+				value matches {
+					1|[local::at0006],
+					2|[local::at0007],
+					3|[local::at0008]
+				}
+			}
+			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Necrosis
+				value matches {
 					DV_TEXT matches {*}
 				}
 			}
@@ -112,6 +117,10 @@ ontology
 				>
 				["at0012"] = <
 					text = <"Additional information">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Necrosis">
 					description = <"*">
 				>
 			>
