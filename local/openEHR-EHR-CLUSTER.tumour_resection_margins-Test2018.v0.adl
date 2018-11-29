@@ -26,19 +26,19 @@ description
 	>
 	lifecycle_state = <"in_development">
 	details = <
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.">
-			keywords = <"الخباثة","الحواف/الهوامش","الورم","السرطان","القطع","الهيستوباثولوجيا","الخزعة">
-			copyright = <"© openEHR Foundation">
-			use = <"يستخدم عادة في نموذج الهيستوباثولجيا">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin,detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.">
 			keywords = <"malignancy","margins","tumour","cancer","resection","histopathology","biopsy">
 			copyright = <"© openEHR Foundation">
 			use = <"Normally used within a histopathology archetype.">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.">
+			keywords = <"الخباثة","الحواف/الهوامش","الورم","السرطان","القطع","الهيستوباثولوجيا","الخزعة">
+			copyright = <"© openEHR Foundation">
+			use = <"يستخدم عادة في نموذج الهيستوباثولجيا">
 		>
 	>
 	other_details = <
@@ -48,7 +48,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4714768237f4d64b8cd30c5cbe08b810">
+		["MD5-CAM-1.0.1"] = <"35b9d6c71a1ad3455db0190f9d1f106c">
 		["build_uid"] = <"4d7a3ade-e849-42dc-aac0-79ec8de2d9d0">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -124,7 +124,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			CLUSTER[at0.1] occurrences matches {0..1} matches {    -- Distance from tumor perception to resection margins
+			CLUSTER[at0.1] occurrences matches {0..1} matches {    -- Distance from tumor peripheri to resection margins
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Cranial/Superior direction
 						value matches {
@@ -199,6 +199,40 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Tumour - Surgical resection margins">
+					description = <"Details of tumour involvement at margins of surgical resections/biopsies.
+">
+				>
+				["at0.1"] = <
+					text = <"Distance from tumor peripheri to resection margins">
+					description = <"*">
+				>
+				["at0.2"] = <
+					text = <"Cranial/Superior direction">
+					description = <"*">
+				>
+				["at0.3"] = <
+					text = <"Caudal/Inferior direction">
+					description = <"*">
+				>
+				["at0.4"] = <
+					text = <"Medial direction">
+					description = <"*">
+				>
+				["at0.5"] = <
+					text = <"Lateral direction">
+					description = <"*">
+				>
+				["at0.6"] = <
+					text = <"Deep/Posterior direction">
+					description = <"*">
+				>
+				["at0000"] = <
+					text = <"Tumour - Surgical resection margins">
+					description = <"Details of tumour involvement at margins of surgical resections/biopsies.
+">
+				>
 				["at0001"] = <
 					text = <"Marginal involvement">
 					description = <"Evidence of tumour at a surgical resection margin.">
@@ -251,39 +285,42 @@ ontology
 					text = <"Nature of involvement">
 					description = <"The nature of involvement of the tumour with the surgical margin.">
 				>
-				["at0000.1"] = <
-					text = <"Tumour - Surgical resection margins">
-					description = <"Details of tumour involvement at margins of surgical resections/biopsies.
-">
-				>
-				["at0.1"] = <
-					text = <"Distance from tumor perception to resection margins">
-					description = <"*">
-				>
-				["at0.2"] = <
-					text = <"Cranial/Superior direction">
-					description = <"*">
-				>
-				["at0.3"] = <
-					text = <"Caudal/Inferior direction">
-					description = <"*">
-				>
-				["at0.4"] = <
-					text = <"Medial direction">
-					description = <"*">
-				>
-				["at0.5"] = <
-					text = <"Lateral direction">
-					description = <"*">
-				>
-				["at0.6"] = <
-					text = <"Deep/Posterior direction">
-					description = <"*">
-				>
 			>
 		>
 		["ar-sy"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"الورم - حواف/هوامش القطع الجراحي">
+					description = <"تفاصيل حول اكتناف الورم بحواف/هوامش القطع/الخزعات الجراحية">
+				>
+				["at0.1"] = <
+					text = <"*CLUSTER (en)">
+					description = <"*">
+				>
+				["at0.2"] = <
+					text = <"*Cranial/Superior direction (en)">
+					description = <"*">
+				>
+				["at0.3"] = <
+					text = <"*Caudal/Inferior direction (en)">
+					description = <"*">
+				>
+				["at0.4"] = <
+					text = <"*Medial direction (en)">
+					description = <"*">
+				>
+				["at0.5"] = <
+					text = <"*Lateral direction (en)">
+					description = <"*">
+				>
+				["at0.6"] = <
+					text = <"*Deep/Posterior direction (en)">
+					description = <"*">
+				>
+				["at0000"] = <
+					text = <"الورم - حواف/هوامش القطع الجراحي">
+					description = <"تفاصيل حول اكتناف الورم بحواف/هوامش القطع/الخزعات الجراحية">
+				>
 				["at0001"] = <
 					text = <"اكتناف الحواف">
 					description = <"الدليل على وجود الورم في هامش القطع الجراحي">
@@ -335,34 +372,6 @@ ontology
 				["at0020"] = <
 					text = <"طبيعة الاكتناف">
 					description = <"طبيعة اكتناف الورم في الحافة الجراحية">
-				>
-				["at0000.1"] = <
-					text = <"الورم - حواف/هوامش القطع الجراحي">
-					description = <"تفاصيل حول اكتناف الورم بحواف/هوامش القطع/الخزعات الجراحية">
-				>
-				["at0.1"] = <
-					text = <"*CLUSTER (en)">
-					description = <"*">
-				>
-				["at0.2"] = <
-					text = <"*Cranial/Superior direction (en)">
-					description = <"*">
-				>
-				["at0.3"] = <
-					text = <"*Caudal/Inferior direction (en)">
-					description = <"*">
-				>
-				["at0.4"] = <
-					text = <"*Medial direction (en)">
-					description = <"*">
-				>
-				["at0.5"] = <
-					text = <"*Lateral direction (en)">
-					description = <"*">
-				>
-				["at0.6"] = <
-					text = <"*Deep/Posterior direction (en)">
-					description = <"*">
 				>
 			>
 		>
