@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d0f871a7901953d387673da1a57fae63">
+		["MD5-CAM-1.0.1"] = <"f462e7c8b022ad224274fc6e328fc2eb">
 		["build_uid"] = <"aff6bdf1-8c92-33be-8768-9b8fc931ebf5">
 	>
 
@@ -92,20 +92,23 @@ definition
 			}
 			CLUSTER[at0004] occurrences matches {0..1} matches {    -- HER2 in situ hybridisation
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0012] occurrences matches {0..1} matches {    -- ISH HER2 result
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0023,    -- Postive
-									at0024,    -- Negative
-									at0025,    -- Not performed
-									at0031]    -- Can not be determined
-								}
-							}
-							DV_TEXT matches {*}
+					ELEMENT[at0041] occurrences matches {0..1} matches {*}    -- ISH HER2 copies
+					ELEMENT[at0042] occurrences matches {0..1} matches {*}    -- ISH HER2 C17 copies
+					ELEMENT[at0043] occurrences matches {0..1} matches {*}    -- HER2/C17 ratio
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- ISH HER2 result
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0023,    -- Postive
+							at0024,    -- Negative
+							at0025,    -- Not performed
+							at0031]    -- Can not be determined
 						}
 					}
+					DV_TEXT matches {*}
 				}
 			}
 			CLUSTER[at0005] occurrences matches {0..1} matches {    -- Ki67
@@ -258,6 +261,18 @@ ontology
 				>
 				["at0040"] = <
 					text = <"CLUSTER_SLOT">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"ISH HER2 copies">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"ISH HER2 C17 copies">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"HER2/C17 ratio">
 					description = <"*">
 				>
 			>
