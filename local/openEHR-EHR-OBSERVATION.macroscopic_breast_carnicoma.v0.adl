@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c2198d65e9c5203cf6c139014bb37eee">
+		["MD5-CAM-1.0.1"] = <"47d9ad684c4ac7df4134cc30f1c88797">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -118,18 +118,7 @@ definition
 											}
 											ELEMENT[at0079] occurrences matches {0..1} matches {    -- Appearance
 												value matches {
-													DV_CODED_TEXT matches {
-														defining_code matches {
-															[local::
-															at0081,    -- Välavgränsad
-															at0082,    -- Diffus
-															at0083,    -- Solid
-															at0084,    -- Mucinös
-															at0085,    -- Stråkig
-															at0086,    -- Cystisk
-															at0087]    -- Mikrokalkområde/DCIS
-														}
-													}
+													DV_TEXT matches {*}
 												}
 											}
 											allow_archetype CLUSTER[at0110] occurrences matches {0..*} matches {    -- Tumour size
@@ -259,38 +248,10 @@ ontology
 				>
 				["at0079"] = <
 					text = <"Appearance">
-					description = <"*">
+					description = <"Description of the tumor's appearance. ">
 				>
 				["at0080"] = <
 					text = <"Distance from tumour centre to mamill">
-					description = <"*">
-				>
-				["at0081"] = <
-					text = <"Välavgränsad">
-					description = <"*">
-				>
-				["at0082"] = <
-					text = <"Diffus">
-					description = <"*">
-				>
-				["at0083"] = <
-					text = <"Solid">
-					description = <"*">
-				>
-				["at0084"] = <
-					text = <"Mucinös">
-					description = <"*">
-				>
-				["at0085"] = <
-					text = <"Stråkig">
-					description = <"*">
-				>
-				["at0086"] = <
-					text = <"Cystisk">
-					description = <"*">
-				>
-				["at0087"] = <
-					text = <"Mikrokalkområde/DCIS">
 					description = <"*">
 				>
 				["at0096"] = <
@@ -317,7 +278,7 @@ If the specimen has a skin surface, this is documented in two dimensions.
 				>
 				["at0110"] = <
 					text = <"Tumour size">
-					description = <"*">
+					description = <"The size of the tumour in three dimensions, a x b x c. ">
 				>
 				["at0111"] = <
 					text = <"Distance from tumour periphery to resection surface">
