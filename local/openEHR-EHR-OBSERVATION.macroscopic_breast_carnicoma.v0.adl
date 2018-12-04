@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"47d9ad684c4ac7df4134cc30f1c88797">
+		["MD5-CAM-1.0.1"] = <"93e403480235d7e12c4ee584c5d8db5e">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -102,7 +102,7 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
-											ELEMENT[at0114] occurrences matches {0..1} matches {    -- Additional information
+											ELEMENT[at0114] occurrences matches {0..*} matches {    -- Additional information
 												value matches {
 													DV_TEXT matches {*}
 												}
