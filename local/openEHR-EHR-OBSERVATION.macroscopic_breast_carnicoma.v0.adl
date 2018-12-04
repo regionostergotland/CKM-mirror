@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"aa6bea463f9322207efaa841544f48a3">
+		["MD5-CAM-1.0.1"] = <"37bc283de1b47bde973cfee2cad49692">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -116,12 +116,12 @@ definition
 													DV_COUNT matches {*}
 												}
 											}
-											ELEMENT[at0079] occurrences matches {0..1} matches {    -- Appearance
+											ELEMENT[at0079] occurrences matches {0..1} matches {    -- Tumour appearance
 												value matches {
 													DV_TEXT matches {*}
 												}
 											}
-											allow_archetype CLUSTER[at0110] occurrences matches {0..*} matches {    -- Tumour size
+											allow_archetype CLUSTER[at0110] occurrences matches {0..*} matches {    -- Tumour dimensions
 												include
 													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 											}
@@ -247,7 +247,7 @@ ontology
 					description = <"*">
 				>
 				["at0079"] = <
-					text = <"Appearance">
+					text = <"Tumour appearance">
 					description = <"Description of the tumor's appearance. ">
 				>
 				["at0080"] = <
@@ -277,7 +277,7 @@ If the specimen has a skin surface, this is documented in two dimensions.
 ">
 				>
 				["at0110"] = <
-					text = <"Tumour size">
+					text = <"Tumour dimensions">
 					description = <"The size of the tumour in three dimensions, a x b x c. ">
 				>
 				["at0111"] = <
