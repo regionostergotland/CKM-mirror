@@ -48,7 +48,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4a39133b3397da036ce406bc493dc136">
+		["MD5-CAM-1.0.1"] = <"a4c4ba986e6be46c70e1d1610444d05f">
 		["build_uid"] = <"4d7a3ade-e849-42dc-aac0-79ec8de2d9d0">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -115,6 +115,11 @@ definition
 									>
 								>
 							>
+						}
+					}
+					ELEMENT[at0.8] occurrences matches {0..1} matches {    -- Measurement direction
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -285,6 +290,10 @@ ontology
 					text = <"Nature of involvement">
 					description = <"The nature of involvement of the tumour with the surgical margin.">
 				>
+				["at0.8"] = <
+					text = <"Measurement direction">
+					description = <"*">
+				>
 			>
 		>
 		["ar-sy"] = <
@@ -372,6 +381,10 @@ ontology
 				["at0020"] = <
 					text = <"طبيعة الاكتناف">
 					description = <"طبيعة اكتناف الورم في الحافة الجراحية">
+				>
+				["at0.8"] = <
+					text = <"*Measurement direction (en)">
+					description = <"*">
 				>
 			>
 		>
