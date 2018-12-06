@@ -26,19 +26,19 @@ description
 	>
 	lifecycle_state = <"in_development">
 	details = <
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin,detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.">
-			keywords = <"malignancy","margins","tumour","cancer","resection","histopathology","biopsy">
-			copyright = <"© openEHR Foundation">
-			use = <"Normally used within a histopathology archetype.">
-		>
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
 			purpose = <"تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.">
 			keywords = <"الخباثة","الحواف/الهوامش","الورم","السرطان","القطع","الهيستوباثولوجيا","الخزعة">
 			copyright = <"© openEHR Foundation">
 			use = <"يستخدم عادة في نموذج الهيستوباثولجيا">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin,detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.">
+			keywords = <"malignancy","margins","tumour","cancer","resection","histopathology","biopsy">
+			copyright = <"© openEHR Foundation">
+			use = <"Normally used within a histopathology archetype.">
 		>
 	>
 	other_details = <
@@ -48,7 +48,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"35b9d6c71a1ad3455db0190f9d1f106c">
+		["MD5-CAM-1.0.1"] = <"4a39133b3397da036ce406bc493dc136">
 		["build_uid"] = <"4d7a3ade-e849-42dc-aac0-79ec8de2d9d0">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -119,11 +119,6 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Description
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
 			CLUSTER[at0.1] occurrences matches {0..1} matches {    -- Distance from tumor peripheri to resection margins
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Cranial/Superior direction
@@ -190,6 +185,11 @@ definition
 							>
 						}
 					}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Description
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
