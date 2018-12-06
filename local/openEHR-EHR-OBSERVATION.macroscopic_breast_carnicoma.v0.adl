@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"11403fe20aa10ad7940519cc5d8d5472">
+		["MD5-CAM-1.0.1"] = <"7e6ca051ac351d007e3beb167157a55d">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -142,6 +142,11 @@ definition
 											allow_archetype CLUSTER[at0111] occurrences matches {0..*} matches {    -- Distance from tumour periphery to resection surface
 												include
 													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.tumour_resection_margins-Test2018\.v0/}
+											}
+											ELEMENT[at0116] occurrences matches {0..1} matches {    -- Sutures or clips
+												value matches {
+													DV_TEXT matches {*}
+												}
 											}
 											ELEMENT[at0112] occurrences matches {0..1} matches {    -- Additional information
 												value matches {
@@ -296,6 +301,10 @@ If the specimen has a skin surface, this is documented in two dimensions.
 				["at0115"] = <
 					text = <"Specimen type">
 					description = <"What kind of specimen is examined e.g. mastectomy, excision, sentinel node etc. ">
+				>
+				["at0116"] = <
+					text = <"Sutures or clips">
+					description = <"Documentation of any sutures and / or clips">
 				>
 			>
 		>
