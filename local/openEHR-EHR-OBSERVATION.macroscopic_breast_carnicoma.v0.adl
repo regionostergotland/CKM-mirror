@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"37bc283de1b47bde973cfee2cad49692">
+		["MD5-CAM-1.0.1"] = <"11403fe20aa10ad7940519cc5d8d5472">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -75,9 +75,10 @@ definition
 									}
 									CLUSTER[at0069] occurrences matches {0..1} matches {    -- Specimen properties
 										items cardinality matches {1..*; unordered} matches {
-											allow_archetype CLUSTER[at0107] occurrences matches {0..*} matches {    -- Specimen type
-												include
-													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.specimen\.v0/}
+											ELEMENT[at0115] occurrences matches {0..1} matches {    -- Specimen type
+												value matches {
+													DV_TEXT matches {*}
+												}
 											}
 											allow_archetype CLUSTER[at0106] occurrences matches {0..*} matches {    -- Specimen laterality
 												include
@@ -264,11 +265,7 @@ ontology
 				>
 				["at0106"] = <
 					text = <"Specimen laterality">
-					description = <"*">
-				>
-				["at0107"] = <
-					text = <"Specimen type">
-					description = <"What kind of specimen, mastectomy, partial mastectomy etc">
+					description = <"Left or right breast">
 				>
 				["at0109"] = <
 					text = <"Specimen dimensions">
@@ -295,6 +292,10 @@ If the specimen has a skin surface, this is documented in two dimensions.
 				["at0114"] = <
 					text = <"Additional information">
 					description = <"*">
+				>
+				["at0115"] = <
+					text = <"Specimen type">
+					description = <"What kind of specimen is examined e.g. mastectomy, excision, sentinel node etc. ">
 				>
 			>
 		>
