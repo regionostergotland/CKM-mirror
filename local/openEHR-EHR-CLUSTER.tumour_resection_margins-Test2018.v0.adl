@@ -26,19 +26,19 @@ description
 	>
 	lifecycle_state = <"in_development">
 	details = <
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin,detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.">
-			keywords = <"malignancy","margins","tumour","cancer","resection","histopathology","biopsy">
-			copyright = <"© openEHR Foundation">
-			use = <"Normally used within a histopathology archetype.">
-		>
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
 			purpose = <"تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.">
 			keywords = <"الخباثة","الحواف/الهوامش","الورم","السرطان","القطع","الهيستوباثولوجيا","الخزعة">
 			copyright = <"© openEHR Foundation">
 			use = <"يستخدم عادة في نموذج الهيستوباثولجيا">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin,detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.">
+			keywords = <"malignancy","margins","tumour","cancer","resection","histopathology","biopsy">
+			copyright = <"© openEHR Foundation">
+			use = <"Normally used within a histopathology archetype.">
 		>
 	>
 	other_details = <
@@ -48,7 +48,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bf739890b8942def252fb26bc4819d2d">
+		["MD5-CAM-1.0.1"] = <"bda65d0bc10c7de83c42c16f0ccddb9b">
 		["build_uid"] = <"4d7a3ade-e849-42dc-aac0-79ec8de2d9d0">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -215,7 +215,9 @@ ontology
 				>
 				["at0.2"] = <
 					text = <"Cranial/Superior direction">
-					description = <"The measured distance between the cranial resection margin and the tumour peripheri. ">
+					description = <"The measured distance between the cranial resection margin and the tumour peripheri. 
+
+Räcker det men en som kan klonas? och sen lägga in alla med rätt namn  i templaten? Alla mäts på samma sätt">
 				>
 				["at0.3"] = <
 					text = <"Caudal/Inferior direction">
@@ -235,7 +237,10 @@ ontology
 				>
 				["at0.8"] = <
 					text = <"Measurement direction">
-					description = <"In which anatomic direction the measurement was done e.g. cranial, medial etc">
+					description = <"In which anatomic direction the measurement was done e.g. cranial, medial etc
+
+Koppla till anatomic location? 
+Fördel/nackdel med att ha ett fast element jämfört med cluster">
 				>
 				["at0000"] = <
 					text = <"Tumour - Surgical resection margins">
