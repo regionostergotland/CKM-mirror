@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c9b5914a103948414109a4e13eb602ad">
+		["MD5-CAM-1.0.1"] = <"0f219273c0afbbe60a8f1d9a29d69d54">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -43,10 +43,9 @@ definition
 									}
 									CLUSTER[at0069] occurrences matches {0..1} matches {    -- Specimen properties
 										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0115] occurrences matches {0..1} matches {    -- Specimen type
-												value matches {
-													DV_TEXT matches {*}
-												}
+											allow_archetype CLUSTER[at0119] occurrences matches {0..*} matches {    -- Specimen type
+												include
+													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.specimen\.v0/}
 											}
 											allow_archetype CLUSTER[at0106] occurrences matches {0..*} matches {    -- Specimen laterality
 												include
@@ -231,13 +230,6 @@ If the specimen has a skin surface, this is documented in two dimensions.
 					text = <"Additional information">
 					description = <"*">
 				>
-				["at0115"] = <
-					text = <"Specimen type">
-					description = <"What kind of specimen is examined e.g. mastectomy, excision, sentinel node etc. 
-
-Värt att koppla till specimen-arketypen?
-Specimen - Specimen type?">
-				>
 				["at0116"] = <
 					text = <"Sutures or clips">
 					description = <"Information about sutures and / or clips on the specimen
@@ -252,6 +244,13 @@ samma här: om det är fritextsvar kanske denna ocg tuschmarkeringar kan utgå f
 					text = <"Information about the specimen">
 					description = <"Information about the specimen 
 x-ray osv">
+				>
+				["at0119"] = <
+					text = <"Specimen type">
+					description = <"What kind of specimen is examined e.g. mastectomy, excision, sentinel node etc. 
+
+(Värt att koppla till specimen-arketypen?
+Specimen - Specimen type?)">
 				>
 			>
 		>
