@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"01c9957c952be0ff4994f2f670bef601">
+		["MD5-CAM-1.0.1"] = <"0636411690b47e276faf9d1ad145723e">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -121,7 +121,7 @@ definition
 											}
 											allow_archetype CLUSTER[at0111] occurrences matches {0..*} matches {    -- Distance from tumour periphery to resection surface
 												include
-													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.tumour_resection_margins-Test2018\.v0|openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
+													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 											}
 											ELEMENT[at0112] occurrences matches {0..1} matches {    -- Additional information
 												value matches {
