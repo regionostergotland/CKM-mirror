@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"011f8f11178e783df205d54b9b9a4daa">
+		["MD5-CAM-1.0.1"] = <"c9b5914a103948414109a4e13eb602ad">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -36,41 +36,9 @@ definition
 						data matches {
 							ITEM_TREE[at0003] matches {    -- ItemTree
 								items cardinality matches {0..*; unordered} matches {
-									CLUSTER[at0056] occurrences matches {0..1} matches {    -- Information about specimen
-										items cardinality matches {1..*; unordered} matches {
-											ELEMENT[at0057] occurrences matches {0..1} matches {    -- Specimen x-ray avaliable
-												value matches {
-													DV_CODED_TEXT matches {
-														defining_code matches {
-															[local::
-															at0058,    -- Yes
-															at0059]    -- No
-														}
-													}
-												}
-											}
-											ELEMENT[at0060] occurrences matches {0..1} matches {    -- Marking of specimen avaliable
-												value matches {
-													DV_CODED_TEXT matches {
-														defining_code matches {
-															[local::
-															at0061,    -- Yes
-															at0062]    -- No
-														}
-													}
-												}
-											}
-											ELEMENT[at0063] occurrences matches {0..1} matches {    -- Part of specimen collected to bio bank
-												value matches {
-													DV_CODED_TEXT matches {
-														defining_code matches {
-															[local::
-															at0064,    -- Yes
-															at0065]    -- No
-														}
-													}
-												}
-											}
+									ELEMENT[at0118] occurrences matches {0..*} matches {    -- Information about the specimen
+										value matches {
+											DV_TEXT matches {*}
 										}
 									}
 									CLUSTER[at0069] occurrences matches {0..1} matches {    -- Specimen properties
@@ -201,47 +169,6 @@ ontology
 					text = <"ItemTree">
 					description = <"@ internal @">
 				>
-				["at0056"] = <
-					text = <"Information about specimen">
-					description = <"*">
-				>
-				["at0057"] = <
-					text = <"Specimen x-ray avaliable">
-					description = <"Kanske bara behövs en som sedan kan klonas till fler om alla har samma svarsparametrar som här: (ja/nej)
-Namn kanske kan vara description">
-				>
-				["at0058"] = <
-					text = <"Yes">
-					description = <"*">
-				>
-				["at0059"] = <
-					text = <"No">
-					description = <"*">
-				>
-				["at0060"] = <
-					text = <"Marking of specimen avaliable">
-					description = <"*">
-				>
-				["at0061"] = <
-					text = <"Yes">
-					description = <"*">
-				>
-				["at0062"] = <
-					text = <"No">
-					description = <"*">
-				>
-				["at0063"] = <
-					text = <"Part of specimen collected to bio bank">
-					description = <"*">
-				>
-				["at0064"] = <
-					text = <"Yes">
-					description = <"*">
-				>
-				["at0065"] = <
-					text = <"No">
-					description = <"*">
-				>
 				["at0069"] = <
 					text = <"Specimen properties">
 					description = <"*Information about the specimens laterality, if the mamill and axill is present in the specimen or not. What kind of specimen it is and the size of the specimen.">
@@ -320,6 +247,11 @@ samma här: om det är fritextsvar kanske denna ocg tuschmarkeringar kan utgå f
 				["at0117"] = <
 					text = <"Color markings">
 					description = <"*">
+				>
+				["at0118"] = <
+					text = <"Information about the specimen">
+					description = <"Information about the specimen 
+x-ray osv">
 				>
 			>
 		>
