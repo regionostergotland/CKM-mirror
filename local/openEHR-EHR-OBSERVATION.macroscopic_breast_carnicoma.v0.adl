@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0f219273c0afbbe60a8f1d9a29d69d54">
+		["MD5-CAM-1.0.1"] = <"01c9957c952be0ff4994f2f670bef601">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
@@ -55,34 +55,37 @@ definition
 												include
 													archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 											}
-											ELEMENT[at0070] occurrences matches {0..1} matches {    -- Mamill
-												value matches {
-													DV_TEXT matches {*}
+											CLUSTER[at0122] occurrences matches {0..1} matches {    -- Specimen details
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0113] occurrences matches {0..1} matches {    -- Fascia
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0070] occurrences matches {0..1} matches {    -- Mamill
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0071] occurrences matches {0..1} matches {    -- Axill
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
 												}
 											}
-											ELEMENT[at0071] occurrences matches {0..1} matches {    -- Axill
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0113] occurrences matches {0..1} matches {    -- Fascia
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0116] occurrences matches {0..1} matches {    -- Sutures or clips
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0117] occurrences matches {0..1} matches {    -- Color markings
-												value matches {
-													DV_TEXT matches {*}
-												}
-											}
-											ELEMENT[at0114] occurrences matches {0..*} matches {    -- Additional information
-												value matches {
-													DV_TEXT matches {*}
+											CLUSTER[at0121] occurrences matches {0..1} matches {    -- Specimen markings
+												items cardinality matches {1..*; unordered} matches {
+													ELEMENT[at0117] occurrences matches {0..1} matches {    -- Color markings
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
+													ELEMENT[at0116] occurrences matches {0..1} matches {    -- Sutures or clips
+														value matches {
+															DV_TEXT matches {*}
+														}
+													}
 												}
 											}
 										}
@@ -226,10 +229,6 @@ If the specimen has a skin surface, this is documented in two dimensions.
 					text = <"Fascia">
 					description = <"*">
 				>
-				["at0114"] = <
-					text = <"Additional information">
-					description = <"*">
-				>
 				["at0116"] = <
 					text = <"Sutures or clips">
 					description = <"Information about sutures and / or clips on the specimen
@@ -251,6 +250,14 @@ x-ray osv">
 
 (Värt att koppla till specimen-arketypen?
 Specimen - Specimen type?)">
+				>
+				["at0121"] = <
+					text = <"Specimen markings">
+					description = <"*">
+				>
+				["at0122"] = <
+					text = <"Specimen details">
+					description = <"*">
 				>
 			>
 		>
