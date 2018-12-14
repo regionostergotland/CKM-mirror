@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"43af8293370d30a2a4e55c4335e056e1">
+		["MD5-CAM-1.0.1"] = <"a2a9659beb5a53a0f48d56c0bd7d05a9">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -78,6 +78,32 @@ definition
 								magnitude matches {|>=0|}
 							}
 						}
+					}
+					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Tumour appearance
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0016] occurrences matches {0..*} matches {    -- Tumour dimensions
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
+					}
+					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Distance from tumour centre to mamill
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"mm">
+										magnitude = <|>=0.0|>
+									>
+								>
+							>
+						}
+					}
+					allow_archetype CLUSTER[at0018] occurrences matches {0..*} matches {    -- Distance from tumour periphery to resection margins
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 					}
 				}
 			}
@@ -135,6 +161,22 @@ x-ray osv">
 				>
 				["at0014"] = <
 					text = <"Number of tumours">
+					description = <"*">
+				>
+				["at0015"] = <
+					text = <"Tumour appearance">
+					description = <"*">
+				>
+				["at0016"] = <
+					text = <"Tumour dimensions">
+					description = <"*">
+				>
+				["at0017"] = <
+					text = <"Distance from tumour centre to mamill">
+					description = <"*">
+				>
+				["at0018"] = <
+					text = <"Distance from tumour periphery to resection margins">
 					description = <"*">
 				>
 			>
