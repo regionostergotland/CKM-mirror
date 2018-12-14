@@ -1,5 +1,5 @@
 archetype (adl_version=1.4; uid=08d8f354-46e0-41b2-bd90-6d716e529945)
-	openEHR-EHR-CLUSTER.microscopy_breast_carnicoma.v0
+	openEHR-EHR-CLUSTER.macroscopy_breast_carnicoma.v0
 
 concept
 	[at0000]
@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a2a9659beb5a53a0f48d56c0bd7d05a9">
+		["MD5-CAM-1.0.1"] = <"c84417b317dd4108d0ca68d2b6c316a5">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- microscopy_breast_carnicoma
+	CLUSTER[at0000] matches {    -- macroscopy_breast_carnicoma
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Information about the specimen
 				value matches {
@@ -115,8 +115,8 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"microscopy_breast_carnicoma">
-					description = <"microscopy_breast_carnicoma">
+					text = <"macroscopy_breast_carnicoma">
+					description = <"macroscopy_breast_carnicoma">
 				>
 				["at0001"] = <
 					text = <"Information about the specimen">
