@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0044d655b26a81a6f4c948e1f9337d15">
+		["MD5-CAM-1.0.1"] = <"735f55324f1570f325fefe3a26de211a">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Macrocopic findings - Breast cancer
+	CLUSTER[at0000] matches {    -- Macroscopic findings - Breast cancer
 		items cardinality matches {1..*; unordered} matches {
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Information about the specimen
 				value matches {
@@ -115,7 +115,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Macrocopic findings - Breast cancer">
+					text = <"Macroscopic findings - Breast cancer">
 					description = <"macroscopy_breast_carnicoma">
 				>
 				["at0001"] = <
