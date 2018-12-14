@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9fbdf4d9b2a6ba610ca810424654b19f">
+		["MD5-CAM-1.0.1"] = <"b3a1df421cb613549cb421f20ffbc78d">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -49,7 +49,7 @@ definition
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 					}
-					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Additional specimen details
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Visual markings/orientation
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -140,7 +140,7 @@ x-ray osv">
 					description = <"*">
 				>
 				["at0008"] = <
-					text = <"Additional specimen details">
+					text = <"Visual markings/orientation">
 					description = <"Is mamill, fascia, axill present in the specimen">
 				>
 				["at0010"] = <
