@@ -1,0 +1,142 @@
+archetype (adl_version=1.4; uid=08d8f354-46e0-41b2-bd90-6d716e529945)
+	openEHR-EHR-CLUSTER.microscopy_breast_carnicoma.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2018-12-14">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"43af8293370d30a2a4e55c4335e056e1">
+		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- microscopy_breast_carnicoma
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Information about the specimen
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			CLUSTER[at0004] occurrences matches {0..1} matches {    -- Specimen properties
+				items cardinality matches {1..*; unordered} matches {
+					allow_archetype CLUSTER[at0005] occurrences matches {0..*} matches {    -- Specimen type
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.specimen\.v0/}
+					}
+					allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {    -- Specimen laterality
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.anatomical_location\.v1/}
+					}
+					allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {    -- Specimen dimensions
+						include
+							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
+					}
+					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Additional specimen details
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+			CLUSTER[at0010] occurrences matches {0..1} matches {    -- Specimen markings
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0011] occurrences matches {0..1} matches {    -- Color markings
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Sutures or clips
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+			CLUSTER[at0013] occurrences matches {0..1} matches {    -- Tumour properties
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Number of tumours
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|>=0|}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"microscopy_breast_carnicoma">
+					description = <"microscopy_breast_carnicoma">
+				>
+				["at0001"] = <
+					text = <"Information about the specimen">
+					description = <"Information about the specimen 
+x-ray osv">
+				>
+				["at0004"] = <
+					text = <"Specimen properties">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Specimen type">
+					description = <"What kind of specimen is examined e.g. mastectomy, excision, sentinel node etc. ">
+				>
+				["at0006"] = <
+					text = <"Specimen laterality">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"Specimen dimensions">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"Additional specimen details">
+					description = <"Is mamill, fascia, axill present in the specimen">
+				>
+				["at0010"] = <
+					text = <"Specimen markings">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"Color markings">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"Sutures or clips">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Tumour properties">
+					description = <"*">
+				>
+				["at0014"] = <
+					text = <"Number of tumours">
+					description = <"*">
+				>
+			>
+		>
+	>
