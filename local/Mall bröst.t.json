@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "49f6c71aade43690c329ade637345b28",
+      "MD5-CAM-1.0.1" : "166b648b1fc5416b3c8f001f0640a078",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -530,14 +530,8 @@
             "fhir_valueset" : "*diagnostic-service-sections(en)",
             "fhir_mapping" : "*DiagnosticReport.serviceCategory(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0057]" : {
-            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
-          },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0065]" : {
             "fhir_Mapping" : "*DiagnosticReport.specimen(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0098]" : {
-            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
           },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0075]" : {
             "fhir_mapping" : "*DiagnosticReport.issued(en)"
@@ -551,6 +545,12 @@
           "/data[at0001]/events[at0002]/data[at0003]/items[at0005]" : {
             "fhirvalueset" : "*report-codes(en)",
             "fhirmapping" : "*DiagnosticReport.code(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0098.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0057.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
           }
         },
         "en" : { },
@@ -563,14 +563,8 @@
             "fhir_valueset" : "*diagnostic-service-sections(en)",
             "fhir_mapping" : "*DiagnosticReport.serviceCategory(en)"
           },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0057]" : {
-            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
-          },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0065]" : {
             "fhir_Mapping" : "*DiagnosticReport.specimen(en)"
-          },
-          "/data[at0001]/events[at0002]/data[at0003]/items[at0098]" : {
-            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
           },
           "/data[at0001]/events[at0002]/data[at0003]/items[at0075]" : {
             "fhir_mapping" : "*DiagnosticReport.issued(en)"
@@ -584,6 +578,12 @@
           "/data[at0001]/events[at0002]/data[at0003]/items[at0005]" : {
             "fhirvalueset" : "*report-codes(en)",
             "fhirmapping" : "*DiagnosticReport.code(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0098.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.codedDiagnosis(en)"
+          },
+          "/data[at0001]/events[at0002]/data[at0003]/items[at0057.1]" : {
+            "fhir_mapping" : "*DiagnosticReport.conclusion(en)"
           }
         }
       }
@@ -635,6 +635,54 @@
                       "unique" : false
                     },
                     "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0057.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0098.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "nodeId" : "at0101.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
                       "@type" : "C_ARCHETYPE_ROOT",
                       "rmTypeName" : "CLUSTER",
                       "occurrences" : "0..*",
@@ -661,7 +709,28 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : { },
-        "en" : { },
+        "en" : {
+          "at0098.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0098.1",
+            "text" : "Test diagnosis (Diagnos SnomedCT)",
+            "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the laboratory test results.",
+            "comment" : "For example: 'Severe hepatic impairment'. Coding of the diagnosis with a terminology is preferred, where possible.This diagnosis should be aligned with the narrative in the 'Conclusion'."
+          },
+          "at0057.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0057.1",
+            "text" : "Conclusion (Beskrivning av fynd)",
+            "description" : "Narrative description of the key findings.",
+            "comment" : "For example: 'Pattern suggests significant renal impairment'."
+          },
+          "at0101.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0101.1",
+            "text" : "Comment (Övrig kommentar kopplad till diagnosen)",
+            "description" : "Additional narrative about the test result not captured in other fields."
+          }
+        },
         "nb" : { },
         "zh-cn" : { }
       },
