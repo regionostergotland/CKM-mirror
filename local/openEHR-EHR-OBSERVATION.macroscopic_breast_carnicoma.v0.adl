@@ -23,12 +23,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bcf907073c327b363523cb4c992e8038">
+		["MD5-CAM-1.0.1"] = <"8022302e341d03bd38c3287b685d5313">
 		["build_uid"] = <"038d1679-12f6-3a9e-af6e-05e9f9f3419b">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- macroscopic_breast_carnicoma
+	OBSERVATION[at0000] matches {    -- FEL SKULLE VARA CLUSTER-arketyp
 		data matches {
 			HISTORY[at0001] matches {    -- History
 				events cardinality matches {0..*; unordered} matches {
@@ -152,7 +152,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"macroscopic_breast_carnicoma">
+					text = <"FEL SKULLE VARA CLUSTER-arketyp">
 					description = <"macroscopic_breast_carnicoma">
 				>
 				["at0001"] = <
