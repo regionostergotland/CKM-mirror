@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "44d65d8da30c110013877f05a206be2e",
-      "PARENT:MD5-CAM-1.0.1" : "79c436e537fb40d3cdba201ecbde92b3"
+      "MD5-CAM-1.0.1" : "a8070f1d9e4b7ad303a9f830ca9bad69",
+      "PARENT:MD5-CAM-1.0.1" : "d0800fd27ecd2f19a69f2f78555f79a6"
     },
     "details" : {
       "en" : {
@@ -70,6 +70,38 @@
             "unique" : false
           },
           "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0008.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0008.2",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..*",
@@ -195,6 +227,12 @@
           "code" : "at0012",
           "text" : "Sutures or clips",
           "description" : "*"
+        },
+        "at0008.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008.2",
+          "text" : "Visual markings/orientation of specimen (2)",
+          "description" : "Is mamill, fascia, axill present in the specimen"
         }
       }
     },
