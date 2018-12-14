@@ -23,14 +23,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"be00ab669bafb20c55e43764d3472e71">
+		["MD5-CAM-1.0.1"] = <"158b49cf9dab7f2bfd095555132658e9">
 		["build_uid"] = <"aff6bdf1-8c92-33be-8768-9b8fc931ebf5">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Biomarker testing for breast carnicoma
 		items cardinality matches {1..*; unordered} matches {
-			CLUSTER[at0001] occurrences matches {0..1} matches {    -- Receptor assay
+			CLUSTER[at0001] occurrences matches {0..*} matches {    -- Receptor assay
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0006] occurrences matches {0..1} matches {    -- Result
 						value matches {
