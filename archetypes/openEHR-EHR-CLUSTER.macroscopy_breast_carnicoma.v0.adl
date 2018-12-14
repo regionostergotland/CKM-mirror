@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a9a0500611d2d5af9f9116e34469421f">
+		["MD5-CAM-1.0.1"] = <"9fbdf4d9b2a6ba610ca810424654b19f">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -43,11 +43,11 @@ definition
 					}
 					allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {    -- Specimen laterality
 						include
-							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.anatomical_location\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location\.v1/}
 					}
 					allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {    -- Specimen dimensions
 						include
-							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.physical_properties\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 					}
 					ELEMENT[at0008] occurrences matches {0..1} matches {    -- Additional specimen details
 						value matches {
