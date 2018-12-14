@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "227fe249f4f2555c96f929fe8ec7b389",
+      "MD5-CAM-1.0.1" : "44d65d8da30c110013877f05a206be2e",
       "PARENT:MD5-CAM-1.0.1" : "79c436e537fb40d3cdba201ecbde92b3"
     },
     "details" : {
@@ -125,33 +125,6 @@
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..*",
-            "nodeId" : "at0018.2",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-002.v0",
-            "referenceType" : "archetypeOverlay"
-          }, {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
-            "nodeId" : "at0018.5",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-005.v0",
-            "referenceType" : "archetypeOverlay"
-          }, {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
-            "nodeId" : "at0018.3",
-            "attributes" : [ ],
-            "attributeTuples" : [ ],
-            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-003.v0",
-            "referenceType" : "archetypeOverlay"
-          }, {
-            "@type" : "C_ARCHETYPE_ROOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
             "nodeId" : "at0018.4",
             "attributes" : [ ],
             "attributeTuples" : [ ],
@@ -166,6 +139,33 @@
             "attributeTuples" : [ ],
             "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-001.v0",
             "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..*",
+            "nodeId" : "at0018.3",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-003.v0",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..*",
+            "nodeId" : "at0018.2",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-002.v0",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..*",
+            "nodeId" : "at0018.5",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-005.v0",
+            "referenceType" : "archetypeOverlay"
           } ]
         } ],
         "attributeTuples" : [ ]
@@ -178,12 +178,6 @@
     "conceptCode" : "at0000",
     "termDefinitions" : {
       "en" : {
-        "at0004" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0004",
-          "text" : "Specimen properties",
-          "description" : "*"
-        },
         "at0010" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0010",
@@ -308,7 +302,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Tumour - Surgical resection margins (2)",
+            "text" : "Lateral",
             "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
           },
           "at0018.1" : {
@@ -450,7 +444,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Tumour - Surgical resection margins (3)",
+            "text" : "Medial",
             "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
           },
           "at0018.1" : {
@@ -592,7 +586,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Tumour - Surgical resection margins (4)",
+            "text" : "Kraniell/Superior",
             "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
           },
           "at0018.1" : {
@@ -737,6 +731,12 @@
             "text" : "Grön (kaudal riktning)",
             "description" : "The name of the margin being described.",
             "comment" : "For example: 'closest margin', 'circumferential margin', 'deep margin', 'vascular margin' or 'bronchial margin'."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Kaudal/Inferior",
+            "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
           }
         },
         "ar-sy" : { }
@@ -863,7 +863,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Svart (djup/posterior riktning)",
+            "text" : "Djup/Posterior",
             "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
           },
           "at0018.1" : {
