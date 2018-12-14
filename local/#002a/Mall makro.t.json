@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ee9ede603569d6884f05782b490b3013",
-      "PARENT:MD5-CAM-1.0.1" : "9fbdf4d9b2a6ba610ca810424654b19f"
+      "MD5-CAM-1.0.1" : "227fe249f4f2555c96f929fe8ec7b389",
+      "PARENT:MD5-CAM-1.0.1" : "79c436e537fb40d3cdba201ecbde92b3"
     },
     "details" : {
       "en" : {
@@ -70,111 +70,6 @@
             "unique" : false
           },
           "children" : [ {
-            "@type" : "ARCHETYPE_SLOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
-            "nodeId" : "at0005",
-            "includes" : [ {
-              "@type" : "ASSERTION",
-              "stringExpression" : "archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\\.specimen\\.v0/}",
-              "expression" : {
-                "@type" : "BINARY_OPERATOR",
-                "type" : "BOOLEAN",
-                "operator" : "matches",
-                "leftOperand" : {
-                  "@type" : "MODEL_REFERENCE",
-                  "type" : "STRING",
-                  "precedenceOverriden" : false,
-                  "referenceType" : "Attribute",
-                  "path" : "archetype_id/value"
-                },
-                "rightOperand" : {
-                  "@type" : "CONSTRAINT",
-                  "type" : "STRING",
-                  "precedenceOverriden" : false,
-                  "referenceType" : "Constraint",
-                  "item" : {
-                    "@type" : "C_STRING",
-                    "constraint" : [ "/.*|openEHR-EHR-CLUSTER\\.specimen\\.v0/" ]
-                  }
-                },
-                "precedenceOverriden" : false
-              },
-              "variables" : [ ]
-            } ],
-            "excludes" : [ ],
-            "closed" : false
-          }, {
-            "@type" : "ARCHETYPE_SLOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
-            "nodeId" : "at0006",
-            "includes" : [ {
-              "@type" : "ASSERTION",
-              "stringExpression" : "archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\\.anatomical_location\\.v1/}",
-              "expression" : {
-                "@type" : "BINARY_OPERATOR",
-                "type" : "BOOLEAN",
-                "operator" : "matches",
-                "leftOperand" : {
-                  "@type" : "MODEL_REFERENCE",
-                  "type" : "STRING",
-                  "precedenceOverriden" : false,
-                  "referenceType" : "Attribute",
-                  "path" : "archetype_id/value"
-                },
-                "rightOperand" : {
-                  "@type" : "CONSTRAINT",
-                  "type" : "STRING",
-                  "precedenceOverriden" : false,
-                  "referenceType" : "Constraint",
-                  "item" : {
-                    "@type" : "C_STRING",
-                    "constraint" : [ "/.*|openEHR-EHR-CLUSTER\\.anatomical_location\\.v1/" ]
-                  }
-                },
-                "precedenceOverriden" : false
-              },
-              "variables" : [ ]
-            } ],
-            "excludes" : [ ],
-            "closed" : false
-          }, {
-            "@type" : "ARCHETYPE_SLOT",
-            "rmTypeName" : "CLUSTER",
-            "occurrences" : "0..*",
-            "nodeId" : "at0007",
-            "includes" : [ {
-              "@type" : "ASSERTION",
-              "stringExpression" : "archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\\.physical_properties\\.v0/}",
-              "expression" : {
-                "@type" : "BINARY_OPERATOR",
-                "type" : "BOOLEAN",
-                "operator" : "matches",
-                "leftOperand" : {
-                  "@type" : "MODEL_REFERENCE",
-                  "type" : "STRING",
-                  "precedenceOverriden" : false,
-                  "referenceType" : "Attribute",
-                  "path" : "archetype_id/value"
-                },
-                "rightOperand" : {
-                  "@type" : "CONSTRAINT",
-                  "type" : "STRING",
-                  "precedenceOverriden" : false,
-                  "referenceType" : "Constraint",
-                  "item" : {
-                    "@type" : "C_STRING",
-                    "constraint" : [ "/.*|openEHR-EHR-CLUSTER\\.physical_properties\\.v0/" ]
-                  }
-                },
-                "precedenceOverriden" : false
-              },
-              "variables" : [ ]
-            } ],
-            "excludes" : [ ],
-            "closed" : false
-          }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..*",
@@ -282,7 +177,32 @@
     "@type" : "ARCHETYPE_TERMINOLOGY",
     "conceptCode" : "at0000",
     "termDefinitions" : {
-      "en" : { }
+      "en" : {
+        "at0004" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004",
+          "text" : "Specimen properties",
+          "description" : "*"
+        },
+        "at0010" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0010",
+          "text" : "Specimen markings",
+          "description" : "*"
+        },
+        "at0011" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0011",
+          "text" : "Color markings",
+          "description" : "*"
+        },
+        "at0012" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0012",
+          "text" : "Sutures or clips",
+          "description" : "*"
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
@@ -1005,7 +925,52 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "6D55513D75F8DFD6DD7FAF6DED45C69B"
       },
-      "details" : { }
+      "details" : {
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar detalhes de um espécime laboratorial. Será frequentemente usado em diferentes contextos, p.e, dentro de um arquétipo tipo Instruction para descrever os espécimes que devem ser obtidos, ou descrevendo o espécime que acompanha a solicitação laboratorial. Pode ocorre dentro de um arquétipo tipo Action, p.e., descrevendo espécimes retirados como parte de um procedimento cirúrgico. \r\n\r\nSerá finalmente utilizado dentro de um arquétipo de resultado laboratorial para descrever o espécime reportado.",
+          "keywords" : [ "espécime", "laboratório", "amostra", "coleta" ],
+          "use" : "Geralmente utilizado dentro de OBSERVATION. laboratory_test.v1 e outros arquétipos tipo Instruction ou Action relacionados.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل تفاصيل حول عينة بالمعمل. \r\nيستخدم غالبا في سياقات مختلفة, مثلا: في داخل نموذج (تعليمات) ليصف العينة التي ينبغي أخذها, أو يصف العينة المرافقة لطلب معملي. \r\nو قد يحدث ذلك في داخل نموذج (فعل), مثال: وصف العينات التي تم أخذها كجزء من إجراء طبي جراحي. \r\nو سيستخدم أخيرا في داخل نموذج نتيجة اختبار المعمل ليصف العينة التي يتم تقديم عينة حولها.",
+          "keywords" : [ "النموذج/العينة", "المعمل/المختبر", "العينة", "التجميع" ],
+          "use" : "يستخدم عادةً في داخل نموذج (ملاحظة. معمل) و النماذج الأخرى تعليمات و فعل المتعلقة بالمعمل.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details of a laboratory specimen. Will often be used in different contexts e.g within an Instruction archetype to describe the specimen that has to be taken, or describing the specimen which accompanies the laboratory request. It may occur within an Action archetype e.g. describing specimens taken as part of a surgical procedure.\r\n\r\nIt will finally be used within a laboratory result archetype to describe the specimen being reported.",
+          "keywords" : [ "specimen", "laboratory", "sample", "collection" ],
+          "use" : "Generally used within OBSERVATION. laboratory_test.v1 and other laboratory related Instruction and Action archetypes.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -1147,6 +1112,23 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0079.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0005.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1212,6 +1194,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "magnitude",
+                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_INTEGER",
                   "rmTypeName" : "INTEGER",
@@ -1319,7 +1302,85 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "12CEE2FA9FD1CD14585E03BD0418C2BA"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For registering av strukturerte detaljer om én enkelt makroskopisk fysisk lokalisering på eller i menneskekroppen.",
+          "keywords" : [ "sted", "lokalisering", "lokalisasjon", "anatomisk", "kroppssted", "anatomisk region", "topografisk anatomi", "makroskopisk", "anatomi", "kroppsdel", "dermatom", "legemsdel" ],
+          "use" : "Brukes for å dokumentere strukturerte og ensartede detaljer om et enkelt identifisert fysisk sted på eller i menneskekroppen.\r\n\r\nDenne arketypen er spesifikt designet for bruk i ENTRY og CLUSTER-arketyper som gir konteksten for den anatomiske lokaliseringen.\r\n\r\nSom en grunnleggende del av klinisk praksis kan klinikere beskrive anatomiske lokaliseringer på et utall forskjellige måter. Noen arketyper inneholder et enkelt dataelement for enkel beskrivelse av en kroppslig lokalisering - for eksempel OBSERVATION.blood_pressure, og CLUSTER.symptom når man beskriver øresmerter. I denne situasjonen, hvor verdisettet er forutsigbart og enkelt å definere, er dette enkle dataelementet en meget nøyaktig og praktisk måte for å registrere et anatomisk sted på eller i kroppen og søke på det på et senere tidspunkt. Når den anatomiske lokaliseringen derimot ikke er veldefinert eller må defineres fortløpende, kan det være mer fleksibelt å bruke denne strukturerte arketypen. For eksempel i en situasjon hvor et hvilket som helst symptom kan bli registrert uten noen forkunnskaper om hvilke typer symptomer det kan være, så vil muligheten for å bruke denne arketypen være nyttig. I dette tilfellet har CLUSTER.symptom-arketypen et SLOT for \"Strukturert anatomisk lokalisering\" som kan inneholde denne arketypen for å støtte maksimal fleksibilitet i registrering av data om den anatomiske lokaliseringen.\r\n\r\nArketypen støtter registrering av komplekse strukturerte anatomiske steder. For eksempel finnes hjertespisstøt typisk i femte venstre intercostalrom i midtclaviculære linjen, ømhet ved McBurney's punkt på abdomen eller laserasjon på den palmare siden av den proksimale høyre tommelen.\r\n\r\nEn kombinasjon av dataelementer i denne arketypen kan brukes for individuell registrering av hver komponent av et postkoordinert terminologiuttrykk for anatomisk sted.\r\n\r\nArketypen inneholder et \"Alternativ struktur\" SLOT som tillater inklusjon av ytterligere arketyper som gir en alternativ struktur for beskrivelse av det samme kroppssted, som CLUSTER.anatomical_location_relative eller CLUSTER.anatomical_location_clock om dette er nødvendig. I en situasjon hvor denne arketypen bare brukes til å navngi en større og/eller ikke-spesifikk kroppsdel, kan ytterligere bruk av CLUSTER.anatomical_location_relative-arketypen understøtte registrering av en mer presis lokasjon - for eksempel 2 cm anteriort for venstre arms cubitalfossa eller 4 cm under høyre costamargin på brystveggen i midtclaviculærlinjen.\r\n\r\nHvis denne arketypen brukes i andre arketyper hvor pasienten/klienten ikke er den som dokumentasjonen omhandler, for eksempel foetus-in-utero, så vil den anatomiske lokaliseringen bli identifisert som en lokalisering på eller i kroppen til fosteret.",
+          "misuse" : "Brukes ikke for spesifisering av unilateral/bilateral forekomst av et anatomisk kjennetegn.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para identificar e anotar informações estruturadas sobre um único local físico do corpo humano usando termos anatômicos macroscópicos.",
+          "keywords" : [ "localização", "local", "anatômico", "região anatômica", "topografia anatômica", "macroscópico", "anatomia" ],
+          "use" : "Use para gravar detalhes estruturados e consistentes sobre um único local físico identificado do corpo humano.\r\n\r\nEste arquétipo foi projetado especificamente para ser utilizado dentro do contexto de qualquer entrada ou CLUSTER arquétipo que forneça o contexto da localização anatômica.\r\n\r\nComo uma parte fundamental da prática clínica, os médicos podem descrever localizações anatômicas em uma miríade de formas complexas e variáveis. Na prática, alguns arquétipos carregam um elemento de dados único para o transporte de uma simples descrição do local do corpo - por exemplo, OBSERVATION.blood_pressure e CLUSTER.symptom quando descrevem a dor de ouvido. Nesta situação, onde o valor definido é previsível e simples de definir, este elemento de dados único é uma maneira muito precisa e pragmática para gravar o local no corpo e a consulta em uma data posterior. No entanto na situação onde a localização anatômica não é bem definida ou precisa ser determinada em tempo de execução, pode ser mais flexível para usar este arquétipo estruturado. Por exemplo, na situação onde qualquer sintoma pode ser gravado sem qualquer escopo predefinido do tipo, em seguida, permitindo o uso deste arquétipo especificamente, definir uma localização anatômica do corpo pode ser útil. Neste caso, o arquétipo CLUSTER.symptom carrega também um SLOT para localização anatômica detalhada que inclui este arquétipo para oferecer suporte a máxima flexibilidade na gravação de dados da localização anatômica.\r\n\r\nEste arquétipo suporta gravação de locais anatômicos estruturados complexos. Por exemplo, a batida do ápice do coração é normalmente encontrada no quinto espaço intercostal esquerdo na linha médio-clavicular, ou a sensibilidade em ponto de McBurneys na parede abdominal ou laceração na face palmar do polegar direito proximal.\r\n\r\nUma combinação de elementos de dados neste arquétipo pode ser usado para gravar individualmente cada componente de uma expressão de terminologia coordenada que representa o site anatômico.\r\n\r\nA estrutura alternativa SLOT permite a inclusão de arquétipos adicionais que fornecem uma estrutura alternativa para descrever o mesmo local do corpo, como CLUSTER.anatomical_location_relative ou CLUSTER.anatomical_location_clock, esta deve ser exigida. Na situação onde este arquétipo só pode ser usado para nomear uma parte do corpo e/ou não-específica, o uso adicional do arquétipo CLUSTER.anatomical_location_relative oferecerá suporte a gravação de uma localização mais precisa - por exemplo, 2 cm anterior da fossa cubital do antebraço esquerdo ou 4 cm abaixo da margem costal de R na parede torácica na linha médio-clavicular.\r\n\r\nSe este arquétipo é usado dentro de outros arquétipos onde o assunto especificado de cuidados não é o indivíduo para quem o registro está sendo criado, por exemplo um feto em útero, então a localização anatômica vai estar realizada identificando um local do corpo ou com o feto.",
+          "misuse" : "Não deve ser usado para especificar as ocorrências unilateral/bilateral de uma característica anatômica.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تسجيل المكان التشريحي بالتفصيل",
+          "keywords" : [ "الموقع", "المكان", "تشريحي" ],
+          "misuse" : "لا يستخدم لتحديد حالات الحدوث في جانب واحد أو في الجانبين - حيث إن ذلك متعلق بتقييم قد يتضمن العديد من الأماكن",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To record details about anatomical location.(en)",
+          "keywords" : [ "*location(en)", "*site(en)", "*anatomical(en)" ],
+          "misuse" : "*Not for specifiying unilateral/bilateral occurence - this is related to an evaluation which perhaps includes multiple locations.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To identify and record structured details about a single physical site on, or within, the human body using macroscopic anatomical terms.",
+          "keywords" : [ "location", "site", "anatomical", "anatomic region", "topographic anatomy", "macroscopic", "anatomic", "anatomy" ],
+          "use" : "Use to record structured and consistent details about a single identified physical site on, or within, the human body. \r\n\r\nThis archetype is specifically designed to be used within the context of any appropriate ENTRY or CLUSTER archetypes which supply the context of the anatomical location. \r\n\r\nAs a fundamental part of clinical practice, clinicians can describe anatomical locations in a myriad of complex and variable ways. In practice, some archetypes carry a single data element for carrying a simple description of body site - for example, OBSERVATION.blood_pressure and CLUSTER.symptom when describing ear pain. In this situation, where the value set is predictable and simple to define, this single data element is a very accurate and pragmatic way to record the site in the body and to query at a later date. However in the situation where the anatomical location is not well defined or needs to be determined at run-time, it may be more flexible to use this structured archetype. For example, in the situation where any symptom can be recorded without any predefined scope of the type of symptom, then allowing the use of this archetype to specifically define an anatomical location in the body may be useful. In this case the CLUSTER.symptom archetype also carries a SLOT for 'Detailed anatomical location' which can include this archetype to support maximal flexibility in recording anatomical location data.\r\n\r\nThis archetype supports recording complex structured anatomical sites. For example, the apex beat of the heart is typically found at the fifth left intercostal space in the mid-clavicular line, tenderness at McBurney's point on the abdominal wall or a laceration on the palmar aspect of the proximal right thumb.\r\n\r\nA combination of the data elements in this archetype can be used to individually record each component of a postcoordinated terminology expression that represents the anatomical site.\r\n\r\nThe 'Alternative structure' SLOT allows inclusion of additional archetypes that provide an alternative structure for describing the same body site, such as CLUSTER.anatomical_location_relative or CLUSTER.anatomical_location_clock, should this be required. In the situation where this archetype can only be used to name a large and/or non-specific body part, the additional use of the CLUSTER.anatomical_location_relative archetype will support recording of a more precise location - for example, 2 cm anterior to the cubital fossa of the left forearm or 4 cm below R costal margin on the chest wall in the mid-clavicular line.\r\n\r\nIf this archetype is used within other archetypes where the specified subject of care is not the individual for whom the record is being created, for example a fetus in-utero, then the anatomical location will be identifying a body site on or within the fetus.",
+          "misuse" : "Not to be used for specifiying unilateral/bilateral occurrences of an anatomical feature.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.anatomical_location.v1",
     "differential" : true,
@@ -1372,6 +1433,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1408,6 +1470,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1618,7 +1681,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "62B453A8D0CEBD89BDD20D7F68F26DC1"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الخصائص الفيزيائية لشيئ ما, مثل جزء من الجسم, عينة أو آفة.",
+          "keywords" : [ "العينة/النموذج", "المعمل/المختبر", "العينة", "الباثولوجيا/المرضية", "شيئ", "جهيزة", "الغِرْسة" ],
+          "use" : "لتسجيل التفاصيل الفيزيائية لجزء من الجسم, جهيزة, آفة أو عينة.",
+          "misuse" : "لا يستخدم لتسجيل الوزن أو الطول الكلي للجسم سواء أكان حقيقيا أو مُصحَّحا أو تقديرات أخرى كلية لحجم الجسم, مثل قياسات الخصر/موضع الحزام ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the physical properties of an object, such as a specimen or lesion.",
+          "keywords" : [ "specimen", "laboratory", "sample", "pathology", "object", "device", "implant" ],
+          "use" : "Use to record physical properties of an object, such as a specimen or lesion.",
+          "misuse" : "Do not use to record whole body weight / height whether actual or adjusted or other overall estimates of bidy size such as waist/ girth measurement.\r\n\r\nNot to be used to record measurements for body weight. Use OBSERVATION.body_weight.\r\n\r\nNot to be used to record measurements for height/length. Use OBSERVATION.height.\r\n\r\nNot to be used to record measurements for  head circumference. Use OBSERVATION.head_circumference.\r\n\r\nNot to be used to record measurements for hip circumference. Use OBSERVATION.hip_circumference.\r\n\r\nNot to be used to record measurements for waist circumference. Use OBSERVATION.waist_circumference.\r\n\r\nNot to be used to record measurements for body segments. Use the OBSERVATION.body_segment.\r\n\r\nNot to be used to record characteristics that might affect the quality of a test interpretation - use 'Specimen received issues' in the Specimen archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.physical_properties.v0",
     "differential" : true,
@@ -1780,7 +1876,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "335" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -1797,7 +1903,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "129" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -1814,7 +1930,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "124" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -1897,7 +2023,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "62B453A8D0CEBD89BDD20D7F68F26DC1"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الخصائص الفيزيائية لشيئ ما, مثل جزء من الجسم, عينة أو آفة.",
+          "keywords" : [ "العينة/النموذج", "المعمل/المختبر", "العينة", "الباثولوجيا/المرضية", "شيئ", "جهيزة", "الغِرْسة" ],
+          "use" : "لتسجيل التفاصيل الفيزيائية لجزء من الجسم, جهيزة, آفة أو عينة.",
+          "misuse" : "لا يستخدم لتسجيل الوزن أو الطول الكلي للجسم سواء أكان حقيقيا أو مُصحَّحا أو تقديرات أخرى كلية لحجم الجسم, مثل قياسات الخصر/موضع الحزام ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the physical properties of an object, such as a specimen or lesion.",
+          "keywords" : [ "specimen", "laboratory", "sample", "pathology", "object", "device", "implant" ],
+          "use" : "Use to record physical properties of an object, such as a specimen or lesion.",
+          "misuse" : "Do not use to record whole body weight / height whether actual or adjusted or other overall estimates of bidy size such as waist/ girth measurement.\r\n\r\nNot to be used to record measurements for body weight. Use OBSERVATION.body_weight.\r\n\r\nNot to be used to record measurements for height/length. Use OBSERVATION.height.\r\n\r\nNot to be used to record measurements for  head circumference. Use OBSERVATION.head_circumference.\r\n\r\nNot to be used to record measurements for hip circumference. Use OBSERVATION.hip_circumference.\r\n\r\nNot to be used to record measurements for waist circumference. Use OBSERVATION.waist_circumference.\r\n\r\nNot to be used to record measurements for body segments. Use the OBSERVATION.body_segment.\r\n\r\nNot to be used to record characteristics that might affect the quality of a test interpretation - use 'Specimen received issues' in the Specimen archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.physical_properties.v0",
     "differential" : true,
@@ -1990,7 +2149,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "122" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -2050,7 +2219,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "335" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -2067,7 +2246,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "129" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -2084,7 +2273,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "124" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
