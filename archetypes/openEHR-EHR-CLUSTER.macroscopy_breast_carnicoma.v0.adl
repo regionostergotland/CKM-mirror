@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3ce48c860ad064d1f91052b8cfb71a26">
+		["MD5-CAM-1.0.1"] = <"a679f2f283da0b0f95a8be8ead75f7de">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -57,6 +57,7 @@ definition
 					ELEMENT[at0008] occurrences matches {0..*} matches {    -- Visual markings/orientation of specimen
 						value matches {
 							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Mamill presence
