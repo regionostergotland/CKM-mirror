@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "91e7690af4ff310ef5c8374fdc9e207e",
-      "PARENT:MD5-CAM-1.0.1" : "3ce48c860ad064d1f91052b8cfb71a26"
+      "MD5-CAM-1.0.1" : "a747a80923a820db19dbb55e19a222dc",
+      "PARENT:MD5-CAM-1.0.1" : "a679f2f283da0b0f95a8be8ead75f7de"
     },
     "details" : {
       "en" : {
@@ -140,7 +140,16 @@
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
                 "occurrences" : "1..1",
-                "attributes" : [ ],
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
+                    "constraint" : [ "ac0.1" ],
+                    "selectedTerminologies" : [ "local_terms" ]
+                  } ]
+                } ],
                 "attributeTuples" : [ ]
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
