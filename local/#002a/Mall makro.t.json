@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "db02bdda0c0f5c192938baff983d34ff",
+      "MD5-CAM-1.0.1" : "91e7690af4ff310ef5c8374fdc9e207e",
       "PARENT:MD5-CAM-1.0.1" : "3ce48c860ad064d1f91052b8cfb71a26"
     },
     "details" : {
@@ -86,7 +86,15 @@
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
                 "occurrences" : "1..1",
-                "attributes" : [ ],
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "Yes", "No" ]
+                  } ]
+                } ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -108,7 +116,15 @@
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
                 "occurrences" : "1..1",
-                "attributes" : [ ],
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "Yes", "No" ]
+                  } ]
+                } ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -130,7 +146,15 @@
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
                 "occurrences" : "1..1",
-                "attributes" : [ ],
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "Yes", "No" ]
+                  } ]
+                } ],
                 "attributeTuples" : [ ]
               } ]
             } ],
