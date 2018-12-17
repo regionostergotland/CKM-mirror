@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9c11174f9b8c2963080bee9faa7b634f",
+      "MD5-CAM-1.0.1" : "5aaf0982b9749987ff9386c7c071758d",
       "PARENT:MD5-CAM-1.0.1" : "a679f2f283da0b0f95a8be8ead75f7de"
     },
     "details" : {
@@ -194,6 +194,42 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "En sutur kraniellt, två suturer lateralt", "En sutur mot tumör/sårhåla", "En sutur mot mamill" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0008.3",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
                 "occurrences" : "1..1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
@@ -372,6 +408,12 @@
           "code" : "at0031.3",
           "text" : "Tumörindikering finns",
           "description" : "*"
+        },
+        "at0008.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008.3",
+          "text" : "Tuschmarkering",
+          "description" : "Is mamill, fascia, axill present in the specimen"
         }
       }
     },
