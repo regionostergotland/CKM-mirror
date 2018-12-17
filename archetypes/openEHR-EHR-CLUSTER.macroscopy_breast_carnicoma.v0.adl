@@ -23,16 +23,21 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d0800fd27ecd2f19a69f2f78555f79a6">
+		["MD5-CAM-1.0.1"] = <"3ce48c860ad064d1f91052b8cfb71a26">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Macroscopic findings - Breast cancer
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Information about the specimen
-				value matches {
-					DV_TEXT matches {*}
+			CLUSTER[at0030] occurrences matches {0..1} matches {    -- Information from anamnesis or referral
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0031] occurrences matches {0..*} matches {    -- Description
+						value matches {
+							DV_CODED_TEXT matches {*}
+							DV_TEXT matches {*}
+						}
+					}
 				}
 			}
 			CLUSTER[at0004] occurrences matches {0..1} matches {    -- Breast specimen properties
@@ -139,11 +144,6 @@ ontology
 					text = <"Macroscopic findings - Breast cancer">
 					description = <"macroscopy_breast_carnicoma">
 				>
-				["at0001"] = <
-					text = <"Information about the specimen">
-					description = <"Information about the specimen 
-x-ray osv">
-				>
 				["at0004"] = <
 					text = <"Breast specimen properties">
 					description = <"*">
@@ -230,6 +230,14 @@ x-ray osv">
 				>
 				["at0029"] = <
 					text = <"No">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Information from anamnesis or referral">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Description">
 					description = <"*">
 				>
 			>
