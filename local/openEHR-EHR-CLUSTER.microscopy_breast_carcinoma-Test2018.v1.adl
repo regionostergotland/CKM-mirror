@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"adcf6e0bb029ba89d237660586e16de2">
+		["MD5-CAM-1.0.1"] = <"d38016c0a011b62204725dc9145cb26b">
 		["build_uid"] = <"2dc8e6a3-e926-3109-880a-c9fc4e0dd32e">
 	>
 
@@ -126,19 +126,19 @@ definition
 				items cardinality matches {1..*; unordered} matches {
 					allow_archetype CLUSTER[at0084.1] occurrences matches {0..1} matches {    -- Invasive carcinoma at margin
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v1|openEHR-EHR-CLUSTER\.tumour_resection_margins-Test2018\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 						exclude
 							archetype_id/value matches {/.*/}
 					}
-					allow_archetype CLUSTER[at0113] occurrences matches {0..1} matches {    -- DCIS at margin
+					allow_archetype CLUSTER[at0113.1] occurrences matches {0..1} matches {    -- DCIS at margin
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 						exclude
 							archetype_id/value matches {/.*/}
 					}
-					allow_archetype CLUSTER[at0115] occurrences matches {0..1} matches {    -- LCIS at margin
+					allow_archetype CLUSTER[at0115.1] occurrences matches {0..1} matches {    -- LCIS at margin
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 						exclude
 							archetype_id/value matches {/.*/}
 					}
@@ -436,9 +436,14 @@ definition
 							}
 						}
 					}
-					allow_archetype CLUSTER[at0.3] occurrences matches {0..*} matches {    -- Additional biomarker tests
-						include
-							archetype_id/value matches {/.*/}
+					CLUSTER[at0.9] occurrences matches {0..1} matches {    -- Ki67
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0.10] occurrences matches {0..1} matches {    -- Percentage of nuclei stained
+								value matches {
+									DV_PROPORTION matches {*}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -510,10 +515,6 @@ ontology
 				>
 				["at0.2"] = <
 					text = <"Number of invasive carnicoma">
-					description = <"*">
-				>
-				["at0.3"] = <
-					text = <"Additional biomarker tests">
 					description = <"*">
 				>
 				["at0.4"] = <
@@ -1097,6 +1098,22 @@ Annan">
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
+				>
+				["at0113.1"] = <
+					text = <"DCIS at margin">
+					description = <"Details of DCIS (Ductal carcinoma-in-situ) at surgical resection margins.">
+				>
+				["at0115.1"] = <
+					text = <"LCIS at margin">
+					description = <"Details of LCIS (Local carcinoma-in-situ) at surgical resection margins.">
+				>
+				["at0.9"] = <
+					text = <"Ki67">
+					description = <"*">
+				>
+				["at0.10"] = <
+					text = <"Percentage of nuclei stained">
+					description = <"*">
 				>
 			>
 		>
