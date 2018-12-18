@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9e508fa7d55193316e1a5fe0964a178c",
+      "MD5-CAM-1.0.1" : "1722f47976a7b3aa44b2da360b8d39ca",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -210,22 +210,6 @@
             } ],
             "attributeTuples" : [ ]
           }, {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "ELEMENT",
-            "nodeId" : "at0008.2",
-            "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "value",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              } ]
-            } ],
-            "attributeTuples" : [ ]
-          }, {
             "@type" : "C_ARCHETYPE_ROOT",
             "rmTypeName" : "CLUSTER",
             "occurrences" : "0..*",
@@ -351,12 +335,6 @@
           "code" : "at0012",
           "text" : "Sutures or clips",
           "description" : "*"
-        },
-        "at0008.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0008.2",
-          "text" : "Visual markings/orientation of specimen (2)",
-          "description" : "Is mamill, fascia, axill present in the specimen"
         },
         "at0008.1" : {
           "@type" : "ARCHETYPE_TERM",
