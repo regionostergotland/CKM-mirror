@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "7868477a0f94988ac0f3992b4be71a3e",
+      "MD5-CAM-1.0.1" : "5bb233662ade507b9f8c0b532ed433ac",
       "PARENT:MD5-CAM-1.0.1" : "c0028140955e3d4394e6cc0ddba58930"
     },
     "details" : {
@@ -93,7 +93,7 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "CLUSTER",
-        "nodeId" : "at0021",
+        "nodeId" : "at0021.0.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
           "rmAttributeName" : "items",
@@ -112,8 +112,61 @@
             "attributeTuples" : [ ],
             "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-001.v0",
             "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0113.1.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-002.v0",
+            "referenceType" : "archetypeOverlay"
+          }, {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0115.1.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-003.v0",
+            "referenceType" : "archetypeOverlay"
           } ]
         } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "occurrences" : "0..0",
+        "nodeId" : "at0054.0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "occurrences" : "0..0",
+        "nodeId" : "at0060.0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "occurrences" : "0..0",
+        "nodeId" : "at0062.0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "occurrences" : "0..0",
+        "nodeId" : "at0024.0.1",
+        "attributes" : [ ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "occurrences" : "0..0",
+        "nodeId" : "at0064.0.1",
+        "attributes" : [ ],
         "attributeTuples" : [ ]
       } ]
     } ],
@@ -129,6 +182,12 @@
           "code" : "at0033.1.1",
           "text" : "Tumörstorlek",
           "description" : "Assessments of tumour size."
+        },
+        "at0021.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0021.0.1",
+          "text" : "Radikalitet (anges med minsta marginal)",
+          "description" : "Findings of the relation of tumour to surgical resection margins."
         }
       }
     },
@@ -575,6 +634,156 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0018.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.2" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Invasiv cancer",
+            "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
+          },
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.2",
+            "description" : "*"
+          }
+        },
+        "ar-sy" : {
+          "ac0.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.2",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0014", "at0015", "at0016" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0014", "at0015" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "97b475fb-450e-4960-a8f2-74e8900a68d5",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "86934c66-81cf-4f61-b386-3159625fae9f",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "BECD1E0D3528F0955EC543333374412F"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_resection_margins.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
       "attributes" : [ ],
       "attributeTuples" : [ ]
     },
@@ -582,8 +791,100 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "ar-sy" : { }
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Duktal cancer in situ",
+            "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
+          }
+        },
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "الورم - حواف/هوامش القطع الجراحي (2)",
+            "description" : "تفاصيل حول اكتناف الورم بحواف/هوامش القطع/الخزعات الجراحية"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "97b475fb-450e-4960-a8f2-74e8900a68d5",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "9c2595e9-7e0a-45d3-ab33-aeee0130babd",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "BECD1E0D3528F0955EC543333374412F"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_resection_margins.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-tumour_resection_margins-003.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Lobulär cancer in situ",
+            "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
+          }
+        },
+        "ar-sy" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "الورم - حواف/هوامش القطع الجراحي (3)",
+            "description" : "تفاصيل حول اكتناف الورم بحواف/هوامش القطع/الخزعات الجراحية"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
