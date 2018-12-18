@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6e7addd66f97f4d996377e5a7081eaf6",
+      "MD5-CAM-1.0.1" : "e19f85ef0d420cbd63bc3361e0b58422",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -178,12 +178,6 @@
                   } ]
                 } ],
                 "attributeTuples" : [ ]
-              }, {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "1..1",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
               } ]
             } ],
             "attributeTuples" : [ ]
@@ -197,12 +191,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              }, {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_CODED_TEXT",
                 "occurrences" : "1..1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
@@ -340,7 +328,7 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0008.1",
           "text" : "Suturer",
-          "description" : "Is mamill, fascia, axill present in the specimen"
+          "description" : "*"
         },
         "at0031.1" : {
           "@type" : "ARCHETYPE_TERM",
