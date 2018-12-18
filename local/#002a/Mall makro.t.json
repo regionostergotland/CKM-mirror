@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "cbd781da6bc1deab7f9b04dd1bbebc09",
+      "MD5-CAM-1.0.1" : "6e7addd66f97f4d996377e5a7081eaf6",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -2548,10 +2548,6 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
                   "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "precision",
-                  "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -2567,17 +2563,6 @@
                       "upperUnbounded" : false,
                       "lowerIncluded" : false,
                       "upperIncluded" : false
-                    } ]
-                  }, {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 0,
-                      "upper" : 0,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true
                     } ]
                   } ]
                 } ]
