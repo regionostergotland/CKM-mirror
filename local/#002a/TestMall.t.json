@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3766531a075885391bde29d7d06e19fe",
+      "MD5-CAM-1.0.1" : "842706e96500bcd94f3fef8a0cb3ade6",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -159,8 +159,8 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
-                "occurrences" : "0..1",
-                "nodeId" : "at0002",
+                "occurrences" : "0..0",
+                "nodeId" : "at0002.0.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -177,8 +177,8 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
-                "occurrences" : "0..1",
-                "nodeId" : "at0005",
+                "occurrences" : "0..0",
+                "nodeId" : "at0005.0.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -264,9 +264,90 @@
       "ar-sy" : { },
       "sl" : { },
       "en" : { },
-      "es-ar" : { },
-      "nb" : { },
-      "pt-br" : { }
+      "es-ar" : {
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        }
+      },
+      "nb" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+        }
+      },
+      "pt-br" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Relatório",
+          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identificador do relatório",
+          "description" : "Informação de identificação sobre o relatório."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        },
+        "at0006.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        },
+        "at0002.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002.0.1",
+          "text" : "Identificador do relatório",
+          "description" : "Informação de identificação sobre o relatório."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
