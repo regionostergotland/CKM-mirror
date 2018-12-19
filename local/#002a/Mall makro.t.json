@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5e40fa9be415ef63f677faef49071231",
+      "MD5-CAM-1.0.1" : "f7c1ce816795290a89451363fc04c950",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -1158,11 +1158,17 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
                   "occurrences" : "1..1",
+                  "defaultValue" : {
+                    "units" : "mm",
+                    "@type" : "DV_QUANTITY"
+                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "1..1",
                       "terminologyId" : {
                         "value" : "openehr"
                       },
@@ -1173,27 +1179,29 @@
                     "@type" : "C_ATTRIBUTE_TUPLE",
                     "members" : [ {
                       "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "magnitude",
+                      "rmAttributeName" : "units",
                       "children" : [ ]
                     }, {
                       "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "units",
+                      "rmAttributeName" : "magnitude",
                       "children" : [ ]
                     } ],
                     "tuples" : [ {
                       "@type" : "C_PRIMITIVE_TUPLE",
                       "members" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "mm" ]
+                      }, {
                         "@type" : "C_REAL",
+                        "rmTypeName" : "REAL",
                         "constraint" : [ {
                           "lower" : 0.0,
-                          "lowerUnbounded" : false,
-                          "upperUnbounded" : true,
+                          "lowerUnbounded" : true,
+                          "upperUnbounded" : false,
                           "lowerIncluded" : true,
                           "upperIncluded" : false
                         } ]
-                      }, {
-                        "@type" : "C_STRING",
-                        "constraint" : [ "mm" ]
                       } ]
                     } ]
                   } ]
