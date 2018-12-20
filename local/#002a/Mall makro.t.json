@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "7f0ac57f2a783c2f723368010e18706a",
+      "MD5-CAM-1.0.1" : "bc34f7d2b5c09a07de3b780abe108175",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -581,6 +581,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -850,6 +851,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1119,6 +1121,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1412,6 +1415,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1675,6 +1679,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2780,10 +2785,6 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
                   "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "precision",
-                  "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -2799,17 +2800,6 @@
                       "upperUnbounded" : false,
                       "lowerIncluded" : false,
                       "upperIncluded" : false
-                    } ]
-                  }, {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 0,
-                      "upper" : 0,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true
                     } ]
                   } ]
                 } ]
@@ -2851,10 +2841,6 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
                   "children" : [ ]
-                }, {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "precision",
-                  "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -2870,17 +2856,6 @@
                       "upperUnbounded" : false,
                       "lowerIncluded" : false,
                       "upperIncluded" : false
-                    } ]
-                  }, {
-                    "@type" : "C_INTEGER",
-                    "rmTypeName" : "INTEGER",
-                    "constraint" : [ {
-                      "lower" : 0,
-                      "upper" : 0,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true
                     } ]
                   } ]
                 } ]
