@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "bc34f7d2b5c09a07de3b780abe108175",
+      "MD5-CAM-1.0.1" : "fab690e1da719b2b2bb604f80828b3b7",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -3040,7 +3040,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "ar-sy" : { },
+        "ar-sy" : {
+          "mm" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "mm",
+            "description" : "@ unit @",
+            "code" : "mm"
+          }
+        },
         "en" : {
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -3065,6 +3072,12 @@
             "code" : "at0044.1",
             "text" : "Kraniokaudalt(Height)",
             "description" : "The vertical height or depth of the object."
+          },
+          "mm" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "mm",
+            "description" : "@ unit @",
+            "code" : "mm"
           }
         }
       },
