@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9096dedb813ac77a4978d7c3da3bb95d",
+      "MD5-CAM-1.0.1" : "8670ffb0613bfef7145d9be69cdf5851",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -600,6 +600,75 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0007.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_QUANTITY",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "122" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ {
+                    "@type" : "C_ATTRIBUTE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "units",
+                      "children" : [ ]
+                    } ],
+                    "tuples" : [ {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_REAL",
+                        "constraint" : [ {
+                          "lower" : 0.0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_STRING",
+                        "constraint" : [ "mm" ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
           "nodeId" : "at0008",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -699,6 +768,12 @@
             "code" : "at0009.1",
             "text" : "Avstånd från resektionskant",
             "description" : "When tumour is absent, the distance from tumour to the named surgical resection margin."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Största måttet på tumören i resektionsytan",
+            "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
           }
         },
         "ar-sy" : {
@@ -870,6 +945,75 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0007.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_QUANTITY",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "122" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ {
+                    "@type" : "C_ATTRIBUTE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "units",
+                      "children" : [ ]
+                    } ],
+                    "tuples" : [ {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_REAL",
+                        "constraint" : [ {
+                          "lower" : 0.0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_STRING",
+                        "constraint" : [ "mm" ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
           "nodeId" : "at0008",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -969,6 +1113,12 @@
             "code" : "at0009.1",
             "text" : "Avstånd från resektionskant",
             "description" : "When tumour is absent, the distance from tumour to the named surgical resection margin."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Största måttet på tumören i resektionsytan",
+            "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
           }
         },
         "ar-sy" : {
@@ -1141,7 +1291,70 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
           "nodeId" : "at0006.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0007.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_QUANTITY",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "122" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ {
+                    "@type" : "C_ATTRIBUTE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "units",
+                      "children" : [ ]
+                    } ],
+                    "tuples" : [ {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_REAL",
+                        "constraint" : [ {
+                          "lower" : 0.0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_STRING",
+                        "constraint" : [ "mm" ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -1281,6 +1494,12 @@
             "code" : "at0008.1",
             "text" : "Tumör frånvarande",
             "description" : "Details where tumour is absent from surgical resection margins."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Största måttet på tumören i resektionsytan",
+            "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
           }
         },
         "ar-sy" : {
@@ -1452,6 +1671,75 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0007.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_QUANTITY",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "122" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ {
+                    "@type" : "C_ATTRIBUTE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "units",
+                      "children" : [ ]
+                    } ],
+                    "tuples" : [ {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_REAL",
+                        "constraint" : [ {
+                          "lower" : 0.0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_STRING",
+                        "constraint" : [ "mm" ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
           "nodeId" : "at0008",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1551,6 +1839,12 @@
             "code" : "at0009.1",
             "text" : "Avstånd från resektionskant",
             "description" : "When tumour is absent, the distance from tumour to the named surgical resection margin."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Största måttet på tumören i resektionsytan",
+            "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
           }
         },
         "ar-sy" : {
@@ -1716,6 +2010,75 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0007.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_QUANTITY",
+                  "occurrences" : "1..1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "122" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ {
+                    "@type" : "C_ATTRIBUTE_TUPLE",
+                    "members" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "units",
+                      "children" : [ ]
+                    } ],
+                    "tuples" : [ {
+                      "@type" : "C_PRIMITIVE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_REAL",
+                        "constraint" : [ {
+                          "lower" : 0.0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : true,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      }, {
+                        "@type" : "C_STRING",
+                        "constraint" : [ "mm" ]
+                      } ]
+                    } ]
+                  } ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
           "nodeId" : "at0008",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1815,6 +2178,12 @@
             "code" : "at0009.1",
             "text" : "Avstånd från resektionskant",
             "description" : "When tumour is absent, the distance from tumour to the named surgical resection margin."
+          },
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "Största måttet på tumören i resektionsytan",
+            "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
           }
         },
         "ar-sy" : {
