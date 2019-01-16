@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8670ffb0613bfef7145d9be69cdf5851",
+      "MD5-CAM-1.0.1" : "3834b7312c81aa32940c20971aa9ed73",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -600,7 +600,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0006",
+          "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -669,7 +669,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0008",
+          "nodeId" : "at0008.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -774,6 +774,18 @@
             "code" : "at0007.1",
             "text" : "Största måttet på tumören i resektionsytan",
             "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Tumör närvarande",
+            "description" : "Details where tumour is present at the surgical resection margin."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Tumör frånvarande",
+            "description" : "Details where tumour is absent from surgical resection margins."
           }
         },
         "ar-sy" : {
@@ -945,7 +957,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0006",
+          "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -1014,7 +1026,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0008",
+          "nodeId" : "at0008.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -1119,6 +1131,18 @@
             "code" : "at0007.1",
             "text" : "Största måttet på tumören i resektionsytan",
             "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Tumör närvarande",
+            "description" : "Details where tumour is present at the surgical resection margin."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Tumör frånvarande",
+            "description" : "Details where tumour is absent from surgical resection margins."
           }
         },
         "ar-sy" : {
@@ -1461,7 +1485,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Avstånd från tumörpereferi till resektionsyta",
+            "text" : "Kraniell",
             "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
           },
           "at0018.1" : {
@@ -1480,7 +1504,7 @@
           "at0009.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0009.1",
-            "text" : "Avstånd från resektionskant",
+            "text" : "Avstånd till resektionskant",
             "description" : "When tumour is absent, the distance from tumour to the named surgical resection margin."
           },
           "at0006.1" : {
@@ -1671,7 +1695,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0006",
+          "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -1740,7 +1764,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0008",
+          "nodeId" : "at0008.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -1845,6 +1869,18 @@
             "code" : "at0007.1",
             "text" : "Största måttet på tumören i resektionsytan",
             "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Tumör närvarande",
+            "description" : "Details where tumour is present at the surgical resection margin."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Tumör frånvarande",
+            "description" : "Details where tumour is absent from surgical resection margins."
           }
         },
         "ar-sy" : {
@@ -2010,7 +2046,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0006",
+          "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -2079,7 +2115,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "nodeId" : "at0008",
+          "nodeId" : "at0008.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
@@ -2184,6 +2220,18 @@
             "code" : "at0007.1",
             "text" : "Största måttet på tumören i resektionsytan",
             "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
+          },
+          "at0006.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.1",
+            "text" : "Tumör närvarande",
+            "description" : "Details where tumour is present at the surgical resection margin."
+          },
+          "at0008.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.1",
+            "text" : "Tumör frånvarande",
+            "description" : "Details where tumour is absent from surgical resection margins."
           }
         },
         "ar-sy" : {
