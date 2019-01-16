@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ef80b0cc9372d37dd960ba4b1afebabc",
+      "MD5-CAM-1.0.1" : "8e6e65b3297459d121e2d6dba5f74d74",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -2467,9 +2467,6 @@
           "/items[at0027]" : {
             "fhir_mappings" : "*Specimen.collection.quantity(en)"
           },
-          "/items[at0029]" : {
-            "fhir_mapping" : "*Specimen.type(en)"
-          },
           "/items[at0046.1]/items[at0001]" : {
             "fhir_mapping" : "*Specimen.accessionIdentifier(en)"
           },
@@ -2481,6 +2478,9 @@
           },
           "/items[at0007.1]" : {
             "fhir_mapping" : "*Specimen.collection.method(en)"
+          },
+          "/items[at0029.1]" : {
+            "fhir_mapping" : "*Specimen.type(en)"
           }
         },
         "en" : {
@@ -2493,9 +2493,6 @@
           "/items[at0027]" : {
             "fhir_mappings" : "Specimen.collection.quantity"
           },
-          "/items[at0029]" : {
-            "fhir_mapping" : "Specimen.type"
-          },
           "/items[at0046.1]/items[at0001]" : {
             "fhir_mapping" : "Specimen.accessionIdentifier"
           },
@@ -2507,6 +2504,9 @@
           },
           "/items[at0007.1]" : {
             "fhir_mapping" : "Specimen.collection.method"
+          },
+          "/items[at0029.1]" : {
+            "fhir_mapping" : "Specimen.type"
           }
         },
         "pt-br" : { }
@@ -2532,6 +2532,22 @@
           "unique" : false
         },
         "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0029.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
@@ -2724,7 +2740,15 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "ar-sy" : { },
-        "en" : { },
+        "en" : {
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029.1",
+            "text" : "Preparattyp",
+            "description" : "The type of specimen to be collected e.g venous blood, prostatic biopsy.",
+            "fhir_mapping" : "Specimen.type"
+          }
+        },
         "pt-br" : { }
       },
       "termBindings" : { },
