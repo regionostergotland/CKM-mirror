@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3834b7312c81aa32940c20971aa9ed73",
+      "MD5-CAM-1.0.1" : "ef80b0cc9372d37dd960ba4b1afebabc",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -193,6 +193,93 @@
                 "rmTypeName" : "DV_TEXT",
                 "occurrences" : "1..1",
                 "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0019.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "1..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0020", "at0021", "at0022" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0023.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "1..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0024", "at0025", "at0026" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0027.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_CODED_TEXT",
+                "occurrences" : "1..1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "defining_code",
+                  "existence" : "1..1",
+                  "children" : [ {
+                    "@type" : "C_TERMINOLOGY_CODE",
+                    "rmTypeName" : "CODE_PHRASE",
+                    "occurrences" : "1..1",
+                    "terminologyId" : {
+                      "value" : "local"
+                    },
+                    "constraint" : [ "at0028", "at0029" ]
+                  } ]
+                } ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -471,6 +558,24 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0017.1",
           "text" : "Avstånd från tumörcentrum till mamill",
+          "description" : "*"
+        },
+        "at0019.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0019.1",
+          "text" : "Mamill",
+          "description" : "*"
+        },
+        "at0023.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0023.1",
+          "text" : "Fascia",
+          "description" : "*"
+        },
+        "at0027.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0027.1",
+          "text" : "Axill",
           "description" : "*"
         }
       }
