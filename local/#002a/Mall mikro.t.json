@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "68bed23e2001cf5802cea658e8221dfa",
-      "PARENT:MD5-CAM-1.0.1" : "f36917c652a536943e7f56cb3016f32b"
+      "MD5-CAM-1.0.1" : "b8921cb14d6f1bd8067e64b9dfdc8150",
+      "PARENT:MD5-CAM-1.0.1" : "aa285d638c43688d86abb906b477acce"
     },
     "details" : {
       "en" : {
@@ -57,54 +57,6 @@
         "unique" : false
       },
       "children" : [ {
-        "@type" : "C_COMPLEX_OBJECT",
-        "rmTypeName" : "ELEMENT",
-        "nodeId" : "at0.2.1",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "value",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "DV_COUNT",
-            "occurrences" : "1..1",
-            "attributes" : [ ],
-            "attributeTuples" : [ ]
-          } ]
-        } ],
-        "attributeTuples" : [ ]
-      }, {
-        "@type" : "C_COMPLEX_OBJECT",
-        "rmTypeName" : "ELEMENT",
-        "nodeId" : "at0.4.1",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "value",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "DV_TEXT",
-            "occurrences" : "1..1",
-            "attributes" : [ ],
-            "attributeTuples" : [ ]
-          } ]
-        } ],
-        "attributeTuples" : [ ]
-      }, {
-        "@type" : "C_COMPLEX_OBJECT",
-        "rmTypeName" : "ELEMENT",
-        "nodeId" : "at0.7.1",
-        "attributes" : [ {
-          "@type" : "C_ATTRIBUTE",
-          "rmAttributeName" : "value",
-          "children" : [ {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "DV_TEXT",
-            "occurrences" : "1..1",
-            "attributes" : [ ],
-            "attributeTuples" : [ ]
-          } ]
-        } ],
-        "attributeTuples" : [ ]
-      }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "CLUSTER",
         "nodeId" : "at0033.1.1",
@@ -612,6 +564,7 @@
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
+                  "existence" : "1..1",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1068,6 +1021,7 @@
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "magnitude",
+                          "existence" : "0..1",
                           "children" : [ {
                             "@type" : "C_INTEGER",
                             "rmTypeName" : "INTEGER",
@@ -1100,6 +1054,7 @@
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
+                          "existence" : "1..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
                             "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1175,6 +1130,7 @@
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
+                          "existence" : "1..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
                             "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1204,15 +1160,15 @@
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
-                          "existence" : "1..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
-                            "rmTypeName" : "CODE_PHRASE",
+                            "rmTypeName" : "TERMINOLOGY_CODE",
                             "occurrences" : "1..1",
                             "terminologyId" : {
                               "value" : "local"
                             },
-                            "constraint" : [ "at0.22", "at0.23", "at0.24" ]
+                            "constraint" : [ "ac0.0.4" ],
+                            "selectedTerminologies" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -1259,6 +1215,62 @@
         "occurrences" : "0..0",
         "nodeId" : "at0180.0.1",
         "attributes" : [ ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0.2.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_COUNT",
+            "occurrences" : "1..1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0.4.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_TEXT",
+            "occurrences" : "1..1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0.7.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_TEXT",
+            "occurrences" : "1..1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_STRING",
+                "rmTypeName" : "STRING",
+                "constraint" : [ "Lobulär", "Duktal" ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
         "attributeTuples" : [ ]
       }, {
         "@type" : "C_COMPLEX_OBJECT",
@@ -1454,6 +1466,12 @@
           "code" : "at0.21.1",
           "text" : "ISH HER2",
           "description" : "*"
+        },
+        "ac0.0.4" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.4",
+          "description" : "*"
         }
       }
     },
@@ -1474,6 +1492,11 @@
         "@type" : "VALUE_SET",
         "id" : "ac0.0.3",
         "members" : [ "at0149", "at0150", "at0151" ]
+      },
+      "ac0.0.4" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.4",
+        "members" : [ "at0.22", "at0.23", "at0.24", "at0.33" ]
       }
     }
   },
@@ -1867,7 +1890,17 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
               "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "382" ]
+                } ]
+              } ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -2881,7 +2914,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BECD1E0D3528F0955EC543333374412F"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.",
+          "keywords" : [ "الخباثة", "الحواف/الهوامش", "الورم", "السرطان", "القطع", "الهيستوباثولوجيا", "الخزعة" ],
+          "use" : "يستخدم عادة في نموذج الهيستوباثولجيا",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.",
+          "keywords" : [ "malignancy", "margins", "tumour", "cancer", "resection", "histopathology", "biopsy" ],
+          "use" : "Normally used within a histopathology archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_resection_margins.v0",
     "differential" : true,
@@ -2941,6 +3005,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -3152,7 +3217,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BECD1E0D3528F0955EC543333374412F"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.",
+          "keywords" : [ "الخباثة", "الحواف/الهوامش", "الورم", "السرطان", "القطع", "الهيستوباثولوجيا", "الخزعة" ],
+          "use" : "يستخدم عادة في نموذج الهيستوباثولجيا",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.",
+          "keywords" : [ "malignancy", "margins", "tumour", "cancer", "resection", "histopathology", "biopsy" ],
+          "use" : "Normally used within a histopathology archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_resection_margins.v0",
     "differential" : true,
@@ -3212,6 +3308,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
