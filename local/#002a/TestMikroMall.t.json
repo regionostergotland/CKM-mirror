@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3d20205bd20d88f1f3145b4f7b78aedb",
+      "MD5-CAM-1.0.1" : "68f9f06b899eeb059cacf699b466b3cd",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -159,8 +159,8 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
-                "occurrences" : "0..1",
-                "nodeId" : "at0002",
+                "occurrences" : "0..0",
+                "nodeId" : "at0002.0.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -177,8 +177,8 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
-                "occurrences" : "0..1",
-                "nodeId" : "at0005",
+                "occurrences" : "0..0",
+                "nodeId" : "at0005.0.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -227,6 +227,15 @@
                 } ],
                 "excludes" : [ ],
                 "closed" : false
+              }, {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..*",
+                "nodeId" : "at0006.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "Mall mikro",
+                "referenceType" : "templateId"
               } ]
             } ],
             "attributeTuples" : [ ]
