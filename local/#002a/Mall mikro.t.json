@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "be51971e90b3ab33e7d24151547d03a6",
-      "PARENT:MD5-CAM-1.0.1" : "1cecc983d77ca0eb97018d85213df768"
+      "MD5-CAM-1.0.1" : "6322ed279524c806dadac91cbb7d8dae",
+      "PARENT:MD5-CAM-1.0.1" : "cb2144de015ef845e1206c64213d8c26"
     },
     "details" : {
       "en" : {
@@ -141,6 +141,326 @@
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0015",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "cardinality" : {
+            "@type" : "CARDINALITY",
+            "interval" : "1..*",
+            "ordered" : false,
+            "unique" : false
+          },
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0020",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "cardinality" : {
+                "@type" : "CARDINALITY",
+                "interval" : "1..*",
+                "ordered" : false,
+                "unique" : false
+              },
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0014.1.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_COUNT",
+                    "occurrences" : "1..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "existence" : "0..1",
+                      "children" : [ {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "Integer",
+                        "occurrences" : "1..1",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0175.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_ORDINAL",
+                    "occurrences" : "1..1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ {
+                      "@type" : "C_ATTRIBUTE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "symbol",
+                        "children" : [ ]
+                      } ],
+                      "tuples" : [ {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 1,
+                            "upper" : 1,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0176" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 2,
+                            "upper" : 2,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0177" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 3,
+                            "upper" : 3,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0178" ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0016.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_ORDINAL",
+                    "occurrences" : "1..1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ {
+                      "@type" : "C_ATTRIBUTE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "symbol",
+                        "children" : [ ]
+                      } ],
+                      "tuples" : [ {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 1,
+                            "upper" : 1,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0050" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 2,
+                            "upper" : 2,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0051" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 3,
+                            "upper" : 3,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0052" ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0017.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_ORDINAL",
+                    "occurrences" : "1..1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ {
+                      "@type" : "C_ATTRIBUTE_TUPLE",
+                      "members" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "symbol",
+                        "children" : [ ]
+                      } ],
+                      "tuples" : [ {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 1,
+                            "upper" : 1,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0044" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 2,
+                            "upper" : 2,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0045" ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_INTEGER",
+                          "constraint" : [ {
+                            "lower" : 3,
+                            "upper" : 3,
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "constraint" : [ "at0046" ]
+                        } ]
+                      } ]
+                    } ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0094.0.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "cardinality" : {
+            "@type" : "CARDINALITY",
+            "interval" : "1..*",
+            "ordered" : false,
+            "unique" : false
+          },
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0095.0.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0102.0.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
         "nodeId" : "at0030",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
@@ -232,6 +552,48 @@
           "code" : "at0033.1.1",
           "text" : "Tumörstorlek",
           "description" : "Assessments of tumour size."
+        },
+        "at0014.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1.1",
+          "text" : "Antal mitoser/10 HPF",
+          "description" : "Mitotic frequency is calculated from the number of mitoses per 10 high-power fields."
+        },
+        "at0175.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0175.0.1",
+          "text" : "Mitos",
+          "description" : "Mitotic frequency score calculated from the mitosis count and the microscopy field diameter via a lookup table."
+        },
+        "at0016.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.0.1",
+          "text" : "Kärnatypigrad",
+          "description" : "Nuclear score."
+        },
+        "at0017.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0017.0.1",
+          "text" : "Tubuli",
+          "description" : "Tubular formation score, representing the extent of tubular formation within invasive carcinoma cells."
+        },
+        "at0094.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0094.0.1",
+          "text" : "Biomarkörer",
+          "description" : "Immunohistochemical assays of oestrogen receptor (ER) and progesterone receptor (PR)."
+        },
+        "at0095.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0095.0.1",
+          "text" : "Östrogenreceptor (ER)",
+          "description" : "Oestrogen Receptor assay (ER)."
+        },
+        "at0102.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0102.0.1",
+          "text" : "Progesteronereceptor (PR)",
+          "description" : "Progesterone Receptor (PR) assay."
         }
       }
     },
@@ -1023,6 +1385,12 @@
       "termDefinitions" : {
         "ar-sy" : { },
         "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Invasiv cancer (avser största invasiva focus)",
+            "description" : "To record the phycial properties of an object."
+          },
           "at0042.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0042.1",
@@ -1318,7 +1686,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Physical properties of an object (2)",
+            "text" : "Extent (samlad storlek av alla invasiva foci och hela cancer in situ området)",
             "description" : "To record the phycial properties of an object."
           }
         }
