@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"cb2144de015ef845e1206c64213d8c26">
+		["MD5-CAM-1.0.1"] = <"66cf9197991ecd017d7479eb7d061c36">
 		["build_uid"] = <"2dc8e6a3-e926-3109-880a-c9fc4e0dd32e">
 	>
 
@@ -401,7 +401,7 @@ definition
 						items cardinality matches {1..*; unordered} matches {
 							CLUSTER[at0143] occurrences matches {0..1} matches {    -- Immunohistochemistry
 								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0107] occurrences matches {0..1} matches {    -- Immunohistochemistry score
+									ELEMENT[at0107.1] occurrences matches {0..1} matches {    -- Immunohistochemistry score
 										value matches {
 											DV_COUNT matches {
 												magnitude matches {|>=0|}
@@ -439,7 +439,7 @@ definition
 							}
 							CLUSTER[at0144] occurrences matches {0..1} matches {    -- In situ hybridisation (ISH)
 								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0108.1] occurrences matches {0..1} matches {    -- ISH result
+									ELEMENT[at0108] occurrences matches {0..1} matches {    -- ISH result
 										value matches {
 											DV_CODED_TEXT matches {
 												defining_code matches {
@@ -1207,10 +1207,6 @@ Annan">
 					text = <"Cannot be determined">
 					description = <"*">
 				>
-				["at0108.1"] = <
-					text = <"ISH result">
-					description = <"HER2 In situ hybridisation (ISH) result.">
-				>
 				["at0.21"] = <
 					text = <"ISH result 2">
 					description = <"*">
@@ -1226,6 +1222,10 @@ Annan">
 				["at0.24"] = <
 					text = <"Cannot be determined (intermediate)">
 					description = <"*">
+				>
+				["at0107.1"] = <
+					text = <"Immunohistochemistry score">
+					description = <"HER2 immunohistochemistry score.">
 				>
 			>
 		>
