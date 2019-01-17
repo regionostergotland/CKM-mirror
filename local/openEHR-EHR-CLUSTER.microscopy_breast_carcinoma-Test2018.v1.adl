@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"bf83e730ce22719728f993b102778fb2">
+		["MD5-CAM-1.0.1"] = <"1cecc983d77ca0eb97018d85213df768">
 		["build_uid"] = <"2dc8e6a3-e926-3109-880a-c9fc4e0dd32e">
 	>
 
@@ -60,9 +60,11 @@ definition
 				items cardinality matches {1..*; unordered} matches {
 					CLUSTER[at0020] occurrences matches {0..1} matches {    -- Bloom and Richardson Grade
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0014] occurrences matches {0..1} matches {    -- Mitosis count
+							ELEMENT[at0014.1] occurrences matches {0..1} matches {    -- Mitosis count
 								value matches {
-									DV_COUNT matches {*}
+									DV_COUNT matches {
+										magnitude matches {|>=0|}
+									}
 								}
 							}
 							ELEMENT[at0175] occurrences matches {0..1} matches {    -- Mitotic frequency score
@@ -1145,6 +1147,10 @@ Annan">
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
+				>
+				["at0014.1"] = <
+					text = <"Mitosis count">
+					description = <"Mitotic frequency is calculated from the number of mitoses per 10 high-power fields.">
 				>
 			>
 		>
