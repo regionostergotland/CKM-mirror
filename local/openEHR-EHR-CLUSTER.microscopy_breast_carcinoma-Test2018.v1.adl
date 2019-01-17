@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"8997d209f011028ef8d8cc58f04ee6fe">
+		["MD5-CAM-1.0.1"] = <"bf83e730ce22719728f993b102778fb2">
 		["build_uid"] = <"2dc8e6a3-e926-3109-880a-c9fc4e0dd32e">
 	>
 
@@ -53,10 +53,6 @@ definition
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 						exclude
 							archetype_id/value matches {/.*/}
-					}
-					allow_archetype CLUSTER[at0.6] occurrences matches {0..*} matches {    -- In situ component
-						include
-							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.in_situ_component\.v0/}
 					}
 				}
 			}
@@ -540,10 +536,6 @@ ontology
 					text = <"Tumour size and extent">
 					description = <"Assessments of tumour size.">
 				>
-				["at0.6"] = <
-					text = <"In situ component">
-					description = <"*">
-				>
 				["at0.7"] = <
 					text = <"Tumour type">
 					description = <"What kind of tumour type is it:
@@ -592,6 +584,18 @@ Annan">
 				["at0037.1"] = <
 					text = <"Total lesion extent">
 					description = <"The extent of total breast cancer lesion.">
+				>
+				["at0.11"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0.12"] = <
+					text = <"Ductal">
+					description = <"*">
+				>
+				["at0.13"] = <
+					text = <"Lobular">
+					description = <"*">
 				>
 				["at0000"] = <
 					text = <"Microscopic findings - Breast cancer">
@@ -1141,18 +1145,6 @@ Annan">
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
-				>
-				["at0.11"] = <
-					text = <"Histologic type">
-					description = <"*">
-				>
-				["at0.12"] = <
-					text = <"Ductal">
-					description = <"*">
-				>
-				["at0.13"] = <
-					text = <"Lobular">
-					description = <"*">
 				>
 			>
 		>
