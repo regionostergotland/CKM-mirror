@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"c7c74f8b4a74bd1c840240f353320e8b">
+		["MD5-CAM-1.0.1"] = <"f36917c652a536943e7f56cb3016f32b">
 		["build_uid"] = <"2dc8e6a3-e926-3109-880a-c9fc4e0dd32e">
 	>
 
@@ -245,7 +245,7 @@ definition
 					}
 				}
 			}
-			CLUSTER[at0064] occurrences matches {0..1} matches {    -- DCIS features
+			CLUSTER[at0064.1] occurrences matches {0..1} matches {    -- Cancer in situ features
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0154] occurrences matches {0..1} matches {    -- Calcification
 						value matches {
@@ -262,6 +262,17 @@ definition
 					}
 					CLUSTER[at0125] occurrences matches {0..1} matches {    -- Histologic grade
 						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0.30] occurrences matches {0..1} matches {    -- Histologic type
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0.31,    -- Ductal
+											at0.32]    -- Lobular
+										}
+									}
+								}
+							}
 							ELEMENT[at0075] occurrences matches {0..1} matches {    -- Necrosis
 								value matches {
 									DV_CODED_TEXT matches {
@@ -291,17 +302,6 @@ definition
 							ELEMENT[at0179] occurrences matches {0..1} matches {    -- Comment
 								value matches {
 									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0.11] occurrences matches {0..1} matches {    -- Histologic type
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0.12,    -- Ductal
-											at0.13]    -- Lobular
-										}
-									}
 								}
 							}
 						}
@@ -605,18 +605,6 @@ Annan">
 				["at0088.1"] = <
 					text = <"Axillary nodes">
 					description = <"Details of the involvement of tumour in axillary lymph nodes.">
-				>
-				["at0.11"] = <
-					text = <"Histologic type">
-					description = <"*">
-				>
-				["at0.12"] = <
-					text = <"Ductal">
-					description = <"*">
-				>
-				["at0.13"] = <
-					text = <"Lobular">
-					description = <"*">
 				>
 				["at0000"] = <
 					text = <"Microscopic findings - Breast cancer">
@@ -1229,6 +1217,22 @@ Annan">
 				>
 				["at0.29"] = <
 					text = <"Cancer in situ at margin">
+					description = <"*">
+				>
+				["at0064.1"] = <
+					text = <"Cancer in situ features">
+					description = <"Findings related to Ductal carcinoma-in-situ (DCIS).">
+				>
+				["at0.30"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0.31"] = <
+					text = <"Ductal">
+					description = <"*">
+				>
+				["at0.32"] = <
+					text = <"Lobular">
 					description = <"*">
 				>
 			>
