@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"f36917c652a536943e7f56cb3016f32b">
+		["MD5-CAM-1.0.1"] = <"aa285d638c43688d86abb906b477acce">
 		["build_uid"] = <"2dc8e6a3-e926-3109-880a-c9fc4e0dd32e">
 	>
 
@@ -262,17 +262,6 @@ definition
 					}
 					CLUSTER[at0125] occurrences matches {0..1} matches {    -- Histologic grade
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0.30] occurrences matches {0..1} matches {    -- Histologic type
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0.31,    -- Ductal
-											at0.32]    -- Lobular
-										}
-									}
-								}
-							}
 							ELEMENT[at0075] occurrences matches {0..1} matches {    -- Necrosis
 								value matches {
 									DV_CODED_TEXT matches {
@@ -302,6 +291,17 @@ definition
 							ELEMENT[at0179] occurrences matches {0..1} matches {    -- Comment
 								value matches {
 									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0.30] occurrences matches {0..1} matches {    -- Histologic type
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0.31,    -- Ductal
+											at0.32]    -- Lobular
+										}
+									}
 								}
 							}
 						}
@@ -412,6 +412,18 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0142] occurrences matches {0..1} matches {    -- Immunohistochemistry result
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0146,    -- Positive
+													at0147,    -- Negative
+													at0148]    -- Equivocal
+												}
+											}
+										}
+									}
 									ELEMENT[at0.14] occurrences matches {0..1} matches {    -- Immunohistochemistry score 2
 										value matches {
 											DV_CODED_TEXT matches {
@@ -423,18 +435,6 @@ definition
 													at0.18,    -- 3+
 													at0.19,    -- Not performed
 													at0.20]    -- Cannot be determined
-												}
-											}
-										}
-									}
-									ELEMENT[at0142] occurrences matches {0..1} matches {    -- Immunohistochemistry result
-										value matches {
-											DV_CODED_TEXT matches {
-												defining_code matches {
-													[local::
-													at0146,    -- Positive
-													at0147,    -- Negative
-													at0148]    -- Equivocal
 												}
 											}
 										}
@@ -455,6 +455,11 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0145] occurrences matches {0..1} matches {    -- Comment
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
 									ELEMENT[at0.21] occurrences matches {0..1} matches {    -- ISH result 2
 										value matches {
 											DV_CODED_TEXT matches {
@@ -462,14 +467,10 @@ definition
 													[local::
 													at0.22,    -- Negative (not amplified)
 													at0.23,    -- Positive (amplified)
-													at0.24]    -- Cannot be determined (intermediate)
+													at0.24,    -- Cannot be determined (intermediate)
+													at0.33]    -- Not performed
 												}
 											}
-										}
-									}
-									ELEMENT[at0145] occurrences matches {0..1} matches {    -- Comment
-										value matches {
-											DV_TEXT matches {*}
 										}
 									}
 								}
@@ -605,6 +606,86 @@ Annan">
 				["at0088.1"] = <
 					text = <"Axillary nodes">
 					description = <"Details of the involvement of tumour in axillary lymph nodes.">
+				>
+				["at0014.1"] = <
+					text = <"Mitosis count">
+					description = <"Mitotic frequency is calculated from the number of mitoses per 10 high-power fields.">
+				>
+				["at0.14"] = <
+					text = <"Immunohistochemistry score 2">
+					description = <"*">
+				>
+				["at0.15"] = <
+					text = <"0">
+					description = <"Negative">
+				>
+				["at0.16"] = <
+					text = <"1+">
+					description = <"Negative">
+				>
+				["at0.17"] = <
+					text = <"2+">
+					description = <"Equivocal">
+				>
+				["at0.18"] = <
+					text = <"3+">
+					description = <"Positive">
+				>
+				["at0.19"] = <
+					text = <"Not performed">
+					description = <"*">
+				>
+				["at0.20"] = <
+					text = <"Cannot be determined">
+					description = <"*">
+				>
+				["at0.21"] = <
+					text = <"ISH result 2">
+					description = <"*">
+				>
+				["at0.22"] = <
+					text = <"Negative (not amplified)">
+					description = <"*">
+				>
+				["at0.23"] = <
+					text = <"Positive (amplified)">
+					description = <"*">
+				>
+				["at0.24"] = <
+					text = <"Cannot be determined (intermediate)">
+					description = <"*">
+				>
+				["at0107.1"] = <
+					text = <"Immunohistochemistry score">
+					description = <"HER2 immunohistochemistry score.">
+				>
+				["at0036.1"] = <
+					text = <"Invasive tumour extent">
+					description = <"The size of the invasive aspect of the breast cancer.">
+				>
+				["at0037.1"] = <
+					text = <"Total lesion extent">
+					description = <"The extent of total breast cancer lesion.">
+				>
+				["at0.29"] = <
+					text = <"Cancer in situ at margin">
+					description = <"*">
+				>
+				["at0064.1"] = <
+					text = <"Cancer in situ features">
+					description = <"Findings related to Ductal carcinoma-in-situ (DCIS).">
+				>
+				["at0.30"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0.31"] = <
+					text = <"Ductal">
+					description = <"*">
+				>
+				["at0.32"] = <
+					text = <"Lobular">
+					description = <"*">
 				>
 				["at0000"] = <
 					text = <"Microscopic findings - Breast cancer">
@@ -1155,84 +1236,8 @@ Annan">
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
 				>
-				["at0014.1"] = <
-					text = <"Mitosis count">
-					description = <"Mitotic frequency is calculated from the number of mitoses per 10 high-power fields.">
-				>
-				["at0.14"] = <
-					text = <"Immunohistochemistry score 2">
-					description = <"*">
-				>
-				["at0.15"] = <
-					text = <"0">
-					description = <"Negative">
-				>
-				["at0.16"] = <
-					text = <"1+">
-					description = <"Negative">
-				>
-				["at0.17"] = <
-					text = <"2+">
-					description = <"Equivocal">
-				>
-				["at0.18"] = <
-					text = <"3+">
-					description = <"Positive">
-				>
-				["at0.19"] = <
+				["at0.33"] = <
 					text = <"Not performed">
-					description = <"*">
-				>
-				["at0.20"] = <
-					text = <"Cannot be determined">
-					description = <"*">
-				>
-				["at0.21"] = <
-					text = <"ISH result 2">
-					description = <"*">
-				>
-				["at0.22"] = <
-					text = <"Negative (not amplified)">
-					description = <"*">
-				>
-				["at0.23"] = <
-					text = <"Positive (amplified)">
-					description = <"*">
-				>
-				["at0.24"] = <
-					text = <"Cannot be determined (intermediate)">
-					description = <"*">
-				>
-				["at0107.1"] = <
-					text = <"Immunohistochemistry score">
-					description = <"HER2 immunohistochemistry score.">
-				>
-				["at0036.1"] = <
-					text = <"Invasive tumour extent">
-					description = <"The size of the invasive aspect of the breast cancer.">
-				>
-				["at0037.1"] = <
-					text = <"Total lesion extent">
-					description = <"The extent of total breast cancer lesion.">
-				>
-				["at0.29"] = <
-					text = <"Cancer in situ at margin">
-					description = <"*">
-				>
-				["at0064.1"] = <
-					text = <"Cancer in situ features">
-					description = <"Findings related to Ductal carcinoma-in-situ (DCIS).">
-				>
-				["at0.30"] = <
-					text = <"Histologic type">
-					description = <"*">
-				>
-				["at0.31"] = <
-					text = <"Ductal">
-					description = <"*">
-				>
-				["at0.32"] = <
-					text = <"Lobular">
 					description = <"*">
 				>
 			>
