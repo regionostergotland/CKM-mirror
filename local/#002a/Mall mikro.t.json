@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "46fd6dd0cd0b439f60b495e924059d07",
+      "MD5-CAM-1.0.1" : "771c5f087c81ffb38e67c4f544041817",
       "PARENT:MD5-CAM-1.0.1" : "c0028140955e3d4394e6cc0ddba58930"
     },
     "details" : {
@@ -99,7 +99,21 @@
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_COUNT",
                     "occurrences" : "1..1",
-                    "attributes" : [ ],
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "INTEGER",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "lowerUnbounded" : true,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true
+                        } ]
+                      } ]
+                    } ],
                     "attributeTuples" : [ ]
                   } ]
                 } ],
@@ -375,7 +389,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BECD1E0D3528F0955EC543333374412F"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.",
+          "keywords" : [ "الخباثة", "الحواف/الهوامش", "الورم", "السرطان", "القطع", "الهيستوباثولوجيا", "الخزعة" ],
+          "use" : "يستخدم عادة في نموذج الهيستوباثولجيا",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.",
+          "keywords" : [ "malignancy", "margins", "tumour", "cancer", "resection", "histopathology", "biopsy" ],
+          "use" : "Normally used within a histopathology archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_resection_margins.v0",
     "differential" : true,
@@ -427,6 +472,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -627,7 +673,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BECD1E0D3528F0955EC543333374412F"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.",
+          "keywords" : [ "الخباثة", "الحواف/الهوامش", "الورم", "السرطان", "القطع", "الهيستوباثولوجيا", "الخزعة" ],
+          "use" : "يستخدم عادة في نموذج الهيستوباثولجيا",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.",
+          "keywords" : [ "malignancy", "margins", "tumour", "cancer", "resection", "histopathology", "biopsy" ],
+          "use" : "Normally used within a histopathology archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_resection_margins.v0",
     "differential" : true,
@@ -679,6 +756,7 @@
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
+                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
