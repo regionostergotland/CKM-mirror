@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6322ed279524c806dadac91cbb7d8dae",
+      "MD5-CAM-1.0.1" : "4bd7225fec21404eff3e9d1c9cf5a0b2",
       "PARENT:MD5-CAM-1.0.1" : "cb2144de015ef845e1206c64213d8c26"
     },
     "details" : {
@@ -453,7 +453,65 @@
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "CLUSTER",
             "nodeId" : "at0102.0.1",
-            "attributes" : [ ],
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "cardinality" : {
+                "@type" : "CARDINALITY",
+                "interval" : "1..*",
+                "ordered" : false,
+                "unique" : false
+              },
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0162.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_PROPORTION",
+                    "occurrences" : "1..1",
+                    "defaultValue" : {
+                      "@type" : "DV_PROPORTION"
+                    },
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "numerator",
+                      "children" : [ {
+                        "@type" : "C_REAL",
+                        "rmTypeName" : "REAL",
+                        "constraint" : [ {
+                          "lower" : 0.0,
+                          "lowerUnbounded" : true,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true
+                        } ]
+                      } ]
+                    }, {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "type",
+                      "children" : [ {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "INTEGER",
+                        "constraint" : [ {
+                          "lower" : 2,
+                          "upper" : 2,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : true
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
             "attributeTuples" : [ ]
           } ]
         } ],
