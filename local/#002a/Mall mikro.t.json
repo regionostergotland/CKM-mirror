@@ -20,7 +20,7 @@
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
       "MD5-CAM-1.0.1" : "b8921cb14d6f1bd8067e64b9dfdc8150",
-      "PARENT:MD5-CAM-1.0.1" : "aa285d638c43688d86abb906b477acce"
+      "PARENT:MD5-CAM-1.0.1" : "a973c189791cd48cbe99629b5f469123"
     },
     "details" : {
       "en" : {
@@ -596,7 +596,7 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
-                "nodeId" : "at0.30.1",
+                "nodeId" : "at0075.0.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -615,7 +615,7 @@
                         "terminologyId" : {
                           "value" : "local"
                         },
-                        "constraint" : [ "at0.31", "at0.32" ]
+                        "constraint" : [ "at0076", "at0078", "at0077" ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -695,35 +695,6 @@
                         } ]
                       } ]
                     } ]
-                  } ]
-                } ],
-                "attributeTuples" : [ ]
-              }, {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "ELEMENT",
-                "nodeId" : "at0075.0.1",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "DV_CODED_TEXT",
-                    "occurrences" : "1..1",
-                    "attributes" : [ {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "defining_code",
-                      "existence" : "1..1",
-                      "children" : [ {
-                        "@type" : "C_TERMINOLOGY_CODE",
-                        "rmTypeName" : "CODE_PHRASE",
-                        "occurrences" : "1..1",
-                        "terminologyId" : {
-                          "value" : "local"
-                        },
-                        "constraint" : [ "at0076", "at0078", "at0077" ]
-                      } ]
-                    } ],
-                    "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -822,6 +793,35 @@
                     "rmTypeName" : "DV_TEXT",
                     "occurrences" : "1..1",
                     "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0.30.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "occurrences" : "1..1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "existence" : "1..1",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "CODE_PHRASE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "at0.31", "at0.32" ]
+                      } ]
+                    } ],
                     "attributeTuples" : [ ]
                   } ]
                 } ],
@@ -1160,6 +1160,7 @@
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
+                          "existence" : "1..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
                             "rmTypeName" : "TERMINOLOGY_CODE",
