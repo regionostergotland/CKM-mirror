@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"46e24e9a304e94fedfd4c60216a97404">
+		["MD5-CAM-1.0.1"] = <"8f32adab958be239037c246a2d1b31df">
 		["build_uid"] = <"23e5b8e0-2606-332b-80e1-a4b5d0f9295d">
 	>
 
@@ -513,6 +513,26 @@ definition
 							}
 						}
 					}
+				}
+			}
+			ELEMENT[at0.15] occurrences matches {0..1} matches {    -- Number of invasive tumours
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0.16] occurrences matches {0..1} matches {    -- Tumour appearance
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0.17] occurrences matches {0..1} matches {    -- Tumour type
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0.18] occurrences matches {0..1} matches {    -- Vascilar invasion
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -1166,6 +1186,22 @@ ontology
 				["at0088.1"] = <
 					text = <"Axillary nodes">
 					description = <"Details of the involvement of tumour in axillary lymph nodes.">
+				>
+				["at0.15"] = <
+					text = <"Number of invasive tumours">
+					description = <"*">
+				>
+				["at0.16"] = <
+					text = <"Tumour appearance">
+					description = <"*">
+				>
+				["at0.17"] = <
+					text = <"Tumour type">
+					description = <"*">
+				>
+				["at0.18"] = <
+					text = <"Vascilar invasion">
+					description = <"*">
 				>
 			>
 		>
