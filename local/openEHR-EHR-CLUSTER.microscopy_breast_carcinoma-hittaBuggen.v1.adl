@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"f83f4ad37d42e5ebf93f89072b7066f2">
+		["MD5-CAM-1.0.1"] = <"6d84d8fe3988666acdc70f448d062cba">
 		["build_uid"] = <"23e5b8e0-2606-332b-80e1-a4b5d0f9295d">
 	>
 
@@ -405,7 +405,7 @@ definition
 						items cardinality matches {1..*; unordered} matches {
 							CLUSTER[at0143] occurrences matches {0..1} matches {    -- Immunohistochemistry
 								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0107] occurrences matches {0..1} matches {    -- Immunohistochemistry score
+									ELEMENT[at0107.1] occurrences matches {0..1} matches {    -- Immunohistochemistry score
 										value matches {
 											DV_COUNT matches {
 												magnitude matches {|>=0|}
@@ -1085,6 +1085,10 @@ ontology
 				["at0.4"] = <
 					text = <"Lobular">
 					description = <"*">
+				>
+				["at0107.1"] = <
+					text = <"Immunohistochemistry score">
+					description = <"HER2 immunohistochemistry score.">
 				>
 			>
 		>
