@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "42a3126c765cb35542c3d86e5af44355",
+      "MD5-CAM-1.0.1" : "79c9a396520763936f0076a461dcb3b9",
       "PARENT:MD5-CAM-1.0.1" : "8f32adab958be239037c246a2d1b31df"
     },
     "details" : {
@@ -857,6 +857,38 @@
               } ]
             } ],
             "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0.13",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "cardinality" : {
+                "@type" : "CARDINALITY",
+                "interval" : "1..*",
+                "ordered" : false,
+                "unique" : false
+              },
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0.14.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_PROPORTION",
+                    "occurrences" : "1..1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
           } ]
         } ],
         "attributeTuples" : [ ]
@@ -1081,6 +1113,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.18.1",
           "text" : "Vaskulär invasion",
+          "description" : "*"
+        },
+        "at0.14.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.14.1",
+          "text" : "Percentage of nuclei stained",
           "description" : "*"
         }
       }
@@ -2110,6 +2148,23 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
+          "nodeId" : "at0041.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0044.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2487,6 +2542,12 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Lymfkörtlar",
+            "description" : "To record findings of tumour metastases in lymph nodes."
+          },
           "ac0.1" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
