@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9b8e84caf8babe691645d8a2c9b8c125",
+      "MD5-CAM-1.0.1" : "73aadd7c4549057df0dbccb8c33be0be",
       "PARENT:MD5-CAM-1.0.1" : "a973c189791cd48cbe99629b5f469123"
     },
     "details" : {
@@ -126,11 +126,9 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_COUNT",
-                    "occurrences" : "1..1",
                     "attributes" : [ {
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "magnitude",
-                      "existence" : "0..1",
                       "children" : [ {
                         "@type" : "C_INTEGER",
                         "rmTypeName" : "Integer",
@@ -158,69 +156,8 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_ORDINAL",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
-                    "attributeTuples" : [ {
-                      "@type" : "C_ATTRIBUTE_TUPLE",
-                      "members" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "symbol",
-                        "children" : [ ]
-                      } ],
-                      "tuples" : [ {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 1,
-                            "upper" : 1,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0176" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 2,
-                            "upper" : 2,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0177" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 3,
-                            "upper" : 3,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0178" ]
-                        } ]
-                      } ]
-                    } ]
+                    "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -234,69 +171,8 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_ORDINAL",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
-                    "attributeTuples" : [ {
-                      "@type" : "C_ATTRIBUTE_TUPLE",
-                      "members" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "symbol",
-                        "children" : [ ]
-                      } ],
-                      "tuples" : [ {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 1,
-                            "upper" : 1,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0050" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 2,
-                            "upper" : 2,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0051" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 3,
-                            "upper" : 3,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0052" ]
-                        } ]
-                      } ]
-                    } ]
+                    "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -310,69 +186,8 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_ORDINAL",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
-                    "attributeTuples" : [ {
-                      "@type" : "C_ATTRIBUTE_TUPLE",
-                      "members" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "symbol",
-                        "children" : [ ]
-                      } ],
-                      "tuples" : [ {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 1,
-                            "upper" : 1,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0044" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 2,
-                            "upper" : 2,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0045" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 3,
-                            "upper" : 3,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0046" ]
-                        } ]
-                      } ]
-                    } ]
+                    "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -386,69 +201,8 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_ORDINAL",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
-                    "attributeTuples" : [ {
-                      "@type" : "C_ATTRIBUTE_TUPLE",
-                      "members" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "symbol",
-                        "children" : [ ]
-                      } ],
-                      "tuples" : [ {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 1,
-                            "upper" : 1,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0047" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 2,
-                            "upper" : 2,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0048" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 3,
-                            "upper" : 3,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0049" ]
-                        } ]
-                      } ]
-                    } ]
+                    "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -462,7 +216,6 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_TEXT",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
@@ -567,11 +320,9 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
-                  "existence" : "1..1",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "TERMINOLOGY_CODE",
@@ -610,11 +361,9 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_CODED_TEXT",
-                    "occurrences" : "1..1",
                     "attributes" : [ {
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "defining_code",
-                      "existence" : "1..1",
                       "children" : [ {
                         "@type" : "C_TERMINOLOGY_CODE",
                         "rmTypeName" : "CODE_PHRASE",
@@ -639,69 +388,8 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_ORDINAL",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
-                    "attributeTuples" : [ {
-                      "@type" : "C_ATTRIBUTE_TUPLE",
-                      "members" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "symbol",
-                        "children" : [ ]
-                      } ],
-                      "tuples" : [ {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 1,
-                            "upper" : 1,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0071" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 2,
-                            "upper" : 2,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0072" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "constraint" : [ {
-                            "lower" : 3,
-                            "upper" : 3,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "constraint" : [ "at0073" ]
-                        } ]
-                      } ]
-                    } ]
+                    "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -716,75 +404,8 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_ORDINAL",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
-                    "attributeTuples" : [ {
-                      "@type" : "C_ATTRIBUTE_TUPLE",
-                      "members" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "value",
-                        "children" : [ ]
-                      }, {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "symbol",
-                        "children" : [ ]
-                      } ],
-                      "tuples" : [ {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "rmTypeName" : "INTEGER",
-                          "constraint" : [ {
-                            "lower" : 1,
-                            "upper" : 1,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "constraint" : [ "at0081" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "rmTypeName" : "INTEGER",
-                          "constraint" : [ {
-                            "lower" : 2,
-                            "upper" : 2,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "constraint" : [ "at0082" ]
-                        } ]
-                      }, {
-                        "@type" : "C_PRIMITIVE_TUPLE",
-                        "members" : [ {
-                          "@type" : "C_INTEGER",
-                          "rmTypeName" : "INTEGER",
-                          "constraint" : [ {
-                            "lower" : 3,
-                            "upper" : 3,
-                            "lowerUnbounded" : false,
-                            "upperUnbounded" : false,
-                            "lowerIncluded" : true,
-                            "upperIncluded" : true
-                          } ]
-                        }, {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "constraint" : [ "at0083" ]
-                        } ]
-                      } ]
-                    } ]
+                    "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -798,7 +419,6 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_TEXT",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
@@ -814,11 +434,9 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_CODED_TEXT",
-                    "occurrences" : "1..1",
                     "attributes" : [ {
                       "@type" : "C_ATTRIBUTE",
                       "rmAttributeName" : "defining_code",
-                      "existence" : "1..1",
                       "children" : [ {
                         "@type" : "C_TERMINOLOGY_CODE",
                         "rmTypeName" : "CODE_PHRASE",
@@ -882,7 +500,6 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_PROPORTION",
-                    "occurrences" : "1..1",
                     "defaultValue" : {
                       "@type" : "DV_PROPORTION"
                     },
@@ -946,7 +563,6 @@
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_PROPORTION",
-                    "occurrences" : "1..1",
                     "defaultValue" : {
                       "@type" : "DV_PROPORTION"
                     },
@@ -1024,11 +640,9 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_COUNT",
-                        "occurrences" : "1..1",
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "magnitude",
-                          "existence" : "0..1",
                           "children" : [ {
                             "@type" : "C_INTEGER",
                             "rmTypeName" : "INTEGER",
@@ -1057,11 +671,9 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_CODED_TEXT",
-                        "occurrences" : "1..1",
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
-                          "existence" : "1..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
                             "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1087,11 +699,9 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_CODED_TEXT",
-                        "occurrences" : "1..1",
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
-                          "existence" : "1..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
                             "rmTypeName" : "CODE_PHRASE",
@@ -1133,11 +743,9 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_CODED_TEXT",
-                        "occurrences" : "1..1",
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
-                          "existence" : "1..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
                             "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1163,11 +771,9 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_CODED_TEXT",
-                        "occurrences" : "1..1",
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "defining_code",
-                          "existence" : "1..1",
                           "children" : [ {
                             "@type" : "C_TERMINOLOGY_CODE",
                             "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1234,7 +840,6 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "DV_COUNT",
-            "occurrences" : "1..1",
             "attributes" : [ ],
             "attributeTuples" : [ ]
           } ]
@@ -1250,7 +855,6 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "DV_TEXT",
-            "occurrences" : "1..1",
             "attributes" : [ ],
             "attributeTuples" : [ ]
           } ]
@@ -1266,7 +870,6 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "DV_TEXT",
-            "occurrences" : "1..1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "value",
@@ -1290,7 +893,6 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "DV_TEXT",
-            "occurrences" : "1..1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "value",
@@ -1593,7 +1195,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -1610,11 +1211,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1641,11 +1240,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1672,11 +1269,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1703,11 +1298,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1733,11 +1326,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_COUNT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "magnitude",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_INTEGER",
                   "rmTypeName" : "Integer",
@@ -1765,11 +1356,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_COUNT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "magnitude",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_INTEGER",
                   "rmTypeName" : "Integer",
@@ -1790,7 +1379,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0009.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -1798,7 +1386,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -1863,7 +1450,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -1880,7 +1466,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -1897,7 +1482,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2035,6 +1619,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.4",
             "description" : "*"
+          },
+          "at0009.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "Extent of tumour",
+            "description" : "Extent of tumour expressed as a maximum length. Applies only to an individual node.\n\nstorleken på metastasen\nmetastasen med den största storleken\nska kunna dokumentera storlek på alla"
           }
         },
         "ar-sy" : {
@@ -2192,7 +1782,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2209,7 +1798,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2225,7 +1813,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2281,7 +1868,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2337,7 +1923,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2394,7 +1979,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2411,7 +1995,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2438,7 +2021,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2465,7 +2047,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2624,7 +2205,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2641,7 +2221,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2657,7 +2236,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2714,7 +2292,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2741,7 +2318,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2768,7 +2344,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2785,7 +2360,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2812,7 +2386,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2839,7 +2412,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -2984,7 +2556,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -3009,11 +2580,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -3059,7 +2628,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -3113,7 +2681,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -3133,7 +2700,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3287,7 +2853,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -3312,11 +2877,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -3362,7 +2925,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -3416,7 +2978,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -3436,7 +2997,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
