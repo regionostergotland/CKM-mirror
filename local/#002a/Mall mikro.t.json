@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "73aadd7c4549057df0dbccb8c33be0be",
+      "MD5-CAM-1.0.1" : "b4684c9aaee49fc098ad7bc92e359e43",
       "PARENT:MD5-CAM-1.0.1" : "a973c189791cd48cbe99629b5f469123"
     },
     "details" : {
@@ -537,6 +537,35 @@
                   } ]
                 } ],
                 "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0101.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.0.5" ],
+                        "selectedTerminologies" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
               } ]
             } ],
             "attributeTuples" : [ ]
@@ -594,6 +623,35 @@
                           "lowerIncluded" : true,
                           "upperIncluded" : true
                         } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0163.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_CODED_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "defining_code",
+                      "children" : [ {
+                        "@type" : "C_TERMINOLOGY_CODE",
+                        "rmTypeName" : "TERMINOLOGY_CODE",
+                        "occurrences" : "1..1",
+                        "terminologyId" : {
+                          "value" : "local"
+                        },
+                        "constraint" : [ "ac0.0.6" ],
+                        "selectedTerminologies" : [ ]
                       } ]
                     } ],
                     "attributeTuples" : [ ]
@@ -1082,6 +1140,18 @@
           "text" : "(Synthesized)",
           "code" : "ac0.0.4",
           "description" : "*"
+        },
+        "ac0.0.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.5",
+          "description" : "*"
+        },
+        "ac0.0.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.6",
+          "description" : "*"
         }
       }
     },
@@ -1107,6 +1177,16 @@
         "@type" : "VALUE_SET",
         "id" : "ac0.0.4",
         "members" : [ "at0.22", "at0.23", "at0.24", "at0.33" ]
+      },
+      "ac0.0.5" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.5",
+        "members" : [ "at0104", "at0105", "at0106" ]
+      },
+      "ac0.0.6" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.6",
+        "members" : [ "at0164", "at0165", "at0166" ]
       }
     }
   },
