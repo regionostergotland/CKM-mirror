@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "364c41f6f906fb53a5a4967f9be08447",
-      "PARENT:MD5-CAM-1.0.1" : "c94ed9ef9570317d5ae677495b9f4bbd"
+      "MD5-CAM-1.0.1" : "4035303d3fb350d28c6f1e947df3a068",
+      "PARENT:MD5-CAM-1.0.1" : "6a86b6717c5f081700bf007675abc157"
     },
     "details" : {
       "en" : {
@@ -54,7 +54,14 @@
     "@type" : "ARCHETYPE_TERMINOLOGY",
     "conceptCode" : "at0000.1",
     "termDefinitions" : {
-      "en" : { }
+      "en" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Microscopic findings - Breast cancer",
+          "description" : "Microscopic anatomic pathology findings related to breast cancer."
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
