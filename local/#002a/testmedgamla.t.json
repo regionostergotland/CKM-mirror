@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c94d4c01fa549916be0327147ace6af7",
+      "MD5-CAM-1.0.1" : "8ab90d4a08279b1cc966746a79f2fe88",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -227,15 +227,6 @@
                 } ],
                 "excludes" : [ ],
                 "closed" : false
-              }, {
-                "@type" : "C_ARCHETYPE_ROOT",
-                "rmTypeName" : "CLUSTER",
-                "occurrences" : "0..*",
-                "nodeId" : "at0006.0.1",
-                "attributes" : [ ],
-                "attributeTuples" : [ ],
-                "archetypeRef" : "testgamlamikro",
-                "referenceType" : "templateId"
               } ]
             } ],
             "attributeTuples" : [ ]
@@ -265,8 +256,34 @@
       "sl" : { },
       "en" : { },
       "es-ar" : { },
-      "nb" : { },
-      "pt-br" : { }
+      "nb" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
+        }
+      },
+      "pt-br" : {
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Relatório",
+          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identificador do relatório",
+          "description" : "Informação de identificação sobre o relatório."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
+        }
+      }
     },
     "termBindings" : { },
     "terminologyExtracts" : { },
