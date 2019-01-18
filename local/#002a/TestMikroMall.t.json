@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9e66a159f72a91ead2daed4fa6b86e68",
+      "MD5-CAM-1.0.1" : "68f9f06b899eeb059cacf699b466b3cd",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -236,15 +236,6 @@
                 "attributeTuples" : [ ],
                 "archetypeRef" : "Mall mikro",
                 "referenceType" : "templateId"
-              }, {
-                "@type" : "C_ARCHETYPE_ROOT",
-                "rmTypeName" : "CLUSTER",
-                "occurrences" : "0..*",
-                "nodeId" : "at0006.0.2",
-                "attributes" : [ ],
-                "attributeTuples" : [ ],
-                "archetypeRef" : "Mall makro",
-                "referenceType" : "templateId"
               } ]
             } ],
             "attributeTuples" : [ ]
@@ -274,23 +265,9 @@
       "sl" : { },
       "en" : { },
       "es-ar" : {
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
-        },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
           "text" : "*Extension(en)",
           "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
           "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
@@ -303,23 +280,9 @@
           "text" : "Rapport",
           "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
         },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
-        },
         "at0006.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0006",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
           "text" : "Tilleggsinformasjon",
           "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
           "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
@@ -344,13 +307,6 @@
           "text" : "Estado",
           "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
         },
-        "at0006" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
-        },
         "at0002.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0002",
@@ -369,13 +325,6 @@
           "code" : "at0005",
           "text" : "Estado",
           "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
-        },
-        "at0006.0.2" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006.0.2",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
         }
       }
     },
