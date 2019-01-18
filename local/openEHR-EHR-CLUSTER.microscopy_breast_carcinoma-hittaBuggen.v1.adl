@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"8e396a8d2028b272a8c50856bcbef64d">
+		["MD5-CAM-1.0.1"] = <"f83f4ad37d42e5ebf93f89072b7066f2">
 		["build_uid"] = <"23e5b8e0-2606-332b-80e1-a4b5d0f9295d">
 	>
 
@@ -245,7 +245,7 @@ definition
 					}
 				}
 			}
-			CLUSTER[at0064] occurrences matches {0..1} matches {    -- DCIS features
+			CLUSTER[at0064.1] occurrences matches {0..1} matches {    -- Cancer in situ features
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0154] occurrences matches {0..1} matches {    -- Calcification
 						value matches {
@@ -291,6 +291,17 @@ definition
 							ELEMENT[at0179] occurrences matches {0..1} matches {    -- Comment
 								value matches {
 									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Histologic type
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0.3,    -- Ductal
+											at0.4]    -- Lobular
+										}
+									}
 								}
 							}
 						}
@@ -1057,6 +1068,22 @@ ontology
 				>
 				["at0.1"] = <
 					text = <"Cancer in situ Tillagd clusterslot">
+					description = <"*">
+				>
+				["at0064.1"] = <
+					text = <"Cancer in situ features">
+					description = <"Findings related to Ductal carcinoma-in-situ (DCIS).">
+				>
+				["at0.2"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0.3"] = <
+					text = <"Ductal">
+					description = <"*">
+				>
+				["at0.4"] = <
+					text = <"Lobular">
 					description = <"*">
 				>
 			>
