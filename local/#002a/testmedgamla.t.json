@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8ab90d4a08279b1cc966746a79f2fe88",
+      "MD5-CAM-1.0.1" : "8d42a53e989753f6c527ba11ecce3c95",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -227,6 +227,15 @@
                 } ],
                 "excludes" : [ ],
                 "closed" : false
+              }, {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..*",
+                "nodeId" : "at0006.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "MallHittaBuggen",
+                "referenceType" : "templateId"
               } ]
             } ],
             "attributeTuples" : [ ]
