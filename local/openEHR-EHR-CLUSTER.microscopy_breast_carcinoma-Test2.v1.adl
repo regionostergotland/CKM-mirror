@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"4f35e1e1d04fbfb023e05fbbe375118a">
+		["MD5-CAM-1.0.1"] = <"4385ebaf6d8c5811240e1aa4000c6cbc">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -86,14 +86,14 @@ definition
 									3|[local::at0178]
 								}
 							}
-							ELEMENT[at0016] occurrences matches {0..1} matches {    -- Nuclear score
+							ELEMENT[at0016.1] occurrences matches {0..1} matches {    -- Nuclear score
 								value matches {
 									1|[local::at0050],
 									2|[local::at0051],
 									3|[local::at0052]
 								}
 							}
-							ELEMENT[at0017] occurrences matches {0..1} matches {    -- Tubular formation score
+							ELEMENT[at0017.1] occurrences matches {0..1} matches {    -- Tubular formation score
 								value matches {
 									1|[local::at0044],
 									2|[local::at0045],
@@ -1054,6 +1054,14 @@ ontology
 				["at0.1"] = <
 					text = <"Diameter of microscope field">
 					description = <"*">
+				>
+				["at0017.1"] = <
+					text = <"Tubular formation score">
+					description = <"Tubular formation score, representing the extent of tubular formation within invasive carcinoma cells.">
+				>
+				["at0016.1"] = <
+					text = <"Nuclear score">
+					description = <"Nuclear score.">
 				>
 			>
 		>
