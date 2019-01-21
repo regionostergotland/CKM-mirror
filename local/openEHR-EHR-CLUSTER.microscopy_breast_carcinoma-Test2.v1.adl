@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"4170bf0f39925a0d1bc6631033dda5cf">
+		["MD5-CAM-1.0.1"] = <"f5ca37878f586df77489bfc9c53c757e">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -261,7 +261,7 @@ definition
 					}
 				}
 			}
-			CLUSTER[at0064] occurrences matches {0..1} matches {    -- DCIS features
+			CLUSTER[at0064.1] occurrences matches {0..1} matches {    -- DCIS features
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0154] occurrences matches {0..1} matches {    -- Calcification
 						value matches {
@@ -307,6 +307,17 @@ definition
 							ELEMENT[at0179] occurrences matches {0..1} matches {    -- Comment
 								value matches {
 									DV_TEXT matches {*}
+								}
+							}
+							ELEMENT[at0.3] occurrences matches {0..1} matches {    -- Histologic type
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0.4,    -- Ductal carnicoma in situ
+											at0.5]    -- Lobular carnicoma in situ
+										}
+									}
 								}
 							}
 						}
@@ -1094,6 +1105,22 @@ ontology
 				["at0115.1"] = <
 					text = <"LCIS at margin">
 					description = <"Details of LCIS (Local carcinoma-in-situ) at surgical resection margins.">
+				>
+				["at0.3"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0064.1"] = <
+					text = <"DCIS features">
+					description = <"Findings related to Ductal carcinoma-in-situ (DCIS).">
+				>
+				["at0.4"] = <
+					text = <"Ductal carnicoma in situ">
+					description = <"*">
+				>
+				["at0.5"] = <
+					text = <"Lobular carnicoma in situ">
+					description = <"*">
 				>
 			>
 		>
