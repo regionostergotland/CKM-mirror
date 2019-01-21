@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"fe1aedb948ad5400366dfd33fcbb6cf4">
+		["MD5-CAM-1.0.1"] = <"f18360d703fc8ea8551a290831de3bbc">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -464,14 +464,15 @@ definition
 							}
 							CLUSTER[at0144] occurrences matches {0..1} matches {    -- In situ hybridisation (ISH)
 								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0108] occurrences matches {0..1} matches {    -- ISH result
+									ELEMENT[at0108.1] occurrences matches {0..1} matches {    -- ISH result
 										value matches {
 											DV_CODED_TEXT matches {
 												defining_code matches {
 													[local::
 													at0149,    -- Positive
 													at0150,    -- Negative
-													at0151]    -- Equivocal
+													at0151,    -- Equivocal
+													at0.30]    -- Not perfomed
 												}
 											}
 										}
@@ -1287,6 +1288,14 @@ ontology
 				>
 				["at0.29"] = <
 					text = <"Absent">
+					description = <"*">
+				>
+				["at0108.1"] = <
+					text = <"ISH result">
+					description = <"HER2 In situ hybridisation (ISH) result.">
+				>
+				["at0.30"] = <
+					text = <"Not perfomed">
 					description = <"*">
 				>
 			>
