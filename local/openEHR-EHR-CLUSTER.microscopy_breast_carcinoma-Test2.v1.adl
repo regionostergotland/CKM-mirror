@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"1b87cb98539a3120eed9400e4cdab5eb">
+		["MD5-CAM-1.0.1"] = <"4170bf0f39925a0d1bc6631033dda5cf">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -128,7 +128,7 @@ definition
 						exclude
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_invasion\.v1/}
 					}
-					allow_archetype CLUSTER[at0160] occurrences matches {0..1} matches {    -- Skin / muscle invasion
+					allow_archetype CLUSTER[at0160.1] occurrences matches {0..1} matches {    -- Skin / muscle invasion
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_invasion\.v1/}
 						exclude
@@ -138,23 +138,27 @@ definition
 			}
 			CLUSTER[at0021] occurrences matches {0..1} matches {    -- Resection margins
 				items cardinality matches {1..*; unordered} matches {
-					allow_archetype CLUSTER[at0084] occurrences matches {0..1} matches {    -- Invasive carcinoma at margin
+					allow_archetype CLUSTER[at0084.1] occurrences matches {0..1} matches {    -- Invasive carcinoma at margin
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 						exclude
 							archetype_id/value matches {/.*/}
 					}
-					allow_archetype CLUSTER[at0113] occurrences matches {0..1} matches {    -- DCIS at margin
+					allow_archetype CLUSTER[at0113.1] occurrences matches {0..1} matches {    -- DCIS at margin
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 						exclude
 							archetype_id/value matches {/.*/}
 					}
-					allow_archetype CLUSTER[at0115] occurrences matches {0..1} matches {    -- LCIS at margin
+					allow_archetype CLUSTER[at0115.1] occurrences matches {0..1} matches {    -- LCIS at margin
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v1/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 						exclude
 							archetype_id/value matches {/.*/}
+					}
+					allow_archetype CLUSTER[at0.2] occurrences matches {0..*} matches {    -- Cancer in situ at margin
+						include
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 					}
 				}
 			}
@@ -1070,6 +1074,26 @@ ontology
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
+				>
+				["at0160.1"] = <
+					text = <"Skin / muscle invasion">
+					description = <"Details of local invasion into skin or muscle tissue.">
+				>
+				["at0.2"] = <
+					text = <"Cancer in situ at margin">
+					description = <"Details of CIS (carcinoma-in-situ) at surgical resection margins, could either be ductal or lobular. ">
+				>
+				["at0084.1"] = <
+					text = <"Invasive carcinoma at margin">
+					description = <"Details of invasive carcinoma at surgical resection margins.">
+				>
+				["at0113.1"] = <
+					text = <"DCIS at margin">
+					description = <"Details of DCIS (Ductal carcinoma-in-situ) at surgical resection margins.">
+				>
+				["at0115.1"] = <
+					text = <"LCIS at margin">
+					description = <"Details of LCIS (Local carcinoma-in-situ) at surgical resection margins.">
 				>
 			>
 		>
