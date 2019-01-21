@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"97e647f2d97560bcb2aa2de0fcd5d3b9">
+		["MD5-CAM-1.0.1"] = <"eb603579e22ca6f20193ab1e61209629">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -65,22 +65,6 @@ definition
 									DV_COUNT matches {
 										magnitude matches {|>=0|}
 									}
-								}
-							}
-							ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Diameter of microscope field
-								value matches {
-									C_DV_QUANTITY <
-										property = <[openehr::122]>
-										list = <
-											["1"] = <
-												units = <"mm">
-												magnitude = <|>=0.0|>
-											>
-											["2"] = <
-												units = <"mm2">
-											>
-										>
-									>
 								}
 							}
 							ELEMENT[at0175] occurrences matches {0..1} matches {    -- Mitotic frequency score
@@ -116,13 +100,29 @@ definition
 									DV_TEXT matches {*}
 								}
 							}
+							ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Diameter of microscope field
+								value matches {
+									C_DV_QUANTITY <
+										property = <[openehr::122]>
+										list = <
+											["1"] = <
+												units = <"mm">
+												magnitude = <|>=0.0|>
+											>
+											["2"] = <
+												units = <"mm2">
+											>
+										>
+									>
+								}
+							}
 						}
 					}
 				}
 			}
 			CLUSTER[at0161] occurrences matches {0..1} matches {    -- Local tumour invasion
 				items cardinality matches {1..*; unordered} matches {
-					allow_archetype CLUSTER[at0159] occurrences matches {0..1} matches {    -- Lymphovascular invasion
+					allow_archetype CLUSTER[at0159.1] occurrences matches {0..1} matches {    -- Lymphovascular invasion
 						include
 							archetype_id/value matches {/.*/}
 						exclude
@@ -436,6 +436,21 @@ definition
 											}
 										}
 									}
+									ELEMENT[at0.20] occurrences matches {0..1} matches {    -- HER2 IH score
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0.21,    -- 0
+													at0.22,    -- 1+
+													at0.23,    -- 2+
+													at0.24,    -- 3+
+													at0.25,    -- Cannot be determined
+													at0.26]    -- Not performed
+												}
+											}
+										}
+									}
 								}
 							}
 							CLUSTER[at0144] occurrences matches {0..1} matches {    -- In situ hybridisation (ISH)
@@ -587,6 +602,82 @@ ontology
 				["at0016.1"] = <
 					text = <"Nuclear score">
 					description = <"Nuclear score.">
+				>
+				["at0160.1"] = <
+					text = <"Skin / muscle invasion">
+					description = <"Details of local invasion into skin or muscle tissue.">
+				>
+				["at0084.1"] = <
+					text = <"Invasive carcinoma at margin">
+					description = <"Details of invasive carcinoma at surgical resection margins.">
+				>
+				["at0113.1"] = <
+					text = <"DCIS at margin">
+					description = <"Details of DCIS (Ductal carcinoma-in-situ) at surgical resection margins.">
+				>
+				["at0115.1"] = <
+					text = <"LCIS at margin">
+					description = <"Details of LCIS (Local carcinoma-in-situ) at surgical resection margins.">
+				>
+				["at0.3"] = <
+					text = <"Histologic type">
+					description = <"*">
+				>
+				["at0064.1"] = <
+					text = <"DCIS features">
+					description = <"Findings related to Ductal carcinoma-in-situ (DCIS).">
+				>
+				["at0.4"] = <
+					text = <"Ductal carnicoma in situ">
+					description = <"*">
+				>
+				["at0.5"] = <
+					text = <"Lobular carnicoma in situ">
+					description = <"*">
+				>
+				["at0.7"] = <
+					text = <"Dual probe assay">
+					description = <"*">
+				>
+				["at0.8"] = <
+					text = <"Average number of HER2 signals per cell">
+					description = <"*">
+				>
+				["at0.9"] = <
+					text = <"Average number of CEP17 signals per cell">
+					description = <"*">
+				>
+				["at0.10"] = <
+					text = <"HER2/CEP17 ratio">
+					description = <"*">
+				>
+				["at0.11"] = <
+					text = <"Number of invasive tumor cells counted">
+					description = <"*">
+				>
+				["at0.12"] = <
+					text = <"Ki67">
+					description = <"*">
+				>
+				["at0.13"] = <
+					text = <"Percentage of positive nuclei">
+					description = <"*">
+				>
+				["at0.14"] = <
+					text = <"Predominant staining intensity">
+					description = <"*">
+				>
+				["at0.15"] = <
+					text = <"Low">
+					description = <"< 14%">
+				>
+				["at0.16"] = <
+					text = <"Intermediate">
+					description = <"14-19%">
+				>
+				["at0.17"] = <
+					text = <"High">
+					description = <">= 20%">
 				>
 				["at0000"] = <
 					text = <"Microscopic findings - Breast cancer">
@@ -1137,81 +1228,37 @@ ontology
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
 				>
-				["at0160.1"] = <
-					text = <"Skin / muscle invasion">
-					description = <"Details of local invasion into skin or muscle tissue.">
+				["at0159.1"] = <
+					text = <"Lymphovascular invasion">
+					description = <"Details of local invasion into lymphovascular tissue.">
 				>
-				["at0084.1"] = <
-					text = <"Invasive carcinoma at margin">
-					description = <"Details of invasive carcinoma at surgical resection margins.">
-				>
-				["at0113.1"] = <
-					text = <"DCIS at margin">
-					description = <"Details of DCIS (Ductal carcinoma-in-situ) at surgical resection margins.">
-				>
-				["at0115.1"] = <
-					text = <"LCIS at margin">
-					description = <"Details of LCIS (Local carcinoma-in-situ) at surgical resection margins.">
-				>
-				["at0.3"] = <
-					text = <"Histologic type">
+				["at0.20"] = <
+					text = <"HER2 IH score">
 					description = <"*">
 				>
-				["at0064.1"] = <
-					text = <"DCIS features">
-					description = <"Findings related to Ductal carcinoma-in-situ (DCIS).">
-				>
-				["at0.4"] = <
-					text = <"Ductal carnicoma in situ">
+				["at0.21"] = <
+					text = <"0">
 					description = <"*">
 				>
-				["at0.5"] = <
-					text = <"Lobular carnicoma in situ">
+				["at0.22"] = <
+					text = <"1+">
 					description = <"*">
 				>
-				["at0.7"] = <
-					text = <"Dual probe assay">
+				["at0.23"] = <
+					text = <"2+">
 					description = <"*">
 				>
-				["at0.8"] = <
-					text = <"Average number of HER2 signals per cell">
+				["at0.24"] = <
+					text = <"3+">
 					description = <"*">
 				>
-				["at0.9"] = <
-					text = <"Average number of CEP17 signals per cell">
+				["at0.25"] = <
+					text = <"Cannot be determined">
 					description = <"*">
 				>
-				["at0.10"] = <
-					text = <"HER2/CEP17 ratio">
+				["at0.26"] = <
+					text = <"Not performed">
 					description = <"*">
-				>
-				["at0.11"] = <
-					text = <"Number of invasive tumor cells counted">
-					description = <"*">
-				>
-				["at0.12"] = <
-					text = <"Ki67">
-					description = <"*">
-				>
-				["at0.13"] = <
-					text = <"Percentage of positive nuclei">
-					description = <"*">
-				>
-				["at0.14"] = <
-					text = <"Predominant staining intensity">
-					description = <"*">
-				>
-				["at0.15"] = <
-					text = <"Low">
-					description = <"< 14%">
-				>
-				["at0.16"] = <
-					text = <"Intermediate">
-					description = <"14-19%">
-				>
-				["at0.17"] = <
-					text = <"High">
-					description = <">= 20%">
 				>
 			>
 		>
