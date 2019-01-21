@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "accbcf5783434c555e523bbbeb694cde",
+      "MD5-CAM-1.0.1" : "9b033de26c4553736d59c9d0b22ebdbe",
       "PARENT:MD5-CAM-1.0.1" : "f18360d703fc8ea8551a290831de3bbc"
     },
     "details" : {
@@ -254,6 +254,22 @@
                             "lowerUnbounded" : true,
                             "upperUnbounded" : false,
                             "lowerIncluded" : true,
+                            "upperIncluded" : false
+                          } ]
+                        } ]
+                      }, {
+                        "@type" : "C_PRIMITIVE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_STRING",
+                          "rmTypeName" : "STRING",
+                          "constraint" : [ "mm2" ]
+                        }, {
+                          "@type" : "C_REAL",
+                          "rmTypeName" : "REAL",
+                          "constraint" : [ {
+                            "lowerUnbounded" : false,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : false,
                             "upperIncluded" : false
                           } ]
                         } ]
@@ -861,7 +877,7 @@
         "at0.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.1.1",
-          "text" : "Synfältsdiameter",
+          "text" : "Synfältsdiameter / area",
           "description" : "*"
         },
         "at0020.0.1" : {
