@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "15a81e3e7cae603022b14b8b8d10ab3b",
-      "PARENT:MD5-CAM-1.0.1" : "e06e19d53b0101ead6b1abc71cb972fa"
+      "MD5-CAM-1.0.1" : "2f88b379aa2d4a8cf07792fab01a4cbf",
+      "PARENT:MD5-CAM-1.0.1" : "fe1aedb948ad5400366dfd33fcbb6cf4"
     },
     "details" : {
       "en" : {
@@ -398,7 +398,7 @@
                     "terminologyId" : {
                       "value" : "local"
                     },
-                    "constraint" : [ "ac0.0.1" ],
+                    "constraint" : [ "ac0.0.3" ],
                     "selectedTerminologies" : [ ]
                   } ]
                 } ],
@@ -540,12 +540,6 @@
           "text" : "NGH",
           "description" : "Bloom and Richardson Grade of breast cancer, derived from the total score of its components: Mitotic frequency score, Nuclear score and Tubular formation score."
         },
-        "ac0.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "(Synthesized)",
-          "code" : "ac0.0.1",
-          "description" : "*"
-        },
         "at0075.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0075.0.1",
@@ -557,6 +551,12 @@
           "code" : "at0070.0.1",
           "text" : "Kärngrad",
           "description" : "Nuclear score, using the Elston and Ellis modification of the Bloom and\r\n Richardson system for grading invasive carcinoma."
+        },
+        "ac0.0.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.3",
+          "description" : "*"
         }
       }
     },
@@ -566,6 +566,16 @@
       "ac0.0.1" : {
         "@type" : "VALUE_SET",
         "id" : "ac0.0.1",
+        "members" : [ "at0155", "at0156", "at0157", "at0158" ]
+      },
+      "ac0.0.2" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.2",
+        "members" : [ "at0155", "at0156", "at0157", "at0158" ]
+      },
+      "ac0.0.3" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.3",
         "members" : [ "at0155", "at0156", "at0157", "at0158" ]
       }
     }
@@ -1541,7 +1551,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "D1A8A1C738778D59DE20B41556A96A80"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record detailed findings about invasion of local tissue by tumour as part of microscopic histopathological examination of tissue. ",
+          "keywords" : [ "histopathology", "histology", "pathology", "lab", "cancer", "tumour", "malignancy" ],
+          "use" : "To record detailed findings about invasion of local tissue by tumour as part of microscopic examination of tissue. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_invasion.v1",
     "differential" : true,
@@ -1720,7 +1747,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BECD1E0D3528F0955EC543333374412F"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.",
+          "keywords" : [ "الخباثة", "الحواف/الهوامش", "الورم", "السرطان", "القطع", "الهيستوباثولوجيا", "الخزعة" ],
+          "use" : "يستخدم عادة في نموذج الهيستوباثولجيا",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.",
+          "keywords" : [ "malignancy", "margins", "tumour", "cancer", "resection", "histopathology", "biopsy" ],
+          "use" : "Normally used within a histopathology archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_resection_margins.v0",
     "differential" : true,
@@ -1986,7 +2044,38 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BECD1E0D3528F0955EC543333374412F"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.",
+          "keywords" : [ "الخباثة", "الحواف/الهوامش", "الورم", "السرطان", "القطع", "الهيستوباثولوجيا", "الخزعة" ],
+          "use" : "يستخدم عادة في نموذج الهيستوباثولجيا",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.",
+          "keywords" : [ "malignancy", "margins", "tumour", "cancer", "resection", "histopathology", "biopsy" ],
+          "use" : "Normally used within a histopathology archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_resection_margins.v0",
     "differential" : true,
