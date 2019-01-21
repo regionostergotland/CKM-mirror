@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"4e66cea71bb1f1c7e647cb9dfc13438c">
+		["MD5-CAM-1.0.1"] = <"97e647f2d97560bcb2aa2de0fcd5d3b9">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -502,9 +502,16 @@ definition
 									}
 								}
 							}
-							ELEMENT[at0.14] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
+							ELEMENT[at0.14] occurrences matches {0..1} matches {    -- Predominant staining intensity
 								value matches {
-									DV_CODED_TEXT matches {*}
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0.15,    -- Low
+											at0.16,    -- Intermediate
+											at0.17]    -- High
+										}
+									}
 								}
 							}
 						}
@@ -1191,8 +1198,20 @@ ontology
 					description = <"*">
 				>
 				["at0.14"] = <
-					text = <"DV_CODED_TEXT">
+					text = <"Predominant staining intensity">
 					description = <"*">
+				>
+				["at0.15"] = <
+					text = <"Low">
+					description = <"< 14%">
+				>
+				["at0.16"] = <
+					text = <"Intermediate">
+					description = <"14-19%">
+				>
+				["at0.17"] = <
+					text = <"High">
+					description = <">= 20%">
 				>
 			>
 		>
