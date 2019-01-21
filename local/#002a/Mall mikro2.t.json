@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0e6fd7b0d954bd207aae7e43d571d4dc",
+      "MD5-CAM-1.0.1" : "afd661fa21527bdd0694c81560935bd1",
       "PARENT:MD5-CAM-1.0.1" : "1195014a9fa0d73d7997bdcd2d5d1511"
     },
     "details" : {
@@ -106,7 +106,7 @@
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "CLUSTER",
-            "nodeId" : "at0020",
+            "nodeId" : "at0020.0.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
@@ -117,6 +117,36 @@
                 "unique" : false
               },
               "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0014.1.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_COUNT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "magnitude",
+                      "children" : [ {
+                        "@type" : "C_INTEGER",
+                        "rmTypeName" : "Integer",
+                        "occurrences" : "1..1",
+                        "constraint" : [ {
+                          "lower" : 0,
+                          "lowerUnbounded" : false,
+                          "upperUnbounded" : false,
+                          "lowerIncluded" : true,
+                          "upperIncluded" : false
+                        } ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
                 "nodeId" : "at0.1.1",
@@ -172,9 +202,94 @@
                   } ]
                 } ],
                 "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0175.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_ORDINAL",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0016.1.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_ORDINAL",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0017.1.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_ORDINAL",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0018.0.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_ORDINAL",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
               } ]
             } ],
             "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "CLUSTER",
+        "nodeId" : "at0161",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "cardinality" : {
+            "@type" : "CARDINALITY",
+            "interval" : "1..*",
+            "ordered" : false,
+            "unique" : false
+          },
+          "children" : [ {
+            "@type" : "C_ARCHETYPE_ROOT",
+            "rmTypeName" : "CLUSTER",
+            "occurrences" : "0..1",
+            "nodeId" : "at0160.1.1",
+            "attributes" : [ ],
+            "attributeTuples" : [ ],
+            "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-tumour_invasion-001.v1",
+            "referenceType" : "archetypeOverlay"
           } ]
         } ],
         "attributeTuples" : [ ]
@@ -192,6 +307,48 @@
           "code" : "at0033.0.1",
           "text" : "TUMÖRSTORLEK",
           "description" : "Assessments of tumour size."
+        },
+        "at0.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.1.1",
+          "text" : "Synfältsdiameter",
+          "description" : "*"
+        },
+        "at0020.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0020.0.1",
+          "text" : "Histologisk grad (NGH)",
+          "description" : "Bloom and Richardson Histology Grade ( with modification by Elston and Ellis) is composed of three  components which are combined to produce a calculated Histology Grade."
+        },
+        "at0014.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0014.1.1",
+          "text" : "Antal mitoser/10 HPF",
+          "description" : "Mitotic frequency is calculated from the number of mitoses per 10 high-power fields."
+        },
+        "at0175.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0175.0.1",
+          "text" : "Mitos",
+          "description" : "Mitotic frequency score calculated from the mitosis count and the microscopy field diameter via a lookup table."
+        },
+        "at0016.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0016.1.1",
+          "text" : "Kärnatypi",
+          "description" : "Nuclear score."
+        },
+        "at0017.1.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0017.1.1",
+          "text" : "Tubuli",
+          "description" : "Tubular formation score, representing the extent of tubular formation within invasive carcinoma cells."
+        },
+        "at0018.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0018.0.1",
+          "text" : "NGH",
+          "description" : "Bloom and Richardson Grade of breast cancer, derived from the total score of its components: Mitotic frequency score, Nuclear score and Tubular formation score."
         }
       }
     },
@@ -219,7 +376,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "62B453A8D0CEBD89BDD20D7F68F26DC1"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الخصائص الفيزيائية لشيئ ما, مثل جزء من الجسم, عينة أو آفة.",
+          "keywords" : [ "العينة/النموذج", "المعمل/المختبر", "العينة", "الباثولوجيا/المرضية", "شيئ", "جهيزة", "الغِرْسة" ],
+          "use" : "لتسجيل التفاصيل الفيزيائية لجزء من الجسم, جهيزة, آفة أو عينة.",
+          "misuse" : "لا يستخدم لتسجيل الوزن أو الطول الكلي للجسم سواء أكان حقيقيا أو مُصحَّحا أو تقديرات أخرى كلية لحجم الجسم, مثل قياسات الخصر/موضع الحزام ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the physical properties of an object, such as a specimen or lesion.",
+          "keywords" : [ "specimen", "laboratory", "sample", "pathology", "object", "device", "implant" ],
+          "use" : "Use to record physical properties of an object, such as a specimen or lesion.",
+          "misuse" : "Do not use to record whole body weight / height whether actual or adjusted or other overall estimates of bidy size such as waist/ girth measurement.\r\n\r\nNot to be used to record measurements for body weight. Use OBSERVATION.body_weight.\r\n\r\nNot to be used to record measurements for height/length. Use OBSERVATION.height.\r\n\r\nNot to be used to record measurements for  head circumference. Use OBSERVATION.head_circumference.\r\n\r\nNot to be used to record measurements for hip circumference. Use OBSERVATION.hip_circumference.\r\n\r\nNot to be used to record measurements for waist circumference. Use OBSERVATION.waist_circumference.\r\n\r\nNot to be used to record measurements for body segments. Use the OBSERVATION.body_segment.\r\n\r\nNot to be used to record characteristics that might affect the quality of a test interpretation - use 'Specimen received issues' in the Specimen archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.physical_properties.v0",
     "differential" : true,
@@ -464,7 +654,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "335" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -480,7 +680,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "129" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -496,7 +706,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "124" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -579,7 +799,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "62B453A8D0CEBD89BDD20D7F68F26DC1"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الخصائص الفيزيائية لشيئ ما, مثل جزء من الجسم, عينة أو آفة.",
+          "keywords" : [ "العينة/النموذج", "المعمل/المختبر", "العينة", "الباثولوجيا/المرضية", "شيئ", "جهيزة", "الغِرْسة" ],
+          "use" : "لتسجيل التفاصيل الفيزيائية لجزء من الجسم, جهيزة, آفة أو عينة.",
+          "misuse" : "لا يستخدم لتسجيل الوزن أو الطول الكلي للجسم سواء أكان حقيقيا أو مُصحَّحا أو تقديرات أخرى كلية لحجم الجسم, مثل قياسات الخصر/موضع الحزام ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the physical properties of an object, such as a specimen or lesion.",
+          "keywords" : [ "specimen", "laboratory", "sample", "pathology", "object", "device", "implant" ],
+          "use" : "Use to record physical properties of an object, such as a specimen or lesion.",
+          "misuse" : "Do not use to record whole body weight / height whether actual or adjusted or other overall estimates of bidy size such as waist/ girth measurement.\r\n\r\nNot to be used to record measurements for body weight. Use OBSERVATION.body_weight.\r\n\r\nNot to be used to record measurements for height/length. Use OBSERVATION.height.\r\n\r\nNot to be used to record measurements for  head circumference. Use OBSERVATION.head_circumference.\r\n\r\nNot to be used to record measurements for hip circumference. Use OBSERVATION.hip_circumference.\r\n\r\nNot to be used to record measurements for waist circumference. Use OBSERVATION.waist_circumference.\r\n\r\nNot to be used to record measurements for body segments. Use the OBSERVATION.body_segment.\r\n\r\nNot to be used to record characteristics that might affect the quality of a test interpretation - use 'Specimen received issues' in the Specimen archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.physical_properties.v0",
     "differential" : true,
@@ -698,7 +951,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "122" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -714,7 +977,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "122" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -746,7 +1019,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "335" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -762,7 +1045,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "129" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -778,7 +1071,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "124" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -837,6 +1140,163 @@
       },
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4e6a8142-6eba-4954-be77-3252fd12d53e",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "D1A8A1C738778D59DE20B41556A96A80"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.tumour_invasion.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-tumour_invasion-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "0..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0004", "at0013", "at0014", "at0015", "at0005", "at0006" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003.1",
+            "text" : "Skinn/muskel-invasion",
+            "description" : "Finding of direct invasion by tumour of local tissue."
+          },
+          "ac0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.1",
+            "description" : "*"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0008", "at0009", "at0010" ]
+        }
+      }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "d73c8569-8bed-44cf-aeda-ef4f149b4ef2",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
