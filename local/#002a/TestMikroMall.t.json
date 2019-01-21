@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "68f9f06b899eeb059cacf699b466b3cd",
+      "MD5-CAM-1.0.1" : "69624a02d71a426a824e20754a672935",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -113,11 +113,9 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "DV_CODED_TEXT",
-        "occurrences" : "1..1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
           "rmAttributeName" : "defining_code",
-          "existence" : "1..1",
           "children" : [ {
             "@type" : "C_TERMINOLOGY_CODE",
             "rmTypeName" : "CODE_PHRASE",
@@ -136,20 +134,16 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "EVENT_CONTEXT",
-        "occurrences" : "1..1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
           "rmAttributeName" : "other_context",
-          "existence" : "0..1",
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ITEM_TREE",
-            "occurrences" : "1..1",
             "nodeId" : "at0001",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
-              "existence" : "0..1",
               "cardinality" : {
                 "@type" : "CARDINALITY",
                 "interval" : "0..*",
@@ -164,11 +158,9 @@
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
-                  "existence" : "0..1",
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_TEXT",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
@@ -182,51 +174,14 @@
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
-                  "existence" : "0..1",
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_TEXT",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
-              }, {
-                "@type" : "ARCHETYPE_SLOT",
-                "rmTypeName" : "CLUSTER",
-                "occurrences" : "0..*",
-                "nodeId" : "at0006",
-                "includes" : [ {
-                  "@type" : "ASSERTION",
-                  "stringExpression" : "archetype_id/value matches {/.*/}",
-                  "expression" : {
-                    "@type" : "BINARY_OPERATOR",
-                    "type" : "BOOLEAN",
-                    "operator" : "matches",
-                    "leftOperand" : {
-                      "@type" : "MODEL_REFERENCE",
-                      "type" : "STRING",
-                      "precedenceOverriden" : false,
-                      "referenceType" : "Attribute",
-                      "path" : "archetype_id/value"
-                    },
-                    "rightOperand" : {
-                      "@type" : "CONSTRAINT",
-                      "type" : "STRING",
-                      "precedenceOverriden" : false,
-                      "referenceType" : "Constraint",
-                      "item" : {
-                        "@type" : "C_STRING",
-                        "constraint" : [ "/.*/" ]
-                      }
-                    },
-                    "precedenceOverriden" : false
-                  },
-                  "variables" : [ ]
-                } ],
-                "excludes" : [ ],
-                "closed" : false
               }, {
                 "@type" : "C_ARCHETYPE_ROOT",
                 "rmTypeName" : "CLUSTER",
@@ -234,7 +189,7 @@
                 "nodeId" : "at0006.0.1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ],
-                "archetypeRef" : "Mall mikro",
+                "archetypeRef" : "Mall mikro2",
                 "referenceType" : "templateId"
               } ]
             } ],
@@ -264,28 +219,13 @@
       "ar-sy" : { },
       "sl" : { },
       "en" : { },
-      "es-ar" : {
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "*Extension(en)",
-          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
-          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
-        }
-      },
+      "es-ar" : { },
       "nb" : {
         "at0000" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000",
           "text" : "Rapport",
           "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Tilleggsinformasjon",
-          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
-          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
         }
       },
       "pt-br" : {
@@ -312,13 +252,6 @@
           "code" : "at0002",
           "text" : "Identificador do relatório",
           "description" : "Informação de identificação sobre o relatório."
-        },
-        "at0006.0.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0006",
-          "text" : "Extensão",
-          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
-          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
         },
         "at0005.0.1" : {
           "@type" : "ARCHETYPE_TERM",
