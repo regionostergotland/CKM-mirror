@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"f5ca37878f586df77489bfc9c53c757e">
+		["MD5-CAM-1.0.1"] = <"8898f266218873889827aa5c80fdfbe0">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -155,10 +155,6 @@ definition
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 						exclude
 							archetype_id/value matches {/.*/}
-					}
-					allow_archetype CLUSTER[at0.2] occurrences matches {0..*} matches {    -- Cancer in situ at margin
-						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
 					}
 				}
 			}
@@ -1089,10 +1085,6 @@ ontology
 				["at0160.1"] = <
 					text = <"Skin / muscle invasion">
 					description = <"Details of local invasion into skin or muscle tissue.">
-				>
-				["at0.2"] = <
-					text = <"Cancer in situ at margin">
-					description = <"Details of CIS (carcinoma-in-situ) at surgical resection margins, could either be ductal or lobular. ">
 				>
 				["at0084.1"] = <
 					text = <"Invasive carcinoma at margin">
