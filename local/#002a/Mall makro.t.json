@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6884f8c0f712b1ebb054afc8a983a6d2",
+      "MD5-CAM-1.0.1" : "28ddb2a52ebc5a5f6f50715d683e721b",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -79,7 +79,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -103,7 +102,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -127,7 +125,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -167,7 +164,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
@@ -191,7 +187,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
@@ -207,11 +202,9 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
-                  "existence" : "1..1",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "CODE_PHRASE",
@@ -236,11 +229,9 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
-                  "existence" : "1..1",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "CODE_PHRASE",
@@ -265,11 +256,9 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "defining_code",
-                  "existence" : "1..1",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
                     "rmTypeName" : "CODE_PHRASE",
@@ -346,11 +335,9 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_COUNT",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
-                  "existence" : "0..1",
                   "children" : [ {
                     "@type" : "C_INTEGER",
                     "rmTypeName" : "Integer",
@@ -378,7 +365,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
@@ -394,7 +380,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_QUANTITY",
-                "occurrences" : "1..1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "property",
@@ -666,7 +651,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -682,11 +666,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -725,7 +707,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -794,7 +775,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -1023,7 +1003,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -1039,11 +1018,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1082,7 +1059,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -1151,7 +1127,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -1380,7 +1355,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -1396,11 +1370,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1439,7 +1411,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -1508,7 +1479,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "defaultValue" : {
                     "units" : "mm",
                     "@type" : "DV_QUANTITY"
@@ -1569,7 +1539,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_TEXT",
-                  "occurrences" : "1..1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
@@ -1761,7 +1730,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -1777,11 +1745,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -1820,7 +1786,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -1889,7 +1854,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -2112,7 +2076,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2128,11 +2091,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2171,7 +2132,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -2240,7 +2200,6 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "occurrences" : "1..1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "property",
@@ -2541,8 +2500,15 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Mastektomi", "Sektor", "Marginalbit (Tilläggsexcision)", "Diagnostisk excision", "Reduktion", "Vårtbas" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -2558,7 +2524,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_DATE_TIME",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
@@ -2583,7 +2548,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2600,7 +2564,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2617,7 +2580,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2634,7 +2596,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2651,7 +2612,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2668,7 +2628,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_IDENTIFIER",
-              "occurrences" : "1..1",
               "defaultValue" : {
                 "@type" : "DV_IDENTIFIER"
               },
@@ -2688,11 +2647,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_COUNT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "magnitude",
-                "existence" : "0..1",
                 "children" : [ {
                   "@type" : "C_INTEGER",
                   "rmTypeName" : "INTEGER",
@@ -2918,7 +2875,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -2934,11 +2890,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2965,11 +2919,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -2985,7 +2937,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3002,11 +2953,9 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
-                "existence" : "1..1",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
                   "rmTypeName" : "TERMINOLOGY_CODE",
@@ -3022,7 +2971,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3039,7 +2987,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3338,7 +3285,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3355,7 +3301,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3371,7 +3316,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -3442,7 +3386,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -3513,7 +3456,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -3585,7 +3527,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3602,7 +3543,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -3629,7 +3569,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -3656,7 +3595,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -3828,7 +3766,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3845,7 +3782,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -3861,7 +3797,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -3933,7 +3868,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -3959,7 +3893,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -4031,7 +3964,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
@@ -4048,7 +3980,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -4075,7 +4006,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
@@ -4102,7 +4032,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "occurrences" : "1..1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "property",
