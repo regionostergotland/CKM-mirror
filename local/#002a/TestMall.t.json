@@ -113,11 +113,9 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "DV_CODED_TEXT",
-        "occurrences" : "1..1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
           "rmAttributeName" : "defining_code",
-          "existence" : "1..1",
           "children" : [ {
             "@type" : "C_TERMINOLOGY_CODE",
             "rmTypeName" : "CODE_PHRASE",
@@ -136,20 +134,16 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "EVENT_CONTEXT",
-        "occurrences" : "1..1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
           "rmAttributeName" : "other_context",
-          "existence" : "0..1",
           "children" : [ {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ITEM_TREE",
-            "occurrences" : "1..1",
             "nodeId" : "at0001",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
-              "existence" : "0..1",
               "cardinality" : {
                 "@type" : "CARDINALITY",
                 "interval" : "0..*",
@@ -164,11 +158,9 @@
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
-                  "existence" : "0..1",
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_TEXT",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
@@ -182,51 +174,14 @@
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
-                  "existence" : "0..1",
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
                     "rmTypeName" : "DV_TEXT",
-                    "occurrences" : "1..1",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
-              }, {
-                "@type" : "ARCHETYPE_SLOT",
-                "rmTypeName" : "CLUSTER",
-                "occurrences" : "0..*",
-                "nodeId" : "at0006",
-                "includes" : [ {
-                  "@type" : "ASSERTION",
-                  "stringExpression" : "archetype_id/value matches {/.*/}",
-                  "expression" : {
-                    "@type" : "BINARY_OPERATOR",
-                    "type" : "BOOLEAN",
-                    "operator" : "matches",
-                    "leftOperand" : {
-                      "@type" : "MODEL_REFERENCE",
-                      "type" : "STRING",
-                      "precedenceOverriden" : false,
-                      "referenceType" : "Attribute",
-                      "path" : "archetype_id/value"
-                    },
-                    "rightOperand" : {
-                      "@type" : "CONSTRAINT",
-                      "type" : "STRING",
-                      "precedenceOverriden" : false,
-                      "referenceType" : "Constraint",
-                      "item" : {
-                        "@type" : "C_STRING",
-                        "constraint" : [ "/.*/" ]
-                      }
-                    },
-                    "precedenceOverriden" : false
-                  },
-                  "variables" : [ ]
-                } ],
-                "excludes" : [ ],
-                "closed" : false
               }, {
                 "@type" : "C_ARCHETYPE_ROOT",
                 "rmTypeName" : "CLUSTER",
