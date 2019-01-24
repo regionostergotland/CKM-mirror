@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9b033de26c4553736d59c9d0b22ebdbe",
-      "PARENT:MD5-CAM-1.0.1" : "f18360d703fc8ea8551a290831de3bbc"
+      "MD5-CAM-1.0.1" : "2c42b72072f7aec7d36b445a989683af",
+      "PARENT:MD5-CAM-1.0.1" : "5cf7fc0450b8d865915431096cd004f1"
     },
     "details" : {
       "en" : {
@@ -2765,7 +2765,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "C2E092B3BBFFB74D4FC89BEB77C32939"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record detailed findings of lymph node metastases as part of microscopic histopathological examination of tissue. ",
+          "keywords" : [ "tumour", "lymph node", "metastases", "pathology", "histopathology", "cancer", "malignancy" ],
+          "use" : "To record detailed findings about lymph node metastases as part of microscopic examination of tissue. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الموجودات التفصيلية لنقائل العقد الليمفاوية كجزء من الفحص الهيستوباثولوجي المجهري للنسيج.",
+          "keywords" : [ "الورم", "العقدة الليمفاوية", "النقائل", "الباثولوجيا/المرَضية", "الهيستوباثولوجيا", "السرطان", "الخباثة" ],
+          "use" : "لتسجيل الموجودات التفصيلية حول نقائل العقد الليمفاوية كجزء من الفحص المجهري للنسيج.\r\nيستخدم كجزء من مكونات النموذج في سياق سلسلة نماذج يتكون منها تقرير الهيستوباثولوجيا, مثل: ملاحظة. الاختبار المعملي.الهيستوباثولوجيا.",
+          "misuse" : "لم يتم تصميم هذا النموذج ليتم استخدامه في داخل أي نموذج آخر غير نموذج ملاحظة. اختبار المعمل.الهيستوباثولوجيا.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.lymph_node_metastases.v0",
     "differential" : true,
@@ -3051,7 +3084,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "382" ]
+                } ]
+              } ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
