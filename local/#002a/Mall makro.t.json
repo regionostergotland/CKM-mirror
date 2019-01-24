@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8f10a5b6fc2f57ca4edf8ebbb9dd8674",
+      "MD5-CAM-1.0.1" : "2c17bbfcd1c741aad96730b6f118f76d",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -2919,16 +2919,14 @@
             "rmAttributeName" : "value",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "occurrences" : "1..1",
+              "rmTypeName" : "DV_TEXT",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
+                "rmAttributeName" : "value",
                 "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "constraint" : [ "ac0.6" ],
-                  "selectedTerminologies" : [ "local_terms" ]
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Höger bröst", "Vänster bröst", "Höger och vänster bröst" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
