@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"99845d60f0ab80d4707eaae5fbc1c9f5">
+		["MD5-CAM-1.0.1"] = <"68af3d763965a041b239356342eb8ac2">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -574,6 +574,37 @@ definition
 									at0187]    -- Indeterminate
 								}
 							}
+						}
+					}
+				}
+			}
+			CLUSTER[at0.41] occurrences matches {0..1} matches {    -- Tumour appearance and type
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0.31] occurrences matches {0..1} matches {    -- Tumour appearance
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0.32] occurrences matches {0..1} matches {    -- Tumour type
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0.33,    -- Invasive carcinoma of no special type (ductal, not otherwise specified)
+									at0.34,    -- Invasive lobular carcinoma
+									at0.35,    -- Mucinous carcinoma
+									at0.36,    -- Tubular carcinoma
+									at0.37,    -- Medullary carcinoma
+									at0.38,    -- Metaplastic carcinoma
+									at0.39,    -- Invasive carcinoma with neuroendocrine features
+									at0.40]    -- Other
+								}
+							}
+						}
+					}
+					ELEMENT[at0.42] occurrences matches {0..1} matches {    -- Comment
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -1297,6 +1328,54 @@ ontology
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
+				>
+				["at0.31"] = <
+					text = <"Tumour appearance">
+					description = <"*">
+				>
+				["at0.32"] = <
+					text = <"Tumour type">
+					description = <"*">
+				>
+				["at0.33"] = <
+					text = <"Invasive carcinoma of no special type (ductal, not otherwise specified)">
+					description = <"*">
+				>
+				["at0.34"] = <
+					text = <"Invasive lobular carcinoma">
+					description = <"*">
+				>
+				["at0.35"] = <
+					text = <"Mucinous carcinoma">
+					description = <"*">
+				>
+				["at0.36"] = <
+					text = <"Tubular carcinoma">
+					description = <"*">
+				>
+				["at0.37"] = <
+					text = <"Medullary carcinoma">
+					description = <"*">
+				>
+				["at0.38"] = <
+					text = <"Metaplastic carcinoma">
+					description = <"*">
+				>
+				["at0.39"] = <
+					text = <"Invasive carcinoma with neuroendocrine features">
+					description = <"*">
+				>
+				["at0.40"] = <
+					text = <"Other">
+					description = <"*">
+				>
+				["at0.41"] = <
+					text = <"Tumour appearance and type">
+					description = <"*">
+				>
+				["at0.42"] = <
+					text = <"Comment">
+					description = <"*">
 				>
 			>
 		>
