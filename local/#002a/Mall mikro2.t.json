@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2c8cc9d2292f37c8ddbab134de7e1dc5",
+      "MD5-CAM-1.0.1" : "9881f6c6a6731ea73af088617f70e63d",
       "PARENT:MD5-CAM-1.0.1" : "6d4307dde685c81e58e210d29771d018"
     },
     "details" : {
@@ -2708,10 +2708,11 @@
                         "rmTypeName" : "REAL",
                         "constraint" : [ {
                           "lower" : 0.0,
+                          "upper" : 1000.0,
                           "lowerUnbounded" : true,
-                          "upperUnbounded" : false,
+                          "upperUnbounded" : true,
                           "lowerIncluded" : true,
-                          "upperIncluded" : false
+                          "upperIncluded" : true
                         } ]
                       } ]
                     } ]
