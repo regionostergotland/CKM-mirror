@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"68af3d763965a041b239356342eb8ac2">
+		["MD5-CAM-1.0.1"] = <"e0a5fc6db676541c7fe690f89996da19">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -313,6 +313,10 @@ definition
 										}
 									}
 								}
+							}
+							allow_archetype CLUSTER[at0.45] occurrences matches {0..*} matches {    -- Size (extent) of DCIS area
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 							}
 						}
 					}
@@ -778,6 +782,54 @@ ontology
 				>
 				["at0.30"] = <
 					text = <"Not perfomed">
+					description = <"*">
+				>
+				["at0.31"] = <
+					text = <"Tumour appearance">
+					description = <"*">
+				>
+				["at0.32"] = <
+					text = <"Tumour type">
+					description = <"*">
+				>
+				["at0.33"] = <
+					text = <"Invasive carcinoma of no special type (ductal, not otherwise specified)">
+					description = <"*">
+				>
+				["at0.34"] = <
+					text = <"Invasive lobular carcinoma">
+					description = <"*">
+				>
+				["at0.35"] = <
+					text = <"Mucinous carcinoma">
+					description = <"*">
+				>
+				["at0.36"] = <
+					text = <"Tubular carcinoma">
+					description = <"*">
+				>
+				["at0.37"] = <
+					text = <"Medullary carcinoma">
+					description = <"*">
+				>
+				["at0.38"] = <
+					text = <"Metaplastic carcinoma">
+					description = <"*">
+				>
+				["at0.39"] = <
+					text = <"Invasive carcinoma with neuroendocrine features">
+					description = <"*">
+				>
+				["at0.40"] = <
+					text = <"Other">
+					description = <"*">
+				>
+				["at0.41"] = <
+					text = <"Tumour appearance and type">
+					description = <"*">
+				>
+				["at0.42"] = <
+					text = <"Comment">
 					description = <"*">
 				>
 				["at0000"] = <
@@ -1329,52 +1381,8 @@ ontology
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
 				>
-				["at0.31"] = <
-					text = <"Tumour appearance">
-					description = <"*">
-				>
-				["at0.32"] = <
-					text = <"Tumour type">
-					description = <"*">
-				>
-				["at0.33"] = <
-					text = <"Invasive carcinoma of no special type (ductal, not otherwise specified)">
-					description = <"*">
-				>
-				["at0.34"] = <
-					text = <"Invasive lobular carcinoma">
-					description = <"*">
-				>
-				["at0.35"] = <
-					text = <"Mucinous carcinoma">
-					description = <"*">
-				>
-				["at0.36"] = <
-					text = <"Tubular carcinoma">
-					description = <"*">
-				>
-				["at0.37"] = <
-					text = <"Medullary carcinoma">
-					description = <"*">
-				>
-				["at0.38"] = <
-					text = <"Metaplastic carcinoma">
-					description = <"*">
-				>
-				["at0.39"] = <
-					text = <"Invasive carcinoma with neuroendocrine features">
-					description = <"*">
-				>
-				["at0.40"] = <
-					text = <"Other">
-					description = <"*">
-				>
-				["at0.41"] = <
-					text = <"Tumour appearance and type">
-					description = <"*">
-				>
-				["at0.42"] = <
-					text = <"Comment">
+				["at0.45"] = <
+					text = <"Size (extent) of DCIS area">
 					description = <"*">
 				>
 			>
