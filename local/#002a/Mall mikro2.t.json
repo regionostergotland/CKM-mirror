@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2b797ed5e76b2b6e9ad69e644718ab12",
+      "MD5-CAM-1.0.1" : "d18aa2be3cdab7ee2506bd9aec78a6ab",
       "PARENT:MD5-CAM-1.0.1" : "e0a5fc6db676541c7fe690f89996da19"
     },
     "details" : {
@@ -2409,8 +2409,9 @@
                         "rmTypeName" : "REAL",
                         "constraint" : [ {
                           "lower" : 0.0,
+                          "upper" : 1000.0,
                           "lowerUnbounded" : true,
-                          "upperUnbounded" : false,
+                          "upperUnbounded" : true,
                           "lowerIncluded" : true,
                           "upperIncluded" : true
                         } ]
@@ -3725,19 +3726,19 @@
           "at0042.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0042.1",
-            "text" : "Estimerad storlek av cancer in situ (största dimensionen)",
+            "text" : "Estimerad storlek av cancer in situ (största dimensionen utanför invasivt område)",
             "description" : "The length of the object."
           },
           "at0043.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0043.1",
-            "text" : "Övrig dimension",
+            "text" : "Övrig dimension (utanför invasivt område)",
             "description" : "The width or breadth of the object from side to side."
           },
           "at0044.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0044.1",
-            "text" : "Övrig dimension",
+            "text" : "Övrig dimension (utanför invasivt område)",
             "description" : "The vertical height or depth of the object."
           }
         }
