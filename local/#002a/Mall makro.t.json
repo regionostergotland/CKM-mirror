@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2ddc943597d5c207f054c94a58268c14",
+      "MD5-CAM-1.0.1" : "916defa48b3db0785c660bf3227150d3",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -4328,6 +4328,10 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
                   "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "precision",
+                  "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -4343,6 +4347,17 @@
                       "upperUnbounded" : false,
                       "lowerIncluded" : false,
                       "upperIncluded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_INTEGER",
+                    "rmTypeName" : "INTEGER",
+                    "constraint" : [ {
+                      "lower" : 0,
+                      "upper" : 0,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true
                     } ]
                   } ]
                 } ]
@@ -4383,6 +4398,10 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
                   "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "precision",
+                  "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -4398,6 +4417,17 @@
                       "upperUnbounded" : false,
                       "lowerIncluded" : false,
                       "upperIncluded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_INTEGER",
+                    "rmTypeName" : "INTEGER",
+                    "constraint" : [ {
+                      "lower" : 0,
+                      "upper" : 0,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true
                     } ]
                   } ]
                 } ]
@@ -4438,6 +4468,10 @@
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "magnitude",
                   "children" : [ ]
+                }, {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "precision",
+                  "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
@@ -4453,6 +4487,17 @@
                       "upperUnbounded" : false,
                       "lowerIncluded" : false,
                       "upperIncluded" : false
+                    } ]
+                  }, {
+                    "@type" : "C_INTEGER",
+                    "rmTypeName" : "INTEGER",
+                    "constraint" : [ {
+                      "lower" : 0,
+                      "upper" : 0,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : false,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true
                     } ]
                   } ]
                 } ]
