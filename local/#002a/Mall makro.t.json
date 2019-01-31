@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8368929ce90c6ce4e5457899afc2ce57",
+      "MD5-CAM-1.0.1" : "e1cc45cff594cc57bed37c45873f833a",
       "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
     },
     "details" : {
@@ -219,6 +219,21 @@
                     "constraint" : [ "Ja, enligt rutin", "Annat" ]
                   } ]
                 } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0008.2",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -608,6 +623,12 @@
           "code" : "at0031.4",
           "text" : "PAD frågeställning",
           "description" : "*"
+        },
+        "at0008.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0008.2",
+          "text" : "Om annat valts, beskriv tuschmarkering här",
+          "description" : "Is mamill, fascia, axill present in the specimen"
         }
       }
     },
