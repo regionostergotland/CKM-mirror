@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"6d4307dde685c81e58e210d29771d018">
+		["MD5-CAM-1.0.1"] = <"f3f37061f6465141cfc8befe43a6d832">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -583,6 +583,11 @@ definition
 					}
 				}
 			}
+			ELEMENT[at0.46] occurrences matches {0..1} matches {    -- Number of invasive tumours
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
 			CLUSTER[at0.41] occurrences matches {0..1} matches {    -- Tumour appearance and type
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0.31] occurrences matches {0..1} matches {    -- Tumour appearance
@@ -831,6 +836,10 @@ ontology
 				>
 				["at0.42"] = <
 					text = <"Comment">
+					description = <"*">
+				>
+				["at0.45"] = <
+					text = <"Size (extent) of DCIS area">
 					description = <"*">
 				>
 				["at0000"] = <
@@ -1382,8 +1391,8 @@ ontology
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
 				>
-				["at0.45"] = <
-					text = <"Size (extent) of DCIS area">
+				["at0.46"] = <
+					text = <"Number of invasive tumours">
 					description = <"*">
 				>
 			>
