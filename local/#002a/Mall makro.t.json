@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "916defa48b3db0785c660bf3227150d3",
-      "PARENT:MD5-CAM-1.0.1" : "2b8b07bc5719b1e011bfed1b423a29c5"
+      "MD5-CAM-1.0.1" : "444244edfc287aaa32828cc08d0b43a0",
+      "PARENT:MD5-CAM-1.0.1" : "4eaf70918e1af2684fe8d57eecab6ce3"
     },
     "details" : {
       "en" : {
@@ -525,6 +525,21 @@
           } ]
         } ],
         "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0032.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_TEXT",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -629,6 +644,12 @@
           "code" : "at0008.2",
           "text" : "Om annat valts, beskriv tuschmarkering här",
           "description" : "Is mamill, fascia, axill present in the specimen"
+        },
+        "at0032.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0032.1",
+          "text" : "Övrigt (noterat vid utskärningen)",
+          "description" : "*"
         }
       }
     },
