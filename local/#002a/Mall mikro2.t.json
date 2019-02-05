@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5f3e088951951934ead2dfc18f3617f5",
+      "MD5-CAM-1.0.1" : "69bf34bb3e8f63345a56e4ad17a969eb",
       "PARENT:MD5-CAM-1.0.1" : "7512322e4100d3d01b100915cb6035c7"
     },
     "details" : {
@@ -251,9 +251,8 @@
                           "rmTypeName" : "REAL",
                           "constraint" : [ {
                             "lower" : 0.0,
-                            "upper" : 1000.0,
                             "lowerUnbounded" : true,
-                            "upperUnbounded" : true,
+                            "upperUnbounded" : false,
                             "lowerIncluded" : true,
                             "upperIncluded" : true
                           } ]
@@ -1280,10 +1279,11 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerUnbounded" : false,
+                      "lower" : 0.0,
+                      "lowerUnbounded" : true,
                       "upperUnbounded" : false,
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -1350,10 +1350,11 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerUnbounded" : false,
+                      "lower" : 0.0,
+                      "lowerUnbounded" : true,
                       "upperUnbounded" : false,
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -1420,10 +1421,11 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerUnbounded" : false,
+                      "lower" : 0.0,
+                      "lowerUnbounded" : true,
                       "upperUnbounded" : false,
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -1748,10 +1750,11 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerUnbounded" : false,
+                      "lower" : 0.0,
+                      "lowerUnbounded" : true,
                       "upperUnbounded" : false,
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -2526,9 +2529,8 @@
                         "rmTypeName" : "REAL",
                         "constraint" : [ {
                           "lower" : 0.0,
-                          "upper" : 1000.0,
                           "lowerUnbounded" : true,
-                          "upperUnbounded" : true,
+                          "upperUnbounded" : false,
                           "lowerIncluded" : true,
                           "upperIncluded" : true
                         } ]
@@ -2824,9 +2826,8 @@
                         "rmTypeName" : "REAL",
                         "constraint" : [ {
                           "lower" : 0.0,
-                          "upper" : 1000.0,
                           "lowerUnbounded" : true,
-                          "upperUnbounded" : true,
+                          "upperUnbounded" : false,
                           "lowerIncluded" : true,
                           "upperIncluded" : true
                         } ]
@@ -3642,10 +3643,11 @@
                     "@type" : "C_REAL",
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
-                      "lowerUnbounded" : false,
+                      "lower" : 0.0,
+                      "lowerUnbounded" : true,
                       "upperUnbounded" : false,
-                      "lowerIncluded" : false,
-                      "upperIncluded" : false
+                      "lowerIncluded" : true,
+                      "upperIncluded" : true
                     } ]
                   }, {
                     "@type" : "C_INTEGER",
@@ -3713,9 +3715,8 @@
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
                       "lower" : 0.0,
-                      "upper" : 100.0,
                       "lowerUnbounded" : true,
-                      "upperUnbounded" : true,
+                      "upperUnbounded" : false,
                       "lowerIncluded" : true,
                       "upperIncluded" : true
                     } ]
@@ -3785,9 +3786,8 @@
                     "rmTypeName" : "REAL",
                     "constraint" : [ {
                       "lower" : 0.0,
-                      "upper" : 100.0,
                       "lowerUnbounded" : true,
-                      "upperUnbounded" : true,
+                      "upperUnbounded" : false,
                       "lowerIncluded" : true,
                       "upperIncluded" : true
                     } ]
