@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "69e60bf6c7e056f3ca488c4660817085",
-      "PARENT:MD5-CAM-1.0.1" : "c2df157b660da844aad58d4ef23c2b22"
+      "MD5-CAM-1.0.1" : "7397c34605f3cc63d4e302b9033ee1b7",
+      "PARENT:MD5-CAM-1.0.1" : "1c93983ea4b39e64c0e7deefc46b246f"
     },
     "details" : {
       "en" : {
@@ -228,6 +228,24 @@
                     "constraint" : [ ]
                   } ]
                 } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0035.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "existence" : "0..1",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_DURATION",
+                "occurrences" : "1..1",
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -734,6 +752,18 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0031.5",
           "text" : "Neoadjuvant behandling",
+          "description" : "*"
+        },
+        "at0035" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0035",
+          "text" : "Ischemia time 2",
+          "description" : "*"
+        },
+        "at0035.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0035.1",
+          "text" : "Ischemia time 2",
           "description" : "*"
         }
       }
