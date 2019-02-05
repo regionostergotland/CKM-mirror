@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "69bf34bb3e8f63345a56e4ad17a969eb",
-      "PARENT:MD5-CAM-1.0.1" : "7512322e4100d3d01b100915cb6035c7"
+      "MD5-CAM-1.0.1" : "c9caffd3899bf7b5f3cde2a789eef674",
+      "PARENT:MD5-CAM-1.0.1" : "98810a558ca3ccdf8cd8e47dc75988cc"
     },
     "details" : {
       "en" : {
@@ -239,6 +239,10 @@
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "magnitude",
                         "children" : [ ]
+                      }, {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "precision",
+                        "children" : [ ]
                       } ],
                       "tuples" : [ {
                         "@type" : "C_PRIMITIVE_TUPLE",
@@ -252,6 +256,17 @@
                           "constraint" : [ {
                             "lower" : 0.0,
                             "lowerUnbounded" : true,
+                            "upperUnbounded" : false,
+                            "lowerIncluded" : true,
+                            "upperIncluded" : true
+                          } ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "rmTypeName" : "INTEGER",
+                          "constraint" : [ {
+                            "lower" : 0,
+                            "upper" : 0,
+                            "lowerUnbounded" : false,
                             "upperUnbounded" : false,
                             "lowerIncluded" : true,
                             "upperIncluded" : true
@@ -272,6 +287,10 @@
                             "lowerIncluded" : false,
                             "upperIncluded" : false
                           } ]
+                        }, {
+                          "@type" : "C_INTEGER",
+                          "rmTypeName" : "INTEGER",
+                          "constraint" : [ ]
                         } ]
                       } ]
                     } ]
