@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1c93983ea4b39e64c0e7deefc46b246f">
+		["MD5-CAM-1.0.1"] = <"c2df157b660da844aad58d4ef23c2b22">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -46,6 +46,11 @@ definition
 					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Fixation time
 						value matches {
 							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Ischemia time 2
+						value matches {
+							DV_DURATION matches {*}
 						}
 					}
 				}
@@ -268,6 +273,10 @@ The ti">
 				>
 				["at0034"] = <
 					text = <"Fixation time">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Ischemia time 2">
 					description = <"*">
 				>
 			>
