@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"4eaf70918e1af2684fe8d57eecab6ce3">
+		["MD5-CAM-1.0.1"] = <"1c93983ea4b39e64c0e7deefc46b246f">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -36,6 +36,16 @@ definition
 						value matches {
 							DV_CODED_TEXT matches {*}
 							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Ischemia time
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Fixation time
+						value matches {
+							DV_DATE_TIME matches {*}
 						}
 					}
 				}
@@ -248,6 +258,16 @@ ontology
 				>
 				["at0032"] = <
 					text = <"DV_TEXT">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Ischemia time">
+					description = <"E.g. the time between the specimen was removed from patient until is was put in formalin.
+
+The ti">
+				>
+				["at0034"] = <
+					text = <"Fixation time">
 					description = <"*">
 				>
 			>
