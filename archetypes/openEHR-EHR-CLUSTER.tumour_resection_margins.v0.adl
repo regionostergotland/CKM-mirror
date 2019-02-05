@@ -25,19 +25,19 @@ description
 	lifecycle_state = <"in_development">
 	other_contributors = <"Sabine Leh, Helse Bergen HF, Norway","John Tore Valand, Helse Bergen HF, Norway","Silje Ljosland Bakke, Nasjonal IKT HF, Norway","Therese Högberg Mårder, Linköpings University, Sweden">
 	details = <
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.">
-			keywords = <"الخباثة","الحواف/الهوامش","الورم","السرطان","القطع","الهيستوباثولوجيا","الخزعة">
-			copyright = <"© openEHR Foundation">
-			use = <"يستخدم عادة في نموذج الهيستوباثولجيا">
-		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"Details of surgical resection margin involvement of malignant tumours. May be used to describe scenarios where tumour is present at the resection margin, detailing the length of tumour involvement, or where tumour is absent from the margin, to indicate the distance of tumour from that margin.">
 			keywords = <"malignancy","margins","tumour","cancer","resection","histopathology","biopsy">
 			copyright = <"© openEHR Foundation">
 			use = <"Normally used within a histopathology archetype.">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"تفاصيل حول اكتناف حواف القطع الجراحي بالورم الخبيث. قد يستخدم لوصف سيناريوهات حيث يوجد فيها الورم موجودا عند حافة/هامش القطع, تفاصيل حول طول اكتناف الورم, أو حيث يكون الورم غائبا من الحافة/الهامش, للإشارة إلى المسافة بين الورم و الحافة/الهامش.">
+			keywords = <"الخباثة","الحواف/الهوامش","الورم","السرطان","القطع","الهيستوباثولوجيا","الخزعة">
+			copyright = <"© openEHR Foundation">
+			use = <"يستخدم عادة في نموذج الهيستوباثولجيا">
 		>
 	>
 	other_details = <
@@ -47,7 +47,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"BECD1E0D3528F0955EC543333374412F">
+		["MD5-CAM-1.0.1"] = <"83d8735ec64ea893c822154c2ed97fe9">
 		["build_uid"] = <"97b475fb-450e-4960-a8f2-74e8900a68d5">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -87,6 +87,7 @@ definition
 									["1"] = <
 										units = <"mm">
 										magnitude = <|>=0.0|>
+										precision = <|0|>
 									>
 								>
 							>
@@ -109,6 +110,7 @@ definition
 									["1"] = <
 										units = <"mm">
 										magnitude = <|>=0.0|>
+										precision = <|0|>
 									>
 								>
 							>
