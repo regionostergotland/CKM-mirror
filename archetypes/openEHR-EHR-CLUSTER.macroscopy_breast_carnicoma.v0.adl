@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1c93983ea4b39e64c0e7deefc46b246f">
+		["MD5-CAM-1.0.1"] = <"45aef859823e92f0342ff16a697cb821">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -128,14 +128,7 @@ definition
 					ELEMENT[at0017] occurrences matches {0..1} matches {    -- Distance from tumour centre to mamill
 						value matches {
 							C_DV_QUANTITY <
-								property = <[openehr::122]>
-								list = <
-									["1"] = <
-										units = <"mm">
-										magnitude = <|>=0.0|>
-									>
-								>
-							>
+															>
 						}
 					}
 					allow_archetype CLUSTER[at0018] occurrences matches {0..*} matches {    -- Distance from tumour periphery to resection margins
