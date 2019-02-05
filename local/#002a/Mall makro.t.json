@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "61ba04efc79f780341982b97298c8957",
+      "MD5-CAM-1.0.1" : "d61ad9dbdf7be378a64bc4bcdc469606",
       "PARENT:MD5-CAM-1.0.1" : "4eaf70918e1af2684fe8d57eecab6ce3"
     },
     "details" : {
@@ -2516,9 +2516,6 @@
           "/items[at0071]" : {
             "fhir_mapping" : "*Specimen.collection.collector(en)"
           },
-          "/items[at0013]" : {
-            "fhir_mapping" : "*Specimen.collection.sourceSite(en)"
-          },
           "/items[at0027]" : {
             "fhir_mappings" : "*Specimen.collection.quantity(en)"
           },
@@ -2536,14 +2533,14 @@
           },
           "/items[at0029.1]" : {
             "fhir_mapping" : "*Specimen.type(en)"
+          },
+          "/items[at0013]" : {
+            "fhir_mapping" : "*Specimen.collection.sourceSite(en)"
           }
         },
         "en" : {
           "/items[at0071]" : {
             "fhir_mapping" : "Specimen.collection.collector"
-          },
-          "/items[at0013]" : {
-            "fhir_mapping" : "Specimen.collection.sourceSite"
           },
           "/items[at0027]" : {
             "fhir_mappings" : "Specimen.collection.quantity"
@@ -2562,6 +2559,9 @@
           },
           "/items[at0029.1]" : {
             "fhir_mapping" : "Specimen.type"
+          },
+          "/items[at0013]" : {
+            "fhir_mapping" : "Specimen.collection.sourceSite"
           }
         },
         "pt-br" : { }
@@ -2986,7 +2986,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0065.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -2994,7 +2993,15 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Kvinnligt bröst", "Manligt bröst" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
