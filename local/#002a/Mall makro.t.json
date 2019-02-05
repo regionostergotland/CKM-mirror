@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1b7c93d7b5669009de869b080c173e96",
+      "MD5-CAM-1.0.1" : "61ba04efc79f780341982b97298c8957",
       "PARENT:MD5-CAM-1.0.1" : "4eaf70918e1af2684fe8d57eecab6ce3"
     },
     "details" : {
@@ -411,7 +411,15 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "attributes" : [ ],
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "Välavgränsad", "Diffus", "Solid", "Mucinös", "Stråkig", "Cystisk" ]
+                  } ]
+                } ],
                 "attributeTuples" : [ ]
               } ]
             } ],
