@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d61ad9dbdf7be378a64bc4bcdc469606",
+      "MD5-CAM-1.0.1" : "27dee1e91a7184b40b3e8f45838a5ecd",
       "PARENT:MD5-CAM-1.0.1" : "4eaf70918e1af2684fe8d57eecab6ce3"
     },
     "details" : {
@@ -73,6 +73,29 @@
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
             "nodeId" : "at0031.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "Yes", "No" ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0031.5",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "value",
@@ -657,6 +680,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0032.1",
           "text" : "Övrigt (noterat vid utskärningen)",
+          "description" : "*"
+        },
+        "at0031.5" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031.5",
+          "text" : "Neoadjuvant behandling",
           "description" : "*"
         }
       }
