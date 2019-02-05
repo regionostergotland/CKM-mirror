@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"a87c56ce88cd363761c06f7ced9142a4">
+		["MD5-CAM-1.0.1"] = <"98810a558ca3ccdf8cd8e47dc75988cc">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -103,16 +103,7 @@ definition
 							ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Diameter of microscope field
 								value matches {
 									C_DV_QUANTITY <
-										property = <[openehr::122]>
-										list = <
-											["1"] = <
-												units = <"mm">
-											>
-											["2"] = <
-												units = <"mm2">
-											>
-										>
-									>
+																			>
 								}
 							}
 						}
