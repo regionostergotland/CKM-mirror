@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"98810a558ca3ccdf8cd8e47dc75988cc">
+		["MD5-CAM-1.0.1"] = <"608637820e320b5132d31a889710e857">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -352,14 +352,15 @@ definition
 				items cardinality matches {1..*; unordered} matches {
 					CLUSTER[at0095] occurrences matches {0..2} matches {    -- Oestrogen receptor assay (ER)
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0096] occurrences matches {0..1} matches {    -- ER result
+							ELEMENT[at0096.1] occurrences matches {0..1} matches {    -- ER result
 								value matches {
 									DV_CODED_TEXT matches {
 										defining_code matches {
 											[local::
 											at0097,    -- Positive
 											at0098,    -- Negative
-											at0099]    -- Equivocal
+											at0099,    -- Equivocal
+											at0.50]    -- Not performed
 										}
 									}
 								}
@@ -466,7 +467,7 @@ definition
 													at0149,    -- Positive
 													at0150,    -- Negative
 													at0151,    -- Equivocal
-													at0.30]    -- Not perfomed
+													at0.47]    -- Not performed
 												}
 											}
 										}
@@ -528,7 +529,9 @@ definition
 											[local::
 											at0.15,    -- Low
 											at0.16,    -- Intermediate
-											at0.17]    -- High
+											at0.17,    -- High
+											at0.48,    -- Not performed
+											at0.49]    -- Cannot be determined
 										}
 									}
 								}
@@ -769,14 +772,6 @@ ontology
 				>
 				["at0.29"] = <
 					text = <"Absent">
-					description = <"*">
-				>
-				["at0108.1"] = <
-					text = <"ISH result">
-					description = <"HER2 In situ hybridisation (ISH) result.">
-				>
-				["at0.30"] = <
-					text = <"Not perfomed">
 					description = <"*">
 				>
 				["at0.31"] = <
@@ -1383,6 +1378,30 @@ ontology
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
+				>
+				["at0108.1"] = <
+					text = <"ISH result">
+					description = <"HER2 In situ hybridisation (ISH) result.">
+				>
+				["at0.47"] = <
+					text = <"Not performed">
+					description = <"*">
+				>
+				["at0.48"] = <
+					text = <"Not performed">
+					description = <"*">
+				>
+				["at0.49"] = <
+					text = <"Cannot be determined">
+					description = <"*">
+				>
+				["at0096.1"] = <
+					text = <"ER result">
+					description = <"Oestrogen Receptor assay result.">
+				>
+				["at0.50"] = <
+					text = <"Not performed">
+					description = <"*">
 				>
 			>
 		>
