@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"45aef859823e92f0342ff16a697cb821">
+		["MD5-CAM-1.0.1"] = <"a1a57acd621a7cc491137eaadd572fa3">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -38,12 +38,7 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Ischemia time
-						value matches {
-							DV_DATE_TIME matches {*}
-						}
-					}
-					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Fixation time
+					ELEMENT[at0033] occurrences matches {0..1} matches {    -- Relevant time measurements
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
@@ -60,9 +55,17 @@ definition
 						include
 							archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location\.v1/}
 					}
-					allow_archetype CLUSTER[at0007] occurrences matches {0..*} matches {    -- Specimen dimensions
-						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.physical_properties\.v0/}
+					CLUSTER[at0035] occurrences matches {0..1} matches {    -- Specimen dimensions
+						items cardinality matches {1..*; unordered} matches {
+							allow_archetype CLUSTER[at0036] occurrences matches {0..*} matches {    -- Specimen dimensions
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.physical_properties\.v0/}
+							}
+							allow_archetype CLUSTER[at0037] occurrences matches {0..*} matches {    -- Skin dimensions
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.physical_properties\.v0/}
+							}
+						}
 					}
 					ELEMENT[at0008] occurrences matches {0..*} matches {    -- Visual markings/orientation of specimen
 						value matches {
@@ -70,37 +73,41 @@ definition
 							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Mamill presence
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0020,    -- Yes, mamill retracted
-									at0021,    -- Yes, no remark
-									at0022]    -- No
+					CLUSTER[at0038] occurrences matches {0..1} matches {    -- Specimen findings
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0019] occurrences matches {0..1} matches {    -- Mamill presence
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0020,    -- Present, mamill retracted
+											at0021,    -- Present, no remark
+											at0022]    -- Absent
+										}
+									}
 								}
 							}
-						}
-					}
-					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Fascia presence
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0024,    -- Yes, freely displaceable
-									at0025,    -- Yes, not displaceable
-									at0026]    -- No
+							ELEMENT[at0027] occurrences matches {0..1} matches {    -- Axill presence
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0028,    -- Present
+											at0029]    -- Absent
+										}
+									}
 								}
 							}
-						}
-					}
-					ELEMENT[at0027] occurrences matches {0..1} matches {    -- Axill presence
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0028,    -- Yes
-									at0029]    -- No
+							ELEMENT[at0023] occurrences matches {0..1} matches {    -- Fascia presence
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0024,    -- Present, freely displaceable
+											at0025,    -- Present, not displaceable
+											at0026]    -- Absent
+										}
+									}
 								}
 							}
 						}
@@ -137,7 +144,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0032] occurrences matches {0..1} matches {    -- DV_TEXT
+			ELEMENT[at0032] occurrences matches {0..1} matches {    -- Comment on macroscopic examination
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -163,10 +170,6 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Specimen laterality">
-					description = <"*">
-				>
-				["at0007"] = <
-					text = <"Specimen dimensions">
 					description = <"*">
 				>
 				["at0008"] = <
@@ -202,15 +205,15 @@ ontology
 					description = <"*">
 				>
 				["at0020"] = <
-					text = <"Yes, mamill retracted">
+					text = <"Present, mamill retracted">
 					description = <"*">
 				>
 				["at0021"] = <
-					text = <"Yes, no remark">
+					text = <"Present, no remark">
 					description = <"*">
 				>
 				["at0022"] = <
-					text = <"No">
+					text = <"Absent">
 					description = <"*">
 				>
 				["at0023"] = <
@@ -218,15 +221,15 @@ ontology
 					description = <"*">
 				>
 				["at0024"] = <
-					text = <"Yes, freely displaceable">
+					text = <"Present, freely displaceable">
 					description = <"*">
 				>
 				["at0025"] = <
-					text = <"Yes, not displaceable">
+					text = <"Present, not displaceable">
 					description = <"*">
 				>
 				["at0026"] = <
-					text = <"No">
+					text = <"Absent">
 					description = <"*">
 				>
 				["at0027"] = <
@@ -234,11 +237,11 @@ ontology
 					description = <"*">
 				>
 				["at0028"] = <
-					text = <"Yes">
+					text = <"Present">
 					description = <"*">
 				>
 				["at0029"] = <
-					text = <"No">
+					text = <"Absent">
 					description = <"*">
 				>
 				["at0030"] = <
@@ -250,17 +253,29 @@ ontology
 					description = <"*">
 				>
 				["at0032"] = <
-					text = <"DV_TEXT">
+					text = <"Comment on macroscopic examination">
 					description = <"*">
 				>
 				["at0033"] = <
-					text = <"Ischemia time">
+					text = <"Relevant time measurements">
 					description = <"E.g. the time between the specimen was removed from patient until is was put in formalin.
 
 The ti">
 				>
-				["at0034"] = <
-					text = <"Fixation time">
+				["at0035"] = <
+					text = <"Specimen dimensions">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"Specimen dimensions">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"Skin dimensions">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"Specimen findings">
 					description = <"*">
 				>
 			>
