@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"94a1f488ff01cbd04c733b9da98a3b54">
+		["MD5-CAM-1.0.1"] = <"a0c68cbfb3e4a2fe227795f20324c218">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -75,39 +75,10 @@ definition
 					}
 					CLUSTER[at0038] occurrences matches {0..1} matches {    -- Specimen details
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0019] occurrences matches {0..1} matches {    -- Mamill presence
+							ELEMENT[at0039] occurrences matches {0..1} matches {    -- Relevant details about specimen
 								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0020,    -- Present, mamill retracted
-											at0021,    -- Present, no remark
-											at0022]    -- Absent
-										}
-									}
-								}
-							}
-							ELEMENT[at0027] occurrences matches {0..1} matches {    -- Axill presence
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0028,    -- Present
-											at0029]    -- Absent
-										}
-									}
-								}
-							}
-							ELEMENT[at0023] occurrences matches {0..1} matches {    -- Fascia presence
-								value matches {
-									DV_CODED_TEXT matches {
-										defining_code matches {
-											[local::
-											at0024,    -- Present, freely displaceable
-											at0025,    -- Present, not displaceable
-											at0026]    -- Absent
-										}
-									}
+									DV_CODED_TEXT matches {*}
+									DV_TEXT matches {*}
 								}
 							}
 						}
@@ -200,50 +171,6 @@ ontology
 					text = <"Distance from tumour periphery to resection margins">
 					description = <"*">
 				>
-				["at0019"] = <
-					text = <"Mamill presence">
-					description = <"*">
-				>
-				["at0020"] = <
-					text = <"Present, mamill retracted">
-					description = <"*">
-				>
-				["at0021"] = <
-					text = <"Present, no remark">
-					description = <"*">
-				>
-				["at0022"] = <
-					text = <"Absent">
-					description = <"*">
-				>
-				["at0023"] = <
-					text = <"Fascia presence">
-					description = <"*">
-				>
-				["at0024"] = <
-					text = <"Present, freely displaceable">
-					description = <"*">
-				>
-				["at0025"] = <
-					text = <"Present, not displaceable">
-					description = <"*">
-				>
-				["at0026"] = <
-					text = <"Absent">
-					description = <"*">
-				>
-				["at0027"] = <
-					text = <"Axill presence">
-					description = <"*">
-				>
-				["at0028"] = <
-					text = <"Present">
-					description = <"*">
-				>
-				["at0029"] = <
-					text = <"Absent">
-					description = <"*">
-				>
 				["at0030"] = <
 					text = <"Information from anamnesis or referral">
 					description = <"*">
@@ -277,6 +204,10 @@ The ti">
 				["at0038"] = <
 					text = <"Specimen details">
 					description = <"*">
+				>
+				["at0039"] = <
+					text = <"Relevant details about specimen">
+					description = <"Details about specimen e.g. if the mamill is present or not etc.">
 				>
 			>
 		>
