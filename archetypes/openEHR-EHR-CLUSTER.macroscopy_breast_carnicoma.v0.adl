@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a1a57acd621a7cc491137eaadd572fa3">
+		["MD5-CAM-1.0.1"] = <"e017605867112668f5a13ab1fc481797">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -73,7 +73,7 @@ definition
 							DV_CODED_TEXT matches {*}
 						}
 					}
-					CLUSTER[at0038] occurrences matches {0..1} matches {    -- Specimen findings
+					CLUSTER[at0038] occurrences matches {0..1} matches {    -- Specimen details
 						items cardinality matches {1..*; unordered} matches {
 							ELEMENT[at0019] occurrences matches {0..1} matches {    -- Mamill presence
 								value matches {
@@ -275,7 +275,7 @@ The ti">
 					description = <"*">
 				>
 				["at0038"] = <
-					text = <"Specimen findings">
+					text = <"Specimen details">
 					description = <"*">
 				>
 			>
