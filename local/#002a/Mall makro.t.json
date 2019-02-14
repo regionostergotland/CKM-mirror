@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "503583e3d3ca50b7053b39884edff0f0",
+      "MD5-CAM-1.0.1" : "14962a6d6ac528b341c57dc694551e87",
       "PARENT:MD5-CAM-1.0.1" : "a0c68cbfb3e4a2fe227795f20324c218"
     },
     "details" : {
@@ -751,6 +751,12 @@
           "code" : "at0033.2",
           "text" : "Fixeringstid",
           "description" : "E.g. the time between the specimen was removed from patient until is was put in formalin.\n\nThe ti"
+        },
+        "at0030.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0030.1",
+          "text" : "Information från remiss/anamnes",
+          "description" : "*"
         }
       }
     },
@@ -3291,6 +3297,13 @@
             "text" : "(Synthesized)",
             "code" : "ac0.7",
             "description" : "*"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Lateralitet",
+            "description" : "Identification of a single physical site either on, or within, the human body.",
+            "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
           }
         },
         "nb" : {
@@ -5364,7 +5377,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0023.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
