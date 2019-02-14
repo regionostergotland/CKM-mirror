@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "14962a6d6ac528b341c57dc694551e87",
+      "MD5-CAM-1.0.1" : "72a6de77377c4e422735e8420afc2bbd",
       "PARENT:MD5-CAM-1.0.1" : "a0c68cbfb3e4a2fe227795f20324c218"
     },
     "details" : {
@@ -344,6 +344,12 @@
                 "attributeTuples" : [ ]
               } ]
             } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "CLUSTER",
+            "nodeId" : "at0038.1",
+            "attributes" : [ ],
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
@@ -756,6 +762,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0030.1",
           "text" : "Information från remiss/anamnes",
+          "description" : "*"
+        },
+        "at0038.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0038.1",
+          "text" : "Additional specimen details",
           "description" : "*"
         }
       }
