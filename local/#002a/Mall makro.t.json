@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a0831933c7588c043064a7a45cc727ed",
+      "MD5-CAM-1.0.1" : "4a2959d1f60adc4657cc2a9918652f56",
       "PARENT:MD5-CAM-1.0.1" : "6d33afa2834f88943be9a35c068af57f"
     },
     "details" : {
@@ -209,13 +209,38 @@
               } ]
             } ],
             "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0041.2",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TIME",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_TIME",
+                    "rmTypeName" : "DATE_TIME",
+                    "patternedConstraint" : "HH:MM:??",
+                    "constraint" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
           } ]
         } ],
         "attributeTuples" : [ ]
       }, {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "CLUSTER",
-        "nodeId" : "at0004",
+        "nodeId" : "at0004.1",
         "attributes" : [ {
           "@type" : "C_ATTRIBUTE",
           "rmAttributeName" : "items",
@@ -324,7 +349,86 @@
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "CLUSTER",
             "nodeId" : "at0038.1",
-            "attributes" : [ ],
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "cardinality" : {
+                "@type" : "CARDINALITY",
+                "interval" : "1..*",
+                "ordered" : false,
+                "unique" : false
+              },
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0039.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "Finns, utan anmärkning", "Finns, indragen bröstvårta", "Påträffas ej" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0039.3",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "Finns", "Finns ej" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0039.2",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_STRING",
+                        "rmTypeName" : "STRING",
+                        "constraint" : [ "Finns, fritt förskjutbar fascia", "Finns, ej fritt förskjutbar fascia", "Finns ej" ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_ARCHETYPE_ROOT",
@@ -738,6 +842,42 @@
           "code" : "at0041.1",
           "text" : "Ischemitid",
           "description" : "*"
+        },
+        "at0035.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0035.1",
+          "text" : "Preparatstorlek",
+          "description" : "*"
+        },
+        "at0041.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0041.2",
+          "text" : "Fixeringstid",
+          "description" : "*"
+        },
+        "at0004.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0004.1",
+          "text" : "Preparategenskaper",
+          "description" : "*"
+        },
+        "at0039.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.1",
+          "text" : "Mamill",
+          "description" : "Details about specimen e.g. if the mamill is present or not etc."
+        },
+        "at0039.2" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.2",
+          "text" : "Fascia",
+          "description" : "Details about specimen e.g. if the mamill is present or not etc."
+        },
+        "at0039.3" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0039.3",
+          "text" : "Axill",
+          "description" : "Details about specimen e.g. if the mamill is present or not etc."
         }
       }
     },
@@ -925,6 +1065,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0020.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -993,6 +1149,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0021.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1047,6 +1219,12 @@
             "code" : "at0008.1",
             "text" : "Tumör frånvarande",
             "description" : "Details where tumour is absent from surgical resection margins."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Tumörinblandning i gul resektionskant",
+            "description" : "Evidence of tumour at a surgical resection margin."
           }
         },
         "ar-sy" : {
@@ -1277,6 +1455,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0020.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1345,6 +1539,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0021.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1399,6 +1609,12 @@
             "code" : "at0008.1",
             "text" : "Tumör frånvarande",
             "description" : "Details where tumour is absent from surgical resection margins."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Tumörinblandning i röd resektionskant",
+            "description" : "Evidence of tumour at a surgical resection margin."
           }
         },
         "ar-sy" : {
@@ -1629,6 +1845,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0020.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -1708,6 +1940,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0021.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -1735,7 +1968,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Kraniell",
+            "text" : "Avstånd från tumörperiferi till resektionsytor",
             "description" : "Details of tumour involvement at margins of surgical resections/biopsies."
           },
           "at0018.1" : {
@@ -1774,6 +2007,12 @@
             "code" : "at0007.1",
             "text" : "Största måttet på tumören i resektionsytan",
             "description" : "When tumour is present at surgical resection margin, the maximal length of involvement."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Tumörinblandning i blå resektionskant",
+            "description" : "Evidence of tumour at a surgical resection margin."
           }
         },
         "ar-sy" : {
@@ -2004,6 +2243,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0020.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2072,6 +2327,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0021.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2126,6 +2397,12 @@
             "code" : "at0008.1",
             "text" : "Tumör frånvarande",
             "description" : "Details where tumour is absent from surgical resection margins."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Tumörinblandning i grön resektionskant",
+            "description" : "Evidence of tumour at a surgical resection margin."
           }
         },
         "ar-sy" : {
@@ -2350,6 +2627,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0020.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2418,6 +2711,22 @@
                 } ]
               } ],
               "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0021.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
             } ]
           } ],
           "attributeTuples" : [ ]
@@ -2472,6 +2781,12 @@
             "code" : "at0008.1",
             "text" : "Tumör frånvarande",
             "description" : "Details where tumour is absent from surgical resection margins."
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Tumörinblandning i svart resektionskant",
+            "description" : "Evidence of tumour at a surgical resection margin."
           }
         },
         "ar-sy" : {
@@ -3285,6 +3600,13 @@
             "text" : "Lateralitet",
             "description" : "Identification of a single physical site either on, or within, the human body.",
             "comment" : "This data element is the only mandated data point in this archetype and should be used as the primary data point to record an anatomical location with a commonly used name. It is strongly recommended that 'Body site name' be recorded as specifically as is anatomically possible. For example: record 'upper eyelid' rather than recording 'eyelid' with 'upper' as a qualifier; 'fifth rib' rather than 'rib' with a numeric qualifier. Use the other data elements for laterality, aspect, region and anatomical line to provide more detail.\r\n\r\nThis data element should be coded with a terminology capable of triggering decision support, where possible - an appropriate termset for use here could comprise individual concepts or a list of precoordinated terms. Free text should be used only if there is no appropriate terminology available.\r\n\r\nIf body site name is already identified in the parent archetype, then this data element may be redundant. Alternatively, a use case has been identified where the value may be duplicated into this element to support semantic querying using this archetype, rather than the data element within the parent."
+          },
+          "at0065.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.1",
+            "text" : "Preparat taget från",
+            "description" : "Additional detail using a specific region or a point on, or within, the identified body site.",
+            "comment" : "Use to increase precision of identification of the body site, if required. For example, the upper right quadrant or McBurney's point on the abdominal wall or interphalangeal joint of the great toe. If the 'Body site name' data element uses pre-coordinated terms that include the specific site, then this data element is redundant."
           }
         },
         "nb" : {
