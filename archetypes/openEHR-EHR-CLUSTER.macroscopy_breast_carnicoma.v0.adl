@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7e1c028ac47977801e079bc41a6e2f2c">
+		["MD5-CAM-1.0.1"] = <"449eda17b643bba8b316f342be8520eb">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -38,9 +38,14 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0033] occurrences matches {0..*} matches {    -- Relevant time measurements
+					ELEMENT[at0033] occurrences matches {0..*} matches {    -- Relevant date and time
 						value matches {
 							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Time measurements
+						value matches {
+							DV_TIME matches {*}
 						}
 					}
 				}
@@ -184,7 +189,7 @@ ontology
 					description = <"*">
 				>
 				["at0033"] = <
-					text = <"Relevant time measurements">
+					text = <"Relevant date and time">
 					description = <"E.g. the time between the specimen was removed from patient until is was put in formalin.
 
 The ti">
@@ -208,6 +213,10 @@ The ti">
 				["at0039"] = <
 					text = <"Relevant details about specimen">
 					description = <"Details about specimen e.g. if the mamill is present or not etc.">
+				>
+				["at0041"] = <
+					text = <"Time measurements">
+					description = <"*">
 				>
 			>
 		>
