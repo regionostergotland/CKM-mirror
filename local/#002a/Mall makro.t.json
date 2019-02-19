@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4a2959d1f60adc4657cc2a9918652f56",
+      "MD5-CAM-1.0.1" : "c27353995d6c1c0352336428e7d52439",
       "PARENT:MD5-CAM-1.0.1" : "6d33afa2834f88943be9a35c068af57f"
     },
     "details" : {
@@ -5687,7 +5687,15 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "Hudklädd yta finnes", "Hudklädd yta finns ej" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
