@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"449eda17b643bba8b316f342be8520eb">
+		["MD5-CAM-1.0.1"] = <"bae493b7c89532b95e8ce5eade093303">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -36,11 +36,6 @@ definition
 						value matches {
 							DV_CODED_TEXT matches {*}
 							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0033] occurrences matches {0..*} matches {    -- Relevant date and time
-						value matches {
-							DV_DATE_TIME matches {*}
 						}
 					}
 					ELEMENT[at0041] occurrences matches {0..1} matches {    -- Time measurements
@@ -187,12 +182,6 @@ ontology
 				["at0032"] = <
 					text = <"Comment on macroscopic examination">
 					description = <"*">
-				>
-				["at0033"] = <
-					text = <"Relevant date and time">
-					description = <"E.g. the time between the specimen was removed from patient until is was put in formalin.
-
-The ti">
 				>
 				["at0035"] = <
 					text = <"Specimen dimensions">
