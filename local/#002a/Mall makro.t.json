@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "72a6de77377c4e422735e8420afc2bbd",
-      "PARENT:MD5-CAM-1.0.1" : "a0c68cbfb3e4a2fe227795f20324c218"
+      "MD5-CAM-1.0.1" : "7c96f1cb0f9a718f08b7c756aa45e5ad",
+      "PARENT:MD5-CAM-1.0.1" : "449eda17b643bba8b316f342be8520eb"
     },
     "details" : {
       "en" : {
@@ -227,6 +227,30 @@
                     "@type" : "C_DATE_TIME",
                     "rmTypeName" : "DATE_TIME",
                     "patternedConstraint" : "yyyy-mm-ddTHH:??:??",
+                    "constraint" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0041.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TIME",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_TIME",
+                    "rmTypeName" : "DATE_TIME",
+                    "patternedConstraint" : "HH:MM:??",
                     "constraint" : [ ]
                   } ]
                 } ],
@@ -768,6 +792,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0038.1",
           "text" : "Additional specimen details",
+          "description" : "*"
+        },
+        "at0041.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0041.1",
+          "text" : "Ischemitid",
           "description" : "*"
         }
       }
