@@ -1,8 +1,9 @@
-﻿archetype (adl_version=1.4; uid=f76df12a-08bd-4a73-be4c-bf7176001072)
+archetype (adl_version=1.4; uid=f76df12a-08bd-4a73-be4c-bf7176001072)
 	openEHR-EHR-CLUSTER.lymph_node_metastases.v0
 
 concept
-	[at0000]	-- Tumour- Lymph node metastases
+	[at0000]
+
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
@@ -13,35 +14,35 @@ language
 			>
 		>
 	>
+
 description
 	original_author = <
+		["date"] = <"17/05/2009">
 		["name"] = <"Dr Ian McNicoll">
 		["organisation"] = <"Ocean Informatics, Scotland">
 		["email"] = <"ian.mcnicoll@oceaninformatics.com">
-		["date"] = <"17/05/2009">
 	>
+	lifecycle_state = <"in_development">
 	details = <
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record detailed findings of lymph node metastases as part of microscopic histopathological examination of tissue. ">
-			use = <"To record detailed findings about lymph node metastases as part of microscopic examination of tissue. 
-Use as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.">
-			keywords = <"tumour", "lymph node", "metastases", "pathology", "histopathology", "cancer", "malignancy">
-			misuse = <"Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.">
-			copyright = <"© openEHR Foundation">
-		>
 		["ar-sy"] = <
 			language = <[ISO_639-1::ar-sy]>
 			purpose = <"لتسجيل الموجودات التفصيلية لنقائل العقد الليمفاوية كجزء من الفحص الهيستوباثولوجي المجهري للنسيج.">
+			keywords = <"الورم","العقدة الليمفاوية","النقائل","الباثولوجيا/المرَضية","الهيستوباثولوجيا","السرطان","الخباثة">
+			copyright = <"© openEHR Foundation">
 			use = <"لتسجيل الموجودات التفصيلية حول نقائل العقد الليمفاوية كجزء من الفحص المجهري للنسيج.
 يستخدم كجزء من مكونات النموذج في سياق سلسلة نماذج يتكون منها تقرير الهيستوباثولوجيا, مثل: ملاحظة. الاختبار المعملي.الهيستوباثولوجيا.">
-			keywords = <"الورم", "العقدة الليمفاوية", "النقائل", "الباثولوجيا/المرَضية", "الهيستوباثولوجيا", "السرطان", "الخباثة">
 			misuse = <"لم يتم تصميم هذا النموذج ليتم استخدامه في داخل أي نموذج آخر غير نموذج ملاحظة. اختبار المعمل.الهيستوباثولوجيا.">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record detailed findings of lymph node metastases as part of microscopic histopathological examination of tissue. ">
+			keywords = <"tumour","lymph node","metastases","pathology","histopathology","cancer","malignancy">
 			copyright = <"© openEHR Foundation">
+			use = <"To record detailed findings about lymph node metastases as part of microscopic examination of tissue. 
+Use as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.">
+			misuse = <"Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.">
 		>
 	>
-	lifecycle_state = <"in_development">
-	other_contributors = <>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
@@ -49,91 +50,91 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"C2E092B3BBFFB74D4FC89BEB77C32939">
+		["MD5-CAM-1.0.1"] = <"a1957dffb4d4725e9058418e0f2c2925">
 		["build_uid"] = <"90e91e00-286f-4f19-adb8-b7777af4c5d4">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	CLUSTER[at0000] matches {	-- Tumour- Lymph node metastases
+	CLUSTER[at0000] matches {    -- Tumour- Lymph node metastases
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0041] occurrences matches {0..1} matches {	-- Lymph node site name
+			ELEMENT[at0041] occurrences matches {0..1} matches {    -- Lymph node site name
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			allow_archetype CLUSTER[at0010] occurrences matches {0..1} matches {	-- Lymph node site location     
+			allow_archetype CLUSTER[at0010] occurrences matches {0..1} matches {    -- Lymph node site location
 				include
 					archetype_id/value matches {/openEHR-EHR-CLUSTER\.anatomical_location-precise\.v1/}
 				exclude
 					archetype_id/value matches {/.*/}
 			}
-			ELEMENT[at0044] occurrences matches {0..1} matches {	-- Tissue available
+			ELEMENT[at0044] occurrences matches {0..1} matches {    -- Tissue available
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0049, 	-- Present
-							at0050]	-- Absent
+							at0049,    -- Present
+							at0050]    -- Absent
 						}
 					}
 				}
 			}
-			ELEMENT[at0025] occurrences matches {0..1} matches {	-- Tumour involvement
+			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Tumour involvement
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0042, 	-- Present
-							at0026, 	-- Present - left side nodes only
-							at0027, 	-- Present - right side nodes only
-							at0028, 	-- Present - bilateral nodes
-							at0029, 	-- Absent
-							at0030, 	-- Equivocal
-							at0031]	-- Indeterminate
+							at0042,    -- Present
+							at0026,    -- Present - left side nodes only
+							at0027,    -- Present - right side nodes only
+							at0028,    -- Present - bilateral nodes
+							at0029,    -- Absent
+							at0030,    -- Equivocal
+							at0031]    -- Indeterminate
 						}
 					}
 				}
 			}
-			ELEMENT[at0011] occurrences matches {0..1} matches {	-- Nature of involvement
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Nature of involvement
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0012, 	-- Focal
-							at0013, 	-- Diffuse
-							at0024, 	-- Complete
-							at0033]	-- Indeterminate
+							at0012,    -- Focal
+							at0013,    -- Diffuse
+							at0024,    -- Complete
+							at0033]    -- Indeterminate
 						}
 					}
 				}
 			}
-			ELEMENT[at0046] occurrences matches {0..1} matches {	-- Route of involvement
+			ELEMENT[at0046] occurrences matches {0..1} matches {    -- Route of involvement
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::
-							at0047, 	-- Direct spread
-							at0048]	-- Metastasis
+							at0047,    -- Direct spread
+							at0048]    -- Metastasis
 						}
 					}
 				}
 			}
-			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Number of nodes examined
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Number of nodes examined
 				value matches {
 					DV_COUNT matches {
 						magnitude matches {|>=0|}
 					}
 				}
 			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Number of nodes with tumour
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Number of nodes with tumour
 				value matches {
 					DV_COUNT matches {
 						magnitude matches {|>=0|}
 					}
 				}
 			}
-			ELEMENT[at0009] occurrences matches {0..1} matches {	-- Extent of tumour
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Extent of tumour
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::122]>
@@ -146,22 +147,22 @@ definition
 					>
 				}
 			}
-			CLUSTER[at0039] occurrences matches {0..1} matches {	-- Extra-nodal extension
+			CLUSTER[at0039] occurrences matches {0..1} matches {    -- Extra-nodal extension
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0034] occurrences matches {0..1} matches {	-- Extra-capsular extension
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Extra-capsular extension
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0035, 	-- Present
-									at0036, 	-- Absent
-									at0037, 	-- Equivocal
-									at0038]	-- Indeterminate
+									at0035,    -- Present
+									at0036,    -- Absent
+									at0037,    -- Equivocal
+									at0038]    -- Indeterminate
 								}
 							}
 						}
 					}
-					ELEMENT[at0014] occurrences matches {0..1} matches {	-- Extent of extranodal tumour
+					ELEMENT[at0014] occurrences matches {0..1} matches {    -- Extent of extranodal tumour
 						value matches {
 							C_DV_QUANTITY <
 								property = <[openehr::122]>
@@ -176,23 +177,23 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0040] occurrences matches {0..1} matches {	-- Description
+			ELEMENT[at0040] occurrences matches {0..1} matches {    -- Description
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0051] occurrences matches {0..1} matches {	-- Marker dye uptake
+			ELEMENT[at0051] occurrences matches {0..1} matches {    -- Marker dye uptake
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			allow_archetype CLUSTER[at0045] occurrences matches {0..*} matches {	-- Lymph node details
+			allow_archetype CLUSTER[at0045] occurrences matches {0..*} matches {    -- Lymph node details
 				include
-					archetype_id/value matches {/openEHR-EHR-CLUSTER\.lymph_node_metastases\.v1/}
+					archetype_id/value matches {/openEHR-EHR-CLUSTER\.lymph_node_metastases\.v0/}
 				exclude
 					archetype_id/value matches {/.*/}
 			}
-			ELEMENT[at0052] occurrences matches {0..1} matches {	-- Radioactivity count
+			ELEMENT[at0052] occurrences matches {0..1} matches {    -- Radioactivity count
 				value matches {
 					C_DV_QUANTITY <
 						property = <[openehr::382]>
@@ -213,7 +214,6 @@ definition
 			}
 		}
 	}
-
 
 ontology
 	term_definitions = <
@@ -236,7 +236,7 @@ ontology
 					description = <"Extent of tumour expressed as a maximum length. Applies only to an individual node.">
 				>
 				["at0010"] = <
-					text = <"Lymph node site location     ">
+					text = <"Lymph node site location">
 					description = <"The anatomical location of the lymph node or site being reported.">
 				>
 				["at0011"] = <
