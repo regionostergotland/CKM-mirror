@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"a6027a5504b42c500bb1ef8d40363e4f">
+		["MD5-CAM-1.0.1"] = <"dc0f6e5fc3b3f3a17cf4d6f92465be09">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -429,14 +429,15 @@ definition
 											}
 										}
 									}
-									ELEMENT[at0142] occurrences matches {0..1} matches {    -- Immunohistochemistry result
+									ELEMENT[at0142.1] occurrences matches {0..1} matches {    -- Immunohistochemistry result
 										value matches {
 											DV_CODED_TEXT matches {
 												defining_code matches {
 													[local::
 													at0146,    -- Positive
 													at0147,    -- Negative
-													at0148]    -- Equivocal
+													at0148,    -- Equivocal
+													at0.53]    -- Not performed
 												}
 											}
 										}
@@ -858,6 +859,18 @@ ontology
 				>
 				["at0.50"] = <
 					text = <"Not performed">
+					description = <"*">
+				>
+				["at0138.1"] = <
+					text = <"PR result">
+					description = <"Progesterone Receptor assay result.">
+				>
+				["at0.51"] = <
+					text = <"Not performed">
+					description = <"*">
+				>
+				["at0.52"] = <
+					text = <"Comment on microscopic examination">
 					description = <"*">
 				>
 				["at0000"] = <
@@ -1409,16 +1422,12 @@ ontology
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
 				>
-				["at0138.1"] = <
-					text = <"PR result">
-					description = <"Progesterone Receptor assay result.">
+				["at0142.1"] = <
+					text = <"Immunohistochemistry result">
+					description = <"HER2 Immunohistochemistry result.">
 				>
-				["at0.51"] = <
+				["at0.53"] = <
 					text = <"Not performed">
-					description = <"*">
-				>
-				["at0.52"] = <
-					text = <"Comment on microscopic examination">
 					description = <"*">
 				>
 			>
