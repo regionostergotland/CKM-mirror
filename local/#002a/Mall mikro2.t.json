@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "1cd3ffd8b0d1db1788bc61618c82d4cf",
+      "MD5-CAM-1.0.1" : "06010ae8bf4ae909496389d115569de8",
       "PARENT:MD5-CAM-1.0.1" : "397d6c4b07c072183384e6139b32a69b"
     },
     "details" : {
@@ -985,21 +985,70 @@
                       "children" : [ {
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "ELEMENT",
-                        "nodeId" : "at0.10",
+                        "nodeId" : "at0.10.1",
                         "attributes" : [ {
                           "@type" : "C_ATTRIBUTE",
                           "rmAttributeName" : "value",
                           "children" : [ {
                             "@type" : "C_COMPLEX_OBJECT",
                             "rmTypeName" : "DV_PROPORTION",
+                            "defaultValue" : {
+                              "@type" : "DV_PROPORTION"
+                            },
                             "attributes" : [ {
                               "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "numerator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : false,
+                                  "upperIncluded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "denominator",
+                              "children" : [ {
+                                "@type" : "C_REAL",
+                                "rmTypeName" : "REAL",
+                                "constraint" : [ {
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : false,
+                                  "upperIncluded" : false
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
                               "rmAttributeName" : "type",
-                              "existence" : "1..1",
                               "children" : [ {
                                 "@type" : "C_INTEGER",
-                                "rmTypeName" : "Integer",
-                                "occurrences" : "1..1",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 3,
+                                  "upper" : 3,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                }, {
+                                  "lower" : 4,
+                                  "upper" : 4,
+                                  "lowerUnbounded" : false,
+                                  "upperUnbounded" : false,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
                                 "constraint" : [ {
                                   "lower" : 0,
                                   "upper" : 0,
