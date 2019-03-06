@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "cb5eb7da295c59c915ec519ae3d43cbb",
+      "MD5-CAM-1.0.1" : "6bf8797ca51f9cdbcc34a9a994e5307c",
       "PARENT:MD5-CAM-1.0.1" : "397d6c4b07c072183384e6139b32a69b"
     },
     "details" : {
@@ -1051,36 +1051,7 @@
                             },
                             "attributes" : [ {
                               "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "precision",
-                              "children" : [ {
-                                "@type" : "C_INTEGER",
-                                "rmTypeName" : "INTEGER",
-                                "occurrences" : "1..1",
-                                "constraint" : [ {
-                                  "lower" : 0,
-                                  "upper" : 0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              } ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
                               "rmAttributeName" : "numerator",
-                              "children" : [ {
-                                "@type" : "C_REAL",
-                                "rmTypeName" : "REAL",
-                                "constraint" : [ {
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : false,
-                                  "upperIncluded" : false
-                                } ]
-                              } ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "denominator",
                               "children" : [ {
                                 "@type" : "C_REAL",
                                 "rmTypeName" : "REAL",
@@ -1098,15 +1069,23 @@
                                 "@type" : "C_INTEGER",
                                 "rmTypeName" : "INTEGER",
                                 "constraint" : [ {
-                                  "lower" : 3,
-                                  "upper" : 3,
+                                  "lower" : 1,
+                                  "upper" : 1,
                                   "lowerUnbounded" : false,
                                   "upperUnbounded" : false,
                                   "lowerIncluded" : true,
                                   "upperIncluded" : true
-                                }, {
-                                  "lower" : 4,
-                                  "upper" : 4,
+                                } ]
+                              } ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "precision",
+                              "children" : [ {
+                                "@type" : "C_INTEGER",
+                                "rmTypeName" : "INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
                                   "lowerUnbounded" : false,
                                   "upperUnbounded" : false,
                                   "lowerIncluded" : true,
@@ -4591,7 +4570,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "a1957dffb4d4725e9058418e0f2c2925"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الموجودات التفصيلية لنقائل العقد الليمفاوية كجزء من الفحص الهيستوباثولوجي المجهري للنسيج.",
+          "keywords" : [ "الورم", "العقدة الليمفاوية", "النقائل", "الباثولوجيا/المرَضية", "الهيستوباثولوجيا", "السرطان", "الخباثة" ],
+          "use" : "لتسجيل الموجودات التفصيلية حول نقائل العقد الليمفاوية كجزء من الفحص المجهري للنسيج.\r\nيستخدم كجزء من مكونات النموذج في سياق سلسلة نماذج يتكون منها تقرير الهيستوباثولوجيا, مثل: ملاحظة. الاختبار المعملي.الهيستوباثولوجيا.",
+          "misuse" : "لم يتم تصميم هذا النموذج ليتم استخدامه في داخل أي نموذج آخر غير نموذج ملاحظة. اختبار المعمل.الهيستوباثولوجيا.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record detailed findings of lymph node metastases as part of microscopic histopathological examination of tissue. ",
+          "keywords" : [ "tumour", "lymph node", "metastases", "pathology", "histopathology", "cancer", "malignancy" ],
+          "use" : "To record detailed findings about lymph node metastases as part of microscopic examination of tissue. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.lymph_node_metastases.v0",
     "differential" : true,
@@ -4896,7 +4908,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "382" ]
+                } ]
+              } ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -5112,7 +5134,40 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "a1957dffb4d4725e9058418e0f2c2925"
       },
-      "details" : { }
+      "details" : {
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل الموجودات التفصيلية لنقائل العقد الليمفاوية كجزء من الفحص الهيستوباثولوجي المجهري للنسيج.",
+          "keywords" : [ "الورم", "العقدة الليمفاوية", "النقائل", "الباثولوجيا/المرَضية", "الهيستوباثولوجيا", "السرطان", "الخباثة" ],
+          "use" : "لتسجيل الموجودات التفصيلية حول نقائل العقد الليمفاوية كجزء من الفحص المجهري للنسيج.\r\nيستخدم كجزء من مكونات النموذج في سياق سلسلة نماذج يتكون منها تقرير الهيستوباثولوجيا, مثل: ملاحظة. الاختبار المعملي.الهيستوباثولوجيا.",
+          "misuse" : "لم يتم تصميم هذا النموذج ليتم استخدامه في داخل أي نموذج آخر غير نموذج ملاحظة. اختبار المعمل.الهيستوباثولوجيا.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record detailed findings of lymph node metastases as part of microscopic histopathological examination of tissue. ",
+          "keywords" : [ "tumour", "lymph node", "metastases", "pathology", "histopathology", "cancer", "malignancy" ],
+          "use" : "To record detailed findings about lymph node metastases as part of microscopic examination of tissue. \r\nUse as a component archetype in the context of a suite of archetypes that make up a histopathology report ie OBSERVATION.lab_test.histopathology.",
+          "misuse" : "Not designed to be used within any other archetype other than OBSERVATION.lab_test.histopathology.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.lymph_node_metastases.v0",
     "differential" : true,
@@ -5433,7 +5488,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "382" ]
+                } ]
+              } ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
