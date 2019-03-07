@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c0ac89d83339753dca6e1489deb308dd",
+      "MD5-CAM-1.0.1" : "447ad20dad1a9ce1b2e17b869e4b79af",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -508,7 +508,15 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_TEXT",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_STRING",
+                              "rmTypeName" : "STRING",
+                              "constraint" : [ "Makroskopisk undersökning", "Mikroskopisk undersökning" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -675,7 +683,7 @@
           "at0005.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0005.1",
-            "text" : "Mall för bröstpreparat",
+            "text" : "Undersökningstyp",
             "description" : "Name of the laboratory investigation performed on the specimen.",
             "comment" : "A test result may be for a single analyte, or a group of items, including panel tests. May be coded terminologies for example, LOINC or SNOMED CT. Examples include 'Glucose', 'Urea and Electrolytes', 'Swab', “Cortisol (am)” , \"Potassium in perspiration\" or \"Liver Biopsy\". The name may sometimes include specimen type and patient state, for example \"Fasting blood glucose\" or include other information, as \"Potassium (PNA blood gas)\"."
           },
