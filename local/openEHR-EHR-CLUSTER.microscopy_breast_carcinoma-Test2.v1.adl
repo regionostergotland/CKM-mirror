@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"397d6c4b07c072183384e6139b32a69b">
+		["MD5-CAM-1.0.1"] = <"dfb4bfde9eb2f33a8a30b20457a55331">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -497,9 +497,7 @@ definition
 											}
 											ELEMENT[at0.10] occurrences matches {0..1} matches {    -- HER2/CEP17 ratio
 												value matches {
-													DV_PROPORTION matches {
-														precision matches {|0|}
-													}
+													DV_PROPORTION matches {*}
 												}
 											}
 										}
@@ -871,6 +869,14 @@ ontology
 				>
 				["at0.52"] = <
 					text = <"Comment on microscopic examination">
+					description = <"*">
+				>
+				["at0142.1"] = <
+					text = <"Immunohistochemistry result">
+					description = <"HER2 Immunohistochemistry result.">
+				>
+				["at0.53"] = <
+					text = <"Not performed">
 					description = <"*">
 				>
 				["at0000"] = <
@@ -1421,14 +1427,6 @@ ontology
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
-				>
-				["at0142.1"] = <
-					text = <"Immunohistochemistry result">
-					description = <"HER2 Immunohistochemistry result.">
-				>
-				["at0.53"] = <
-					text = <"Not performed">
-					description = <"*">
 				>
 			>
 		>
