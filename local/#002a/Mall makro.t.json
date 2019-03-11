@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "8a3bb2b8c932deeda762bf80d53ba999",
+      "MD5-CAM-1.0.1" : "6f4f2da6011c4806589f59c6122d1e58",
       "PARENT:MD5-CAM-1.0.1" : "6d33afa2834f88943be9a35c068af57f"
     },
     "details" : {
@@ -292,6 +292,7 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
             "nodeId" : "at0008.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -305,7 +306,7 @@
                   "children" : [ {
                     "@type" : "C_STRING",
                     "rmTypeName" : "STRING",
-                    "constraint" : [ "En sutur kraniellt, två suturer lateralt", "En sutur mot tumör/sårhåla", "En sutur mot mamill" ]
+                    "constraint" : [ "En sutur kraniellt, två suturer lateralt", "En sutur mot tumör/sårhåla", "En sutur mot mamill", "Finnes ej" ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -315,6 +316,7 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
             "nodeId" : "at0008.3",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -366,6 +368,7 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
                 "nodeId" : "at0039.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
@@ -389,6 +392,7 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
                 "nodeId" : "at0039.3",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
@@ -412,6 +416,7 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
                 "nodeId" : "at0039.2",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
