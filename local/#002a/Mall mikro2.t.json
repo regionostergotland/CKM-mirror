@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "9d9eda11ddec5c951e987c5a81c6519b",
-      "PARENT:MD5-CAM-1.0.1" : "dfb4bfde9eb2f33a8a30b20457a55331"
+      "MD5-CAM-1.0.1" : "280071b188d8be848cf7426cd2885fa7",
+      "PARENT:MD5-CAM-1.0.1" : "8d1d634a069fab5a03398a1d278bee95"
     },
     "details" : {
       "en" : {
@@ -1017,81 +1017,6 @@
                               "value" : "local"
                             },
                             "constraint" : [ "at0149", "at0150", "at0151", "at0.47" ]
-                          } ]
-                        } ],
-                        "attributeTuples" : [ ]
-                      } ]
-                    } ],
-                    "attributeTuples" : [ ]
-                  }, {
-                    "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "CLUSTER",
-                    "nodeId" : "at0.7",
-                    "attributes" : [ {
-                      "@type" : "C_ATTRIBUTE",
-                      "rmAttributeName" : "items",
-                      "cardinality" : {
-                        "@type" : "CARDINALITY",
-                        "interval" : "1..*",
-                        "ordered" : false,
-                        "unique" : false
-                      },
-                      "children" : [ {
-                        "@type" : "C_COMPLEX_OBJECT",
-                        "rmTypeName" : "ELEMENT",
-                        "nodeId" : "at0.10.1",
-                        "attributes" : [ {
-                          "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "value",
-                          "children" : [ {
-                            "@type" : "C_COMPLEX_OBJECT",
-                            "rmTypeName" : "DV_PROPORTION",
-                            "defaultValue" : {
-                              "@type" : "DV_PROPORTION"
-                            },
-                            "attributes" : [ {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "numerator",
-                              "children" : [ {
-                                "@type" : "C_REAL",
-                                "rmTypeName" : "REAL",
-                                "constraint" : [ {
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : false,
-                                  "upperIncluded" : false
-                                } ]
-                              } ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "denominator",
-                              "children" : [ {
-                                "@type" : "C_REAL",
-                                "rmTypeName" : "REAL",
-                                "constraint" : [ {
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : false,
-                                  "upperIncluded" : false
-                                } ]
-                              } ]
-                            }, {
-                              "@type" : "C_ATTRIBUTE",
-                              "rmAttributeName" : "precision",
-                              "children" : [ {
-                                "@type" : "C_INTEGER",
-                                "rmTypeName" : "INTEGER",
-                                "constraint" : [ {
-                                  "lower" : 0,
-                                  "upper" : 0,
-                                  "lowerUnbounded" : false,
-                                  "upperUnbounded" : false,
-                                  "lowerIncluded" : true,
-                                  "upperIncluded" : true
-                                } ]
-                              } ]
-                            } ],
-                            "attributeTuples" : [ ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
