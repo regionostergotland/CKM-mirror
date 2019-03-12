@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c9528260b6699d6d6036a82430caeff4",
+      "MD5-CAM-1.0.1" : "40d4f14e0135092d58fa3afc37632b2f",
       "PARENT:MD5-CAM-1.0.1" : "ce9f7cee346673d51d833e4005254ea4"
     },
     "details" : {
@@ -1324,12 +1324,13 @@
                   "rmAttributeName" : "defining_code",
                   "children" : [ {
                     "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "CODE_PHRASE",
+                    "rmTypeName" : "TERMINOLOGY_CODE",
                     "occurrences" : "1..1",
                     "terminologyId" : {
                       "value" : "local"
                     },
-                    "constraint" : [ "at0.33", "at0.34", "at0.35", "at0.36", "at0.37", "at0.38", "at0.39", "at0.40" ]
+                    "constraint" : [ "ac0.0.11" ],
+                    "selectedTerminologies" : [ ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
@@ -1629,6 +1630,12 @@
           "code" : "at0.11.1",
           "text" : "Antal invasiva tumörceller räknade",
           "description" : "*"
+        },
+        "ac0.0.11" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.11",
+          "description" : "*"
         }
       }
     },
@@ -1679,6 +1686,16 @@
         "@type" : "VALUE_SET",
         "id" : "ac0.0.9",
         "members" : [ "at0139", "at0140", "at0141" ]
+      },
+      "ac0.0.10" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.10",
+        "members" : [ "at0.33", "at0.34", "at0.35", "at0.36", "at0.37", "at0.38", "at0.39", "at0.40", "at0.57" ]
+      },
+      "ac0.0.11" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.11",
+        "members" : [ "at0.33", "at0.34", "at0.35", "at0.36", "at0.37", "at0.38", "at0.39", "at0.40", "at0.57", "at0.58" ]
       }
     }
   },
