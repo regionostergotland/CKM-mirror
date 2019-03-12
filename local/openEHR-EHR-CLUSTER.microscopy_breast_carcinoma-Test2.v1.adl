@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"1f0239b73b631f39db4f0795451cccfa">
+		["MD5-CAM-1.0.1"] = <"ce9f7cee346673d51d833e4005254ea4">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -104,6 +104,11 @@ definition
 								value matches {
 									C_DV_QUANTITY <
 																			>
+								}
+							}
+							ELEMENT[at0.59] occurrences matches {0..1} matches {    -- Sum of scores
+								value matches {
+									DV_TEXT matches {*}
 								}
 							}
 						}
@@ -1446,6 +1451,10 @@ ontology
 				>
 				["at0.58"] = <
 					text = <"Invasive ductal mixed with other types of carcinoma">
+					description = <"*">
+				>
+				["at0.59"] = <
+					text = <"Sum of scores">
 					description = <"*">
 				>
 			>
