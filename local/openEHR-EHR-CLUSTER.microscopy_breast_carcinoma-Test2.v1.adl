@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"ce9f7cee346673d51d833e4005254ea4">
+		["MD5-CAM-1.0.1"] = <"8fe8c383afba39b9f10d5ef9d8705b68">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -601,14 +601,14 @@ definition
 									[local::
 									at0.33,    -- Invasive carcinoma of no special type (ductal, not otherwise specified)
 									at0.34,    -- Invasive lobular carcinoma
+									at0.57,    -- Invasive ductal and lobular carcinoma
 									at0.35,    -- Mucinous carcinoma
 									at0.36,    -- Tubular carcinoma
 									at0.37,    -- Medullary carcinoma
 									at0.38,    -- Metaplastic carcinoma
 									at0.39,    -- Invasive carcinoma with neuroendocrine features
-									at0.40,    -- Other invasive carcinoma
-									at0.57,    -- Invasive ductal and lobular carcinoma
-									at0.58]    -- Invasive ductal mixed with other types of carcinoma
+									at0.58,    -- Invasive ductal mixed with other types of carcinoma
+									at0.40]    -- Other invasive carcinoma
 								}
 							}
 						}
@@ -888,6 +888,38 @@ ontology
 					text = <"HER2/CEP17 ratio">
 					description = <"*">
 				>
+				["at0044"] = <
+					text = <"Tubular formation score 1">
+					description = <"Less than 75% of invasive carcinoma forming tubular or glandular structures.">
+				>
+				["at0045"] = <
+					text = <"Tubular formation score 2">
+					description = <"10-75% of invasive carcinoma forming tubular or glandular structures.">
+				>
+				["at0046"] = <
+					text = <"Tubular formation score 3">
+					description = <"Less than 10% of invasive carcinoma forming tubular or glandular structures.">
+				>
+				["at0.55"] = <
+					text = <"Ductal and lobular carcinoma in situ">
+					description = <"*">
+				>
+				["at0.56"] = <
+					text = <"Other type of carcinoma in situ">
+					description = <"*">
+				>
+				["at0.57"] = <
+					text = <"Invasive ductal and lobular carcinoma">
+					description = <"*">
+				>
+				["at0.58"] = <
+					text = <"Invasive ductal mixed with other types of carcinoma">
+					description = <"*">
+				>
+				["at0.59"] = <
+					text = <"Sum of scores">
+					description = <"*">
+				>
 				["at0000"] = <
 					text = <"Microscopic findings - Breast cancer">
 					description = <"Microscopic anatomic pathology findings related to breast cancer.">
@@ -955,18 +987,6 @@ ontology
 				["at0043"] = <
 					text = <"Confounding issues">
 					description = <"A text description of any assessment issues which may confound the accuracy of the Bloom and Richardson histologic grade.">
-				>
-				["at0044"] = <
-					text = <"Score 1">
-					description = <"Less than 75% of invasive carcinoma forming tubular or glandular structures.">
-				>
-				["at0045"] = <
-					text = <"Score 2">
-					description = <"10-75% of invasive carcinoma forming tubular or glandular structures.">
-				>
-				["at0046"] = <
-					text = <"Score 3">
-					description = <"Less than 10% of invasive carcinoma forming tubular or glandular structures.">
 				>
 				["at0047"] = <
 					text = <"Grade 1">
@@ -1436,26 +1456,6 @@ ontology
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
-				>
-				["at0.55"] = <
-					text = <"Ductal and lobular carcinoma in situ">
-					description = <"*">
-				>
-				["at0.56"] = <
-					text = <"Other type of carcinoma in situ">
-					description = <"*">
-				>
-				["at0.57"] = <
-					text = <"Invasive ductal and lobular carcinoma">
-					description = <"*">
-				>
-				["at0.58"] = <
-					text = <"Invasive ductal mixed with other types of carcinoma">
-					description = <"*">
-				>
-				["at0.59"] = <
-					text = <"Sum of scores">
-					description = <"*">
 				>
 			>
 		>
