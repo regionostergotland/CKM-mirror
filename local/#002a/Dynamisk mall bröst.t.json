@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "447ad20dad1a9ce1b2e17b869e4b79af",
+      "MD5-CAM-1.0.1" : "5c91e9510b6c911a8b4ff1b4f904b959",
       "PARENT:MD5-CAM-1.0.1" : "3ADD78D9BE45D70EE7DCD1C3A531D901"
     },
     "details" : {
@@ -807,7 +807,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F5408FC3E4BD84ED2B04A074072F5EA1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere funn og tolkninger ved patologiske undersøkelser utført på vev og kroppsvæsker.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere alle patologifunn, inkludert intraoperative, mikroskopiske eller makroskopiske undersøkelser av vev.\r\n\r\nArketypen er laget spesifikt for å brukes i SLOTet \"Analysesvar\" i arketypen OBSERVATION.laboratory_test, men kan også brukes innen andre arketyper der det er passende.\r\n\r\nDetaljerte strukturerte funn kan registreres i spesifikke CLUSTER-arketyper som nøstes under denne.",
+          "misuse" : "Brukes ikke til å registrere funn som ikke kommer fra patologiundersøkelser, f.eks. klinisk biokjemi eller mikrobiologi.\r\n\r\nBrukes ikke for å registrere en obduksjon, selv om funn ved undersøkelser av spesifikke prøver som tas under en obduksjon kan representeres ved hjelp av denne arketypen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the findings and interpretation of histopathology (anatomic pathology) tests performed on tissues and body fluids.",
+          "keywords" : [ ],
+          "use" : "Use to record any histopathology test result, including intra-operative, microscopic, macroscopic examinations of tissue.\r\n\r\nThis archetype is designed specifically to be used in the \"Test findings\" SLOT within the OBSERVATION.laboratory_test archetype, but may also be used withing other ENTRY class archetypes where appropriate.\r\n\r\nDetailed structured findings are captured within child cluster archetypes.",
+          "misuse" : "Not to be used for reporting on non-histopathology test results e.g. biochemistry or haematology tests.\r\n\r\nNot to be used to record an autopsy report, although tests on some specimens that are taken at autopsy may be represented using this archetype.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.histopathology_findings.v0",
     "differential" : true,
@@ -833,6 +865,28 @@
           "rmTypeName" : "CLUSTER",
           "nodeId" : "at0012.1",
           "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "name",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.8" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "cardinality" : {
@@ -945,28 +999,6 @@
                   "attributeTuples" : [ ],
                   "archetypeRef" : "Mall makro",
                   "referenceType" : "templateId"
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          }, {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "name",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.8" ],
-                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -1100,7 +1132,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F5408FC3E4BD84ED2B04A074072F5EA1"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere funn og tolkninger ved patologiske undersøkelser utført på vev og kroppsvæsker.",
+          "keywords" : [ ],
+          "use" : "Brukes til å registrere alle patologifunn, inkludert intraoperative, mikroskopiske eller makroskopiske undersøkelser av vev.\r\n\r\nArketypen er laget spesifikt for å brukes i SLOTet \"Analysesvar\" i arketypen OBSERVATION.laboratory_test, men kan også brukes innen andre arketyper der det er passende.\r\n\r\nDetaljerte strukturerte funn kan registreres i spesifikke CLUSTER-arketyper som nøstes under denne.",
+          "misuse" : "Brukes ikke til å registrere funn som ikke kommer fra patologiundersøkelser, f.eks. klinisk biokjemi eller mikrobiologi.\r\n\r\nBrukes ikke for å registrere en obduksjon, selv om funn ved undersøkelser av spesifikke prøver som tas under en obduksjon kan representeres ved hjelp av denne arketypen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the findings and interpretation of histopathology (anatomic pathology) tests performed on tissues and body fluids.",
+          "keywords" : [ ],
+          "use" : "Use to record any histopathology test result, including intra-operative, microscopic, macroscopic examinations of tissue.\r\n\r\nThis archetype is designed specifically to be used in the \"Test findings\" SLOT within the OBSERVATION.laboratory_test archetype, but may also be used withing other ENTRY class archetypes where appropriate.\r\n\r\nDetailed structured findings are captured within child cluster archetypes.",
+          "misuse" : "Not to be used for reporting on non-histopathology test results e.g. biochemistry or haematology tests.\r\n\r\nNot to be used to record an autopsy report, although tests on some specimens that are taken at autopsy may be represented using this archetype.",
+          "copyright" : "© openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.histopathology_findings.v0",
     "differential" : true,
@@ -1126,6 +1190,28 @@
           "rmTypeName" : "CLUSTER",
           "nodeId" : "at0012.1",
           "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "name",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "TERMINOLOGY_CODE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "ac0.8" ],
+                  "selectedTerminologies" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
             "@type" : "C_ATTRIBUTE",
             "rmAttributeName" : "items",
             "cardinality" : {
@@ -1175,7 +1261,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0008.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -1197,28 +1282,6 @@
                   "attributeTuples" : [ ],
                   "archetypeRef" : "Mall mikro2",
                   "referenceType" : "templateId"
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          }, {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "name",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "defining_code",
-                "children" : [ {
-                  "@type" : "C_TERMINOLOGY_CODE",
-                  "rmTypeName" : "TERMINOLOGY_CODE",
-                  "occurrences" : "1..1",
-                  "terminologyId" : {
-                    "value" : "local"
-                  },
-                  "constraint" : [ "ac0.8" ],
-                  "selectedTerminologies" : [ ]
                 } ]
               } ],
               "attributeTuples" : [ ]
