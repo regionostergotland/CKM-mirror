@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "40d4f14e0135092d58fa3afc37632b2f",
-      "PARENT:MD5-CAM-1.0.1" : "98662b0a9c3e5c15b44916d858732636"
+      "MD5-CAM-1.0.1" : "be8a6b463554f1eeabdffa8f69e00828",
+      "PARENT:MD5-CAM-1.0.1" : "3413371429ba0caec656abd61dd4c05d"
     },
     "details" : {
       "en" : {
@@ -312,6 +312,21 @@
                   } ]
                 } ],
                 "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "nodeId" : "at0.59.1",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
               } ]
             } ],
             "attributeTuples" : [ ]
@@ -459,7 +474,7 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "CLUSTER",
-            "nodeId" : "at0125",
+            "nodeId" : "at0125.0.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
               "rmAttributeName" : "items",
@@ -1370,6 +1385,21 @@
           } ]
         } ],
         "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0.52.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_TEXT",
+            "attributes" : [ ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -1538,7 +1568,7 @@
         "at0179.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0179.0.1",
-          "text" : "Kommentar gällande histologisk grad",
+          "text" : "Kommentar gällande histologisk typ",
           "description" : "Comment on estimation of the histologic grade."
         },
         "at0108.1.1" : {
@@ -1636,6 +1666,30 @@
           "code" : "at0046",
           "text" : "Tubular formation score 3",
           "description" : "Less than 10% of invasive carcinoma forming tubular or glandular structures."
+        },
+        "at0070" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0070",
+          "text" : "Nuclear score",
+          "description" : "Nuclear score, using the Elston and Ellis modification of the Bloom and\r\n Richardson system for grading invasive carcinoma."
+        },
+        "at0.59.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.59.1",
+          "text" : "Summa poäng",
+          "description" : "*"
+        },
+        "at0125.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0125.0.1",
+          "text" : "Histologisk grad",
+          "description" : "Histologic grading of DCIS."
+        },
+        "at0.52.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.52.1",
+          "text" : "Övrig kommentar gällande den mikroskopiska undersökningen",
+          "description" : "*"
         }
       }
     },
