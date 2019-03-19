@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"4472834635eb5769de894fb3e7eb3636">
+		["MD5-CAM-1.0.1"] = <"c8662b1be572b52bcf63afeb86fcd5a5">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -81,7 +81,7 @@ definition
 									3|[local::at0052]
 								}
 							}
-							ELEMENT[at0017.1] occurrences matches {0..1} matches {    -- Tubular formation score
+							ELEMENT[at0017] occurrences matches {0..1} matches {    -- Tubular formation score
 								value matches {
 									1|[local::at0044],
 									2|[local::at0045],
@@ -911,10 +911,6 @@ ontology
 				["at0.58"] = <
 					text = <"Invasive ductal mixed with other types of carcinoma">
 					description = <"*">
-				>
-				["at0017.1"] = <
-					text = <"Tubular formation score">
-					description = <"Tubular formation score, representing the extent of tubular formation within invasive carcinoma cells.">
 				>
 				["at0000"] = <
 					text = <"Microscopic findings - Breast cancer">
