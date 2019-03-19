@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"7fa1cb10eb189a2a17363b0c27ab3dea">
+		["MD5-CAM-1.0.1"] = <"4472834635eb5769de894fb3e7eb3636">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -106,9 +106,9 @@ definition
 																			>
 								}
 							}
-							ELEMENT[at0.59] occurrences matches {0..1} matches {    -- Sum of scores
+							ELEMENT[at0.60] occurrences matches {0..1} matches {    -- Total score
 								value matches {
-									DV_TEXT matches {*}
+									DV_COUNT matches {*}
 								}
 							}
 						}
@@ -885,15 +885,15 @@ ontology
 					description = <"*">
 				>
 				["at0044"] = <
-					text = <"Score 1">
+					text = <"Tubular formation score 1">
 					description = <"Less than 75% of invasive carcinoma forming tubular or glandular structures.">
 				>
 				["at0045"] = <
-					text = <"Score 2">
+					text = <"Tubular formation score 2">
 					description = <"10-75% of invasive carcinoma forming tubular or glandular structures.">
 				>
 				["at0046"] = <
-					text = <"Score 3">
+					text = <"Tubular formation score 3">
 					description = <"Less than 10% of invasive carcinoma forming tubular or glandular structures.">
 				>
 				["at0.55"] = <
@@ -910,10 +910,6 @@ ontology
 				>
 				["at0.58"] = <
 					text = <"Invasive ductal mixed with other types of carcinoma">
-					description = <"*">
-				>
-				["at0.59"] = <
-					text = <"Sum of scores">
 					description = <"*">
 				>
 				["at0017.1"] = <
@@ -1456,6 +1452,10 @@ ontology
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
+				>
+				["at0.60"] = <
+					text = <"Total score">
+					description = <"Total score of mitotic frequency, nuclear and tubular formation score. ">
 				>
 			>
 		>
