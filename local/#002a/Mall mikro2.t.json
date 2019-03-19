@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "be8a6b463554f1eeabdffa8f69e00828",
-      "PARENT:MD5-CAM-1.0.1" : "3413371429ba0caec656abd61dd4c05d"
+      "MD5-CAM-1.0.1" : "49d0a633242e3987bf82efd74b8fc2e9",
+      "PARENT:MD5-CAM-1.0.1" : "c8662b1be572b52bcf63afeb86fcd5a5"
     },
     "details" : {
       "en" : {
@@ -315,13 +315,13 @@
               }, {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "ELEMENT",
-                "nodeId" : "at0.59.1",
+                "nodeId" : "at0.60.1",
                 "attributes" : [ {
                   "@type" : "C_ATTRIBUTE",
                   "rmAttributeName" : "value",
                   "children" : [ {
                     "@type" : "C_COMPLEX_OBJECT",
-                    "rmTypeName" : "DV_TEXT",
+                    "rmTypeName" : "DV_COUNT",
                     "attributes" : [ ],
                     "attributeTuples" : [ ]
                   } ]
@@ -1649,36 +1649,6 @@
           "code" : "ac0.0.11",
           "description" : "*"
         },
-        "at0044" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0044",
-          "text" : "Tubular formation score 1",
-          "description" : "Less than 75% of invasive carcinoma forming tubular or glandular structures."
-        },
-        "at0045" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0045",
-          "text" : "Tubular formation score 2",
-          "description" : "10-75% of invasive carcinoma forming tubular or glandular structures."
-        },
-        "at0046" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0046",
-          "text" : "Tubular formation score 3",
-          "description" : "Less than 10% of invasive carcinoma forming tubular or glandular structures."
-        },
-        "at0070" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0070",
-          "text" : "Nuclear score",
-          "description" : "Nuclear score, using the Elston and Ellis modification of the Bloom and\r\n Richardson system for grading invasive carcinoma."
-        },
-        "at0.59.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.59.1",
-          "text" : "Summa poäng",
-          "description" : "*"
-        },
         "at0125.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0125.0.1",
@@ -1690,6 +1660,12 @@
           "code" : "at0.52.1",
           "text" : "Övrig kommentar gällande den mikroskopiska undersökningen",
           "description" : "*"
+        },
+        "at0.60.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.60.1",
+          "text" : "Summa poäng",
+          "description" : "Total score of mitotic frequency, nuclear and tubular formation score. "
         }
       }
     },
