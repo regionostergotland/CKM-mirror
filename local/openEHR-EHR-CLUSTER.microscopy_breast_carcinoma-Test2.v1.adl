@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"c8662b1be572b52bcf63afeb86fcd5a5">
+		["MD5-CAM-1.0.1"] = <"27dd9a8d9008d74bd15c8d7a22700438">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -81,7 +81,7 @@ definition
 									3|[local::at0052]
 								}
 							}
-							ELEMENT[at0017] occurrences matches {0..1} matches {    -- Tubular formation score
+							ELEMENT[at0017.1] occurrences matches {0..1} matches {    -- Tubular formation score
 								value matches {
 									1|[local::at0044],
 									2|[local::at0045],
@@ -884,18 +884,6 @@ ontology
 					text = <"HER2/CEP17 ratio">
 					description = <"*">
 				>
-				["at0044"] = <
-					text = <"Tubular formation score 1">
-					description = <"Less than 75% of invasive carcinoma forming tubular or glandular structures.">
-				>
-				["at0045"] = <
-					text = <"Tubular formation score 2">
-					description = <"10-75% of invasive carcinoma forming tubular or glandular structures.">
-				>
-				["at0046"] = <
-					text = <"Tubular formation score 3">
-					description = <"Less than 10% of invasive carcinoma forming tubular or glandular structures.">
-				>
 				["at0.55"] = <
 					text = <"Ductal and lobular carcinoma in situ">
 					description = <"*">
@@ -911,6 +899,10 @@ ontology
 				["at0.58"] = <
 					text = <"Invasive ductal mixed with other types of carcinoma">
 					description = <"*">
+				>
+				["at0.60"] = <
+					text = <"Total score">
+					description = <"Total score of mitotic frequency, nuclear and tubular formation score. ">
 				>
 				["at0000"] = <
 					text = <"Microscopic findings - Breast cancer">
@@ -979,6 +971,18 @@ ontology
 				["at0043"] = <
 					text = <"Confounding issues">
 					description = <"A text description of any assessment issues which may confound the accuracy of the Bloom and Richardson histologic grade.">
+				>
+				["at0044"] = <
+					text = <"Score 1">
+					description = <"Less than 75% of invasive carcinoma forming tubular or glandular structures.">
+				>
+				["at0045"] = <
+					text = <"Score 2">
+					description = <"10-75% of invasive carcinoma forming tubular or glandular structures.">
+				>
+				["at0046"] = <
+					text = <"Score 3">
+					description = <"Less than 10% of invasive carcinoma forming tubular or glandular structures.">
 				>
 				["at0047"] = <
 					text = <"Grade 1">
@@ -1449,9 +1453,9 @@ ontology
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
 				>
-				["at0.60"] = <
-					text = <"Total score">
-					description = <"Total score of mitotic frequency, nuclear and tubular formation score. ">
+				["at0017.1"] = <
+					text = <"Tubular formation score">
+					description = <"Tubular formation score, representing the extent of tubular formation within invasive carcinoma cells.">
 				>
 			>
 		>
