@@ -19,8 +19,8 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "49d0a633242e3987bf82efd74b8fc2e9",
-      "PARENT:MD5-CAM-1.0.1" : "c8662b1be572b52bcf63afeb86fcd5a5"
+      "MD5-CAM-1.0.1" : "2f1b1cbbd4d6aa1274b14e8b70e1aef7",
+      "PARENT:MD5-CAM-1.0.1" : "9a828b8ff08fb8113088fff1a58addda"
     },
     "details" : {
       "en" : {
@@ -1666,6 +1666,36 @@
           "code" : "at0.60.1",
           "text" : "Summa poäng",
           "description" : "Total score of mitotic frequency, nuclear and tubular formation score. "
+        },
+        "at0.40" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.40",
+          "text" : "Other invasive carcinoma",
+          "description" : "*"
+        },
+        "at0.57" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.57",
+          "text" : "Invasive ductal and lobular carcinoma",
+          "description" : "*"
+        },
+        "at0044" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0044",
+          "text" : "Tubular formation score 1",
+          "description" : "Less than 75% of invasive carcinoma forming tubular or glandular structures."
+        },
+        "at0045" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0045",
+          "text" : "Tubular formation score 2",
+          "description" : "10-75% of invasive carcinoma forming tubular or glandular structures."
+        },
+        "at0046" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0046",
+          "text" : "Tubular formation score 3",
+          "description" : "Less than 10% of invasive carcinoma forming tubular or glandular structures."
         }
       }
     },
