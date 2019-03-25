@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"27dd9a8d9008d74bd15c8d7a22700438">
+		["MD5-CAM-1.0.1"] = <"9a828b8ff08fb8113088fff1a58addda">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -601,14 +601,14 @@ definition
 									[local::
 									at0.33,    -- Invasive carcinoma of no special type (ductal, not otherwise specified)
 									at0.34,    -- Invasive lobular carcinoma
-									at0.57,    -- Invasive ductal and lobular carcinoma
 									at0.35,    -- Mucinous carcinoma
 									at0.36,    -- Tubular carcinoma
 									at0.37,    -- Medullary carcinoma
 									at0.38,    -- Metaplastic carcinoma
 									at0.39,    -- Invasive carcinoma with neuroendocrine features
 									at0.58,    -- Invasive ductal mixed with other types of carcinoma
-									at0.40]    -- Other invasive carcinoma
+									at0.61,    -- Invasive ductal and lobular carcinoma
+									at0.62]    -- Other invasive carcinoma
 								}
 							}
 						}
@@ -816,10 +816,6 @@ ontology
 					text = <"Invasive carcinoma with neuroendocrine features">
 					description = <"*">
 				>
-				["at0.40"] = <
-					text = <"Other invasive carcinoma">
-					description = <"*">
-				>
 				["at0.41"] = <
 					text = <"Tumour appearance and type">
 					description = <"*">
@@ -890,10 +886,6 @@ ontology
 				>
 				["at0.56"] = <
 					text = <"Other type of carcinoma in situ">
-					description = <"*">
-				>
-				["at0.57"] = <
-					text = <"Invasive ductal and lobular carcinoma">
 					description = <"*">
 				>
 				["at0.58"] = <
@@ -1456,6 +1448,14 @@ ontology
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
+				>
+				["at0.61"] = <
+					text = <"Invasive ductal and lobular carcinoma">
+					description = <"*">
+				>
+				["at0.62"] = <
+					text = <"Other invasive carcinoma">
+					description = <"*">
 				>
 			>
 		>
