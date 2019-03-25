@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "b2d9e6f88dcb53d7517cc099699616ea",
+      "MD5-CAM-1.0.1" : "ae45106c6c33b171d64f1cab25c06782",
       "PARENT:MD5-CAM-1.0.1" : "6d33afa2834f88943be9a35c068af57f"
     },
     "details" : {
@@ -176,15 +176,7 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ {
-                    "@type" : "C_STRING",
-                    "rmTypeName" : "STRING",
-                    "constraint" : [ "Malign", "Benign" ]
-                  } ]
-                } ],
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -748,7 +740,7 @@
         "at0031.4" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0031.4",
-          "text" : "PAD frågeställning",
+          "text" : "Frågeställning",
           "description" : "*"
         },
         "at0008.2" : {
@@ -5783,7 +5775,7 @@
                 "children" : [ {
                   "@type" : "C_STRING",
                   "rmTypeName" : "STRING",
-                  "constraint" : [ "Hudklädd yta finns", "Hudklädd yta finns ej" ]
+                  "constraint" : [ "Finns", "Finns ej" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
