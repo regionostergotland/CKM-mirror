@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "ef5b893edd67c548d7e11df165c3048b",
+      "MD5-CAM-1.0.1" : "d3c1008b48106c1255f029748449224c",
       "PARENT:MD5-CAM-1.0.1" : "7c06b6c3a3ab48b2c3f296b923ac534b"
     },
     "details" : {
@@ -1401,6 +1401,33 @@
           } ]
         } ],
         "attributeTuples" : [ ]
+      }, {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ELEMENT",
+        "nodeId" : "at0.69.1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "value",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "DV_CODED_TEXT",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "defining_code",
+              "children" : [ {
+                "@type" : "C_TERMINOLOGY_CODE",
+                "rmTypeName" : "CODE_PHRASE",
+                "occurrences" : "1..1",
+                "terminologyId" : {
+                  "value" : "local"
+                },
+                "constraint" : [ "at0.70", "at0.71", "at0.72" ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -1720,6 +1747,12 @@
           "@type" : "ARCHETYPE_TERM",
           "text" : "(Synthesized)",
           "code" : "ac0.0.16",
+          "description" : "*"
+        },
+        "at0.69.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0.69.1",
+          "text" : "Invasivitet",
           "description" : "*"
         }
       }
