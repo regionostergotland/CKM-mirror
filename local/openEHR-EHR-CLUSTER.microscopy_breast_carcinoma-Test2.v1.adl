@@ -33,7 +33,7 @@ Use as a component archetype in the context of a suite of archetypes that make u
 		["references"] = <"The Royal College of Pathologists, NHS Cancer Screening Programmes. Pathology Reporting of Breast Disease [Internet]. 2005 Jan ;[cited 2009 Jul 26] Available from: http://www.rcpath.org/resources/pdf/PathologyReportingOfBreastDisease-CORRECTED-lowres.pdf
 
 British Columbia Cancer Agency. Synoptic Report Form for Breast Cancer [Internet]. 2005 Dec 13;[cited 2009 Jul 26 ] Available from: http://www.bccancer.bc.ca/HPI/CancerManagementGuidelines/Breast/Management/SynopticReportForm1of6/default.htm">
-		["MD5-CAM-1.0.1"] = <"e2ffeef1708a1dad3cd35f76d4429834">
+		["MD5-CAM-1.0.1"] = <"de8644456bb31e127c5272020e69fff5">
 		["build_uid"] = <"1abde5ed-5128-37ff-8a12-6eb9fce5c142">
 	>
 
@@ -613,25 +613,7 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0.63] occurrences matches {0..1} matches {    -- Cancer in situ type
-						value matches {
-							DV_CODED_TEXT matches {
-								defining_code matches {
-									[local::
-									at0.64,    -- Ductal carcinoma in situ
-									at0.65,    -- Lobular carcinoma in situ
-									at0.66,    -- Mixed ductal and lobular carcinoma in situ
-									at0.67]    -- Other type of carcinoma in situ
-								}
-							}
-						}
-					}
 					ELEMENT[at0.42] occurrences matches {0..*} matches {    -- Comment on invasive tumour type
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					ELEMENT[at0.68] occurrences matches {0..1} matches {    -- Comment on cancer in situ type
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -1474,30 +1456,6 @@ ontology
 				["at0187"] = <
 					text = <"Indeterminate">
 					description = <"Presence of non-neoplastic changes has not been determined.">
-				>
-				["at0.63"] = <
-					text = <"Cancer in situ type">
-					description = <"*">
-				>
-				["at0.64"] = <
-					text = <"Ductal carcinoma in situ">
-					description = <"*">
-				>
-				["at0.65"] = <
-					text = <"Lobular carcinoma in situ">
-					description = <"*">
-				>
-				["at0.66"] = <
-					text = <"Mixed ductal and lobular carcinoma in situ">
-					description = <"*">
-				>
-				["at0.67"] = <
-					text = <"Other type of carcinoma in situ">
-					description = <"*">
-				>
-				["at0.68"] = <
-					text = <"Comment on cancer in situ type">
-					description = <"*">
 				>
 			>
 		>
