@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6e3aefe08edc8842a3f4f7ae0b24e246",
+      "MD5-CAM-1.0.1" : "9195142482ad921bc9ae0a6150054cc3",
       "PARENT:MD5-CAM-1.0.1" : "de8644456bb31e127c5272020e69fff5"
     },
     "details" : {
@@ -1356,37 +1356,6 @@
           }, {
             "@type" : "C_COMPLEX_OBJECT",
             "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..1",
-            "nodeId" : "at0.63.1",
-            "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "value",
-              "existence" : "0..1",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_CODED_TEXT",
-                "occurrences" : "1..1",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "defining_code",
-                  "existence" : "1..1",
-                  "children" : [ {
-                    "@type" : "C_TERMINOLOGY_CODE",
-                    "rmTypeName" : "CODE_PHRASE",
-                    "occurrences" : "1..1",
-                    "terminologyId" : {
-                      "value" : "local"
-                    },
-                    "constraint" : [ "at0.64", "at0.65", "at0.66", "at0.67" ]
-                  } ]
-                } ],
-                "attributeTuples" : [ ]
-              } ]
-            } ],
-            "attributeTuples" : [ ]
-          }, {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "ELEMENT",
             "nodeId" : "at0.42.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -1409,24 +1378,6 @@
               "children" : [ {
                 "@type" : "C_COMPLEX_OBJECT",
                 "rmTypeName" : "DV_TEXT",
-                "attributes" : [ ],
-                "attributeTuples" : [ ]
-              } ]
-            } ],
-            "attributeTuples" : [ ]
-          }, {
-            "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "ELEMENT",
-            "occurrences" : "0..1",
-            "nodeId" : "at0.68.1",
-            "attributes" : [ {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "value",
-              "existence" : "0..1",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_TEXT",
-                "occurrences" : "1..1",
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
@@ -1757,18 +1708,6 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.68",
           "text" : "Comment on cancer in situ type",
-          "description" : "*"
-        },
-        "at0.63.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.63.1",
-          "text" : "Typ av cancer in situ",
-          "description" : "*"
-        },
-        "at0.68.1" : {
-          "@type" : "ARCHETYPE_TERM",
-          "code" : "at0.68.1",
-          "text" : "Annat, kommentar om cancer in situ-typ",
           "description" : "*"
         },
         "ac0.0.14" : {
