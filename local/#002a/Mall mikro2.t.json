@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c7196bbc0bdeecbf0cb7ad4c2f723607",
+      "MD5-CAM-1.0.1" : "c54ac5bb7fabab19f5fdd94bf9a2855e",
       "PARENT:MD5-CAM-1.0.1" : "e2ffeef1708a1dad3cd35f76d4429834"
     },
     "details" : {
@@ -1344,7 +1344,7 @@
                     "terminologyId" : {
                       "value" : "local"
                     },
-                    "constraint" : [ "ac0.0.11" ],
+                    "constraint" : [ "ac0.0.14" ],
                     "selectedTerminologies" : [ ]
                   } ]
                 } ],
@@ -1685,12 +1685,6 @@
           "text" : "Antal invasiva tumörceller räknade",
           "description" : "*"
         },
-        "ac0.0.11" : {
-          "@type" : "ARCHETYPE_TERM",
-          "text" : "(Synthesized)",
-          "code" : "ac0.0.11",
-          "description" : "*"
-        },
         "at0125.0.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0125.0.1",
@@ -1731,6 +1725,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0.68.1",
           "text" : "Annat, kommentar om cancer in situ-typ",
+          "description" : "*"
+        },
+        "ac0.0.14" : {
+          "@type" : "ARCHETYPE_TERM",
+          "text" : "(Synthesized)",
+          "code" : "ac0.0.14",
           "description" : "*"
         }
       }
@@ -1792,6 +1792,21 @@
         "@type" : "VALUE_SET",
         "id" : "ac0.0.11",
         "members" : [ "at0.33", "at0.34", "at0.35", "at0.36", "at0.37", "at0.38", "at0.39", "at0.40", "at0.57", "at0.58" ]
+      },
+      "ac0.0.12" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.12",
+        "members" : [ "at0.33", "at0.34", "at0.35", "at0.36", "at0.37", "at0.38", "at0.39", "at0.58" ]
+      },
+      "ac0.0.13" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.13",
+        "members" : [ "at0.33", "at0.34", "at0.35", "at0.36", "at0.37", "at0.38", "at0.39", "at0.58", "at0.61" ]
+      },
+      "ac0.0.14" : {
+        "@type" : "VALUE_SET",
+        "id" : "ac0.0.14",
+        "members" : [ "at0.33", "at0.34", "at0.35", "at0.36", "at0.37", "at0.38", "at0.39", "at0.58", "at0.61", "at0.62" ]
       }
     }
   },
