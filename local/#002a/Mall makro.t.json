@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "a804cc284d9d68cf52e9b2dfcff436ac",
+      "MD5-CAM-1.0.1" : "0192dc74ca06d242755a9d9bbd093b1a",
       "PARENT:MD5-CAM-1.0.1" : "e019a4bdf491d4e6685049218fc7a8d5"
     },
     "details" : {
@@ -4893,7 +4893,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0036.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -4901,7 +4900,15 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_TEXT",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_STRING",
+                  "rmTypeName" : "STRING",
+                  "constraint" : [ "1", "2", "3", "4" ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -5275,6 +5282,12 @@
             "code" : "at0023.1",
             "text" : "Anatomisk orientering av tumören möjlig",
             "description" : "Narrative description of the physical properties of the object."
+          },
+          "at0036.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036.1",
+            "text" : "Tumör nummer",
+            "description" : "The name of the object."
           }
         }
       },
