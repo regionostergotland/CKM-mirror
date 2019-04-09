@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6d33afa2834f88943be9a35c068af57f">
+		["MD5-CAM-1.0.1"] = <"399df84f42862919a0f2cbf7b942eb7f">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -38,9 +38,18 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
+				}
+			}
+			CLUSTER[at0042] occurrences matches {0..1} matches {    -- Specimen handling
+				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0041] occurrences matches {0..*} matches {    -- Time measurements
 						value matches {
 							DV_TIME matches {*}
+						}
+					}
+					ELEMENT[at0043] occurrences matches {0..1} matches {    -- Relevant information regarding the handling of specimen
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 				}
@@ -112,6 +121,12 @@ definition
 					allow_archetype CLUSTER[at0018] occurrences matches {0..*} matches {    -- Distance from tumour periphery to resection margins
 						include
 							archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.tumour_resection_margins\.v0/}
+					}
+					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Distance between tumours
+						value matches {
+							C_DV_QUANTITY <
+															>
+						}
 					}
 				}
 			}
@@ -205,6 +220,18 @@ ontology
 				>
 				["at0041"] = <
 					text = <"Time measurements">
+					description = <"*">
+				>
+				["at0042"] = <
+					text = <"Specimen handling">
+					description = <"*">
+				>
+				["at0043"] = <
+					text = <"Relevant information regarding the handling of specimen">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"Distance between tumours">
 					description = <"*">
 				>
 			>
