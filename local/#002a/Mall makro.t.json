@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "6d5863573b3e90ae535f8c5ed81e82e6",
+      "MD5-CAM-1.0.1" : "9ca32780504f3ee9db517b5b66115f11",
       "PARENT:MD5-CAM-1.0.1" : "e019a4bdf491d4e6685049218fc7a8d5"
     },
     "details" : {
@@ -158,9 +158,25 @@
                   "children" : [ {
                     "@type" : "C_STRING",
                     "rmTypeName" : "STRING",
-                    "constraint" : [ "En sutur kraniellt, två suturer lateralt", "En sutur mot tumör/sårhåla", "En sutur mot mamill", "Finns ej" ]
+                    "constraint" : [ "En sutur kraniellt, två suturer lateralt", "En sutur mot tumör/sårhåla", "En sutur mot mamill", "Finns ej", "Annat" ]
                   } ]
                 } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          }, {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "occurrences" : "0..1",
+            "nodeId" : "at0031.6",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TEXT",
+                "attributes" : [ ],
                 "attributeTuples" : [ ]
               } ]
             } ],
@@ -960,6 +976,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0044.1",
           "text" : "Avstånd mellan tumörer, om flera påträffas",
+          "description" : "*"
+        },
+        "at0031.6" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0031.6",
+          "text" : "Om annat valts beskriv suturmarkering här",
           "description" : "*"
         }
       }
