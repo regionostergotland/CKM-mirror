@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"322c2ec93748fdd974a56fbcaeeec1cf">
+		["MD5-CAM-1.0.1"] = <"e019a4bdf491d4e6685049218fc7a8d5">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -48,6 +48,11 @@ definition
 						}
 					}
 					ELEMENT[at0043] occurrences matches {0..*} matches {    -- Relevant information regarding the handling of specimen
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0046] occurrences matches {0..1} matches {    -- Visual markings/orientation of specimen
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -232,6 +237,10 @@ ontology
 				>
 				["at0044"] = <
 					text = <"Distance between tumours">
+					description = <"*">
+				>
+				["at0046"] = <
+					text = <"Visual markings/orientation of specimen">
 					description = <"*">
 				>
 			>
