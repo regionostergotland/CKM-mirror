@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6c3678a54f3798ce75dfbec6bda9481e">
+		["MD5-CAM-1.0.1"] = <"20746a7715596fc72ea8f02ad196803d">
 		["build_uid"] = <"a75a2899-d7de-3493-adcb-9649e59a2c7c">
 	>
 
@@ -79,12 +79,6 @@ definition
 								include
 									archetype_id/value matches {/openEHR-EHR-CLUSTER\.physical_properties\.v0/}
 							}
-						}
-					}
-					ELEMENT[at0008] occurrences matches {0..*} matches {    -- Visual markings/orientation of specimen
-						value matches {
-							DV_TEXT matches {*}
-							DV_CODED_TEXT matches {*}
 						}
 					}
 					CLUSTER[at0038] occurrences matches {0..1} matches {    -- Specimen details
@@ -162,10 +156,6 @@ ontology
 				["at0006"] = <
 					text = <"Specimen laterality">
 					description = <"*">
-				>
-				["at0008"] = <
-					text = <"Visual markings/orientation of specimen">
-					description = <"Is mamill, fascia, axill present in the specimen">
 				>
 				["at0013"] = <
 					text = <"Tumour properties">
