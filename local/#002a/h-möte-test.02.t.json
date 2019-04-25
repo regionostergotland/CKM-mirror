@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "e93d497612e8a9137ca9c1f35d2b7d9b",
+      "MD5-CAM-1.0.1" : "ef24487a3cc4ac9c148f97a79f8ec66c",
       "PARENT:MD5-CAM-1.0.1" : "1DA7D8EDC23CF1B673C05E6E8FE28EB1"
     },
     "details" : {
@@ -211,7 +211,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..*",
+        "occurrences" : "0..0",
         "nodeId" : "at0.10",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -437,7 +437,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Mätvärden",
+            "description" : "A group of observations that are recorded at the same time and record the blood pressure, pulse, temperature and other readings."
+          }
+        },
         "ko" : { },
         "de" : { },
         "es" : { },
@@ -7698,7 +7705,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Provsvar",
+            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+          }
+        },
         "ru" : { },
         "es-ar" : { },
         "sl" : { },
