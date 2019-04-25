@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "e508040f496ad4760a2956af1194fde6",
+      "MD5-CAM-1.0.1" : "127253d175f0f000aeb98312fef8e651",
       "PARENT:MD5-CAM-1.0.1" : "1DA7D8EDC23CF1B673C05E6E8FE28EB1"
     },
     "details" : {
@@ -7688,7 +7688,16 @@
           "ordered" : false,
           "unique" : false
         },
-        "children" : [ ]
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "mall-provsvar0.1",
+          "referenceType" : "templateId"
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
