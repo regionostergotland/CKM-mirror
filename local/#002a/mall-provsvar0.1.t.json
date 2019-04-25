@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "3e19c37bab093631138bee6de1475b54",
+      "MD5-CAM-1.0.1" : "e97feb27df3158010bb1b9e2495b7378",
       "PARENT:MD5-CAM-1.0.1" : "1DB34ACF3B067B0BD8B738B4E61BDA10"
     },
     "details" : {
@@ -159,7 +159,7 @@
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_TEXT",
                         "defaultValue" : {
-                          "value" : "Blood",
+                          "value" : "Hälsosamtal Blodprov",
                           "@type" : "DV_TEXT"
                         },
                         "attributes" : [ {
@@ -168,7 +168,7 @@
                           "children" : [ {
                             "@type" : "C_STRING",
                             "rmTypeName" : "STRING",
-                            "constraint" : [ "Blood" ]
+                            "constraint" : [ "Hälsosamtal Blodprov" ]
                           } ]
                         } ],
                         "attributeTuples" : [ ]
@@ -205,6 +205,30 @@
                         "@type" : "C_COMPLEX_OBJECT",
                         "rmTypeName" : "DV_TEXT",
                         "attributes" : [ ],
+                        "attributeTuples" : [ ]
+                      } ]
+                    } ],
+                    "attributeTuples" : [ ]
+                  }, {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "ELEMENT",
+                    "occurrences" : "0..0",
+                    "nodeId" : "at0075.1",
+                    "attributes" : [ {
+                      "@type" : "C_ATTRIBUTE",
+                      "rmAttributeName" : "value",
+                      "children" : [ {
+                        "@type" : "C_COMPLEX_OBJECT",
+                        "rmTypeName" : "DV_DATE_TIME",
+                        "attributes" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ {
+                            "@type" : "C_DATE_TIME",
+                            "rmTypeName" : "DATE_TIME",
+                            "constraint" : [ ]
+                          } ]
+                        } ],
                         "attributeTuples" : [ ]
                       } ]
                     } ],
@@ -608,6 +632,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0024.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -806,6 +831,15 @@
             "text" : "(Synthesized)",
             "code" : "ac0.1",
             "description" : "*"
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "fP-Glukos",
+            "description" : "The value of the analyte result.",
+            "comment" : "For example '7.3 mmols/l', 'Raised'.",
+            "hl7v2_mapping" : "OBX.2,OBX.5,OBX.6",
+            "fhir_mapping" : "Observation.result; Observation.name"
           },
           "at0024.1" : {
             "@type" : "ARCHETYPE_TERM",
