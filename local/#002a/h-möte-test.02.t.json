@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "b3903184f71c12aa881e71f88af2a498",
+      "MD5-CAM-1.0.1" : "0f2bce5738e91d71a74d2a6c1468982c",
       "PARENT:MD5-CAM-1.0.1" : "1DA7D8EDC23CF1B673C05E6E8FE28EB1"
     },
     "details" : {
@@ -6521,26 +6521,16 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_QUANTITY",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "property",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "terminologyId" : {
-                            "value" : "openehr"
-                          },
-                          "constraint" : [ "382" ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ {
                         "@type" : "C_ATTRIBUTE_TUPLE",
                         "members" : [ {
                           "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "magnitude",
+                          "rmAttributeName" : "units",
                           "children" : [ ]
                         }, {
                           "@type" : "C_ATTRIBUTE",
-                          "rmAttributeName" : "units",
+                          "rmAttributeName" : "magnitude",
                           "children" : [ ]
                         }, {
                           "@type" : "C_ATTRIBUTE",
@@ -6550,69 +6540,22 @@
                         "tuples" : [ {
                           "@type" : "C_PRIMITIVE_TUPLE",
                           "members" : [ {
-                            "@type" : "C_REAL",
-                            "constraint" : [ {
-                              "lower" : 0.0,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true,
-                              "lowerIncluded" : true,
-                              "upperIncluded" : false
-                            } ]
-                          }, {
                             "@type" : "C_STRING",
-                            "constraint" : [ "1/d" ]
-                          }, {
-                            "@type" : "C_INTEGER",
-                            "constraint" : [ {
-                              "lower" : 1,
-                              "upper" : 1,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false,
-                              "lowerIncluded" : true,
-                              "upperIncluded" : true
-                            } ]
-                          } ]
-                        }, {
-                          "@type" : "C_PRIMITIVE_TUPLE",
-                          "members" : [ {
-                            "@type" : "C_REAL",
-                            "constraint" : [ {
-                              "lower" : 0.0,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true,
-                              "lowerIncluded" : true,
-                              "upperIncluded" : false
-                            } ]
-                          }, {
-                            "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
                             "constraint" : [ "1/wk" ]
                           }, {
-                            "@type" : "C_INTEGER",
-                            "constraint" : [ {
-                              "lower" : 1,
-                              "upper" : 1,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : false,
-                              "lowerIncluded" : true,
-                              "upperIncluded" : true
-                            } ]
-                          } ]
-                        }, {
-                          "@type" : "C_PRIMITIVE_TUPLE",
-                          "members" : [ {
                             "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
                             "constraint" : [ {
                               "lower" : 0.0,
-                              "lowerUnbounded" : false,
-                              "upperUnbounded" : true,
+                              "lowerUnbounded" : true,
+                              "upperUnbounded" : false,
                               "lowerIncluded" : true,
                               "upperIncluded" : false
                             } ]
                           }, {
-                            "@type" : "C_STRING",
-                            "constraint" : [ "1/mo" ]
-                          }, {
                             "@type" : "C_INTEGER",
+                            "rmTypeName" : "INTEGER",
                             "constraint" : [ {
                               "lower" : 1,
                               "upper" : 1,
@@ -6632,27 +6575,6 @@
                   "rmTypeName" : "CLUSTER",
                   "nodeId" : "at0029.1",
                   "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "name",
-                    "children" : [ {
-                      "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_CODED_TEXT",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "local"
-                          },
-                          "constraint" : [ "at0092", "at0096", "at0093", "at0094", "at0095", "at0105", "at0106" ]
-                        } ]
-                      } ],
-                      "attributeTuples" : [ ]
-                    } ]
-                  }, {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "items",
                     "cardinality" : {
@@ -6681,6 +6603,28 @@
                       "occurrences" : "0..0",
                       "nodeId" : "at0069.1",
                       "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  }, {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "name",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "local"
+                          },
+                          "constraint" : [ "ac0.30" ],
+                          "selectedTerminologies" : [ ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -7060,6 +7004,18 @@
             "text" : "(Synthesized)",
             "code" : "ac0.8",
             "description" : "*"
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Beer",
+            "description" : "Fermented beverage made from grain mash."
+          },
+          "ac0.30" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.30",
+            "description" : "*"
           }
         },
         "nb" : {
@@ -7086,6 +7042,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
             "description" : "*"
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Øl",
+            "description" : "Gjæret alkoholholdig drikke brygget på korn."
+          },
+          "ac0.30" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.30",
+            "description" : "*"
           }
         },
         "sv" : {
@@ -7111,6 +7079,18 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
+            "description" : "*"
+          },
+          "at0029.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Öl",
+            "description" : "Jäst dryck gjord av spannmålsmäsk."
+          },
+          "ac0.30" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.30",
             "description" : "*"
           }
         }
@@ -7157,6 +7137,116 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
           "members" : [ "at0092", "at0096", "at0093", "at0094", "at0095", "at0105", "at0106" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0092", "at0096", "at0093", "at0094", "at0095", "at0105" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0092", "at0096", "at0093", "at0094", "at0095", "at0105" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0092", "at0096", "at0093", "at0094", "at0095" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0092", "at0096", "at0093", "at0094", "at0095" ]
+        },
+        "ac0.13" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.13",
+          "members" : [ "at0092", "at0096", "at0093", "at0094" ]
+        },
+        "ac0.14" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.14",
+          "members" : [ "at0092", "at0096", "at0093", "at0094" ]
+        },
+        "ac0.15" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.15",
+          "members" : [ "at0092", "at0096", "at0093" ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0092", "at0096", "at0093" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
+          "members" : [ "at0092", "at0096" ]
+        },
+        "ac0.18" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.18",
+          "members" : [ "at0092", "at0096" ]
+        },
+        "ac0.19" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.19",
+          "members" : [ "at0092" ]
+        },
+        "ac0.20" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.20",
+          "members" : [ "at0092" ]
+        },
+        "ac0.21" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.21",
+          "members" : [ "at0092" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0092" ]
+        },
+        "ac0.23" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.23",
+          "members" : [ "at0092" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0092" ]
+        },
+        "ac0.25" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.25",
+          "members" : [ "at0092" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
+          "members" : [ "at0092" ]
+        },
+        "ac0.27" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.27",
+          "members" : [ "at0092" ]
+        },
+        "ac0.28" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.28",
+          "members" : [ "at0092" ]
+        },
+        "ac0.29" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.29",
+          "members" : [ "at0092" ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0092" ]
         }
       }
     },
