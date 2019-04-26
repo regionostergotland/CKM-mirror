@@ -5,6 +5,16 @@ concept
 	[at0000]	-- Housing summary
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			author = <
+				["name"] = <"John Tore Valand, Vebjørn Arntzen">
+				["organisation"] = <"Helse Bergen, Oslo universitetssykehus">
+				["email"] = <"john.tore.valand@helse-bergen.no, varntzen@ous-hf.no">
+			>
+		>
+	>
 description
 	original_author = <
 		["name"] = <"Heather Leslie">
@@ -13,86 +23,80 @@ description
 		["date"] = <"2018-05-29">
 	>
 	details = <
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere sammendrag eller varig (persistent) informasjon om et individs nåværende og tidligere bolig- eller bosituasjon.">
+			use = <"Brukes for å registrere sammendrag eller varig (persistent) informasjon om et individs nåværende og tidligere bolig- eller bosituasjon.
+
+Ved å benytte flere instanser av arketypen CLUSTER.housing_record (Bolig) i SLOTet \"Bolig\" kan man registrere en historikk over tidligere og nåværende boliger. Dette gir fleksibilitet til å registrere at et individ bor på mer enn ett sted i samme tidsperiode, for eksempel primærbolig og feriehus etc.
+
+Dataelementet \"Sist oppdatert\" brukes for å registrere når \"Boligsammendrag\" sist ble oppdatert, inkludert opplysninger som er registrert i SLOTet \"Bolig\".
+
+Dataelementet \"Beskrivelse\" brukes til å overføre fritekstbeskrivelser fra eksisterende eller tidligere kliniske systemer til arketypeformat.">
+			keywords = <"bolig, aldersbolig, hjem, hjemmesituasjon, sykehjem, omsorgsbolig, midlertidig, institusjon, leilighet, hospits, uten fast bopel, bopel, UFB, enebolig, oppholdssted, bokollektiv, hybel, aldershjem, tilrettelagt, støtte, bofellesskap", ...>
+			misuse = <"Brukes ikke for å registrere detaljer om hvor et individ vanligvis har bopel, bruk CLUSTER.housing_record (Bolig) nøstet i SLOTet \"Bolig\" i denne arketypen.
+
+Brukes ikke for å registrere detaljer om menneskene et individ bor sammen med, bruk arketypen CLUSTER.living_arrangement nøstet i SLOTet \"Ytterligere detaljer\" i arketypen CLUSTER.housing_record (Bolig) eller en lignende arketype.
+
+Brukes ikke for å registrere detaljer om de fysiske forholdene i boligen individet bor i, bruk arketypen CLUSTER.dwelling nøstet i SLOTet \"Ytterligere detaljer\" i arketypen CLUSTER.housing_record (Bolig) eller en lignende arketype.
+
+Brukes ikke for å registrere den fysiske adressen hvor individet bor, bruk demografiske arketyper for dette formålet. Hvis det er nødvendig at adressen lagres i journaldelen av pasientjournalen, bruk CLUSTER.address (Adresse) arketypen i CLUSTER.housing_record (Bolig) eller lignende arketyper.">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"To record summary or persistent information about the housing, accommodation and living arrangements for an individual.">
-			use = <"Use to record summary or persistent information about the housing, accommodation and living arrangements for an individual.
+			purpose = <"To record summary or persistent information about an individual's current and past housing or accommodation situation.">
+			use = <"Use to record summary or persistent information about an individual's current and past housing or accommodation situation.
 
-As housing records, or episodes, are gradually added over time, the Start date' and 'End date' will record the date related to each episode and the 'Last updated' data element will record the last time that the whole summary was updated.
+Multiple instances of the CLUSTER.housing_record used within the Housing record SLOT will allow aggregation of a history of both past and present housing, including the flexibility to record situations where individuals live in more than one place during the same period of time, for main residences and holiday houses, etc.
+
+The 'Last updated' data element will record the last time that the Housing summary as a whole, including individual housing records, was updated.
 
 Use to incorporate the narrative descriptions of housing history within existing or legacy clinical systems into an archetyped format, using the 'Description' data element.">
-			misuse = <"Not to be used to record specific details about the setting in which an individual usually resides - use CLUSTER.accomodation nested within SLOTs in this archetype.
+			keywords = <"housing,accommodation,living,dwelling,house,living,arrangement,share house,retirement home,nursing home", ...>
+			misuse = <"Not to be used to record specific details about the setting in which an individual usually resides - use CLUSTER.housing_record nested within the Housing record SLOT in this archetype.
 
-Not to be used to record specific details about the living arrangement in which an individual lives - use CLUSTER.living_arrangement nested within SLOTs in this archetype.
+Not to be used to record specific details about the people with which an individual lives - use CLUSTER.living_arrangement nested within the Additional details SLOT in the CLUSTER.housing_record, or similar archetypes which are clinically appropriate.
 
-Not to be used to record specific details about the housing structure in which an individual lives - use CLUSTER.dwelling nested within SLOTs in this archetype.
+Not to be used to record specific details about the housing structure in which an individual lives - use CLUSTER.dwelling nested within the Additional details SLOT in the CLUSTER.housing_record, or similar archetypes which are clinically appropriate.
 
-Not to be used to record the physical address where an individual lives - use demographic archetypes for this purpose, or CLUSTER.address if the individual's address needs to be recorded within the health record.">
+Not to be used to record the physical address where an individual lives - use demographic archetypes for this purpose, or CLUSTER.address within the CLUSTER.housing_record, or similar, if the individual's address needs to be recorded within the health record.">
 			copyright = <"© openEHR Foundation">
 		>
 	>
 	lifecycle_state = <"in_development">
-	other_contributors = <>
+	other_contributors = <"Amund Aakerholt, Helse Stavanger, KORFOR, Norway", "Morten Aas, Diakonhjemmet Sykehus, Norway", "Marit Alice Venheim, Helse Vest IKT, Norway", "Erling Are Hole, Helse Bergen, Norway", "Vebjørn Arntzen, Oslo University Hospital, Norway (openEHR Editor)", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Carrick Gillespie, Omniq AB, Sweden", "Heather Grain, Llewelyn Grain Informatics, Australia", "Lars Morgan Karlsen, DIPS ASA, Norway", "Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway", "Ronald Krawec, Alberta Health Services, Canada", "Heather Leslie, Atomica Informatics, Australia (openEHR Editor)", "Andrej Orel, Marand d.o.o., Slovenia", "Ragnhild Sandvold, Vestre Viken HF, Norway", "Line Silsand, Universitetssykehuset i Nord-Norge, Norway", "Norwegian Review Summary, Nasjonal IKT HF, Norway", "John Tore Valand, Helse Bergen, Norway (openEHR Editor)", "Ingrid Vange, Helse Bergen, Norway">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Housing, Rejected archetype [Internet]. openEHR Foundation, openEHR Clinical Knowledge Manager [cited: 2018-05-30]. Available from: http://www.openehr.org/ckm/#showArchetype_1013.1.1667.">
 		["current_contact"] = <"Heather Leslie, Atomica Informatics<heather.leslie@atomicainformatics.com>">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"09354C0366A60943EA9954E5417AF5AC">
-		["build_uid"] = <"be39add7-126e-42b2-8e57-0ac4c9e425f7">
+		["MD5-CAM-1.0.1"] = <"767F5FA318F2A96864C403605264F68B">
+		["build_uid"] = <"af114dba-034a-4704-8a3d-ebee243b5e3e">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	EVALUATION[at0000] matches {	-- Housing summary
+	EVALUATION[at0000] matches {    -- Housing summary
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Tree
+			ITEM_TREE[at0001] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Description
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Description
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {	-- Usual housing situation
+					allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {    -- Housing record
 						include
-							archetype_id/value matches {/openEHR-EHR-CLUSTER\.dwelling(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.living_arrangement(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.accommodation(-[a-zA-Z0-9_]+)*\.v0/}
+							archetype_id/value matches {/openEHR-EHR-CLUSTER\.housing_record(-[a-zA-Z0-9_]+)*\.v0/}
 					}
-					CLUSTER[at0004] occurrences matches {0..*} matches {	-- Housing record
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0006] occurrences matches {0..1} matches {	-- Start date
-								value matches {
-									DV_DATE_TIME matches {*}
-								}
-							}
-							ELEMENT[at0007] occurrences matches {0..1} matches {	-- Label
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0008] occurrences matches {0..1} matches {	-- Description
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							allow_archetype CLUSTER[at0009] occurrences matches {0..*} matches {	-- Housing details
-								include
-									archetype_id/value matches {/openEHR-EHR-CLUSTER\.accommodation(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.dwelling(-[a-zA-Z0-9_]+)*\.v0|openEHR-EHR-CLUSTER\.living_arrangement(-[a-zA-Z0-9_]+)*\.v0/}
-							}
-							ELEMENT[at0010] occurrences matches {0..1} matches {	-- End date
-								value matches {
-									DV_DATE_TIME matches {*}
-								}
-							}
-							ELEMENT[at0011] occurrences matches {0..1} matches {	-- Comment
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-						}
+					allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {    -- Additional details
+						include
+							archetype_id/value matches {/.*/}
 					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {	-- Comment
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Comment
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -101,21 +105,16 @@ definition
 			}
 		}
 		protocol matches {
-			ITEM_TREE[at0012] matches {	-- Tree
+			ITEM_TREE[at0012] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0013] occurrences matches {0..1} matches {	-- Last updated
+					allow_archetype CLUSTER[at0014] occurrences matches {0..*} matches {    -- Extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Last updated
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
-					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {	-- Definition of usual
-						value matches {
-							DV_TEXT matches {*}
-						}
-					}
-					allow_archetype CLUSTER[at0014] occurrences matches {0..*} matches {	-- Extension
-						include
-							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -129,7 +128,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Housing summary">
-					description = <"Summary or persistent information about the housing, accommodation and living arrangements for an individual.">
+					description = <"Summary or persistent information about an individual's current and past housing or accommodation situation.">
 				>
 				["at0001"] = <
 					text = <"Tree">
@@ -140,44 +139,16 @@ ontology
 					description = <"Narrative description about the overall housing situation for the individual.">
 				>
 				["at0003"] = <
-					text = <"Usual housing situation">
-					description = <"Structured details about the usual housing situation for the individual.">
-					comment = <"Designed to nest reusable CLUSTER archetypes that will describe specific aspects about accommodation, living arrangements, dwelling and other related concepts.">
-				>
-				["at0004"] = <
-					text = <"Housing record">
-					description = <"Summary details about an episode within a housing history.">
-					comment = <"Record a separate instance of this CLUSTER for each episode or record within a housing history">
+					text = <"Additional details">
+					description = <"Structured details about the overall housing situation for an individual.">
 				>
 				["at0005"] = <
 					text = <"Comment">
-					description = <"Additional narrative about the overall housing summary not captured in other fields.">
-				>
-				["at0006"] = <
-					text = <"Start date">
-					description = <"The date when the episode commenced.">
-					comment = <"Can be a partial date, for example, only a year.">
-				>
-				["at0007"] = <
-					text = <"Label">
-					description = <"A name or label to uniquely identify the episode.">
-				>
-				["at0008"] = <
-					text = <"Description">
-					description = <"Narrative description about the housing episode.">
+					description = <"Additional narrative about the overall housing situation, not captured in other fields.">
 				>
 				["at0009"] = <
-					text = <"Housing details">
-					description = <"Structured details about the specific housing situation for this episode.">
-				>
-				["at0010"] = <
-					text = <"End date">
-					description = <"The date when the episode commenced.">
-					comment = <"Can be a partial date, for example, only a year.">
-				>
-				["at0011"] = <
-					text = <"Comment">
-					description = <"Additional narrative about the housing record not captured in other fields.">
+					text = <"Housing record">
+					description = <"Structured details about the each housing record, both current and past.">
 				>
 				["at0012"] = <
 					text = <"Tree">
@@ -185,17 +156,53 @@ ontology
 				>
 				["at0013"] = <
 					text = <"Last updated">
-					description = <"Date when the summary and nested CLUSTER archetypes was updated.">
+					description = <"Date when the housing summary or associated housing records was updated.">
 				>
 				["at0014"] = <
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
-				["at0015"] = <
-					text = <"Definition of usual">
-					description = <"Definition of 'usual' within the use case.">
-					comment = <"For example: where the person usually resides for 4 or more days per week on average. ">
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Boligsammendrag">
+					description = <"Sammendrag eller varig (persistent) informasjon om et individs nåværende og tidligere bolig- eller bosituasjon.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Beskrivelse">
+					description = <"Fritekstbeskrivelse om individets overordnede bosituasjon.">
+				>
+				["at0003"] = <
+					text = <"Ytterligere detaljer">
+					description = <"Strukturerte detaljer om den overordnede bolig- eller bosituasjonen.">
+				>
+				["at0005"] = <
+					text = <"Kommentar">
+					description = <"Ytterligere fritekst om den overordnede bolig- eller bosituasjonen.">
+				>
+				["at0009"] = <
+					text = <"Bolig">
+					description = <"Strukturerte detaljer om nåværende og tidligere bolig- eller bosituasjon.">
+				>
+				["at0012"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0013"] = <
+					text = <"Sist oppdatert">
+					description = <"Datoen da boligsammendraget eller underliggende boligregistreringer sist ble oppdatert.">
+				>
+				["at0014"] = <
+					text = <"Tilleggsinformasjon">
+					description = <"Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.">
+					comment = <"For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI.">
 				>
 			>
 		>
