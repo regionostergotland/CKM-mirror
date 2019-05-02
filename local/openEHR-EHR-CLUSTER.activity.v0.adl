@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"58011bdaa1d519a3df719bf71cf983ac">
+		["MD5-CAM-1.0.1"] = <"a18ca3286cc898e43a34ad5d48cdc019">
 		["build_uid"] = <"d2cb3c0d-4425-3b58-b3cd-227261b5a57c">
 	>
 
@@ -84,9 +84,17 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0057] occurrences matches {0..1} matches {    -- Total aktivitetspoäng
+			ELEMENT[at0057] occurrences matches {0..1} matches {    -- Kalorier per vecka
 				value matches {
 					DV_COUNT matches {*}
+					C_DV_QUANTITY <
+						
+						list = <
+							["1"] = <
+								units = <"kcal/wk">
+							>
+						>
+					>
 				}
 			}
 		}
@@ -153,7 +161,7 @@ ontology
 					description = <"*">
 				>
 				["at0057"] = <
-					text = <"Total aktivitetspoäng">
+					text = <"Kalorier per vecka">
 					description = <"*">
 				>
 				["at0058"] = <
