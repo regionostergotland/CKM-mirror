@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a4e920150ae4d5e49cafb6fd28151890">
+		["MD5-CAM-1.0.1"] = <"849576fe4d18a9af7580a54adb1da3c2">
 		["build_uid"] = <"d2cb3c0d-4425-3b58-b3cd-227261b5a57c">
 	>
 
@@ -50,18 +50,17 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0008] occurrences matches {0..1} matches {    -- DV_COUNT
-				value matches {
-					DV_COUNT matches {*}
-				}
-			}
-			ELEMENT[at0011] occurrences matches {0..1} matches {*}    -- ANY
 			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Per årstid
 				value matches {
 					1|[local::at0028],
 					2|[local::at0029],
 					3|[local::at0030],
 					4|[local::at0031]
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Aktivitetspoäng
+				value matches {
+					DV_COUNT matches {*}
 				}
 			}
 		}
@@ -84,11 +83,7 @@ ontology
 					description = <"*">
 				>
 				["at0008"] = <
-					text = <"DV_COUNT">
-					description = <"*">
-				>
-				["at0011"] = <
-					text = <"ANY">
+					text = <"Aktivitetspoäng">
 					description = <"*">
 				>
 				["at0023"] = <
