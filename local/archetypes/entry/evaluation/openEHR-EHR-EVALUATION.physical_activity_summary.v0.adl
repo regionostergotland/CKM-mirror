@@ -55,7 +55,7 @@ Please note: There is some apparent overlap between the 'Physical activity level
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"10ba3cfcee34195352f00ecac792a444">
+		["MD5-CAM-1.0.1"] = <"164be177b844c262f1fcaaceddf5bf7c">
 		["build_uid"] = <"a46fc4f9-6a92-4391-b124-dd89001a32d6">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -129,76 +129,6 @@ definition
 									>
 								>
 							>
-						}
-					}
-					CLUSTER[at0019] occurrences matches {0..*} matches {    -- CLUSTER
-						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0021] occurrences matches {0..1} matches {    -- DV_CODED_TEXT
-								value matches {
-									DV_CODED_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0022] occurrences matches {0..1} matches {    -- DV_TEXT
-								value matches {
-									DV_TEXT matches {*}
-								}
-							}
-							ELEMENT[at0020] occurrences matches {0..1} matches {*}    -- Typ av aktivitet
-							ELEMENT[at0029] occurrences matches {0..1} matches {    -- DV_DATE
-								value matches {
-									DV_DATE matches {*}
-								}
-							}
-							ELEMENT[at0030] occurrences matches {0..1} matches {    -- DV_DATE
-								value matches {
-									DV_DATE matches {*}
-								}
-							}
-							CLUSTER[at0023] occurrences matches {0..*} matches {    -- CLUSTER
-								items cardinality matches {1..*; unordered} matches {
-									ELEMENT[at0024] occurrences matches {0..1} matches {*}    -- ELEMENT
-									ELEMENT[at0026] occurrences matches {0..1} matches {    -- DV_TEXT
-										value matches {
-											DV_TEXT matches {*}
-										}
-									}
-									ELEMENT[at0032] occurrences matches {0..1} matches {    -- DV_QUANTITY
-										value matches {
-											C_DV_QUANTITY <
-												
-												list = <
-													["1"] = <
-														units = <"1/d">
-													>
-													["2"] = <
-														units = <"1/wk">
-													>
-													["3"] = <
-														units = <"1/mo">
-													>
-												>
-											>
-										}
-									}
-									ELEMENT[at0027] occurrences matches {0..1} matches {    -- DV_QUANTITY
-										value matches {
-											C_DV_QUANTITY <
-												property = <[openehr::128]>
-												list = <
-													["1"] = <
-														units = <"min">
-													>
-												>
-											>
-										}
-									}
-									ELEMENT[at0028] occurrences matches {0..1} matches {    -- DV_COUNT
-										value matches {
-											DV_COUNT matches {*}
-										}
-									}
-								}
-							}
 						}
 					}
 				}
@@ -292,54 +222,6 @@ ontology
 					text = <"Last updated">
 					description = <"The date when the physical activity summary was last updated.">
 				>
-				["at0019"] = <
-					text = <"CLUSTER">
-					description = <"*">
-				>
-				["at0020"] = <
-					text = <"Typ av aktivitet">
-					description = <"*">
-				>
-				["at0021"] = <
-					text = <"DV_CODED_TEXT">
-					description = <"*">
-				>
-				["at0022"] = <
-					text = <"DV_TEXT">
-					description = <"*">
-				>
-				["at0023"] = <
-					text = <"CLUSTER">
-					description = <"*">
-				>
-				["at0024"] = <
-					text = <"ELEMENT">
-					description = <"*">
-				>
-				["at0026"] = <
-					text = <"DV_TEXT">
-					description = <"*">
-				>
-				["at0027"] = <
-					text = <"DV_QUANTITY">
-					description = <"*">
-				>
-				["at0028"] = <
-					text = <"DV_COUNT">
-					description = <"*">
-				>
-				["at0029"] = <
-					text = <"DV_DATE">
-					description = <"*">
-				>
-				["at0030"] = <
-					text = <"DV_DATE">
-					description = <"*">
-				>
-				["at0032"] = <
-					text = <"DV_QUANTITY">
-					description = <"*">
-				>
 			>
 		>
 		["sv"] = <
@@ -410,54 +292,6 @@ ontology
 				["at0016"] = <
 					text = <"Senast uppdaterad">
 					description = <"Datumet när aktiviteten om fysisk aktivitet senast uppdaterades.">
-				>
-				["at0019"] = <
-					text = <"Per episod">
-					description = <"*">
-				>
-				["at0020"] = <
-					text = <"Episodbeteckning">
-					description = <"*">
-				>
-				["at0021"] = <
-					text = <"Status">
-					description = <"*">
-				>
-				["at0022"] = <
-					text = <"Episodbeskrivning">
-					description = <"*">
-				>
-				["at0023"] = <
-					text = <"Per typ">
-					description = <"*">
-				>
-				["at0024"] = <
-					text = <"Typ">
-					description = <"*">
-				>
-				["at0026"] = <
-					text = <"Beskrivning">
-					description = <"*">
-				>
-				["at0027"] = <
-					text = <"Typisk aktivitetslängd">
-					description = <"*">
-				>
-				["at0028"] = <
-					text = <"Aktivitets summa">
-					description = <"*">
-				>
-				["at0029"] = <
-					text = <"Episodens startdatum">
-					description = <"*">
-				>
-				["at0030"] = <
-					text = <"Episodens slutdatum">
-					description = <"*">
-				>
-				["at0032"] = <
-					text = <"Aktivitetsfrekvens">
-					description = <"*">
 				>
 			>
 		>
