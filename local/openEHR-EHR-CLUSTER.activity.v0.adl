@@ -1,0 +1,116 @@
+archetype (adl_version=1.4; uid=6256b171-a4fb-41f2-9458-0059a3320b8c)
+	openEHR-EHR-CLUSTER.activity.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::sv]>
+
+description
+	original_author = <
+		["date"] = <"2019-05-02">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"a4e920150ae4d5e49cafb6fd28151890">
+		["build_uid"] = <"d2cb3c0d-4425-3b58-b3cd-227261b5a57c">
+	>
+
+definition
+	CLUSTER[at0000] occurrences matches {1..*} matches {    -- Activity
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Typ av aktivitet
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Aktivitets frekvens
+				value matches {
+					C_DV_QUANTITY <
+						
+						list = <
+							["1"] = <
+								units = <"min/wk">
+							>
+							["2"] = <
+								units = <"1/wk">
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- DV_COUNT
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {*}    -- ANY
+			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Per årstid
+				value matches {
+					1|[local::at0028],
+					2|[local::at0029],
+					3|[local::at0030],
+					4|[local::at0031]
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Activity">
+					description = <"Activity">
+				>
+				["at0005"] = <
+					text = <"Typ av aktivitet">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Aktivitets frekvens">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"DV_COUNT">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"ANY">
+					description = <"*">
+				>
+				["at0023"] = <
+					text = <"Per årstid">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Vår">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Sommar">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Höst">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Vinter">
+					description = <"*">
+				>
+			>
+		>
+	>
