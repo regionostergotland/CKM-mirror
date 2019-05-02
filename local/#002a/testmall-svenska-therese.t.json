@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "4d0bf33bf2c40ad6e85e3e601dbfcdf5",
+      "MD5-CAM-1.0.1" : "c07c51ed020ca65b70044b13d2adb4aa",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -575,7 +575,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "a8427885136172570960c3a7f6a5f770"
+        "PARENT:MD5-CAM-1.0.1" : "58011bdaa1d519a3df719bf71cf983ac"
       },
       "details" : { }
     },
@@ -631,7 +631,44 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "sv" : { }
+        "sv" : {
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Per årstid",
+            "description" : "*"
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Vår",
+            "description" : "*"
+          },
+          "at0029" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Sommar",
+            "description" : "*"
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Höst",
+            "description" : "*"
+          },
+          "at0031" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0031",
+            "text" : "Vinter",
+            "description" : "*"
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "Aktivitetsfrekvens",
+            "description" : "*"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
