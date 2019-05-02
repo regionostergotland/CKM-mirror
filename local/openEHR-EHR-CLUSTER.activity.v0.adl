@@ -23,14 +23,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b714f509f2da2281e8761182bbed5f36">
+		["MD5-CAM-1.0.1"] = <"a8427885136172570960c3a7f6a5f770">
 		["build_uid"] = <"d2cb3c0d-4425-3b58-b3cd-227261b5a57c">
 	>
 
 definition
-	CLUSTER[at0000] occurrences matches {1..*} matches {    -- Activity
+	CLUSTER[at0000] occurrences matches {0..1} matches {    -- Activity
 		items cardinality matches {1..*; unordered} matches {
-			CLUSTER[at0043] occurrences matches {0..1} matches {    -- Per typ
+			CLUSTER[at0043] occurrences matches {0..*} matches {    -- Per typ
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Typ av aktivitet
 						value matches {
