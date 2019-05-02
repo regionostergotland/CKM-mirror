@@ -23,19 +23,32 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"849576fe4d18a9af7580a54adb1da3c2">
+		["MD5-CAM-1.0.1"] = <"52a8dc78de8e94be056555d64898f8c9">
 		["build_uid"] = <"d2cb3c0d-4425-3b58-b3cd-227261b5a57c">
 	>
 
 definition
 	CLUSTER[at0000] occurrences matches {1..*} matches {    -- Activity
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Typ av aktivitet
+			ELEMENT[at0032] occurrences matches {0..1} matches {    -- Typ av aktivitet
+				value matches {
+					5|[local::at0033],
+					6|[local::at0034],
+					7|[local::at0035],
+					8|[local::at0036],
+					9|[local::at0037],
+					10|[local::at0038],
+					11|[local::at0039],
+					12|[local::at0040],
+					13|[local::at0041]
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Kommentar
 				value matches {
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Aktivitets frekvens
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Aktivitetsfrekvens
 				value matches {
 					C_DV_QUANTITY <
 						
@@ -75,11 +88,11 @@ ontology
 					description = <"Activity">
 				>
 				["at0005"] = <
-					text = <"Typ av aktivitet">
+					text = <"Kommentar">
 					description = <"*">
 				>
 				["at0006"] = <
-					text = <"Aktivitets frekvens">
+					text = <"Aktivitetsfrekvens">
 					description = <"*">
 				>
 				["at0008"] = <
@@ -104,6 +117,46 @@ ontology
 				>
 				["at0031"] = <
 					text = <"Vinter">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Typ av aktivitet">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Cykla">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"Fotboll">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Golf">
+					description = <"*">
+				>
+				["at0036"] = <
+					text = <"Gympa (vanligt pass)">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"Jogging (6-7 min/km)">
+					description = <"*">
+				>
+				["at0038"] = <
+					text = <"Promenad (rask)">
+					description = <"*">
+				>
+				["at0039"] = <
+					text = <"Promenad">
+					description = <"*">
+				>
+				["at0040"] = <
+					text = <"Simning">
+					description = <"*">
+				>
+				["at0041"] = <
+					text = <"Stavgång">
 					description = <"*">
 				>
 			>
