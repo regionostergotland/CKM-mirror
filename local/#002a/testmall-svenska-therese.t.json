@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "c07c51ed020ca65b70044b13d2adb4aa",
+      "MD5-CAM-1.0.1" : "ef7ad29ca5e31f9824c6ba6944c3901d",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -566,7 +566,7 @@
     "translations" : [ ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "e8c515f0-8941-480b-a343-f683944079ca",
+    "uid" : "eea9b7d7-f71b-45a7-b377-0ef574aed4e4",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
       "originalAuthor" : { },
@@ -588,7 +588,6 @@
     "definition" : {
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
-      "occurrences" : "1..*",
       "nodeId" : "at0000.1",
       "attributes" : [ {
         "@type" : "C_ATTRIBUTE",
@@ -602,7 +601,6 @@
         "children" : [ {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..1",
           "nodeId" : "at0043",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -615,10 +613,198 @@
             },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0055.1",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0058.1",
               "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0058.2",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0059.2",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_ORDINAL",
+                      "defaultValue" : {
+                        "value" : 2,
+                        "@type" : "DV_ORDINAL"
+                      },
+                      "attributes" : [ ],
+                      "attributeTuples" : [ {
+                        "@type" : "C_ATTRIBUTE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ ]
+                        }, {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "symbol",
+                          "children" : [ ]
+                        } ],
+                        "tuples" : [ {
+                          "@type" : "C_PRIMITIVE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_INTEGER",
+                            "constraint" : [ {
+                              "lower" : 2,
+                              "upper" : 2,
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : false,
+                              "lowerIncluded" : true,
+                              "upperIncluded" : true
+                            } ]
+                          }, {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "constraint" : [ "at0061" ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0058.3",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0059.3",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_ORDINAL",
+                      "defaultValue" : {
+                        "value" : 3,
+                        "@type" : "DV_ORDINAL"
+                      },
+                      "attributes" : [ ],
+                      "attributeTuples" : [ {
+                        "@type" : "C_ATTRIBUTE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ ]
+                        }, {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "symbol",
+                          "children" : [ ]
+                        } ],
+                        "tuples" : [ {
+                          "@type" : "C_PRIMITIVE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_INTEGER",
+                            "constraint" : [ {
+                              "lower" : 3,
+                              "upper" : 3,
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : false,
+                              "lowerIncluded" : true,
+                              "upperIncluded" : true
+                            } ]
+                          }, {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "constraint" : [ "at0062" ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0058.4",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "nodeId" : "at0059.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_ORDINAL",
+                      "defaultValue" : {
+                        "value" : 4,
+                        "@type" : "DV_ORDINAL"
+                      },
+                      "attributes" : [ ],
+                      "attributeTuples" : [ {
+                        "@type" : "C_ATTRIBUTE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "value",
+                          "children" : [ ]
+                        }, {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "symbol",
+                          "children" : [ ]
+                        } ],
+                        "tuples" : [ {
+                          "@type" : "C_PRIMITIVE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_INTEGER",
+                            "constraint" : [ {
+                              "lower" : 4,
+                              "upper" : 4,
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : false,
+                              "lowerIncluded" : true,
+                              "upperIncluded" : true
+                            } ]
+                          }, {
+                            "@type" : "C_TERMINOLOGY_CODE",
+                            "constraint" : [ "at0063" ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
               "attributeTuples" : [ ]
             } ]
           } ],
@@ -632,40 +818,28 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "sv" : {
-          "at0023" : {
+          "at0058.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023",
-            "text" : "Per årstid",
-            "description" : "*"
-          },
-          "at0028" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0028",
+            "code" : "at0058.1",
             "text" : "Vår",
             "description" : "*"
           },
-          "at0029" : {
+          "at0058.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0029",
+            "code" : "at0058.2",
             "text" : "Sommar",
             "description" : "*"
           },
-          "at0030" : {
+          "at0058.3" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0030",
+            "code" : "at0058.3",
             "text" : "Höst",
             "description" : "*"
           },
-          "at0031" : {
+          "at0058.4" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0031",
+            "code" : "at0058.4",
             "text" : "Vinter",
-            "description" : "*"
-          },
-          "at0044" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0044",
-            "text" : "Aktivitetsfrekvens",
             "description" : "*"
           }
         }
