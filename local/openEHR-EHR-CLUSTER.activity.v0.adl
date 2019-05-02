@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f2064bb1d7341d5b6046e654c21eb412">
+		["MD5-CAM-1.0.1"] = <"b714f509f2da2281e8761182bbed5f36">
 		["build_uid"] = <"d2cb3c0d-4425-3b58-b3cd-227261b5a57c">
 	>
 
@@ -43,6 +43,11 @@ definition
 							11|[local::at0052],
 							12|[local::at0053],
 							13|[local::at0054]
+						}
+					}
+					ELEMENT[at0055] occurrences matches {0..1} matches {    -- Kommentar
+						value matches {
+							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Aktivitetsfrekvens
@@ -66,11 +71,6 @@ definition
 							2|[local::at0029],
 							3|[local::at0030],
 							4|[local::at0031]
-						}
-					}
-					ELEMENT[at0055] occurrences matches {0..1} matches {    -- Kommentar
-						value matches {
-							DV_TEXT matches {*}
 						}
 					}
 					ELEMENT[at0056] occurrences matches {0..1} matches {    -- Aktivitetspoäng
