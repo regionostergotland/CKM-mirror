@@ -23,55 +23,64 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"52a8dc78de8e94be056555d64898f8c9">
+		["MD5-CAM-1.0.1"] = <"f2064bb1d7341d5b6046e654c21eb412">
 		["build_uid"] = <"d2cb3c0d-4425-3b58-b3cd-227261b5a57c">
 	>
 
 definition
 	CLUSTER[at0000] occurrences matches {1..*} matches {    -- Activity
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0032] occurrences matches {0..1} matches {    -- Typ av aktivitet
-				value matches {
-					5|[local::at0033],
-					6|[local::at0034],
-					7|[local::at0035],
-					8|[local::at0036],
-					9|[local::at0037],
-					10|[local::at0038],
-					11|[local::at0039],
-					12|[local::at0040],
-					13|[local::at0041]
-				}
-			}
-			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Kommentar
-				value matches {
-					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Aktivitetsfrekvens
-				value matches {
-					C_DV_QUANTITY <
-						
-						list = <
-							["1"] = <
-								units = <"min/wk">
+			CLUSTER[at0043] occurrences matches {0..1} matches {    -- Per typ
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Typ av aktivitet
+						value matches {
+							5|[local::at0046],
+							6|[local::at0047],
+							7|[local::at0048],
+							8|[local::at0049],
+							9|[local::at0050],
+							10|[local::at0051],
+							11|[local::at0052],
+							12|[local::at0053],
+							13|[local::at0054]
+						}
+					}
+					ELEMENT[at0044] occurrences matches {0..1} matches {    -- Aktivitetsfrekvens
+						value matches {
+							C_DV_QUANTITY <
+								
+								list = <
+									["1"] = <
+										units = <"min/wk">
+									>
+									["2"] = <
+										units = <"1/wk">
+									>
+								>
 							>
-							["2"] = <
-								units = <"1/wk">
-							>
-						>
-					>
+						}
+					}
+					ELEMENT[at0023] occurrences matches {0..1} matches {    -- Per årstid
+						value matches {
+							1|[local::at0028],
+							2|[local::at0029],
+							3|[local::at0030],
+							4|[local::at0031]
+						}
+					}
+					ELEMENT[at0055] occurrences matches {0..1} matches {    -- Kommentar
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0056] occurrences matches {0..1} matches {    -- Aktivitetspoäng
+						value matches {
+							DV_COUNT matches {*}
+						}
+					}
 				}
 			}
-			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Per årstid
-				value matches {
-					1|[local::at0028],
-					2|[local::at0029],
-					3|[local::at0030],
-					4|[local::at0031]
-				}
-			}
-			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Aktivitetspoäng
+			ELEMENT[at0057] occurrences matches {0..1} matches {    -- Total aktivitetspoäng
 				value matches {
 					DV_COUNT matches {*}
 				}
@@ -86,18 +95,6 @@ ontology
 				["at0000"] = <
 					text = <"Activity">
 					description = <"Activity">
-				>
-				["at0005"] = <
-					text = <"Kommentar">
-					description = <"*">
-				>
-				["at0006"] = <
-					text = <"Aktivitetsfrekvens">
-					description = <"*">
-				>
-				["at0008"] = <
-					text = <"Aktivitetspoäng">
-					description = <"*">
 				>
 				["at0023"] = <
 					text = <"Per årstid">
@@ -119,44 +116,64 @@ ontology
 					text = <"Vinter">
 					description = <"*">
 				>
-				["at0032"] = <
+				["at0043"] = <
+					text = <"Per typ">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"Aktivitetsfrekvens">
+					description = <"*">
+				>
+				["at0045"] = <
 					text = <"Typ av aktivitet">
 					description = <"*">
 				>
-				["at0033"] = <
+				["at0046"] = <
 					text = <"Cykla">
 					description = <"*">
 				>
-				["at0034"] = <
+				["at0047"] = <
 					text = <"Fotboll">
 					description = <"*">
 				>
-				["at0035"] = <
+				["at0048"] = <
 					text = <"Golf">
 					description = <"*">
 				>
-				["at0036"] = <
+				["at0049"] = <
 					text = <"Gympa (vanligt pass)">
 					description = <"*">
 				>
-				["at0037"] = <
+				["at0050"] = <
 					text = <"Jogging (6-7 min/km)">
 					description = <"*">
 				>
-				["at0038"] = <
+				["at0051"] = <
 					text = <"Promenad (rask)">
 					description = <"*">
 				>
-				["at0039"] = <
+				["at0052"] = <
 					text = <"Promenad">
 					description = <"*">
 				>
-				["at0040"] = <
+				["at0053"] = <
 					text = <"Simning">
 					description = <"*">
 				>
-				["at0041"] = <
+				["at0054"] = <
 					text = <"Stavgång">
+					description = <"*">
+				>
+				["at0055"] = <
+					text = <"Kommentar">
+					description = <"*">
+				>
+				["at0056"] = <
+					text = <"Aktivitetspoäng">
+					description = <"*">
+				>
+				["at0057"] = <
+					text = <"Total aktivitetspoäng">
 					description = <"*">
 				>
 			>
