@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "393e0c185178477821a97ff7e4548c6b",
+      "MD5-CAM-1.0.1" : "95c546faa11bab9f89ff26b348974b1e",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -206,6 +206,15 @@
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-SECTION.ovl-vital_signs-001.v0",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.10",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -2686,6 +2695,204 @@
         "name" : "Marja Buur",
         "organisation" : "Medisch Centrum Alkmaar",
         "email" : "m.buur-krom@mca.nl"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "1c3c0a75-6b02-4011-8c84-328cb42c754c",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "7B6BE4356B9A795A14047F9F42630EB6"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "0..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Ad hoc heading (2)",
+            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+          }
+        },
+        "ru" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "заготовка заголовка (2)",
+            "description" : "Образец заголовка раздела"
+          }
+        },
+        "es-ar" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Encabezado ad hoc (2)",
+            "description" : "Un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico."
+          }
+        },
+        "sl" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Naslov sekcije (2)",
+            "description" : "Naslov sekcije"
+          }
+        },
+        "nb" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Templat-overskrift (2)",
+            "description" : "En generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst."
+          }
+        },
+        "pt-br" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Cabeçalho Ad hoc (2)",
+            "description" : "Um cabeçalho de sessão genérico que deve ser renomeado no template para adequar-se a um contexto clínico específico."
+          }
+        },
+        "sv" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Demografisk information",
+            "description" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "e93280ba-b144-4794-af18-e479b8431ca5",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Daniel Hall",
+        "organisation" : "Region Östergötland",
+        "email" : "daniel.hall@regionostergotland.se"
+      },
+      "accreditation" : "Åsa Skagerhult, Lisa Axelsson",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
       },
       "otherDetails" : { }
     } ]
