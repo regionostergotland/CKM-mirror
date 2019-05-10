@@ -23,26 +23,28 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a18ca3286cc898e43a34ad5d48cdc019">
+		["MD5-CAM-1.0.1"] = <"702629c5c253a8e1a0af7f71258b48cf">
 		["build_uid"] = <"d2cb3c0d-4425-3b58-b3cd-227261b5a57c">
 	>
 
 definition
 	CLUSTER[at0000] occurrences matches {0..1} matches {    -- Activity
 		items cardinality matches {1..*; unordered} matches {
-			CLUSTER[at0043] occurrences matches {0..*} matches {    -- Per typ
+			CLUSTER[at0043] occurrences matches {0..*} matches {    -- Per period
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0045] occurrences matches {0..1} matches {    -- Typ av aktivitet
+					ELEMENT[at0059] occurrences matches {0..1} matches {    -- Per period (kalendarisk)
 						value matches {
-							5|[local::at0046],
-							6|[local::at0047],
-							7|[local::at0048],
-							8|[local::at0049],
-							9|[local::at0050],
-							10|[local::at0051],
-							11|[local::at0052],
-							12|[local::at0053],
-							13|[local::at0054]
+							1|[local::at0060],
+							2|[local::at0061],
+							3|[local::at0062],
+							4|[local::at0063]
+						}
+					}
+					ELEMENT[at0065] occurrences matches {0..1} matches {    -- Tidsperiod under specifik period
+						value matches {
+							DV_DURATION matches {
+								value matches {PMWD/|>=PT0S|}
+							}
 						}
 					}
 					ELEMENT[at0055] occurrences matches {0..1} matches {    -- Kommentar
@@ -50,14 +52,19 @@ definition
 							DV_TEXT matches {*}
 						}
 					}
-					CLUSTER[at0058] occurrences matches {0..*} matches {    -- Per årstid
+					CLUSTER[at0058] occurrences matches {0..*} matches {    -- Per aktivitet
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0059] occurrences matches {0..1} matches {    -- Per årstid
+							ELEMENT[at0045] occurrences matches {0..1} matches {    -- Typ av aktivitet
 								value matches {
-									1|[local::at0060],
-									2|[local::at0061],
-									3|[local::at0062],
-									4|[local::at0063]
+									5|[local::at0046],
+									6|[local::at0047],
+									7|[local::at0048],
+									8|[local::at0049],
+									9|[local::at0050],
+									10|[local::at0051],
+									11|[local::at0052],
+									12|[local::at0053],
+									13|[local::at0054]
 								}
 							}
 							ELEMENT[at0064] occurrences matches {0..1} matches {    -- Aktivitetsfrekvens
@@ -71,30 +78,23 @@ definition
 											["2"] = <
 												units = <"1/wk">
 											>
+											["3"] = <
+												units = <"min/d">
+											>
+											["4"] = <
+												units = <"min/mo">
+											>
 										>
 									>
 								}
 							}
 						}
 					}
-					ELEMENT[at0056] occurrences matches {0..1} matches {    -- Aktivitetspoäng
+					ELEMENT[at0056] occurrences matches {0..1} matches {    -- Summa Aktivitetskalorier/period
 						value matches {
 							DV_COUNT matches {*}
 						}
 					}
-				}
-			}
-			ELEMENT[at0057] occurrences matches {0..1} matches {    -- Kalorier per vecka
-				value matches {
-					DV_COUNT matches {*}
-					C_DV_QUANTITY <
-						
-						list = <
-							["1"] = <
-								units = <"kcal/wk">
-							>
-						>
-					>
 				}
 			}
 		}
@@ -109,7 +109,7 @@ ontology
 					description = <"Activity">
 				>
 				["at0043"] = <
-					text = <"Per typ">
+					text = <"Per period">
 					description = <"*">
 				>
 				["at0045"] = <
@@ -157,19 +157,15 @@ ontology
 					description = <"*">
 				>
 				["at0056"] = <
-					text = <"Aktivitetspoäng">
-					description = <"*">
-				>
-				["at0057"] = <
-					text = <"Kalorier per vecka">
+					text = <"Summa Aktivitetskalorier/period">
 					description = <"*">
 				>
 				["at0058"] = <
-					text = <"Per årstid">
+					text = <"Per aktivitet">
 					description = <"*">
 				>
 				["at0059"] = <
-					text = <"Per årstid">
+					text = <"Per period (kalendarisk)">
 					description = <"*">
 				>
 				["at0060"] = <
@@ -190,6 +186,10 @@ ontology
 				>
 				["at0064"] = <
 					text = <"Aktivitetsfrekvens">
+					description = <"*">
+				>
+				["at0065"] = <
+					text = <"Tidsperiod under specifik period">
 					description = <"*">
 				>
 			>
