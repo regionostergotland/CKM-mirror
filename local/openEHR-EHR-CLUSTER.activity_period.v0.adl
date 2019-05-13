@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5b85a8dede268ce6132aeb9f6e0294b9">
+		["MD5-CAM-1.0.1"] = <"02de70fd6d91ca7f856b5c11701ada10">
 		["build_uid"] = <"45182947-9538-3361-9347-cd804a6959b4">
 	>
 
@@ -40,7 +40,9 @@ definition
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Time interval during a specific period
 				value matches {
-					DV_DURATION matches {*}
+					DV_DURATION matches {
+						value matches {|P1D..P1Y|}
+					}
 				}
 			}
 			CLUSTER[at0003] occurrences matches {0..*} matches {    -- Per activity
@@ -54,7 +56,19 @@ definition
 					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Frequency
 						value matches {
 							C_DV_QUANTITY <
-															>
+								
+								list = <
+									["1"] = <
+										units = <"min/d">
+									>
+									["2"] = <
+										units = <"min/wk">
+									>
+									["3"] = <
+										units = <"min/mo">
+									>
+								>
+							>
 						}
 					}
 				}
@@ -101,7 +115,7 @@ ontology
 				>
 				["at0009"] = <
 					text = <"cykla">
-					description = <"*">
+					description = <"Factor 4">
 				>
 				["at0010"] = <
 					text = <"gå">
