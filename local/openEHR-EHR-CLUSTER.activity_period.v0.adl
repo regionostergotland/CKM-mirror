@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8ea257d0ee2a5ccbb3c5fe982c70d054">
+		["MD5-CAM-1.0.1"] = <"5b85a8dede268ce6132aeb9f6e0294b9">
 		["build_uid"] = <"45182947-9538-3361-9347-cd804a6959b4">
 	>
 
@@ -43,7 +43,7 @@ definition
 					DV_DURATION matches {*}
 				}
 			}
-			CLUSTER[at0003] occurrences matches {0..1} matches {    -- Per activity
+			CLUSTER[at0003] occurrences matches {0..*} matches {    -- Per activity
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Type of activity
 						value matches {
