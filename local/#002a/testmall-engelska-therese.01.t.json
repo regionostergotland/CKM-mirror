@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2f018008a3ebb58f80b9456f3812b1fe",
+      "MD5-CAM-1.0.1" : "daf2e325bff703799136b9d9ee7520df",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -143,21 +143,30 @@
         "referenceType" : "archetypeOverlay"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "EVALUATION",
-        "occurrences" : "0..*",
-        "nodeId" : "at0.11",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-physical_activity_summary-001.v0",
-        "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
         "occurrences" : "0..*",
         "nodeId" : "at0.8",
         "attributes" : [ ],
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1",
+        "referenceType" : "archetypeOverlay"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.13",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "mall-aktivitet0.2",
+        "referenceType" : "templateId"
+      }, {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..*",
+        "nodeId" : "at0.17",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-001.v1",
         "referenceType" : "archetypeOverlay"
       } ]
     } ],
@@ -1945,189 +1954,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "4e43483e-0b7a-423f-8c23-fd2ed6c4e80d",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "164be177b844c262f1fcaaceddf5bf7c"
-      },
-      "details" : {
-        "sv" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "sv"
-          },
-          "purpose" : "Att fånga fysisk aktivitet om en person.",
-          "keywords" : [ "*aktivitet(sv)", "*träning(sv)", "*fysisk(sv)", "*kondition(sv)" ],
-          "use" : "*Use to record a summary of typical, or usual, physical activity of children or adults.\r\n\r\nPlease note: There is some apparent overlap between the 'Physical activity level (PAL) status' data element in this archetype and the 'Physical activity category' data element in OBSERVATION.physical_activity archetype - they both use the same value set. Use this archetype when recording the the typical activity as a summative statement, however if the intent is to record the category at a specified point in time or during a specified period of time then use the equivalent data point in the OBSERVATION.physical_activity.(en)",
-          "misuse" : "Ska inte användas för att en faktisk fysisk aktivitet under en specifik tid - använd OBSERVATION.physical_activity för detta syfte.",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        },
-        "en" : {
-          "@type" : "RESOURCE_DESCRIPTION_ITEM",
-          "language" : {
-            "terminologyId" : {
-              "value" : "ISO_639-1"
-            },
-            "codeString" : "en"
-          },
-          "purpose" : "To record a summary of typical physical activity of an individual.",
-          "keywords" : [ "activity", "exercise", "physical", "fitness" ],
-          "use" : "Use to record a summary of typical, or usual, physical activity of children or adults.\r\n\r\nPlease note: There is some apparent overlap between the 'Physical activity level (PAL) status' data element in this archetype and the 'Physical activity category' data element in OBSERVATION.physical_activity archetype - they both use the same value set. Use this archetype when recording the the typical activity as a summative statement, however if the intent is to record the category at a specified point in time or during a specified period of time then use the equivalent data point in the OBSERVATION.physical_activity.",
-          "misuse" : "Not to be used to record actual physical activity at a specific point in time or during a specified period of time - use OBSERVATION.physical_activity for this purpose.",
-          "copyright" : "© openEHR Foundation",
-          "originalResourceUri" : { },
-          "otherDetails" : { }
-        }
-      }
-    },
-    "parentArchetypeId" : "openEHR-EHR-EVALUATION.physical_activity_summary.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-EVALUATION.ovl-physical_activity_summary-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "EVALUATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0003.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0005.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            }, {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0006.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      }, {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "protocol",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0014",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "0..*",
-              "ordered" : false,
-              "unique" : false
-            },
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0016.1",
-              "attributes" : [ {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "value",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DATE_TIME",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_DATE_TIME",
-                      "rmTypeName" : "DATE_TIME",
-                      "constraint" : [ ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              } ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "sv" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "a46fc4f9-6a92-4391-b124-dd89001a32d6",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Mikael Collin",
-        "organisation" : "Sverige",
-        "email" : "mco@kth.se"
-      },
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "711b8ae7-e7c2-46dc-baf3-7a74540af6e3",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -2139,7 +1965,70 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "896592A7B965B7E11477601557326843"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere resultat, funn og laboratoriets tolkning, av en laboratorieundersøkelse utført på prøvemateriale fra et individ eller relatert til individet.",
+          "keywords" : [ "medisinsk biokjemi", "medisinsk mikrobiologi", "medisinsk genetikk", "klinisk farmakologi", "patologi", "immunologi og transfusjonsmedisin", "laboratorie", "lab", "anatomisk", "prøve", "rettsmedisinsk", "laboratoriemedisin", "generell kjemi", "materiale", "prøvemateriale", "lokalisasjon", "undersøkelse", "analyse", "metode (analysemetode)", "laboratoriespesialitet", "blodprøve", "serum", "plasma", "fullblod", "analytt", "kapillærprøver", "venøse prøver", "arterielle prøver", "prøvetaking", "immunopatologi", "cytologi", "histopatologi", "biopsi", "preparat", "immunhistokjemi", "immuncytokjemi", "molekylærgenetiske analyser", "histologi", "cytologi", "cervixcytologi", "obduksjon", "flowcytometri", "molekylær patologi", "elektronmikroskopi", "neuropatologi", "frysesnitt", "punksjonscytologi", "makrobeskjæring", "makroskopisk undersøkelse", "mikrobiologi", "bakteriologi", "virologi", "serologi", "molekylærdiagnostikk", "parasittologi", "mykologi", "protozologi", "immunologi", "medisinsk immunologi", "transfusjonsmedisin", "immunhematologi", "transplantasjonsimmunologi", "cellulær immunologi", "ex vivo cellelaboratorium", "hormonanalyser", "endokrinologi", "blodbank", "blodkomponenter", "hematologi", "kjemisk", "klinisk", "kjemi", "klinisk kjemi", "klinisk biokjemi", "metabolsk molekylærbiologi", "homeostase og trombose", "koagulasjon", "klinisk farmakologi", "farmakologi", "doping analyser", "klinisk fysiologi", "toksikologi", "rusmiddelanalyse", "misbruksdiagnostikk", "genetisk", "genetikk", "HTS-diagnostikk", "genpaneler", "farmakogenetikk", "cancer cytogenetikk", "preparat", "rettsmedisinsk" ],
+          "use" : "Brukes for å registrere resultat, funn og laboratoriets tolkning, av en laboratorieundersøkelse utført på prøvemateriale fra et individ eller relatert til individet. Dette utføres typisk i et laboratorium, men kan også gjøres i andre miljøer, som for eksempel ved pasientnær analysering.\r\n\r\nDenne arketypen er ment å dekke resultatet av én rekvirert undersøkelse der prøvene er tatt i én prosedyre, og som kan ha flere analyseresultater eller andre komponenter. Eksempler på dette kan være \"Differensialtelling av leukocytter\", som gir et separat resultat for antallet av hver type hvite blodceller, eller \"Nyrebiopsi ikke-neoplastisk\", som gir resultater fra mikroskopi, immunohistokjemi og elektronmikroskopi.\r\n\r\nDenne arketypen er laget for å være et rammeverk som vanligvis vil utvides med CLUSTER-arketyper for å få en hensiktsmessig registrering og rapportering av spesifikke mønstre for laboratorieresultater. Dette kan omfatte analyser og undersøkelser innen kjemi (medisinsk biokjemi, hematologi, immunologi og transfusjonsmedisin, med mer), samt spesifikke mønstre for de unike behovene innenfor mikrobiologi og patologi. Hvis de rekvirerte analysene eller undersøkelsene ikke tilhører en navngitt gruppe, vil hvert resultat normalt representeres ved en separat instans av denne arketypen. Imidlertid er det stor variasjon på hvordan svarrapportering/meldingsformidling skjer, og denne arketypen er designet for å ivareta disse variasjonene.\r\n\r\nDenne arketypen støtter flere tilnærminger til å registrere informasjon om prøvematerialet, noe som reflekterer de store variasjonene innenfor dagens praksis. Laboratoriesvar-arketypen har høy grad av samsvar med HL7 FHIR-ressursen \"Diagnostic Report\".\r\n\r\nDet forventes at en eller flere instanser av denne arketypen, eller arketypefamilen vil bli sendt tilbake til rekvirenten i en laboratoriesvarrapport, for eksempel i arketypen COMPOSITION.report_result eller tilsvarende, og sammen med relevante ENTRY-arketyper.\r\n\r\nRegistrering av konfunderende faktorer gjøres i praksis ikke på en konsistent måte, og avhenger av avsenderlaboratoriet og av den kliniske informasjonen som ble sendt med fra rekvirenten. I \"State\"-delen av arketypen er det et valgfritt og repeterbart element for \"Konfunderende faktorer\" som kan brukes til å registrere enkle faktorer, som fordi de kan påvirke tolkningen av resultatet må registreres eksplisitt. Dersom de konfunderende faktorene er mer komplekse kan det være hensiktsmessig å lage en CLUSTER-arketype som kan brukes i SLOTet \"Strukturerte konfunderende faktorer\".\r\nNB 1: Kjente eller nødvendige forutsetninger, som for eksempel \"fastende\" eller \"dag 1 av menstruasjonssyklusen\" bør registreres i elementet \"Prøvetakingsforhold\" i arketypen CLUSTER.specimen, og nøstes inn i denne OBSERVATION-arketypen.\r\nNB 2: Kjente problemer med prøvetaking eller prøvehåndtering, som for eksempel \"hemolyse\" eller \"forlenget stase\" bør registreres i elementet \"Prøvekvalitet\" i arketypen CLUSTER.specimen, og nøstes inn i denne OBSERVATION-arketypen.\r\n\r\nDer laboratoriet endrer analyser eller legger til analyser som oppfølging, kan disse håndteres etter veilledning fra HL7 FHIR (https://www.hl7.org/fhir/2015may/uslabreport-guide.html), eller etter lokale prosedyrer. For eksempel en av følgende:\r\n1. Registrer de endrede analysene/tilleggsanalysene innenfor samme instans av denne arketypen.\r\n2. Registrer de endrede analysene/tilleggsanalysene i en ny instans av denne arketypen, men referer til den opprinnelige rekvisisjonen ved hjelp av \"Rekvisisjonsdetaljer\".\r\n3. Registrer de endrede analysene/tilleggsanalysene i en ny instans av denne arketypen, men referer til en ny rekvisisjon i tillegg til den opprinnelige rekvisisjonen, ved hjelp av \"Rekvisisjonsdetaljer\".",
+          "misuse" : "Skal ikke brukes for å lagre en sammenstilling etter obduksjon eller rettsmedisinsk undersøkelse, selv om prøver av noen prøvematerialer som blir tatt i en obduksjon kan bli representert i denne arketypen. For å lage selve obduksjons- eller den rettsmedisinske rapporten må man bruke spesialiserte arketyper.\r\n\r\nDenne arketypen er passende for å representere generelle laboratoriesvar, men er ikke ment å dekke komplette sammendragsrapporter (\"synoptic reports\") innenfor patologi. For disse trengs det i tillegg spesialiserte arketyper.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.\r\nو يمثل هذا النموذج كوالد (أب) للتخصيصات الأخرى لاختبارات معملية أكثر تحديدا مثل الميكروبيولوجيا و الهيستوباثولوجيا.",
+          "keywords" : [ "المعمل - المختبر", "الباثولوجيا - المرضية", "الكيمياء الحيوية", "الدمويات", "الميكروبيولوجيا", "المناعيات - علم المناعة" ],
+          "use" : "قد يستخدم لتسجيل نتيجة اختبار المعمل, و التي قد يتم استخدامها لتسجيل اختبار ذي قيمة واحدة, و عادة ما يتم بعد ذلك المزيد من التخصيص أو الوضع في قالب لتمثيل اختبار متعدد القيم أو رتل من الاختبارات.\r\n\r\nيتم بعد ذلك تقديم التقرير للطبيب السريري الذي قام بطلب الاختبار في سياق تقرير معملي متكامل.",
+          "misuse" : "قد تكون التخصيصات أكثر مناسبة للتقارير المركبة مثل حالات الميكروبيولوجيا أو الهيستوباثولوجيا.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual.",
+          "keywords" : [ "lab", "pathology", "biochemistry", "haematology", "microbiology", "immunology", "laboratory", "anatomical", "chemical", "clinical", "immunopathology", "cytology", "histopathology", "test", "biopsy", "specimen", "forensic", "genetic", "laboratory medicine", "results", "analysis" ],
+          "use" : "Use to record the result, including findings and the laboratory's interpretation, of an investigation performed on specimens collected from an individual or related to that individual. This is typically done in a laboratory, but may be done in other environments such as at the point of care.\r\n\r\nThis archetype is intended to cover the result of a single ordered investigation where the specimen(s) are collected as a single procedure, and may include multiple analyte results or other components. Examples of this could include 'Full blood count', which would yield a separate analyte result for the count of each type of blood cell, or 'kidney biopsy non-neoplastic', which would yield findings from microscopy, immunohistochemistry and electron microscopy.\r\n\r\nThis archetype has been designed to be a framework that will usually be extended with CLUSTER archetypes to enable appropriate recording of specific laboratory test result patterns. This includes, but is not limited to, tests for biochemistry, haematology, immunology and transfusion services etc and specific patterns for the unique requirements for microbiology and anatomical pathology. If the ordered tests or investigations do not commonly belong together in a named group or panel, each test result would normally be represented using separate instances of this archetype. There is, however, considerable variation in actual reporting/messaging practice and this archetype/related archetypes are designed to handle such variation.\r\n\r\nThis archetype supports multiple approaches to recording of specimen, reflecting current practice which varies enormously. A Laboratory test result has a high degree of alignment to an HL7 FHIR Diagnostic Report resource.\r\n\r\nIt is anticipated that one or more instances of this archetype, or archetype family, will be sent back to a requesting clinician within a laboratory report document comprising COMPOSITION.report_result archetype, or similar, and other relevant ENTRY archetypes.\r\n\r\nThe recording of confounding factors may be inconsistent, often depending on the analysing laboratory and on clinical information sent by the requester. In the State section of the archetype there is a simple 'Confounding factors' data element that is optional and can be repeated as one way to record a variety of simple factors that need to be made explicit as they may influence interpretation of the results. If the confounding factors are more complex, it may be appropriate to create a local/shared CLUSTER archetype that can be nested in the 'Confounding factors details' SLOT. \r\nNote 1: Known or required pre-conditions, such as 'fasting' or 'Day 1 of menstrual cycle', should be reported in the 'Sampling conditions' data element in the CLUSTER.specimen archetype, nested within this OBSERVATION archetype.\r\nNote 2: Known issues with specimen collection or handling, such as 'sample haemolysed' or 'prolonged use of tourniquet' should be reported within 'Specimen quality' in the CLUSTER.specimen archetype, nested within this OBSERVATION archetype.\r\n\r\nWhere 'reflex tests' are performed by the laboratory, these may be handled as per US/FHIR guidance (see https://www.hl7.org/fhir/2015may/uslabreport-guide.html) or other local policy. For example, one of the following ...\r\n1. Record the reflex test results additional 'Test findings' within the same 'openEHR-EHR-OBSERVATION.laboratory_test_result'\r\n2. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but refer to the original lab test request via 'Test request details'.\r\n3. Record the reflex test results as 'Test findings' within a new 'openEHR-EHR-OBSERVATION.laboratory_test_result' but reference a new lab test request as well as the original lab test request via 'Test request details'.",
+          "misuse" : "Not to be used to record an Autopsy or a Forensic report, although tests on some specimens that are taken in such situations may be represented using this archetype. For these, additional or specialised archetypes will be required to represent the data.\r\n\r\nThis archetype is suitable for representation of general laboratory test results, but not intended to cover full synoptic reports. For these, additional specialising archetypes are required to represent the data.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "zh-cn" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "zh-cn"
+          },
+          "purpose" : "用于记录针对组织和体液等标本所进行的病理学实验室检验项目的发现/所见和解释。这通常是由实验室来完成，但也可能会是在其他环境下完成的，如床旁。",
+          "keywords" : [ "实验室", "医学实验室", "临床实验室", "中心实验室", "检验科", "化验室", "化验科", "病理学", "检验医学", "检验", "医学检验", "临床检验医学", "临床检验", "生物化学", "生化", "血液学", "微生物学", "免疫学", "解剖学", "化学", "临床", "免疫病理学", "细胞学", "组织病理学", "试验", "试验项目", "检验项目", "化验项目", "报告项目", "活组织检查", "活检", "标本", "样本", "样品", "试样", "法医学", "遗传学" ],
+          "use" : "用于记录任何病理学实验室检验结果，包括作为某个组合型操作项目或手术的组成部分而进行的针对某种标本的某一检验项目所获得的结果。\r\n\r\n可以采用模板或专用原始型来表达多种分析物的组套。\r\n\r\n对于那些需要额外报告内容的，诸如组织病理学或微生物学之类较为复杂的检验项目，则应当采用专用的原始型来表达。\r\n\r\n实验室检验报告与HL7 FHIR 诊断报告资源DiagnosticReport之间具有高度的一致性。\r\n\r\n在完整的基于组合式文档的报告的背景下，通常会作为一个构成要素，回报给申请医生。",
+          "misuse" : "并非旨在用于报告非病理学检验结果，如影像学诊断、心电图或呼吸功能试验。\r\n\r\n并非旨在用于表达完整的累积型报告。当前这一实验室检验结果原始型表达的仅仅是，累积型检验项目报告之中通常被视为纵列的结果集合之一。累积型报告是一种视图，是利用由多个观测指标OBSERVATION原始型所表示的结果构建而成。\r\n\r\n并非旨在用于记录活组织检查报告，尽管可以采用此原始型来表示，针对活组织检查时所采集标本进行的检验项目。\r\n\r\n此原始型适合于表达一般性的病理学检验结果，但并未打算涵盖完整的提要式报告。对于此类报告，则需要采用额外的特化性原始型来表达相应的数据。\r\n\r\n此原始型在设计上已经支持临床病理学，但可能并不适合于其他种类的病理学用途。",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -2406,7 +2295,70 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "1D7F193B80F5A6C248478AB8E9E29B05"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Dient zur Erfassung von Einzelresultaten für Labortest-Analyte, die in der klinischen Diagnostik verbreitet sind, wie z. B. biochemische, hämatologische, immunologische und transfusionsmedizinische Tests.",
+          "keywords" : [ "Labor", "Pathologie", "Analyt", "Bestandteil", "Ergebnis" ],
+          "use" : "Dient zur Erfassung von Einzelresultaten für Labortest-Analyte, die in der klinischen Diagnostik verbreitet sind, wie z. B. biochemische, hämatologische, immunologische und transfusionsmedizinische Tests. Diese können auch in  anatomisch-pathologischen Berichten als 'zusätzliche Untersuchungen' vorkommen.\r\n \r\nEine oder mehrere Instanzen dieses Archetyps können im 'test results' SLOT in OBSERVATION.laboratory_test_result verschachtelt werden.\r\n\r\nUnter Umständen kann dieser Archetyp in einem  CLUSTER.laboratory_test_panel Archetypen verwendet werden - zusammen mit andere Analyten, die normalerweise als Teil eine Panels oder Profils getestet und/oder befundet werden.\r\n\r\nDieser Archetyp kann im Rahmen einer komplexerem Labor/Pathologie-Befundung, z.B. in anatomisch-pathologischen Befunden verwendet werden, in denen oft quantitative Resultate, wie Durchfluss-Zytometrie-Analysen neben den üblichen makroskopischen und mikroskopischen Ergebnissen dokumentiert werden.\r\n",
+          "misuse" : "Sollte nicht zur Befundung von anatomisch-pathologischen makroskopischen/mikroskopischen Ergebnissen verwendet werden, es sei denn für zusätzliche Tests, wie Durchfluss-Zytometrie-Analysen.\r\n\r\nSollte nicht zur Befundung von mikrobiologischen Ergebnissen verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere ett enkelt laboratorieresultat innenfor områder som medisinsk biokjemi, hematologi, immunologi og transfusjonsmedisin.",
+          "keywords" : [ "laboratorie", "analytt", "analyse", "svar", "resultat" ],
+          "use" : "For å registrere ett enkelt laboratorieresultat innenfor områder som medisinsk biokjemi, hematologi, immunologi og transfusjonsmedisin. Arketypen kan også brukes til tilleggsundersøkelser innenfor patologi.\r\n\r\nEn eller flere instanser av denne arketypen kan nøstes i SLOTet \"Undersøkelsesresultat\" i arketypen OBSERVATION.laboratory_test_result.\r\n\r\nI noen sammenhenger kan denne arketypen brukes i arketypen CLUSTER.laboratory_test_panel, sammen med andre analytter som vanligvis utføres sammen som del av en analysegruppe.\r\n\r\nDenne arketypen kan brukes innenfor mer komplekse laboratorie/patologirapporter der kvantitative svar som for eksempel flowcytometri rapporteres sammen med konvensjonelle makroskopiske og mikroskopiske undersøkelser.",
+          "misuse" : "Skal ikke brukes til å registrere funn ved patologiundersøkelser, annet enn for tilleggsundersøkelser som flowcytometri.\r\n\r\nSkal ikke brukes til å registrere mikrobiologiresultater.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia.\r\n",
+          "keywords" : [ "laboratório", "patologia", "analito", "componente", "resultado" ],
+          "use" : "Para gravar valores únicos e individuais de resultados laboratoriais de analitos comuns a testes patológicos clínicos como bioquímica, hematologia e imunologia. Normalmente usados conjuntamente com o arquétipo parental OBSERVATION.laboratory_test_result e em algumas circunstâncias será carregado dentro de um arquétipo CLUSTER.laboratory_test_panel, junto com outros analitos que são normalmente testados e/ou reportados como parte de uma bateria, painel e perfil, embora não seja necessário e.e múltiplos analitos podem ser carregados diretamente dentro do OBSERVATION.laboratory_test.\r\n\r\nO atributo do nome do elemento \"Resultado do analito\" é normalmente substituído em uma especialização, template ou em tempo de execução para carregar o nome do analito específico, p.e., \"hemoglobina\", frequentemente codificado com uma terminologia de referência como LOINC, SNOMED CT ou NPU.\r\n\r\nEste arquétipo pode ser usado dentro do contexto de relatórios laboratoriais/de patologia mais complexos como em relatórios de histopatologia/anatomia onde resultados quantitativos como de estudos de citometria de fluxo e testes genéticos são frequentemente reportados junto com relatórios macroscópicos e microscópicos convencionais.",
+          "misuse" : "Não deve ser usado para gravar achados detalhados de anatomia patológica macroscópica/microscópica, exceto para testes adicionais de estudos de citometria de fluxo ou testes genéticos.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a single value laboratory analyte result, commonly found in clinical pathology testing such as medical biochemistry, haematology, immunology and transfusion medicine.",
+          "keywords" : [ "laboratory", "pathology", "analyte", "constituent", "result" ],
+          "use" : "Use to record a single value laboratory analyte result, commonly found in clinical pathology testing such as medical biochemistry, haematology, immunology and transfusion medicine. They may also be found in anatomical pathology reports as 'ancillary tests'.\r\n\r\nOne or more instances of this archetype may be nested within the 'Test result' SLOT in the OBSERVATION.laboratory_test_result. \r\n\r\nIn some circumstances this archetype may be carried within a CLUSTER.laboratory_test_panel archetype, together with other analytes which are normally tested and/or reported as part of a battery, panel or profile. \r\n\r\nThis archetype may be used within the setting of more complex laboratory/pathology reporting such as anatomical pathology reports where quantitative results such as cytometric flow studies are often reported alongside conventional macroscopic and microscopic reporting.",
+          "misuse" : "Not to be used to record anatomical pathology macroscopic/microscopic findings, other than for additional testing such as cytometric flow studies.\r\n\r\nNot to be used to record results for microbiological findings.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -2757,6 +2709,614 @@
         "email" : "contato@coreconsulting.com.br"
       },
       "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "9fce48e2-02cd-4f70-b593-18d5ff803396",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "7B6BE4356B9A795A14047F9F42630EB6"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-adhoc-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "0..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "INSTRUCTION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-INSTRUCTION.ovl-informed_consent_request-002.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-informed_consent-001.v0",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..*",
+          "nodeId" : "at0.6",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-physical_activity-001.v0",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "ru" : { },
+        "es-ar" : { },
+        "sl" : { },
+        "nb" : { },
+        "pt-br" : { },
+        "sv" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "e93280ba-b144-4794-af18-e479b8431ca5",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Daniel Hall",
+        "organisation" : "Region Östergötland",
+        "email" : "daniel.hall@regionostergotland.se"
+      },
+      "accreditation" : "Åsa Skagerhult, Lisa Axelsson",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "a81ab255-6ae3-4831-80ac-cffa969fb6ae",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "F8889872054B903549DD5B0F5AD76974"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-INSTRUCTION.informed_consent_request.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-INSTRUCTION.ovl-informed_consent_request-002.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "INSTRUCTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "dc09801c-33e7-4ea7-88a8-7337fc6176df",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "771888fb-fc4b-41f3-b2a9-39ea21460c72",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "946987A1D182E9C9FEE624EF6065E29D"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ACTION.informed_consent.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ACTION.ovl-informed_consent-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ACTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { },
+        "ru" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "faa091cc-551b-43cb-9068-60ff719a25e6",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp; Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех"
+      },
+      "accreditation" : "hmm",
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "23a0b689-18cc-45af-bba8-06a391ad11e1",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "3AFADE25D0EE7E029ECDA5583F77B552"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.physical_activity.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-physical_activity-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_ARCHETYPE_ROOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..*",
+              "nodeId" : "at0021.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ],
+              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-device-001.v1",
+              "referenceType" : "archetypeOverlay"
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "51488703-f955-4f61-a27d-e6aecbf93fe8",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "E4E11C034E29C626B3B3A8448D2CB86C"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.device.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-device-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "CLUSTER",
+          "occurrences" : "0..*",
+          "nodeId" : "at0019.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-device_details-001.v1",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "المُصَنِّع",
+            "description" : "اسم المُصَنِّع"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "رقم التشغيلة",
+            "description" : "رقم التشغيلة من المُصَنِّع"
+          }
+        },
+        "en" : { },
+        "es-ar" : { },
+        "pt-br" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "2a8b319e-fe20-490b-9b6e-728c0f87858e",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina",
+        "email" : "amarch@cas.austral.edu.ar"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital",
+        "email" : "lbla@helse-bergen.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Osmeire Chamelette Sanzovo",
+        "organisation" : "Hospital Sírio Libanês - SP",
+        "email" : "osmeire.acsanzovo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "4aa44076-ec02-4e40-b774-2e7099224c6a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "C9F9BBE3231A684F081712B4B291C709"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.device_details.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-device_details-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : { },
+        "es-ar" : { },
+        "en" : { },
+        "nb" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "rmName" : "openehr",
+    "rmRelease" : "1.0.3",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Lars Bitsch-Larsen",
+        "organisation" : "Haukeland University Hospital of Bergen, Norway"
+      },
+      "accreditation" : "MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
       "otherDetails" : { }
     } ]
   } ],
