@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "5775540c0ec9f60a93077694d6ef0c7e",
+      "MD5-CAM-1.0.1" : "6f1572e2891ea61e0a496da014d25a19",
       "PARENT:MD5-CAM-1.0.1" : "D37A37F4C4CB98ACBBBD6A5F70A5D9AA"
     },
     "details" : {
@@ -265,6 +265,49 @@
         } ],
         "attributeTuples" : [ ]
       } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "protocol",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "ITEM_TREE",
+        "nodeId" : "at0012",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "items",
+          "cardinality" : {
+            "@type" : "CARDINALITY",
+            "interval" : "0..*",
+            "ordered" : false,
+            "unique" : false
+          },
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ELEMENT",
+            "nodeId" : "at0013.1",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "value",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "DV_TIME",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "children" : [ {
+                    "@type" : "C_TIME",
+                    "rmTypeName" : "DATE_TIME",
+                    "constraint" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
     } ],
     "attributeTuples" : [ ]
   },
@@ -327,7 +370,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BA460F7169F56456994D04920A7F54CF"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about the nutrients consumed by an individual for nourishment.",
+          "keywords" : [ "nutrients", "diet" ],
+          "use" : "Use to record information about the nutrients consumed by an individual for nourishment.\r\n\r\nThis archetype has been designed to capture measurements about the consumption of the common groupings of nutrients. Add CLUSTER.macronutrients and CLUSTER.micronutrients into the 'Details' SLOT in a template in order to record consumption measurements for specific nutrients.",
+          "misuse" : "No to be used to record measurements of vitamins and minerals in blood analyses - use the OBSERVATION.laboratory_test for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.dietary_nutrients.v0",
     "differential" : true,
@@ -707,7 +767,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CDA06FE00BB25C035338B234B56A52AF"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the nutrients that are consumed in the largest quantities.",
+          "keywords" : [ "nutrients", "diet", "lipids", "carbohydrates", "protein" ],
+          "use" : "Use to record details about the nutrients that are consumed in the largest quantities.\r\n\r\nThis archetype has been designed to be used within the 'Details' SLOT in the OBSERVATION.dietary_nutrients archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.macronutrients.v0",
     "differential" : true,
@@ -758,7 +834,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F51CA0B5EAB42027E8444490818056B7"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the nutrients that are required in trace amounts.",
+          "keywords" : [ "nutrients", "diet", "vitamins", "minerals" ],
+          "use" : "Use to record the nutrients that are required in trace amounts.\r\n\r\nThis archetype has been designed to be used within the 'Details' SLOT in the OBSERVATION.dietary_nutrients archetype.",
+          "misuse" : "No to be used to record measurements of vitamins and minerals in blood analyses - use the OBSERVATION.laboratory_test for this purpose.\r\n\r\nNot to be used to record the the ordering or administration of dietary supplements - use Medication-related archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.micronutrients.v0",
     "differential" : true,
@@ -809,7 +902,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CDA06FE00BB25C035338B234B56A52AF"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the nutrients that are consumed in the largest quantities.",
+          "keywords" : [ "nutrients", "diet", "lipids", "carbohydrates", "protein" ],
+          "use" : "Use to record details about the nutrients that are consumed in the largest quantities.\r\n\r\nThis archetype has been designed to be used within the 'Details' SLOT in the OBSERVATION.dietary_nutrients archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.macronutrients.v0",
     "differential" : true,
@@ -860,7 +969,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F51CA0B5EAB42027E8444490818056B7"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the nutrients that are required in trace amounts.",
+          "keywords" : [ "nutrients", "diet", "vitamins", "minerals" ],
+          "use" : "Use to record the nutrients that are required in trace amounts.\r\n\r\nThis archetype has been designed to be used within the 'Details' SLOT in the OBSERVATION.dietary_nutrients archetype.",
+          "misuse" : "No to be used to record measurements of vitamins and minerals in blood analyses - use the OBSERVATION.laboratory_test for this purpose.\r\n\r\nNot to be used to record the the ordering or administration of dietary supplements - use Medication-related archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.micronutrients.v0",
     "differential" : true,
@@ -911,7 +1037,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BA460F7169F56456994D04920A7F54CF"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about the nutrients consumed by an individual for nourishment.",
+          "keywords" : [ "nutrients", "diet" ],
+          "use" : "Use to record information about the nutrients consumed by an individual for nourishment.\r\n\r\nThis archetype has been designed to capture measurements about the consumption of the common groupings of nutrients. Add CLUSTER.macronutrients and CLUSTER.micronutrients into the 'Details' SLOT in a template in order to record consumption measurements for specific nutrients.",
+          "misuse" : "No to be used to record measurements of vitamins and minerals in blood analyses - use the OBSERVATION.laboratory_test for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.dietary_nutrients.v0",
     "differential" : true,
@@ -1291,7 +1434,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CDA06FE00BB25C035338B234B56A52AF"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the nutrients that are consumed in the largest quantities.",
+          "keywords" : [ "nutrients", "diet", "lipids", "carbohydrates", "protein" ],
+          "use" : "Use to record details about the nutrients that are consumed in the largest quantities.\r\n\r\nThis archetype has been designed to be used within the 'Details' SLOT in the OBSERVATION.dietary_nutrients archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.macronutrients.v0",
     "differential" : true,
@@ -1342,7 +1501,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F51CA0B5EAB42027E8444490818056B7"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the nutrients that are required in trace amounts.",
+          "keywords" : [ "nutrients", "diet", "vitamins", "minerals" ],
+          "use" : "Use to record the nutrients that are required in trace amounts.\r\n\r\nThis archetype has been designed to be used within the 'Details' SLOT in the OBSERVATION.dietary_nutrients archetype.",
+          "misuse" : "No to be used to record measurements of vitamins and minerals in blood analyses - use the OBSERVATION.laboratory_test for this purpose.\r\n\r\nNot to be used to record the the ordering or administration of dietary supplements - use Medication-related archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.micronutrients.v0",
     "differential" : true,
@@ -1393,7 +1569,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BA460F7169F56456994D04920A7F54CF"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about the nutrients consumed by an individual for nourishment.",
+          "keywords" : [ "nutrients", "diet" ],
+          "use" : "Use to record information about the nutrients consumed by an individual for nourishment.\r\n\r\nThis archetype has been designed to capture measurements about the consumption of the common groupings of nutrients. Add CLUSTER.macronutrients and CLUSTER.micronutrients into the 'Details' SLOT in a template in order to record consumption measurements for specific nutrients.",
+          "misuse" : "No to be used to record measurements of vitamins and minerals in blood analyses - use the OBSERVATION.laboratory_test for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.dietary_nutrients.v0",
     "differential" : true,
@@ -1773,7 +1966,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "CDA06FE00BB25C035338B234B56A52AF"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about the nutrients that are consumed in the largest quantities.",
+          "keywords" : [ "nutrients", "diet", "lipids", "carbohydrates", "protein" ],
+          "use" : "Use to record details about the nutrients that are consumed in the largest quantities.\r\n\r\nThis archetype has been designed to be used within the 'Details' SLOT in the OBSERVATION.dietary_nutrients archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.macronutrients.v0",
     "differential" : true,
@@ -1824,7 +2033,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F51CA0B5EAB42027E8444490818056B7"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the nutrients that are required in trace amounts.",
+          "keywords" : [ "nutrients", "diet", "vitamins", "minerals" ],
+          "use" : "Use to record the nutrients that are required in trace amounts.\r\n\r\nThis archetype has been designed to be used within the 'Details' SLOT in the OBSERVATION.dietary_nutrients archetype.",
+          "misuse" : "No to be used to record measurements of vitamins and minerals in blood analyses - use the OBSERVATION.laboratory_test for this purpose.\r\n\r\nNot to be used to record the the ordering or administration of dietary supplements - use Medication-related archetypes for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.micronutrients.v0",
     "differential" : true,
@@ -1875,7 +2101,24 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "BA460F7169F56456994D04920A7F54CF"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record information about the nutrients consumed by an individual for nourishment.",
+          "keywords" : [ "nutrients", "diet" ],
+          "use" : "Use to record information about the nutrients consumed by an individual for nourishment.\r\n\r\nThis archetype has been designed to capture measurements about the consumption of the common groupings of nutrients. Add CLUSTER.macronutrients and CLUSTER.micronutrients into the 'Details' SLOT in a template in order to record consumption measurements for specific nutrients.",
+          "misuse" : "No to be used to record measurements of vitamins and minerals in blood analyses - use the OBSERVATION.laboratory_test for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.dietary_nutrients.v0",
     "differential" : true,
@@ -2200,7 +2443,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
+          "occurrences" : "0..0",
           "nodeId" : "at0014.1",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2209,7 +2452,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "CLUSTER",
-          "occurrences" : "0..*",
+          "occurrences" : "0..0",
           "nodeId" : "at0014.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
