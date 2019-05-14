@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "86c6a4ce781967e54d1b39087dec4e8e",
+      "MD5-CAM-1.0.1" : "b68224f25aadd23bd7b3101b061d6043",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -150,15 +150,6 @@
         "attributeTuples" : [ ],
         "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-002.v1",
         "referenceType" : "archetypeOverlay"
-      }, {
-        "@type" : "C_ARCHETYPE_ROOT",
-        "rmTypeName" : "OBSERVATION",
-        "occurrences" : "0..0",
-        "nodeId" : "at0.13",
-        "attributes" : [ ],
-        "attributeTuples" : [ ],
-        "archetypeRef" : "mall-aktivitet0.2",
-        "referenceType" : "templateId"
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
@@ -2877,7 +2868,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "INSTRUCTION",
-          "occurrences" : "0..*",
+          "occurrences" : "0..0",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2886,7 +2877,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "ACTION",
-          "occurrences" : "0..*",
+          "occurrences" : "0..0",
           "nodeId" : "at0.4",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -2895,7 +2886,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
-          "occurrences" : "0..*",
+          "occurrences" : "0..0",
           "nodeId" : "at0.6",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -3818,7 +3809,7 @@
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "OBSERVATION",
-          "occurrences" : "0..*",
+          "occurrences" : "0..0",
           "nodeId" : "at0.4",
           "attributes" : [ ],
           "attributeTuples" : [ ],
