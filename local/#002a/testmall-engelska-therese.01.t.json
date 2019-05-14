@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "7dc3ca51ea56e7317828e7eb16d232f7",
+      "MD5-CAM-1.0.1" : "86c6a4ce781967e54d1b39087dec4e8e",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -181,11 +181,11 @@
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "OBSERVATION",
         "occurrences" : "0..*",
-        "nodeId" : "at0.21",
+        "nodeId" : "at0.23",
         "attributes" : [ ],
         "attributeTuples" : [ ],
-        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-physical_activity-002.v0",
-        "referenceType" : "archetypeOverlay"
+        "archetypeRef" : "mall-aktivitet0.3",
+        "referenceType" : "templateId"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -6697,164 +6697,6 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "d105d2be-46fd-4e8a-972b-ce8d288c0d24",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "e142b442-3df5-4312-97ec-899a10a05cb8",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "3AFADE25D0EE7E029ECDA5583F77B552"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.physical_activity.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-physical_activity-002.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "OBSERVATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "data",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "HISTORY",
-          "nodeId" : "at0001",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "events",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "1..*",
-              "ordered" : false,
-              "unique" : false
-            },
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "occurrences" : "0..0",
-              "nodeId" : "at0002.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      }, {
-        "@type" : "C_ATTRIBUTE",
-        "rmAttributeName" : "protocol",
-        "children" : [ {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ITEM_TREE",
-          "nodeId" : "at0006",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "items",
-            "cardinality" : {
-              "@type" : "CARDINALITY",
-              "interval" : "1..*",
-              "ordered" : false,
-              "unique" : false
-            },
-            "children" : [ {
-              "@type" : "C_ARCHETYPE_ROOT",
-              "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..*",
-              "nodeId" : "at0021.1",
-              "attributes" : [ ],
-              "attributeTuples" : [ ],
-              "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-activity_period-001.v0",
-              "referenceType" : "archetypeOverlay"
-            } ]
-          } ],
-          "attributeTuples" : [ ]
-        } ]
-      } ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b",
-    "rmName" : "openehr",
-    "rmRelease" : "1.0.3",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "506047c8-a8f2-4cb0-a28b-ecfbd30dc2f9",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "16f3d2a00ea7f679684867ff1bfa6cfb"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-CLUSTER.activity_period.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-CLUSTER.ovl-activity_period-001.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "CLUSTER",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "45182947-9538-3361-9347-cd804a6959b4",
     "rmName" : "openehr",
     "rmRelease" : "1.0.3",
     "generated" : true,
