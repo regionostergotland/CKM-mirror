@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "2a9327c4d49d2d7a5f0e441bf2be0e65",
+      "MD5-CAM-1.0.1" : "22ebb1941b6496843afe48170362ba0c",
       "PARENT:MD5-CAM-1.0.1" : "D37A37F4C4CB98ACBBBD6A5F70A5D9AA"
     },
     "details" : {
@@ -99,7 +99,7 @@
             "attributeTuples" : [ ]
           }, {
             "@type" : "C_COMPLEX_OBJECT",
-            "rmTypeName" : "INTERVAL_EVENT",
+            "rmTypeName" : "EVENT",
             "nodeId" : "at0015.1",
             "attributes" : [ {
               "@type" : "C_ATTRIBUTE",
@@ -134,30 +134,6 @@
                     "attributeTuples" : [ ],
                     "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-dietary_nutrients-001.v0",
                     "referenceType" : "archetypeOverlay"
-                  } ]
-                } ],
-                "attributeTuples" : [ ]
-              } ]
-            }, {
-              "@type" : "C_ATTRIBUTE",
-              "rmAttributeName" : "width",
-              "children" : [ {
-                "@type" : "C_COMPLEX_OBJECT",
-                "rmTypeName" : "DV_DURATION",
-                "attributes" : [ {
-                  "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "value",
-                  "children" : [ {
-                    "@type" : "C_DURATION",
-                    "rmTypeName" : "DURATION",
-                    "constraint" : [ {
-                      "lower" : "PT1S",
-                      "upper" : "PT1S",
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : false,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : true
-                    } ]
                   } ]
                 } ],
                 "attributeTuples" : [ ]
