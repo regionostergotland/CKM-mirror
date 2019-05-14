@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "d5b1bc9aff3e6f456fa1af8e8d7e5185",
+      "MD5-CAM-1.0.1" : "5a602c9777de0d6de736cd5c7b8fb596",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -162,7 +162,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
-        "occurrences" : "0..*",
+        "occurrences" : "0..0",
         "nodeId" : "at0.17",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -171,7 +171,7 @@
       }, {
         "@type" : "C_ARCHETYPE_ROOT",
         "rmTypeName" : "SECTION",
-        "occurrences" : "0..*",
+        "occurrences" : "0..0",
         "nodeId" : "at0.19",
         "attributes" : [ ],
         "attributeTuples" : [ ],
@@ -5071,7 +5071,285 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
               "nodeId" : "at0116.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0117.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "CLUSTER",
+          "nodeId" : "at0006",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "nodeId" : "at0014",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "items",
+                "cardinality" : {
+                  "@type" : "CARDINALITY",
+                  "interval" : "1..*",
+                  "ordered" : false,
+                  "unique" : false
+                },
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0018.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_QUANTITY",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "property",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "openehr"
+                          },
+                          "constraint" : [ "124" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ {
+                        "@type" : "C_ATTRIBUTE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "units",
+                          "children" : [ ]
+                        }, {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "magnitude",
+                          "children" : [ ]
+                        } ],
+                        "tuples" : [ {
+                          "@type" : "C_PRIMITIVE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
+                            "constraint" : [ "mg" ]
+                          }, {
+                            "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
+                            "constraint" : [ {
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : false,
+                              "lowerIncluded" : false,
+                              "upperIncluded" : false
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0017.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_QUANTITY",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "property",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "openehr"
+                          },
+                          "constraint" : [ "124" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ {
+                        "@type" : "C_ATTRIBUTE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "units",
+                          "children" : [ ]
+                        }, {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "magnitude",
+                          "children" : [ ]
+                        } ],
+                        "tuples" : [ {
+                          "@type" : "C_PRIMITIVE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
+                            "constraint" : [ "mg" ]
+                          }, {
+                            "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
+                            "constraint" : [ {
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : false,
+                              "lowerIncluded" : false,
+                              "upperIncluded" : false
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0016.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_QUANTITY",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "property",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "openehr"
+                          },
+                          "constraint" : [ "124" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ {
+                        "@type" : "C_ATTRIBUTE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "units",
+                          "children" : [ ]
+                        }, {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "magnitude",
+                          "children" : [ ]
+                        } ],
+                        "tuples" : [ {
+                          "@type" : "C_PRIMITIVE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
+                            "constraint" : [ "mg" ]
+                          }, {
+                            "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
+                            "constraint" : [ {
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : false,
+                              "lowerIncluded" : false,
+                              "upperIncluded" : false
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
+                  "nodeId" : "at0015.1",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_QUANTITY",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "property",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "openehr"
+                          },
+                          "constraint" : [ "124" ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ {
+                        "@type" : "C_ATTRIBUTE_TUPLE",
+                        "members" : [ {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "units",
+                          "children" : [ ]
+                        }, {
+                          "@type" : "C_ATTRIBUTE",
+                          "rmAttributeName" : "magnitude",
+                          "children" : [ ]
+                        } ],
+                        "tuples" : [ {
+                          "@type" : "C_PRIMITIVE_TUPLE",
+                          "members" : [ {
+                            "@type" : "C_STRING",
+                            "rmTypeName" : "STRING",
+                            "constraint" : [ "mg" ]
+                          }, {
+                            "@type" : "C_REAL",
+                            "rmTypeName" : "REAL",
+                            "constraint" : [ {
+                              "lowerUnbounded" : false,
+                              "upperUnbounded" : false,
+                              "lowerIncluded" : false,
+                              "upperIncluded" : false
+                            } ]
+                          } ]
+                        } ]
+                      } ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0013.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..0",
+              "nodeId" : "at0012.1",
               "attributes" : [ ],
               "attributeTuples" : [ ]
             } ]
