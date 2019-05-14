@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "43e30be1e076e979812800cf03320197",
+      "MD5-CAM-1.0.1" : "d5b1bc9aff3e6f456fa1af8e8d7e5185",
       "PARENT:MD5-CAM-1.0.1" : "05F3E1D9A0891A37F1DD10A47CCFA472"
     },
     "details" : {
@@ -4197,7 +4197,7 @@
               "attributeTuples" : [ ]
             }, {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
+              "rmTypeName" : "POINT_EVENT",
               "nodeId" : "at0015.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -4241,6 +4241,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0015.2",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -4284,6 +4285,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0015.3",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
