@@ -23,69 +23,84 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e343e20a704416273b3c163c972fac13">
+		["MD5-CAM-1.0.1"] = <"16f3d2a00ea7f679684867ff1bfa6cfb">
 		["build_uid"] = <"45182947-9538-3361-9347-cd804a6959b4">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- activity_period
+	CLUSTER[at0000] matches {    -- total calories activity_period
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- calendar period
+			ELEMENT[at0026] occurrences matches {0..1} matches {    -- Year
 				value matches {
-					1|[local::at0011],
-					2|[local::at0012],
-					3|[local::at0013],
-					4|[local::at0014]
-				}
-			}
-			ELEMENT[at0025] occurrences matches {0..1} matches {    -- DV_DATE_TIME
-				value matches {
-					DV_DATE_TIME matches {*}
-				}
-			}
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Time interval during a specific period
-				value matches {
-					DV_DURATION matches {
-						value matches {|P1D..P1Y|}
+					DV_DATE matches {
+						value matches {yyyy-??-XX}
 					}
 				}
 			}
-			CLUSTER[at0003] occurrences matches {0..*} matches {    -- Per activity
+			CLUSTER[at0028] occurrences matches {0..1} matches {    -- Per period
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Type of activity
+					ELEMENT[at0001] occurrences matches {0..1} matches {    -- calendar period
 						value matches {
-							5|[local::at0016],
-							6|[local::at0017],
-							7|[local::at0018],
-							8|[local::at0019],
-							9|[local::at0020],
-							10|[local::at0021],
-							11|[local::at0022],
-							12|[local::at0023],
-							13|[local::at0024]
+							1|[local::at0011],
+							2|[local::at0012],
+							3|[local::at0013],
+							4|[local::at0014]
 						}
 					}
-					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Frequency
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Time interval during a specific period
 						value matches {
-							C_DV_QUANTITY <
-								
-								list = <
-									["1"] = <
-										units = <"min/d">
+							DV_DURATION matches {
+								value matches {|P1D..P1Y|}
+							}
+						}
+					}
+					CLUSTER[at0003] occurrences matches {0..*} matches {    -- Per activity
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0015] occurrences matches {0..1} matches {    -- Type of activity
+								value matches {
+									5|[local::at0016],
+									6|[local::at0017],
+									7|[local::at0018],
+									8|[local::at0019],
+									9|[local::at0020],
+									10|[local::at0021],
+									11|[local::at0022],
+									12|[local::at0023],
+									13|[local::at0024]
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {    -- Frequency
+								value matches {
+									C_DV_QUANTITY <
+										
+										list = <
+											["1"] = <
+												units = <"min/d">
+											>
+											["2"] = <
+												units = <"min/wk">
+											>
+											["3"] = <
+												units = <"min/mo">
+											>
+										>
 									>
-									["2"] = <
-										units = <"min/wk">
-									>
-									["3"] = <
-										units = <"min/mo">
-									>
-								>
-							>
+								}
+							}
+							allow_archetype CLUSTER[at0027] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
+								include
+									archetype_id/value matches {/.*/}
+							}
+						}
+					}
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Sum activity calories per per period
+						value matches {
+							DV_COUNT matches {*}
 						}
 					}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Sum activity calories per period
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Total activity calories
 				value matches {
 					DV_COUNT matches {*}
 				}
@@ -98,7 +113,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"activity_period">
+					text = <"total calories activity_period">
 					description = <"activity_period">
 				>
 				["at0001"] = <
@@ -118,7 +133,7 @@ ontology
 					description = <"*">
 				>
 				["at0006"] = <
-					text = <"Sum activity calories per period">
+					text = <"Total activity calories">
 					description = <"*">
 				>
 				["at0011"] = <
@@ -177,8 +192,20 @@ ontology
 					text = <"Stavgång">
 					description = <"*">
 				>
-				["at0025"] = <
-					text = <"DV_DATE_TIME">
+				["at0026"] = <
+					text = <"Year">
+					description = <"*">
+				>
+				["at0027"] = <
+					text = <"CLUSTER_SLOT">
+					description = <"*">
+				>
+				["at0028"] = <
+					text = <"Per period">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Sum activity calories per per period">
 					description = <"*">
 				>
 			>
