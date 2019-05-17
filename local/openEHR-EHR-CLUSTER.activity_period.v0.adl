@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"fa5dbc57814a0eb778c8478d82fdfe16">
+		["MD5-CAM-1.0.1"] = <"285cf09c6f5fe1fb58e506766f1f5769">
 		["build_uid"] = <"45182947-9538-3361-9347-cd804a6959b4">
 	>
 
@@ -120,6 +120,11 @@ definition
 									>
 								}
 							}
+							ELEMENT[at0044] occurrences matches {0..1} matches {    -- Comment
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 							allow_archetype CLUSTER[at0027] occurrences matches {0..*} matches {    -- CLUSTER_SLOT
 								include
 									archetype_id/value matches {/.*/}
@@ -133,7 +138,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Total activity calories
+			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Cumulativ activity calories per week
 				value matches {
 					DV_COUNT matches {*}
 				}
@@ -166,8 +171,9 @@ ontology
 					description = <"*">
 				>
 				["at0006"] = <
-					text = <"Total activity calories">
+					text = <"Cumulativ activity calories per week">
 					description = <"*">
+					comment = <"Cumulative activity calories per week sometime during the year. ">
 				>
 				["at0011"] = <
 					text = <"Vår">
@@ -240,6 +246,7 @@ ontology
 				["at0029"] = <
 					text = <"Sum activity calories per per period">
 					description = <"*">
+					comment = <"Värde för snittkaloriantal per vecka under någon definierad tidsperiod. (Vår, Sommar, Höst, Vinter), enligt NE. ">
 				>
 				["at0030"] = <
 					text = <"Calender period">
@@ -251,6 +258,10 @@ ontology
 				>
 				["at0043"] = <
 					text = <"Exertion factor">
+					description = <"*">
+				>
+				["at0044"] = <
+					text = <"Comment">
 					description = <"*">
 				>
 			>
