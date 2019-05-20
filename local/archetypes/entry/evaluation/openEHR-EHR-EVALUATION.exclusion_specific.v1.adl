@@ -6,6 +6,14 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			author = <
+				["name"] = <"Åsa Skagerhult">
+				["organisation"] = <"Region Östergötland">
+				["email"] = <"asa.skagerhult@regionostergotland.se">
+			>
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			author = <
@@ -22,27 +30,12 @@ description
 		["date"] = <"2017-02-17">
 	>
 	details = <
-		["en"] = <
-			language = <[ISO_639-1::en]>
-			purpose = <"To record a statement of exclusion about a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past.">
-			use = <"Use to record a statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past.
-
-This archetype has been specifically designed to make a clear and unambiguous statement of a specific exclusion of a type of clinical item from the health record. This approach is used in preference to relying on flags or terminology to express negation.
-
-The data element 'Excluded concept' allows for recording of a single specific statement. The different specific concepts listed in the \"Excluded concept' run-time name constraint identifies the different specific exclusions. This name constraint can be applied during template modelling or at run-time within a software application.
-
-Each specific exclusion should be recorded in a separate instance of this archetype. For example: record 'no past history of adverse reaction to penicillin V', 'no past history of adverse reaction to cephalosporins' and 'no known family history of heart disease' in 3 separately constrained instances of this archetype.
-
-Please note that exclusion statements can only be considered to be current and accurate at the point-in-time of recording. It is possible for a record to be able to state that an individual has NO KNOWN history of a specific problem or diagnosis (using an exclusion statement) at the same consultation as recording the evidence of their first experience of the same problem or diagnosis (using the EVALUATION.problem_diagnosis archetype). In future record statements, the individual may have a KNOWN history of the problem or diagnosis recorded in their problem list.">
-			keywords = <"exclusion, negation, rule out, rule-out, r/o, absence", ...>
-			misuse = <"Not to be used to record the exclusion of all problems or diagnoses, medications, procedures, family history, adverse reactions or other clinical items - use the EVALUATION.exclusion_global archetype for this purpose.
-
-Not to be used to record the exclusion of any component of a physical examination - use the CLUSTER.exclusion_exam archetype within an appropriate OBSERVATION or CLUSTER archetype.
-
-Not to be used to record the exclusion of symptoms use the CLUSTER.exclusion_symptom archetype within an appropriate OBSERVATION or CLUSTER archetype.
-
-Not to be used to record the absence of information - use the EVALUATION.absense archetype for this purpose.">
-			copyright = <"© Nasjonal IKT HF, openEHR Foundation">
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+			purpose = <"Att utesluta specifik problem/diagnoser, ärftlighet, läkemedel, ingrepp, biverkningar eller annat, som antingen inte föreligger nu eller som inte har uppträtt tidigare.">
+			use = <"Används för att utesluta specifik problem/diagnoser, ärftlighet, läkemedel, ingrepp, biverkningar eller annat, som antingen inte föreligger nu eller som inte har uppträtt tidigare.">
+			keywords = <"utesluta, exkludera, avsaknad", ...>
+			misuse = <"Ska inte användas för att generellt utesluta alla problem/diagnoser, ärftlighet, läkemedel, ingrepp, biverkningar eller annat. Använd då i stället arketypen EVALUATION.exclusion_global.">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -66,8 +59,30 @@ Brukes ikke for å registrere eksklusjon av symptomer, bruke arketypen CLUSTER.e
 Brukes ikke denne arketypen for registrering av fravær av infomasjon - bruk arketypen EVALUATION.absence for dette formålet.">
 			copyright = <"© Nasjonal IKT HF, openEHR Foundation">
 		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To record a statement of exclusion about a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past.">
+			use = <"Use to record a statement of exclusion of a specific Problem/diagnosis, Family history, Medication, Procedure, Adverse reaction or other clinical item that is either not currently present, or have not been present in the past.
+
+This archetype has been specifically designed to make a clear and unambiguous statement of a specific exclusion of a type of clinical item from the health record. This approach is used in preference to relying on flags or terminology to express negation.
+
+The data element 'Excluded concept' allows for recording of a single specific statement. The different specific concepts listed in the \"Excluded concept' run-time name constraint identifies the different specific exclusions. This name constraint can be applied during template modelling or at run-time within a software application.
+
+Each specific exclusion should be recorded in a separate instance of this archetype. For example: record 'no past history of adverse reaction to penicillin V', 'no past history of adverse reaction to cephalosporins' and 'no known family history of heart disease' in 3 separately constrained instances of this archetype.
+
+Please note that exclusion statements can only be considered to be current and accurate at the point-in-time of recording. It is possible for a record to be able to state that an individual has NO KNOWN history of a specific problem or diagnosis (using an exclusion statement) at the same consultation as recording the evidence of their first experience of the same problem or diagnosis (using the EVALUATION.problem_diagnosis archetype). In future record statements, the individual may have a KNOWN history of the problem or diagnosis recorded in their problem list.">
+			keywords = <"exclusion, negation, rule out, rule-out, r/o, absence", ...>
+			misuse = <"Not to be used to record the exclusion of all problems or diagnoses, medications, procedures, family history, adverse reactions or other clinical items - use the EVALUATION.exclusion_global archetype for this purpose.
+
+Not to be used to record the exclusion of any component of a physical examination - use the CLUSTER.exclusion_exam archetype within an appropriate OBSERVATION or CLUSTER archetype.
+
+Not to be used to record the exclusion of symptoms use the CLUSTER.exclusion_symptom archetype within an appropriate OBSERVATION or CLUSTER archetype.
+
+Not to be used to record the absence of information - use the EVALUATION.absense archetype for this purpose.">
+			copyright = <"© Nasjonal IKT HF, openEHR Foundation">
+		>
 	>
-	lifecycle_state = <"published">
+	lifecycle_state = <"in_development">
 	other_contributors = <"Tomas Alme, DIPS ASA, Norway", "Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT editor)", "Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)", "Kristian Berg, Universitetssykehuset Nord Norge, Norway", "SumanBhusan Bhattacharyya, Sudisa Consultancy Services, India", "Bjørn Christensen, Helse Bergen HF, Norway", "Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway", "Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom", "Heather Grain, Llewelyn Grain Informatics, Australia", "Annette Hole Sjøborg, DIPS ASA, Norway", "Hilde Hollås, DIPS ASA, Norway", "Evelyn Hovenga, EJSH Consulting, Australia", "Tom Jarl Jakobsen, Helse Bergen, Norway", "Hanne Joensen, Helse Bergen HUS, Norway", "Lars Morgan Karlsen, DIPS ASA, Norway", "Heather Leslie, Ocean Health Systems, Australia (openEHR Editor)", "Hallvard Lærum, Direktoratet for e-helse, Norway", "Siv Marie Lien, DIPS ASA, Norway", "Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)", "Andrej Orel, Marand d.o.o., Slovenia", "Vladimir Pizzo, Hospital Sírio Libanês, Brazil", "Navin Ramachandran, NHS, United Kingdom", "Arild Stangeland, Helse Bergen, Norway", "Nyree Taylor, Ocean Informatics, Australia", "John Tore Valand, Haukeland Universitetssjukehus, Norway (Nasjonal IKT editor)">
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
@@ -78,9 +93,9 @@ Exclusion statement, Deprecated Archetype [Internet]. openEHR Foundation, openEH
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"A3949EA37D876F7A93B6DB742E9D6F38">
-		["build_uid"] = <"9ef3f2a6-301c-4497-abe1-9491e1631100">
-		["revision"] = <"1.0.0">
+		["MD5-CAM-1.0.1"] = <"26508CDDAB79820CCDF317AAF6F261D9">
+		["build_uid"] = <"0b746e44-f543-412c-bb75-61f8f25212d2">
+		["revision"] = <"1.0.1-alpha">
 	>
 
 definition
@@ -246,6 +261,61 @@ Dersom en prekoordinert term brukes i dette dataelementet blir elementet \"Ekskl
 				["at0012"] = <
 					text = <"Kommentar">
 					description = <"Ytterligere fritekst om \"Spesifikk eksklusjon\" som ikke er registrert i andre felt.">
+				>
+			>
+		>
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Uteslutande - specifikt">
+					description = <"Ett uteslutande av specifikt problem/diagnoser, ärftlighet, läkemedel, ingrepp, biverkningar eller annat, som antingen inte föreligger nu eller som inte har uppträtt tidigare.">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Specificering av uteslutande">
+					description = <"Ett klargörande angående uteslutandet av specifikt problem/diagnoser, ärftlighet, läkemedel, ingrepp, biverkningar eller annat.">
+					comment = <"Ska användas tillsammans med dataelementet \"Vad som uteslutits\".">
+				>
+				["at0003"] = <
+					text = <"Vad som uteslutits">
+					description = <"Identifiering av det som specifikt har uteslutits.">
+					comment = <"Kan användas på två sätt.">
+				>
+				["at0004"] = <
+					text = <"Problem/diagnos">
+					description = <"Det problem eller den diagnos som åsyftas i \"Specificering av uteslutande\".">
+				>
+				["at0005"] = <
+					text = <"Ärftligt problem/diagnos">
+					description = <"Det ärftliga problem eller diagnos som åsyftas i \"Specificering av uteslutande\".">
+				>
+				["at0006"] = <
+					text = <"Läkemedel">
+					description = <"Det läkemedel som åsyftas i \"Specificering av uteslutande\".">
+				>
+				["at0007"] = <
+					text = <"Ingrepp">
+					description = <"Det ingrepp som åsyftas i \"Specificering av uteslutande\".">
+				>
+				["at0008"] = <
+					text = <"Substans som orsakat biverkning">
+					description = <"Den substans eller agent som orsakat den biverkning som åsyftas i \"Specificering av uteslutande\".">
+				>
+				["at0009"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0011"] = <
+					text = <"Tilläggsinformation">
+					description = <"Plats för att infoga tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.">
+					comment = <"Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter.">
+				>
+				["at0012"] = <
+					text = <"Kommentar">
+					description = <"Kommentar avseende det specifika uteslutande som inte beskrivs i övriga fält.">
 				>
 			>
 		>
