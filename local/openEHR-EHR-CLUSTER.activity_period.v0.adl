@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d112f2e42378862bbe3b4dd130167fb4">
+		["MD5-CAM-1.0.1"] = <"2629dc5db49a03b6ab113c072338253a">
 		["build_uid"] = <"45182947-9538-3361-9347-cd804a6959b4">
 	>
 
@@ -36,7 +36,11 @@ definition
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
-									[local::at0049]    -- Vår
+									[local::
+									at0049,    -- Spring
+									at0051,    -- Summer
+									at0052,    -- Autumn
+									at0053]    -- Winter
 								}
 							}
 						}
@@ -48,14 +52,6 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0001] occurrences matches {0..1} matches {    -- calendar period
-						value matches {
-							1|[local::at0011],
-							2|[local::at0012],
-							3|[local::at0013],
-							4|[local::at0014]
-						}
-					}
 					ELEMENT[at0050] occurrences matches {0..1} matches {    -- Comment
 						value matches {
 							DV_TEXT matches {*}
@@ -63,26 +59,19 @@ definition
 					}
 					CLUSTER[at0003] occurrences matches {0..*} matches {    -- Per activity
 						items cardinality matches {1..*; unordered} matches {
-							ELEMENT[at0015] occurrences matches {0..1} matches {    -- Type of activity
-								value matches {
-									5|[local::at0016],
-									6|[local::at0017],
-									7|[local::at0018],
-									8|[local::at0019],
-									9|[local::at0020],
-									10|[local::at0021],
-									11|[local::at0022],
-									12|[local::at0023],
-									13|[local::at0024]
-								}
-							}
 							ELEMENT[at0045] occurrences matches {0..1} matches {    -- Type of activity
 								value matches {
 									DV_CODED_TEXT matches {
 										defining_code matches {
 											[local::
 											at0046,    -- Cykla
-											at0047]    -- Fotboll
+											at0047,    -- Fotboll
+											at0054,    -- Golf
+											at0055,    -- Gympa (vanligt pass)
+											at0056,    -- Jogging (6-7min/km)
+											at0057,    -- Promenad (rask)
+											at0058,    -- Simning
+											at0059]    -- Stavgång
 										}
 									}
 								}
@@ -112,15 +101,15 @@ definition
 										list = <
 											["1"] = <
 												units = <"kcal/min">
-												magnitude = <|>2.0..15.0|>
-												precision = <|0|>
+												magnitude = <|>0.0..100.0|>
+												precision = <|1|>
 											>
 										>
 
 										assumed_value = <
 											units = <"kcal/min">
 											magnitude = <3.0>
-											precision = <0>
+											precision = <1>
 										>
 									>
 								}
@@ -136,25 +125,42 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Sum activity calories per per period
+					ELEMENT[at0029] occurrences matches {0..1} matches {    -- Sum activity calories per period
 						value matches {
-							DV_COUNT matches {*}
+							C_DV_QUANTITY <
+								
+								list = <
+									["1"] = <
+										units = <"kcal/d">
+									>
+									["2"] = <
+										units = <"kcal/wk">
+									>
+									["3"] = <
+										units = <"kcal/mo">
+									>
+								>
+							>
 						}
 					}
 				}
 			}
-			ELEMENT[at0006] occurrences matches {0..1} matches {    -- Cumulativ activity calories per week
-				value matches {
-					DV_COUNT matches {*}
-				}
-			}
-			ELEMENT[at0048] occurrences matches {0..1} matches {    -- Cumulative activity calories
+			ELEMENT[at0048] occurrences matches {0..1} matches {    -- Average activity calories
 				value matches {
 					C_DV_QUANTITY <
 						
 						list = <
 							["1"] = <
 								units = <"kcal/wk">
+							>
+							["2"] = <
+								units = <"kcal/mo">
+							>
+							["3"] = <
+								units = <"kcal/d">
+							>
+							["4"] = <
+								units = <"kcal/a">
 							>
 						>
 					>
@@ -171,77 +177,12 @@ ontology
 					text = <"total calories activity_period">
 					description = <"activity_period">
 				>
-				["at0001"] = <
-					text = <"calendar period">
-					description = <"Season according to the corresponding months during calendar period per definition.">
-				>
 				["at0003"] = <
 					text = <"Per activity">
 					description = <"*">
 				>
 				["at0005"] = <
 					text = <"Frequency">
-					description = <"*">
-				>
-				["at0006"] = <
-					text = <"Cumulativ activity calories per week">
-					description = <"*">
-					comment = <"Cumulative activity calories per week sometime during the year. ">
-				>
-				["at0011"] = <
-					text = <"Vår">
-					description = <"mars-maj">
-				>
-				["at0012"] = <
-					text = <"Sommar">
-					description = <"juni-augusti">
-				>
-				["at0013"] = <
-					text = <"Höst">
-					description = <"september-november">
-				>
-				["at0014"] = <
-					text = <"Vinter">
-					description = <"december-februari">
-				>
-				["at0015"] = <
-					text = <"Type of activity">
-					description = <"*">
-				>
-				["at0016"] = <
-					text = <"Cykla">
-					description = <"4">
-				>
-				["at0017"] = <
-					text = <"Fotboll">
-					description = <"*">
-				>
-				["at0018"] = <
-					text = <"Golf">
-					description = <"3">
-				>
-				["at0019"] = <
-					text = <"Gympa (vanligt pass)">
-					description = <"*">
-				>
-				["at0020"] = <
-					text = <"Jogging (6-7 min/km)">
-					description = <"*">
-				>
-				["at0021"] = <
-					text = <"Promenad (rask)">
-					description = <"*">
-				>
-				["at0022"] = <
-					text = <"Promenad">
-					description = <"*">
-				>
-				["at0023"] = <
-					text = <"Simning">
-					description = <"*">
-				>
-				["at0024"] = <
-					text = <"Stavgång">
 					description = <"*">
 				>
 				["at0027"] = <
@@ -253,7 +194,7 @@ ontology
 					description = <"*">
 				>
 				["at0029"] = <
-					text = <"Sum activity calories per per period">
+					text = <"Sum activity calories per period">
 					description = <"*">
 					comment = <"Värde för snittkaloriantal per vecka under någon definierad tidsperiod. (Vår, Sommar, Höst, Vinter), enligt NE. ">
 				>
@@ -268,7 +209,7 @@ ontology
 				["at0043"] = <
 					text = <"Exertion factor">
 					description = <"*">
-					comment = <"Factor representing cumulative calorie consumption per minute for a certain activity. ">
+					comment = <"Factor representing average calorie consumption per minute for a certain activity. ">
 				>
 				["at0044"] = <
 					text = <"Comment">
@@ -280,22 +221,58 @@ ontology
 				>
 				["at0046"] = <
 					text = <"Cykla">
-					description = <"4">
+					description = <"*">
 				>
 				["at0047"] = <
 					text = <"Fotboll">
-					description = <"7">
+					description = <"*">
 				>
 				["at0048"] = <
-					text = <"Cumulative activity calories">
+					text = <"Average activity calories">
 					description = <"*">
 				>
 				["at0049"] = <
-					text = <"Vår">
-					description = <"mars-maj">
+					text = <"Spring">
+					description = <"March-May">
 				>
 				["at0050"] = <
 					text = <"Comment">
+					description = <"*">
+				>
+				["at0051"] = <
+					text = <"Summer">
+					description = <"June-August">
+				>
+				["at0052"] = <
+					text = <"Autumn">
+					description = <"September-November">
+				>
+				["at0053"] = <
+					text = <"Winter">
+					description = <"December-February">
+				>
+				["at0054"] = <
+					text = <"Golf">
+					description = <"*">
+				>
+				["at0055"] = <
+					text = <"Gympa (vanligt pass)">
+					description = <"*">
+				>
+				["at0056"] = <
+					text = <"Jogging (6-7min/km)">
+					description = <"*">
+				>
+				["at0057"] = <
+					text = <"Promenad (rask)">
+					description = <"*">
+				>
+				["at0058"] = <
+					text = <"Simning">
+					description = <"*">
+				>
+				["at0059"] = <
+					text = <"Stavgång">
 					description = <"*">
 				>
 			>
