@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"2629dc5db49a03b6ab113c072338253a">
+		["MD5-CAM-1.0.1"] = <"7598aa4afb946b5de284a9af39f9c3cf">
 		["build_uid"] = <"45182947-9538-3361-9347-cd804a6959b4">
 	>
 
@@ -45,7 +45,14 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Defined date for the period
+					ELEMENT[at0031] occurrences matches {0..1} matches {    -- Starting date for the period
+						value matches {
+							DV_DATE matches {
+								value matches {yyyy-mm-??}
+							}
+						}
+					}
+					ELEMENT[at0060] occurrences matches {0..1} matches {    -- End date for the period
 						value matches {
 							DV_DATE matches {
 								value matches {yyyy-mm-??}
@@ -203,7 +210,7 @@ ontology
 					description = <"*">
 				>
 				["at0031"] = <
-					text = <"Defined date for the period">
+					text = <"Starting date for the period">
 					description = <"*">
 				>
 				["at0043"] = <
@@ -273,6 +280,10 @@ ontology
 				>
 				["at0059"] = <
 					text = <"Stavgång">
+					description = <"*">
+				>
+				["at0060"] = <
+					text = <"End date for the period">
 					description = <"*">
 				>
 			>
