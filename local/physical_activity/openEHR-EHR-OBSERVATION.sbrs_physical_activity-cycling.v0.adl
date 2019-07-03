@@ -44,7 +44,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"81b02da7e73b93e4ad48108500d9a34b">
+		["MD5-CAM-1.0.1"] = <"f4383b2f8d197fcc715680fe05b335d7">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -315,6 +315,10 @@ definition
 										include
 											archetype_id/value matches {/.*/}
 									}
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002]/state[at0027]/items[at0.6]
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002]/state[at0027]/items[at0.8]
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002]/state[at0027]/items[at0.9]
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002]/state[at0027]/items[at0.10]
 								}
 							}
 						}
@@ -550,6 +554,22 @@ ontology
 				["at0115"] = <
 					text = <"Aggregated">
 					description = <"Summarize multiple workouts during a longer period, e.g. a week.">
+				>
+				["at0.16"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+				["at0.17"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+				["at0.18"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+				["at0.19"] = <
+					text = <"ELEMENT">
+					description = <"*">
 				>
 			>
 		>
