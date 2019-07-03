@@ -101,7 +101,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"15ba6aea17d08271eb6d9715b77cf136">
+		["MD5-CAM-1.0.1"] = <"afe2072286879d46fa6b3d57bfc518e5">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -372,6 +372,9 @@ definition
 										include
 											archetype_id/value matches {/.*/}
 									}
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002.1]/state[at0027]/items[at0.6]
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002.1]/state[at0027]/items[at0.12]
+									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002.1]/state[at0027]/items[at0.16]
 								}
 							}
 						}
@@ -617,6 +620,18 @@ ontology
 				["at0115"] = <
 					text = <"Aggregated">
 					description = <"Summarize multiple workouts during a longer period, e.g. a week.">
+				>
+				["at0.23"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+				["at0.26"] = <
+					text = <"ELEMENT">
+					description = <"*">
+				>
+				["at0.27"] = <
+					text = <"ELEMENT">
+					description = <"*">
 				>
 			>
 		>
