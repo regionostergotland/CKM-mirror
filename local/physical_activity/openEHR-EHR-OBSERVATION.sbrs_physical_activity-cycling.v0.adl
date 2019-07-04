@@ -44,7 +44,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f4383b2f8d197fcc715680fe05b335d7">
+		["MD5-CAM-1.0.1"] = <"f4375fcdfc94b2c4595978542a84eb44">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -158,6 +158,18 @@ definition
 												list = <
 													["1"] = <
 														units = <"rev/min">
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0.20] occurrences matches {0..1} matches {    -- Power
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::363]>
+												list = <
+													["1"] = <
+														units = <"W">
 													>
 												>
 											>
@@ -555,20 +567,8 @@ ontology
 					text = <"Aggregated">
 					description = <"Summarize multiple workouts during a longer period, e.g. a week.">
 				>
-				["at0.16"] = <
-					text = <"ELEMENT">
-					description = <"*">
-				>
-				["at0.17"] = <
-					text = <"ELEMENT">
-					description = <"*">
-				>
-				["at0.18"] = <
-					text = <"ELEMENT">
-					description = <"*">
-				>
-				["at0.19"] = <
-					text = <"ELEMENT">
+				["at0.20"] = <
+					text = <"Power">
 					description = <"*">
 				>
 			>
