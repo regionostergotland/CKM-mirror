@@ -99,7 +99,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"badf98a2a3eb2705ea5ba2eb7b027417">
+		["MD5-CAM-1.0.1"] = <"3c5c67bbae5fd24e6b4e2733a174d248">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -234,6 +234,11 @@ definition
 				summary matches {
 					ITEM_TREE[at0105] matches {    -- ITEM_TREE
 						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0116] occurrences matches {0..1} matches {    -- Description
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 							allow_archetype CLUSTER[at0030] occurrences matches {0..*} matches {    -- Multimedia
 								include
 									archetype_id/value matches {/.*/}
@@ -258,7 +263,7 @@ definition
 							}
 						}
 					}
-					allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Exclusion
+					allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
 					}
@@ -338,7 +343,7 @@ ontology
 					description = <"Electronic or mechanical methods (Motion sensors are instruments used to detect body movement which can be used to objectively quantify physical activity in daily life over a period.">
 				>
 				["at0021"] = <
-					text = <"Exclusion">
+					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
@@ -455,6 +460,10 @@ ontology
 				["at0115"] = <
 					text = <"Aggregated">
 					description = <"Summarize multiple workouts during a longer period, e.g. a week.">
+				>
+				["at0116"] = <
+					text = <"Description">
+					description = <"Summarizing description of all events.">
 				>
 			>
 		>
