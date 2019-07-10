@@ -12,8 +12,8 @@ language
 description
 	original_author = <
 		["date"] = <"2017-01-02">
-		["name"] = <"Priscila Maranhão; Gustavo Bacelar">
-		["organisation"] = <"MEDCIDS-FMUP; VIRTUAL CARE">
+		["name"] = <"Priscila Maranhão; Gustavo Bacelar; Noah Hellman">
+		["organisation"] = <"MEDCIDS-FMUP; VIRTUAL CARE; Region Östergötland">
 		["email"] = <"priscilamaranhao@gmail.com; gbacelar@gmail.com">
 	>
 	lifecycle_state = <"in_development">
@@ -464,11 +464,6 @@ ontology
 					text = <"Rough terrain">
 					description = <"Grass, mud, woodlands, hill, flat ground and water.">
 				>
-				["at0021"] = <
-					text = <"Extension">
-					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
-					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
-				>
 				["at0000"] = <
 					text = <"Physical activity">
 					description = <"Measurement of the actual physical activity of an individual.">
@@ -508,6 +503,11 @@ ontology
 				["at0011"] = <
 					text = <"Motion sensors">
 					description = <"Electronic or mechanical methods (Motion sensors are instruments used to detect body movement which can be used to objectively quantify physical activity in daily life over a period.">
+				>
+				["at0021"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 				["at0024"] = <
 					text = <"Device">
