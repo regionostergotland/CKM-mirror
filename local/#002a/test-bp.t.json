@@ -19,7 +19,7 @@
       "original_namespace" : "org.openehr",
       "original_publisher" : "openEHR Foundation",
       "custodian_namespace" : "org.openehr",
-      "MD5-CAM-1.0.1" : "0ada6a4954064e695f9f50bcc41efcf4",
+      "MD5-CAM-1.0.1" : "fc4e18433bad3fd8c49d30684cdaecec",
       "PARENT:MD5-CAM-1.0.1" : "15173A4BF38FA171E47BBE704F3E0940"
     },
     "details" : {
@@ -489,7 +489,7 @@
             },
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "INTERVAL_EVENT",
+              "rmTypeName" : "EVENT",
               "nodeId" : "at0006.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -509,44 +509,6 @@
                   "rmTypeName" : "ITEM_TREE",
                   "nodeId" : "at0007.1",
                   "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "math_function",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_CODED_TEXT",
-                  "occurrences" : "1..1",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "terminologyId" : {
-                        "value" : "openehr"
-                      },
-                      "constraint" : [ "146" ]
-                    } ]
-                  } ],
-                  "attributeTuples" : [ ]
-                } ]
-              }, {
-                "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "width",
-                "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_DURATION",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "value",
-                    "children" : [ {
-                      "@type" : "C_DURATION",
-                      "rmTypeName" : "DURATION",
-                      "constraint" : [ ]
-                    } ]
-                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
