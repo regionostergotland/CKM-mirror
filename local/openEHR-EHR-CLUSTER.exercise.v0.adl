@@ -10,6 +10,8 @@ language
 description
 	original_author = <
 		["date"] = <"2019-07-02">
+		["name"] = <"Noah Hellman">
+		["organisation"] = <"Region Östergötland">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -23,7 +25,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d9e89b96a311482f4a9e8d30d6f979d7">
+		["MD5-CAM-1.0.1"] = <"2b8ebd9c39303f871a60b9e2a6eb0372">
 		["build_uid"] = <"0c7c8082-f8ce-3a16-b48f-d61ee52e9e6a">
 	>
 
@@ -44,7 +46,8 @@ definition
 							at0009,    -- L-sit
 							at0010,    -- Planche
 							at0011,    -- Handstand
-							at0012]    -- Pancake
+							at0012,    -- Pancake
+							at0028]    -- etc...
 						}
 					}
 					DV_TEXT matches {*}
@@ -53,19 +56,6 @@ definition
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Description
 				value matches {
 					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Type
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0014,    -- Flexibility/Stretch
-							at0015,    -- Strength
-							at0016,    -- Balance
-							at0026]    -- Endurance
-						}
-					}
 				}
 			}
 			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Duration
@@ -88,6 +78,21 @@ definition
 					>
 				}
 			}
+			ELEMENT[at0027] occurrences matches {0..1} matches {    -- Resistance type
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0029,    -- Barbell
+							at0030,    -- Weight machine
+							at0031,    -- Kettlebell
+							at0032,    -- Barbell
+							at0033,    -- Dumbell
+							at0034]    -- etc...
+						}
+					}
+				}
+			}
 			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Number of sets
 				value matches {
 					DV_COUNT matches {*}
@@ -97,6 +102,10 @@ definition
 				value matches {
 					DV_COUNT matches {*}
 				}
+			}
+			allow_archetype CLUSTER[at0035] occurrences matches {0..*} matches {    -- Additional details
+				include
+					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -158,22 +167,6 @@ ontology
 					text = <"Pancake">
 					description = <"*">
 				>
-				["at0013"] = <
-					text = <"Type">
-					description = <"*">
-				>
-				["at0014"] = <
-					text = <"Flexibility/Stretch">
-					description = <"Exercise to increase flexibility.">
-				>
-				["at0015"] = <
-					text = <"Strength">
-					description = <"Exercise to improve strength.">
-				>
-				["at0016"] = <
-					text = <"Balance">
-					description = <"Exercise that improves balance.">
-				>
 				["at0022"] = <
 					text = <"Resistance">
 					description = <"Resistance used for each repetition.">
@@ -189,11 +182,43 @@ ontology
 				["at0025"] = <
 					text = <"Duration">
 					description = <"Duration of each repetition.">
-					comment = <"mostly for static exercises such as stretching or balancing">
+					comment = <"Mostly for static exercises such as stretching or balancing.">
 				>
-				["at0026"] = <
-					text = <"Endurance">
-					description = <"Exercise that improves endurance.">
+				["at0027"] = <
+					text = <"Resistance type">
+					description = <"Type of resistance.">
+				>
+				["at0028"] = <
+					text = <"etc...">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Barbell">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Weight machine">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Kettlebell">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Barbell">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Dumbell">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"etc...">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Additional details">
+					description = <"*">
 				>
 			>
 		>
