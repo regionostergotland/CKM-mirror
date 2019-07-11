@@ -29,7 +29,7 @@ Repositories (top menu bar) --> New repository (button) --> Repository type: Git
 ```
   Repository name: RÖ fork of CKM-mirror (or whatever you want to call it)  
   Owner: regionostergotland
-  Repository: openehr_definitions 
+  Repository: CKM-mirror 
   Branch: master
 ```
 
