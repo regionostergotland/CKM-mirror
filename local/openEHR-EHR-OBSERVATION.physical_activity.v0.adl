@@ -99,7 +99,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8eced130260d9768e3e2da9d8f57d177">
+		["MD5-CAM-1.0.1"] = <"0521a1fc7723fc51de530c4366067f8e">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -184,9 +184,15 @@ definition
 											DV_TEXT matches {*}
 										}
 									}
-									allow_archetype CLUSTER[at0031] occurrences matches {0..*} matches {    -- Additional details
+									allow_archetype CLUSTER[at0119] occurrences matches {0..*} matches {    -- Activity details
 										include
-											archetype_id/value matches {/.*/}
+											archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.distance_activity(-[a-zA-Z0-9_]+)*\.v0/}
+									}
+									ELEMENT[at0118] occurrences matches {0..1} matches {    -- Power
+										value matches {
+											C_DV_QUANTITY <
+																							>
+										}
 									}
 								}
 							}
@@ -197,6 +203,14 @@ definition
 									allow_archetype CLUSTER[at0114] occurrences matches {0..*} matches {    -- Environment
 										include
 											archetype_id/value matches {/openEHR-EHR-CLUSTER\.environmental_conditions(-[a-zA-Z0-9_]+)*\.v1/}
+									}
+									allow_archetype CLUSTER[at0121] occurrences matches {0..*} matches {    -- Venue
+										include
+											archetype_id/value matches {/.*/}
+									}
+									allow_archetype CLUSTER[at0120] occurrences matches {0..*} matches {    -- Equipment
+										include
+											archetype_id/value matches {/.*/}
 									}
 									allow_archetype CLUSTER[at0108] occurrences matches {0..*} matches {    -- Additional details
 										include
@@ -363,10 +377,6 @@ ontology
 					text = <"Multimedia">
 					description = <"*">
 				>
-				["at0031"] = <
-					text = <"Additional details">
-					description = <"*">
-				>
 				["at0057"] = <
 					text = <"Level of Exertion">
 					description = <"*">
@@ -464,6 +474,22 @@ ontology
 				["at0116"] = <
 					text = <"Description">
 					description = <"Summarizing description of all events.">
+				>
+				["at0118"] = <
+					text = <"Power">
+					description = <"*">
+				>
+				["at0119"] = <
+					text = <"Activity details">
+					description = <"*">
+				>
+				["at0120"] = <
+					text = <"Equipment">
+					description = <"*">
+				>
+				["at0121"] = <
+					text = <"Venue">
+					description = <"*">
 				>
 			>
 		>
