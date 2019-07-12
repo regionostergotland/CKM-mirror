@@ -25,7 +25,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a5a5b7b6aef5db5a4c2f027bb40f03b8">
+		["MD5-CAM-1.0.1"] = <"2b2c71587ac735429856e5ceef518179">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
 	>
 
@@ -144,6 +144,12 @@ definition
 					}
 				}
 			}
+			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Swimming style
+				value matches {
+					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
+				}
+			}
 		}
 	}
 
@@ -208,6 +214,10 @@ ontology
 				>
 				["at0018.1"] = <
 					text = <"Stroke cadence">
+					description = <"*">
+				>
+				["at0.2"] = <
+					text = <"Swimming style">
 					description = <"*">
 				>
 			>
