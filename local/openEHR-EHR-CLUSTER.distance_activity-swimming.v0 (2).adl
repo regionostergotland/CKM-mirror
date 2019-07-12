@@ -25,7 +25,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0d92c809316daef3617d15c3c0da0abf">
+		["MD5-CAM-1.0.1"] = <"b864c7894f05aa6a53f5ae0aac29ec07">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
 	>
 
@@ -34,7 +34,7 @@ definition
 		items cardinality matches {1..*; unordered} matches {
 			CLUSTER[at0010] occurrences matches {0..1} matches {    -- Details
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0013.1] occurrences matches {0..1} matches {    -- Swimming speed
+					ELEMENT[at0013] occurrences matches {0..1} matches {    -- Speed
 						value matches {
 							C_DV_QUANTITY <
 								property = <[openehr::338]>
@@ -109,7 +109,7 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0022.1] occurrences matches {0..1} matches {    -- Altitude
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Altitude
 						value matches {
 							C_DV_QUANTITY <
 								property = <[openehr::122]>
@@ -127,12 +127,11 @@ definition
 							>
 						}
 					}
-					ELEMENT[at0.1] occurrences matches {0..1} matches {*}    -- Swim style
 				}
 			}
 			CLUSTER[at0002] occurrences matches {0..1} matches {    -- Cumulative Details
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0012.1] occurrences matches {0..1} matches {    -- Swimming distance
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Distance
 						value matches {
 							C_DV_QUANTITY <
 								property = <[openehr::122]>
@@ -191,6 +190,12 @@ definition
 							>
 						}
 					}
+				}
+			}
+			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Swim style
+				value matches {
+					DV_CODED_TEXT matches {*}
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -255,16 +260,8 @@ ontology
 					text = <"Distance activity">
 					description = <"Distance activity details">
 				>
-				["at0013.1"] = <
-					text = <"Swimming speed">
-					description = <"*">
-				>
 				["at0018.1"] = <
 					text = <"Stroke cadence">
-					description = <"*">
-				>
-				["at0012.1"] = <
-					text = <"Swimming distance">
 					description = <"*">
 				>
 				["at0019.1"] = <
@@ -279,11 +276,7 @@ ontology
 					text = <"Elevation drop">
 					description = <"*">
 				>
-				["at0022.1"] = <
-					text = <"Altitude">
-					description = <"*">
-				>
-				["at0.1"] = <
+				["at0.2"] = <
 					text = <"Swim style">
 					description = <"*">
 				>
