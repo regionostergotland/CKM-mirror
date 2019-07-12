@@ -99,7 +99,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0521a1fc7723fc51de530c4366067f8e">
+		["MD5-CAM-1.0.1"] = <"e9d8192764c4f27eb3155a4db2ba9cb4">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -187,12 +187,6 @@ definition
 									allow_archetype CLUSTER[at0119] occurrences matches {0..*} matches {    -- Activity details
 										include
 											archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.distance_activity(-[a-zA-Z0-9_]+)*\.v0/}
-									}
-									ELEMENT[at0118] occurrences matches {0..1} matches {    -- Power
-										value matches {
-											C_DV_QUANTITY <
-																							>
-										}
 									}
 								}
 							}
@@ -474,10 +468,6 @@ ontology
 				["at0116"] = <
 					text = <"Description">
 					description = <"Summarizing description of all events.">
-				>
-				["at0118"] = <
-					text = <"Power">
-					description = <"*">
 				>
 				["at0119"] = <
 					text = <"Activity details">
