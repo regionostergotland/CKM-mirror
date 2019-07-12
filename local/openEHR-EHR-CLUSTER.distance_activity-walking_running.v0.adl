@@ -25,7 +25,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0316b3a05750705ec6639aec2f69b73e">
+		["MD5-CAM-1.0.1"] = <"01218515bfe09c95bd0cd10dd88b6352">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
 	>
 
@@ -109,6 +109,24 @@ definition
 							>
 						}
 					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Altitude
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+									["3"] = <
+										units = <"km">
+									>
+								>
+							>
+						}
+					}
 					ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Stride length
 						value matches {
 							C_DV_QUANTITY <
@@ -148,6 +166,36 @@ definition
 							DV_COUNT matches {*}
 						}
 					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Elevation gain
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Elevation drop
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+								>
+							>
+						}
+					}
 				}
 			}
 		}
@@ -160,10 +208,36 @@ ontology
 				["at0002"] = <
 					text = <"Cumulative Details">
 					description = <"*">
+					comment = <"This branch is only meant for INTERVAL_EVENTs.">
 				>
 				["at0010"] = <
 					text = <"Details">
 					description = <"*">
+					comment = <"This branch is only meant for POINT_EVENTs or INTERVAL_EVENTs aggregated from multiple points (e.g. average, min, max)">
+				>
+				["at0000.1"] = <
+					text = <"Walking/Running">
+					description = <"Distance activity details">
+				>
+				["at0018.1"] = <
+					text = <"Step cadence">
+					description = <"*">
+				>
+				["at0012.1"] = <
+					text = <"Distance">
+					description = <"*">
+				>
+				["at0019.1"] = <
+					text = <"Step count">
+					description = <"*">
+				>
+				["at0.1"] = <
+					text = <"Stride length">
+					description = <"*">
+				>
+				["at0000"] = <
+					text = <"Distance activity">
+					description = <"Distance activity details">
 				>
 				["at0012"] = <
 					text = <"Distance">
@@ -194,24 +268,16 @@ ontology
 					text = <"Count">
 					description = <"*">
 				>
-				["at0000.1"] = <
-					text = <"Walking/Running">
-					description = <"Distance activity details">
-				>
-				["at0018.1"] = <
-					text = <"Step cadence">
+				["at0020"] = <
+					text = <"Elevation gain">
 					description = <"*">
 				>
-				["at0012.1"] = <
-					text = <"Distance">
+				["at0021"] = <
+					text = <"Elevation drop">
 					description = <"*">
 				>
-				["at0019.1"] = <
-					text = <"Step count">
-					description = <"*">
-				>
-				["at0.1"] = <
-					text = <"Stride length">
+				["at0022"] = <
+					text = <"Altitude">
 					description = <"*">
 				>
 			>
