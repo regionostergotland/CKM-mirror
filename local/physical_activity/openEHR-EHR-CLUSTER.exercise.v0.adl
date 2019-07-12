@@ -10,8 +10,11 @@ language
 description
 	original_author = <
 		["date"] = <"2019-07-02">
+		["name"] = <"Noah Hellman, Erik Sundvall">
+		["organisation"] = <"Region Östergötland">
 	>
 	lifecycle_state = <"unmanaged">
+	other_contributors = <"Noah Hellman, Erik Sundvall, Region Östergötland", ...>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -23,14 +26,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"d9e89b96a311482f4a9e8d30d6f979d7">
+		["MD5-CAM-1.0.1"] = <"b1c515afbdcbd91326be09f1d763e7dd">
 		["build_uid"] = <"0c7c8082-f8ce-3a16-b48f-d61ee52e9e6a">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Exercise
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Name
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Exercise name
 				value matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -44,7 +47,8 @@ definition
 							at0009,    -- L-sit
 							at0010,    -- Planche
 							at0011,    -- Handstand
-							at0012]    -- Pancake
+							at0012,    -- Pancake
+							at0028]    -- etc...
 						}
 					}
 					DV_TEXT matches {*}
@@ -55,20 +59,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Type
-				value matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0014,    -- Flexibility/Stretch
-							at0015,    -- Strength
-							at0016,    -- Balance
-							at0026]    -- Endurance
-						}
-					}
-				}
-			}
-			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Duration
+			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Duration of repetition
 				value matches {
 					DV_DURATION matches {*}
 				}
@@ -88,15 +79,43 @@ definition
 					>
 				}
 			}
-			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Number of sets
+			ELEMENT[at0027] occurrences matches {0..1} matches {    -- Resistance type
 				value matches {
-					DV_COUNT matches {*}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0029,    -- Barbell
+							at0030,    -- Weight machine
+							at0031,    -- Kettlebell
+							at0032,    -- Barbell
+							at0033,    -- Dumbell
+							at0034]    -- etc...
+						}
+					}
 				}
 			}
 			ELEMENT[at0024] occurrences matches {0..1} matches {    -- Number of repetitions
 				value matches {
 					DV_COUNT matches {*}
 				}
+			}
+			ELEMENT[at0023] occurrences matches {0..1} matches {    -- Number of sets
+				value matches {
+					DV_COUNT matches {*}
+				}
+			}
+			ELEMENT[at0037] occurrences matches {0..1} matches {    -- Rest after set
+				value matches {
+					DV_DURATION matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0038] occurrences matches {0..*} matches {    -- Equipment
+				include
+					archetype_id/value matches {/.*/}
+			}
+			allow_archetype CLUSTER[at0035] occurrences matches {0..*} matches {    -- Additional details
+				include
+					archetype_id/value matches {/.*/}
 			}
 		}
 	}
@@ -108,14 +127,14 @@ ontology
 				["at0000"] = <
 					text = <"Exercise">
 					description = <"Exercise">
-					comment = <"Can be used for both observations and insturctions.">
+					comment = <"Can be used for both observations and instructions.">
 				>
 				["at0001"] = <
 					text = <"Description">
 					description = <"Detailed description of exercise.">
 				>
 				["at0002"] = <
-					text = <"Name">
+					text = <"Exercise name">
 					description = <"Name of exercise.">
 				>
 				["at0003"] = <
@@ -158,22 +177,6 @@ ontology
 					text = <"Pancake">
 					description = <"*">
 				>
-				["at0013"] = <
-					text = <"Type">
-					description = <"*">
-				>
-				["at0014"] = <
-					text = <"Flexibility/Stretch">
-					description = <"Exercise to increase flexibility.">
-				>
-				["at0015"] = <
-					text = <"Strength">
-					description = <"Exercise to improve strength.">
-				>
-				["at0016"] = <
-					text = <"Balance">
-					description = <"Exercise that improves balance.">
-				>
 				["at0022"] = <
 					text = <"Resistance">
 					description = <"Resistance used for each repetition.">
@@ -187,13 +190,53 @@ ontology
 					description = <"Number of repetitions of each set.">
 				>
 				["at0025"] = <
-					text = <"Duration">
+					text = <"Duration of repetition">
 					description = <"Duration of each repetition.">
-					comment = <"mostly for static exercises such as stretching or balancing">
+					comment = <"Mostly for static exercises such as stretching or balancing.">
 				>
-				["at0026"] = <
-					text = <"Endurance">
-					description = <"Exercise that improves endurance.">
+				["at0027"] = <
+					text = <"Resistance type">
+					description = <"Type of resistance.">
+				>
+				["at0028"] = <
+					text = <"etc...">
+					description = <"*">
+				>
+				["at0029"] = <
+					text = <"Barbell">
+					description = <"*">
+				>
+				["at0030"] = <
+					text = <"Weight machine">
+					description = <"*">
+				>
+				["at0031"] = <
+					text = <"Kettlebell">
+					description = <"*">
+				>
+				["at0032"] = <
+					text = <"Barbell">
+					description = <"*">
+				>
+				["at0033"] = <
+					text = <"Dumbell">
+					description = <"*">
+				>
+				["at0034"] = <
+					text = <"etc...">
+					description = <"*">
+				>
+				["at0035"] = <
+					text = <"Additional details">
+					description = <"*">
+				>
+				["at0037"] = <
+					text = <"Rest after set">
+					description = <"Duration of rest after each set.">
+				>
+				["at0038"] = <
+					text = <"Equipment">
+					description = <"Equipment used (or to use) in exercise.">
 				>
 			>
 		>

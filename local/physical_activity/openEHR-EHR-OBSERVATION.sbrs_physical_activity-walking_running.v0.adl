@@ -17,7 +17,7 @@ description
 		["email"] = <"priscilamaranhao@gmail.com; gbacelar@gmail.com">
 	>
 	lifecycle_state = <"in_development">
-	other_contributors = <"Ricardo Correia, Portugal","Pedro Marques, Portugal","Duarte Ferreira, Portugal","Heather Leslie, Ocean Informatics, Australia">
+	other_contributors = <"Ricardo Correia, Portugal","Pedro Marques, Portugal","Duarte Ferreira, Portugal","Heather Leslie, Ocean Informatics, Australia","Noah Hellman, Region Östergötland">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -101,7 +101,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"afe2072286879d46fa6b3d57bfc518e5">
+		["MD5-CAM-1.0.1"] = <"91efb379498b5393512515ad78769500">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -322,6 +322,11 @@ definition
 				summary matches {
 					ITEM_TREE[at0105] matches {    -- ITEM_TREE
 						items cardinality matches {0..*; unordered} matches {
+							ELEMENT[at0116] occurrences matches {0..1} matches {    -- Description
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
 							allow_archetype CLUSTER[at0030] occurrences matches {0..*} matches {    -- Multimedia
 								include
 									archetype_id/value matches {/.*/}
@@ -346,7 +351,7 @@ definition
 							}
 						}
 					}
-					allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Exclusion
+					allow_archetype CLUSTER[at0021] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
 					}
@@ -372,9 +377,6 @@ definition
 										include
 											archetype_id/value matches {/.*/}
 									}
-									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002.1]/state[at0027]/items[at0.6]
-									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002.1]/state[at0027]/items[at0.12]
-									use_node ELEMENT occurrences matches {0..1} /data[at0001]/events[at0002.1]/state[at0027]/items[at0.16]
 								}
 							}
 						}
@@ -503,7 +505,7 @@ ontology
 					description = <"Electronic or mechanical methods (Motion sensors are instruments used to detect body movement which can be used to objectively quantify physical activity in daily life over a period.">
 				>
 				["at0021"] = <
-					text = <"Exclusion">
+					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
@@ -621,17 +623,9 @@ ontology
 					text = <"Aggregated">
 					description = <"Summarize multiple workouts during a longer period, e.g. a week.">
 				>
-				["at0.23"] = <
-					text = <"ELEMENT">
-					description = <"*">
-				>
-				["at0.26"] = <
-					text = <"ELEMENT">
-					description = <"*">
-				>
-				["at0.27"] = <
-					text = <"ELEMENT">
-					description = <"*">
+				["at0116"] = <
+					text = <"Description">
+					description = <"Summarizing description of all events.">
 				>
 			>
 		>
