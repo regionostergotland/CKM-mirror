@@ -1,0 +1,66 @@
+archetype (adl_version=1.4; uid=ff71bfa0-bef2-4ace-9aa6-ad0a49236dd9)
+	openEHR-EHR-CLUSTER.borg_scale.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::sv]>
+
+description
+	original_author = <
+		["date"] = <"2019-07-12">
+		["name"] = <"Noah Hellman, Erik Sundvall">
+		["organisation"] = <"Region Östergötland, Sweden">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["sv"] = <
+			language = <[ISO_639-1::sv]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"0b84d53c20fa05d43a71dea33fcef901">
+		["build_uid"] = <"3600ce81-1bdf-3ef2-828f-fa1beb5f7933">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Borg scale
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- DV_ORDINAL
+				value matches {
+					DV_ORDINAL matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["sv"] = <
+			items = <
+				["at0000"] = <
+					text = <"Borg scale">
+					description = <"Borg scale">
+				>
+				["at0001"] = <
+					text = <"DV_ORDINAL">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Comment">
+					description = <"*">
+				>
+			>
+		>
+	>
