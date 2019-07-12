@@ -23,8 +23,8 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"cadb77ea28fb0cbed3868f0a49f5c780">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
-		["MD5-CAM-1.0.1"] = <"b128800b72929c1fc0c11edc2a4e0ced">
 	>
 
 definition
@@ -107,6 +107,24 @@ definition
 							>
 						}
 					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Altitude
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+									["3"] = <
+										units = <"km">
+									>
+								>
+							>
+						}
+					}
 				}
 			}
 			CLUSTER[at0002] occurrences matches {0..1} matches {    -- Cumulative Details
@@ -138,6 +156,36 @@ definition
 					ELEMENT[at0019] occurrences matches {0..1} matches {    -- Count
 						value matches {
 							DV_COUNT matches {*}
+						}
+					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Elevation gain
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Elevation drop
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+								>
+							>
 						}
 					}
 				}
@@ -190,6 +238,18 @@ ontology
 				>
 				["at0019"] = <
 					text = <"Count">
+					description = <"*">
+				>
+				["at0020"] = <
+					text = <"Elevation gain">
+					description = <"*">
+				>
+				["at0021"] = <
+					text = <"Elevation drop">
+					description = <"*">
+				>
+				["at0022"] = <
+					text = <"Altitude">
 					description = <"*">
 				>
 			>
