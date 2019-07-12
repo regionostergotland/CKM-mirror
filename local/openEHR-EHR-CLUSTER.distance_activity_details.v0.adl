@@ -24,7 +24,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
-		["MD5-CAM-1.0.1"] = <"9eb01dc96d32fabd6fe360d1aef23a82">
+		["MD5-CAM-1.0.1"] = <"b128800b72929c1fc0c11edc2a4e0ced">
 	>
 
 definition
@@ -156,10 +156,12 @@ ontology
 				["at0002"] = <
 					text = <"Cumulative Details">
 					description = <"*">
+					comment = <"This branch is only meant for INTERVAL_EVENTs.">
 				>
 				["at0010"] = <
 					text = <"Details">
 					description = <"*">
+					comment = <"This branch is only meant for POINT_EVENTs or INTERVAL_EVENTs aggregated from multiple points (e.g. average, min, max)">
 				>
 				["at0012"] = <
 					text = <"Distance">
