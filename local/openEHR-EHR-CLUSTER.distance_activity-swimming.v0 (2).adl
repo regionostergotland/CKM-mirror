@@ -12,8 +12,12 @@ language
 description
 	original_author = <
 		["date"] = <"2019-07-12">
+		["name"] = <"Noah Hellman, Erik Sundvall">
+		["organisation"] = <"Region Östergötland">
+		["email"] = <"erik.sundvall@regionostergotland.se">
 	>
 	lifecycle_state = <"unmanaged">
+	other_contributors = <"Noah Hellman, Erik Sundvall, Region Östergötland", ...>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -25,12 +29,12 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b864c7894f05aa6a53f5ae0aac29ec07">
+		["MD5-CAM-1.0.1"] = <"0ded9ab021390cffee4f04a743a2eea7">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
 	>
 
 definition
-	CLUSTER[at0000.1] matches {    -- Distance activity
+	CLUSTER[at0000.1] matches {    -- Swimming
 		items cardinality matches {1..*; unordered} matches {
 			CLUSTER[at0010] occurrences matches {0..1} matches {    -- Details
 				items cardinality matches {1..*; unordered} matches {
@@ -192,7 +196,7 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Swim style
+			ELEMENT[at0.2] occurrences matches {0..1} matches {    -- Swimming style
 				value matches {
 					DV_CODED_TEXT matches {*}
 					DV_TEXT matches {*}
@@ -205,6 +209,34 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Swimming">
+					description = <"Distance activity details">
+				>
+				["at0018.1"] = <
+					text = <"Stroke cadence">
+					description = <"*">
+				>
+				["at0019.1"] = <
+					text = <"Stroke count">
+					description = <"*">
+				>
+				["at0020.1"] = <
+					text = <"Elevation gain">
+					description = <"*">
+				>
+				["at0021.1"] = <
+					text = <"Elevation drop">
+					description = <"*">
+				>
+				["at0.2"] = <
+					text = <"Swimming style">
+					description = <"*">
+				>
+				["at0000"] = <
+					text = <"Distance activity">
+					description = <"Distance activity details">
+				>
 				["at0002"] = <
 					text = <"Cumulative Details">
 					description = <"*">
@@ -254,30 +286,6 @@ ontology
 				>
 				["at0022"] = <
 					text = <"Altitude">
-					description = <"*">
-				>
-				["at0000.1"] = <
-					text = <"Distance activity">
-					description = <"Distance activity details">
-				>
-				["at0018.1"] = <
-					text = <"Stroke cadence">
-					description = <"*">
-				>
-				["at0019.1"] = <
-					text = <"Stroke count">
-					description = <"*">
-				>
-				["at0020.1"] = <
-					text = <"Elevation gain">
-					description = <"*">
-				>
-				["at0021.1"] = <
-					text = <"Elevation drop">
-					description = <"*">
-				>
-				["at0.2"] = <
-					text = <"Swim style">
 					description = <"*">
 				>
 			>
