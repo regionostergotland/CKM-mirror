@@ -99,13 +99,13 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cedc5342e759be7c0f8fa547ab71c6c9">
+		["MD5-CAM-1.0.1"] = <"c85ffceafbff9b655b4b8509cfad5b4b">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000] matches {    -- Physical activity
+	OBSERVATION[at0000] matches {    -- A deprecated EXPERIMENTAL version ofPhysical activity
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -303,7 +303,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Physical activity">
+					text = <"A deprecated EXPERIMENTAL version ofPhysical activity">
 					description = <"Measurement of the actual physical activity of an individual.">
 				>
 				["at0001"] = <
