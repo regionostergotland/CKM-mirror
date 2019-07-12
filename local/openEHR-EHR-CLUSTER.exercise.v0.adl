@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ad1a7a5a7d3fcf8780d1f3696f3084e0">
+		["MD5-CAM-1.0.1"] = <"959f22be2c5e4b0fc89224fb24b5d29b">
 		["build_uid"] = <"0c7c8082-f8ce-3a16-b48f-d61ee52e9e6a">
 	>
 
@@ -57,11 +57,6 @@ definition
 			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Description
 				value matches {
 					DV_TEXT matches {*}
-				}
-			}
-			ELEMENT[at0037] occurrences matches {0..1} matches {    -- Duration of rest
-				value matches {
-					DV_DURATION matches {*}
 				}
 			}
 			ELEMENT[at0025] occurrences matches {0..1} matches {    -- Duration of repetition
@@ -109,6 +104,15 @@ definition
 					DV_COUNT matches {*}
 				}
 			}
+			ELEMENT[at0037] occurrences matches {0..1} matches {    -- Rest after set
+				value matches {
+					DV_DURATION matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0038] occurrences matches {0..*} matches {    -- Equipment
+				include
+					archetype_id/value matches {/.*/}
+			}
 			allow_archetype CLUSTER[at0035] occurrences matches {0..*} matches {    -- Additional details
 				include
 					archetype_id/value matches {/.*/}
@@ -123,7 +127,7 @@ ontology
 				["at0000"] = <
 					text = <"Exercise">
 					description = <"Exercise">
-					comment = <"Can be used for both observations and insturctions.">
+					comment = <"Can be used for both observations and instructions.">
 				>
 				["at0001"] = <
 					text = <"Description">
@@ -227,8 +231,12 @@ ontology
 					description = <"*">
 				>
 				["at0037"] = <
-					text = <"Duration of rest">
-					description = <"Duration of rest between sets.">
+					text = <"Rest after set">
+					description = <"Duration of rest after each set.">
+				>
+				["at0038"] = <
+					text = <"Equipment">
+					description = <"Equipment used (or to use) in exercise.">
 				>
 			>
 		>
