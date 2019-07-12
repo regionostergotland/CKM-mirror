@@ -29,7 +29,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"01218515bfe09c95bd0cd10dd88b6352">
+		["MD5-CAM-1.0.1"] = <"1c2ff330ee3818f0e6eee34195772c24">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
 	>
 
@@ -141,7 +141,7 @@ definition
 			}
 			CLUSTER[at0002] occurrences matches {0..1} matches {    -- Cumulative Details
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0012.1] occurrences matches {0..1} matches {    -- Distance
+					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Distance
 						value matches {
 							C_DV_QUANTITY <
 								property = <[openehr::122]>
@@ -215,10 +215,6 @@ ontology
 				>
 				["at0018.1"] = <
 					text = <"Step cadence">
-					description = <"*">
-				>
-				["at0012.1"] = <
-					text = <"Distance">
 					description = <"*">
 				>
 				["at0019.1"] = <
