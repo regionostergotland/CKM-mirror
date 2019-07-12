@@ -25,7 +25,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"550374b8694faa51e5c6375b373e0883">
+		["MD5-CAM-1.0.1"] = <"8ab260c55d5cc12358766c38d379952e">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
 	>
 
@@ -109,6 +109,24 @@ definition
 							>
 						}
 					}
+					ELEMENT[at0022] occurrences matches {0..1} matches {    -- Altitude
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+									["3"] = <
+										units = <"km">
+									>
+								>
+							>
+						}
+					}
 					ELEMENT[at0.1] occurrences matches {0..1} matches {    -- Power
 						value matches {
 							C_DV_QUANTITY <
@@ -154,6 +172,36 @@ definition
 							DV_COUNT matches {*}
 						}
 					}
+					ELEMENT[at0020] occurrences matches {0..1} matches {    -- Elevation gain
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+								>
+							>
+						}
+					}
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Elevation drop
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::122]>
+								list = <
+									["1"] = <
+										units = <"m">
+									>
+									["2"] = <
+										units = <"[ft_i]">
+									>
+								>
+							>
+						}
+					}
 				}
 			}
 		}
@@ -163,6 +211,34 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["at0000.1"] = <
+					text = <"Cycling activity">
+					description = <"Distance activity details">
+				>
+				["at0013.1"] = <
+					text = <"Cycling speed">
+					description = <"*">
+				>
+				["at0018.1"] = <
+					text = <"Pedaling rate">
+					description = <"*">
+				>
+				["at0012.1"] = <
+					text = <"Cycling distance">
+					description = <"*">
+				>
+				["at0019.1"] = <
+					text = <"Pedaling count">
+					description = <"*">
+				>
+				["at0.1"] = <
+					text = <"Power">
+					description = <"Power output of the bicycle.">
+				>
+				["at0000"] = <
+					text = <"Distance activity">
+					description = <"Distance activity details">
+				>
 				["at0002"] = <
 					text = <"Cumulative Details">
 					description = <"*">
@@ -202,29 +278,17 @@ ontology
 					text = <"Count">
 					description = <"*">
 				>
-				["at0000.1"] = <
-					text = <"Cycling activity">
-					description = <"Distance activity details">
-				>
-				["at0013.1"] = <
-					text = <"Cycling speed">
+				["at0020"] = <
+					text = <"Elevation gain">
 					description = <"*">
 				>
-				["at0018.1"] = <
-					text = <"Pedaling rate">
+				["at0021"] = <
+					text = <"Elevation drop">
 					description = <"*">
 				>
-				["at0012.1"] = <
-					text = <"Cycling distance">
+				["at0022"] = <
+					text = <"Altitude">
 					description = <"*">
-				>
-				["at0019.1"] = <
-					text = <"Pedaling count">
-					description = <"*">
-				>
-				["at0.1"] = <
-					text = <"Power">
-					description = <"Power output of the bicycle.">
 				>
 			>
 		>
