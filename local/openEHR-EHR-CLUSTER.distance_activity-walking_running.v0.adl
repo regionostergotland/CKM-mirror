@@ -12,8 +12,12 @@ language
 description
 	original_author = <
 		["date"] = <"2019-07-12">
+		["name"] = <"Noah Hellman, Erik Sundvall">
+		["organisation"] = <"Region Östergötland">
+		["email"] = <"erik.sundvall@regionostergotland.se">
 	>
 	lifecycle_state = <"unmanaged">
+	other_contributors = <"Noah Hellman, Erik Sundvall, Region Östergötland", ...>
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -205,16 +209,6 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
-				["at0002"] = <
-					text = <"Cumulative Details">
-					description = <"*">
-					comment = <"This branch is only meant for INTERVAL_EVENTs.">
-				>
-				["at0010"] = <
-					text = <"Details">
-					description = <"*">
-					comment = <"This branch is only meant for POINT_EVENTs or INTERVAL_EVENTs aggregated from multiple points (e.g. average, min, max)">
-				>
 				["at0000.1"] = <
 					text = <"Walking/Running">
 					description = <"Distance activity details">
@@ -238,6 +232,16 @@ ontology
 				["at0000"] = <
 					text = <"Distance activity">
 					description = <"Distance activity details">
+				>
+				["at0002"] = <
+					text = <"Cumulative Details">
+					description = <"*">
+					comment = <"This branch is only meant for INTERVAL_EVENTs.">
+				>
+				["at0010"] = <
+					text = <"Details">
+					description = <"*">
+					comment = <"This branch is only meant for POINT_EVENTs or INTERVAL_EVENTs aggregated from multiple points (e.g. average, min, max)">
 				>
 				["at0012"] = <
 					text = <"Distance">
