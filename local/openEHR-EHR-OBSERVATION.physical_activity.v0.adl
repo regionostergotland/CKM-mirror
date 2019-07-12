@@ -99,7 +99,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5cb7d0bf6c5eb148d47b46499defd324">
+		["MD5-CAM-1.0.1"] = <"f72b505752f7e6814ef5d35fc8b053b7">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -222,7 +222,7 @@ definition
 													DV_TEXT matches {*}
 												}
 											}
-											allow_archetype CLUSTER[at0120] occurrences matches {0..*} matches {    -- Additonal details
+											allow_archetype CLUSTER[at0120] occurrences matches {0..*} matches {    -- Equipment details
 												include
 													archetype_id/value matches {/.*/}
 											}
@@ -509,7 +509,7 @@ ontology
 					description = <"*">
 				>
 				["at0120"] = <
-					text = <"Additonal details">
+					text = <"Equipment details">
 					description = <"*">
 				>
 				["at0122"] = <
