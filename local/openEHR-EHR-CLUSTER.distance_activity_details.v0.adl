@@ -24,11 +24,11 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"cd6d2007-a559-34ae-a276-b554ae6f5dc7">
-		["MD5-CAM-1.0.1"] = <"66128b097de079f4abf1827657586a55">
+		["MD5-CAM-1.0.1"] = <"9eb01dc96d32fabd6fe360d1aef23a82">
 	>
 
 definition
-	CLUSTER[at0000] matches {    -- Distance activity details
+	CLUSTER[at0000] matches {    -- Distance activity
 		items cardinality matches {1..*; unordered} matches {
 			CLUSTER[at0010] occurrences matches {0..1} matches {    -- Details
 				items cardinality matches {1..*; unordered} matches {
@@ -150,7 +150,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					text = <"Distance activity details">
+					text = <"Distance activity">
 					description = <"Distance activity details">
 				>
 				["at0002"] = <
