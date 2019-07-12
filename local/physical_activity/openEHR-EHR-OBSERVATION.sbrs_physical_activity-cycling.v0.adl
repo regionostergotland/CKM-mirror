@@ -44,13 +44,13 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"dec83439b5f36f11fcf129dbb064f57d">
+		["MD5-CAM-1.0.1"] = <"24987cb3187e01206b8250ac334d715d">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	OBSERVATION[at0000.1] matches {    -- Cycling
+	OBSERVATION[at0000.1] matches {    -- A DEPRECATED experimental version of Cycling
 		data matches {
 			HISTORY[at0001] matches {    -- Event Series
 				events cardinality matches {1..*; unordered} matches {
@@ -350,7 +350,7 @@ ontology
 		["en"] = <
 			items = <
 				["at0000.1"] = <
-					text = <"Cycling">
+					text = <"A DEPRECATED experimental version of Cycling">
 					description = <"Measurement of the actual physical activity of an individual.">
 				>
 				["at0073.1"] = <
@@ -413,17 +413,12 @@ ontology
 					text = <"Forest road">
 					description = <"*">
 				>
-				["at0021"] = <
-					text = <"Extension">
-					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
-					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
-				>
 				["at0.20"] = <
 					text = <"Power">
 					description = <"*">
 				>
 				["at0000"] = <
-					text = <"Physical activity">
+					text = <"A DEPRECATED experimental version of Physical activity">
 					description = <"Measurement of the actual physical activity of an individual.">
 				>
 				["at0001"] = <
@@ -461,6 +456,11 @@ ontology
 				["at0011"] = <
 					text = <"Motion sensors">
 					description = <"Electronic or mechanical methods (Motion sensors are instruments used to detect body movement which can be used to objectively quantify physical activity in daily life over a period.">
+				>
+				["at0021"] = <
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
+					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
 				>
 				["at0024"] = <
 					text = <"Device">
