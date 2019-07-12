@@ -99,7 +99,7 @@ Pitta, F; Troosters, T; Probst, VS; et al. Quantifying  physical activity in dai
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"48ecd2db5921cad5f5f924c1cc964641">
+		["MD5-CAM-1.0.1"] = <"4c201ad79ea47489a60f8c5b005b858b">
 		["build_uid"] = <"eed4f9db-ff38-4cd0-a3cd-06dd9f3c893b">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -144,6 +144,18 @@ definition
 														units = <"1">
 														magnitude = <|>=0.0|>
 														precision = <|2|>
+													>
+												>
+											>
+										}
+									}
+									ELEMENT[at0123] occurrences matches {0..1} matches {    -- Metabolic equivalent of task (MET)
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::380]>
+												list = <
+													["1"] = <
+														units = <"1">
 													>
 												>
 											>
@@ -488,6 +500,10 @@ ontology
 				>
 				["at0122"] = <
 					text = <"Description">
+					description = <"*">
+				>
+				["at0123"] = <
+					text = <"Metabolic equivalent of task (MET)">
 					description = <"*">
 				>
 			>
