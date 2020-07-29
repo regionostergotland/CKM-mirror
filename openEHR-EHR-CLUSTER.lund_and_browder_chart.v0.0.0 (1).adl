@@ -1,0 +1,132 @@
+archetype (adl_version=2.0.6; rm_release=1.0.3)
+    openEHR-EHR-CLUSTER.lund_and_browder_chart.v0.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+
+description
+    original_author = <
+        ["date"] = <"2020-07-29">
+        ["name"] = <"Erik Sundvall">
+        ["organisation"] = <"Region Östergötland & Linköping University">
+    >
+    lifecycle_state = <"unmanaged">
+    other_details = <
+        ["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+        ["custodian_organisation"] = <"openEHR Foundation">
+        ["original_namespace"] = <"org.openehr">
+        ["original_publisher"] = <"openEHR Foundation">
+        ["custodian_namespace"] = <"org.openehr">
+        ["references"] = <"Hettiaratchy S, Papini R. Initial management of a major burn: II--assessment and resuscitation. BMJ. 2004;329(7457):101-103. doi:10.1136/bmj.329.7457.101 Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC449823/
+    
+    https://en.wikipedia.org/wiki/Lund_and_Browder_chart
+    
+    https://www.remm.nlm.gov/burns.htm & https://www.remm.nlm.gov/LundBrowder.pdf">
+    >
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"For recording percentage of total body area affected by burns of different depths.">
+            use = <"Use in 'Examination findings' slots of other archetypes, for example CLUSTER.exam, CLUSTER.exam-skin or CLUSTER.exam_burn
+    
+    ">
+        >
+    >
+
+definition
+    CLUSTER[id1] matches {    -- Lund and Browder chart
+        items cardinality matches {1..*; unordered} matches {
+            CLUSTER[id2] occurrences matches {0..1} matches {    -- Generic part
+                items cardinality matches {1..*; unordered} matches {
+                    ELEMENT[id3] occurrences matches {0..1} matches {    -- Body part area of total body
+                        value matches {
+                            DV_PROPORTION[id4] matches {
+                                numerator matches {|<null|}
+                                type matches {2}
+                            }
+                        }
+                    }
+                    ELEMENT[id23] occurrences matches {0..1} matches {    -- Body part
+                        value matches {
+                            DV_CODED_TEXT[id24] 
+                        }
+                    }
+                    CLUSTER[id9] occurrences matches {0..1} matches {    -- CLUSTER
+                        items cardinality matches {1..*; unordered} matches {
+                            ELEMENT[id25] occurrences matches {0..1} matches {    -- Depth
+                                value matches {
+                                    DV_CODED_TEXT[id26] 
+                                }
+                            }
+                            ELEMENT[id5] occurrences matches {0..1} matches {    -- Burnt area, precentage of full body
+                                value matches {
+                                    DV_PROPORTION[id6] matches {
+                                        numerator matches {|<null|}
+                                        type matches {2}
+                                    }
+                                }
+                            }
+                            ELEMENT[id17] occurrences matches {0..1} matches {    -- Coded expression
+                                value matches {
+                                    DV_CODED_TEXT[id18] 
+                                }
+                            }
+                        }
+                    }
+                    ELEMENT[id15] occurrences matches {0..1} matches {    -- Sum of burnt area on this part
+                        value matches {
+                            DV_PROPORTION[id16] matches {
+                                numerator matches {|<null|}
+                                denominator matches {|<null|}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"Lund and Browder chart">
+                description = <"Lund and Browder chart">
+            >
+            ["id2"] = <
+                text = <"Generic part">
+                description = <"">
+            >
+            ["id3"] = <
+                text = <"Body part area of total body">
+                description = <"The age dependent size the chart assigns to this body part. The *Total burns on this part\" summed up of different kinds of burns on this body part should never exceed this number.
+    
+    When age has been selected, this number could be automatically filled by the system.">
+            >
+            ["id5"] = <
+                text = <"Burnt area, precentage of full body">
+                description = <"Second degree burn">
+            >
+            ["id9"] = <
+                text = <"CLUSTER">
+                description = <"">
+            >
+            ["id15"] = <
+                text = <"Sum of burnt area on this part">
+                description = <"">
+            >
+            ["id17"] = <
+                text = <"Coded expression">
+                description = <"Optional field for coding systems,
+    ">
+            >
+            ["id23"] = <
+                text = <"Body part">
+                description = <"">
+            >
+            ["id25"] = <
+                text = <"Depth">
+                description = <"">
+            >
+        >
+    >
