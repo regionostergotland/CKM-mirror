@@ -1,0 +1,76 @@
+archetype (adl_version=1.4; uid=f0cc65ca-6e99-4992-9851-5d95202003df)
+	openEHR-EHR-CLUSTER.lund_browder_chart.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-07-29">
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Region Östergötland & Linköping University">
+		["email"] = <"erik.sundvall@regionostergotland.se & erik.sundvall@liu.se">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"For recording percentage of total body area affected by burns of different depths.">
+			use = <"Use in 'Examination findings' slots of other archetypes, for example CLUSTER.exam, CLUSTER.exam-skin or CLUSTER.exam_burn
+">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["references"] = <"Hettiaratchy S, Papini R. Initial management of a major burn: II--assessment and resuscitation. BMJ. 2004;329(7457):101-103. doi:10.1136/bmj.329.7457.101 Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC449823/
+    
+https://www.remm.nlm.gov/burns.htm & https://www.remm.nlm.gov/LundBrowder.pdf
+
+https://en.wikipedia.org/wiki/Lund_and_Browder_chart">
+		["MD5-CAM-1.0.1"] = <"3e12d4248bc1e377038c57db7dcc3591">
+		["build_uid"] = <"aa8b6609-e455-3555-8ac9-847b2a893045">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Lund-Browder chart
+		items cardinality matches {1..*; unordered} matches {
+			CLUSTER[at0001] occurrences matches {0..1} matches {    -- Generic part
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Body part area of total body
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Lund-Browder chart">
+					description = <"Lund browder chart">
+				>
+				["at0001"] = <
+					text = <"Generic part">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Body part area of total body">
+					description = <"">
+				>
+			>
+		>
+	>
