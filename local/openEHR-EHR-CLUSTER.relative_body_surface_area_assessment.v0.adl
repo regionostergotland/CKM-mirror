@@ -1,0 +1,43 @@
+archetype (adl_version=1.4; uid=8031d6d7-1b09-4e67-aa51-f3cb720a5b1f)
+	openEHR-EHR-CLUSTER.relative_body_surface_area_assessment.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2020-07-30">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"300e343aed35174125c8f39b2d67cccd">
+		["build_uid"] = <"0378792a-c5f1-31ad-8334-f3c2848cbe4e">
+	>
+
+definition
+	CLUSTER[at0000] matches {*}    -- Relative body surface area assessment
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Relative body surface area assessment">
+					description = <"Relative body surface area assessment">
+				>
+			>
+		>
+	>
