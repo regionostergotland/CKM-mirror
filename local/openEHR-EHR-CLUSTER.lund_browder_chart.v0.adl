@@ -1,5 +1,5 @@
 archetype (adl_version=1.4; uid=f0cc65ca-6e99-4992-9851-5d95202003df)
-	openEHR-EHR-CLUSTER.relative_body_surface_area.v0
+	openEHR-EHR-CLUSTER.lund_browder_chart.v0
 
 concept
 	[at0000]
@@ -18,12 +18,16 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"For recording percentage of total body area affected by burns of different depths.">
-			keywords = <"burns, burn assessment, Lund-Browder, skin area", ...>
-			use = <"Use in 'Examination findings' slots of other archetypes, for example CLUSTER.exam, CLUSTER.exam-skin or CLUSTER.exam_burn
+			purpose = <"For recording percentage of total body area affected by injuries/conditions, for example burns of different depths.">
+			keywords = <"burns, burn assessment, Lund-Browder, skin area, rule of nines, palmar method, surface area", ...>
+			use = <"Use in 'Examination findings' slots of other archetypes, for example CLUSTER.exam, CLUSTER.exam-skin or CLUSTER.exam_burn. These scales/rules ar often displayed in tabular form with e.g. burn depth as columns and body parts/areas as rows.
 
-Systems should preferably not store anything (e.g. not store 0%) for body part sections and burn depth levels within them that are not affected by burns for the patient.
+Extension slots can be used to record details of other things than burns (e.g. areas that have been frozen, corroded or have traumatic blisters).
+
+Systems should preferably not store anything (e.g. not store 0%) for body part sections and burn depth levels within them that are not injured.
+
 ">
+			misuse = <"Do not use 'Comment' or extensions for detailed descriptions, cause and etiology of burns, instead use suitable fields in archetypes like CLUSTER.exam, CLUSTER.exam-skin, CLUSTER.exam_burn or EVALUATION.problem_diagnosis">
 		>
 	>
 	other_details = <
@@ -34,11 +38,13 @@ Systems should preferably not store anything (e.g. not store 0%) for body part s
 Lund-Browder Charts
 https://www.remm.nlm.gov/burns.htm & https://www.remm.nlm.gov/LundBrowder.pdf
 https://www.rch.org.au/burns/clinical_information/#lund-and-browder-chart
-https://en.wikipedia.org/wiki/Lund_and_Browder_chart">
+https://en.wikipedia.org/wiki/Lund_and_Browder_chart
+
+Rhodes J, Clay C, Phillips M. The surface area of the hand and the palm for estimating percentage of total body surface area: results of a meta-analysis. Br J Dermatol. 2013;169(1):76-84. doi:10.1111/bjd.12290">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"eb0fe9206dc464b491fe0b323f08e39c">
+		["MD5-CAM-1.0.1"] = <"ed74d2ff43c87530107084202d1a7778">
 		["build_uid"] = <"aa8b6609-e455-3555-8ac9-847b2a893045">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -53,9 +59,10 @@ definition
 							[local::
 							at0034,    -- Lund-Browder Chart
 							at0035,    -- Modified Rule of nines for pediatric use
-							at0036,    -- Rule of nines (unmodified)
-							at0037,    -- Palm rule
-							at0042]    -- Image analysis
+							at0036,    -- Wallace Rule of nines
+							at0037,    -- Hand surface area (HSA)
+							at0042,    -- Palm surface area (PSA)
+							at0044]    -- Image analysis
 						}
 					}
 				}
@@ -66,7 +73,40 @@ definition
 					1|[local::at0028],
 					5|[local::at0029],
 					10|[local::at0030],
-					15|[local::at0031]
+					15|[local::at0031],
+					16|[local::at0045]
+				}
+			}
+			ELEMENT[at0048] occurrences matches {0..1} matches {    -- age count
+				value matches {
+					DV_COUNT matches {*}
+				}
+				name matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0049,    -- dfsfd
+							at0050]    -- fdfsdf
+						}
+					}
+				}
+			}
+			ELEMENT[at0047] occurrences matches {0..1} matches {    -- DV_QUANTITY
+				value matches {
+					C_DV_QUANTITY <
+						
+						list = <
+							["1"] = <
+								units = <"a">
+								magnitude = <|0.0..1.0|>
+							>
+						>
+					>
+				}
+			}
+			ELEMENT[at0046] occurrences matches {0..1} matches {    -- Age interval
+				value matches {
+					DV_DURATION matches {*}
 				}
 			}
 			ELEMENT[at0041] occurrences matches {0..1} matches {    -- Comment
@@ -81,7 +121,7 @@ definition
 							DV_CODED_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Body part area of total body
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Body part relative area
 						value matches {
 							DV_PROPORTION matches {
 								type matches {2}
@@ -133,7 +173,7 @@ definition
 			}
 			CLUSTER[at0014] occurrences matches {0..1} matches {    -- Sum of areas
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0025] occurrences matches {0..1} matches {    -- TBSA%, Sum of affected/burnt area of whole body
+					ELEMENT[at0025] occurrences matches {0..1} matches {    -- TBSA%, total affected/burnt body surface area
 						value matches {
 							DV_PROPORTION matches {
 								type matches {2}
@@ -169,12 +209,13 @@ definition
 	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
 					text = <"Relative body surface area assessment">
-					description = <"Burns area assessment using methods like Lund browder chart, Rule of nines, ">
+					description = <"Assessment of relative body surface area affected by burns etc, estimated using methods like Lund-Browder chart, Rule of nines, etc. ">
 				>
 				["at0001"] = <
 					text = <"Partial area">
@@ -184,10 +225,16 @@ ontology
 Remember to remove (0..0) old overlapping parts if new ones are introduced, to avoid possibility of double registration.">
 				>
 				["at0002"] = <
-					text = <"Body part area of total body">
-					description = <"The age-category-dependent size the Lund-Browder chart assigns to this body part. The 'Total burns on this part' summed up of different kinds of burns on this body part should never exceed this number.
-    
-When 'Age category' has been selected, this number could be automatically filled by the system.">
+					text = <"Body part relative area">
+					description = <"The age-category-dependent relative area (percentage of full body area) that the estimation method (e.g. 'Lund-Browder chart' or 'rule of nines') assigns to this body part. 
+">
+					comment = <"When 'Estimation Method' and 'Age category...' have been selected, this number could be automatically filled by the system.
+
+The 'Total burns on this part' for this partial area should never exceed this number.
+
+All the 
+
+">
 				>
 				["at0003"] = <
 					text = <"Body part">
@@ -217,7 +264,8 @@ Can be used in templates where both 'Generic part' and 'Burns per depth' have be
 				>
 				["at0008"] = <
 					text = <"Sum of burnt area on this part">
-					description = <"">
+					description = <"Sum of the areas of different depth categories">
+					comment = <"Note that Epiderminal (first degree) burns are usually _not_ included in these partial sums (since they may be  used for TBSA% calculation).">
 				>
 				["at0010"] = <
 					text = <"Partial thickness burn">
@@ -252,9 +300,11 @@ Can be used in templates where both 'Generic part' and 'Burns per depth' have be
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"TBSA%, Sum of affected/burnt area of whole body">
-					description = <"Sum of burnt area of whole body">
-					comment = <"Summing up all 'Sum of burnt area on this part' for all body parts should equal summing up all 'Total burnt area for this depth'">
+					text = <"TBSA%, total affected/burnt body surface area">
+					description = <"Sum of affected/burnt area of whole body">
+					comment = <"Summing up all 'Sum of burnt area on this part' for all body parts should equal summing up all 'Total burnt area of this depth category'
+
+Note that Epiderminal (first degree) burns are usually _not_ included in the TBSA% calculation.">
 				>
 				["at0026"] = <
 					text = <"Age category used for Lund-Browder">
@@ -273,12 +323,12 @@ Can be used in templates where both 'Generic part' and 'Burns per depth' have be
 					description = <"Scale for children 5-9 years old">
 				>
 				["at0030"] = <
-					text = <"10-15 years">
-					description = <"Scale for children 10-15 years old">
+					text = <"10-14 years">
+					description = <"Scale for children 10-14 years old">
 				>
 				["at0031"] = <
-					text = <"Adult, 15+ years">
-					description = <"Scale for adults and adolescents 15 years or older">
+					text = <"15 years">
+					description = <"Scale for adolescents approximately 15 years old">
 				>
 				["at0032"] = <
 					text = <"Epidermal burn">
@@ -290,19 +340,19 @@ Can be used in templates where both 'Generic part' and 'Burns per depth' have be
 				>
 				["at0034"] = <
 					text = <"Lund-Browder Chart">
-					description = <"">
+					description = <"Chart of body parts' relateive area, using age group dependent values for head and legs">
 				>
 				["at0035"] = <
 					text = <"Modified Rule of nines for pediatric use">
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"Rule of nines (unmodified)">
-					description = <"Not accurate for pediatric use. DIvides body into fractions of multiples of 9%">
+					text = <"Wallace Rule of nines">
+					description = <"Divides body roughly into fractions of multiples of 9%, (Not accurate for children)">
 				>
 				["at0037"] = <
-					text = <"Palm rule">
-					description = <"Based on that that palm of the patient's hand including fingers (in rested state) is approximately 1%">
+					text = <"Hand surface area (HSA)">
+					description = <"Based on that the patient's hand (palm + fingers) is approximately 1% of total body surface area">
 				>
 				["at0038"] = <
 					text = <"Extension per part">
@@ -314,16 +364,51 @@ Can be used in templates where both 'Generic part' and 'Burns per depth' have be
 				>
 				["at0041"] = <
 					text = <"Comment">
-					description = <"">
+					description = <"Information about estimation that could not captured in other fields.">
 				>
 				["at0042"] = <
-					text = <"Image analysis">
-					description = <"Algorithm (software) based analysis of data obtained by imaging methods">
+					text = <"Palm surface area (PSA)">
+					description = <"Based on that the patient's palm (fingers excluded)  is approximately 0.5% of total body surface area">
 				>
 				["at0043"] = <
 					text = <"Extension">
 					description = <"">
 				>
+				["at0044"] = <
+					text = <"Image analysis">
+					description = <"Algorithm (software) based analysis of data obtained by imaging methods">
+				>
+				["at0045"] = <
+					text = <"Adult">
+					description = <"Scale for adults">
+				>
+				["at0046"] = <
+					text = <"Age interval">
+					description = <"">
+				>
+				["at0047"] = <
+					text = <"DV_QUANTITY">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"age count">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"dfsfd">
+					description = <"fsdfsdfsdf">
+				>
+				["at0050"] = <
+					text = <"fdfsdf">
+					description = <"gafga">
+				>
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0011"] = <[SNOMED-CT::262588000]>
 			>
 		>
 	>
