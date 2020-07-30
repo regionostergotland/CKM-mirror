@@ -48,7 +48,7 @@ https://www.vicburns.org.au/wp-content/uploads/2016/06/poster4-paediatric-burns-
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"07f1c103917980e17bd20d496bbe9f63">
+		["MD5-CAM-1.0.1"] = <"f48ab9142a06077f06d084b258b9c6e2">
 		["build_uid"] = <"aa8b6609-e455-3555-8ac9-847b2a893045">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -137,7 +137,10 @@ definition
 									[local::
 									at0063,    -- Head
 									at0064,    -- Head and neck
-									at0065]    -- Neck
+									at0065,    -- Neck
+									at0067,    -- Trunk
+									at0068,    -- Trunk, frontside (anterior trunk)
+									at0069]    -- Back, (posterior trunk)
 								}
 							}
 						}
@@ -457,11 +460,23 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 				>
 				["at0065"] = <
 					text = <"Neck">
-					description = <" Entire skin of neck (Neck/throat, front and back)">
+					description = <"Entire skin of neck (Neck/throat, front and back)">
 				>
 				["at0066"] = <
 					text = <"Rule of five">
-					description = <"">
+					description = <"Used for obese patients etc. TODO: add reference/name">
+				>
+				["at0067"] = <
+					text = <"Trunk">
+					description = <"Entire skin of trunk (front and back)">
+				>
+				["at0068"] = <
+					text = <"Trunk, frontside (anterior trunk)">
+					description = <"Skin of anterior trunk (TODO: report missing  SNOMED CT code for \"entire skin of...\")">
+				>
+				["at0069"] = <
+					text = <"Back, (posterior trunk)">
+					description = <"Entire skin of back">
 				>
 			>
 		>
@@ -473,6 +488,9 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 				["at0064"] = <[SNOMED-CT::361355005]>
 				["at0063"] = <[SNOMED-CT::181484006]>
 				["at0065"] = <[SNOMED-CT::361705004]>
+				["at0067"] = <[SNOMED-CT::181489001]>
+				["at0068"] = <[SNOMED-CT::181491009]>
+				["at0069"] = <[SNOMED-CT::181492002]>
 			>
 		>
 	>
