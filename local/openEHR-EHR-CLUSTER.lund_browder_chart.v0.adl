@@ -44,7 +44,7 @@ Rhodes J, Clay C, Phillips M. The surface area of the hand and the palm for esti
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"ed74d2ff43c87530107084202d1a7778">
+		["MD5-CAM-1.0.1"] = <"f0c811fde183d052861720ed5aa0f8fe">
 		["build_uid"] = <"aa8b6609-e455-3555-8ac9-847b2a893045">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -77,36 +77,31 @@ definition
 					16|[local::at0045]
 				}
 			}
-			ELEMENT[at0048] occurrences matches {0..1} matches {    -- age count
+			ELEMENT[at0047] occurrences matches {0..1} matches {    -- Age interval/category used
 				value matches {
-					DV_COUNT matches {*}
-				}
-				name matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::
-							at0049,    -- dfsfd
-							at0050]    -- fdfsdf
+					DV_INTERVAL<DV_QUANTITY> matches {
+						lower matches {
+							C_DV_QUANTITY <
+								
+								list = <
+									["1"] = <
+										units = <"a">
+										magnitude = <|>=0.0|>
+									>
+								>
+							>
+						}
+						upper matches {
+							C_DV_QUANTITY <
+								
+								list = <
+									["1"] = <
+										units = <"a">
+									>
+								>
+							>
 						}
 					}
-				}
-			}
-			ELEMENT[at0047] occurrences matches {0..1} matches {    -- DV_QUANTITY
-				value matches {
-					C_DV_QUANTITY <
-						
-						list = <
-							["1"] = <
-								units = <"a">
-								magnitude = <|0.0..1.0|>
-							>
-						>
-					>
-				}
-			}
-			ELEMENT[at0046] occurrences matches {0..1} matches {    -- Age interval
-				value matches {
-					DV_DURATION matches {*}
 				}
 			}
 			ELEMENT[at0041] occurrences matches {0..1} matches {    -- Comment
@@ -382,25 +377,13 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 					text = <"Adult">
 					description = <"Scale for adults">
 				>
-				["at0046"] = <
-					text = <"Age interval">
-					description = <"">
-				>
 				["at0047"] = <
-					text = <"DV_QUANTITY">
-					description = <"">
+					text = <"Age interval/category used">
+					description = <"Age category interval used for area estimation in the method">
 				>
-				["at0048"] = <
-					text = <"age count">
-					description = <"">
-				>
-				["at0049"] = <
-					text = <"dfsfd">
-					description = <"fsdfsdfsdf">
-				>
-				["at0050"] = <
-					text = <"fdfsdf">
-					description = <"gafga">
+				["a"] = <
+					text = <"Maximum age">
+					description = <"year">
 				>
 			>
 		>
