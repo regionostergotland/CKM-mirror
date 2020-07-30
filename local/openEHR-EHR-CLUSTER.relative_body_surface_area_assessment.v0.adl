@@ -10,34 +10,415 @@ language
 description
 	original_author = <
 		["date"] = <"2020-07-30">
+		["name"] = <"Erik Sundvall">
+		["organisation"] = <"Region Östergötland & Linköping University">
+		["email"] = <"erik.sundvall@regionostergotland.se & erik.sundvall@liu.se">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
+			purpose = <"For recording percentage of total body area affected by injuries or conditions. ">
+			keywords = <"surface area, burns, burn assessment, Lund-Browder, skin area, rule of nines, palmar method, TBSA, TBSA%", ...>
+			use = <"Use in 'Examination findings' slots of other archetypes, for example CLUSTER.exam, CLUSTER.exam-skin and specialisations of those. 
+
+These scales/rules ar often displayed to end users in tabular form with e.g. burn depth as columns and body parts/areas as rows.
+
+This is a base archetype that can be extended to create more specific archetypes, e.g. specialized archetypes for recording areas of; burns of different depths, extent of dermatological diseases such as Mycosis fungoides or areas that have been frozen, corroded etc.
+
+Extension slots can also be used if found mor suitable than creating a specialized archetype based on this one.
+
+Systems should preferably not store anything (e.g. not store 0%) for body part sections and burn depth levels within them that are not injured.">
+			misuse = <"Do not use 'Comment' or extensions for detailed descriptions, cause and etiology of injuries and diseases; instead use suitable fields in archetypes like CLUSTER.exam, CLUSTER.exam-skin, CLUSTER.exam_burn or EVALUATION.problem_diagnosis that this surface area assessment is likely nested within when used in EHRs.">
 		>
 	>
 	other_details = <
 		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
 		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Hettiaratchy S, Papini R. Initial management of a major burn: II--assessment and resuscitation. BMJ. 2004;329(7457):101-103. doi:10.1136/bmj.329.7457.101 Available from: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC449823/
+
+Lund-Browder Charts
+https://www.remm.nlm.gov/burns.htm & https://www.remm.nlm.gov/LundBrowder.pdf
+https://www.rch.org.au/burns/clinical_information/#lund-and-browder-chart
+https://en.wikipedia.org/wiki/Lund_and_Browder_chart
+
+https://en.wikipedia.org/wiki/Total_body_surface_area
+
+Rhodes J, Clay C, Phillips M. The surface area of the hand and the palm for estimating percentage of total body surface area: results of a meta-analysis. Br J Dermatol. 2013;169(1):76-84. doi:10.1111/bjd.12290
+
+Scarisbrick JJ, Morris S. How big is your hand and should you use it to score skin in cutaneous T-cell lymphoma?. Br J Dermatol. 2013;169(2):260-265. doi:10.1111/bjd.12403 Available from: https://pubmed.ncbi.nlm.nih.gov/23621659/
+
+https://www.vicburns.org.au/wp-content/uploads/2016/06/poster4-paediatric-burns-assessment-ruler.pdf">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"300e343aed35174125c8f39b2d67cccd">
 		["build_uid"] = <"0378792a-c5f1-31ad-8334-f3c2848cbe4e">
+		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
+		["MD5-CAM-1.0.1"] = <"d65f66660d44123b9cf381894571fa14">
 	>
 
 definition
-	CLUSTER[at0000] matches {*}    -- Relative body surface area assessment
+	CLUSTER[at0000] matches {    -- Relative body surface area assessment
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Estimation method
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0002,    -- Lund-Browder Chart
+							at0003,    -- Wallace Rule of nines
+							at0004,    -- Modified Rule of nines for pediatric use
+							at0005,    -- Hand surface area (HSA)
+							at0006,    -- Palm surface area (PSA)
+							at0007,    -- Image analysis
+							at0008]    -- Rule of five
+						}
+					}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Age interval or category used
+				value matches {
+					DV_INTERVAL<DV_QUANTITY> matches {
+						lower matches {
+							C_DV_QUANTITY <
+								
+								list = <
+									["1"] = <
+										units = <"a">
+										magnitude = <|>=0.0|>
+									>
+								>
+							>
+						}
+						upper matches {
+							C_DV_QUANTITY <
+								
+								list = <
+									["1"] = <
+										units = <"a">
+									>
+								>
+							>
+						}
+					}
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::
+							at0010,    -- 0-1 years
+							at0011,    -- 1-4 years
+							at0012,    -- 5-9 years
+							at0013,    -- 10-14 years
+							at0014,    -- 15 years
+							at0015,    -- Adult
+							at0016,    -- 10-15 years
+							at0017,    -- Child
+							at0018]    -- Adult, obese
+						}
+					}
+				}
+			}
+			ELEMENT[at0019] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			CLUSTER[at0020] occurrences matches {0..1} matches {    -- Partial skin area
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Area name
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0022,    -- Head
+									at0023,    -- Head and neck
+									at0024,    -- Neck
+									at0025,    -- Trunk
+									at0026,    -- Trunk, frontside (anterior trunk)
+									at0027,    -- Back, (posterior trunk)
+									at0028,    -- Genitalia
+									at0029,    -- Buttock
+									at0030,    -- Arm (including shoulder and hand)
+									at0031,    -- Upper arm
+									at0032,    -- Lower arm
+									at0033,    -- Hand and wrist
+									at0034,    -- Leg (including hip and foot)
+									at0035,    -- Hip and thigh
+									at0036,    -- Lower leg
+									at0037]    -- Foot
+								}
+							}
+						}
+					}
+					ELEMENT[at0038] occurrences matches {0..1} matches {    -- Laterality
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0039,    -- Left
+									at0040,    -- Right
+									at0041]    -- Bilateral, right and left,
+								}
+							}
+						}
+					}
+					ELEMENT[at0042] occurrences matches {0..1} matches {    -- Relative area (% of total body area)
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0054] occurrences matches {0..*} matches {    -- Extension per area
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+			CLUSTER[at0055] occurrences matches {0..1} matches {    -- Sum of areas
+				items cardinality matches {1..*; unordered} matches {
+					ELEMENT[at0056] occurrences matches {0..1} matches {    -- TBSA%, total affected body surface area
+						value matches {
+							DV_PROPORTION matches {
+								type matches {2}
+							}
+						}
+					}
+					allow_archetype CLUSTER[at0059] occurrences matches {0..*} matches {    -- Sum extension
+						include
+							archetype_id/value matches {/.*/}
+					}
+				}
+			}
+			allow_archetype CLUSTER[at0060] occurrences matches {0..*} matches {    -- Extension
+				include
+					archetype_id/value matches {/.*/}
+			}
+		}
+	}
 
 ontology
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["en"] = <
 			items = <
 				["at0000"] = <
 					text = <"Relative body surface area assessment">
-					description = <"Relative body surface area assessment">
+					description = <"Assessment of relative body surface area affected by conditions, injuries,, diseases etc, estimated using methods like Lund-Browder chart, Wallace rule of nines, etc. ">
 				>
+				["at0001"] = <
+					text = <"Estimation method">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Lund-Browder Chart">
+					description = <"Chart of body parts' relateive area, using age category dependent values for head and legs">
+				>
+				["at0003"] = <
+					text = <"Wallace Rule of nines">
+					description = <"Divides body roughly into fractions of multiples of 9%, (Not accurate for children)">
+				>
+				["at0004"] = <
+					text = <"Modified Rule of nines for pediatric use">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Hand surface area (HSA)">
+					description = <"Based on that the patient's hand (palm + fingers) is approximately 1% of total body surface area">
+				>
+				["at0006"] = <
+					text = <"Palm surface area (PSA)">
+					description = <"Based on that the patient's palm (fingers excluded)  is approximately 0.5% of total body surface area">
+				>
+				["at0007"] = <
+					text = <"Image analysis">
+					description = <"Algorithm (software) based analysis of data obtained by imaging methods">
+				>
+				["at0008"] = <
+					text = <"Rule of five">
+					description = <"Used for obese patients etc. TODO: add reference/name">
+				>
+				["at0009"] = <
+					text = <"Age interval or category used">
+					description = <"Age category interval used for area estimation in the method, if any.">
+				>
+				["at0010"] = <
+					text = <"0-1 years">
+					description = <"Scale for infants and children less than 1 year old">
+				>
+				["at0011"] = <
+					text = <"1-4 years">
+					description = <"Scale for children 1-4 years old">
+				>
+				["at0012"] = <
+					text = <"5-9 years">
+					description = <"Scale for children 5-9 years old">
+				>
+				["at0013"] = <
+					text = <"10-14 years">
+					description = <"Scale for children 10-14 years old">
+				>
+				["at0014"] = <
+					text = <"15 years">
+					description = <"Scale for adolescents approximately 15 years old">
+				>
+				["at0015"] = <
+					text = <"Adult">
+					description = <"Scale for adults">
+				>
+				["at0016"] = <
+					text = <"10-15 years">
+					description = <"Scale for children 10-15 years old">
+				>
+				["at0017"] = <
+					text = <"Child">
+					description = <"Scale for children">
+				>
+				["at0018"] = <
+					text = <"Adult, obese">
+					description = <"Scale for obese aduts >80 kg">
+				>
+				["at0019"] = <
+					text = <"Comment">
+					description = <"Information about the estimation that could not captured in other fields.">
+				>
+				["at0020"] = <
+					text = <"Partial skin area">
+					description = <"To be repeated and configured in template, if the predefined body parts/areas in available templates or archetype specializations do not fit the use case.">
+					comment = <"Example: In some use cases upper arm and lower arm are recorded separately and in some other use cases recorded together as arm. 
+
+Remember to remove (0..0) old overlapping parts if new ones are introduced, to avoid possibility of double registration.">
+				>
+				["at0021"] = <
+					text = <"Area name">
+					description = <"Name of skin area, preferably coded with terminology like Snomed CT.">
+				>
+				["at0022"] = <
+					text = <"Head">
+					description = <"Entire skin of head (excluding neck)">
+				>
+				["at0023"] = <
+					text = <"Head and neck">
+					description = <"Entire skin of head and neck">
+				>
+				["at0024"] = <
+					text = <"Neck">
+					description = <"Entire skin of neck (Neck/throat, front and back)">
+				>
+				["at0025"] = <
+					text = <"Trunk">
+					description = <"Entire skin of trunk (front and back)">
+				>
+				["at0026"] = <
+					text = <"Trunk, frontside (anterior trunk)">
+					description = <"Skin of anterior trunk (TODO: report missing  SNOMED CT code for \"entire skin of...\")">
+				>
+				["at0027"] = <
+					text = <"Back, (posterior trunk)">
+					description = <"Entire skin of back">
+				>
+				["at0028"] = <
+					text = <"Genitalia">
+					description = <"Entire skin of external genitalia">
+				>
+				["at0029"] = <
+					text = <"Buttock">
+					description = <"Entire skin of buttock">
+				>
+				["at0030"] = <
+					text = <"Arm (including shoulder and hand)">
+					description = <"Entire skin of upper extremity (record separately for each arm, use laterality to specify side)">
+				>
+				["at0031"] = <
+					text = <"Upper arm">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Lower arm">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Hand and wrist">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Leg (including hip and foot)">
+					description = <"Entire skin of lower extremity (record separately for each arm, use laterality to specify side)">
+				>
+				["at0035"] = <
+					text = <"Hip and thigh">
+					description = <"Entire skin of hip and thigh">
+				>
+				["at0036"] = <
+					text = <"Lower leg">
+					description = <"Entire skin of lower leg">
+				>
+				["at0037"] = <
+					text = <"Foot">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"Laterality">
+					description = <"Side of body, for skin regions involving arms, legs, buttocks etc.">
+					comment = <"Example: In some use cases buttocks (right and left) are added and recorded as one field and in other use cases they are recorded separately.">
+				>
+				["at0039"] = <
+					text = <"Left">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Right">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Bilateral, right and left,">
+					description = <"">
+				>
+				["at0042"] = <
+					text = <"Relative area (% of total body area)">
+					description = <"The age-category-dependent relative area (percentage of full body area) that the estimation method (e.g. 'Lund-Browder chart' or 'rule of nines') assigns to this body part. 
+">
+					comment = <"When 'Estimation Method' and 'Age category...' have been selected, this number could be automatically filled by the system.
+
+The 'Total burns on this part' for this partial area should never exceed this number.
+
+All the 
+
+">
+				>
+				["at0054"] = <
+					text = <"Extension per area">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Sum of areas">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"TBSA%, total affected body surface area">
+					description = <"Sum of affected/burnt area of whole body">
+					comment = <"Summing up all 'Sum of burnt area on this part' for all body parts should equal summing up all 'Total burnt area of this depth category'
+
+Note that Epiderminal (first degree) burns are usually _not_ included in the TBSA% calculation.">
+				>
+				["at0059"] = <
+					text = <"Sum extension">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Extension">
+					description = <"">
+				>
+			>
+		>
+	>
+	term_bindings = <
+		["SNOMED-CT"] = <
+			items = <
+				["at0023"] = <[SNOMED-CT::361355005]>
+				["at0022"] = <[SNOMED-CT::181484006]>
+				["at0024"] = <[SNOMED-CT::361705004]>
+				["at0025"] = <[SNOMED-CT::181489001]>
+				["at0026"] = <[SNOMED-CT::181491009]>
 			>
 		>
 	>
