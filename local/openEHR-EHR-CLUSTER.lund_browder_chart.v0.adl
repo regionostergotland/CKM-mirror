@@ -18,11 +18,11 @@ description
 	details = <
 		["en"] = <
 			language = <[ISO_639-1::en]>
-			purpose = <"For recording percentage of total body area affected by injuries/conditions, for example burns of different depths.">
+			purpose = <"For recording percentage of total body area affected by injuries or conditions, for example burns of different depths..">
 			keywords = <"burns, burn assessment, Lund-Browder, skin area, rule of nines, palmar method, surface area", ...>
 			use = <"Use in 'Examination findings' slots of other archetypes, for example CLUSTER.exam, CLUSTER.exam-skin or CLUSTER.exam_burn. These scales/rules ar often displayed in tabular form with e.g. burn depth as columns and body parts/areas as rows.
 
-Extension slots can be used to record details of other things than burns (e.g. areas that have been frozen, corroded or have traumatic blisters).
+Extension slots can be used to record area of other conditions than burns, for example dermatological diseases such as Mycosis fungoides or areas that have been frozen, corroded etc.
 
 Systems should preferably not store anything (e.g. not store 0%) for body part sections and burn depth levels within them that are not injured.
 
@@ -40,11 +40,13 @@ https://www.remm.nlm.gov/burns.htm & https://www.remm.nlm.gov/LundBrowder.pdf
 https://www.rch.org.au/burns/clinical_information/#lund-and-browder-chart
 https://en.wikipedia.org/wiki/Lund_and_Browder_chart
 
-Rhodes J, Clay C, Phillips M. The surface area of the hand and the palm for estimating percentage of total body surface area: results of a meta-analysis. Br J Dermatol. 2013;169(1):76-84. doi:10.1111/bjd.12290">
+Rhodes J, Clay C, Phillips M. The surface area of the hand and the palm for estimating percentage of total body surface area: results of a meta-analysis. Br J Dermatol. 2013;169(1):76-84. doi:10.1111/bjd.12290
+
+https://pubmed.ncbi.nlm.nih.gov/23621659/">
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"68ad56f21d87d5f483803c90fec6706b">
+		["MD5-CAM-1.0.1"] = <"1c544f9600a02cdce690b9dd1c2cf062">
 		["build_uid"] = <"aa8b6609-e455-3555-8ac9-847b2a893045">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -221,7 +223,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Relative body surface area assessment">
-					description = <"Assessment of relative body surface area affected by burns etc, estimated using methods like Lund-Browder chart, Rule of nines, etc. ">
+					description = <"Assessment of relative body surface area affected by burns, injuries, diseases etc, estimated using methods like Lund-Browder chart, Wallace rule of nines, etc. ">
 				>
 				["at0001"] = <
 					text = <"Partial area">
