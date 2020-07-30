@@ -50,7 +50,7 @@ https://www.vicburns.org.au/wp-content/uploads/2016/06/poster4-paediatric-burns-
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"70fca4667f74c86b4e74b720d72424e2">
+		["MD5-CAM-1.0.1"] = <"fcccbf6d57d27fc0b44e8f4f04697c16">
 		["build_uid"] = <"aa8b6609-e455-3555-8ac9-847b2a893045">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -64,8 +64,8 @@ definition
 						defining_code matches {
 							[local::
 							at0034,    -- Lund-Browder Chart
-							at0035,    -- Modified Rule of nines for pediatric use
 							at0036,    -- Wallace Rule of nines
+							at0035,    -- Modified Rule of nines for pediatric use
 							at0037,    -- Hand surface area (HSA)
 							at0042,    -- Palm surface area (PSA)
 							at0044,    -- Image analysis
@@ -210,11 +210,6 @@ definition
 					}
 				}
 			}
-			ELEMENT[at0024] occurrences matches {0..1} matches {    -- Coded expression
-				value matches {
-					DV_CODED_TEXT matches {*}
-				}
-			}
 			CLUSTER[at0014] occurrences matches {0..1} matches {    -- Sum of areas
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0025] occurrences matches {0..1} matches {    -- TBSA%, total affected body surface area
@@ -238,6 +233,11 @@ definition
 						include
 							archetype_id/value matches {/.*/}
 					}
+				}
+			}
+			ELEMENT[at0024] occurrences matches {0..1} matches {    -- Coded expression
+				value matches {
+					DV_CODED_TEXT matches {*}
 				}
 			}
 			allow_archetype CLUSTER[at0043] occurrences matches {0..*} matches {    -- Extension
@@ -355,7 +355,7 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 				>
 				["at0034"] = <
 					text = <"Lund-Browder Chart">
-					description = <"Chart of body parts' relateive area, using age group dependent values for head and legs">
+					description = <"Chart of body parts' relateive area, using age category dependent values for head and legs">
 				>
 				["at0035"] = <
 					text = <"Modified Rule of nines for pediatric use">
@@ -379,7 +379,7 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 				>
 				["at0041"] = <
 					text = <"Comment">
-					description = <"Information about estimation that could not captured in other fields.">
+					description = <"Information about the estimation that could not captured in other fields.">
 				>
 				["at0042"] = <
 					text = <"Palm surface area (PSA)">
