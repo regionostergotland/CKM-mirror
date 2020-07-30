@@ -50,7 +50,7 @@ https://www.vicburns.org.au/wp-content/uploads/2016/06/poster4-paediatric-burns-
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"7f8f05b37fbba129da333c104a934cfe">
+		["MD5-CAM-1.0.1"] = <"d6c17ea1e15568a0861560e9b477466d">
 		["build_uid"] = <"0378792a-c5f1-31ad-8334-f3c2848cbe4e">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -120,7 +120,7 @@ definition
 					DV_TEXT matches {*}
 				}
 			}
-			CLUSTER[at0020] occurrences matches {0..1} matches {    -- Partial skin area
+			CLUSTER[at0020.1] occurrences matches {0..*} matches {    -- Partial skin area
 				items cardinality matches {1..*; unordered} matches {
 					ELEMENT[at0021] occurrences matches {0..1} matches {    -- Area name
 						value matches {
@@ -166,7 +166,11 @@ definition
 							}
 						}
 					}
-					CLUSTER[at0.1] occurrences matches {0..1} matches {    -- Burns per depth
+					allow_archetype CLUSTER[at0054] occurrences matches {0..*} matches {    -- Extension per area
+						include
+							archetype_id/value matches {/.*/}
+					}
+					CLUSTER[at0.1] occurrences matches {0..*} matches {    -- Burns per depth
 						items cardinality matches {1..*; unordered} matches {
 							ELEMENT[at0005.1] occurrences matches {0..1} matches {    -- Depth
 								value matches {
@@ -192,17 +196,6 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0008.1] occurrences matches {0..1} matches {    -- Sum of burns on this skin area
-						value matches {
-							DV_PROPORTION matches {
-								type matches {2}
-							}
-						}
-					}
-					allow_archetype CLUSTER[at0054] occurrences matches {0..*} matches {    -- Extension per area
-						include
-							archetype_id/value matches {/.*/}
-					}
 				}
 			}
 			CLUSTER[at0055] occurrences matches {0..1} matches {    -- Sum of areas
@@ -218,7 +211,7 @@ definition
 						include
 							archetype_id/value matches {/.*/}
 					}
-					CLUSTER[at0.8] occurrences matches {0..1} matches {    -- Burns per depth category
+					CLUSTER[at0.8] occurrences matches {0..*} matches {    -- Burns per depth category
 						items cardinality matches {1..*; unordered} matches {
 							use_node ELEMENT occurrences matches {0..1} /items[at0020]/items[at0.1]/items[at0005.1]
 							ELEMENT[at0023.1] occurrences matches {0..1} matches {    -- Total burnt area of this depth category
@@ -244,6 +237,72 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["at0023"] = <
+					text = <"Head and neck">
+					description = <"Entire skin of head and neck">
+				>
+				["at0000.1"] = <
+					text = <"Relative body surface area burnt">
+					description = <"Assessment of relative body surface area affected by burns, estimated using methods like Lund-Browder chart, Wallace rule of nines, etc. ">
+				>
+				["at0.1"] = <
+					text = <"Burns per depth">
+					description = <"Repeat once for each depth category used in template.">
+				>
+				["at0.2"] = <
+					text = <"Epidermal burn">
+					description = <"First degree burn, Superficial epidermal burn (For example sunburn) Not included in TBSA%">
+				>
+				["at0.3"] = <
+					text = <"Partial thickness burn">
+					description = <"Second degree burn (old deprecated description)">
+				>
+				["at0.4"] = <
+					text = <"Superficial partial thickness burn">
+					description = <"Superficial second degree burn, SPSL - Superficial partial skin loss burn">
+				>
+				["at0.5"] = <
+					text = <"Deep partial thickness burn">
+					description = <"Deep second degree burn / Deep dermal burn">
+				>
+				["at0.6"] = <
+					text = <"Full thickness burn">
+					description = <"Third degree burn">
+				>
+				["at0.7"] = <
+					text = <"Deep full thickness burn">
+					description = <"Fourth degree burn">
+				>
+				["at0005.1"] = <
+					text = <"Depth">
+					description = <"The burn depth category used for the estimation.">
+					comment = <"Some applications of e.g. the Lund-Browder chart only discern Partial v.s. Full thickness burns, but others use more granular levels like 'deep partial thickness burn'
+
+Corresponding codes are available in  SNOMED CT">
+				>
+				["at0006.1"] = <
+					text = <"Burnt area, precentage of full body">
+					description = <"">
+				>
+				["at0056.1"] = <
+					text = <"TBSA%, total burnt body surface area">
+					description = <"Sum of affected/burnt area of whole body">
+					comment = <"Summing up all 'Sum of burnt area on this part' for all body parts should equal summing up all 'Total burnt area of this depth category'
+
+Note that Epiderminal (first degree) burns are usually _not_ included in the TBSA% calculation.">
+				>
+				["at0.8"] = <
+					text = <"Burns per depth category">
+					description = <"">
+				>
+				["at0023.1"] = <
+					text = <"Total burnt area of this depth category">
+					description = <"Total burnt area of this depth category, precentage of full body">
+				>
+				["at0000"] = <
+					text = <"Relative body surface area assessment">
+					description = <"Assessment of relative body surface area affected by conditions, injuries,, diseases etc, estimated using methods like Lund-Browder chart, Wallace rule of nines, etc. ">
+				>
 				["at0001"] = <
 					text = <"Estimation method">
 					description = <"">
@@ -334,10 +393,6 @@ Remember to remove (0..0) old overlapping parts if new ones are introduced, to a
 				["at0022"] = <
 					text = <"Head">
 					description = <"Entire skin of head (excluding neck)">
-				>
-				["at0023"] = <
-					text = <"Head and neck">
-					description = <"">
 				>
 				["at0024"] = <
 					text = <"Neck">
@@ -447,72 +502,12 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 					text = <"Extension">
 					description = <"">
 				>
-				["at0000.1"] = <
-					text = <"Relative body surface area burnt">
-					description = <"Assessment of relative body surface area affected by burns, estimated using methods like Lund-Browder chart, Wallace rule of nines, etc. ">
-				>
-				["at0.1"] = <
-					text = <"Burns per depth">
-					description = <"Repeat once for each depth category used in template.">
-				>
-				["at0.2"] = <
-					text = <"Epidermal burn">
-					description = <"First degree burn, Superficial epidermal burn (For example sunburn) Not included in TBSA%">
-				>
-				["at0.3"] = <
-					text = <"Partial thickness burn">
-					description = <"Second degree burn (old deprecated description)">
-				>
-				["at0.4"] = <
-					text = <"Superficial partial thickness burn">
-					description = <"Superficial second degree burn, SPSL - Superficial partial skin loss burn">
-				>
-				["at0.5"] = <
-					text = <"Deep partial thickness burn">
-					description = <"Deep second degree burn / Deep dermal burn">
-				>
-				["at0.6"] = <
-					text = <"Full thickness burn">
-					description = <"Third degree burn">
-				>
-				["at0.7"] = <
-					text = <"Deep full thickness burn">
-					description = <"Fourth degree burn">
-				>
-				["at0005.1"] = <
-					text = <"Depth">
-					description = <"The burn depth category used for the estimation.">
-					comment = <"Some applications of e.g. the Lund-Browder chart only discern Partial v.s. Full thickness burns, but others use more granular levels like 'deep partial thickness burn'
+				["at0020.1"] = <
+					text = <"Partial skin area">
+					description = <"To be repeated and configured in template, if the predefined body parts/areas in available templates or archetype specializations do not fit the use case.">
+					comment = <"Example: In some use cases upper arm and lower arm are recorded separately and in some other use cases recorded together as arm. 
 
-Corresponding codes are available in  SNOMED CT">
-				>
-				["at0006.1"] = <
-					text = <"Burnt area, precentage of full body">
-					description = <"">
-				>
-				["at0008.1"] = <
-					text = <"Sum of burns on this skin area">
-					description = <"Sum of the areas of different depth categories">
-					comment = <"Note that Epiderminal (first degree) burns are usually _not_ included in these partial sums (since they may be  used for TBSA% calculation).">
-				>
-				["at0056.1"] = <
-					text = <"TBSA%, total burnt body surface area">
-					description = <"Sum of affected/burnt area of whole body">
-					comment = <"Summing up all 'Sum of burnt area on this part' for all body parts should equal summing up all 'Total burnt area of this depth category'
-
-Note that Epiderminal (first degree) burns are usually _not_ included in the TBSA% calculation.">
-				>
-				["at0.8"] = <
-					text = <"Burns per depth category">
-					description = <"">
-				>
-				["at0.9"] = <
-					text = <"ELEMENT">
-					description = <"">
-				>
-				["at0023.1"] = <
-					text = <"Total burnt area of this depth category">
-					description = <"Total burnt area of this depth category, precentage of full body">
+Remember to remove (0..0) old overlapping parts if new ones are introduced, to avoid possibility of double registration.">
 				>
 			>
 		>
@@ -525,6 +520,10 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 				["at0024"] = <[SNOMED-CT::361705004]>
 				["at0025"] = <[SNOMED-CT::181489001]>
 				["at0026"] = <[SNOMED-CT::181491009]>
+				["at0027"] = <[SNOMED-CT::181492002]>
+				["at0028"] = <[SNOMED-CT::367701003]>
+				["at0038"] = <[SNOMED-CT::272741003]>
+				["at0029"] = <[SNOMED-CT::181493007]>
 			>
 		>
 	>
