@@ -40,6 +40,8 @@ https://www.remm.nlm.gov/burns.htm & https://www.remm.nlm.gov/LundBrowder.pdf
 https://www.rch.org.au/burns/clinical_information/#lund-and-browder-chart
 https://en.wikipedia.org/wiki/Lund_and_Browder_chart
 
+https://en.wikipedia.org/wiki/Total_body_surface_area
+
 Rhodes J, Clay C, Phillips M. The surface area of the hand and the palm for estimating percentage of total body surface area: results of a meta-analysis. Br J Dermatol. 2013;169(1):76-84. doi:10.1111/bjd.12290
 
 Scarisbrick JJ, Morris S. How big is your hand and should you use it to score skin in cutaneous T-cell lymphoma?. Br J Dermatol. 2013;169(2):260-265. doi:10.1111/bjd.12403 Available from: https://pubmed.ncbi.nlm.nih.gov/23621659/
@@ -48,7 +50,7 @@ https://www.vicburns.org.au/wp-content/uploads/2016/06/poster4-paediatric-burns-
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"50fb8c3dc279987accd42ca4986e844e">
+		["MD5-CAM-1.0.1"] = <"8c0d5f1fdc6b5072471bacd5fcc56b3c">
 		["build_uid"] = <"aa8b6609-e455-3555-8ac9-847b2a893045">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -131,7 +133,28 @@ definition
 									at0067,    -- Trunk
 									at0068,    -- Trunk, frontside (anterior trunk)
 									at0069,    -- Back, (posterior trunk)
-									at0070]    -- Genitalia
+									at0070,    -- Genitalia
+									at0075,    -- Buttock
+									at0076,    -- Arm (including shoulder and hand)
+									at0077,    -- Upper arm
+									at0078,    -- Lower arm
+									at0079,    -- Hand and wrist
+									at0080,    -- Leg (including hip and foot)
+									at0081,    -- Hip and thigh
+									at0082,    -- Lower leg
+									at0083]    -- Foot
+								}
+							}
+						}
+					}
+					ELEMENT[at0071] occurrences matches {0..1} matches {    -- Laterality
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0072,    -- Left
+									at0073,    -- Right
+									at0074]    -- Bilateral, right and left,
 								}
 							}
 						}
@@ -193,7 +216,7 @@ definition
 			}
 			CLUSTER[at0014] occurrences matches {0..1} matches {    -- Sum of areas
 				items cardinality matches {1..*; unordered} matches {
-					ELEMENT[at0025] occurrences matches {0..1} matches {    -- TBSA%, total affected/burnt body surface area
+					ELEMENT[at0025] occurrences matches {0..1} matches {    -- TBSA%, total affected body surface area
 						value matches {
 							DV_PROPORTION matches {
 								type matches {2}
@@ -253,7 +276,7 @@ All the
 				>
 				["at0003"] = <
 					text = <"Area name">
-					description = <"Preferably coded with terminology like Snomed CT.">
+					description = <"Name of skin area, preferably coded with terminology like Snomed CT.">
 				>
 				["at0004"] = <
 					text = <"Burns per depth">
@@ -315,7 +338,7 @@ Can be used in templates where both 'Generic part' and 'Burns per depth' have be
 					description = <"">
 				>
 				["at0025"] = <
-					text = <"TBSA%, total affected/burnt body surface area">
+					text = <"TBSA%, total affected body surface area">
 					description = <"Sum of affected/burnt area of whole body">
 					comment = <"Summing up all 'Sum of burnt area on this part' for all body parts should equal summing up all 'Total burnt area of this depth category'
 
@@ -445,6 +468,59 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 					text = <"Genitalia">
 					description = <"Entire skin of external genitalia">
 				>
+				["at0071"] = <
+					text = <"Laterality">
+					description = <"Side of body, for skin regions involving arms, legs, buttocks etc.">
+					comment = <"Example: In some use cases buttocks (right and left) are added and recorded as one field and in other use cases they are recorded separately.">
+				>
+				["at0072"] = <
+					text = <"Left">
+					description = <"">
+				>
+				["at0073"] = <
+					text = <"Right">
+					description = <"">
+				>
+				["at0074"] = <
+					text = <"Bilateral, right and left,">
+					description = <"">
+				>
+				["at0075"] = <
+					text = <"Buttock">
+					description = <"Entire skin of buttock">
+				>
+				["at0076"] = <
+					text = <"Arm (including shoulder and hand)">
+					description = <"Entire skin of upper extremity (record separately for each arm, use laterality to specify side)">
+				>
+				["at0077"] = <
+					text = <"Upper arm">
+					description = <"">
+				>
+				["at0078"] = <
+					text = <"Lower arm">
+					description = <"">
+				>
+				["at0079"] = <
+					text = <"Hand and wrist">
+					description = <"">
+				>
+				["at0080"] = <
+					text = <"Leg (including hip and foot)">
+					description = <"Entire skin of lower extremity (record separately for each arm, use laterality to specify side)">
+				>
+				["at0081"] = <
+					text = <"Hip and thigh">
+					description = <"Entire skin of hip and thigh">
+				>
+				["at0082"] = <
+					text = <"Lower leg">
+					description = <"Entire skin of lower leg">
+				>
+				["at0083"] = <
+					text = <"Foot">
+					description = <"">
+				>
 			>
 		>
 	>
@@ -459,6 +535,8 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 				["at0068"] = <[SNOMED-CT::181491009]>
 				["at0069"] = <[SNOMED-CT::181492002]>
 				["at0070"] = <[SNOMED-CT::367701003]>
+				["at0071"] = <[SNOMED-CT::272741003]>
+				["at0075"] = <[SNOMED-CT::181493007]>
 			>
 		>
 	>
