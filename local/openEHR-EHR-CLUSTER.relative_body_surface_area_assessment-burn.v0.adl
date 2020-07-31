@@ -50,7 +50,7 @@ https://www.vicburns.org.au/wp-content/uploads/2016/06/poster4-paediatric-burns-
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"31248c66d4f512e15089483d64507580">
+		["MD5-CAM-1.0.1"] = <"c51c83b6f869f5252a19bcddde1e00ae">
 		["build_uid"] = <"0378792a-c5f1-31ad-8334-f3c2848cbe4e">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
 	>
@@ -166,10 +166,6 @@ definition
 							}
 						}
 					}
-					allow_archetype CLUSTER[at0054] occurrences matches {0..*} matches {    -- Extension per area
-						include
-							archetype_id/value matches {/.*/}
-					}
 					CLUSTER[at0.1] occurrences matches {0..*} matches {    -- Burns per depth
 						items cardinality matches {1..*; unordered} matches {
 							ELEMENT[at0005.1] occurrences matches {0..1} matches {    -- Depth
@@ -196,11 +192,15 @@ definition
 							}
 						}
 					}
-				}
-			}
-			ELEMENT[at0.10] occurrences matches {0..1} matches {    -- Sum of burnt area on this part
-				value matches {
-					DV_PROPORTION matches {*}
+					ELEMENT[at0.10] occurrences matches {0..1} matches {    -- Sum of burnt area on this part
+						value matches {
+							DV_PROPORTION matches {*}
+						}
+					}
+					allow_archetype CLUSTER[at0054] occurrences matches {0..*} matches {    -- Extension per area
+						include
+							archetype_id/value matches {/.*/}
+					}
 				}
 			}
 			CLUSTER[at0055] occurrences matches {0..1} matches {    -- Sum of areas
@@ -218,7 +218,7 @@ definition
 					}
 					CLUSTER[at0.8] occurrences matches {0..*} matches {    -- Burns per depth category
 						items cardinality matches {1..*; unordered} matches {
-							use_node ELEMENT occurrences matches {0..1} /items[at0.10]/items[at0.1]/items[at0005.1]
+							use_node ELEMENT occurrences matches {0..1} /items[at0020.1]/items[at0.10]/items[at0.1]/items[at0005.1]
 							ELEMENT[at0023.1] occurrences matches {0..1} matches {    -- Total burnt area of this depth category
 								value matches {
 									DV_PROPORTION matches {
@@ -242,10 +242,6 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
-				["at0023"] = <
-					text = <"Head and neck">
-					description = <"Entire skin of head and neck">
-				>
 				["at0000.1"] = <
 					text = <"Relative body surface area burnt">
 					description = <"Assessment of relative body surface area affected by burns, estimated using methods like Lund-Browder chart, Wallace rule of nines, etc. ">
@@ -303,6 +299,18 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 				["at0023.1"] = <
 					text = <"Total burnt area of this depth category">
 					description = <"Total burnt area of this depth category, precentage of full body">
+				>
+				["at0020.1"] = <
+					text = <"Partial skin area">
+					description = <"To be repeated and configured in template, if the predefined body parts/areas in available templates or archetype specializations do not fit the use case.">
+					comment = <"Example: In some use cases upper arm and lower arm are recorded separately and in some other use cases recorded together as arm. 
+
+Remember to remove (0..0) old overlapping parts if new ones are introduced, to avoid possibility of double registration.">
+				>
+				["at0.10"] = <
+					text = <"Sum of burnt area on this part">
+					description = <"Sum of the areas of different depth categories">
+					comment = <"Note that Epiderminal (first degree) burns are usually _not_ included in these partial sums (since they may be  used for TBSA% calculation).">
 				>
 				["at0000"] = <
 					text = <"Relative body surface area assessment">
@@ -398,6 +406,10 @@ Remember to remove (0..0) old overlapping parts if new ones are introduced, to a
 				["at0022"] = <
 					text = <"Head">
 					description = <"Entire skin of head (excluding neck)">
+				>
+				["at0023"] = <
+					text = <"Head and neck">
+					description = <"Entire skin of head and neck">
 				>
 				["at0024"] = <
 					text = <"Neck">
@@ -506,18 +518,6 @@ Note that Epiderminal (first degree) burns are usually _not_ included in the TBS
 				["at0060"] = <
 					text = <"Extension">
 					description = <"">
-				>
-				["at0020.1"] = <
-					text = <"Partial skin area">
-					description = <"To be repeated and configured in template, if the predefined body parts/areas in available templates or archetype specializations do not fit the use case.">
-					comment = <"Example: In some use cases upper arm and lower arm are recorded separately and in some other use cases recorded together as arm. 
-
-Remember to remove (0..0) old overlapping parts if new ones are introduced, to avoid possibility of double registration.">
-				>
-				["at0.10"] = <
-					text = <"Sum of burnt area on this part">
-					description = <"Sum of the areas of different depth categories">
-					comment = <"Note that Epiderminal (first degree) burns are usually _not_ included in these partial sums (since they may be  used for TBSA% calculation).">
 				>
 			>
 		>
