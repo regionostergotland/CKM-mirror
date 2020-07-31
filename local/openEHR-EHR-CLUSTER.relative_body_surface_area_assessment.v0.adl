@@ -52,9 +52,9 @@ https://www.vicburns.org.au/wp-content/uploads/2016/06/poster4-paediatric-burns-
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"eb3d25976c3d33c110dcafecd86fb6d2">
 		["build_uid"] = <"0378792a-c5f1-31ad-8334-f3c2848cbe4e">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
-		["MD5-CAM-1.0.1"] = <"19a87e5f40a8a8b2704c4d129d055945">
 	>
 
 definition
@@ -283,10 +283,8 @@ ontology
 				>
 				["at0020"] = <
 					text = <"Partial skin area">
-					description = <"To be repeated and configured in template, if the predefined body parts/areas in available templates or archetype specializations do not fit the use case.">
-					comment = <"Example: In some use cases upper arm and lower arm are recorded separately and in some other use cases recorded together as arm. 
-
-Remember to remove (0..0) old overlapping parts if new ones are introduced, to avoid possibility of double registration.">
+					description = <"To be repeated and configured in template,or at runtime to fit the use case and selected method, age interval etc.">
+					comment = <"Example: In some use cases upper arm and lower arm are recorded separately and in some other use cases recorded together as arm. ">
 				>
 				["at0021"] = <
 					text = <"Area name">
