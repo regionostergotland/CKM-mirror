@@ -20,10 +20,10 @@ Tools, tool settings and behavoiurs
 -------------
 List of available modelling tools: https://www.openehr.org/downloads/modellingtools
 
-### Marand's online ADL-designer
+### The online Archetype-designer
 Please note the somewhat odd directory choices used for saving new anbd imported assets described above. Template files created in the tool are by default saved with a ".t.json"-file ending. They can also be exported to several formats.
 
-If you are using Marand's online ADL-designer https://ehrscape.marand.si/designerv2 and nobody in your organization has yet added this repo, then this setting should work:
+If you are using openEHRs online Archetype-designer https://tools.openehr.org/designer/#/ and login with a persoonal account (or a group/organization-account) that is new in the tool, then this setting should work to add this repo:
 
 Repositories (top menu bar) --> New repository (button) --> Repository type: GitHub
 ```
@@ -33,7 +33,7 @@ Repositories (top menu bar) --> New repository (button) --> Repository type: Git
   Branch: master
 ```
 
-If you want to save files (and avoid some GitHub rate-limiting-related related "403" errors) you need to be logged in to github with a user account that has write permission to this repository, ideally before opening the ADL designer.
+Important: If you want to save files (and avoid some GitHub rate-limiting-related related "403" errors) you need to be logged in to github with a user account that has write permission to this repository, ideally before opening the ADL designer.
 
 ### Local-file-based tools
 If you are using Ocean's Template designer or other local-file-based tools it should be possible to either 
@@ -54,7 +54,7 @@ Howto-instructions for RÖ-repo admins regarding how to move a file uding GitHub
 
 Future setup?
 -------------
-If this works fine and there is interest, then the chain could be modified to instead become openEHR --> SKL (or EHM?) --> Region Östergötland 
+If this works fine and there is interest, then the chain could be modified to instead become openEHR --> Modellbibliotek --> Region Östergötland 
 
 We'd likely want to have separate directories for different templates. 
 
